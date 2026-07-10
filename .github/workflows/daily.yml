@@ -25,6 +25,8 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: 抓取新闻
+        env:
+          LOOKBACK_HOURS: "168"
         run: python scripts/fetch_news.py
 
       - name: 查 Google Trends 热度
