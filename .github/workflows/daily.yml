@@ -1,0 +1,48 @@
+name: 每日热泵选题更新
+
+on:
+  schedule:
+    # UTC 00:00 = 北京时间 08:00
+    - cron: "0 0 * * *"
+  workflow_dispatch: {}   # 允许你在 GitHub 网页上手动点一下立即运行，方便测试
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 拉取代码
+        uses: actions/checkout@v4
+
+      - name: 安装 Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: 安装依赖
+        run: pip install -r requirements.txt
+
+      - name: 抓取新闻
+        run: python scripts/fetch_news.py
+
+      - name: 查 Google Trends 热度
+        run: python scripts/check_trends.py
+        continue-on-error: true   # Trends偶尔限流失败也不影响后面步骤，用旧数据兜底
+
+      - name: 用 LLM 生成选题
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: python scripts/generate_topics.py
+
+      - name: 渲染看板网页
+        run: python scripts/render_dashboard.py
+
+      - name: 提交更新
+        run: |
+          git config user.name "heatpump-topics-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add data/ docs/
+          git diff --quiet --cached || git commit -m "每日选题更新 $(date -u +%Y-%m-%d)"
+          git push

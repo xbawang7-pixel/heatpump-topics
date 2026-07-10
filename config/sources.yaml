@@ -1,0 +1,37 @@
+# 热泵行业信源配置
+# 每个区域下是 RSS 信源列表。没有官方 RSS 的网站，可以先放官网新闻页链接，
+# 脚本会尝试解析；解析不出来的会在运行日志里提示，你可以换成别的信源。
+#
+# 怎么找一个网站有没有 RSS：
+#   1. 打开网站 -> 右键查看网页源代码 -> 搜索 "rss" 或 "feed"
+#   2. 或者直接在网址后面试 /feed 、/rss 、/rss.xml
+#   3. 实在找不到就用 Google Alerts（免费）订阅关键词，把 Alerts 邮件转发的
+#      规则也能改造成信源，后续可以加
+
+europe:
+  - name: "EHPA 欧洲热泵协会"
+    rss: "https://www.ehpa.org/rss/"
+  - name: "BWP 德国热泵协会"
+    rss: "https://www.waermepumpe.de/feed/"
+  - name: "Cooling Post (欧洲制冷/热泵行业媒体)"
+    rss: "https://www.coolingpost.com/feed/"
+
+middle_east:
+  - name: "Climate Control Middle East"
+    rss: "https://www.climatecontrolme.com/feed/"
+  # 中东信源相对少，建议后续补充 Big5展会官网新闻页、GCC 各国能源部公告
+
+asia:
+  - name: "R744.com (全球自然制冷剂/热泵行业媒体，亚洲相关新闻较多)"
+    rss: "https://r744.com/feed/"
+  # 建议后续补充：中国制冷学会、中国家用电器协会 官网新闻页
+
+# 种子长尾词方向：用于 Google Trends 校验热度走势
+# 每天脚本会把这些词 + 当天新闻里提取到的候选词一起查 Trends
+seed_keywords:
+  - "heat pump installer certification"
+  - "air source heat pump cold climate"
+  - "heat pump high ambient temperature"
+  - "commercial heat pump manufacturer"
+  - "heat pump erp label"
+  - "heat pump distributor"
