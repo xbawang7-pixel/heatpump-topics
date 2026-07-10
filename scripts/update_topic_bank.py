@@ -85,6 +85,7 @@ def main():
                 "target_keyword": None,
                 "content_format": None,
                 "why_relevant": None,
+                "summary_cn": None,
                 "keyword_trend": None,
                 "keyword_validated": False,
                 "previous_rank": None,

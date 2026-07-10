@@ -83,36 +83,46 @@ def main():
 <title>长尾关键词库</title>
 <style>
   :root {{
-    --bg: #14181a; --panel: #1d2224; --border: #2a3134;
-    --text: #edebe6; --text-muted: #8b9296; --teal: #4fa8a0; --copper: #c9793d;
+    --bg: #ffffff; --surface: #fafaf9; --border: #eaeae7;
+    --text: #1c1c1a; --text-muted: #8a8a85; --accent: #3c6e5c; --accent-soft: #3c6e5c14;
   }}
   * {{ box-sizing: border-box; }}
   body {{
-    margin: 0; padding: 2rem 1.5rem 4rem; background: var(--bg); color: var(--text);
-    font-family: -apple-system, "PingFang SC", "Segoe UI", sans-serif;
+    margin: 0; padding: 3rem 1.5rem 5rem; background: var(--bg); color: var(--text);
+    font-family: -apple-system, "PingFang SC", "Hiragino Sans GB", "Segoe UI", sans-serif;
+    -webkit-font-smoothing: antialiased;
   }}
-  .header {{ max-width: 980px; margin: 0 auto 1.25rem; display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 8px; }}
-  .header h1 {{ margin: 0; font-size: 22px; font-weight: 500; }}
-  .header .sub {{ color: var(--text-muted); font-size: 13px; margin-top: 4px; }}
-  .header a.back {{ font-size: 12.5px; color: var(--teal); text-decoration: none; border: 1px solid #4fa8a055; padding: 6px 12px; border-radius: 8px; white-space: nowrap; }}
-  .stats {{ max-width: 980px; margin: 0 auto 1.5rem; display: flex; gap: 12px; flex-wrap: wrap; }}
-  .stat {{ background: var(--panel); border: 1px solid var(--border); border-radius: 10px; padding: 12px 16px; min-width: 140px; }}
-  .stat .label {{ font-size: 12px; color: var(--text-muted); }}
-  .stat .value {{ font-size: 22px; font-weight: 500; margin-top: 2px; }}
-  table {{ max-width: 980px; margin: 0 auto; width: 100%; border-collapse: collapse; }}
+  .header {{
+    max-width: 1080px; margin: 0 auto 2rem; display: flex; justify-content: space-between;
+    align-items: flex-end; flex-wrap: wrap; gap: 12px; border-bottom: 1px solid var(--border);
+    padding-bottom: 1.5rem;
+  }}
+  .header h1 {{ margin: 0; font-size: 26px; font-weight: 600; font-family: Georgia, "Songti SC", serif; }}
+  .header .sub {{ color: var(--text-muted); font-size: 13px; margin-top: 6px; }}
+  .header a.back {{
+    font-size: 12.5px; color: var(--accent); text-decoration: none; border: 1px solid var(--border);
+    padding: 7px 14px; border-radius: 999px; white-space: nowrap;
+  }}
+  .header a.back:hover {{ background: var(--accent-soft); }}
+  .stats {{ max-width: 1080px; margin: 0 auto 2rem; display: flex; gap: 14px; flex-wrap: wrap; }}
+  .stat {{ background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 14px 20px; min-width: 150px; }}
+  .stat .label {{ font-size: 11.5px; color: var(--text-muted); }}
+  .stat .value {{ font-size: 24px; font-weight: 600; margin-top: 4px; font-family: Georgia, serif; }}
+  table {{ max-width: 1080px; margin: 0 auto; width: 100%; border-collapse: collapse; }}
   th {{
-    text-align: left; font-size: 12px; color: var(--text-muted); font-weight: 500;
-    text-transform: uppercase; letter-spacing: 0.04em; padding: 8px 10px; border-bottom: 1px solid var(--border);
+    text-align: left; font-size: 11px; color: var(--text-muted); font-weight: 600;
+    text-transform: uppercase; letter-spacing: 0.06em; padding: 10px 12px; border-bottom: 1px solid var(--border);
   }}
-  td {{ padding: 10px; border-bottom: 1px solid var(--border); vertical-align: top; font-size: 13px; }}
-  td code {{ color: var(--teal); font-family: "SF Mono", Consolas, monospace; font-size: 12.5px; }}
-  td.num {{ font-family: "SF Mono", Consolas, monospace; }}
+  td {{ padding: 14px 12px; border-bottom: 1px solid var(--border); vertical-align: top; font-size: 13px; }}
+  tr:hover td {{ background: var(--surface); }}
+  td code {{ color: var(--accent); font-family: "SF Mono", Menlo, monospace; font-size: 12px; background: var(--accent-soft); padding: 2px 6px; border-radius: 5px; }}
+  td.num {{ font-family: "SF Mono", Menlo, monospace; color: var(--text-muted); }}
   td.muted {{ color: var(--text-muted); font-size: 12px; max-width: 240px; }}
   a {{ color: var(--text-muted); text-decoration: none; }}
-  a:hover {{ text-decoration: underline; }}
-  .tag {{ font-size: 10px; padding: 1px 6px; border-radius: 6px; border: 1px solid var(--border); }}
-  .tag.ok {{ color: var(--teal); border-color: #4fa8a055; }}
-  .empty {{ text-align: center; color: var(--text-muted); padding: 2rem; }}
+  a:hover {{ color: var(--accent); }}
+  .tag {{ font-size: 10px; padding: 2px 7px; border-radius: 999px; border: 1px solid var(--border); }}
+  .tag.ok {{ color: var(--accent); border-color: #3c6e5c40; background: var(--accent-soft); }}
+  .empty {{ text-align: center; color: var(--text-muted); padding: 3rem; }}
 </style>
 </head>
 <body>

@@ -112,17 +112,28 @@ def collect_reddit(config):
     region_by_slug = {s.get("slug"): s.get("region") for s in subs}
     name_by_slug = {s.get("slug"): s.get("name", f"r/{s.get('slug')}") for s in subs}
 
-    # 注意：这个字段名是根据Apify这类Reddit actor的常见输入规范写的
-    # (subreddits / sort / timeFilter / maxItems)。如果实际调用报"输入格式错误"，
-    # 去 https://apify.com/harshmaur/reddit-scraper/input-schema 核对一下
-    # 真实字段名，照着改这里的payload就行，不是代码逻辑问题。
+    subreddit_urls = [f"https://www.reddit.com/r/{slug}" for slug in subreddit_names]
+
+    # 这是根据 https://apify.com/harshmaur/reddit-scraper 的 Input -> JSON example
+    # 核对过的真实字段名，不是猜的。注意：这个actor目前没有看到"按年度最热排序"
+    # 这个开关，所以拿到的是该板块默认排序下的帖子（不保证是过去一年最热），
+    # 但点赞数/评论数是真实的，打分逻辑依然有效。
     payload = {
-        "subreddits": subreddit_names,
-        "sort": "top",
-        "timeFilter": "year",
-        "maxItems": REDDIT_LIMIT * len(subreddit_names),
-        "maxPostsPerSource": REDDIT_LIMIT,
-        "skipComments": True,
+        "searchTerms": [],
+        "searchPosts": True,
+        "searchComments": False,
+        "searchCommunities": False,
+        "withinCommunity": "",
+        "startUrls": [],
+        "subredditUrls": subreddit_urls,
+        "onlyWithFlair": False,
+        "crawlCommentsPerPost": False,
+        "includeNSFW": False,
+        "maxPostsCount": REDDIT_LIMIT * max(len(subreddit_urls), 1),
+        "proxy": {
+            "useApifyProxy": True,
+            "apifyProxyGroups": ["RESIDENTIAL"],
+        },
     }
 
     try:
@@ -140,29 +151,39 @@ def collect_reddit(config):
         print(f"[警告] Apify Reddit抓取异常: {e}")
         return candidates
 
+    skipped_no_title = 0
     for item in items:
-        if item.get("dataType") and item.get("dataType") != "post":
+        if item.get("dataType") and item.get("dataType") not in ("post", None):
             continue
-        title = (item.get("title") or "").strip()
+        title = (item.get("title") or item.get("postTitle") or "").strip()
         if not title:
+            skipped_no_title += 1
             continue
-        link = item.get("url") or ""
-        slug = (item.get("parsedCommunityName") or item.get("communityName", "").lstrip("r/") or "").strip()
+        link = item.get("url") or item.get("postUrl") or item.get("permalink") or ""
+        raw_community = (
+            item.get("parsedCommunityName")
+            or item.get("communityName")
+            or item.get("subreddit")
+            or item.get("subredditName")
+            or ""
+        )
+        slug = raw_community.replace("r/", "").strip()
+        score = item.get("upVotes", item.get("score", item.get("ups", 0))) or 0
+        comments = item.get("numberOfComments", item.get("commentCount", item.get("numComments", 0))) or 0
         candidates.append({
             "id": make_id(link, title),
             "title": title,
             "link": link,
-            "summary": (item.get("body") or "")[:400],
+            "summary": (item.get("body") or item.get("selftext") or "")[:400],
             "source_type": "reddit",
             "source_name": name_by_slug.get(slug, f"r/{slug}" if slug else "Reddit"),
             "region": region_by_slug.get(slug),
-            "engagement": {
-                "score": item.get("upVotes", 0) or 0,
-                "comments": item.get("numberOfComments", 0) or 0,
-            },
-            "published": item.get("createdAt"),
+            "engagement": {"score": score, "comments": comments},
+            "published": item.get("createdAt") or item.get("created_utc"),
         })
 
+    if skipped_no_title:
+        print(f"[信息] 有 {skipped_no_title} 条结果没有标题字段，已跳过（可能是非帖子类型的数据）")
     print(f"[完成] Apify Reddit抓取: 共 {len(candidates)} 条")
     return candidates
 
