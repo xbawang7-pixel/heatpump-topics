@@ -33,7 +33,7 @@ jobs:
 
       - name: 用 LLM 生成选题
         env:
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: python scripts/generate_topics.py
 
       - name: 渲染看板网页

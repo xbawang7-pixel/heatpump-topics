@@ -2,14 +2,14 @@
 把当天新闻 + Trends 热度数据丢给 LLM，生成结构化的选题建议，
 输出到 data/topics.json，供 render_dashboard.py 渲染成网页。
 
-需要环境变量 OPENAI_API_KEY。
-模型默认用 gpt-4o-mini（便宜、够用），可以用 OPENAI_MODEL 环境变量改。
+用 Google Gemini API（不需要绑卡，免费额度够用）。
+需要环境变量 GEMINI_API_KEY，去 https://aistudio.google.com/apikey 免费申请。
 """
 import json
 import os
 from datetime import datetime, timezone
 
-from openai import OpenAI
+import google.generativeai as genai
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA_DIR = os.path.join(ROOT, "data")
@@ -17,7 +17,7 @@ NEWS_PATH = os.path.join(DATA_DIR, "news.json")
 TRENDS_PATH = os.path.join(DATA_DIR, "trends.json")
 OUT_PATH = os.path.join(DATA_DIR, "topics.json")
 
-MODEL = os.environ.get("OPENAI_MODEL", "gpt-4o-mini")
+MODEL = os.environ.get("GEMINI_MODEL", "gemini-2.0-flash")
 
 SYSTEM_PROMPT = """你是一个专门服务B2B热泵出口企业的内容策略顾问。
 你的读者是热泵采购商、经销商、工程公司，目标市场是欧洲、中东、亚洲。
@@ -76,24 +76,26 @@ def main():
             }, f, ensure_ascii=False, indent=2)
         return
 
-    client = OpenAI()  # 从环境变量 OPENAI_API_KEY 读取
+    api_key = os.environ.get("GEMINI_API_KEY")
+    if not api_key:
+        raise RuntimeError("没有找到环境变量 GEMINI_API_KEY，请先设置")
+
+    genai.configure(api_key=api_key)
+    model = genai.GenerativeModel(
+        model_name=MODEL,
+        system_instruction=SYSTEM_PROMPT,
+        generation_config={"response_mime_type": "application/json"},
+    )
 
     user_content = json.dumps({
         "news": news,
         "keyword_trends": trends,
     }, ensure_ascii=False)
 
-    response = client.chat.completions.create(
-        model=MODEL,
-        messages=[
-            {"role": "system", "content": SYSTEM_PROMPT},
-            {"role": "user", "content": user_content},
-        ],
-        temperature=0.4,
-    )
+    response = model.generate_content(user_content)
+    raw = response.text.strip()
 
-    raw = response.choices[0].message.content.strip()
-    # 防止模型偶尔还是包了 markdown 代码块
+    # 保险起见，防止偶尔还是包了 markdown 代码块
     if raw.startswith("```"):
         raw = raw.strip("`")
         if raw.lower().startswith("json"):
