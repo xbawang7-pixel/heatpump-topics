@@ -1,4 +1,4 @@
 feedparser==6.0.11
 pyyaml==6.0.2
-pytrends==4.9.2
+requests==2.32.3
 google-generativeai>=0.8.3

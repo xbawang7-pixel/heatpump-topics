@@ -1,93 +1,90 @@
-# 热泵B2B每日选题看板
+# 热泵B2B话题热度榜（Top 50，每天迭代更新）
 
-每天自动抓欧洲/中东/亚洲的热泵行业新闻，配合Google Trends热度，
-用LLM生成选题建议，渲染成一个网页，托管在GitHub Pages上免费访问。
+不是"每天推荐今天写什么"，而是维护一个**持续滚动的Top 50话题库**：
+每天抓新的候选（新闻 + Reddit近一年热帖），跟已有话题库合并打分，
+排出当前热度前50名。老话题没人提了会慢慢掉分掉出榜单，
+重新被提起的话题会加分回升——类似一个"热度排行榜"，而不是一次性清单。
 
-## 一、新建仓库并上传文件（第一次，约5分钟）
+## 打分逻辑（写给你自己理解，不需要改代码也能看懂）
 
-1. 打开 https://github.com/new
-2. Repository name 填 `heatpump-topics`（或你喜欢的名字）
-3. 选择 **Public**（GitHub Pages免费版要求公开仓库；如果不想让别人看到，
-   之后可以考虑升级成付费Private+Pages，先用Public跑起来）
-4. 不要勾选任何初始化选项（不加README/不加.gitignore），直接点 Create repository
-5. 新建好之后，页面上会有一个空仓库的提示。把我打包给你的这些文件全部上传：
-   - 打开仓库页面 -> `Add file` -> `Upload files`
-   - 把整个项目文件夹里的所有文件和文件夹拖进去（包括隐藏的 `.github` 文件夹，
-     如果拖拽时看不到`.github`，可以先在网页上手动创建这个路径下的文件，
-     或者用GitHub Desktop客户端整体上传，更省事）
-   - 提交（Commit changes）
+- Reddit帖子：`分数 = 点赞数 + 2×评论数`（评论权重更高，代表真实讨论）
+- 新闻类：每次出现给一个基础分，反复被提及会有小幅加成
+- 每天没被重新提及的话题：分数打9.7折（微妙衰减，不会一天就掉出榜）
+- 重新出现的老话题：分数回升，代表"热度复燃"
 
-> 提示：如果你完全不想用命令行，最简单的方式是安装 **GitHub Desktop**
-> (https://desktop.github.com)，用它把这个文件夹整体拖进去、点 Publish，
-> 比网页上传更不容易漏文件（尤其是 `.github/workflows` 这种隐藏路径）。
+## 一、首次部署（如果是全新仓库）
 
-## 二、配置OpenAI API Key（必须做，否则选题生成会失败）
+跟之前一样：新建GitHub仓库、上传这些文件、开启GitHub Pages（分支`main`，目录`/docs`）。
+如果你已经有一个跑起来的旧版仓库，直接看下面"从旧版迁移"。
 
-1. 进入仓库 -> `Settings` -> 左侧菜单 `Secrets and variables` -> `Actions`
-2. 点 `New repository secret`
-3. Name 填：`OPENAI_API_KEY`
-4. Value 填你的OpenAI API key（sk-开头那串）
-5. 保存
+## 二、配置Gemini API Key
 
-## 三、开启GitHub Pages（把看板变成一个可访问的网址）
+1. 打开 https://aistudio.google.com/apikey ，登录Google账号，创建key（不需要绑卡）
+2. 仓库 -> `Settings` -> `Secrets and variables` -> `Actions` -> `New repository secret`
+3. Name: `GEMINI_API_KEY`，Value填你的key
 
-1. 仓库 -> `Settings` -> 左侧菜单 `Pages`
-2. Source 选择 `Deploy from a branch`
-3. Branch 选择 `main`，文件夹选择 `/docs`，点 Save
-4. 等1-2分钟，页面顶部会出现你的网址，形如：
-   `https://你的用户名.github.io/heatpump-topics/`
-   这个就是你每天打开的固定看板链接，收藏起来就行
+## 三、从旧版迁移（如果你之前已经跑通过"每日选题"那一版）
 
-## 四、手动跑一次，测试整条流程通不通
+这次改动删除/替换了几个文件：
 
-1. 仓库上方 `Actions` 标签
-2. 左侧选择 `每日热泵选题更新`
-3. 右侧点 `Run workflow` -> 再点一次绿色按钮，手动触发一次
-4. 等1-2分钟刷新页面，看运行是否变绿色勾。如果是红叉，点进去看日志，
-   常见问题：
-   - `OPENAI_API_KEY` 没配对 -> 回到第二步检查
-   - RSS抓取某个源报警告 -> 正常，说明那个信源链接失效了，去
-     `config/sources.yaml` 换一个（见下方"如何维护信源"）
-5. 跑成功后，打开第三步拿到的网址，应该能看到当天的看板
+- 删除：`scripts/fetch_news.py`、`scripts/check_trends.py`、`scripts/generate_topics.py`
+- 新增：`scripts/collect_candidates.py`、`scripts/update_topic_bank.py`、`scripts/enrich_topics.py`
+- 修改：`scripts/render_dashboard.py`、`config/sources.yaml`、`requirements.txt`、
+  `.github/workflows/daily.yml`
 
-之后每天北京时间早上8点会自动跑一次，不用你管。
+直接把这个新的项目文件夹整体覆盖替换你桌面的旧文件夹（旧文件会被删除/覆盖），
+然后让Codex帮你 `git add -A && git commit -m "升级为Top50话题库模式" && git push`。
 
-## 五、如何维护信源（关键词/新闻源可以随时改）
+**旧版遗留的`OPENAI_API_KEY` secret如果还在，可以留着不用管，也可以删掉**
+（`gh secret delete OPENAI_API_KEY`），新流程只用`GEMINI_API_KEY`。
+
+## 四、手动跑一次测试
+
+```
+gh workflow run daily.yml
+gh run watch
+```
+
+第一次跑，因为话题库是空的，全部话题都会是"NEW"，之后每天会看到排名变化
+（↑上升、↓下降、NEW新上榜）。
+
+## 五、维护信源（v3更新：已扩展到欧洲/中东/亚洲/非洲/南美 + 24个Reddit板块）
 
 打开 `config/sources.yaml`：
 
-- `europe` / `middle_east` / `asia` 下面是各区域的RSS新闻源，
-  可以随时加/删/换。中东和亚洲这两块我给的信源比较少，
-  建议你自己找一些行业展会官网、当地能源政策官网的新闻页补充进去。
-- `seed_keywords` 是拿去Google Trends验证热度的种子词，
-  可以根据你的产品线（比如你主打商用大型机还是家用机）调整方向。
+- `regions` 下是五个区域的新闻RSS源。非洲、南美目前还没有验证过的RSS地址，
+  是空的框架，需要你或者Codex去核实具体网址后手动加进去（格式照抄欧洲那几条改就行）。
+  优先建议核实这几个：JARN（亚洲）、RACA Journal（非洲）、ACR Latinoamérica（南美）
+- `reddit_subreddits`：已经扩到24个板块，覆盖五个区域 + 几个全球通用版块。
+  这块不需要额外验证，Reddit的RSS格式对任何板块都通用
+- 这个文件改完直接生效，不需要额外操作
 
-改完直接在网页上编辑保存（GitHub网页自带一个简单编辑器，点文件右上角铅笔图标），
-不需要额外操作，第二天自动生效。
+**没有接入的信息源**（Google Trends、GDELT、LinkedIn等）：这些不是通过订阅RSS链接
+就能用的，需要专门的API或者付费权限，目前这套轻量架构没有接。如果后面想加，
+最值得优先做的是把Google Trends重新接回来，用来做"搜索热度增长"这个额外的打分维度——
+这个可以作为下一步升级，不建议现在一次性全加，容易一次改太多东西全垮。
 
-## 六、每周人工复核关键词（这是你选的方案：Trends自动 + 人工周复核）
+## 六、关于关键词验证（你之前选的方案：先自动化跑起来，人工周复核）
 
-看板上每个选题卡片如果显示"待人工复核"标签，说明这个长尾词只是LLM建议的方向，
-还没经过真实搜索量验证。建议你：
-
-1. 每周一固定花10-15分钟，把本周所有"待人工复核"的词
-   拿去 Google Ads 后台的关键词规划师查一遍真实搜索量区间
-2. 确认有价值的，就可以安排写；量级太低或没有搜索意图的，跳过
-
-这一步目前是纯人工，看板不会帮你自动打勾——如果后面跑顺了想把这步也自动化
-（接入Google Ads API拿真实数据），随时可以回来找我升级。
+看板上每条话题旁边的"目标长尾词"是LLM根据标题建议的方向，还没有经过真实搜索量验证。
+建议每周固定花10-15分钟，把当周新上榜、排名靠前的话题的关键词，
+拿去 Google Ads 后台的关键词规划师核实一遍真实搜索量区间，
+确认有价值的再安排写。这一步目前是纯人工，看板不会自动记录你确认过哪些——
+后面用顺手了想自动化这一步，随时可以回来升级。
 
 ## 目录结构
 
 ```
 heatpump-topics/
-├── config/sources.yaml       新闻源 + 种子关键词配置（你会经常改这个）
+├── config/sources.yaml          新闻源 + Reddit板块 配置
 ├── scripts/
-│   ├── fetch_news.py         抓RSS新闻
-│   ├── check_trends.py       查Google Trends热度
-│   ├── generate_topics.py    调用OpenAI生成选题
-│   └── render_dashboard.py   渲染成网页
-├── data/                     每天运行产生的中间数据（自动生成，不用管）
-├── docs/index.html           最终看板网页（GitHub Pages从这里发布）
-└── .github/workflows/daily.yml   每天自动运行的定时任务配置
+│   ├── collect_candidates.py    抓新闻RSS + Reddit年度热帖，输出候选
+│   ├── update_topic_bank.py     候选合并进持久化话题库，打分排名，取Top50
+│   ├── enrich_topics.py         LLM给新上榜话题补关键词/形式建议
+│   └── render_dashboard.py      渲染成榜单网页
+├── data/
+│   ├── candidates.json          每天临时的候选（不重要，会被覆盖）
+│   └── topic_bank.json          持久化话题库，这是核心数据，每天累积更新
+├── docs/index.html              最终榜单网页（GitHub Pages从这里发布）
+└── .github/workflows/daily.yml  每天自动运行的定时任务
 ```

@@ -1,33 +1,136 @@
-# 热泵行业信源配置
-# 每个区域下是 RSS 信源列表。没有官方 RSS 的网站，可以先放官网新闻页链接，
-# 脚本会尝试解析；解析不出来的会在运行日志里提示，你可以换成别的信源。
+# 热泵行业信源配置（v3：扩展到五大区域 + 大幅扩充Reddit）
 #
-# 怎么找一个网站有没有 RSS：
-#   1. 打开网站 -> 右键查看网页源代码 -> 搜索 "rss" 或 "feed"
-#   2. 或者直接在网址后面试 /feed 、/rss 、/rss.xml
-#   3. 实在找不到就用 Google Alerts（免费）订阅关键词，把 Alerts 邮件转发的
-#      规则也能改造成信源，后续可以加
+# 结构说明：
+# - regions 下每个区域是一批RSS新闻源，可以随时加减
+# - reddit_subreddits 是Reddit板块列表，每个可以带 region 标签
+#   （方便打分/展示时直接归类，不用每次都靠LLM去猜）
+#   region 留空/不写 = 全球通用板块，不强行归到某个地区
+#
+# 怎么验证一个网站有没有RSS：
+#   1. 网址后面试 /feed 、/rss 、/rss.xml
+#   2. 查看网页源代码搜索 "rss" 或 "application/rss+xml"
+#   3. 用 https://rss.app 或类似工具，输入网址自动生成RSS（部分网站可行）
+#   4. 实在没有RSS的重要网站，可以先跳过，后续升级成专门的网页抓取逻辑
 
-europe:
-  - name: "EHPA 欧洲热泵协会"
-    rss: "https://www.ehpa.org/rss/"
-  - name: "BWP 德国热泵协会"
-    rss: "https://www.waermepumpe.de/feed/"
-  - name: "Cooling Post (欧洲制冷/热泵行业媒体)"
-    rss: "https://www.coolingpost.com/feed/"
+regions:
 
-middle_east:
-  - name: "Climate Control Middle East"
-    rss: "https://www.climatecontrolme.com/feed/"
-  # 中东信源相对少，建议后续补充 Big5展会官网新闻页、GCC 各国能源部公告
+  europe:
+    - name: "EHPA 欧洲热泵协会"
+      rss: "https://www.ehpa.org/rss/"
+    - name: "BWP 德国热泵协会"
+      rss: "https://www.waermepumpe.de/feed/"
+    - name: "Cooling Post (欧洲制冷/热泵行业媒体)"
+      rss: "https://www.coolingpost.com/feed/"
+    # 建议核实后补充（GPT建议但RSS地址未验证，先别直接用，查到了再加）：
+    # - Eurovent（欧洲HVACR协会，官网提到有RSS但地址需要自己去官网确认）
+    # - ACR News（英国HVACR行业媒体）
+    # - REHVA（建筑暖通技术研究）
 
-asia:
-  - name: "R744.com (全球自然制冷剂/热泵行业媒体，亚洲相关新闻较多)"
-    rss: "https://r744.com/feed/"
-  # 建议后续补充：中国制冷学会、中国家用电器协会 官网新闻页
+  middle_east:
+    - name: "Climate Control Middle East"
+      rss: "https://www.climatecontrolme.com/feed/"
+    # 建议核实后补充：
+    # - MEP Middle East（酒店/地产机电工程）
+    # - Construction Week Middle East（大型项目/招标）
 
-# 种子长尾词方向：用于 Google Trends 校验热度走势
-# 每天脚本会把这些词 + 当天新闻里提取到的候选词一起查 Trends
+  asia:
+    - name: "R744.com (全球自然制冷剂/热泵行业媒体，亚洲相关新闻较多)"
+      rss: "https://r744.com/feed/"
+    # 建议核实后补充：
+    # - JARN（日本亚洲HVACR行业媒体，全球权威源之一，强烈建议优先去核实这个）
+    # - 中国制冷学会 / 中国家用电器协会 官网新闻页
+
+  africa:
+    # 非洲目前还没有验证过的RSS源，先留空框架，
+    # 建议优先去核实 RACA Journal（南非HVACR行业媒体）有没有RSS
+    []
+
+  south_america:
+    # 南美同理，建议优先核实 ACR Latinoamérica 有没有RSS
+    []
+
+# Reddit板块：这块最可靠，不需要一个个验证RSS，
+# reddit.com/r/版块名/top/.rss?t=year 这个格式对任何板块都通用
+reddit_subreddits:
+  # 全球通用（不强行打地区标签，让LLM按标题内容判断）
+  - name: "r/HVAC"
+    slug: "HVAC"
+  - name: "r/heatpump"
+    slug: "heatpump"
+    # 注：GPT建议的是 r/heatpumps（带s），实际板块名是 r/heatpump，用之前建议Codex确认一下
+  - name: "r/hvacadvice"
+    slug: "hvacadvice"
+  - name: "r/HomeImprovement"
+    slug: "HomeImprovement"
+  - name: "r/buildingscience"
+    slug: "buildingscience"
+  - name: "r/energy"
+    slug: "energy"
+  - name: "r/solar"
+    slug: "solar"
+
+  # 欧洲
+  - name: "r/Waermepumpe (德国)"
+    slug: "Waermepumpe"
+    region: "europe"
+  - name: "r/AskUK"
+    slug: "AskUK"
+    region: "europe"
+  - name: "r/DIYUK"
+    slug: "DIYUK"
+    region: "europe"
+  - name: "r/germany"
+    slug: "germany"
+    region: "europe"
+  - name: "r/france"
+    slug: "france"
+    region: "europe"
+
+  # 中东
+  - name: "r/dubai"
+    slug: "dubai"
+    region: "middle_east"
+  - name: "r/UAE"
+    slug: "UAE"
+    region: "middle_east"
+  - name: "r/saudiarabia"
+    slug: "saudiarabia"
+    region: "middle_east"
+
+  # 亚洲
+  - name: "r/india"
+    slug: "india"
+    region: "asia"
+  - name: "r/japanlife"
+    slug: "japanlife"
+    region: "asia"
+  - name: "r/singapore"
+    slug: "singapore"
+    region: "asia"
+  - name: "r/australia"
+    slug: "australia"
+    region: "asia"
+
+  # 非洲
+  - name: "r/southafrica"
+    slug: "southafrica"
+    region: "africa"
+  - name: "r/Nigeria"
+    slug: "Nigeria"
+    region: "africa"
+
+  # 南美
+  - name: "r/brasil"
+    slug: "brasil"
+    region: "south_america"
+  - name: "r/chile"
+    slug: "chile"
+    region: "south_america"
+  - name: "r/argentina"
+    slug: "argentina"
+    region: "south_america"
+
+# 种子长尾词（供后续接回Google Trends时用，目前打分逻辑暂未用到这个字段）
 seed_keywords:
   - "heat pump installer certification"
   - "air source heat pump cold climate"

@@ -1,6 +1,6 @@
 """
-把 data/topics.json 渲染成静态网页 docs/index.html
-GitHub Pages 默认从 docs/ 目录发布，所以直接写这里就行。
+把 data/topic_bank.json 里 status=active 的条目（按分数Top50）
+渲染成一个榜单网页 docs/index.html，每天更新。
 """
 import html
 import json
@@ -9,222 +9,156 @@ from datetime import datetime, timezone
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA_DIR = os.path.join(ROOT, "data")
-TOPICS_PATH = os.path.join(DATA_DIR, "topics.json")
+BANK_PATH = os.path.join(DATA_DIR, "topic_bank.json")
 DOCS_DIR = os.path.join(ROOT, "docs")
 OUT_PATH = os.path.join(DOCS_DIR, "index.html")
 
 REGION_LABELS = {
-    "europe": "欧洲",
-    "middle_east": "中东",
-    "asia": "亚洲",
+    "europe": "欧洲", "middle_east": "中东", "asia": "亚洲",
+    "africa": "非洲", "south_america": "南美", "global": "通用",
 }
-
-TREND_LABELS = {
-    "rising": ("升温中", "#c9793d"),
-    "flat": ("平稳", "#8b9296"),
-    "falling": ("降温中", "#6b7280"),
-    "unknown": ("待观察", "#6b7280"),
-}
-
-CARD_TEMPLATE = """
-<div class="card">
-  <div class="badges">
-    <span class="badge source">{trigger_source}</span>
-    <span class="badge trend" style="color:{trend_color};border-color:{trend_color}44">{trend_label}</span>
-    {validated_badge}
-  </div>
-  <h3>{title}</h3>
-  <p class="trigger">触发新闻：{trigger_news_title}</p>
-  <div class="meta">
-    <div class="kw">目标词：<code>{target_keyword}</code></div>
-    <div class="row">
-      <span>建议形式：{content_format_label}</span>
-    </div>
-    <p class="why">{why_now}</p>
-  </div>
-</div>
-"""
-
 FORMAT_LABELS = {
-    "blog": "技术博客",
-    "case_study": "案例研究",
-    "whitepaper": "白皮书",
-    "comparison": "对比测评",
+    "blog": "技术博客", "case_study": "案例研究",
+    "whitepaper": "白皮书", "comparison": "对比测评",
 }
+SOURCE_TYPE_LABELS = {"news": "新闻", "reddit": "Reddit热帖"}
 
 
 def esc(s):
     return html.escape(s or "")
 
 
-def render_card(topic):
-    trend = topic.get("keyword_trend", "unknown")
-    trend_label, trend_color = TREND_LABELS.get(trend, TREND_LABELS["unknown"])
-    validated_badge = ""
-    if not topic.get("keyword_validated", False):
-        validated_badge = '<span class="badge unverified">待人工复核</span>'
-    return CARD_TEMPLATE.format(
-        trigger_source=esc(topic.get("trigger_source", "")),
-        trend_color=trend_color,
-        trend_label=trend_label,
-        validated_badge=validated_badge,
-        title=esc(topic.get("title", "")),
-        trigger_news_title=esc(topic.get("trigger_news_title", "")),
-        target_keyword=esc(topic.get("target_keyword", "")),
-        content_format_label=FORMAT_LABELS.get(topic.get("content_format", ""), topic.get("content_format", "")),
-        why_now=esc(topic.get("why_now", "")),
+def movement_badge(entry):
+    prev = entry.get("previous_rank")
+    cur = entry.get("rank")
+    if prev is None:
+        return '<span class="tag new">NEW</span>'
+    if cur is None:
+        return ""
+    diff = prev - cur
+    if diff > 0:
+        return f'<span class="tag up">↑{diff}</span>'
+    if diff < 0:
+        return f'<span class="tag down">↓{abs(diff)}</span>'
+    return '<span class="tag flat">–</span>'
+
+
+ROW_TEMPLATE = """
+<tr>
+  <td class="rank">#{rank}</td>
+  <td class="title-cell">
+    <a href="{link}" target="_blank" rel="noopener">{title}</a>
+    <div class="sub">
+      <span class="tag source">{source_label}</span>
+      <span class="tag region">{region_label}</span>
+      {movement}
+    </div>
+  </td>
+  <td class="kw">{target_keyword}</td>
+  <td class="fmt">{content_format}</td>
+  <td class="score">{score}</td>
+</tr>
+"""
+
+
+def render_row(entry):
+    target_keyword = entry.get("target_keyword") or "（待补充，下次运行会自动生成）"
+    content_format = FORMAT_LABELS.get(entry.get("content_format"), "待定")
+    region_label = REGION_LABELS.get(entry.get("region"), "待定")
+    source_label = SOURCE_TYPE_LABELS.get(entry.get("source_type"), entry.get("source_type", ""))
+    return ROW_TEMPLATE.format(
+        rank=entry.get("rank"),
+        link=esc(entry.get("link", "")),
+        title=esc(entry.get("title", "")),
+        source_label=esc(source_label),
+        region_label=esc(region_label),
+        movement=movement_badge(entry),
+        target_keyword=f"<code>{esc(target_keyword)}</code>",
+        content_format=esc(content_format),
+        score=round(entry.get("score", 0)),
     )
 
 
 def main():
-    if os.path.exists(TOPICS_PATH):
-        with open(TOPICS_PATH, "r", encoding="utf-8") as f:
-            data = json.load(f)
+    if os.path.exists(BANK_PATH):
+        with open(BANK_PATH, "r", encoding="utf-8") as f:
+            bank = json.load(f)
     else:
-        data = {"generated_at": None, "topics": []}
+        bank = {}
 
-    topics = data.get("topics", [])
-    by_region = {"europe": [], "middle_east": [], "asia": []}
-    for t in topics:
-        region = t.get("region")
-        if region in by_region:
-            by_region[region].append(t)
+    active = [e for e in bank.values() if e.get("status") == "active"]
+    active.sort(key=lambda e: e.get("rank") or 9999)
 
-    columns_html = ""
-    for region, label in REGION_LABELS.items():
-        cards = by_region[region]
-        if cards:
-            cards_html = "".join(render_card(t) for t in cards)
-        else:
-            cards_html = '<p class="empty">今天没有值得写的新闻，明天再看。</p>'
-        columns_html += f"""
-        <div class="column">
-          <div class="column-header">{label}</div>
-          {cards_html}
-        </div>
-        """
+    new_today = sum(1 for e in active if e.get("previous_rank") is None)
+    pending_enrich = sum(1 for e in active if not e.get("enriched"))
 
-    generated_at = data.get("generated_at")
-    if generated_at:
-        try:
-            dt = datetime.fromisoformat(generated_at.replace("Z", "+00:00"))
-            generated_at_display = dt.strftime("%Y年%m月%d日 %H:%M UTC")
-        except ValueError:
-            generated_at_display = generated_at
-    else:
-        generated_at_display = "尚未生成"
+    rows_html = "".join(render_row(e) for e in active) if active else \
+        '<tr><td colspan="5" class="empty">话题库还是空的，等第一次运行完成后就会有数据。</td></tr>'
 
-    total = len(topics)
-    unverified_count = sum(1 for t in topics if not t.get("keyword_validated", False))
+    generated_at_display = datetime.now(timezone.utc).strftime("%Y年%m月%d日 %H:%M UTC")
 
     html_out = f"""<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>热泵选题看板</title>
+<title>热泵话题热度榜 Top 50</title>
 <style>
   :root {{
-    --bg: #14181a;
-    --panel: #1d2224;
-    --border: #2a3134;
-    --text: #edebe6;
-    --text-muted: #8b9296;
-    --copper: #c9793d;
-    --teal: #4fa8a0;
+    --bg: #14181a; --panel: #1d2224; --border: #2a3134;
+    --text: #edebe6; --text-muted: #8b9296;
+    --copper: #c9793d; --teal: #4fa8a0; --red: #b5544a;
   }}
   * {{ box-sizing: border-box; }}
   body {{
-    margin: 0;
-    padding: 2rem 1.5rem 4rem;
-    background: var(--bg);
-    color: var(--text);
+    margin: 0; padding: 2rem 1.5rem 4rem; background: var(--bg); color: var(--text);
     font-family: -apple-system, "PingFang SC", "Segoe UI", sans-serif;
   }}
-  .header {{
-    max-width: 1100px;
-    margin: 0 auto 1.5rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    flex-wrap: wrap;
-    gap: 8px;
-  }}
+  .header {{ max-width: 980px; margin: 0 auto 1.25rem; }}
   .header h1 {{ margin: 0; font-size: 22px; font-weight: 500; }}
   .header .sub {{ color: var(--text-muted); font-size: 13px; margin-top: 4px; }}
-  .stats {{
-    max-width: 1100px;
-    margin: 0 auto 1.5rem;
-    display: flex;
-    gap: 12px;
-    flex-wrap: wrap;
-  }}
-  .stat {{
-    background: var(--panel);
-    border: 1px solid var(--border);
-    border-radius: 10px;
-    padding: 12px 16px;
-    min-width: 140px;
-  }}
+  .stats {{ max-width: 980px; margin: 0 auto 1.5rem; display: flex; gap: 12px; flex-wrap: wrap; }}
+  .stat {{ background: var(--panel); border: 1px solid var(--border); border-radius: 10px; padding: 12px 16px; min-width: 140px; }}
   .stat .label {{ font-size: 12px; color: var(--text-muted); }}
   .stat .value {{ font-size: 22px; font-weight: 500; margin-top: 2px; }}
-  .grid {{
-    max-width: 1100px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 20px;
+  table {{ max-width: 980px; margin: 0 auto; width: 100%; border-collapse: collapse; }}
+  th {{
+    text-align: left; font-size: 12px; color: var(--text-muted); font-weight: 500;
+    text-transform: uppercase; letter-spacing: 0.04em; padding: 8px 10px; border-bottom: 1px solid var(--border);
   }}
-  .column-header {{
-    font-size: 13px;
-    font-weight: 500;
-    color: var(--text-muted);
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    margin-bottom: 10px;
-    padding-bottom: 8px;
-    border-bottom: 1px solid var(--border);
-  }}
-  .card {{
-    background: var(--panel);
-    border: 1px solid var(--border);
-    border-radius: 10px;
-    padding: 14px 16px;
-    margin-bottom: 12px;
-  }}
-  .badges {{ display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 8px; }}
-  .badge {{
-    font-size: 11px;
-    padding: 2px 8px;
-    border-radius: 6px;
-    border: 1px solid var(--border);
-    color: var(--text-muted);
-  }}
-  .badge.trend {{ border-width: 1px; }}
-  .badge.unverified {{ color: var(--copper); border-color: #c9793d44; }}
-  .card h3 {{ font-size: 15px; font-weight: 500; margin: 0 0 6px; line-height: 1.4; }}
-  .trigger {{ font-size: 12px; color: var(--text-muted); margin: 0 0 10px; }}
-  .meta {{ border-top: 1px solid var(--border); padding-top: 8px; font-size: 12px; color: var(--text-muted); }}
-  .kw code {{ color: var(--teal); font-family: "SF Mono", Consolas, monospace; }}
-  .row {{ margin-top: 6px; }}
-  .why {{ margin: 8px 0 0; color: var(--text); font-size: 12.5px; line-height: 1.5; }}
-  .empty {{ color: var(--text-muted); font-size: 13px; }}
+  td {{ padding: 10px; border-bottom: 1px solid var(--border); vertical-align: top; font-size: 13.5px; }}
+  td.rank {{ color: var(--text-muted); font-family: "SF Mono", Consolas, monospace; width: 40px; }}
+  td.score {{ font-family: "SF Mono", Consolas, monospace; text-align: right; width: 60px; }}
+  td.kw code {{ color: var(--teal); font-family: "SF Mono", Consolas, monospace; font-size: 12.5px; }}
+  td.fmt {{ color: var(--text-muted); white-space: nowrap; }}
+  a {{ color: var(--text); text-decoration: none; }}
+  a:hover {{ text-decoration: underline; }}
+  .sub {{ margin-top: 4px; display: flex; gap: 6px; flex-wrap: wrap; }}
+  .tag {{ font-size: 10.5px; padding: 1px 7px; border-radius: 6px; border: 1px solid var(--border); color: var(--text-muted); }}
+  .tag.new {{ color: var(--copper); border-color: #c9793d55; }}
+  .tag.up {{ color: var(--teal); border-color: #4fa8a055; }}
+  .tag.down {{ color: var(--red); border-color: #b5544a55; }}
+  .empty {{ text-align: center; color: var(--text-muted); padding: 2rem; }}
 </style>
 </head>
 <body>
   <div class="header">
-    <div>
-      <h1>今日热泵选题看板</h1>
-      <div class="sub">生成时间：{generated_at_display}</div>
-    </div>
+    <h1>热泵话题热度榜 · Top 50</h1>
+    <div class="sub">更新时间：{generated_at_display} · 覆盖欧洲/中东/亚洲新闻 + Reddit近一年热帖</div>
   </div>
   <div class="stats">
-    <div class="stat"><div class="label">今日候选选题</div><div class="value">{total}</div></div>
-    <div class="stat"><div class="label">待人工复核</div><div class="value">{unverified_count}</div></div>
+    <div class="stat"><div class="label">在榜话题</div><div class="value">{len(active)}</div></div>
+    <div class="stat"><div class="label">今日新上榜</div><div class="value">{new_today}</div></div>
+    <div class="stat"><div class="label">待补充关键词</div><div class="value">{pending_enrich}</div></div>
   </div>
-  <div class="grid">
-    {columns_html}
-  </div>
+  <table>
+    <thead>
+      <tr><th>排名</th><th>话题</th><th>目标长尾词</th><th>建议形式</th><th>热度分</th></tr>
+    </thead>
+    <tbody>
+      {rows_html}
+    </tbody>
+  </table>
 </body>
 </html>
 """
@@ -233,7 +167,7 @@ def main():
     with open(OUT_PATH, "w", encoding="utf-8") as f:
         f.write(html_out)
 
-    print(f"[完成] 看板已生成：{OUT_PATH}")
+    print(f"[完成] 榜单已生成：{OUT_PATH}（在榜 {len(active)} 条）")
 
 
 if __name__ == "__main__":
