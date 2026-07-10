@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>长尾关键词库</title>
+<style>
+  :root {
+    --bg: #14181a; --panel: #1d2224; --border: #2a3134;
+    --text: #edebe6; --text-muted: #8b9296; --teal: #4fa8a0; --copper: #c9793d;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 2rem 1.5rem 4rem; background: var(--bg); color: var(--text);
+    font-family: -apple-system, "PingFang SC", "Segoe UI", sans-serif;
+  }
+  .header { max-width: 980px; margin: 0 auto 1.25rem; display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 8px; }
+  .header h1 { margin: 0; font-size: 22px; font-weight: 500; }
+  .header .sub { color: var(--text-muted); font-size: 13px; margin-top: 4px; }
+  .header a.back { font-size: 12.5px; color: var(--teal); text-decoration: none; border: 1px solid #4fa8a055; padding: 6px 12px; border-radius: 8px; white-space: nowrap; }
+  .stats { max-width: 980px; margin: 0 auto 1.5rem; display: flex; gap: 12px; flex-wrap: wrap; }
+  .stat { background: var(--panel); border: 1px solid var(--border); border-radius: 10px; padding: 12px 16px; min-width: 140px; }
+  .stat .label { font-size: 12px; color: var(--text-muted); }
+  .stat .value { font-size: 22px; font-weight: 500; margin-top: 2px; }
+  table { max-width: 980px; margin: 0 auto; width: 100%; border-collapse: collapse; }
+  th {
+    text-align: left; font-size: 12px; color: var(--text-muted); font-weight: 500;
+    text-transform: uppercase; letter-spacing: 0.04em; padding: 8px 10px; border-bottom: 1px solid var(--border);
+  }
+  td { padding: 10px; border-bottom: 1px solid var(--border); vertical-align: top; font-size: 13px; }
+  td code { color: var(--teal); font-family: "SF Mono", Consolas, monospace; font-size: 12.5px; }
+  td.num { font-family: "SF Mono", Consolas, monospace; }
+  td.muted { color: var(--text-muted); font-size: 12px; max-width: 240px; }
+  a { color: var(--text-muted); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .tag { font-size: 10px; padding: 1px 6px; border-radius: 6px; border: 1px solid var(--border); }
+  .tag.ok { color: var(--teal); border-color: #4fa8a055; }
+  .empty { text-align: center; color: var(--text-muted); padding: 2rem; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <div>
+      <h1>累计长尾关键词库</h1>
+      <div class="sub">更新时间：2026年07月10日 08:12 UTC · 每次话题被LLM标注过就会记录在这里，永久保留，不随话题掉出Top50而丢失</div>
+    </div>
+    <a class="back" href="index.html">← 返回话题榜</a>
+  </div>
+  <div class="stats">
+    <div class="stat"><div class="label">累计关键词</div><div class="value">10</div></div>
+    <div class="stat"><div class="label">已人工核实</div><div class="value">0</div></div>
+  </div>
+  <table>
+    <thead>
+      <tr><th>长尾关键词</th><th>区域</th><th>品类</th><th>建议形式</th><th>重复出现次数</th><th>首次出现</th><th>来源话题</th></tr>
+    </thead>
+    <tbody>
+      
+<tr>
+  <td><code>R290 commercial heat pump for European climate</code></td>
+  <td>欧洲</td>
+  <td>热泵</td>
+  <td>对比测评</td>
+  <td class="num">1</td>
+  <td class="muted">2026-07-10</td>
+  <td class="muted"><a href="https://www.coolingpost.com/products/haier-adds-r290-commercial-heat-pump/" target="_blank" rel="noopener">Haier adds R290 commercial heat pump</a></td>
+</tr>
+
+<tr>
+  <td><code>precision air conditioning for research facilities</code></td>
+  <td>通用</td>
+  <td>空调</td>
+  <td>白皮书</td>
+  <td class="num">1</td>
+  <td class="muted">2026-07-10</td>
+  <td class="muted"><a href="https://www.coolingpost.com/products/energy-saving-constant-temperature-and-humidity-unit/" target="_blank" rel="noopener">Energy-saving constant temperature and humidity unit</a></td>
+</tr>
+
+<tr>
+  <td><code>Germany BEG subsidy heat pump requirements 2026</code></td>
+  <td>欧洲</td>
+  <td>热泵</td>
+  <td>技术博客</td>
+  <td class="num">1</td>
+  <td class="muted">2026-07-10</td>
+  <td class="muted"><a href="https://www.haustechnikdialog.de/News/31651/BEG-Foerderung-2026-KfW-startet-Umstellungsphase-neue-Konditionen-ab-21-Juli" target="_blank" rel="noopener">BEG-Förderung 2026: KfW startet Umstellungsphase – neue Kond</a></td>
+</tr>
+
+<tr>
+  <td><code>GEG-compliant heat pump pipe insulation</code></td>
+  <td>欧洲</td>
+  <td>热泵</td>
+  <td>技术博客</td>
+  <td class="num">1</td>
+  <td class="muted">2026-07-10</td>
+  <td class="muted"><a href="https://www.haustechnikdialog.de/News/31648/Rohrrino-Waermeschutzrohrsystem-fuer-GEG-konforme-Leitungsdaemmung-jetzt-auch-als-klappbare-Variante" target="_blank" rel="noopener">Rohrrino: Wärmeschutzrohrsystem für GEG-konforme Leitungsdäm</a></td>
+</tr>
+
+<tr>
+  <td><code>energy saving HVAC tips for cold climate</code></td>
+  <td>欧洲</td>
+  <td>热泵/空调</td>
+  <td>技术博客</td>
+  <td class="num">1</td>
+  <td class="muted">2026-07-10</td>
+  <td class="muted"><a href="https://www.haustechnikdialog.de/News/31646/Energiesparen-leicht-gemacht" target="_blank" rel="noopener">Energiesparen leicht gemacht</a></td>
+</tr>
+
+<tr>
+  <td><code>HVAC and solar PV system integration</code></td>
+  <td>欧洲</td>
+  <td>热泵/空调</td>
+  <td>技术博客</td>
+  <td class="num">1</td>
+  <td class="muted">2026-07-10</td>
+  <td class="muted"><a href="https://www.haustechnikdialog.de/News/31654/Wie-sich-eine-Photovoltaikanlage-auf-den-Immobilienwert-auswirkt" target="_blank" rel="noopener">Wie sich eine Photovoltaikanlage auf den Immobilienwert ausw</a></td>
+</tr>
+
+<tr>
+  <td><code>residential cooling solutions for heatwaves in Europe</code></td>
+  <td>欧洲</td>
+  <td>空调</td>
+  <td>技术博客</td>
+  <td class="num">1</td>
+  <td class="muted">2026-07-10</td>
+  <td class="muted"><a href="https://www.haustechnikdialog.de/News/31635/Waerme-von-drinnen-einfach-nach-draussen-pumpen-" target="_blank" rel="noopener">Wärme von drinnen einfach nach draußen „pumpen“</a></td>
+</tr>
+
+<tr>
+  <td><code>thermoactive ceiling cooling systems commercial</code></td>
+  <td>欧洲</td>
+  <td>热泵/空调</td>
+  <td>案例研究</td>
+  <td class="num">1</td>
+  <td class="muted">2026-07-10</td>
+  <td class="muted"><a href="https://www.haustechnikdialog.de/News/31645/Klimadecken-im-Geschosswohnbau-nachbarunabhaengige-Wartung-erstmals-direkt-von-unten" target="_blank" rel="noopener">Klimadecken im Geschosswohnbau: nachbarunabhängige Wartung e</a></td>
+</tr>
+
+<tr>
+  <td><code>HVAC company supply chain continuity</code></td>
+  <td>通用</td>
+  <td>热泵/空调</td>
+  <td>技术博客</td>
+  <td class="num">1</td>
+  <td class="muted">2026-07-10</td>
+  <td class="muted"><a href="https://www.haustechnikdialog.de/News/31640/Familiennachfolge-im-Mittelstand-Warum-fehlende-Gespraeche-Unternehmen-gefaehrden" target="_blank" rel="noopener">Familiennachfolge im Mittelstand: Warum fehlende Gespräche U</a></td>
+</tr>
+
+<tr>
+  <td><code>smart home HVAC integration trends</code></td>
+  <td>通用</td>
+  <td>热泵/空调</td>
+  <td>技术博客</td>
+  <td class="num">1</td>
+  <td class="muted">2026-07-10</td>
+  <td class="muted"><a href="https://www.haustechnikdialog.de/News/31626/Smarte-Eingangstuer-Warum-ein-Key-Turner-weit-mehr-als-nur-ein-Schluesseldreher-ist-" target="_blank" rel="noopener">Smarte Eingangstür – Warum ein Key Turner weit mehr als nur </a></td>
+</tr>
+
+    </tbody>
+  </table>
+</body>
+</html>

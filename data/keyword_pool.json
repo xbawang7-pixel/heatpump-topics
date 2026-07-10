@@ -1,0 +1,122 @@
+{
+  "r290 commercial heat pump for european climate": {
+    "keyword": "R290 commercial heat pump for European climate",
+    "region": "europe",
+    "product_category": "heat_pump",
+    "content_format": "comparison",
+    "first_seen": "2026-07-10",
+    "last_seen": "2026-07-10",
+    "times_seen": 1,
+    "sample_title": "Haier adds R290 commercial heat pump",
+    "sample_link": "https://www.coolingpost.com/products/haier-adds-r290-commercial-heat-pump/",
+    "keyword_validated": false
+  },
+  "precision air conditioning for research facilities": {
+    "keyword": "precision air conditioning for research facilities",
+    "region": "global",
+    "product_category": "air_conditioner",
+    "content_format": "whitepaper",
+    "first_seen": "2026-07-10",
+    "last_seen": "2026-07-10",
+    "times_seen": 1,
+    "sample_title": "Energy-saving constant temperature and humidity unit",
+    "sample_link": "https://www.coolingpost.com/products/energy-saving-constant-temperature-and-humidity-unit/",
+    "keyword_validated": false
+  },
+  "germany beg subsidy heat pump requirements 2026": {
+    "keyword": "Germany BEG subsidy heat pump requirements 2026",
+    "region": "europe",
+    "product_category": "heat_pump",
+    "content_format": "blog",
+    "first_seen": "2026-07-10",
+    "last_seen": "2026-07-10",
+    "times_seen": 1,
+    "sample_title": "BEG-Förderung 2026: KfW startet Umstellungsphase – neue Konditionen ab 21. Juli",
+    "sample_link": "https://www.haustechnikdialog.de/News/31651/BEG-Foerderung-2026-KfW-startet-Umstellungsphase-neue-Konditionen-ab-21-Juli",
+    "keyword_validated": false
+  },
+  "geg-compliant heat pump pipe insulation": {
+    "keyword": "GEG-compliant heat pump pipe insulation",
+    "region": "europe",
+    "product_category": "heat_pump",
+    "content_format": "blog",
+    "first_seen": "2026-07-10",
+    "last_seen": "2026-07-10",
+    "times_seen": 1,
+    "sample_title": "Rohrrino: Wärmeschutzrohrsystem für GEG-konforme Leitungsdämmung – jetzt auch als klappbare Variante",
+    "sample_link": "https://www.haustechnikdialog.de/News/31648/Rohrrino-Waermeschutzrohrsystem-fuer-GEG-konforme-Leitungsdaemmung-jetzt-auch-als-klappbare-Variante",
+    "keyword_validated": false
+  },
+  "energy saving hvac tips for cold climate": {
+    "keyword": "energy saving HVAC tips for cold climate",
+    "region": "europe",
+    "product_category": "both",
+    "content_format": "blog",
+    "first_seen": "2026-07-10",
+    "last_seen": "2026-07-10",
+    "times_seen": 1,
+    "sample_title": "Energiesparen leicht gemacht",
+    "sample_link": "https://www.haustechnikdialog.de/News/31646/Energiesparen-leicht-gemacht",
+    "keyword_validated": false
+  },
+  "hvac and solar pv system integration": {
+    "keyword": "HVAC and solar PV system integration",
+    "region": "europe",
+    "product_category": "both",
+    "content_format": "blog",
+    "first_seen": "2026-07-10",
+    "last_seen": "2026-07-10",
+    "times_seen": 1,
+    "sample_title": "Wie sich eine Photovoltaikanlage auf den Immobilienwert auswirkt",
+    "sample_link": "https://www.haustechnikdialog.de/News/31654/Wie-sich-eine-Photovoltaikanlage-auf-den-Immobilienwert-auswirkt",
+    "keyword_validated": false
+  },
+  "residential cooling solutions for heatwaves in europe": {
+    "keyword": "residential cooling solutions for heatwaves in Europe",
+    "region": "europe",
+    "product_category": "air_conditioner",
+    "content_format": "blog",
+    "first_seen": "2026-07-10",
+    "last_seen": "2026-07-10",
+    "times_seen": 1,
+    "sample_title": "Wärme von drinnen einfach nach draußen „pumpen“",
+    "sample_link": "https://www.haustechnikdialog.de/News/31635/Waerme-von-drinnen-einfach-nach-draussen-pumpen-",
+    "keyword_validated": false
+  },
+  "thermoactive ceiling cooling systems commercial": {
+    "keyword": "thermoactive ceiling cooling systems commercial",
+    "region": "europe",
+    "product_category": "both",
+    "content_format": "case_study",
+    "first_seen": "2026-07-10",
+    "last_seen": "2026-07-10",
+    "times_seen": 1,
+    "sample_title": "Klimadecken im Geschosswohnbau: nachbarunabhängige Wartung erstmals direkt von unten",
+    "sample_link": "https://www.haustechnikdialog.de/News/31645/Klimadecken-im-Geschosswohnbau-nachbarunabhaengige-Wartung-erstmals-direkt-von-unten",
+    "keyword_validated": false
+  },
+  "hvac company supply chain continuity": {
+    "keyword": "HVAC company supply chain continuity",
+    "region": "global",
+    "product_category": "both",
+    "content_format": "blog",
+    "first_seen": "2026-07-10",
+    "last_seen": "2026-07-10",
+    "times_seen": 1,
+    "sample_title": "Familiennachfolge im Mittelstand: Warum fehlende Gespräche Unternehmen gefährden",
+    "sample_link": "https://www.haustechnikdialog.de/News/31640/Familiennachfolge-im-Mittelstand-Warum-fehlende-Gespraeche-Unternehmen-gefaehrden",
+    "keyword_validated": false
+  },
+  "smart home hvac integration trends": {
+    "keyword": "smart home HVAC integration trends",
+    "region": "global",
+    "product_category": "both",
+    "content_format": "blog",
+    "first_seen": "2026-07-10",
+    "last_seen": "2026-07-10",
+    "times_seen": 1,
+    "sample_title": "Smarte Eingangstür – Warum ein Key Turner weit mehr als nur ein „Schlüsseldreher“ ist!",
+    "sample_link": "https://www.haustechnikdialog.de/News/31626/Smarte-Eingangstuer-Warum-ein-Key-Turner-weit-mehr-als-nur-ein-Schluesseldreher-ist-",
+    "keyword_validated": false
+  }
+}
