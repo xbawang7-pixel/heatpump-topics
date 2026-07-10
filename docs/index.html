@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>热泵选题看板</title>
+<style>
+  :root {
+    --bg: #14181a;
+    --panel: #1d2224;
+    --border: #2a3134;
+    --text: #edebe6;
+    --text-muted: #8b9296;
+    --copper: #c9793d;
+    --teal: #4fa8a0;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 2rem 1.5rem 4rem;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, "PingFang SC", "Segoe UI", sans-serif;
+  }
+  .header {
+    max-width: 1100px;
+    margin: 0 auto 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .header h1 { margin: 0; font-size: 22px; font-weight: 500; }
+  .header .sub { color: var(--text-muted); font-size: 13px; margin-top: 4px; }
+  .stats {
+    max-width: 1100px;
+    margin: 0 auto 1.5rem;
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  .stat {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 12px 16px;
+    min-width: 140px;
+  }
+  .stat .label { font-size: 12px; color: var(--text-muted); }
+  .stat .value { font-size: 22px; font-weight: 500; margin-top: 2px; }
+  .grid {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+  }
+  .column-header {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 10px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--border);
+  }
+  .card {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 14px 16px;
+    margin-bottom: 12px;
+  }
+  .badges { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 8px; }
+  .badge {
+    font-size: 11px;
+    padding: 2px 8px;
+    border-radius: 6px;
+    border: 1px solid var(--border);
+    color: var(--text-muted);
+  }
+  .badge.trend { border-width: 1px; }
+  .badge.unverified { color: var(--copper); border-color: #c9793d44; }
+  .card h3 { font-size: 15px; font-weight: 500; margin: 0 0 6px; line-height: 1.4; }
+  .trigger { font-size: 12px; color: var(--text-muted); margin: 0 0 10px; }
+  .meta { border-top: 1px solid var(--border); padding-top: 8px; font-size: 12px; color: var(--text-muted); }
+  .kw code { color: var(--teal); font-family: "SF Mono", Consolas, monospace; }
+  .row { margin-top: 6px; }
+  .why { margin: 8px 0 0; color: var(--text); font-size: 12.5px; line-height: 1.5; }
+  .empty { color: var(--text-muted); font-size: 13px; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <div>
+      <h1>今日热泵选题看板</h1>
+      <div class="sub">生成时间：2026年07月10日 03:51 UTC</div>
+    </div>
+  </div>
+  <div class="stats">
+    <div class="stat"><div class="label">今日候选选题</div><div class="value">0</div></div>
+    <div class="stat"><div class="label">待人工复核</div><div class="value">0</div></div>
+  </div>
+  <div class="grid">
+    
+        <div class="column">
+          <div class="column-header">欧洲</div>
+          <p class="empty">今天没有值得写的新闻，明天再看。</p>
+        </div>
+        
+        <div class="column">
+          <div class="column-header">中东</div>
+          <p class="empty">今天没有值得写的新闻，明天再看。</p>
+        </div>
+        
+        <div class="column">
+          <div class="column-header">亚洲</div>
+          <p class="empty">今天没有值得写的新闻，明天再看。</p>
+        </div>
+        
+  </div>
+</body>
+</html>
