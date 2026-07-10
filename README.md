@@ -17,11 +17,25 @@
 跟之前一样：新建GitHub仓库、上传这些文件、开启GitHub Pages（分支`main`，目录`/docs`）。
 如果你已经有一个跑起来的旧版仓库，直接看下面"从旧版迁移"。
 
-## 二、配置Gemini API Key
+## 二、配置Gemini API Key + Reddit应用凭证
 
-1. 打开 https://aistudio.google.com/apikey ，登录Google账号，创建key（不需要绑卡）
+**Gemini**（不需要绑卡）：
+
+1. 打开 https://aistudio.google.com/apikey ，登录Google账号，创建key
 2. 仓库 -> `Settings` -> `Secrets and variables` -> `Actions` -> `New repository secret`
 3. Name: `GEMINI_API_KEY`，Value填你的key
+
+**Apify**（Reddit数据来源，按结果付费，不需要注册Reddit应用，每月5美元免费额度）：
+
+1. 打开 https://console.apify.com/sign-up ，用邮箱注册（不用绑卡）
+2. 登录后，右上角头像 -> `Settings` -> `API & Integrations`，复制你的 `Personal API token`
+3. 同样加一个repository secret：`APIFY_API_TOKEN`
+4. 成本说明：Reddit这部分改成**每周一**才抓一次（不是每天），一次约1.2美元，
+   一个月4次约4.8美元，压在5美元免费额度内。如果调整了`config/sources.yaml`里
+   板块数量或`REDDIT_LIMIT`，注意重新估算成本，别超出免费额度太多
+5. 如果实际调用报"输入格式错误"，去 https://apify.com/harshmaur/reddit-scraper/input-schema
+   核对一下真实的输入字段名，照着改 `scripts/collect_candidates.py` 里
+   `collect_reddit()` 函数里的 `payload` 变量就行
 
 ## 三、从旧版迁移（如果你之前已经跑通过"每日选题"那一版）
 

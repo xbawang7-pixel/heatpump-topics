@@ -17,6 +17,9 @@ REGION_LABELS = {
     "europe": "欧洲", "middle_east": "中东", "asia": "亚洲",
     "africa": "非洲", "south_america": "南美", "global": "通用",
 }
+PRODUCT_LABELS = {
+    "heat_pump": "热泵", "air_conditioner": "空调", "both": "热泵/空调",
+}
 FORMAT_LABELS = {
     "blog": "技术博客", "case_study": "案例研究",
     "whitepaper": "白皮书", "comparison": "对比测评",
@@ -44,13 +47,14 @@ def movement_badge(entry):
 
 
 ROW_TEMPLATE = """
-<tr>
+<tr data-region="{region_key}" data-product="{product_key}">
   <td class="rank">#{rank}</td>
   <td class="title-cell">
     <a href="{link}" target="_blank" rel="noopener">{title}</a>
     <div class="sub">
       <span class="tag source">{source_label}</span>
       <span class="tag region">{region_label}</span>
+      <span class="tag product">{product_label}</span>
       {movement}
     </div>
   </td>
@@ -64,14 +68,20 @@ ROW_TEMPLATE = """
 def render_row(entry):
     target_keyword = entry.get("target_keyword") or "（待补充，下次运行会自动生成）"
     content_format = FORMAT_LABELS.get(entry.get("content_format"), "待定")
-    region_label = REGION_LABELS.get(entry.get("region"), "待定")
+    region_key = entry.get("region") or "global"
+    region_label = REGION_LABELS.get(region_key, "待定")
+    product_key = entry.get("product_category") or "both"
+    product_label = PRODUCT_LABELS.get(product_key, "待定")
     source_label = SOURCE_TYPE_LABELS.get(entry.get("source_type"), entry.get("source_type", ""))
     return ROW_TEMPLATE.format(
         rank=entry.get("rank"),
+        region_key=esc(region_key),
+        product_key=esc(product_key),
         link=esc(entry.get("link", "")),
         title=esc(entry.get("title", "")),
         source_label=esc(source_label),
         region_label=esc(region_label),
+        product_label=esc(product_label),
         movement=movement_badge(entry),
         target_keyword=f"<code>{esc(target_keyword)}</code>",
         content_format=esc(content_format),
@@ -97,12 +107,23 @@ def main():
 
     generated_at_display = datetime.now(timezone.utc).strftime("%Y年%m月%d日 %H:%M UTC")
 
+    active_regions = sorted(set((e.get("region") or "global") for e in active))
+    filter_buttons = '<button class="filter-btn active" data-filter="all">全部</button>' + "".join(
+        f'<button class="filter-btn" data-filter="{esc(r)}">{esc(REGION_LABELS.get(r, r))}</button>'
+        for r in active_regions
+    )
+    active_products = sorted(set((e.get("product_category") or "both") for e in active))
+    product_buttons = '<button class="pfilter-btn active" data-pfilter="all">全部品类</button>' + "".join(
+        f'<button class="pfilter-btn" data-pfilter="{esc(p)}">{esc(PRODUCT_LABELS.get(p, p))}</button>'
+        for p in active_products
+    )
+
     html_out = f"""<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>热泵话题热度榜 Top 50</title>
+<title>热泵+空调话题热度榜 Top 50</title>
 <style>
   :root {{
     --bg: #14181a; --panel: #1d2224; --border: #2a3134;
@@ -114,13 +135,28 @@ def main():
     margin: 0; padding: 2rem 1.5rem 4rem; background: var(--bg); color: var(--text);
     font-family: -apple-system, "PingFang SC", "Segoe UI", sans-serif;
   }}
-  .header {{ max-width: 980px; margin: 0 auto 1.25rem; }}
+  .header {{ max-width: 980px; margin: 0 auto 1.25rem; display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 8px; }}
   .header h1 {{ margin: 0; font-size: 22px; font-weight: 500; }}
   .header .sub {{ color: var(--text-muted); font-size: 13px; margin-top: 4px; }}
-  .stats {{ max-width: 980px; margin: 0 auto 1.5rem; display: flex; gap: 12px; flex-wrap: wrap; }}
+  .header a.kwlink {{ font-size: 12.5px; color: var(--teal); text-decoration: none; border: 1px solid #4fa8a055; padding: 6px 12px; border-radius: 8px; white-space: nowrap; }}
+  .header a.kwlink:hover {{ background: #4fa8a015; }}
+  .stats {{ max-width: 980px; margin: 0 auto 1rem; display: flex; gap: 12px; flex-wrap: wrap; }}
   .stat {{ background: var(--panel); border: 1px solid var(--border); border-radius: 10px; padding: 12px 16px; min-width: 140px; }}
   .stat .label {{ font-size: 12px; color: var(--text-muted); }}
   .stat .value {{ font-size: 22px; font-weight: 500; margin-top: 2px; }}
+  .filters {{ max-width: 980px; margin: 0 auto 1.25rem; display: flex; gap: 8px; flex-wrap: wrap; }}
+  .filter-btn {{
+    font-size: 12.5px; padding: 6px 14px; border-radius: 999px; border: 1px solid var(--border);
+    background: var(--panel); color: var(--text-muted); cursor: pointer; font-family: inherit;
+  }}
+  .filter-btn:hover {{ color: var(--text); }}
+  .filter-btn.active {{ background: var(--teal); color: #0c1211; border-color: var(--teal); font-weight: 500; }}
+  .pfilter-btn {{
+    font-size: 12.5px; padding: 6px 14px; border-radius: 999px; border: 1px solid var(--border);
+    background: var(--panel); color: var(--text-muted); cursor: pointer; font-family: inherit;
+  }}
+  .pfilter-btn:hover {{ color: var(--text); }}
+  .pfilter-btn.active {{ background: var(--copper); color: #1a0f08; border-color: var(--copper); font-weight: 500; }}
   table {{ max-width: 980px; margin: 0 auto; width: 100%; border-collapse: collapse; }}
   th {{
     text-align: left; font-size: 12px; color: var(--text-muted); font-weight: 500;
@@ -143,13 +179,22 @@ def main():
 </head>
 <body>
   <div class="header">
-    <h1>热泵话题热度榜 · Top 50</h1>
-    <div class="sub">更新时间：{generated_at_display} · 覆盖欧洲/中东/亚洲新闻 + Reddit近一年热帖</div>
+    <div>
+      <h1>热泵+空调话题热度榜 · Top 50</h1>
+      <div class="sub">更新时间：{generated_at_display} · 覆盖欧洲/中东/亚洲/非洲/南美新闻 + Reddit近一年热帖</div>
+    </div>
+    <a class="kwlink" href="keywords.html">查看累计长尾关键词库 →</a>
   </div>
   <div class="stats">
     <div class="stat"><div class="label">在榜话题</div><div class="value">{len(active)}</div></div>
     <div class="stat"><div class="label">今日新上榜</div><div class="value">{new_today}</div></div>
     <div class="stat"><div class="label">待补充关键词</div><div class="value">{pending_enrich}</div></div>
+  </div>
+  <div class="filters">
+    {filter_buttons}
+  </div>
+  <div class="filters">
+    {product_buttons}
   </div>
   <table>
     <thead>
@@ -159,6 +204,33 @@ def main():
       {rows_html}
     </tbody>
   </table>
+  <script>
+    var currentRegion = 'all';
+    var currentProduct = 'all';
+    function applyFilters() {{
+      document.querySelectorAll('tbody tr').forEach(function(row) {{
+        var regionOk = (currentRegion === 'all' || row.dataset.region === currentRegion);
+        var productOk = (currentProduct === 'all' || row.dataset.product === currentProduct);
+        row.style.display = (regionOk && productOk) ? '' : 'none';
+      }});
+    }}
+    document.querySelectorAll('.filter-btn').forEach(function(btn) {{
+      btn.addEventListener('click', function() {{
+        document.querySelectorAll('.filter-btn').forEach(function(b) {{ b.classList.remove('active'); }});
+        btn.classList.add('active');
+        currentRegion = btn.dataset.filter;
+        applyFilters();
+      }});
+    }});
+    document.querySelectorAll('.pfilter-btn').forEach(function(btn) {{
+      btn.addEventListener('click', function() {{
+        document.querySelectorAll('.pfilter-btn').forEach(function(b) {{ b.classList.remove('active'); }});
+        btn.classList.add('active');
+        currentProduct = btn.dataset.pfilter;
+        applyFilters();
+      }});
+    }});
+  </script>
 </body>
 </html>
 """

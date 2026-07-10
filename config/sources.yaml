@@ -21,6 +21,8 @@ regions:
       rss: "https://www.waermepumpe.de/feed/"
     - name: "Cooling Post (欧洲制冷/热泵行业媒体)"
       rss: "https://www.coolingpost.com/feed/"
+    - name: "HaustechnikDialog (德国最大暖通门户新闻栏目)"
+      rss: "https://www.haustechnikdialog.de/News/RSS.ashx"
     # 建议核实后补充（GPT建议但RSS地址未验证，先别直接用，查到了再加）：
     # - Eurovent（欧洲HVACR协会，官网提到有RSS但地址需要自己去官网确认）
     # - ACR News（英国HVACR行业媒体）
@@ -39,6 +41,13 @@ regions:
     # 建议核实后补充：
     # - JARN（日本亚洲HVACR行业媒体，全球权威源之一，强烈建议优先去核实这个）
     # - 中国制冷学会 / 中国家用电器协会 官网新闻页
+
+  global:
+    # 不特定区域、覆盖面广的北美/国际HVACR权威行业媒体，交给LLM按标题内容判断region
+    - name: "ACHR News (北美HVACR行业权威媒体)"
+      rss: "https://www.achrnews.com/rss/articles"
+    - name: "Consulting-Specifying Engineer - HVAC/R"
+      rss: "https://www.csemag.com/hvacr-mechanical/feed/"
 
   africa:
     # 非洲目前还没有验证过的RSS源，先留空框架，
@@ -68,6 +77,8 @@ reddit_subreddits:
     slug: "energy"
   - name: "r/solar"
     slug: "solar"
+  - name: "r/AirConditioners"
+    slug: "AirConditioners"
 
   # 欧洲
   - name: "r/Waermepumpe (德国)"
@@ -138,3 +149,8 @@ seed_keywords:
   - "commercial heat pump manufacturer"
   - "heat pump erp label"
   - "heat pump distributor"
+  # 空调方向（中东市场权重更高）：
+  - "T3 air conditioner manufacturer"
+  - "high ambient air conditioner 50c"
+  - "district cooling system supplier"
+  - "commercial air conditioner distributor"

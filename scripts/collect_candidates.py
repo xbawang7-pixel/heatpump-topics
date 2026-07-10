@@ -5,13 +5,20 @@
 
 输出到 data/candidates.json，供 update_topic_bank.py 合并进持久化话题库。
 
-注意：Reddit的公开JSON接口不需要账号/key，但必须带一个像样的User-Agent，
-否则容易被限流(429)。这里做了基本的重试和限流保护。
+注意：Reddit的匿名/官方接口都被证明不适合这个场景（匿名接口拦截云IP，
+官方OAuth注册流程容易被网络环境卡住），改用 Apify 平台上的第三方Reddit抓取器
+（harshmaur/reddit-scraper），按结果付费，不需要注册Reddit应用。
+需要环境变量 APIFY_API_TOKEN，去 https://console.apify.com 免费注册获取
+（不用绑卡，每月5美元免费额度）。
+
+成本控制：这个抓取器按$2/1000条结果收费。24个板块 × 25条 ≈ 1.2美元/次，
+如果每天跑会超出免费额度，所以Reddit这部分改成"每周跑一次"（由外部环境变量
+RUN_REDDIT 控制，workflow里只在每周一设置为true），一个月约4次，
+控制在5美元免费额度内。
 """
 import hashlib
 import json
 import os
-import time
 from datetime import datetime, timedelta, timezone
 
 import feedparser
@@ -24,8 +31,10 @@ DATA_DIR = os.path.join(ROOT, "data")
 OUT_PATH = os.path.join(DATA_DIR, "candidates.json")
 
 NEWS_LOOKBACK_HOURS = int(os.environ.get("LOOKBACK_HOURS", "168"))  # 默认7天
-REDDIT_HEADERS = {"User-Agent": "heatpump-topics-bot/1.0 (by /u/heatpump_research)"}
 REDDIT_LIMIT = 25  # 每个板块抓多少条
+
+APIFY_ACTOR = "harshmaur~reddit-scraper"  # Apify Store上的actor标识（~代替/）
+APIFY_RUN_URL = f"https://api.apify.com/v2/acts/{APIFY_ACTOR}/run-sync-get-dataset-items"
 
 
 def make_id(link, title):
@@ -85,54 +94,76 @@ def collect_news(config):
 
 def collect_reddit(config):
     candidates = []
-    subs = config.get("reddit_subreddits", []) or []
-    for sub in subs:
-        slug = sub.get("slug")
-        name = sub.get("name", f"r/{slug}")
-        region_hint = sub.get("region")  # 可能为 None，代表全球通用板块
-        if not slug:
-            continue
-        url = f"https://www.reddit.com/r/{slug}/top/.json?t=year&limit={REDDIT_LIMIT}"
-        try:
-            resp = requests.get(url, headers=REDDIT_HEADERS, timeout=15)
-            if resp.status_code != 200:
-                print(f"[警告] Reddit {name} 请求失败: HTTP {resp.status_code}")
-                time.sleep(3)
-                continue
-            payload = resp.json()
-        except Exception as e:
-            print(f"[警告] Reddit {name} 请求异常: {e}")
-            time.sleep(3)
-            continue
 
-        posts = payload.get("data", {}).get("children", [])
-        for post in posts:
-            p = post.get("data", {})
-            title = (p.get("title") or "").strip()
-            if not title:
-                continue
-            link = "https://www.reddit.com" + p.get("permalink", "")
-            created = p.get("created_utc")
-            published = (
-                datetime.fromtimestamp(created, tz=timezone.utc).isoformat()
-                if created else None
-            )
-            candidates.append({
-                "id": make_id(link, title),
-                "title": title,
-                "link": link,
-                "summary": (p.get("selftext") or "")[:400],
-                "source_type": "reddit",
-                "source_name": name,
-                "region": region_hint,  # 有配置就用配置的，没有就留空交给LLM判断
-                "engagement": {
-                    "score": p.get("score", 0),
-                    "comments": p.get("num_comments", 0),
-                },
-                "published": published,
-            })
-        print(f"[信息] Reddit-{name}: 抓到 {len(posts)} 条")
-        time.sleep(2)  # 避免请求过快被限流
+    if os.environ.get("RUN_REDDIT", "").lower() != "true":
+        print("[信息] 今天不是每周Reddit抓取日，跳过（省Apify额度）")
+        return candidates
+
+    subs = config.get("reddit_subreddits", []) or []
+    if not subs:
+        return candidates
+
+    api_token = os.environ.get("APIFY_API_TOKEN")
+    if not api_token:
+        print("[警告] 没有配置 APIFY_API_TOKEN，跳过Reddit抓取")
+        return candidates
+
+    subreddit_names = [s.get("slug") for s in subs if s.get("slug")]
+    region_by_slug = {s.get("slug"): s.get("region") for s in subs}
+    name_by_slug = {s.get("slug"): s.get("name", f"r/{s.get('slug')}") for s in subs}
+
+    # 注意：这个字段名是根据Apify这类Reddit actor的常见输入规范写的
+    # (subreddits / sort / timeFilter / maxItems)。如果实际调用报"输入格式错误"，
+    # 去 https://apify.com/harshmaur/reddit-scraper/input-schema 核对一下
+    # 真实字段名，照着改这里的payload就行，不是代码逻辑问题。
+    payload = {
+        "subreddits": subreddit_names,
+        "sort": "top",
+        "timeFilter": "year",
+        "maxItems": REDDIT_LIMIT * len(subreddit_names),
+        "maxPostsPerSource": REDDIT_LIMIT,
+        "skipComments": True,
+    }
+
+    try:
+        resp = requests.post(
+            APIFY_RUN_URL,
+            params={"token": api_token},
+            json=payload,
+            timeout=280,  # Apify同步接口最多等5分钟，留一点余量
+        )
+        if resp.status_code != 200:
+            print(f"[警告] Apify Reddit抓取失败: HTTP {resp.status_code} - {resp.text[:300]}")
+            return candidates
+        items = resp.json()
+    except Exception as e:
+        print(f"[警告] Apify Reddit抓取异常: {e}")
+        return candidates
+
+    for item in items:
+        if item.get("dataType") and item.get("dataType") != "post":
+            continue
+        title = (item.get("title") or "").strip()
+        if not title:
+            continue
+        link = item.get("url") or ""
+        slug = (item.get("parsedCommunityName") or item.get("communityName", "").lstrip("r/") or "").strip()
+        candidates.append({
+            "id": make_id(link, title),
+            "title": title,
+            "link": link,
+            "summary": (item.get("body") or "")[:400],
+            "source_type": "reddit",
+            "source_name": name_by_slug.get(slug, f"r/{slug}" if slug else "Reddit"),
+            "region": region_by_slug.get(slug),
+            "engagement": {
+                "score": item.get("upVotes", 0) or 0,
+                "comments": item.get("numberOfComments", 0) or 0,
+            },
+            "published": item.get("createdAt"),
+        })
+
+    print(f"[完成] Apify Reddit抓取: 共 {len(candidates)} 条")
     return candidates
 
 

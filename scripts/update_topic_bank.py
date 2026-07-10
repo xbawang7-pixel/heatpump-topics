@@ -76,6 +76,7 @@ def main():
                 "source_type": c["source_type"],
                 "source_name": c["source_name"],
                 "region": c.get("region"),
+                "product_category": None,
                 "score": raw,
                 "reappear_count": 1,
                 "first_seen": today,
