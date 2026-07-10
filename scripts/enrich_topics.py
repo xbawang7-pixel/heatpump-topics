@@ -22,7 +22,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA_DIR = os.path.join(ROOT, "data")
 BANK_PATH = os.path.join(DATA_DIR, "topic_bank.json")
 
-MODEL = os.environ.get("GEMINI_MODEL", "gemini-2.0-flash")
+MODEL = os.environ.get("GEMINI_MODEL", "gemini-2.5-flash-lite")
 
 SYSTEM_PROMPT = """你是一个专门服务B2B热泵出口企业的内容策略顾问。
 读者是热泵采购商、经销商、工程公司，目标市场是欧洲、中东、亚洲、非洲、南美。
