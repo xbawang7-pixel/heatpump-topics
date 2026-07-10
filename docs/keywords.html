@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>长尾关键词库</title>
+<style>
+  :root {
+    --bg: #ffffff; --surface: #fafaf9; --border: #eaeae7;
+    --text: #1c1c1a; --text-muted: #8a8a85; --accent: #3c6e5c; --accent-soft: #3c6e5c14;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 3rem 1.5rem 5rem; background: var(--bg); color: var(--text);
+    font-family: -apple-system, "PingFang SC", "Hiragino Sans GB", "Segoe UI", sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .header {
+    max-width: 1080px; margin: 0 auto 2rem; display: flex; justify-content: space-between;
+    align-items: flex-end; flex-wrap: wrap; gap: 12px; border-bottom: 1px solid var(--border);
+    padding-bottom: 1.5rem;
+  }
+  .header h1 { margin: 0; font-size: 26px; font-weight: 600; font-family: Georgia, "Songti SC", serif; }
+  .header .sub { color: var(--text-muted); font-size: 13px; margin-top: 6px; }
+  .header a.back {
+    font-size: 12.5px; color: var(--accent); text-decoration: none; border: 1px solid var(--border);
+    padding: 7px 14px; border-radius: 999px; white-space: nowrap;
+  }
+  .header a.back:hover { background: var(--accent-soft); }
+  .stats { max-width: 1080px; margin: 0 auto 2rem; display: flex; gap: 14px; flex-wrap: wrap; }
+  .stat { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 14px 20px; min-width: 150px; }
+  .stat .label { font-size: 11.5px; color: var(--text-muted); }
+  .stat .value { font-size: 24px; font-weight: 600; margin-top: 4px; font-family: Georgia, serif; }
+  table { max-width: 1080px; margin: 0 auto; width: 100%; border-collapse: collapse; }
+  th {
+    text-align: left; font-size: 11px; color: var(--text-muted); font-weight: 600;
+    text-transform: uppercase; letter-spacing: 0.06em; padding: 10px 12px; border-bottom: 1px solid var(--border);
+  }
+  td { padding: 14px 12px; border-bottom: 1px solid var(--border); vertical-align: top; font-size: 13px; }
+  tr:hover td { background: var(--surface); }
+  td code { color: var(--accent); font-family: "SF Mono", Menlo, monospace; font-size: 12px; background: var(--accent-soft); padding: 2px 6px; border-radius: 5px; }
+  td.num { font-family: "SF Mono", Menlo, monospace; color: var(--text-muted); }
+  td.muted { color: var(--text-muted); font-size: 12px; max-width: 240px; }
+  a { color: var(--text-muted); text-decoration: none; }
+  a:hover { color: var(--accent); }
+  .tag { font-size: 10px; padding: 2px 7px; border-radius: 999px; border: 1px solid var(--border); }
+  .tag.ok { color: var(--accent); border-color: #3c6e5c40; background: var(--accent-soft); }
+  .empty { text-align: center; color: var(--text-muted); padding: 3rem; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <div>
+      <h1>累计长尾关键词库</h1>
+      <div class="sub">更新时间：2026年07月10日 14:41 UTC · 每次话题被LLM标注过就会记录在这里，永久保留，不随话题掉出Top50而丢失</div>
+    </div>
+    <a class="back" href="index.html">← 返回话题榜</a>
+  </div>
+  <div class="stats">
+    <div class="stat"><div class="label">累计关键词</div><div class="value">10</div></div>
+    <div class="stat"><div class="label">已人工核实</div><div class="value">0</div></div>
+  </div>
+  <table>
+    <thead>
+      <tr><th>长尾关键词</th><th>区域</th><th>品类</th><th>建议形式</th><th>重复出现次数</th><th>首次出现</th><th>来源话题</th></tr>
+    </thead>
+    <tbody>
+      
+<tr>
+  <td><code>energy efficient HVAC solutions for climate resilience</code></td>
+  <td>欧洲</td>
+  <td>热泵/空调</td>
+  <td>白皮书</td>
+  <td class="num">1</td>
+  <td class="muted">2026-07-10</td>
+  <td class="muted"><a href="https://ehpa.org/news-and-resources/projects/cooling-a-warming-world-new-eu-project-to-help-shape-climate-policy/" target="_blank" rel="noopener">Cooling a warming world: new EU project to help shape climat</a></td>
+</tr>
+
+<tr>
+  <td><code>BEG-Förderung 2026 heat pump subsidy requirements</code></td>
+  <td>欧洲</td>
+  <td>热泵</td>
+  <td>技术博客</td>
+  <td class="num">1</td>
+  <td class="muted">2026-07-10</td>
+  <td class="muted"><a href="https://www.haustechnikdialog.de/News/31651/BEG-Foerderung-2026-KfW-startet-Umstellungsphase-neue-Konditionen-ab-21-Juli" target="_blank" rel="noopener">BEG-Förderung 2026: KfW startet Umstellungsphase – neue Kond</a></td>
+</tr>
+
+<tr>
+  <td><code>efficient heat pump piping insulation standards Germany</code></td>
+  <td>欧洲</td>
+  <td>热泵</td>
+  <td>对比测评</td>
+  <td class="num">1</td>
+  <td class="muted">2026-07-10</td>
+  <td class="muted"><a href="https://www.haustechnikdialog.de/News/31648/Rohrrino-Waermeschutzrohrsystem-fuer-GEG-konforme-Leitungsdaemmung-jetzt-auch-als-klappbare-Variante" target="_blank" rel="noopener">Rohrrino: Wärmeschutzrohrsystem für GEG-konforme Leitungsdäm</a></td>
+</tr>
+
+<tr>
+  <td><code>simple energy saving tips for home hvac</code></td>
+  <td>欧洲</td>
+  <td>热泵/空调</td>
+  <td>技术博客</td>
+  <td class="num">1</td>
+  <td class="muted">2026-07-10</td>
+  <td class="muted"><a href="https://www.haustechnikdialog.de/News/31646/Energiesparen-leicht-gemacht" target="_blank" rel="noopener">Energiesparen leicht gemacht</a></td>
+</tr>
+
+<tr>
+  <td><code>impact of solar PV on hvac system ROI</code></td>
+  <td>欧洲</td>
+  <td>热泵/空调</td>
+  <td>技术博客</td>
+  <td class="num">1</td>
+  <td class="muted">2026-07-10</td>
+  <td class="muted"><a href="https://www.haustechnikdialog.de/News/31654/Wie-sich-eine-Photovoltaikanlage-auf-den-Immobilienwert-auswirkt" target="_blank" rel="noopener">Wie sich eine Photovoltaikanlage auf den Immobilienwert ausw</a></td>
+</tr>
+
+<tr>
+  <td><code>Germany 2026 heating law impact on hvac</code></td>
+  <td>欧洲</td>
+  <td>热泵/空调</td>
+  <td>技术博客</td>
+  <td class="num">1</td>
+  <td class="muted">2026-07-10</td>
+  <td class="muted"><a href="https://www.haustechnikdialog.de/News/31661/Heizungsgesetz-2026-beschlossen-Das-aendert-sich-" target="_blank" rel="noopener">Heizungsgesetz 2026 beschlossen: Das ändert sich!</a></td>
+</tr>
+
+<tr>
+  <td><code>reversible heat pump for cooling and heating</code></td>
+  <td>欧洲</td>
+  <td>热泵/空调</td>
+  <td>技术博客</td>
+  <td class="num">1</td>
+  <td class="muted">2026-07-10</td>
+  <td class="muted"><a href="https://www.haustechnikdialog.de/News/31635/Waerme-von-drinnen-einfach-nach-draussen-pumpen-" target="_blank" rel="noopener">Wärme von drinnen einfach nach draußen „pumpen“</a></td>
+</tr>
+
+<tr>
+  <td><code>ceiling cooling systems installation engineering</code></td>
+  <td>欧洲</td>
+  <td>空调</td>
+  <td>案例研究</td>
+  <td class="num">1</td>
+  <td class="muted">2026-07-10</td>
+  <td class="muted"><a href="https://www.haustechnikdialog.de/News/31645/Klimadecken-im-Geschosswohnbau-nachbarunabhaengige-Wartung-erstmals-direkt-von-unten" target="_blank" rel="noopener">Klimadecken im Geschosswohnbau: nachbarunabhängige Wartung e</a></td>
+</tr>
+
+<tr>
+  <td><code>hvac family business succession strategy</code></td>
+  <td>通用</td>
+  <td>热泵/空调</td>
+  <td>技术博客</td>
+  <td class="num">1</td>
+  <td class="muted">2026-07-10</td>
+  <td class="muted"><a href="https://www.haustechnikdialog.de/News/31640/Familiennachfolge-im-Mittelstand-Warum-fehlende-Gespraeche-Unternehmen-gefaehrden" target="_blank" rel="noopener">Familiennachfolge im Mittelstand: Warum fehlende Gespräche U</a></td>
+</tr>
+
+<tr>
+  <td><code>smart home integration for HVAC</code></td>
+  <td>通用</td>
+  <td>热泵/空调</td>
+  <td>技术博客</td>
+  <td class="num">1</td>
+  <td class="muted">2026-07-10</td>
+  <td class="muted"><a href="https://www.haustechnikdialog.de/News/31626/Smarte-Eingangstuer-Warum-ein-Key-Turner-weit-mehr-als-nur-ein-Schluesseldreher-ist-" target="_blank" rel="noopener">Smarte Eingangstür – Warum ein Key Turner weit mehr als nur </a></td>
+</tr>
+
+    </tbody>
+  </table>
+</body>
+</html>
