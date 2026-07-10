@@ -143,7 +143,7 @@ def collect_reddit(config):
             json=payload,
             timeout=280,  # Apify同步接口最多等5分钟，留一点余量
         )
-        if resp.status_code != 200:
+        if not (200 <= resp.status_code < 300):
             print(f"[警告] Apify Reddit抓取失败: HTTP {resp.status_code} - {resp.text[:300]}")
             return candidates
         items = resp.json()
@@ -159,7 +159,7 @@ def collect_reddit(config):
         if not title:
             skipped_no_title += 1
             continue
-        link = item.get("url") or item.get("postUrl") or item.get("permalink") or ""
+        link = item.get("url") or item.get("postUrl") or item.get("contentUrl") or item.get("permalink") or ""
         raw_community = (
             item.get("parsedCommunityName")
             or item.get("communityName")
