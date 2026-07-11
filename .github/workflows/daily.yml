@@ -26,7 +26,7 @@ jobs:
 
       - name: 判断是否抓Reddit
         run: |
-          if [ "$(date -u +%u)" = "1" ]; then
+          if true; then
             echo "RUN_REDDIT=true" >> "$GITHUB_ENV"
           else
             echo "RUN_REDDIT=false" >> "$GITHUB_ENV"
