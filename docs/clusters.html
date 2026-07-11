@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>内容集群</title>
+<style>
+:root {
+  --bg: #ffffff; --surface: #fafaf9; --border: #eaeae7;
+  --text: #1c1c1a; --text-muted: #8a8a85; --text-faint: #b6b6b1;
+  --accent: #3c6e5c; --accent-soft: #3c6e5c14; --copper: #a8703f; --red: #b1584c;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; padding: 3rem 1.5rem 5rem; background: var(--bg); color: var(--text);
+  font-family: -apple-system, "PingFang SC", "Hiragino Sans GB", "Segoe UI", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+.header {
+  max-width: 1080px; margin: 0 auto 1.25rem; display: flex; justify-content: space-between;
+  align-items: flex-end; flex-wrap: wrap; gap: 12px; border-bottom: 1px solid var(--border);
+  padding-bottom: 1.5rem;
+}
+.header h1 { margin: 0; font-size: 26px; font-weight: 600; font-family: Georgia, "Songti SC", serif; }
+.header .sub { color: var(--text-muted); font-size: 13px; margin-top: 6px; }
+.nav { max-width: 1080px; margin: 0 auto 2rem; display: flex; gap: 8px; flex-wrap: wrap; }
+.kwlink {
+  font-size: 12.5px; color: var(--accent); text-decoration: none; border: 1px solid var(--border);
+  padding: 7px 14px; border-radius: 999px; white-space: nowrap;
+}
+.kwlink:hover, .kwlink.active-nav { background: var(--accent-soft); }
+.stats { max-width: 1080px; margin: 0 auto 2rem; display: flex; gap: 14px; flex-wrap: wrap; }
+.stat { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 14px 20px; min-width: 150px; }
+.stat .label { font-size: 11.5px; color: var(--text-muted); }
+.stat .value { font-size: 24px; font-weight: 600; margin-top: 4px; font-family: Georgia, serif; }
+.filters { max-width: 1080px; margin: 0 auto 10px; display: flex; gap: 8px; flex-wrap: wrap; }
+.filter-btn, .pfilter-btn {
+  font-size: 12.5px; padding: 6px 15px; border-radius: 999px; border: 1px solid var(--border);
+  background: var(--bg); color: var(--text-muted); cursor: pointer; font-family: inherit;
+}
+.filter-btn:hover, .pfilter-btn:hover { border-color: var(--accent); color: var(--text); }
+.filter-btn.active { background: var(--accent); color: #fff; border-color: var(--accent); font-weight: 500; }
+.pfilter-btn.active { background: var(--copper); color: #fff; border-color: var(--copper); font-weight: 500; }
+table { max-width: 1080px; margin: 1.5rem auto 0; width: 100%; border-collapse: collapse; }
+th {
+  text-align: left; font-size: 11px; color: var(--text-faint); font-weight: 600;
+  text-transform: uppercase; letter-spacing: 0.06em; padding: 10px 12px; border-bottom: 1px solid var(--border);
+}
+td { padding: 16px 12px; border-bottom: 1px solid var(--border); vertical-align: top; font-size: 13.5px; line-height: 1.55; }
+tr:hover td { background: var(--surface); }
+td.rank { color: var(--text-faint); font-family: Georgia, serif; font-size: 15px; font-style: italic; width: 36px; padding-top: 17px; }
+td.score { font-family: "SF Mono", Menlo, monospace; text-align: right; width: 56px; color: var(--text-muted); }
+td.summary { color: var(--text-muted); max-width: 260px; font-size: 12.5px; }
+td.kw code { color: var(--accent); font-family: "SF Mono", Menlo, monospace; font-size: 12px; background: var(--accent-soft); padding: 2px 6px; border-radius: 5px; }
+td.fmt { color: var(--text-muted); white-space: nowrap; font-size: 12.5px; }
+td.title-cell { max-width: 260px; }
+a { color: var(--text); text-decoration: none; font-weight: 500; }
+a:hover { color: var(--accent); }
+.sub { margin-top: 6px; display: flex; gap: 6px; flex-wrap: wrap; }
+.tag { font-size: 10px; padding: 2px 8px; border-radius: 999px; border: 1px solid var(--border); color: var(--text-muted); font-weight: 500; }
+.tag.new { color: var(--copper); border-color: #a8703f40; background: #a8703f0c; }
+.tag.up { color: var(--accent); border-color: #3c6e5c40; background: var(--accent-soft); }
+.tag.down { color: var(--red); border-color: #b1584c40; background: #b1584c0c; }
+.empty { text-align: center; color: var(--text-muted); padding: 3rem; }
+.title-draft {
+  margin-top: 6px; font-size: 12.5px; color: var(--text); background: var(--accent-soft);
+  border-radius: 8px; padding: 6px 10px; line-height: 1.5;
+}
+td.used-col { width: 50px; text-align: center; }
+.used-checkbox { display: flex; flex-direction: column; align-items: center; gap: 2px; font-size: 10px; color: var(--text-muted); cursor: pointer; }
+.used-checkbox input { cursor: pointer; }
+tr.used-row { opacity: 0.4; }
+tr.used-row td.title-cell a { text-decoration: line-through; }
+#toggle-used-btn.active { background: var(--text); color: #fff; border-color: var(--text); }
+
+  .note {
+    max-width: 1080px; margin: 1rem auto 2rem; font-size: 12.5px; color: var(--text-muted);
+    background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 12px 16px;
+  }
+  .cluster-section { max-width: 1080px; margin: 0 auto 2rem; }
+  .cluster-header {
+    display: flex; justify-content: space-between; align-items: baseline;
+    border-bottom: 1px solid var(--border); padding-bottom: 8px; margin-bottom: 12px;
+  }
+  .cluster-title { font-size: 16px; font-weight: 600; font-family: Georgia, "Songti SC", serif; }
+  .cluster-count { font-size: 12px; color: var(--text-muted); }
+  .cluster-items {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 10px;
+  }
+  .cluster-item {
+    display: block; background: var(--surface); border: 1px solid var(--border);
+    border-radius: 10px; padding: 12px 14px; text-decoration: none; transition: border-color 0.15s;
+  }
+  .cluster-item:hover { border-color: var(--accent); }
+  .cluster-item-title { font-size: 13px; color: var(--text); line-height: 1.45; }
+  .cluster-item-meta { font-size: 11px; color: var(--text-muted); margin-top: 6px; }
+  .cluster-item-meta code { color: var(--accent); font-family: "SF Mono", Menlo, monospace; }
+  .grounded-tag { font-size: 11px; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <div>
+      <h1>内容集群</h1>
+      <div class="sub">更新时间：2026年07月11日 14:46 UTC · 按主题分组，帮你系统性布局一组文章，而不是打游击</div>
+    </div>
+  </div>
+  <div class="nav">
+    <a class="kwlink active-nav" href="index.html">首页</a><a class="kwlink" href="picks.html">精选清单</a><a class="kwlink" href="clusters.html">内容集群</a><a class="kwlink" href="news.html">新闻榜</a><a class="kwlink" href="reddit.html">Reddit专业榜</a><a class="kwlink" href="competitors.html">同行动态</a><a class="kwlink" href="keywords.html">关键词库</a><a class="kwlink" href="humor.html">趣味帖</a>
+  </div>
+  <div class="note">
+    每个集群最多展示12条（按热度排序）。带🎯的是"接地气"标记（对应真实买家决策问题）。
+    集群体系是针对Airproz业务线设计的（商用热泵、泳池加热、太阳能集成这些），
+    以后产品线变化了随时可以调整。
+  </div>
+  
+        <div class="cluster-section">
+          <div class="cluster-header">
+            <span class="cluster-title">💰 性价比 / 回本周期</span>
+            <span class="cluster-count">2 条</span>
+          </div>
+          <div class="cluster-items">
+            
+<a class="cluster-item" href="https://www.achrnews.com/articles/166402-rising-costs-force-contractors-to-take-a-harder-look-at-pricing" target="_blank" rel="noopener">
+  <div class="cluster-item-title">How to Calculate Real HVAC Project Costs in a Volatile Market <span class="grounded-tag">🎯</span></div>
+  <div class="cluster-item-meta">通用 · <code>hvac pricing strategy for contractors</code></div>
+</a>
+
+<a class="cluster-item" href="https://www.achrnews.com/articles/166391-survey-homeowners-are-ready-to-skip-dining-out-to-pay-for-summer-a-c-bills" target="_blank" rel="noopener">
+  <div class="cluster-item-title">Tips to Reduce Your Summer Cooling Bills Without Sacrificing Comfort <span class="grounded-tag">🎯</span></div>
+  <div class="cluster-item-meta">通用 · <code>how to manage energy costs for air conditioning</code></div>
+</a>
+
+          </div>
+        </div>
+        
+        <div class="cluster-section">
+          <div class="cluster-header">
+            <span class="cluster-title">☀️ 太阳能集成</span>
+            <span class="cluster-count">1 条</span>
+          </div>
+          <div class="cluster-items">
+            
+<a class="cluster-item" href="https://www.achrnews.com/articles/166407-can-geothermal-technology-decarbonize-data-centers" target="_blank" rel="noopener">
+  <div class="cluster-item-title">Can Geothermal Cooling Really Lower Your Data Center Energy Bills? <span class="grounded-tag">🎯</span></div>
+  <div class="cluster-item-meta">通用 · <code>geothermal cooling solutions for data centers</code></div>
+</a>
+
+          </div>
+        </div>
+        
+        <div class="cluster-section">
+          <div class="cluster-header">
+            <span class="cluster-title">📋 政策法规</span>
+            <span class="cluster-count">2 条</span>
+          </div>
+          <div class="cluster-items">
+            
+<a class="cluster-item" href="https://www.achrnews.com/articles/166401-bipartisan-housing-bill-and-the-hvac-industry" target="_blank" rel="noopener">
+  <div class="cluster-item-title">How New Housing Policies Influence HVAC Project Requirements <span class="grounded-tag">🎯</span></div>
+  <div class="cluster-item-meta">通用 · <code>impact of government housing policies on HVAC market</code></div>
+</a>
+
+<a class="cluster-item" href="https://www.achrnews.com/articles/166400-hvac-groups-support-does-rulemaking-to-cut-energy-efficiency-mandates" target="_blank" rel="noopener">
+  <div class="cluster-item-title">Understanding Energy Efficiency Mandates: What Buyers Need to Know <span class="grounded-tag">🎯</span></div>
+  <div class="cluster-item-meta">通用 · <code>energy efficiency regulations in HVAC</code></div>
+</a>
+
+          </div>
+        </div>
+        
+        <div class="cluster-section">
+          <div class="cluster-header">
+            <span class="cluster-title">🔧 安装维护</span>
+            <span class="cluster-count">4 条</span>
+          </div>
+          <div class="cluster-items">
+            
+<a class="cluster-item" href="https://www.achrnews.com/articles/166399-software-gives-contractors-a-window-into-home-systems" target="_blank" rel="noopener">
+  <div class="cluster-item-title">How Smart Remote Monitoring Can Reduce Your HVAC Maintenance Costs <span class="grounded-tag">🎯</span></div>
+  <div class="cluster-item-meta">通用 · <code>smart HVAC monitoring software for technicians</code></div>
+</a>
+
+<a class="cluster-item" href="https://www.achrnews.com/articles/166411-engineered-drivetrain-reliability-for-high-density-data-center-cooling-towers" target="_blank" rel="noopener">
+  <div class="cluster-item-title">Key Reliability Features to Look for in Data Center Cooling Towers <span class="grounded-tag">🎯</span></div>
+  <div class="cluster-item-meta">通用 · <code>reliable cooling tower components for data centers</code></div>
+</a>
+
+<a class="cluster-item" href="https://www.achrnews.com/articles/166398-new-ai-tool-assists-techs-who-manage-cooling-systems" target="_blank" rel="noopener">
+  <div class="cluster-item-title">How AI Diagnostics Can Solve HVAC System Performance Issues <span class="grounded-tag">🎯</span></div>
+  <div class="cluster-item-meta">通用 · <code>AI tools for commercial HVAC diagnostics</code></div>
+</a>
+
+<a class="cluster-item" href="https://www.achrnews.com/articles/166397-get-it-in-writing-how-hvac-contractors-can-avoid-lawsuits" target="_blank" rel="noopener">
+  <div class="cluster-item-title">Documentation Best Practices to Protect Your HVAC Investment <span class="grounded-tag">🎯</span></div>
+  <div class="cluster-item-meta">通用 · <code>how to prevent HVAC installation disputes</code></div>
+</a>
+
+          </div>
+        </div>
+        
+        <div class="cluster-section">
+          <div class="cluster-header">
+            <span class="cluster-title">📈 市场动态</span>
+            <span class="cluster-count">4 条</span>
+          </div>
+          <div class="cluster-items">
+            
+<a class="cluster-item" href="https://www.achrnews.com/articles/166415-a2ls-gain-momentum-in-supermarket-refrigeration" target="_blank" rel="noopener">
+  <div class="cluster-item-title">Why A2L Refrigerants Are Becoming the New Standard for Commercial Cooling <span class="grounded-tag">🎯</span></div>
+  <div class="cluster-item-meta">通用 · <code>A2L refrigerants benefits for commercial refrigeration</code></div>
+</a>
+
+<a class="cluster-item" href="https://www.achrnews.com/articles/166406-can-hvac-train-enough-technicians-for-the-data-center-boom" target="_blank" rel="noopener">
+  <div class="cluster-item-title">How to Ensure Quality Installation When Hiring HVAC Contractors <span class="grounded-tag">🎯</span></div>
+  <div class="cluster-item-meta">通用 · <code>hvac workforce challenges and training</code></div>
+</a>
+
+<a class="cluster-item" href="https://www.achrnews.com/articles/166404-daikin-debuts-new-inverter-driven-commercial-heat-pump" target="_blank" rel="noopener">
+  <div class="cluster-item-title">What Should You Expect from Modern Inverter-Driven Commercial Heat Pumps? <span class="grounded-tag">🎯</span></div>
+  <div class="cluster-item-meta">通用 · <code>R32 inverter commercial heat pump benefits</code></div>
+</a>
+
+<a class="cluster-item" href="https://www.achrnews.com/articles/166395-talk-to-my-agent-how-ai-is-changing-the-hvac-sales-conversation" target="_blank" rel="noopener">
+  <div class="cluster-item-title">Researching HVAC Systems: How to Use AI Tools for Your Next Purchase <span class="grounded-tag">🎯</span></div>
+  <div class="cluster-item-meta">通用 · <code>how AI impacts the HVAC purchasing journey</code></div>
+</a>
+
+          </div>
+        </div>
+        
+        <div class="cluster-section">
+          <div class="cluster-header">
+            <span class="cluster-title">其他</span>
+            <span class="cluster-count">32 条</span>
+          </div>
+          <div class="cluster-items">
+            
+<a class="cluster-item" href="https://www.impiantinews.it/rci/attualita/galletti-celebra-i-suoi-120-anni-di-attivita-a-palazzo-re-enzo-di-bologna/" target="_blank" rel="noopener">
+  <div class="cluster-item-title">120 Years of HVAC Excellence: Lessons in Innovation and Sustainability for Modern Manufacturers</div>
+  <div class="cluster-item-meta">欧洲 · <code>HVAC manufacturer sustainability innovation</code></div>
+</a>
+
+<a class="cluster-item" href="https://www.impiantinews.it/sponsored/controllo-intelligente-degli-impianti-hvac-come-i-sistemi-di-building-automation-stanno-cambiando-la-gestione-energetica/" target="_blank" rel="noopener">
+  <div class="cluster-item-title">Beyond Basic Cooling: How Smart BMS Integration is Revolutionizing Energy Efficiency in Modern Buildings</div>
+  <div class="cluster-item-meta">欧洲 · <code>Building Management System HVAC efficiency</code></div>
+</a>
+
+<a class="cluster-item" href="https://ehpa.org/news-and-resources/projects/cooling-a-warming-world-new-eu-project-to-help-shape-climate-policy/" target="_blank" rel="noopener">
+  <div class="cluster-item-title">Why Cooling is Becoming the New Essential: Understanding Europe&#x27;s Evolving Climate Regulations</div>
+  <div class="cluster-item-meta">欧洲 · <code>climate policy cooling technology demand</code></div>
+</a>
+
+<a class="cluster-item" href="https://www.coolingpost.com/world-news/trane-appoints-denmark-finland-country-leader/" target="_blank" rel="noopener">
+  <div class="cluster-item-title">Navigating the Nordic Market: What Strategic Leadership Changes Mean for HVAC Players in 2024</div>
+  <div class="cluster-item-meta">欧洲 · <code>HVAC leadership industry talent acquisition</code></div>
+</a>
+
+<a class="cluster-item" href="https://www.coolingpost.com/uk-news/defras-f-gas-decision-is-a-delay-not-a-reprieve/" target="_blank" rel="noopener">
+  <div class="cluster-item-title">Preparing for the F-Gas Shift: Why Regulatory Delays Shouldn&#x27;t Stop Your Transition to Low-GWP Refrigerants</div>
+  <div class="cluster-item-meta">欧洲 · <code>F-gas regulation compliance refrigerant strategy</code></div>
+</a>
+
+<a class="cluster-item" href="https://www.coolingpost.com/products/epsilon-zero-r290-heat-pump-from-swegon/" target="_blank" rel="noopener">
+  <div class="cluster-item-title">The Rise of R290 in Multi-Family Housing: A Deep Dive into Swegon’s Epsilon Zero Series</div>
+  <div class="cluster-item-meta">欧洲 · <code>R290 heat pump efficiency</code></div>
+</a>
+
+<a class="cluster-item" href="https://www.coolingpost.com/uk-news/nordic-climate-buys-meridian-cooling/" target="_blank" rel="noopener">
+  <div class="cluster-item-title">HVAC Market Consolidation: How Acquisition Trends are Reshaping Contracting Services in the UK</div>
+  <div class="cluster-item-meta">欧洲 · <code>HVAC consolidation strategy</code></div>
+</a>
+
+<a class="cluster-item" href="https://www.coolingpost.com/world-news/chiller-company-smardt-appoints-new-ceo/" target="_blank" rel="noopener">
+  <div class="cluster-item-title">Leading the Chill: Lessons from Global Trends in Centrifugal Chiller Technology</div>
+  <div class="cluster-item-meta">欧洲 · <code>centrifugal chiller technology innovation</code></div>
+</a>
+
+<a class="cluster-item" href="https://www.coolingpost.com/uk-news/hpa-uk-appoint-governing-body-committee/" target="_blank" rel="noopener">
+  <div class="cluster-item-title">Steering the UK Heat Pump Transition: Insights from the HPA’s New Strategic Direction</div>
+  <div class="cluster-item-meta">欧洲 · <code>UK heat pump policy advocacy</code></div>
+</a>
+
+<a class="cluster-item" href="https://www.coolingpost.com/uk-news/six-through-to-worldskills-uk-final/" target="_blank" rel="noopener">
+  <div class="cluster-item-title">Closing the Skills Gap: Why Investing in HVAC Talent is Critical for the Industry’s Future</div>
+  <div class="cluster-item-meta">欧洲 · <code>HVAC technician training skills gap</code></div>
+</a>
+
+<a class="cluster-item" href="https://www.coolingpost.com/world-news/trials-of-refrigerated-trailer-using-liquid-nitrogen/" target="_blank" rel="noopener">
+  <div class="cluster-item-title">Innovating the Cold Chain: Lessons from Liquid Nitrogen and Solar Integration in Transport Refrigeration</div>
+  <div class="cluster-item-meta">欧洲 · <code>sustainable cold chain logistics</code></div>
+</a>
+
+<a class="cluster-item" href="https://www.caloryfrio.com/energias-renovables/aerotermia/sumsol-distribuidor-baxi-climatizacion-gama-iridium.html" target="_blank" rel="noopener">
+  <div class="cluster-item-title">Strategic Distribution Partnerships: Strengthening the Supply Chain for Renewable Thermal Solutions</div>
+  <div class="cluster-item-meta">欧洲 · <code>HVAC distribution partnership renewables</code></div>
+</a>
+
+          </div>
+        </div>
+        
+</body>
+</html>
