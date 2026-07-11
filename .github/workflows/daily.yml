@@ -26,10 +26,16 @@ jobs:
 
       - name: 判断是否抓Reddit
         run: |
-          if [ "$(date -u +%u)" = "1" ]; then
+          DOW="$(date -u +%u)"
+          if [ "$DOW" = "1" ]; then
             echo "RUN_REDDIT=true" >> "$GITHUB_ENV"
           else
             echo "RUN_REDDIT=false" >> "$GITHUB_ENV"
+          fi
+          if [ "$DOW" = "1" ] || [ "$DOW" = "3" ]; then
+            echo "RUN_REDDIT_MON_WED=true" >> "$GITHUB_ENV"
+          else
+            echo "RUN_REDDIT_MON_WED=false" >> "$GITHUB_ENV"
           fi
 
       - name: 收集候选话题

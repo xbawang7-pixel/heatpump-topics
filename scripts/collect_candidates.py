@@ -109,6 +109,7 @@ FEED_CACHE_PATH = os.path.join(DATA_DIR, "feed_cache.json")
 RELEVANCE_KEYWORDS = [
     "heat pump", "air conditioning", "air conditioner", "hvac", "refrigeration",
     "refrigerant", "heating", "cooling", "chiller", "vrf", "vrv",
+    "pool heat pump", "swimming pool heating", "pool heating",  # 泳池加热
     "pompe à chaleur", "climatisation", "génie climatique",  # 法语
     "pompa di calore", "climatizzazione", "condizionamento",  # 意大利语
     "bomba de calor", "climatización", "aire acondicionado",  # 西班牙语
@@ -259,13 +260,90 @@ def collect_news(config):
     return candidates
 
 
-def collect_reddit(config):
+REDDIT_LIMIT_MON_WED = 20  # "周一/周三板块"每次抓多少条，刻意压低控制成本
+
+
+def _fetch_one_subreddit(sub, api_token, limit):
+    """抓单个板块，返回候选列表。抽出来复用，daily层和weekly层共用这个函数。"""
+    slug = sub.get("slug")
+    name = sub.get("name", f"r/{slug}")
+    region_hint = sub.get("region")
+    if not slug:
+        return []
+
+    # 这是根据 https://apify.com/harshmaur/reddit-scraper 的 Input -> JSON example
+    # 核对过的真实字段名，不是猜的。注意：这个actor目前没有看到"按年度最热排序"
+    # 这个开关，所以拿到的是该板块默认排序下的帖子（不保证是过去一年最热），
+    # 但点赞数/评论数是真实的，打分逻辑依然有效。
+    payload = {
+        "searchTerms": [],
+        "searchPosts": True,
+        "searchComments": False,
+        "searchCommunities": False,
+        "withinCommunity": "",
+        "startUrls": [],
+        "subredditUrls": [f"https://www.reddit.com/r/{slug}"],
+        "onlyWithFlair": False,
+        "crawlCommentsPerPost": False,
+        "includeNSFW": False,
+        "maxPostsCount": limit,
+        "proxy": {
+            "useApifyProxy": True,
+            "apifyProxyGroups": ["RESIDENTIAL"],
+        },
+    }
+
+    try:
+        resp = requests.post(
+            APIFY_RUN_URL,
+            params={"token": api_token},
+            json=payload,
+            timeout=120,
+        )
+        if not (200 <= resp.status_code < 300):
+            print(f"[警告] Apify抓取 {name} 失败: HTTP {resp.status_code} - {resp.text[:200]}")
+            return []
+        items = resp.json()
+    except Exception as e:
+        print(f"[警告] Apify抓取 {name} 异常: {e}")
+        return []
+
     candidates = []
+    for item in items:
+        if item.get("dataType") and item.get("dataType") not in ("post", None):
+            continue
+        title = (item.get("title") or item.get("postTitle") or "").strip()
+        if not title:
+            continue
+        link = item.get("url") or item.get("postUrl") or item.get("permalink") or ""
+        score = item.get("upVotes", item.get("score", item.get("ups", 0))) or 0
+        comments = item.get("numberOfComments", item.get("commentCount", item.get("numComments", 0))) or 0
+        candidates.append({
+            "id": make_id(link, title),
+            "title": title,
+            "link": link,
+            "summary": (item.get("body") or item.get("selftext") or "")[:400],
+            "source_type": "reddit",
+            "source_name": name,
+            "region": region_hint,
+            "engagement": {"score": score, "comments": comments},
+            "published": item.get("createdAt") or item.get("created_utc"),
+        })
 
-    if os.environ.get("RUN_REDDIT", "").lower() != "true":
-        print("[信息] 今天不是每周Reddit抓取日，跳过（省Apify额度）")
-        return candidates
+    print(f"[信息] Reddit-{name}: 抓到 {len(candidates)} 条")
+    return candidates
 
+
+def collect_reddit(config):
+    """
+    Reddit抓取分两层：
+    - "mon_wed"层（r/heatpump、r/hvacadvice、r/AirConditioners）：
+      消费者决策向板块，内容天然接地气，每周一+周三各抓一次，
+      量小（REDDIT_LIMIT_MON_WED），控制成本
+    - 其余板块（默认层）：维持原来"每周一才抓"的节奏，省Apify额度
+    这样能保证一周里至少两天有真实买家声音注入，不用等一周才更新一次。
+    """
+    candidates = []
     subs = config.get("reddit_subreddits", []) or []
     if not subs:
         return candidates
@@ -275,79 +353,20 @@ def collect_reddit(config):
         print("[警告] 没有配置 APIFY_API_TOKEN，跳过Reddit抓取")
         return candidates
 
-    # 这是根据 https://apify.com/harshmaur/reddit-scraper 的 Input -> JSON example
-    # 核对过的真实字段名，不是猜的。注意：这个actor目前没有看到"按年度最热排序"
-    # 这个开关，所以拿到的是该板块默认排序下的帖子（不保证是过去一年最热），
-    # 但点赞数/评论数是真实的，打分逻辑依然有效。
-    #
-    # 重要：maxPostsCount 是"整次调用的总量上限"，不是"每个板块各自的上限"。
-    # 之前把所有板块一次性传进去，结果额度被最先/最热的一两个板块吃光，
-    # 其余板块一条都没有——所以这里改成"每个板块单独调用一次"，
-    # 各自给固定的 REDDIT_LIMIT 上限，保证覆盖均衡。
-    for sub in subs:
-        slug = sub.get("slug")
-        name = sub.get("name", f"r/{slug}")
-        region_hint = sub.get("region")
-        if not slug:
-            continue
+    mon_wed_subs = [s for s in subs if s.get("tier") == "mon_wed"]
+    weekly_subs = [s for s in subs if s.get("tier") != "mon_wed"]
 
-        payload = {
-            "searchTerms": [],
-            "searchPosts": True,
-            "searchComments": False,
-            "searchCommunities": False,
-            "withinCommunity": "",
-            "startUrls": [],
-            "subredditUrls": [f"https://www.reddit.com/r/{slug}"],
-            "onlyWithFlair": False,
-            "crawlCommentsPerPost": False,
-            "includeNSFW": False,
-            "maxPostsCount": REDDIT_LIMIT,
-            "proxy": {
-                "useApifyProxy": True,
-                "apifyProxyGroups": ["RESIDENTIAL"],
-            },
-        }
+    if os.environ.get("RUN_REDDIT_MON_WED", "").lower() == "true":
+        for sub in mon_wed_subs:
+            candidates.extend(_fetch_one_subreddit(sub, api_token, REDDIT_LIMIT_MON_WED))
+    else:
+        print(f"[信息] 今天不是周一/周三，跳过 {len(mon_wed_subs)} 个高频板块")
 
-        try:
-            resp = requests.post(
-                APIFY_RUN_URL,
-                params={"token": api_token},
-                json=payload,
-                timeout=120,
-            )
-            if not (200 <= resp.status_code < 300):
-                print(f"[警告] Apify抓取 {name} 失败: HTTP {resp.status_code} - {resp.text[:200]}")
-                continue
-            items = resp.json()
-        except Exception as e:
-            print(f"[警告] Apify抓取 {name} 异常: {e}")
-            continue
-
-        sub_count = 0
-        for item in items:
-            if item.get("dataType") and item.get("dataType") not in ("post", None):
-                continue
-            title = (item.get("title") or item.get("postTitle") or "").strip()
-            if not title:
-                continue
-            link = item.get("url") or item.get("postUrl") or item.get("permalink") or ""
-            score = item.get("upVotes", item.get("score", item.get("ups", 0))) or 0
-            comments = item.get("numberOfComments", item.get("commentCount", item.get("numComments", 0))) or 0
-            candidates.append({
-                "id": make_id(link, title),
-                "title": title,
-                "link": link,
-                "summary": (item.get("body") or item.get("selftext") or "")[:400],
-                "source_type": "reddit",
-                "source_name": name,
-                "region": region_hint,
-                "engagement": {"score": score, "comments": comments},
-                "published": item.get("createdAt") or item.get("created_utc"),
-            })
-            sub_count += 1
-
-        print(f"[信息] Reddit-{name}: 抓到 {sub_count} 条")
+    if os.environ.get("RUN_REDDIT", "").lower() == "true":
+        for sub in weekly_subs:
+            candidates.extend(_fetch_one_subreddit(sub, api_token, REDDIT_LIMIT))
+    else:
+        print(f"[信息] 今天不是每周Reddit抓取日，跳过其余 {len(weekly_subs)} 个板块")
 
     print(f"[完成] Apify Reddit抓取: 共 {len(candidates)} 条")
     return candidates

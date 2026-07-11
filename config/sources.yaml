@@ -49,10 +49,13 @@ regions:
       homepage: "https://www.impiantinews.it/"
       country: "IT"
       language: "it"
-    - name: "RCI (意大利制冷空调媒体)"
-      homepage: "https://www.rcinews.it/"
-      country: "IT"
-      language: "it"
+    # RCI (意大利制冷空调媒体)：探测结果跟Impianti News指向同一个feed
+    # （rcinews.it 大概率重定向/合并到了 impiantinews.it，同一个出版方），
+    # 移除避免重复抓取同样的内容。
+    # - name: "RCI (意大利制冷空调媒体)"
+    #   homepage: "https://www.rcinews.it/"
+    #   country: "IT"
+    #   language: "it"
     - name: "Assoclima (意大利空调协会)"
       homepage: "https://www.assoclima.it/"
       country: "IT"
@@ -169,9 +172,14 @@ reddit_subreddits:
     slug: "HVAC"
   - name: "r/heatpump"
     slug: "heatpump"
+    tier: "mon_wed"  # 周一+周三抓取
     # 注：GPT建议的是 r/heatpumps（带s），实际板块名是 r/heatpump，用之前建议Codex确认一下
   - name: "r/hvacadvice"
     slug: "hvacadvice"
+    tier: "mon_wed"  # 消费者决策向板块，周一+周三抓，不用等一整周
+    # （成本：这三个板块各20条/次，一周两次，一个月约8次×3板块×20条≈480条，
+    #  加上其余板块维持每周一抓的节奏，总成本预计每月比之前"每天抓一个板块"
+    #  的方案更省，但仍会超出免费额度的5美元，在Starter档$29额度里够用）
   - name: "r/HomeImprovement"
     slug: "HomeImprovement"
   - name: "r/buildingscience"
@@ -182,6 +190,7 @@ reddit_subreddits:
     slug: "solar"
   - name: "r/AirConditioners"
     slug: "AirConditioners"
+    tier: "mon_wed"  # 周一+周三抓取
 
   # 欧洲
   - name: "r/Waermepumpe (德国)"
