@@ -59,6 +59,7 @@ def update_bank(candidates, bank_path, score_fn, top_n, decay_rate, today):
                                      # 字段还没有，仍然要走enrich流程补全
                 "product_category": None,
                 "target_keyword": None,
+                "title_draft": None,
                 "content_format": None,
                 "why_relevant": None,
                 "summary_cn": c.get("summary_cn"),  # 保留候选自带的摘要（如果有），

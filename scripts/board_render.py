@@ -40,10 +40,11 @@ def movement_badge(entry):
 
 
 ROW_TEMPLATE = """
-<tr data-region="{region_key}" data-product="{product_key}">
+<tr data-region="{region_key}" data-product="{product_key}" data-id="{entry_id}" class="topic-row">
   <td class="rank">{rank:02d}</td>
   <td class="title-cell">
     <a href="{link}" target="_blank" rel="noopener">{title}</a>
+    {title_draft_html}
     <div class="sub">
       <span class="tag source">{source_label}</span>
       <span class="tag region">{region_label}</span>
@@ -55,6 +56,12 @@ ROW_TEMPLATE = """
   <td class="kw">{target_keyword}</td>
   <td class="fmt">{content_format}</td>
   <td class="score">{score}</td>
+  <td class="used-col">
+    <label class="used-checkbox">
+      <input type="checkbox" class="mark-used" data-id="{entry_id}">
+      <span>已用</span>
+    </label>
+  </td>
 </tr>
 """
 
@@ -68,12 +75,18 @@ def render_row(entry):
     product_label = PRODUCT_LABELS.get(product_key, "待定")
     source_label = esc(entry.get("source_name", ""))
     summary_cn = entry.get("summary_cn") or "（待补充，下次运行会自动生成）"
+    title_draft = entry.get("title_draft")
+    title_draft_html = (
+        f'<div class="title-draft">💡 {esc(title_draft)}</div>' if title_draft else ""
+    )
     return ROW_TEMPLATE.format(
         rank=entry.get("rank") or 0,
         region_key=esc(region_key),
         product_key=esc(product_key),
+        entry_id=esc(entry.get("id", "")),
         link=esc(entry.get("link", "")),
         title=esc(entry.get("title", "")),
+        title_draft_html=title_draft_html,
         source_label=source_label,
         region_label=esc(region_label),
         product_label=esc(product_label),
@@ -87,6 +100,7 @@ def render_row(entry):
 
 NAV_TEMPLATE = (
     '<a class="kwlink{active_home}" href="index.html">首页</a>'
+    '<a class="kwlink{active_picks}" href="picks.html">精选清单</a>'
     '<a class="kwlink{active_news}" href="news.html">新闻榜</a>'
     '<a class="kwlink{active_reddit}" href="reddit.html">Reddit专业榜</a>'
     '<a class="kwlink{active_competitors}" href="competitors.html">同行动态</a>'
@@ -97,7 +111,7 @@ NAV_TEMPLATE = (
 
 def render_nav(active):
     kwargs = {f"active_{k}": (" active-nav" if k == active else "") for k in
-              ("home", "news", "reddit", "competitors")}
+              ("home", "picks", "news", "reddit", "competitors")}
     return NAV_TEMPLATE.format(**kwargs)
 
 
@@ -159,6 +173,16 @@ a:hover { color: var(--accent); }
 .tag.up { color: var(--accent); border-color: #3c6e5c40; background: var(--accent-soft); }
 .tag.down { color: var(--red); border-color: #b1584c40; background: #b1584c0c; }
 .empty { text-align: center; color: var(--text-muted); padding: 3rem; }
+.title-draft {
+  margin-top: 6px; font-size: 12.5px; color: var(--text); background: var(--accent-soft);
+  border-radius: 8px; padding: 6px 10px; line-height: 1.5;
+}
+td.used-col { width: 50px; text-align: center; }
+.used-checkbox { display: flex; flex-direction: column; align-items: center; gap: 2px; font-size: 10px; color: var(--text-muted); cursor: pointer; }
+.used-checkbox input { cursor: pointer; }
+tr.used-row { opacity: 0.4; }
+tr.used-row td.title-cell a { text-decoration: line-through; }
+#toggle-used-btn.active { background: var(--text); color: #fff; border-color: var(--text); }
 """
 
 
@@ -176,7 +200,7 @@ def render_board_page(bank_path, page_title, page_subtitle, active_nav, out_path
     pending_enrich = sum(1 for e in active if not e.get("enriched"))
 
     rows_html = "".join(render_row(e) for e in active) if active else \
-        '<tr><td colspan="6" class="empty">这个榜单还是空的，等下次抓取跑过之后就会有数据。</td></tr>'
+        '<tr><td colspan="7" class="empty">这个榜单还是空的，等下次抓取跑过之后就会有数据。</td></tr>'
 
     generated_at_display = datetime.now(timezone.utc).strftime("%Y年%m月%d日 %H:%M UTC")
 
@@ -220,9 +244,12 @@ def render_board_page(bank_path, page_title, page_subtitle, active_nav, out_path
   <div class="filters">
     {product_buttons}
   </div>
+  <div class="filters">
+    <button class="filter-btn" id="toggle-used-btn" data-showused="false">隐藏"已用"话题</button>
+  </div>
   <table>
     <thead>
-      <tr><th>排名</th><th>话题</th><th>内容摘要</th><th>目标长尾词</th><th>建议形式</th><th>热度</th></tr>
+      <tr><th>排名</th><th>话题</th><th>内容摘要</th><th>目标长尾词</th><th>建议形式</th><th>热度</th><th>状态</th></tr>
     </thead>
     <tbody>
       {rows_html}
@@ -231,16 +258,62 @@ def render_board_page(bank_path, page_title, page_subtitle, active_nav, out_path
   <script>
     var currentRegion = 'all';
     var currentProduct = 'all';
+    var hideUsed = false;
+    var STORAGE_KEY = 'heatpump_topics_used_v1';
+
+    function getUsedSet() {{
+      try {{
+        return new Set(JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]'));
+      }} catch (e) {{ return new Set(); }}
+    }}
+    function saveUsedSet(set) {{
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(Array.from(set)));
+    }}
+
     function applyFilters() {{
+      var usedSet = getUsedSet();
       document.querySelectorAll('tbody tr').forEach(function(row) {{
         var regionOk = (currentRegion === 'all' || row.dataset.region === currentRegion);
         var productOk = (currentProduct === 'all' || row.dataset.product === currentProduct);
-        row.style.display = (regionOk && productOk) ? '' : 'none';
+        var isUsed = usedSet.has(row.dataset.id);
+        var usedOk = !(hideUsed && isUsed);
+        row.style.display = (regionOk && productOk && usedOk) ? '' : 'none';
       }});
     }}
-    document.querySelectorAll('.filter-btn').forEach(function(btn) {{
+
+    function refreshUsedUI() {{
+      var usedSet = getUsedSet();
+      document.querySelectorAll('.mark-used').forEach(function(cb) {{
+        var isUsed = usedSet.has(cb.dataset.id);
+        cb.checked = isUsed;
+        var row = cb.closest('tr');
+        if (row) {{ row.classList.toggle('used-row', isUsed); }}
+      }});
+    }}
+
+    document.querySelectorAll('.mark-used').forEach(function(cb) {{
+      cb.addEventListener('change', function() {{
+        var usedSet = getUsedSet();
+        if (cb.checked) {{ usedSet.add(cb.dataset.id); }} else {{ usedSet.delete(cb.dataset.id); }}
+        saveUsedSet(usedSet);
+        refreshUsedUI();
+        applyFilters();
+      }});
+    }});
+
+    var toggleBtn = document.getElementById('toggle-used-btn');
+    if (toggleBtn) {{
+      toggleBtn.addEventListener('click', function() {{
+        hideUsed = !hideUsed;
+        toggleBtn.classList.toggle('active', hideUsed);
+        toggleBtn.textContent = hideUsed ? '显示"已用"话题' : '隐藏"已用"话题';
+        applyFilters();
+      }});
+    }}
+
+    document.querySelectorAll('.filter-btn[data-filter]').forEach(function(btn) {{
       btn.addEventListener('click', function() {{
-        document.querySelectorAll('.filter-btn').forEach(function(b) {{ b.classList.remove('active'); }});
+        document.querySelectorAll('.filter-btn[data-filter]').forEach(function(b) {{ b.classList.remove('active'); }});
         btn.classList.add('active');
         currentRegion = btn.dataset.filter;
         applyFilters();
@@ -254,6 +327,8 @@ def render_board_page(bank_path, page_title, page_subtitle, active_nav, out_path
         applyFilters();
       }});
     }});
+
+    refreshUsedUI();
   </script>
 </body>
 </html>
