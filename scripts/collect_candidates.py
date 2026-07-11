@@ -108,82 +108,80 @@ def collect_reddit(config):
         print("[警告] 没有配置 APIFY_API_TOKEN，跳过Reddit抓取")
         return candidates
 
-    subreddit_names = [s.get("slug") for s in subs if s.get("slug")]
-    region_by_slug = {s.get("slug"): s.get("region") for s in subs}
-    name_by_slug = {s.get("slug"): s.get("name", f"r/{s.get('slug')}") for s in subs}
-
-    subreddit_urls = [f"https://www.reddit.com/r/{slug}" for slug in subreddit_names]
-
     # 这是根据 https://apify.com/harshmaur/reddit-scraper 的 Input -> JSON example
     # 核对过的真实字段名，不是猜的。注意：这个actor目前没有看到"按年度最热排序"
     # 这个开关，所以拿到的是该板块默认排序下的帖子（不保证是过去一年最热），
     # 但点赞数/评论数是真实的，打分逻辑依然有效。
-    payload = {
-        "searchTerms": [],
-        "searchPosts": True,
-        "searchComments": False,
-        "searchCommunities": False,
-        "withinCommunity": "",
-        "startUrls": [],
-        "subredditUrls": subreddit_urls,
-        "onlyWithFlair": False,
-        "crawlCommentsPerPost": False,
-        "includeNSFW": False,
-        "maxPostsCount": REDDIT_LIMIT * max(len(subreddit_urls), 1),
-        "proxy": {
-            "useApifyProxy": True,
-            "apifyProxyGroups": ["RESIDENTIAL"],
-        },
-    }
-
-    try:
-        resp = requests.post(
-            APIFY_RUN_URL,
-            params={"token": api_token},
-            json=payload,
-            timeout=280,  # Apify同步接口最多等5分钟，留一点余量
-        )
-        if not (200 <= resp.status_code < 300):
-            print(f"[警告] Apify Reddit抓取失败: HTTP {resp.status_code} - {resp.text[:300]}")
-            return candidates
-        items = resp.json()
-    except Exception as e:
-        print(f"[警告] Apify Reddit抓取异常: {e}")
-        return candidates
-
-    skipped_no_title = 0
-    for item in items:
-        if item.get("dataType") and item.get("dataType") not in ("post", None):
+    #
+    # 重要：maxPostsCount 是"整次调用的总量上限"，不是"每个板块各自的上限"。
+    # 之前把所有板块一次性传进去，结果额度被最先/最热的一两个板块吃光，
+    # 其余板块一条都没有——所以这里改成"每个板块单独调用一次"，
+    # 各自给固定的 REDDIT_LIMIT 上限，保证覆盖均衡。
+    for sub in subs:
+        slug = sub.get("slug")
+        name = sub.get("name", f"r/{slug}")
+        region_hint = sub.get("region")
+        if not slug:
             continue
-        title = (item.get("title") or item.get("postTitle") or "").strip()
-        if not title:
-            skipped_no_title += 1
-            continue
-        link = item.get("url") or item.get("postUrl") or item.get("contentUrl") or item.get("permalink") or ""
-        raw_community = (
-            item.get("parsedCommunityName")
-            or item.get("communityName")
-            or item.get("subreddit")
-            or item.get("subredditName")
-            or ""
-        )
-        slug = raw_community.replace("r/", "").strip()
-        score = item.get("upVotes", item.get("score", item.get("ups", 0))) or 0
-        comments = item.get("numberOfComments", item.get("commentCount", item.get("numComments", 0))) or 0
-        candidates.append({
-            "id": make_id(link, title),
-            "title": title,
-            "link": link,
-            "summary": (item.get("body") or item.get("selftext") or "")[:400],
-            "source_type": "reddit",
-            "source_name": name_by_slug.get(slug, f"r/{slug}" if slug else "Reddit"),
-            "region": region_by_slug.get(slug),
-            "engagement": {"score": score, "comments": comments},
-            "published": item.get("createdAt") or item.get("created_utc"),
-        })
 
-    if skipped_no_title:
-        print(f"[信息] 有 {skipped_no_title} 条结果没有标题字段，已跳过（可能是非帖子类型的数据）")
+        payload = {
+            "searchTerms": [],
+            "searchPosts": True,
+            "searchComments": False,
+            "searchCommunities": False,
+            "withinCommunity": "",
+            "startUrls": [],
+            "subredditUrls": [f"https://www.reddit.com/r/{slug}"],
+            "onlyWithFlair": False,
+            "crawlCommentsPerPost": False,
+            "includeNSFW": False,
+            "maxPostsCount": REDDIT_LIMIT,
+            "proxy": {
+                "useApifyProxy": True,
+                "apifyProxyGroups": ["RESIDENTIAL"],
+            },
+        }
+
+        try:
+            resp = requests.post(
+                APIFY_RUN_URL,
+                params={"token": api_token},
+                json=payload,
+                timeout=120,
+            )
+            if resp.status_code != 200:
+                print(f"[警告] Apify抓取 {name} 失败: HTTP {resp.status_code} - {resp.text[:200]}")
+                continue
+            items = resp.json()
+        except Exception as e:
+            print(f"[警告] Apify抓取 {name} 异常: {e}")
+            continue
+
+        sub_count = 0
+        for item in items:
+            if item.get("dataType") and item.get("dataType") not in ("post", None):
+                continue
+            title = (item.get("title") or item.get("postTitle") or "").strip()
+            if not title:
+                continue
+            link = item.get("url") or item.get("postUrl") or item.get("permalink") or ""
+            score = item.get("upVotes", item.get("score", item.get("ups", 0))) or 0
+            comments = item.get("numberOfComments", item.get("commentCount", item.get("numComments", 0))) or 0
+            candidates.append({
+                "id": make_id(link, title),
+                "title": title,
+                "link": link,
+                "summary": (item.get("body") or item.get("selftext") or "")[:400],
+                "source_type": "reddit",
+                "source_name": name,
+                "region": region_hint,
+                "engagement": {"score": score, "comments": comments},
+                "published": item.get("createdAt") or item.get("created_utc"),
+            })
+            sub_count += 1
+
+        print(f"[信息] Reddit-{name}: 抓到 {sub_count} 条")
+
     print(f"[完成] Apify Reddit抓取: 共 {len(candidates)} 条")
     return candidates
 

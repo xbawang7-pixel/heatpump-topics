@@ -132,6 +132,7 @@ def main():
       <div class="sub">更新时间：{generated_at_display} · 每次话题被LLM标注过就会记录在这里，永久保留，不随话题掉出Top50而丢失</div>
     </div>
     <a class="back" href="index.html">← 返回话题榜</a>
+    <a class="back" href="humor.html">论坛趣味帖 →</a>
   </div>
   <div class="stats">
     <div class="stat"><div class="label">累计关键词</div><div class="value">{len(keywords)}</div></div>

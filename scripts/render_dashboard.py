@@ -215,6 +215,7 @@ def main():
       <div class="sub">更新时间：{generated_at_display} · 覆盖欧洲/中东/亚洲/非洲/南美新闻 + Reddit热帖</div>
     </div>
     <a class="kwlink" href="keywords.html">长尾关键词库 →</a>
+    <a class="kwlink" href="humor.html">论坛趣味帖 →</a>
   </div>
   <div class="stats">
     <div class="stat"><div class="label">在榜话题</div><div class="value">{len(active)}</div></div>
