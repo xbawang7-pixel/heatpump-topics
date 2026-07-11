@@ -1,0 +1,1386 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>热泵·空调新闻榜</title>
+<style>
+:root {
+  --bg: #ffffff; --surface: #fafaf9; --border: #eaeae7;
+  --text: #1c1c1a; --text-muted: #8a8a85; --text-faint: #b6b6b1;
+  --accent: #3c6e5c; --accent-soft: #3c6e5c14; --copper: #a8703f; --red: #b1584c;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; padding: 3rem 1.5rem 5rem; background: var(--bg); color: var(--text);
+  font-family: -apple-system, "PingFang SC", "Hiragino Sans GB", "Segoe UI", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+.header {
+  max-width: 1080px; margin: 0 auto 1.25rem; display: flex; justify-content: space-between;
+  align-items: flex-end; flex-wrap: wrap; gap: 12px; border-bottom: 1px solid var(--border);
+  padding-bottom: 1.5rem;
+}
+.header h1 { margin: 0; font-size: 26px; font-weight: 600; font-family: Georgia, "Songti SC", serif; }
+.header .sub { color: var(--text-muted); font-size: 13px; margin-top: 6px; }
+.nav { max-width: 1080px; margin: 0 auto 2rem; display: flex; gap: 8px; flex-wrap: wrap; }
+.kwlink {
+  font-size: 12.5px; color: var(--accent); text-decoration: none; border: 1px solid var(--border);
+  padding: 7px 14px; border-radius: 999px; white-space: nowrap;
+}
+.kwlink:hover, .kwlink.active-nav { background: var(--accent-soft); }
+.stats { max-width: 1080px; margin: 0 auto 2rem; display: flex; gap: 14px; flex-wrap: wrap; }
+.stat { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 14px 20px; min-width: 150px; }
+.stat .label { font-size: 11.5px; color: var(--text-muted); }
+.stat .value { font-size: 24px; font-weight: 600; margin-top: 4px; font-family: Georgia, serif; }
+.filters { max-width: 1080px; margin: 0 auto 10px; display: flex; gap: 8px; flex-wrap: wrap; }
+.filter-btn, .pfilter-btn {
+  font-size: 12.5px; padding: 6px 15px; border-radius: 999px; border: 1px solid var(--border);
+  background: var(--bg); color: var(--text-muted); cursor: pointer; font-family: inherit;
+}
+.filter-btn:hover, .pfilter-btn:hover { border-color: var(--accent); color: var(--text); }
+.filter-btn.active { background: var(--accent); color: #fff; border-color: var(--accent); font-weight: 500; }
+.pfilter-btn.active { background: var(--copper); color: #fff; border-color: var(--copper); font-weight: 500; }
+table { max-width: 1080px; margin: 1.5rem auto 0; width: 100%; border-collapse: collapse; }
+th {
+  text-align: left; font-size: 11px; color: var(--text-faint); font-weight: 600;
+  text-transform: uppercase; letter-spacing: 0.06em; padding: 10px 12px; border-bottom: 1px solid var(--border);
+}
+td { padding: 16px 12px; border-bottom: 1px solid var(--border); vertical-align: top; font-size: 13.5px; line-height: 1.55; }
+tr:hover td { background: var(--surface); }
+td.rank { color: var(--text-faint); font-family: Georgia, serif; font-size: 15px; font-style: italic; width: 36px; padding-top: 17px; }
+td.score { font-family: "SF Mono", Menlo, monospace; text-align: right; width: 56px; color: var(--text-muted); }
+td.summary { color: var(--text-muted); max-width: 260px; font-size: 12.5px; }
+td.kw code { color: var(--accent); font-family: "SF Mono", Menlo, monospace; font-size: 12px; background: var(--accent-soft); padding: 2px 6px; border-radius: 5px; }
+td.fmt { color: var(--text-muted); white-space: nowrap; font-size: 12.5px; }
+td.title-cell { max-width: 260px; }
+a { color: var(--text); text-decoration: none; font-weight: 500; }
+a:hover { color: var(--accent); }
+.sub { margin-top: 6px; display: flex; gap: 6px; flex-wrap: wrap; }
+.tag { font-size: 10px; padding: 2px 8px; border-radius: 999px; border: 1px solid var(--border); color: var(--text-muted); font-weight: 500; }
+.tag.new { color: var(--copper); border-color: #a8703f40; background: #a8703f0c; }
+.tag.up { color: var(--accent); border-color: #3c6e5c40; background: var(--accent-soft); }
+.tag.down { color: var(--red); border-color: #b1584c40; background: #b1584c0c; }
+.empty { text-align: center; color: var(--text-muted); padding: 3rem; }
+.title-draft {
+  margin-top: 6px; font-size: 12.5px; color: var(--text); background: var(--accent-soft);
+  border-radius: 8px; padding: 6px 10px; line-height: 1.5;
+}
+td.used-col { width: 50px; text-align: center; }
+.used-checkbox { display: flex; flex-direction: column; align-items: center; gap: 2px; font-size: 10px; color: var(--text-muted); cursor: pointer; }
+.used-checkbox input { cursor: pointer; }
+tr.used-row { opacity: 0.4; }
+tr.used-row td.title-cell a { text-decoration: line-through; }
+#toggle-used-btn.active { background: var(--text); color: #fff; border-color: var(--text); }
+</style>
+</head>
+<body>
+  <div class="header">
+    <div>
+      <h1>热泵·空调新闻榜</h1>
+      <div class="sub">更新时间：2026年07月11日 07:25 UTC · 覆盖欧洲/中东/亚洲/非洲/南美的行业新闻信源</div>
+    </div>
+  </div>
+  <div class="nav">
+    <a class="kwlink" href="index.html">首页</a><a class="kwlink" href="picks.html">精选清单</a><a class="kwlink active-nav" href="news.html">新闻榜</a><a class="kwlink" href="reddit.html">Reddit专业榜</a><a class="kwlink" href="competitors.html">同行动态</a><a class="kwlink" href="keywords.html">关键词库</a><a class="kwlink" href="humor.html">趣味帖</a>
+  </div>
+  <div class="stats">
+    <div class="stat"><div class="label">在榜条目</div><div class="value">50</div></div>
+    <div class="stat"><div class="label">今日新上榜</div><div class="value">50</div></div>
+    <div class="stat"><div class="label">待补充关键词</div><div class="value">35</div></div>
+  </div>
+  <div class="filters">
+    <button class="filter-btn active" data-filter="all">全部</button><button class="filter-btn" data-filter="africa">非洲</button><button class="filter-btn" data-filter="europe">欧洲</button><button class="filter-btn" data-filter="global">通用</button>
+  </div>
+  <div class="filters">
+    <button class="pfilter-btn active" data-pfilter="all">全部品类</button><button class="pfilter-btn" data-pfilter="air_conditioner">空调</button><button class="pfilter-btn" data-pfilter="both">热泵/空调</button><button class="pfilter-btn" data-pfilter="heat_pump">热泵</button>
+  </div>
+  <div class="filters">
+    <button class="filter-btn" id="toggle-used-btn" data-showused="false">隐藏"已用"话题</button>
+  </div>
+  <table>
+    <thead>
+      <tr><th>排名</th><th>话题</th><th>内容摘要</th><th>目标长尾词</th><th>建议形式</th><th>热度</th><th>状态</th></tr>
+    </thead>
+    <tbody>
+      
+<tr data-region="europe" data-product="both" data-id="cd72473070e06f94" class="topic-row">
+  <td class="rank">01</td>
+  <td class="title-cell">
+    <a href="https://www.impiantinews.it/rci/attualita/galletti-celebra-i-suoi-120-anni-di-attivita-a-palazzo-re-enzo-di-bologna/" target="_blank" rel="noopener">Galletti celebra i suoi 120 anni di attività a Palazzo Re Enzo di Bologna</a>
+    <div class="title-draft">💡 120 Years of HVAC Excellence: Lessons in Innovation and Sustainability for Modern Manufacturers</div>
+    <div class="sub">
+      <span class="tag source">Impianti News (意大利)</span>
+      <span class="tag region">欧洲</span>
+      <span class="tag product">热泵/空调</span>
+      <span class="tag new">NEW</span>
+    </div>
+  </td>
+  <td class="summary">意大利老牌HVAC企业Galletti庆祝成立120周年。文章回顾了其从小型工坊发展为全球暖通空调领域重要参与者的历程，强调了公司在技术创新、人员管理及可持续发展方面的长期承诺，展示了HVAC企业在百年更迭中保持生命力的关键路径。</td>
+  <td class="kw"><code>HVAC manufacturer sustainability innovation</code></td>
+  <td class="fmt">技术博客</td>
+  <td class="score">24</td>
+  <td class="used-col">
+    <label class="used-checkbox">
+      <input type="checkbox" class="mark-used" data-id="cd72473070e06f94">
+      <span>已用</span>
+    </label>
+  </td>
+</tr>
+
+<tr data-region="europe" data-product="both" data-id="2c4fd3f5496024aa" class="topic-row">
+  <td class="rank">02</td>
+  <td class="title-cell">
+    <a href="https://www.impiantinews.it/sponsored/controllo-intelligente-degli-impianti-hvac-come-i-sistemi-di-building-automation-stanno-cambiando-la-gestione-energetica/" target="_blank" rel="noopener">Controllo intelligente degli impianti HVAC: come la building automation cambia la gestione energetica</a>
+    <div class="title-draft">💡 Beyond Basic Cooling: How Smart BMS Integration is Revolutionizing Energy Efficiency in Modern Buildings</div>
+    <div class="sub">
+      <span class="tag source">Impianti News (意大利)</span>
+      <span class="tag region">欧洲</span>
+      <span class="tag product">热泵/空调</span>
+      <span class="tag new">NEW</span>
+    </div>
+  </td>
+  <td class="summary">随着现代建筑对互联互通和能效要求的提高，传统的暖通管理已无法满足需求。本文探讨了楼宇管理系统（BMS）如何整合传感器、执行器及各类子系统，通过智能化手段实现能源、照明与安全的综合管控，是提升建筑运营效率的核心技术。</td>
+  <td class="kw"><code>Building Management System HVAC efficiency</code></td>
+  <td class="fmt">技术博客</td>
+  <td class="score">24</td>
+  <td class="used-col">
+    <label class="used-checkbox">
+      <input type="checkbox" class="mark-used" data-id="2c4fd3f5496024aa">
+      <span>已用</span>
+    </label>
+  </td>
+</tr>
+
+<tr data-region="europe" data-product="air_conditioner" data-id="60126687ebcf6238" class="topic-row">
+  <td class="rank">03</td>
+  <td class="title-cell">
+    <a href="https://ehpa.org/news-and-resources/projects/cooling-a-warming-world-new-eu-project-to-help-shape-climate-policy/" target="_blank" rel="noopener">Cooling a warming world: new EU project to help shape climate policy</a>
+    <div class="title-draft">💡 Why Cooling is Becoming the New Essential: Understanding Europe&#x27;s Evolving Climate Regulations</div>
+    <div class="sub">
+      <span class="tag source">EHPA 欧洲热泵协会</span>
+      <span class="tag region">欧洲</span>
+      <span class="tag product">空调</span>
+      <span class="tag new">NEW</span>
+    </div>
+  </td>
+  <td class="summary">欧洲极端高温已成为常态，制冷需求正从舒适性需求转向健康与生活必需品。欧盟正在推动新的气候政策，以应对日益严峻的夏季高温挑战。文章讨论了政策制定背景及相关制冷技术的演变，强调了在欧洲市场应对极端气候带来的新机遇。</td>
+  <td class="kw"><code>climate policy cooling technology demand</code></td>
+  <td class="fmt">白皮书</td>
+  <td class="score">20</td>
+  <td class="used-col">
+    <label class="used-checkbox">
+      <input type="checkbox" class="mark-used" data-id="60126687ebcf6238">
+      <span>已用</span>
+    </label>
+  </td>
+</tr>
+
+<tr data-region="europe" data-product="both" data-id="2f9fa98f2a9e4907" class="topic-row">
+  <td class="rank">04</td>
+  <td class="title-cell">
+    <a href="https://www.coolingpost.com/world-news/trane-appoints-denmark-finland-country-leader/" target="_blank" rel="noopener">Trane appoints Denmark/Finland country leader</a>
+    <div class="title-draft">💡 Navigating the Nordic Market: What Strategic Leadership Changes Mean for HVAC Players in 2024</div>
+    <div class="sub">
+      <span class="tag source">Cooling Post (欧洲制冷/热泵行业媒体)</span>
+      <span class="tag region">欧洲</span>
+      <span class="tag product">热泵/空调</span>
+      <span class="tag new">NEW</span>
+    </div>
+  </td>
+  <td class="summary">特灵（Trane）宣布任命Lauri Salmia为丹麦和芬兰的负责人。这一人事变动显示了国际HVAC巨头在北欧市场的战略部署。通过关注大型企业的管理层调整，可以洞察北欧区域市场在采暖及制冷业务上的布局重点与人才需求变化。</td>
+  <td class="kw"><code>HVAC leadership industry talent acquisition</code></td>
+  <td class="fmt">技术博客</td>
+  <td class="score">20</td>
+  <td class="used-col">
+    <label class="used-checkbox">
+      <input type="checkbox" class="mark-used" data-id="2f9fa98f2a9e4907">
+      <span>已用</span>
+    </label>
+  </td>
+</tr>
+
+<tr data-region="europe" data-product="both" data-id="c1df389d242b8ed8" class="topic-row">
+  <td class="rank">05</td>
+  <td class="title-cell">
+    <a href="https://www.coolingpost.com/uk-news/defras-f-gas-decision-is-a-delay-not-a-reprieve/" target="_blank" rel="noopener">DEFRA’s F-gas decision is a delay, not a reprieve</a>
+    <div class="title-draft">💡 Preparing for the F-Gas Shift: Why Regulatory Delays Shouldn&#x27;t Stop Your Transition to Low-GWP Refrigerants</div>
+    <div class="sub">
+      <span class="tag source">Cooling Post (欧洲制冷/热泵行业媒体)</span>
+      <span class="tag region">欧洲</span>
+      <span class="tag product">热泵/空调</span>
+      <span class="tag new">NEW</span>
+    </div>
+  </td>
+  <td class="summary">英国F-gas法规修订虽有延迟，但行业协会FETA明确呼吁企业不应因此放慢向低GWP制冷剂转型的脚步。文章强调，无论法规进度如何，节能环保的制冷剂升级已是不可逆的行业趋势，企业应优先完成技术储备以规避未来的合规风险。</td>
+  <td class="kw"><code>F-gas regulation compliance refrigerant strategy</code></td>
+  <td class="fmt">技术博客</td>
+  <td class="score">20</td>
+  <td class="used-col">
+    <label class="used-checkbox">
+      <input type="checkbox" class="mark-used" data-id="c1df389d242b8ed8">
+      <span>已用</span>
+    </label>
+  </td>
+</tr>
+
+<tr data-region="europe" data-product="heat_pump" data-id="af2d7386d4f45ab3" class="topic-row">
+  <td class="rank">06</td>
+  <td class="title-cell">
+    <a href="https://www.coolingpost.com/products/epsilon-zero-r290-heat-pump-from-swegon/" target="_blank" rel="noopener">Epsilon Zero R290 heat pump from Swegon</a>
+    <div class="title-draft">💡 The Rise of R290 in Multi-Family Housing: A Deep Dive into Swegon’s Epsilon Zero Series</div>
+    <div class="sub">
+      <span class="tag source">Cooling Post (欧洲制冷/热泵行业媒体)</span>
+      <span class="tag region">欧洲</span>
+      <span class="tag product">热泵</span>
+      <span class="tag new">NEW</span>
+    </div>
+  </td>
+  <td class="summary">Swegon推出了全新的Epsilon Zero系列R290空气源热泵，专门针对轻型商业建筑和多户住宅市场。文章介绍了该系列产品在环保性能、能效等级方面的改进，体现了欧洲热泵市场向天然制冷剂转型的高端应用趋势。</td>
+  <td class="kw"><code>R290 heat pump efficiency</code></td>
+  <td class="fmt">对比测评</td>
+  <td class="score">20</td>
+  <td class="used-col">
+    <label class="used-checkbox">
+      <input type="checkbox" class="mark-used" data-id="af2d7386d4f45ab3">
+      <span>已用</span>
+    </label>
+  </td>
+</tr>
+
+<tr data-region="europe" data-product="both" data-id="02c7bed235753d09" class="topic-row">
+  <td class="rank">07</td>
+  <td class="title-cell">
+    <a href="https://www.coolingpost.com/uk-news/nordic-climate-buys-meridian-cooling/" target="_blank" rel="noopener">Nordic Climate buys Meridian Cooling</a>
+    <div class="title-draft">💡 HVAC Market Consolidation: How Acquisition Trends are Reshaping Contracting Services in the UK</div>
+    <div class="sub">
+      <span class="tag source">Cooling Post (欧洲制冷/热泵行业媒体)</span>
+      <span class="tag region">欧洲</span>
+      <span class="tag product">热泵/空调</span>
+      <span class="tag new">NEW</span>
+    </div>
+  </td>
+  <td class="summary">瑞典承包商集团Nordic Climate收购了总部位于英国的Meridian Cooling。这一整合行为反映了欧洲暖通安装与承包商市场的并购潮。通过资本整合，大型承包商正在跨区域扩张，这对暖通设备供应商的本地化渠道渗透提出了更高要求。</td>
+  <td class="kw"><code>HVAC consolidation strategy</code></td>
+  <td class="fmt">技术博客</td>
+  <td class="score">20</td>
+  <td class="used-col">
+    <label class="used-checkbox">
+      <input type="checkbox" class="mark-used" data-id="02c7bed235753d09">
+      <span>已用</span>
+    </label>
+  </td>
+</tr>
+
+<tr data-region="global" data-product="air_conditioner" data-id="44d84edcd8397d38" class="topic-row">
+  <td class="rank">08</td>
+  <td class="title-cell">
+    <a href="https://www.coolingpost.com/world-news/chiller-company-smardt-appoints-new-ceo/" target="_blank" rel="noopener">Chiller company Smardt appoints new CEO</a>
+    <div class="title-draft">💡 Leading the Chill: Lessons from Global Trends in Centrifugal Chiller Technology</div>
+    <div class="sub">
+      <span class="tag source">Cooling Post (欧洲制冷/热泵行业媒体)</span>
+      <span class="tag region">通用</span>
+      <span class="tag product">空调</span>
+      <span class="tag new">NEW</span>
+    </div>
+  </td>
+  <td class="summary">无油离心式冷水机组技术的领军企业Smardt宣布任命新CEO。文章简要交代了公司的全球化管理变动，旨在探讨高科技冷水机组领域的人才与技术趋势。这对关注高端商用中央空调、工业制冷市场的B2B出口企业具有极高的行业参考价值。</td>
+  <td class="kw"><code>centrifugal chiller technology innovation</code></td>
+  <td class="fmt">技术博客</td>
+  <td class="score">20</td>
+  <td class="used-col">
+    <label class="used-checkbox">
+      <input type="checkbox" class="mark-used" data-id="44d84edcd8397d38">
+      <span>已用</span>
+    </label>
+  </td>
+</tr>
+
+<tr data-region="europe" data-product="heat_pump" data-id="73228297c9ae6ff5" class="topic-row">
+  <td class="rank">09</td>
+  <td class="title-cell">
+    <a href="https://www.coolingpost.com/uk-news/hpa-uk-appoint-governing-body-committee/" target="_blank" rel="noopener">HPA UK appoint governing body committee</a>
+    <div class="title-draft">💡 Steering the UK Heat Pump Transition: Insights from the HPA’s New Strategic Direction</div>
+    <div class="sub">
+      <span class="tag source">Cooling Post (欧洲制冷/热泵行业媒体)</span>
+      <span class="tag region">欧洲</span>
+      <span class="tag product">热泵</span>
+      <span class="tag new">NEW</span>
+    </div>
+  </td>
+  <td class="summary">英国热泵协会（HPA UK）成立了新的理事会，旨在引导该协会未来的战略方向。随着英国政府积极推动热泵普及，协会的作用日益关键。文章分析了行业组织如何通过制定标准和引导政策方向，来促进热泵技术在英国建筑市场的大规模部署。</td>
+  <td class="kw"><code>UK heat pump policy advocacy</code></td>
+  <td class="fmt">技术博客</td>
+  <td class="score">20</td>
+  <td class="used-col">
+    <label class="used-checkbox">
+      <input type="checkbox" class="mark-used" data-id="73228297c9ae6ff5">
+      <span>已用</span>
+    </label>
+  </td>
+</tr>
+
+<tr data-region="europe" data-product="both" data-id="2a742bdb96f91bfa" class="topic-row">
+  <td class="rank">10</td>
+  <td class="title-cell">
+    <a href="https://www.coolingpost.com/uk-news/six-through-to-worldskills-uk-final/" target="_blank" rel="noopener">Six through to WorldSkills UK final</a>
+    <div class="title-draft">💡 Closing the Skills Gap: Why Investing in HVAC Talent is Critical for the Industry’s Future</div>
+    <div class="sub">
+      <span class="tag source">Cooling Post (欧洲制冷/热泵行业媒体)</span>
+      <span class="tag region">欧洲</span>
+      <span class="tag product">热泵/空调</span>
+      <span class="tag new">NEW</span>
+    </div>
+  </td>
+  <td class="summary">通过WorldSkills UK技能大赛的决赛选拔，文章探讨了暖通空调行业人才培养的现状。在当前欧洲技术工人短缺的背景下，安装与维护人才的专业水平直接决定了设备的性能。行业对年轻人才的投入，是缓解安装服务质量参差不齐的关键举措。</td>
+  <td class="kw"><code>HVAC technician training skills gap</code></td>
+  <td class="fmt">技术博客</td>
+  <td class="score">20</td>
+  <td class="used-col">
+    <label class="used-checkbox">
+      <input type="checkbox" class="mark-used" data-id="2a742bdb96f91bfa">
+      <span>已用</span>
+    </label>
+  </td>
+</tr>
+
+<tr data-region="europe" data-product="air_conditioner" data-id="33e624465a2adadf" class="topic-row">
+  <td class="rank">11</td>
+  <td class="title-cell">
+    <a href="https://www.coolingpost.com/world-news/trials-of-refrigerated-trailer-using-liquid-nitrogen/" target="_blank" rel="noopener">Trials of refrigerated trailer using liquid nitrogen</a>
+    <div class="title-draft">💡 Innovating the Cold Chain: Lessons from Liquid Nitrogen and Solar Integration in Transport Refrigeration</div>
+    <div class="sub">
+      <span class="tag source">Cooling Post (欧洲制冷/热泵行业媒体)</span>
+      <span class="tag region">欧洲</span>
+      <span class="tag product">空调</span>
+      <span class="tag new">NEW</span>
+    </div>
+  </td>
+  <td class="summary">西班牙物流公司Primafrio成功完成了一个试点项目，在冷藏车中集成了液氮冷冻系统和太阳能能源。该案例展示了在交通制冷领域，通过非传统手段降低碳排放和能耗的可行性，为绿色物流和冷链制冷行业提供了创新参考。</td>
+  <td class="kw"><code>sustainable cold chain logistics</code></td>
+  <td class="fmt">案例研究</td>
+  <td class="score">20</td>
+  <td class="used-col">
+    <label class="used-checkbox">
+      <input type="checkbox" class="mark-used" data-id="33e624465a2adadf">
+      <span>已用</span>
+    </label>
+  </td>
+</tr>
+
+<tr data-region="europe" data-product="both" data-id="cf20c5513f86be24" class="topic-row">
+  <td class="rank">12</td>
+  <td class="title-cell">
+    <a href="https://www.coolingpost.com/world-news/nordic-climate-expands-in-ireland/" target="_blank" rel="noopener">Nordic Climate expands in Ireland</a>
+    <div class="title-draft">💡 Expanding Service Footprints: Analyzing Nordic Climate’s Growth Strategy in Ireland</div>
+    <div class="sub">
+      <span class="tag source">Cooling Post (欧洲制冷/热泵行业媒体)</span>
+      <span class="tag region">欧洲</span>
+      <span class="tag product">热泵/空调</span>
+      <span class="tag new">NEW</span>
+    </div>
+  </td>
+  <td class="summary">Nordic Climate通过收购爱尔兰的Northern Refrigeration Services，进一步扩大了其在当地的服务网络。该公司专注于制冷、热泵及供热解决方案，这一收购动作展示了暖通企业在爱尔兰市场的深耕策略，为寻找该地区渠道合作伙伴的厂商提供了重要信号。</td>
+  <td class="kw"><code>HVAC channel expansion Ireland</code></td>
+  <td class="fmt">技术博客</td>
+  <td class="score">20</td>
+  <td class="used-col">
+    <label class="used-checkbox">
+      <input type="checkbox" class="mark-used" data-id="cf20c5513f86be24">
+      <span>已用</span>
+    </label>
+  </td>
+</tr>
+
+<tr data-region="europe" data-product="air_conditioner" data-id="5111c21a520fb8ad" class="topic-row">
+  <td class="rank">13</td>
+  <td class="title-cell">
+    <a href="https://www.coolingpost.com/uk-news/hot-weather-brings-spike-in-illegal-online-sales/" target="_blank" rel="noopener">Hot weather brings spike in illegal online sales</a>
+    <div class="title-draft">💡 Safety Alert: Why Buying Uncertified HVAC Equipment Online Puts Your Project at Risk</div>
+    <div class="sub">
+      <span class="tag source">Cooling Post (欧洲制冷/热泵行业媒体)</span>
+      <span class="tag region">欧洲</span>
+      <span class="tag product">空调</span>
+      <span class="tag new">NEW</span>
+    </div>
+  </td>
+  <td class="summary">随着近期英国高温天气的出现，非法在线销售未经认证空调设备的现象频发。文章警示公众，非正规渠道购买不仅违反F-gas法规，更存在严重的安全隐患。对于企业而言，强调合规与专业安装服务是建立市场区隔的关键。</td>
+  <td class="kw"><code>HVAC illegal sales regulatory warning</code></td>
+  <td class="fmt">技术博客</td>
+  <td class="score">20</td>
+  <td class="used-col">
+    <label class="used-checkbox">
+      <input type="checkbox" class="mark-used" data-id="5111c21a520fb8ad">
+      <span>已用</span>
+    </label>
+  </td>
+</tr>
+
+<tr data-region="europe" data-product="both" data-id="56a615454c8d123d" class="topic-row">
+  <td class="rank">14</td>
+  <td class="title-cell">
+    <a href="https://www.caloryfrio.com/energias-renovables/aerotermia/sumsol-distribuidor-baxi-climatizacion-gama-iridium.html" target="_blank" rel="noopener">Sumsol se convierte en distribuidor oficial de Baxi Climatización</a>
+    <div class="title-draft">💡 Strategic Distribution Partnerships: Strengthening the Supply Chain for Renewable Thermal Solutions</div>
+    <div class="sub">
+      <span class="tag source">Caloryfrio (西班牙)</span>
+      <span class="tag region">欧洲</span>
+      <span class="tag product">热泵/空调</span>
+      <span class="tag new">NEW</span>
+    </div>
+  </td>
+  <td class="summary">Sumsol成为Baxi Climatización的官方经销商，进一步强化了其在热能可再生能源领域的投入。这种强强联合显示了在能源转型大背景下，分销商与知名品牌共同加码热泵与高效热能设备的市场意图，体现了欧洲热能市场的渠道整合逻辑。</td>
+  <td class="kw"><code>HVAC distribution partnership renewables</code></td>
+  <td class="fmt">技术博客</td>
+  <td class="score">20</td>
+  <td class="used-col">
+    <label class="used-checkbox">
+      <input type="checkbox" class="mark-used" data-id="56a615454c8d123d">
+      <span>已用</span>
+    </label>
+  </td>
+</tr>
+
+<tr data-region="europe" data-product="both" data-id="a65f0e22c4cbdeae" class="topic-row">
+  <td class="rank">15</td>
+  <td class="title-cell">
+    <a href="https://www.caloryfrio.com/noticias/jornadas-tecnicas-fabricantes/daikin-jovenes-talentos-congreso-ingenieria-instalaciones.html" target="_blank" rel="noopener">&quot;Jóvenes Talentos by Daikin&quot; premia las mejores propuestas en el IV Congreso Nacional de Ingeniería de Instalaciones</a>
+    <div class="title-draft">💡 Empowering the Next Generation: Why Daikin’s &#x27;Young Talent&#x27; Initiative Matters for HVAC Future</div>
+    <div class="sub">
+      <span class="tag source">Caloryfrio (西班牙)</span>
+      <span class="tag region">欧洲</span>
+      <span class="tag product">热泵/空调</span>
+      <span class="tag new">NEW</span>
+    </div>
+  </td>
+  <td class="summary">Daikin赞助了第四届全国装置工程大会，并颁发“Daikin青年人才奖”。该项目旨在发掘暖通空调工程领域的最优方案，鼓励技术创新。通过支持青年才俊，企业不仅履行了社会责任，也通过行业交流提升了其在该领域的品牌影响力和技术号召力。</td>
+  <td class="kw"><code>HVAC engineering innovation youth talent</code></td>
+  <td class="fmt">技术博客</td>
+  <td class="score">20</td>
+  <td class="used-col">
+    <label class="used-checkbox">
+      <input type="checkbox" class="mark-used" data-id="a65f0e22c4cbdeae">
+      <span>已用</span>
+    </label>
+  </td>
+</tr>
+
+<tr data-region="europe" data-product="both" data-id="552f55701f9c5375" class="topic-row">
+  <td class="rank">16</td>
+  <td class="title-cell">
+    <a href="https://www.caloryfrio.com/aire-acondicionado/aire-acondicionado-domestico/mitsubishi-electric-es-tu-aire-es-tu-historia-aire-acondicionado-antiguo.html" target="_blank" rel="noopener">Mitsubishi Electric vuelve a buscar el aire acondicionado más antiguo de España con una nueva edición de &quot;Es tu Aire, Es tu Historia&quot;</a>
+    
+    <div class="sub">
+      <span class="tag source">Caloryfrio (西班牙)</span>
+      <span class="tag region">欧洲</span>
+      <span class="tag product">热泵/空调</span>
+      <span class="tag new">NEW</span>
+    </div>
+  </td>
+  <td class="summary">（待补充，下次运行会自动生成）</td>
+  <td class="kw"><code>待补充</code></td>
+  <td class="fmt">待定</td>
+  <td class="score">20</td>
+  <td class="used-col">
+    <label class="used-checkbox">
+      <input type="checkbox" class="mark-used" data-id="552f55701f9c5375">
+      <span>已用</span>
+    </label>
+  </td>
+</tr>
+
+<tr data-region="europe" data-product="both" data-id="ebca849864b1c1e6" class="topic-row">
+  <td class="rank">17</td>
+  <td class="title-cell">
+    <a href="https://www.climanoticias.com/texto-diario/mostrar/5949220/jet-air-stream-refuerza-climatizacion-profesional-eficiente-panasonic-grandes-espacios" target="_blank" rel="noopener">Jet Air Stream refuerza la climatización profesional eficiente de Panasonic para grandes espacios</a>
+    
+    <div class="sub">
+      <span class="tag source">Climanoticias (西班牙)</span>
+      <span class="tag region">欧洲</span>
+      <span class="tag product">热泵/空调</span>
+      <span class="tag new">NEW</span>
+    </div>
+  </td>
+  <td class="summary">（待补充，下次运行会自动生成）</td>
+  <td class="kw"><code>待补充</code></td>
+  <td class="fmt">待定</td>
+  <td class="score">20</td>
+  <td class="used-col">
+    <label class="used-checkbox">
+      <input type="checkbox" class="mark-used" data-id="ebca849864b1c1e6">
+      <span>已用</span>
+    </label>
+  </td>
+</tr>
+
+<tr data-region="europe" data-product="both" data-id="bb4750b1b061d8e5" class="topic-row">
+  <td class="rank">18</td>
+  <td class="title-cell">
+    <a href="https://www.climanoticias.com/texto-diario/mostrar/5948982/mitsubishi-electric-busca-aire-acondicionado-antiguo-funcionando-espana" target="_blank" rel="noopener">Mitsubishi Electric busca el aire acondicionado más antiguo aún funcionando en España</a>
+    
+    <div class="sub">
+      <span class="tag source">Climanoticias (西班牙)</span>
+      <span class="tag region">欧洲</span>
+      <span class="tag product">热泵/空调</span>
+      <span class="tag new">NEW</span>
+    </div>
+  </td>
+  <td class="summary">（待补充，下次运行会自动生成）</td>
+  <td class="kw"><code>待补充</code></td>
+  <td class="fmt">待定</td>
+  <td class="score">20</td>
+  <td class="used-col">
+    <label class="used-checkbox">
+      <input type="checkbox" class="mark-used" data-id="bb4750b1b061d8e5">
+      <span>已用</span>
+    </label>
+  </td>
+</tr>
+
+<tr data-region="europe" data-product="both" data-id="914dc5444db0b6a4" class="topic-row">
+  <td class="rank">19</td>
+  <td class="title-cell">
+    <a href="https://www.climanoticias.com/texto-diario/mostrar/5948109/sumsol-convierte-distribuidor-oficial-baxi-climatizacion" target="_blank" rel="noopener">Sumsol se convierte en distribuidor oficial de Baxi Climatización</a>
+    
+    <div class="sub">
+      <span class="tag source">Climanoticias (西班牙)</span>
+      <span class="tag region">欧洲</span>
+      <span class="tag product">热泵/空调</span>
+      <span class="tag new">NEW</span>
+    </div>
+  </td>
+  <td class="summary">（待补充，下次运行会自动生成）</td>
+  <td class="kw"><code>待补充</code></td>
+  <td class="fmt">待定</td>
+  <td class="score">20</td>
+  <td class="used-col">
+    <label class="used-checkbox">
+      <input type="checkbox" class="mark-used" data-id="914dc5444db0b6a4">
+      <span>已用</span>
+    </label>
+  </td>
+</tr>
+
+<tr data-region="europe" data-product="both" data-id="4d1dffabebe91513" class="topic-row">
+  <td class="rank">20</td>
+  <td class="title-cell">
+    <a href="https://www.climanoticias.com/texto-diario/mostrar/5947956/hisense-presenta-nueva-tarifa-innovaciones-climatizacion-eficiente-e-inteligente" target="_blank" rel="noopener">Hisense presenta su nueva tarifa con innovaciones para una climatización eficiente e inteligente</a>
+    
+    <div class="sub">
+      <span class="tag source">Climanoticias (西班牙)</span>
+      <span class="tag region">欧洲</span>
+      <span class="tag product">热泵/空调</span>
+      <span class="tag new">NEW</span>
+    </div>
+  </td>
+  <td class="summary">（待补充，下次运行会自动生成）</td>
+  <td class="kw"><code>待补充</code></td>
+  <td class="fmt">待定</td>
+  <td class="score">20</td>
+  <td class="used-col">
+    <label class="used-checkbox">
+      <input type="checkbox" class="mark-used" data-id="4d1dffabebe91513">
+      <span>已用</span>
+    </label>
+  </td>
+</tr>
+
+<tr data-region="europe" data-product="both" data-id="bc3cfbf82fbe73dd" class="topic-row">
+  <td class="rank">21</td>
+  <td class="title-cell">
+    <a href="https://www.climanoticias.com/texto-diario/mostrar/5946701/actuadores-compactos-resideo-reciben-premio-internacional-plus-x" target="_blank" rel="noopener">Los actuadores compactos de Resideo reciben el premio internacional Plus X</a>
+    
+    <div class="sub">
+      <span class="tag source">Climanoticias (西班牙)</span>
+      <span class="tag region">欧洲</span>
+      <span class="tag product">热泵/空调</span>
+      <span class="tag new">NEW</span>
+    </div>
+  </td>
+  <td class="summary">（待补充，下次运行会自动生成）</td>
+  <td class="kw"><code>待补充</code></td>
+  <td class="fmt">待定</td>
+  <td class="score">20</td>
+  <td class="used-col">
+    <label class="used-checkbox">
+      <input type="checkbox" class="mark-used" data-id="bc3cfbf82fbe73dd">
+      <span>已用</span>
+    </label>
+  </td>
+</tr>
+
+<tr data-region="europe" data-product="both" data-id="af6346e310fbc032" class="topic-row">
+  <td class="rank">22</td>
+  <td class="title-cell">
+    <a href="https://www.climanoticias.com/texto-diario/mostrar/5944135/bosch-detalla-como-preparan-edificios-espanoles-climatizacion-veraniega-eficiente" target="_blank" rel="noopener">Bosch detalla cómo preparan los edificios españoles su climatización veraniega eficiente</a>
+    
+    <div class="sub">
+      <span class="tag source">Climanoticias (西班牙)</span>
+      <span class="tag region">欧洲</span>
+      <span class="tag product">热泵/空调</span>
+      <span class="tag new">NEW</span>
+    </div>
+  </td>
+  <td class="summary">（待补充，下次运行会自动生成）</td>
+  <td class="kw"><code>待补充</code></td>
+  <td class="fmt">待定</td>
+  <td class="score">20</td>
+  <td class="used-col">
+    <label class="used-checkbox">
+      <input type="checkbox" class="mark-used" data-id="af6346e310fbc032">
+      <span>已用</span>
+    </label>
+  </td>
+</tr>
+
+<tr data-region="europe" data-product="both" data-id="8bf84cea356481b5" class="topic-row">
+  <td class="rank">23</td>
+  <td class="title-cell">
+    <a href="https://www.climanoticias.com/texto-diario/mostrar/5920786/claves-optimizar-climatizacion-eficiente-grandes-edificios-gree" target="_blank" rel="noopener">Claves para optimizar la climatización eficiente en grandes edificios con Gree</a>
+    
+    <div class="sub">
+      <span class="tag source">Climanoticias (西班牙)</span>
+      <span class="tag region">欧洲</span>
+      <span class="tag product">热泵/空调</span>
+      <span class="tag new">NEW</span>
+    </div>
+  </td>
+  <td class="summary">（待补充，下次运行会自动生成）</td>
+  <td class="kw"><code>待补充</code></td>
+  <td class="fmt">待定</td>
+  <td class="score">20</td>
+  <td class="used-col">
+    <label class="used-checkbox">
+      <input type="checkbox" class="mark-used" data-id="8bf84cea356481b5">
+      <span>已用</span>
+    </label>
+  </td>
+</tr>
+
+<tr data-region="europe" data-product="both" data-id="89f036548071c9e0" class="topic-row">
+  <td class="rank">24</td>
+  <td class="title-cell">
+    <a href="https://www.installatie.nl/techniek/warmtepompen/elektriciteitsprijs-op-winteravond-verdubbelt-maak-avondblok-korter/" target="_blank" rel="noopener">Elektriciteitsprijs op winteravond verdubbelt: ‘Maak avondblok korter’</a>
+    
+    <div class="sub">
+      <span class="tag source">Installatie.nl (荷兰)</span>
+      <span class="tag region">欧洲</span>
+      <span class="tag product">热泵/空调</span>
+      <span class="tag new">NEW</span>
+    </div>
+  </td>
+  <td class="summary">（待补充，下次运行会自动生成）</td>
+  <td class="kw"><code>待补充</code></td>
+  <td class="fmt">待定</td>
+  <td class="score">20</td>
+  <td class="used-col">
+    <label class="used-checkbox">
+      <input type="checkbox" class="mark-used" data-id="89f036548071c9e0">
+      <span>已用</span>
+    </label>
+  </td>
+</tr>
+
+<tr data-region="europe" data-product="both" data-id="99c16eb98ef01e5a" class="topic-row">
+  <td class="rank">25</td>
+  <td class="title-cell">
+    <a href="https://www.installatie.nl/nieuws/vasco-vernieuwt-warmtepomp-range/" target="_blank" rel="noopener">Vasco vernieuwt warmtepomp-range</a>
+    
+    <div class="sub">
+      <span class="tag source">Installatie.nl (荷兰)</span>
+      <span class="tag region">欧洲</span>
+      <span class="tag product">热泵/空调</span>
+      <span class="tag new">NEW</span>
+    </div>
+  </td>
+  <td class="summary">（待补充，下次运行会自动生成）</td>
+  <td class="kw"><code>待补充</code></td>
+  <td class="fmt">待定</td>
+  <td class="score">20</td>
+  <td class="used-col">
+    <label class="used-checkbox">
+      <input type="checkbox" class="mark-used" data-id="99c16eb98ef01e5a">
+      <span>已用</span>
+    </label>
+  </td>
+</tr>
+
+<tr data-region="europe" data-product="both" data-id="27bfc5351252976c" class="topic-row">
+  <td class="rank">26</td>
+  <td class="title-cell">
+    <a href="https://www.installatie.nl/techniek/warmtepompen/nefit-bosch-levert-warmtepompboilers-met-thermische-batterijfunctie/" target="_blank" rel="noopener">Nefit Bosch levert warmtepompboilers met thermische batterijfunctie</a>
+    
+    <div class="sub">
+      <span class="tag source">Installatie.nl (荷兰)</span>
+      <span class="tag region">欧洲</span>
+      <span class="tag product">热泵/空调</span>
+      <span class="tag new">NEW</span>
+    </div>
+  </td>
+  <td class="summary">（待补充，下次运行会自动生成）</td>
+  <td class="kw"><code>待补充</code></td>
+  <td class="fmt">待定</td>
+  <td class="score">20</td>
+  <td class="used-col">
+    <label class="used-checkbox">
+      <input type="checkbox" class="mark-used" data-id="27bfc5351252976c">
+      <span>已用</span>
+    </label>
+  </td>
+</tr>
+
+<tr data-region="europe" data-product="both" data-id="b7605be947b2f528" class="topic-row">
+  <td class="rank">27</td>
+  <td class="title-cell">
+    <a href="https://www.installatie.nl/techniek/warmtepomp-installeren-zonder-fysieke-overbelasting-tilhulpen-en-oplossingen/" target="_blank" rel="noopener">Warmtepomp installeren zonder fysieke overbelasting: tilhulpen en oplossingen</a>
+    
+    <div class="sub">
+      <span class="tag source">Installatie.nl (荷兰)</span>
+      <span class="tag region">欧洲</span>
+      <span class="tag product">热泵/空调</span>
+      <span class="tag new">NEW</span>
+    </div>
+  </td>
+  <td class="summary">（待补充，下次运行会自动生成）</td>
+  <td class="kw"><code>待补充</code></td>
+  <td class="fmt">待定</td>
+  <td class="score">20</td>
+  <td class="used-col">
+    <label class="used-checkbox">
+      <input type="checkbox" class="mark-used" data-id="b7605be947b2f528">
+      <span>已用</span>
+    </label>
+  </td>
+</tr>
+
+<tr data-region="global" data-product="both" data-id="2828b07015d4116d" class="topic-row">
+  <td class="rank">28</td>
+  <td class="title-cell">
+    <a href="https://www.achrnews.com/articles/166423-a-packaged-heat-pump-for-spaces-with-installation-constraints" target="_blank" rel="noopener">A Packaged Heat Pump for Spaces With Installation Constraints</a>
+    
+    <div class="sub">
+      <span class="tag source">ACHR News (北美HVACR行业权威媒体)</span>
+      <span class="tag region">通用</span>
+      <span class="tag product">热泵/空调</span>
+      <span class="tag new">NEW</span>
+    </div>
+  </td>
+  <td class="summary">（待补充，下次运行会自动生成）</td>
+  <td class="kw"><code>待补充</code></td>
+  <td class="fmt">待定</td>
+  <td class="score">20</td>
+  <td class="used-col">
+    <label class="used-checkbox">
+      <input type="checkbox" class="mark-used" data-id="2828b07015d4116d">
+      <span>已用</span>
+    </label>
+  </td>
+</tr>
+
+<tr data-region="global" data-product="both" data-id="e5632fade24f329f" class="topic-row">
+  <td class="rank">29</td>
+  <td class="title-cell">
+    <a href="https://www.achrnews.com/articles/166413-how-smart-contractors-turn-data-into-dollars" target="_blank" rel="noopener">How Smart Contractors Turn Data Into Dollars</a>
+    
+    <div class="sub">
+      <span class="tag source">ACHR News (北美HVACR行业权威媒体)</span>
+      <span class="tag region">通用</span>
+      <span class="tag product">热泵/空调</span>
+      <span class="tag new">NEW</span>
+    </div>
+  </td>
+  <td class="summary">（待补充，下次运行会自动生成）</td>
+  <td class="kw"><code>待补充</code></td>
+  <td class="fmt">待定</td>
+  <td class="score">20</td>
+  <td class="used-col">
+    <label class="used-checkbox">
+      <input type="checkbox" class="mark-used" data-id="e5632fade24f329f">
+      <span>已用</span>
+    </label>
+  </td>
+</tr>
+
+<tr data-region="global" data-product="both" data-id="a8c735fd650d1bb9" class="topic-row">
+  <td class="rank">30</td>
+  <td class="title-cell">
+    <a href="https://www.achrnews.com/articles/166418-it-doesnt-seem-like-much-is-the-same-except-that-its-still-hvac" target="_blank" rel="noopener">&#x27;It Doesn&#x27;t Seem Like Much Is the Same Except That It&#x27;s Still HVAC&#x27;</a>
+    
+    <div class="sub">
+      <span class="tag source">ACHR News (北美HVACR行业权威媒体)</span>
+      <span class="tag region">通用</span>
+      <span class="tag product">热泵/空调</span>
+      <span class="tag new">NEW</span>
+    </div>
+  </td>
+  <td class="summary">（待补充，下次运行会自动生成）</td>
+  <td class="kw"><code>待补充</code></td>
+  <td class="fmt">待定</td>
+  <td class="score">20</td>
+  <td class="used-col">
+    <label class="used-checkbox">
+      <input type="checkbox" class="mark-used" data-id="a8c735fd650d1bb9">
+      <span>已用</span>
+    </label>
+  </td>
+</tr>
+
+<tr data-region="global" data-product="both" data-id="853a9d0983ea9003" class="topic-row">
+  <td class="rank">31</td>
+  <td class="title-cell">
+    <a href="https://www.achrnews.com/articles/166415-a2ls-gain-momentum-in-supermarket-refrigeration" target="_blank" rel="noopener">A2Ls Gain Momentum in Supermarket Refrigeration</a>
+    
+    <div class="sub">
+      <span class="tag source">ACHR News (北美HVACR行业权威媒体)</span>
+      <span class="tag region">通用</span>
+      <span class="tag product">热泵/空调</span>
+      <span class="tag new">NEW</span>
+    </div>
+  </td>
+  <td class="summary">（待补充，下次运行会自动生成）</td>
+  <td class="kw"><code>待补充</code></td>
+  <td class="fmt">待定</td>
+  <td class="score">20</td>
+  <td class="used-col">
+    <label class="used-checkbox">
+      <input type="checkbox" class="mark-used" data-id="853a9d0983ea9003">
+      <span>已用</span>
+    </label>
+  </td>
+</tr>
+
+<tr data-region="global" data-product="both" data-id="083e3791099e09a2" class="topic-row">
+  <td class="rank">32</td>
+  <td class="title-cell">
+    <a href="https://www.achrnews.com/articles/166399-software-gives-contractors-a-window-into-home-systems" target="_blank" rel="noopener">Software Gives Contractors a Window into Home Systems</a>
+    
+    <div class="sub">
+      <span class="tag source">ACHR News (北美HVACR行业权威媒体)</span>
+      <span class="tag region">通用</span>
+      <span class="tag product">热泵/空调</span>
+      <span class="tag new">NEW</span>
+    </div>
+  </td>
+  <td class="summary">（待补充，下次运行会自动生成）</td>
+  <td class="kw"><code>待补充</code></td>
+  <td class="fmt">待定</td>
+  <td class="score">20</td>
+  <td class="used-col">
+    <label class="used-checkbox">
+      <input type="checkbox" class="mark-used" data-id="083e3791099e09a2">
+      <span>已用</span>
+    </label>
+  </td>
+</tr>
+
+<tr data-region="global" data-product="both" data-id="0db7c53d313e432c" class="topic-row">
+  <td class="rank">33</td>
+  <td class="title-cell">
+    <a href="https://www.achrnews.com/articles/166407-can-geothermal-technology-decarbonize-data-centers" target="_blank" rel="noopener">Can Geothermal Technology Decarbonize Data Centers?</a>
+    
+    <div class="sub">
+      <span class="tag source">ACHR News (北美HVACR行业权威媒体)</span>
+      <span class="tag region">通用</span>
+      <span class="tag product">热泵/空调</span>
+      <span class="tag new">NEW</span>
+    </div>
+  </td>
+  <td class="summary">（待补充，下次运行会自动生成）</td>
+  <td class="kw"><code>待补充</code></td>
+  <td class="fmt">待定</td>
+  <td class="score">20</td>
+  <td class="used-col">
+    <label class="used-checkbox">
+      <input type="checkbox" class="mark-used" data-id="0db7c53d313e432c">
+      <span>已用</span>
+    </label>
+  </td>
+</tr>
+
+<tr data-region="global" data-product="both" data-id="9cfd0f743ca4cf4c" class="topic-row">
+  <td class="rank">34</td>
+  <td class="title-cell">
+    <a href="https://www.achrnews.com/articles/166411-engineered-drivetrain-reliability-for-high-density-data-center-cooling-towers" target="_blank" rel="noopener">Engineered Drivetrain Reliability for High-Density Data Center Cooling Towers</a>
+    
+    <div class="sub">
+      <span class="tag source">ACHR News (北美HVACR行业权威媒体)</span>
+      <span class="tag region">通用</span>
+      <span class="tag product">热泵/空调</span>
+      <span class="tag new">NEW</span>
+    </div>
+  </td>
+  <td class="summary">（待补充，下次运行会自动生成）</td>
+  <td class="kw"><code>待补充</code></td>
+  <td class="fmt">待定</td>
+  <td class="score">20</td>
+  <td class="used-col">
+    <label class="used-checkbox">
+      <input type="checkbox" class="mark-used" data-id="9cfd0f743ca4cf4c">
+      <span>已用</span>
+    </label>
+  </td>
+</tr>
+
+<tr data-region="global" data-product="both" data-id="34c2c980822eade4" class="topic-row">
+  <td class="rank">35</td>
+  <td class="title-cell">
+    <a href="https://www.achrnews.com/articles/166406-can-hvac-train-enough-technicians-for-the-data-center-boom" target="_blank" rel="noopener">Can HVAC Train Enough Technicians for the Data Center Boom?</a>
+    
+    <div class="sub">
+      <span class="tag source">ACHR News (北美HVACR行业权威媒体)</span>
+      <span class="tag region">通用</span>
+      <span class="tag product">热泵/空调</span>
+      <span class="tag new">NEW</span>
+    </div>
+  </td>
+  <td class="summary">（待补充，下次运行会自动生成）</td>
+  <td class="kw"><code>待补充</code></td>
+  <td class="fmt">待定</td>
+  <td class="score">20</td>
+  <td class="used-col">
+    <label class="used-checkbox">
+      <input type="checkbox" class="mark-used" data-id="34c2c980822eade4">
+      <span>已用</span>
+    </label>
+  </td>
+</tr>
+
+<tr data-region="global" data-product="both" data-id="dc25cd97a4957624" class="topic-row">
+  <td class="rank">36</td>
+  <td class="title-cell">
+    <a href="https://www.achrnews.com/articles/166404-daikin-debuts-new-inverter-driven-commercial-heat-pump" target="_blank" rel="noopener">Daikin Debuts New Inverter-Driven Commercial 
+Heat Pump</a>
+    
+    <div class="sub">
+      <span class="tag source">ACHR News (北美HVACR行业权威媒体)</span>
+      <span class="tag region">通用</span>
+      <span class="tag product">热泵/空调</span>
+      <span class="tag new">NEW</span>
+    </div>
+  </td>
+  <td class="summary">（待补充，下次运行会自动生成）</td>
+  <td class="kw"><code>待补充</code></td>
+  <td class="fmt">待定</td>
+  <td class="score">20</td>
+  <td class="used-col">
+    <label class="used-checkbox">
+      <input type="checkbox" class="mark-used" data-id="dc25cd97a4957624">
+      <span>已用</span>
+    </label>
+  </td>
+</tr>
+
+<tr data-region="global" data-product="both" data-id="b0d61950afc6c659" class="topic-row">
+  <td class="rank">37</td>
+  <td class="title-cell">
+    <a href="https://www.achrnews.com/articles/166402-rising-costs-force-contractors-to-take-a-harder-look-at-pricing" target="_blank" rel="noopener">Rising Costs Force Contractors to Take a Harder Look at Pricing</a>
+    
+    <div class="sub">
+      <span class="tag source">ACHR News (北美HVACR行业权威媒体)</span>
+      <span class="tag region">通用</span>
+      <span class="tag product">热泵/空调</span>
+      <span class="tag new">NEW</span>
+    </div>
+  </td>
+  <td class="summary">（待补充，下次运行会自动生成）</td>
+  <td class="kw"><code>待补充</code></td>
+  <td class="fmt">待定</td>
+  <td class="score">20</td>
+  <td class="used-col">
+    <label class="used-checkbox">
+      <input type="checkbox" class="mark-used" data-id="b0d61950afc6c659">
+      <span>已用</span>
+    </label>
+  </td>
+</tr>
+
+<tr data-region="global" data-product="both" data-id="3f58c6e9d62fd532" class="topic-row">
+  <td class="rank">38</td>
+  <td class="title-cell">
+    <a href="https://www.achrnews.com/articles/166403-apr-supply-honored-by-2-manufacturing-partners" target="_blank" rel="noopener">APR Supply Honored by 2 Manufacturing Partners</a>
+    
+    <div class="sub">
+      <span class="tag source">ACHR News (北美HVACR行业权威媒体)</span>
+      <span class="tag region">通用</span>
+      <span class="tag product">热泵/空调</span>
+      <span class="tag new">NEW</span>
+    </div>
+  </td>
+  <td class="summary">（待补充，下次运行会自动生成）</td>
+  <td class="kw"><code>待补充</code></td>
+  <td class="fmt">待定</td>
+  <td class="score">20</td>
+  <td class="used-col">
+    <label class="used-checkbox">
+      <input type="checkbox" class="mark-used" data-id="3f58c6e9d62fd532">
+      <span>已用</span>
+    </label>
+  </td>
+</tr>
+
+<tr data-region="global" data-product="both" data-id="6a8dbd306fb22f1f" class="topic-row">
+  <td class="rank">39</td>
+  <td class="title-cell">
+    <a href="https://www.achrnews.com/articles/166401-bipartisan-housing-bill-and-the-hvac-industry" target="_blank" rel="noopener">Bipartisan Housing Bill and the HVAC Industry</a>
+    
+    <div class="sub">
+      <span class="tag source">ACHR News (北美HVACR行业权威媒体)</span>
+      <span class="tag region">通用</span>
+      <span class="tag product">热泵/空调</span>
+      <span class="tag new">NEW</span>
+    </div>
+  </td>
+  <td class="summary">（待补充，下次运行会自动生成）</td>
+  <td class="kw"><code>待补充</code></td>
+  <td class="fmt">待定</td>
+  <td class="score">20</td>
+  <td class="used-col">
+    <label class="used-checkbox">
+      <input type="checkbox" class="mark-used" data-id="6a8dbd306fb22f1f">
+      <span>已用</span>
+    </label>
+  </td>
+</tr>
+
+<tr data-region="global" data-product="both" data-id="3c81b174d60f1696" class="topic-row">
+  <td class="rank">40</td>
+  <td class="title-cell">
+    <a href="https://www.achrnews.com/articles/166400-hvac-groups-support-does-rulemaking-to-cut-energy-efficiency-mandates" target="_blank" rel="noopener">HVAC Groups Support DOE’s Rulemaking to Cut Energy Efficiency Mandates</a>
+    
+    <div class="sub">
+      <span class="tag source">ACHR News (北美HVACR行业权威媒体)</span>
+      <span class="tag region">通用</span>
+      <span class="tag product">热泵/空调</span>
+      <span class="tag new">NEW</span>
+    </div>
+  </td>
+  <td class="summary">（待补充，下次运行会自动生成）</td>
+  <td class="kw"><code>待补充</code></td>
+  <td class="fmt">待定</td>
+  <td class="score">20</td>
+  <td class="used-col">
+    <label class="used-checkbox">
+      <input type="checkbox" class="mark-used" data-id="3c81b174d60f1696">
+      <span>已用</span>
+    </label>
+  </td>
+</tr>
+
+<tr data-region="global" data-product="both" data-id="818b1a2bf4eee922" class="topic-row">
+  <td class="rank">41</td>
+  <td class="title-cell">
+    <a href="https://www.achrnews.com/articles/166398-new-ai-tool-assists-techs-who-manage-cooling-systems" target="_blank" rel="noopener">New AI Tool Assists Techs Who Manage Cooling Systems</a>
+    
+    <div class="sub">
+      <span class="tag source">ACHR News (北美HVACR行业权威媒体)</span>
+      <span class="tag region">通用</span>
+      <span class="tag product">热泵/空调</span>
+      <span class="tag new">NEW</span>
+    </div>
+  </td>
+  <td class="summary">（待补充，下次运行会自动生成）</td>
+  <td class="kw"><code>待补充</code></td>
+  <td class="fmt">待定</td>
+  <td class="score">20</td>
+  <td class="used-col">
+    <label class="used-checkbox">
+      <input type="checkbox" class="mark-used" data-id="818b1a2bf4eee922">
+      <span>已用</span>
+    </label>
+  </td>
+</tr>
+
+<tr data-region="global" data-product="both" data-id="a7c11580cbcf9843" class="topic-row">
+  <td class="rank">42</td>
+  <td class="title-cell">
+    <a href="https://www.achrnews.com/articles/166397-get-it-in-writing-how-hvac-contractors-can-avoid-lawsuits" target="_blank" rel="noopener">Get it in Writing: How HVAC Contractors Can Avoid Lawsuits</a>
+    
+    <div class="sub">
+      <span class="tag source">ACHR News (北美HVACR行业权威媒体)</span>
+      <span class="tag region">通用</span>
+      <span class="tag product">热泵/空调</span>
+      <span class="tag new">NEW</span>
+    </div>
+  </td>
+  <td class="summary">（待补充，下次运行会自动生成）</td>
+  <td class="kw"><code>待补充</code></td>
+  <td class="fmt">待定</td>
+  <td class="score">20</td>
+  <td class="used-col">
+    <label class="used-checkbox">
+      <input type="checkbox" class="mark-used" data-id="a7c11580cbcf9843">
+      <span>已用</span>
+    </label>
+  </td>
+</tr>
+
+<tr data-region="global" data-product="both" data-id="1a4f8b263152fc42" class="topic-row">
+  <td class="rank">43</td>
+  <td class="title-cell">
+    <a href="https://www.achrnews.com/articles/166395-talk-to-my-agent-how-ai-is-changing-the-hvac-sales-conversation" target="_blank" rel="noopener">Talk to My Agent: How AI Is Changing the HVAC Sales Conversation</a>
+    
+    <div class="sub">
+      <span class="tag source">ACHR News (北美HVACR行业权威媒体)</span>
+      <span class="tag region">通用</span>
+      <span class="tag product">热泵/空调</span>
+      <span class="tag new">NEW</span>
+    </div>
+  </td>
+  <td class="summary">（待补充，下次运行会自动生成）</td>
+  <td class="kw"><code>待补充</code></td>
+  <td class="fmt">待定</td>
+  <td class="score">20</td>
+  <td class="used-col">
+    <label class="used-checkbox">
+      <input type="checkbox" class="mark-used" data-id="1a4f8b263152fc42">
+      <span>已用</span>
+    </label>
+  </td>
+</tr>
+
+<tr data-region="global" data-product="both" data-id="48d483f8a387e7af" class="topic-row">
+  <td class="rank">44</td>
+  <td class="title-cell">
+    <a href="https://www.achrnews.com/articles/166391-survey-homeowners-are-ready-to-skip-dining-out-to-pay-for-summer-a-c-bills" target="_blank" rel="noopener">Survey: Homeowners are Ready To Skip Dining Out To Pay for Summer A/C Bills</a>
+    
+    <div class="sub">
+      <span class="tag source">ACHR News (北美HVACR行业权威媒体)</span>
+      <span class="tag region">通用</span>
+      <span class="tag product">热泵/空调</span>
+      <span class="tag new">NEW</span>
+    </div>
+  </td>
+  <td class="summary">（待补充，下次运行会自动生成）</td>
+  <td class="kw"><code>待补充</code></td>
+  <td class="fmt">待定</td>
+  <td class="score">20</td>
+  <td class="used-col">
+    <label class="used-checkbox">
+      <input type="checkbox" class="mark-used" data-id="48d483f8a387e7af">
+      <span>已用</span>
+    </label>
+  </td>
+</tr>
+
+<tr data-region="global" data-product="both" data-id="96247a19fab73250" class="topic-row">
+  <td class="rank">45</td>
+  <td class="title-cell">
+    <a href="https://www.achrnews.com/articles/166393-bpi-seeks-input-for-spanish-english-industry-glossary" target="_blank" rel="noopener">BPI Seeks Input for Spanish-English Industry Glossary</a>
+    
+    <div class="sub">
+      <span class="tag source">ACHR News (北美HVACR行业权威媒体)</span>
+      <span class="tag region">通用</span>
+      <span class="tag product">热泵/空调</span>
+      <span class="tag new">NEW</span>
+    </div>
+  </td>
+  <td class="summary">（待补充，下次运行会自动生成）</td>
+  <td class="kw"><code>待补充</code></td>
+  <td class="fmt">待定</td>
+  <td class="score">20</td>
+  <td class="used-col">
+    <label class="used-checkbox">
+      <input type="checkbox" class="mark-used" data-id="96247a19fab73250">
+      <span>已用</span>
+    </label>
+  </td>
+</tr>
+
+<tr data-region="global" data-product="both" data-id="2780055d1ef7f0f7" class="topic-row">
+  <td class="rank">46</td>
+  <td class="title-cell">
+    <a href="https://www.achrnews.com/articles/166390-the-competitive-advantage-isnt-just-hvac-technical-expertise" target="_blank" rel="noopener">The Competitive Advantage Isn’t Just HVAC Technical Expertise</a>
+    
+    <div class="sub">
+      <span class="tag source">ACHR News (北美HVACR行业权威媒体)</span>
+      <span class="tag region">通用</span>
+      <span class="tag product">热泵/空调</span>
+      <span class="tag new">NEW</span>
+    </div>
+  </td>
+  <td class="summary">（待补充，下次运行会自动生成）</td>
+  <td class="kw"><code>待补充</code></td>
+  <td class="fmt">待定</td>
+  <td class="score">20</td>
+  <td class="used-col">
+    <label class="used-checkbox">
+      <input type="checkbox" class="mark-used" data-id="2780055d1ef7f0f7">
+      <span>已用</span>
+    </label>
+  </td>
+</tr>
+
+<tr data-region="africa" data-product="both" data-id="5209803a06a6b6ec" class="topic-row">
+  <td class="rank">47</td>
+  <td class="title-cell">
+    <a href="https://refrigerationandaircon.co.za/meeting-explosive-cooling-demand-with-natural-refrigerants-part-3-2/" target="_blank" rel="noopener">Meeting explosive cooling demand with natural refrigerants (Part 3)</a>
+    
+    <div class="sub">
+      <span class="tag source">RACA Journal (南非)</span>
+      <span class="tag region">非洲</span>
+      <span class="tag product">热泵/空调</span>
+      <span class="tag new">NEW</span>
+    </div>
+  </td>
+  <td class="summary">（待补充，下次运行会自动生成）</td>
+  <td class="kw"><code>待补充</code></td>
+  <td class="fmt">待定</td>
+  <td class="score">20</td>
+  <td class="used-col">
+    <label class="used-checkbox">
+      <input type="checkbox" class="mark-used" data-id="5209803a06a6b6ec">
+      <span>已用</span>
+    </label>
+  </td>
+</tr>
+
+<tr data-region="africa" data-product="both" data-id="abc0b56a90600bbe" class="topic-row">
+  <td class="rank">48</td>
+  <td class="title-cell">
+    <a href="https://refrigerationandaircon.co.za/meeting-explosive-cooling-demand-with-natural-refrigerants-part-3/" target="_blank" rel="noopener">Cooling accounts for 7.5% of global emissions – GIZ highlights the stakes (Part 2)</a>
+    
+    <div class="sub">
+      <span class="tag source">RACA Journal (南非)</span>
+      <span class="tag region">非洲</span>
+      <span class="tag product">热泵/空调</span>
+      <span class="tag new">NEW</span>
+    </div>
+  </td>
+  <td class="summary">（待补充，下次运行会自动生成）</td>
+  <td class="kw"><code>待补充</code></td>
+  <td class="fmt">待定</td>
+  <td class="score">20</td>
+  <td class="used-col">
+    <label class="used-checkbox">
+      <input type="checkbox" class="mark-used" data-id="abc0b56a90600bbe">
+      <span>已用</span>
+    </label>
+  </td>
+</tr>
+
+<tr data-region="africa" data-product="both" data-id="878ee0e4228c2ec1" class="topic-row">
+  <td class="rank">49</td>
+  <td class="title-cell">
+    <a href="https://refrigerationandaircon.co.za/part-1-why-green-cooling-matters-giz-md-sets-the-scene/" target="_blank" rel="noopener">Part 1: Why green cooling matters – GIZ MD sets the scene</a>
+    
+    <div class="sub">
+      <span class="tag source">RACA Journal (南非)</span>
+      <span class="tag region">非洲</span>
+      <span class="tag product">热泵/空调</span>
+      <span class="tag new">NEW</span>
+    </div>
+  </td>
+  <td class="summary">（待补充，下次运行会自动生成）</td>
+  <td class="kw"><code>待补充</code></td>
+  <td class="fmt">待定</td>
+  <td class="score">20</td>
+  <td class="used-col">
+    <label class="used-checkbox">
+      <input type="checkbox" class="mark-used" data-id="878ee0e4228c2ec1">
+      <span>已用</span>
+    </label>
+  </td>
+</tr>
+
+<tr data-region="africa" data-product="both" data-id="6ec7b166998532c2" class="topic-row">
+  <td class="rank">50</td>
+  <td class="title-cell">
+    <a href="https://refrigerationandaircon.co.za/managing-risk-and-delivering-long-term-value-on-cross-border-hvacr-projects/" target="_blank" rel="noopener">Managing risk and delivering long-term value on cross-border HVAC&amp;R projects</a>
+    
+    <div class="sub">
+      <span class="tag source">RACA Journal (南非)</span>
+      <span class="tag region">非洲</span>
+      <span class="tag product">热泵/空调</span>
+      <span class="tag new">NEW</span>
+    </div>
+  </td>
+  <td class="summary">（待补充，下次运行会自动生成）</td>
+  <td class="kw"><code>待补充</code></td>
+  <td class="fmt">待定</td>
+  <td class="score">20</td>
+  <td class="used-col">
+    <label class="used-checkbox">
+      <input type="checkbox" class="mark-used" data-id="6ec7b166998532c2">
+      <span>已用</span>
+    </label>
+  </td>
+</tr>
+
+    </tbody>
+  </table>
+  <script>
+    var currentRegion = 'all';
+    var currentProduct = 'all';
+    var hideUsed = false;
+    var STORAGE_KEY = 'heatpump_topics_used_v1';
+
+    function getUsedSet() {
+      try {
+        return new Set(JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]'));
+      } catch (e) { return new Set(); }
+    }
+    function saveUsedSet(set) {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(Array.from(set)));
+    }
+
+    function applyFilters() {
+      var usedSet = getUsedSet();
+      document.querySelectorAll('tbody tr').forEach(function(row) {
+        var regionOk = (currentRegion === 'all' || row.dataset.region === currentRegion);
+        var productOk = (currentProduct === 'all' || row.dataset.product === currentProduct);
+        var isUsed = usedSet.has(row.dataset.id);
+        var usedOk = !(hideUsed && isUsed);
+        row.style.display = (regionOk && productOk && usedOk) ? '' : 'none';
+      });
+    }
+
+    function refreshUsedUI() {
+      var usedSet = getUsedSet();
+      document.querySelectorAll('.mark-used').forEach(function(cb) {
+        var isUsed = usedSet.has(cb.dataset.id);
+        cb.checked = isUsed;
+        var row = cb.closest('tr');
+        if (row) { row.classList.toggle('used-row', isUsed); }
+      });
+    }
+
+    document.querySelectorAll('.mark-used').forEach(function(cb) {
+      cb.addEventListener('change', function() {
+        var usedSet = getUsedSet();
+        if (cb.checked) { usedSet.add(cb.dataset.id); } else { usedSet.delete(cb.dataset.id); }
+        saveUsedSet(usedSet);
+        refreshUsedUI();
+        applyFilters();
+      });
+    });
+
+    var toggleBtn = document.getElementById('toggle-used-btn');
+    if (toggleBtn) {
+      toggleBtn.addEventListener('click', function() {
+        hideUsed = !hideUsed;
+        toggleBtn.classList.toggle('active', hideUsed);
+        toggleBtn.textContent = hideUsed ? '显示"已用"话题' : '隐藏"已用"话题';
+        applyFilters();
+      });
+    }
+
+    document.querySelectorAll('.filter-btn[data-filter]').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        document.querySelectorAll('.filter-btn[data-filter]').forEach(function(b) { b.classList.remove('active'); });
+        btn.classList.add('active');
+        currentRegion = btn.dataset.filter;
+        applyFilters();
+      });
+    });
+    document.querySelectorAll('.pfilter-btn').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        document.querySelectorAll('.pfilter-btn').forEach(function(b) { b.classList.remove('active'); });
+        btn.classList.add('active');
+        currentProduct = btn.dataset.pfilter;
+        applyFilters();
+      });
+    });
+
+    refreshUsedUI();
+  </script>
+</body>
+</html>

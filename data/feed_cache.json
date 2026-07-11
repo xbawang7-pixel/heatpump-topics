@@ -1,0 +1,98 @@
+{
+  "https://www.genieclimatique.fr/": {
+    "feed_url": null,
+    "method": "not_found"
+  },
+  "https://www.uniclima.fr/": {
+    "feed_url": null,
+    "method": "not_found"
+  },
+  "https://www.lemoniteur.fr/": {
+    "feed_url": null,
+    "method": "not_found"
+  },
+  "https://www.impiantinews.it/": {
+    "feed_url": "https://www.impiantinews.it/feed/",
+    "method": "html_link_tag"
+  },
+  "https://www.rcinews.it/": {
+    "feed_url": "https://www.impiantinews.it/feed/",
+    "method": "html_link_tag"
+  },
+  "https://www.assoclima.it/": {
+    "feed_url": null,
+    "method": "not_found"
+  },
+  "https://www.caloryfrio.com/": {
+    "feed_url": "https://www.caloryfrio.com/feed/",
+    "method": "common_path:feed/"
+  },
+  "https://www.climanoticias.com/": {
+    "feed_url": "https://www.climanoticias.com/feed/all",
+    "method": "html_link_tag"
+  },
+  "https://www.afec.es/": {
+    "feed_url": null,
+    "method": "not_found"
+  },
+  "https://www.installatie.nl/": {
+    "feed_url": "https://www.installatie.nl/feed/",
+    "method": "html_link_tag"
+  },
+  "https://www.warmtepompen.info/": {
+    "feed_url": null,
+    "method": "not_found"
+  },
+  "https://globenergia.pl/": {
+    "feed_url": null,
+    "method": "not_found"
+  },
+  "https://portpc.pl/": {
+    "feed_url": "https://portpc.pl/feed/",
+    "method": "html_link_tag"
+  },
+  "https://www.sulpu.fi/": {
+    "feed_url": "https://www.sulpu.fi/feed/",
+    "method": "html_link_tag"
+  },
+  "https://skvp.se/": {
+    "feed_url": null,
+    "method": "not_found"
+  },
+  "https://hvacmagasinet.se/": {
+    "feed_url": null,
+    "method": "not_found"
+  },
+  "https://www.racajournal.co.za/": {
+    "feed_url": "https://refrigerationandaircon.co.za/feed/",
+    "method": "html_link_tag"
+  },
+  "https://www.engineeringnews.co.za/": {
+    "feed_url": null,
+    "method": "not_found"
+  },
+  "https://www.u-3arc.org/": {
+    "feed_url": null,
+    "method": "not_found"
+  },
+  "https://www.seforall.org/": {
+    "feed_url": "https://www.seforall.org/rss.xml",
+    "method": "common_path:rss.xml"
+  },
+  "https://abrava.com.br/": {
+    "feed_url": "https://abrava.com.br/feed/",
+    "method": "html_link_tag"
+  },
+  "https://www.acrlatinoamerica.com/": {
+    "feed_url": null,
+    "method": "not_found"
+  },
+  "https://www.revistadofrio.com.br/": {
+    "feed_url": "https://revistadofrio.com.br/feed/",
+    "method": "html_link_tag"
+  },
+  "https://www.refriamericas.com/": {
+    "feed_url": null,
+    "method": "not_found"
+  }
+}
