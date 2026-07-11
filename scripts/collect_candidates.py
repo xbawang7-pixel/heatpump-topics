@@ -24,14 +24,16 @@ from datetime import datetime, timedelta, timezone
 import feedparser
 import requests
 import yaml
+from bs4 import BeautifulSoup
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CONFIG_PATH = os.path.join(ROOT, "config", "sources.yaml")
 DATA_DIR = os.path.join(ROOT, "data")
-OUT_PATH = os.path.join(DATA_DIR, "candidates.json")
 
 NEWS_LOOKBACK_HOURS = int(os.environ.get("LOOKBACK_HOURS", "168"))  # 默认7天
-REDDIT_LIMIT = 25  # 每个板块抓多少条
+REDDIT_LIMIT = 35  # 每个板块抓多少条（从25调到35，捞更多内容；
+                    # 注意这个数字跟Apify账单成正比，涨了大概40%的调用量，
+                    # 如果发现某个月额度紧张，把这个数字调回去就行）
 
 APIFY_ACTOR = "harshmaur~reddit-scraper"  # Apify Store上的actor标识（~代替/）
 APIFY_RUN_URL = f"https://api.apify.com/v2/acts/{APIFY_ACTOR}/run-sync-get-dataset-items"
@@ -48,6 +50,46 @@ def parse_entry_time(entry):
         if t:
             return datetime(*t[:6], tzinfo=timezone.utc)
     return None
+
+
+def scrape_html_blog(url, min_title_len=15, max_title_len=140, url_must_contain=None):
+    """通用HTML博客列表页爬取——没有RSS的网站用这个兜底。
+    逻辑很朴素：抓页面里所有链接，标题长度在合理范围内（太短像导航栏，
+    太长像正文）的当成候选文章。这个方法比RSS脆弱得多，网站改版可能会
+    让抓取失效或者抓到垃圾内容，需要针对具体网站调整 min/max_title_len
+    和 url_must_contain 这几个参数。
+    """
+    headers = {"User-Agent": "Mozilla/5.0 (compatible; heatpump-topics-bot/1.0)"}
+    try:
+        resp = requests.get(url, headers=headers, timeout=20)
+        if resp.status_code != 200:
+            print(f"[警告] 网页爬取失败 {url}: HTTP {resp.status_code}")
+            return []
+        soup = BeautifulSoup(resp.text, "html.parser")
+    except Exception as e:
+        print(f"[警告] 网页爬取异常 {url}: {e}")
+        return []
+
+    seen_links = set()
+    results = []
+    for a in soup.find_all("a", href=True):
+        title = a.get_text(strip=True)
+        href = a["href"]
+        if not title or not (min_title_len <= len(title) <= max_title_len):
+            continue
+        if url_must_contain and url_must_contain not in href:
+            continue
+        # 补全相对链接
+        if href.startswith("/"):
+            from urllib.parse import urljoin
+            href = urljoin(url, href)
+        if not href.startswith("http"):
+            continue
+        if href in seen_links:
+            continue
+        seen_links.add(href)
+        results.append({"title": title, "link": href})
+    return results
 
 
 def collect_news(config):
@@ -149,7 +191,7 @@ def collect_reddit(config):
                 json=payload,
                 timeout=120,
             )
-            if not (200 <= resp.status_code < 300):
+            if resp.status_code != 200:
                 print(f"[警告] Apify抓取 {name} 失败: HTTP {resp.status_code} - {resp.text[:200]}")
                 continue
             items = resp.json()
@@ -164,7 +206,7 @@ def collect_reddit(config):
             title = (item.get("title") or item.get("postTitle") or "").strip()
             if not title:
                 continue
-            link = item.get("url") or item.get("postUrl") or item.get("contentUrl") or item.get("permalink") or ""
+            link = item.get("url") or item.get("postUrl") or item.get("permalink") or ""
             score = item.get("upVotes", item.get("score", item.get("ups", 0))) or 0
             comments = item.get("numberOfComments", item.get("commentCount", item.get("numComments", 0))) or 0
             candidates.append({
@@ -186,20 +228,96 @@ def collect_reddit(config):
     return candidates
 
 
+def collect_competitors(config):
+    """同行/竞品官网新闻博客——支持两种接入方式：
+    - rss: 标准RSS订阅，稳定可靠，优先用这个
+    - html: 没有RSS的网站，直接爬网页列表页兜底，
+      需要 url_must_contain 参数缩小范围，减少抓到导航栏垃圾链接的概率，
+      这类信源比RSS脆弱，网站改版可能需要重新调整参数
+    """
+    cutoff = datetime.now(timezone.utc) - timedelta(hours=NEWS_LOOKBACK_HOURS)
+    candidates = []
+    competitors = config.get("competitors", []) or []
+    for comp in competitors:
+        source_name = comp.get("name", "")
+        category = comp.get("category", "competitor")
+
+        if comp.get("rss"):
+            rss_url = comp["rss"]
+            try:
+                parsed = feedparser.parse(rss_url)
+            except Exception as e:
+                print(f"[警告] 同行信源解析失败 {source_name}: {e}")
+                continue
+            count = 0
+            for entry in parsed.entries:
+                pub_time = parse_entry_time(entry)
+                if pub_time and pub_time < cutoff:
+                    continue
+                title = entry.get("title", "").strip()
+                link = entry.get("link", "")
+                if not title:
+                    continue
+                candidates.append({
+                    "id": make_id(link, title),
+                    "title": title,
+                    "link": link,
+                    "summary": (entry.get("summary", "") or "")[:400],
+                    "source_type": "competitor",
+                    "source_name": source_name,
+                    "region": category,
+                    "engagement": None,
+                    "published": pub_time.isoformat() if pub_time else None,
+                })
+                count += 1
+            print(f"[信息] 同行(RSS)-{source_name}: 抓到 {count} 条")
+
+        elif comp.get("html"):
+            items = scrape_html_blog(
+                comp["html"],
+                min_title_len=comp.get("min_title_len", 15),
+                max_title_len=comp.get("max_title_len", 140),
+                url_must_contain=comp.get("url_must_contain"),
+            )
+            count = 0
+            for item in items:
+                candidates.append({
+                    "id": make_id(item["link"], item["title"]),
+                    "title": item["title"],
+                    "link": item["link"],
+                    "summary": "",
+                    "source_type": "competitor",
+                    "source_name": source_name,
+                    "region": category,
+                    "engagement": None,
+                    "published": None,  # 网页爬取拿不到发布时间，靠"重复出现"信号判断持续度
+                })
+                count += 1
+            print(f"[信息] 同行(网页爬取)-{source_name}: 抓到 {count} 条")
+
+    return candidates
+
+
 def main():
     with open(CONFIG_PATH, "r", encoding="utf-8") as f:
         config = yaml.safe_load(f)
 
-    news_candidates = collect_news(config)
-    reddit_candidates = collect_reddit(config)
-    all_candidates = news_candidates + reddit_candidates
-
     os.makedirs(DATA_DIR, exist_ok=True)
-    with open(OUT_PATH, "w", encoding="utf-8") as f:
-        json.dump(all_candidates, f, ensure_ascii=False, indent=2)
+
+    news_candidates = collect_news(config)
+    with open(os.path.join(DATA_DIR, "news_candidates.json"), "w", encoding="utf-8") as f:
+        json.dump(news_candidates, f, ensure_ascii=False, indent=2)
+
+    reddit_candidates = collect_reddit(config)
+    with open(os.path.join(DATA_DIR, "reddit_candidates.json"), "w", encoding="utf-8") as f:
+        json.dump(reddit_candidates, f, ensure_ascii=False, indent=2)
+
+    competitor_candidates = collect_competitors(config)
+    with open(os.path.join(DATA_DIR, "competitor_candidates.json"), "w", encoding="utf-8") as f:
+        json.dump(competitor_candidates, f, ensure_ascii=False, indent=2)
 
     print(f"[完成] 新闻 {len(news_candidates)} 条 + Reddit {len(reddit_candidates)} 条 "
-          f"= 共 {len(all_candidates)} 条候选，写入 {OUT_PATH}")
+          f"+ 同行动态 {len(competitor_candidates)} 条，分别写入三个候选文件")
 
 
 if __name__ == "__main__":

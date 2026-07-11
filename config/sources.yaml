@@ -154,3 +154,28 @@ seed_keywords:
   - "high ambient air conditioner 50c"
   - "district cooling system supplier"
   - "commercial air conditioner distributor"
+
+# 同行/竞品动态：监控他们在写什么，找选题灵感和内容布局参考。
+# 注意：LinkedIn没有接进来——它的反爬虫机制比Reddit严格得多，没有公开API，
+# 自动化抓取风险高（可能牵连你自己的账号），建议偶尔手动去看一眼就好，
+# 这里只接了确认有真实RSS的官网新闻/博客。
+competitors:
+  - name: "Carrier (国际品牌)"
+    rss: "https://www.carrier.com/commercial/en/us/news/"
+    category: "international_brand"
+  - name: "Daikin (国际品牌)"
+    rss: "https://www.daikin.com/press/"
+    category: "international_brand"
+  - name: "SPRSUN (国产同行)"
+    html: "https://sprsunheatpump.com/blog-html"
+    url_must_contain: "sprsunheatpump.com"
+    category: "china_peer"
+    # 这个是网页爬取示范，没有RSS，规则比较粗糙（抓页面所有像标题的链接）。
+    # 如果抓到明显不对的内容（比如导航栏链接混进来），需要调整
+    # min_title_len / max_title_len / url_must_contain 这几个参数收窄范围。
+  # 建议后续核实补充（GPT建议但RSS地址未验证，先别直接用）：
+  # 国产同行：NEWNTIDE、PHNIX、Power World、Fairland、Aquark
+  #   （大多是自建CMS博客，没有标准RSS接口，需要照SPRSUN这样加html字段
+  #    自己试出合适的爬取参数）
+  # 国际品牌：Mitsubishi Electric、Panasonic、Vaillant、Viessmann
+  # 商用HVAC：Midea、LG HVAC、Samsung HVAC
