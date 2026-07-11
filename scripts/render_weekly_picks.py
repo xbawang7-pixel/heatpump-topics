@@ -116,7 +116,7 @@ def main():
 <title>精选清单</title>
 <style>{BASE_CSS}
   .note {{
-    max-width: 1080px; margin: 1rem auto 2rem; font-size: 14.5px; color: var(--text-muted);
+    max-width: 1080px; margin: 1rem auto 2rem; font-size: 16px; color: var(--text-muted);
     background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 12px 16px;
   }}
   .picks-grid {{
@@ -128,14 +128,14 @@ def main():
     border-radius: 14px; padding: 20px; text-decoration: none; transition: border-color 0.15s;
   }}
   .pick-card:hover {{ border-color: var(--accent); }}
-  .pick-source {{ font-size: 12.5px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.04em; }}
-  .pick-title-draft {{ font-size: 18px; font-weight: 600; color: var(--text); margin-top: 8px; line-height: 1.45; font-family: Georgia, serif; }}
-  .pick-original-title {{ font-size: 13px; color: var(--text-faint); margin-top: 8px; }}
-  .pick-summary {{ font-size: 14.5px; color: var(--text-muted); margin-top: 8px; line-height: 1.6; }}
+  .pick-source {{ font-size: 14px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.04em; }}
+  .pick-title-draft {{ font-size: 21px; font-weight: 600; color: var(--text); margin-top: 8px; line-height: 1.5; font-family: Georgia, serif; }}
+  .pick-original-title {{ font-size: 14.5px; color: var(--text-faint); margin-top: 8px; }}
+  .pick-summary {{ font-size: 16px; color: var(--text-muted); margin-top: 8px; line-height: 1.65; }}
   .pick-footer {{ margin-top: 14px; display: flex; justify-content: space-between; align-items: center; gap: 8px; }}
-  .pick-footer code {{ color: var(--accent); font-family: "SF Mono", Menlo, monospace; font-size: 13px; background: var(--accent-soft); padding: 3px 8px; border-radius: 5px; }}
-  .pick-format {{ font-size: 13px; color: var(--text-muted); white-space: nowrap; }}
-  .grounded-tag {{ font-size: 12.5px; color: var(--accent); font-weight: 600; }}
+  .pick-footer code {{ color: var(--accent); font-family: "SF Mono", Menlo, monospace; font-size: 14.5px; background: var(--accent-soft); padding: 4px 9px; border-radius: 5px; }}
+  .pick-format {{ font-size: 14.5px; color: var(--text-muted); white-space: nowrap; }}
+  .grounded-tag {{ font-size: 14px; color: var(--accent); font-weight: 600; }}
 </style>
 </head>
 <body>
