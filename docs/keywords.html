@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>长尾关键词库</title>
+<style>
+:root {
+  --bg: #ffffff; --surface: #fafaf9; --border: #eaeae7;
+  --text: #1c1c1a; --text-muted: #8a8a85; --text-faint: #b6b6b1;
+  --accent: #3c6e5c; --accent-soft: #3c6e5c14; --copper: #a8703f; --red: #b1584c;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; padding: 3rem 1.5rem 5rem; background: var(--bg); color: var(--text);
+  font-family: -apple-system, "PingFang SC", "Hiragino Sans GB", "Segoe UI", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+.header {
+  max-width: 1080px; margin: 0 auto 1.25rem; display: flex; justify-content: space-between;
+  align-items: flex-end; flex-wrap: wrap; gap: 12px; border-bottom: 1px solid var(--border);
+  padding-bottom: 1.5rem;
+}
+.header h1 { margin: 0; font-size: 26px; font-weight: 600; font-family: Georgia, "Songti SC", serif; }
+.header .sub { color: var(--text-muted); font-size: 13px; margin-top: 6px; }
+.nav { max-width: 1080px; margin: 0 auto 2rem; display: flex; gap: 8px; flex-wrap: wrap; }
+.kwlink {
+  font-size: 12.5px; color: var(--accent); text-decoration: none; border: 1px solid var(--border);
+  padding: 7px 14px; border-radius: 999px; white-space: nowrap;
+}
+.kwlink:hover, .kwlink.active-nav { background: var(--accent-soft); }
+.stats { max-width: 1080px; margin: 0 auto 2rem; display: flex; gap: 14px; flex-wrap: wrap; }
+.stat { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 14px 20px; min-width: 150px; }
+.stat .label { font-size: 11.5px; color: var(--text-muted); }
+.stat .value { font-size: 24px; font-weight: 600; margin-top: 4px; font-family: Georgia, serif; }
+.filters { max-width: 1080px; margin: 0 auto 10px; display: flex; gap: 8px; flex-wrap: wrap; }
+.filter-btn, .pfilter-btn {
+  font-size: 12.5px; padding: 6px 15px; border-radius: 999px; border: 1px solid var(--border);
+  background: var(--bg); color: var(--text-muted); cursor: pointer; font-family: inherit;
+}
+.filter-btn:hover, .pfilter-btn:hover { border-color: var(--accent); color: var(--text); }
+.filter-btn.active { background: var(--accent); color: #fff; border-color: var(--accent); font-weight: 500; }
+.pfilter-btn.active { background: var(--copper); color: #fff; border-color: var(--copper); font-weight: 500; }
+table { max-width: 1080px; margin: 1.5rem auto 0; width: 100%; border-collapse: collapse; }
+th {
+  text-align: left; font-size: 11px; color: var(--text-faint); font-weight: 600;
+  text-transform: uppercase; letter-spacing: 0.06em; padding: 10px 12px; border-bottom: 1px solid var(--border);
+}
+td { padding: 16px 12px; border-bottom: 1px solid var(--border); vertical-align: top; font-size: 13.5px; line-height: 1.55; }
+tr:hover td { background: var(--surface); }
+td.rank { color: var(--text-faint); font-family: Georgia, serif; font-size: 15px; font-style: italic; width: 36px; padding-top: 17px; }
+td.score { font-family: "SF Mono", Menlo, monospace; text-align: right; width: 56px; color: var(--text-muted); }
+td.summary { color: var(--text-muted); max-width: 260px; font-size: 12.5px; }
+td.kw code { color: var(--accent); font-family: "SF Mono", Menlo, monospace; font-size: 12px; background: var(--accent-soft); padding: 2px 6px; border-radius: 5px; }
+td.fmt { color: var(--text-muted); white-space: nowrap; font-size: 12.5px; }
+td.title-cell { max-width: 260px; }
+a { color: var(--text); text-decoration: none; font-weight: 500; }
+a:hover { color: var(--accent); }
+.sub { margin-top: 6px; display: flex; gap: 6px; flex-wrap: wrap; }
+.tag { font-size: 10px; padding: 2px 8px; border-radius: 999px; border: 1px solid var(--border); color: var(--text-muted); font-weight: 500; }
+.tag.new { color: var(--copper); border-color: #a8703f40; background: #a8703f0c; }
+.tag.up { color: var(--accent); border-color: #3c6e5c40; background: var(--accent-soft); }
+.tag.down { color: var(--red); border-color: #b1584c40; background: #b1584c0c; }
+.empty { text-align: center; color: var(--text-muted); padding: 3rem; }
+.title-draft {
+  margin-top: 6px; font-size: 12.5px; color: var(--text); background: var(--accent-soft);
+  border-radius: 8px; padding: 6px 10px; line-height: 1.5;
+}
+td.used-col { width: 50px; text-align: center; }
+.used-checkbox { display: flex; flex-direction: column; align-items: center; gap: 2px; font-size: 10px; color: var(--text-muted); cursor: pointer; }
+.used-checkbox input { cursor: pointer; }
+tr.used-row { opacity: 0.4; }
+tr.used-row td.title-cell a { text-decoration: line-through; }
+#toggle-used-btn.active { background: var(--text); color: #fff; border-color: var(--text); }
+
+  td.num { font-family: "SF Mono", Menlo, monospace; color: var(--text-muted); }
+  td.muted { color: var(--text-muted); font-size: 12px; max-width: 240px; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <div>
+      <h1>累计长尾关键词库</h1>
+      <div class="sub">更新时间：2026年07月11日 06:53 UTC · 每次话题被LLM标注过就会记录在这里，永久保留，不随话题掉出榜单而丢失</div>
+    </div>
+  </div>
+  <div class="nav">
+    <a class="kwlink active-nav" href="index.html">首页</a><a class="kwlink" href="picks.html">精选清单</a><a class="kwlink" href="news.html">新闻榜</a><a class="kwlink" href="reddit.html">Reddit专业榜</a><a class="kwlink" href="competitors.html">同行动态</a><a class="kwlink" href="keywords.html">关键词库</a><a class="kwlink" href="humor.html">趣味帖</a>
+  </div>
+  <div class="stats">
+    <div class="stat"><div class="label">累计关键词</div><div class="value">15</div></div>
+    <div class="stat"><div class="label">已人工核实</div><div class="value">0</div></div>
+  </div>
+  <table>
+    <thead>
+      <tr><th>长尾关键词</th><th>区域</th><th>品类</th><th>建议形式</th><th>重复出现次数</th><th>首次出现</th><th>来源话题</th></tr>
+    </thead>
+    <tbody>
+      
+<tr>
+  <td><code>sustainable cooling solutions Europe climate policy</code></td>
+  <td>欧洲</td>
+  <td>热泵/空调</td>
+  <td>技术博客</td>
+  <td class="num">1</td>
+  <td class="muted">2026-07-11</td>
+  <td class="muted"><a href="https://ehpa.org/news-and-resources/projects/cooling-a-warming-world-new-eu-project-to-help-shape-climate-policy/" target="_blank" rel="noopener">Cooling a warming world: new EU project to help shape climat</a></td>
+</tr>
+
+<tr>
+  <td><code>HVAC market trends Denmark Finland</code></td>
+  <td>欧洲</td>
+  <td>热泵/空调</td>
+  <td>技术博客</td>
+  <td class="num">1</td>
+  <td class="muted">2026-07-11</td>
+  <td class="muted"><a href="https://www.coolingpost.com/world-news/trane-appoints-denmark-finland-country-leader/" target="_blank" rel="noopener">Trane appoints Denmark/Finland country leader</a></td>
+</tr>
+
+<tr>
+  <td><code>F-gas regulation update UK heat pump</code></td>
+  <td>欧洲</td>
+  <td>热泵</td>
+  <td>技术博客</td>
+  <td class="num">1</td>
+  <td class="muted">2026-07-11</td>
+  <td class="muted"><a href="https://www.coolingpost.com/uk-news/defras-f-gas-decision-is-a-delay-not-a-reprieve/" target="_blank" rel="noopener">DEFRA’s F-gas decision is a delay, not a reprieve</a></td>
+</tr>
+
+<tr>
+  <td><code>R290 heat pump commercial application</code></td>
+  <td>欧洲</td>
+  <td>热泵</td>
+  <td>案例研究</td>
+  <td class="num">1</td>
+  <td class="muted">2026-07-11</td>
+  <td class="muted"><a href="https://www.coolingpost.com/products/epsilon-zero-r290-heat-pump-from-swegon/" target="_blank" rel="noopener">Epsilon Zero R290 heat pump from Swegon</a></td>
+</tr>
+
+<tr>
+  <td><code>HVAC industry acquisition trends UK</code></td>
+  <td>欧洲</td>
+  <td>热泵/空调</td>
+  <td>技术博客</td>
+  <td class="num">1</td>
+  <td class="muted">2026-07-11</td>
+  <td class="muted"><a href="https://www.coolingpost.com/uk-news/nordic-climate-buys-meridian-cooling/" target="_blank" rel="noopener">Nordic Climate buys Meridian Cooling</a></td>
+</tr>
+
+<tr>
+  <td><code>centrifugal chiller technology trends</code></td>
+  <td>通用</td>
+  <td>空调</td>
+  <td>技术博客</td>
+  <td class="num">1</td>
+  <td class="muted">2026-07-11</td>
+  <td class="muted"><a href="https://www.coolingpost.com/world-news/chiller-company-smardt-appoints-new-ceo/" target="_blank" rel="noopener">Chiller company Smardt appoints new CEO</a></td>
+</tr>
+
+<tr>
+  <td><code>UK heat pump market strategy</code></td>
+  <td>欧洲</td>
+  <td>热泵</td>
+  <td>技术博客</td>
+  <td class="num">1</td>
+  <td class="muted">2026-07-11</td>
+  <td class="muted"><a href="https://www.coolingpost.com/uk-news/hpa-uk-appoint-governing-body-committee/" target="_blank" rel="noopener">HPA UK appoint governing body committee</a></td>
+</tr>
+
+<tr>
+  <td><code>HVAC technician training UK</code></td>
+  <td>欧洲</td>
+  <td>热泵/空调</td>
+  <td>技术博客</td>
+  <td class="num">1</td>
+  <td class="muted">2026-07-11</td>
+  <td class="muted"><a href="https://www.coolingpost.com/uk-news/six-through-to-worldskills-uk-final/" target="_blank" rel="noopener">Six through to WorldSkills UK final</a></td>
+</tr>
+
+<tr>
+  <td><code>sustainable cold chain logistics</code></td>
+  <td>欧洲</td>
+  <td>空调</td>
+  <td>案例研究</td>
+  <td class="num">1</td>
+  <td class="muted">2026-07-11</td>
+  <td class="muted"><a href="https://www.coolingpost.com/world-news/trials-of-refrigerated-trailer-using-liquid-nitrogen/" target="_blank" rel="noopener">Trials of refrigerated trailer using liquid nitrogen</a></td>
+</tr>
+
+<tr>
+  <td><code>HVAC market expansion Ireland</code></td>
+  <td>欧洲</td>
+  <td>热泵/空调</td>
+  <td>技术博客</td>
+  <td class="num">1</td>
+  <td class="muted">2026-07-11</td>
+  <td class="muted"><a href="https://www.coolingpost.com/world-news/nordic-climate-expands-in-ireland/" target="_blank" rel="noopener">Nordic Climate expands in Ireland</a></td>
+</tr>
+
+<tr>
+  <td><code>illegal AC sales regulation UK</code></td>
+  <td>欧洲</td>
+  <td>空调</td>
+  <td>技术博客</td>
+  <td class="num">1</td>
+  <td class="muted">2026-07-11</td>
+  <td class="muted"><a href="https://www.coolingpost.com/uk-news/hot-weather-brings-spike-in-illegal-online-sales/" target="_blank" rel="noopener">Hot weather brings spike in illegal online sales</a></td>
+</tr>
+
+<tr>
+  <td><code>German heat pump subsidy BEG 2026</code></td>
+  <td>欧洲</td>
+  <td>热泵</td>
+  <td>技术博客</td>
+  <td class="num">1</td>
+  <td class="muted">2026-07-11</td>
+  <td class="muted"><a href="https://www.haustechnikdialog.de/News/31651/BEG-Foerderung-2026-KfW-startet-Umstellungsphase-neue-Konditionen-ab-21-Juli" target="_blank" rel="noopener">BEG-Förderung 2026: KfW startet Umstellungsphase – neue Kond</a></td>
+</tr>
+
+<tr>
+  <td><code>GEG-compliant pipe insulation heat pump</code></td>
+  <td>欧洲</td>
+  <td>热泵</td>
+  <td>技术博客</td>
+  <td class="num">1</td>
+  <td class="muted">2026-07-11</td>
+  <td class="muted"><a href="https://www.haustechnikdialog.de/News/31648/Rohrrino-Waermeschutzrohrsystem-fuer-GEG-konforme-Leitungsdaemmung-jetzt-auch-als-klappbare-Variante" target="_blank" rel="noopener">Rohrrino: Wärmeschutzrohrsystem für GEG-konforme Leitungsdäm</a></td>
+</tr>
+
+<tr>
+  <td><code>home energy saving tips heating</code></td>
+  <td>欧洲</td>
+  <td>热泵/空调</td>
+  <td>技术博客</td>
+  <td class="num">1</td>
+  <td class="muted">2026-07-11</td>
+  <td class="muted"><a href="https://www.haustechnikdialog.de/News/31646/Energiesparen-leicht-gemacht" target="_blank" rel="noopener">Energiesparen leicht gemacht</a></td>
+</tr>
+
+<tr>
+  <td><code>photovoltaic system real estate value</code></td>
+  <td>欧洲</td>
+  <td>热泵/空调</td>
+  <td>技术博客</td>
+  <td class="num">1</td>
+  <td class="muted">2026-07-11</td>
+  <td class="muted"><a href="https://www.haustechnikdialog.de/News/31654/Wie-sich-eine-Photovoltaikanlage-auf-den-Immobilienwert-auswirkt" target="_blank" rel="noopener">Wie sich eine Photovoltaikanlage auf den Immobilienwert ausw</a></td>
+</tr>
+
+    </tbody>
+  </table>
+</body>
+</html>
