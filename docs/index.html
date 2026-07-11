@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>热泵+空调话题热度榜 Top 50</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --surface: #fafaf9;
+    --border: #eaeae7;
+    --text: #1c1c1a;
+    --text-muted: #8a8a85;
+    --text-faint: #b6b6b1;
+    --accent: #3c6e5c;
+    --accent-soft: #3c6e5c14;
+    --copper: #a8703f;
+    --red: #b1584c;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 3rem 1.5rem 5rem; background: var(--bg); color: var(--text);
+    font-family: -apple-system, "PingFang SC", "Hiragino Sans GB", "Segoe UI", sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .header {
+    max-width: 1080px; margin: 0 auto 2rem; display: flex; justify-content: space-between;
+    align-items: flex-end; flex-wrap: wrap; gap: 12px; border-bottom: 1px solid var(--border);
+    padding-bottom: 1.5rem;
+  }
+  .header h1 {
+    margin: 0; font-size: 26px; font-weight: 600; letter-spacing: -0.01em;
+    font-family: Georgia, "Songti SC", serif;
+  }
+  .header .sub { color: var(--text-muted); font-size: 13px; margin-top: 6px; }
+  .header a.kwlink {
+    font-size: 12.5px; color: var(--accent); text-decoration: none; border: 1px solid var(--border);
+    padding: 7px 14px; border-radius: 999px; white-space: nowrap; transition: background 0.15s;
+  }
+  .header a.kwlink:hover { background: var(--accent-soft); }
+  .stats { max-width: 1080px; margin: 0 auto 2rem; display: flex; gap: 14px; flex-wrap: wrap; }
+  .stat {
+    background: var(--surface); border: 1px solid var(--border); border-radius: 12px;
+    padding: 14px 20px; min-width: 150px;
+  }
+  .stat .label { font-size: 11.5px; color: var(--text-muted); letter-spacing: 0.02em; }
+  .stat .value { font-size: 24px; font-weight: 600; margin-top: 4px; font-family: Georgia, serif; }
+  .filters { max-width: 1080px; margin: 0 auto 10px; display: flex; gap: 8px; flex-wrap: wrap; }
+  .filter-btn, .pfilter-btn {
+    font-size: 12.5px; padding: 6px 15px; border-radius: 999px; border: 1px solid var(--border);
+    background: var(--bg); color: var(--text-muted); cursor: pointer; font-family: inherit;
+    transition: all 0.15s;
+  }
+  .filter-btn:hover, .pfilter-btn:hover { border-color: var(--accent); color: var(--text); }
+  .filter-btn.active { background: var(--accent); color: #fff; border-color: var(--accent); font-weight: 500; }
+  .pfilter-btn.active { background: var(--copper); color: #fff; border-color: var(--copper); font-weight: 500; }
+  table {
+    max-width: 1080px; margin: 1.5rem auto 0; width: 100%; border-collapse: collapse;
+  }
+  th {
+    text-align: left; font-size: 11px; color: var(--text-faint); font-weight: 600;
+    text-transform: uppercase; letter-spacing: 0.06em; padding: 10px 12px; border-bottom: 1px solid var(--border);
+  }
+  td { padding: 16px 12px; border-bottom: 1px solid var(--border); vertical-align: top; font-size: 13.5px; line-height: 1.55; }
+  tr:hover td { background: var(--surface); }
+  td.rank {
+    color: var(--text-faint); font-family: Georgia, serif; font-size: 15px; font-style: italic;
+    width: 36px; padding-top: 17px;
+  }
+  td.score { font-family: "SF Mono", Menlo, monospace; text-align: right; width: 56px; color: var(--text-muted); }
+  td.summary { color: var(--text-muted); max-width: 260px; font-size: 12.5px; }
+  td.kw code { color: var(--accent); font-family: "SF Mono", Menlo, monospace; font-size: 12px; background: var(--accent-soft); padding: 2px 6px; border-radius: 5px; }
+  td.fmt { color: var(--text-muted); white-space: nowrap; font-size: 12.5px; }
+  td.title-cell { max-width: 260px; }
+  a { color: var(--text); text-decoration: none; font-weight: 500; }
+  a:hover { color: var(--accent); }
+  .sub { margin-top: 6px; display: flex; gap: 6px; flex-wrap: wrap; }
+  .tag {
+    font-size: 10px; padding: 2px 8px; border-radius: 999px; border: 1px solid var(--border);
+    color: var(--text-muted); font-weight: 500;
+  }
+  .tag.new { color: var(--copper); border-color: #a8703f40; background: #a8703f0c; }
+  .tag.up { color: var(--accent); border-color: #3c6e5c40; background: var(--accent-soft); }
+  .tag.down { color: var(--red); border-color: #b1584c40; background: #b1584c0c; }
+  .empty { text-align: center; color: var(--text-muted); padding: 3rem; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <div>
+      <h1>热泵 · 空调话题热度榜</h1>
+      <div class="sub">更新时间：2026年07月11日 01:16 UTC · 覆盖欧洲/中东/亚洲/非洲/南美新闻 + Reddit热帖</div>
+    </div>
+    <a class="kwlink" href="keywords.html">长尾关键词库 →</a>
+    <a class="kwlink" href="humor.html">论坛趣味帖 →</a>
+  </div>
+  <div class="stats">
+    <div class="stat"><div class="label">在榜话题</div><div class="value">50</div></div>
+    <div class="stat"><div class="label">今日新上榜</div><div class="value">50</div></div>
+    <div class="stat"><div class="label">待补充关键词</div><div class="value">40</div></div>
+  </div>
+  <div class="filters">
+    <button class="filter-btn active" data-filter="all">全部</button><button class="filter-btn" data-filter="europe">欧洲</button><button class="filter-btn" data-filter="global">通用</button>
+  </div>
+  <div class="filters">
+    <button class="pfilter-btn active" data-pfilter="all">全部品类</button><button class="pfilter-btn" data-pfilter="air_conditioner">空调</button><button class="pfilter-btn" data-pfilter="both">热泵/空调</button><button class="pfilter-btn" data-pfilter="heat_pump">热泵</button>
+  </div>
+  <table>
+    <thead>
+      <tr><th>排名</th><th>话题</th><th>内容摘要</th><th>目标长尾词</th><th>建议形式</th><th>热度</th></tr>
+    </thead>
+    <tbody>
+      
+<tr data-region="europe" data-product="both">
+  <td class="rank">01</td>
+  <td class="title-cell">
+    <a href="https://ehpa.org/news-and-resources/projects/cooling-a-warming-world-new-eu-project-to-help-shape-climate-policy/" target="_blank" rel="noopener">Cooling a warming world: new EU project to help shape climate policy</a>
+    <div class="sub">
+      <span class="tag source">新闻</span>
+      <span class="tag region">欧洲</span>
+      <span class="tag product">热泵/空调</span>
+      <span class="tag new">NEW</span>
+    </div>
+  </td>
+  <td class="summary">随着极端热浪在欧洲成为常态，制冷需求已从舒适性转变为健康与生活的刚需。欧洲正在通过新的项目推动气候政策调整，旨在平衡日益增长的制冷需求与碳中和目标，这对HVAC制造商的产品研发方向具有重要参考意义。</td>
+  <td class="kw"><code>sustainable cooling solutions and climate policy in EU</code></td>
+  <td class="fmt">白皮书</td>
+  <td class="score">20</td>
+</tr>
+
+<tr data-region="europe" data-product="both">
+  <td class="rank">02</td>
+  <td class="title-cell">
+    <a href="https://www.coolingpost.com/world-news/trane-appoints-denmark-finland-country-leader/" target="_blank" rel="noopener">Trane appoints Denmark/Finland country leader</a>
+    <div class="sub">
+      <span class="tag source">新闻</span>
+      <span class="tag region">欧洲</span>
+      <span class="tag product">热泵/空调</span>
+      <span class="tag new">NEW</span>
+    </div>
+  </td>
+  <td class="summary">行业巨头Trane公司正式任命Lauri Salmia为丹麦和芬兰的国家负责人。此次人事任命反映了全球头部暖通企业对北欧市场增长潜力的重视，以及在当地强化管理、提升市场竞争力的战略意图。</td>
+  <td class="kw"><code>HVAC market trends in Nordic countries</code></td>
+  <td class="fmt">技术博客</td>
+  <td class="score">20</td>
+</tr>
+
+<tr data-region="europe" data-product="both">
+  <td class="rank">03</td>
+  <td class="title-cell">
+    <a href="https://www.coolingpost.com/uk-news/defras-f-gas-decision-is-a-delay-not-a-reprieve/" target="_blank" rel="noopener">DEFRA’s F-gas decision is a delay, not a reprieve</a>
+    <div class="sub">
+      <span class="tag source">新闻</span>
+      <span class="tag region">欧洲</span>
+      <span class="tag product">热泵/空调</span>
+      <span class="tag new">NEW</span>
+    </div>
+  </td>
+  <td class="summary">尽管英国推迟了F-gas法规的修订，但行业组织FETA强烈敦促企业不要因此放缓向低GWP（全球变暖潜能值）冷媒转型的步伐。这强调了环保冷媒技术在未来欧洲市场仍将是合规和竞争的刚性要求。</td>
+  <td class="kw"><code>low GWP refrigerant compliance UK F-gas</code></td>
+  <td class="fmt">技术博客</td>
+  <td class="score">20</td>
+</tr>
+
+<tr data-region="europe" data-product="heat_pump">
+  <td class="rank">04</td>
+  <td class="title-cell">
+    <a href="https://www.coolingpost.com/products/epsilon-zero-r290-heat-pump-from-swegon/" target="_blank" rel="noopener">Epsilon Zero R290 heat pump from Swegon</a>
+    <div class="sub">
+      <span class="tag source">新闻</span>
+      <span class="tag region">欧洲</span>
+      <span class="tag product">热泵</span>
+      <span class="tag new">NEW</span>
+    </div>
+  </td>
+  <td class="summary">意大利品牌Swegon发布了Epsilon Zero系列R290空气源热泵，专门针对轻型商业建筑和多户住宅项目。该产品展示了在商用领域利用环保冷媒实现高效供暖供水的技术应用趋势。</td>
+  <td class="kw"><code>commercial R290 air to water heat pump</code></td>
+  <td class="fmt">案例研究</td>
+  <td class="score">20</td>
+</tr>
+
+<tr data-region="europe" data-product="both">
+  <td class="rank">05</td>
+  <td class="title-cell">
+    <a href="https://www.coolingpost.com/uk-news/nordic-climate-buys-meridian-cooling/" target="_blank" rel="noopener">Nordic Climate buys Meridian Cooling</a>
+    <div class="sub">
+      <span class="tag source">新闻</span>
+      <span class="tag region">欧洲</span>
+      <span class="tag product">热泵/空调</span>
+      <span class="tag new">NEW</span>
+    </div>
+  </td>
+  <td class="summary">瑞典承包商集团Nordic Climate通过收购位于英国普尔的Meridian Cooling公司，进一步拓展其在英国市场的业务版图。此举显示了跨区域大型安装商在欧洲HVAC服务和工程市场的扩张态势。</td>
+  <td class="kw"><code>HVAC market consolidation trends UK</code></td>
+  <td class="fmt">技术博客</td>
+  <td class="score">20</td>
+</tr>
+
+<tr data-region="global" data-product="air_conditioner">
+  <td class="rank">06</td>
+  <td class="title-cell">
+    <a href="https://www.coolingpost.com/world-news/chiller-company-smardt-appoints-new-ceo/" target="_blank" rel="noopener">Chiller company Smardt appoints new CEO</a>
+    <div class="sub">
+      <span class="tag source">新闻</span>
+      <span class="tag region">通用</span>
+      <span class="tag product">空调</span>
+      <span class="tag new">NEW</span>
+    </div>
+  </td>
+  <td class="summary">无油离心式冷水机组技术公司Smardt任命Sandeep Nair为新任CEO。该公司在商用制冷领域的技术革新一直备受行业关注，此次管理层调整预示着其未来在全球高效制冷解决方案市场的战略重点。</td>
+  <td class="kw"><code>centrifugal chiller market trends 2024</code></td>
+  <td class="fmt">技术博客</td>
+  <td class="score">20</td>
+</tr>
+
+<tr data-region="europe" data-product="heat_pump">
+  <td class="rank">07</td>
+  <td class="title-cell">
+    <a href="https://www.coolingpost.com/uk-news/hpa-uk-appoint-governing-body-committee/" target="_blank" rel="noopener">HPA UK appoint governing body committee</a>
+    <div class="sub">
+      <span class="tag source">新闻</span>
+      <span class="tag region">欧洲</span>
+      <span class="tag product">热泵</span>
+      <span class="tag new">NEW</span>
+    </div>
+  </td>
+  <td class="summary">英国热泵协会（HPA UK）成立了一个新的治理委员会，旨在引导协会的整体战略方向。这标志着英国热泵行业正在通过强化管理架构，推动热泵技术的标准化普及和政策落地。</td>
+  <td class="kw"><code>UK heat pump policy and industry standards</code></td>
+  <td class="fmt">白皮书</td>
+  <td class="score">20</td>
+</tr>
+
+<tr data-region="europe" data-product="both">
+  <td class="rank">08</td>
+  <td class="title-cell">
+    <a href="https://www.coolingpost.com/uk-news/six-through-to-worldskills-uk-final/" target="_blank" rel="noopener">Six through to WorldSkills UK final</a>
+    <div class="sub">
+      <span class="tag source">新闻</span>
+      <span class="tag region">欧洲</span>
+      <span class="tag product">热泵/空调</span>
+      <span class="tag new">NEW</span>
+    </div>
+  </td>
+  <td class="summary">WorldSkills UK大赛公布了入围决赛的制冷空调行业学徒名单。通过此类职业竞赛，英国正在选拔并培训下一代专业的暖通技术人才，以应对市场对高质量安装和维护服务的需求。</td>
+  <td class="kw"><code>HVAC technician training and standards UK</code></td>
+  <td class="fmt">技术博客</td>
+  <td class="score">20</td>
+</tr>
+
+<tr data-region="global" data-product="air_conditioner">
+  <td class="rank">09</td>
+  <td class="title-cell">
+    <a href="https://www.coolingpost.com/world-news/trials-of-refrigerated-trailer-using-liquid-nitrogen/" target="_blank" rel="noopener">Trials of refrigerated trailer using liquid nitrogen</a>
+    <div class="sub">
+      <span class="tag source">新闻</span>
+      <span class="tag region">通用</span>
+      <span class="tag product">空调</span>
+      <span class="tag new">NEW</span>
+    </div>
+  </td>
+  <td class="summary">西班牙物流公司Primafrio成功完成了一个试点项目，将液氮低温系统与太阳能能源整合用于冷藏挂车。该项目展示了在运输制冷中通过可再生能源降低碳排放的创新实践。</td>
+  <td class="kw"><code>solar powered refrigeration for logistics</code></td>
+  <td class="fmt">案例研究</td>
+  <td class="score">20</td>
+</tr>
+
+<tr data-region="europe" data-product="both">
+  <td class="rank">10</td>
+  <td class="title-cell">
+    <a href="https://www.coolingpost.com/world-news/nordic-climate-expands-in-ireland/" target="_blank" rel="noopener">Nordic Climate expands in Ireland</a>
+    <div class="sub">
+      <span class="tag source">新闻</span>
+      <span class="tag region">欧洲</span>
+      <span class="tag product">热泵/空调</span>
+      <span class="tag new">NEW</span>
+    </div>
+  </td>
+  <td class="summary">Nordic Climate通过收购爱尔兰的Northern Refrigeration Services，进一步扩大了其在爱尔兰市场的足迹。该公司在制冷、热泵及加热解决方案领域拥有深厚的技术专长，此次整合预示着当地暖通市场竞争格局的演变。</td>
+  <td class="kw"><code>HVAC engineering market expansion Ireland</code></td>
+  <td class="fmt">技术博客</td>
+  <td class="score">20</td>
+</tr>
+
+<tr data-region="europe" data-product="both">
+  <td class="rank">11</td>
+  <td class="title-cell">
+    <a href="https://www.coolingpost.com/uk-news/hot-weather-brings-spike-in-illegal-online-sales/" target="_blank" rel="noopener">Hot weather brings spike in illegal online sales</a>
+    <div class="sub">
+      <span class="tag source">新闻</span>
+      <span class="tag region">欧洲</span>
+      <span class="tag product">热泵/空调</span>
+      <span class="tag new">NEW</span>
+    </div>
+  </td>
+  <td class="summary">（待补充，下次运行会自动生成）</td>
+  <td class="kw"><code>待补充</code></td>
+  <td class="fmt">待定</td>
+  <td class="score">20</td>
+</tr>
+
+<tr data-region="europe" data-product="both">
+  <td class="rank">12</td>
+  <td class="title-cell">
+    <a href="https://www.haustechnikdialog.de/News/31651/BEG-Foerderung-2026-KfW-startet-Umstellungsphase-neue-Konditionen-ab-21-Juli" target="_blank" rel="noopener">BEG-Förderung 2026: KfW startet Umstellungsphase – neue Konditionen ab 21. Juli</a>
+    <div class="sub">
+      <span class="tag source">新闻</span>
+      <span class="tag region">欧洲</span>
+      <span class="tag product">热泵/空调</span>
+      <span class="tag new">NEW</span>
+    </div>
+  </td>
+  <td class="summary">（待补充，下次运行会自动生成）</td>
+  <td class="kw"><code>待补充</code></td>
+  <td class="fmt">待定</td>
+  <td class="score">20</td>
+</tr>
+
+<tr data-region="europe" data-product="both">
+  <td class="rank">13</td>
+  <td class="title-cell">
+    <a href="https://www.haustechnikdialog.de/News/31648/Rohrrino-Waermeschutzrohrsystem-fuer-GEG-konforme-Leitungsdaemmung-jetzt-auch-als-klappbare-Variante" target="_blank" rel="noopener">Rohrrino: Wärmeschutzrohrsystem für GEG-konforme Leitungsdämmung – jetzt auch als klappbare Variante</a>
+    <div class="sub">
+      <span class="tag source">新闻</span>
+      <span class="tag region">欧洲</span>
+      <span class="tag product">热泵/空调</span>
+      <span class="tag new">NEW</span>
+    </div>
+  </td>
+  <td class="summary">（待补充，下次运行会自动生成）</td>
+  <td class="kw"><code>待补充</code></td>
+  <td class="fmt">待定</td>
+  <td class="score">20</td>
+</tr>
+
+<tr data-region="europe" data-product="both">
+  <td class="rank">14</td>
+  <td class="title-cell">
+    <a href="https://www.haustechnikdialog.de/News/31646/Energiesparen-leicht-gemacht" target="_blank" rel="noopener">Energiesparen leicht gemacht</a>
+    <div class="sub">
+      <span class="tag source">新闻</span>
+      <span class="tag region">欧洲</span>
+      <span class="tag product">热泵/空调</span>
+      <span class="tag new">NEW</span>
+    </div>
+  </td>
+  <td class="summary">（待补充，下次运行会自动生成）</td>
+  <td class="kw"><code>待补充</code></td>
+  <td class="fmt">待定</td>
+  <td class="score">20</td>
+</tr>
+
+<tr data-region="europe" data-product="both">
+  <td class="rank">15</td>
+  <td class="title-cell">
+    <a href="https://www.haustechnikdialog.de/News/31654/Wie-sich-eine-Photovoltaikanlage-auf-den-Immobilienwert-auswirkt" target="_blank" rel="noopener">Wie sich eine Photovoltaikanlage auf den Immobilienwert auswirkt</a>
+    <div class="sub">
+      <span class="tag source">新闻</span>
+      <span class="tag region">欧洲</span>
+      <span class="tag product">热泵/空调</span>
+      <span class="tag new">NEW</span>
+    </div>
+  </td>
+  <td class="summary">（待补充，下次运行会自动生成）</td>
+  <td class="kw"><code>待补充</code></td>
+  <td class="fmt">待定</td>
+  <td class="score">20</td>
+</tr>
+
+<tr data-region="europe" data-product="both">
+  <td class="rank">16</td>
+  <td class="title-cell">
+    <a href="https://www.haustechnikdialog.de/News/31661/Heizungsgesetz-2026-beschlossen-Das-aendert-sich-" target="_blank" rel="noopener">Heizungsgesetz 2026 beschlossen: Das ändert sich!</a>
+    <div class="sub">
+      <span class="tag source">新闻</span>
+      <span class="tag region">欧洲</span>
+      <span class="tag product">热泵/空调</span>
+      <span class="tag new">NEW</span>
+    </div>
+  </td>
+  <td class="summary">（待补充，下次运行会自动生成）</td>
+  <td class="kw"><code>待补充</code></td>
+  <td class="fmt">待定</td>
+  <td class="score">20</td>
+</tr>
+
+<tr data-region="europe" data-product="both">
+  <td class="rank">17</td>
+  <td class="title-cell">
+    <a href="https://www.haustechnikdialog.de/News/31635/Waerme-von-drinnen-einfach-nach-draussen-pumpen-" target="_blank" rel="noopener">Wärme von drinnen einfach nach draußen „pumpen“</a>
+    <div class="sub">
+      <span class="tag source">新闻</span>
+      <span class="tag region">欧洲</span>
+      <span class="tag product">热泵/空调</span>
+      <span class="tag new">NEW</span>
+    </div>
+  </td>
+  <td class="summary">（待补充，下次运行会自动生成）</td>
+  <td class="kw"><code>待补充</code></td>
+  <td class="fmt">待定</td>
+  <td class="score">20</td>
+</tr>
+
+<tr data-region="europe" data-product="both">
+  <td class="rank">18</td>
+  <td class="title-cell">
+    <a href="https://www.haustechnikdialog.de/News/31645/Klimadecken-im-Geschosswohnbau-nachbarunabhaengige-Wartung-erstmals-direkt-von-unten" target="_blank" rel="noopener">Klimadecken im Geschosswohnbau: nachbarunabhängige Wartung erstmals direkt von unten</a>
+    <div class="sub">
+      <span class="tag source">新闻</span>
+      <span class="tag region">欧洲</span>
+      <span class="tag product">热泵/空调</span>
+      <span class="tag new">NEW</span>
+    </div>
+  </td>
+  <td class="summary">（待补充，下次运行会自动生成）</td>
+  <td class="kw"><code>待补充</code></td>
+  <td class="fmt">待定</td>
+  <td class="score">20</td>
+</tr>
+
+<tr data-region="europe" data-product="both">
+  <td class="rank">19</td>
+  <td class="title-cell">
+    <a href="https://www.haustechnikdialog.de/News/31640/Familiennachfolge-im-Mittelstand-Warum-fehlende-Gespraeche-Unternehmen-gefaehrden" target="_blank" rel="noopener">Familiennachfolge im Mittelstand: Warum fehlende Gespräche Unternehmen gefährden</a>
+    <div class="sub">
+      <span class="tag source">新闻</span>
+      <span class="tag region">欧洲</span>
+      <span class="tag product">热泵/空调</span>
+      <span class="tag new">NEW</span>
+    </div>
+  </td>
+  <td class="summary">（待补充，下次运行会自动生成）</td>
+  <td class="kw"><code>待补充</code></td>
+  <td class="fmt">待定</td>
+  <td class="score">20</td>
+</tr>
+
+<tr data-region="europe" data-product="both">
+  <td class="rank">20</td>
+  <td class="title-cell">
+    <a href="https://www.haustechnikdialog.de/News/31626/Smarte-Eingangstuer-Warum-ein-Key-Turner-weit-mehr-als-nur-ein-Schluesseldreher-ist-" target="_blank" rel="noopener">Smarte Eingangstür – Warum ein Key Turner weit mehr als nur ein „Schlüsseldreher“ ist!</a>
+    <div class="sub">
+      <span class="tag source">新闻</span>
+      <span class="tag region">欧洲</span>
+      <span class="tag product">热泵/空调</span>
+      <span class="tag new">NEW</span>
+    </div>
+  </td>
+  <td class="summary">（待补充，下次运行会自动生成）</td>
+  <td class="kw"><code>待补充</code></td>
+  <td class="fmt">待定</td>
+  <td class="score">20</td>
+</tr>
+
+<tr data-region="europe" data-product="both">
+  <td class="rank">21</td>
+  <td class="title-cell">
+    <a href="https://www.haustechnikdialog.de/News/31641/Webinar-Flachdachinstallationen-sicher-und-durchdringungsfrei-aufstaendern" target="_blank" rel="noopener">Webinar: Flachdachinstallationen sicher und durchdringungsfrei aufständern</a>
+    <div class="sub">
+      <span class="tag source">新闻</span>
+      <span class="tag region">欧洲</span>
+      <span class="tag product">热泵/空调</span>
+      <span class="tag new">NEW</span>
+    </div>
+  </td>
+  <td class="summary">（待补充，下次运行会自动生成）</td>
+  <td class="kw"><code>待补充</code></td>
+  <td class="fmt">待定</td>
+  <td class="score">20</td>
+</tr>
+
+<tr data-region="europe" data-product="both">
+  <td class="rank">22</td>
+  <td class="title-cell">
+    <a href="https://www.haustechnikdialog.de/News/31647/Heizungshandwerk-zur-Kuerzung-der-BEG-Foerderung-Statt-Verlaesslichkeit-drohen-mehr-Unsicherheit-und-weniger-Vertrauen" target="_blank" rel="noopener">Heizungshandwerk zur Kürzung der BEG-Förderung: Statt Verlässlichkeit drohen mehr Unsicherheit und weniger Vertrauen</a>
+    <div class="sub">
+      <span class="tag source">新闻</span>
+      <span class="tag region">欧洲</span>
+      <span class="tag product">热泵/空调</span>
+      <span class="tag new">NEW</span>
+    </div>
+  </td>
+  <td class="summary">（待补充，下次运行会自动生成）</td>
+  <td class="kw"><code>待补充</code></td>
+  <td class="fmt">待定</td>
+  <td class="score">20</td>
+</tr>
+
+<tr data-region="europe" data-product="both">
+  <td class="rank">23</td>
+  <td class="title-cell">
+    <a href="https://www.haustechnikdialog.de/News/31639/Das-Schnaeppchenhaus-ist-nicht-billig-die-Sanierungsangst-ist-schon-eingepreist" target="_blank" rel="noopener">Das Schnäppchenhaus ist nicht billig, die Sanierungsangst ist schon eingepreist</a>
+    <div class="sub">
+      <span class="tag source">新闻</span>
+      <span class="tag region">欧洲</span>
+      <span class="tag product">热泵/空调</span>
+      <span class="tag new">NEW</span>
+    </div>
+  </td>
+  <td class="summary">（待补充，下次运行会自动生成）</td>
+  <td class="kw"><code>待补充</code></td>
+  <td class="fmt">待定</td>
+  <td class="score">20</td>
+</tr>
+
+<tr data-region="europe" data-product="both">
+  <td class="rank">24</td>
+  <td class="title-cell">
+    <a href="https://www.haustechnikdialog.de/News/31624/Digitale-Kundengewinnung-fuer-Heizungs-und-Sanitaerbetriebe" target="_blank" rel="noopener">Digitale Kundengewinnung für Heizungs- und Sanitärbetriebe</a>
+    <div class="sub">
+      <span class="tag source">新闻</span>
+      <span class="tag region">欧洲</span>
+      <span class="tag product">热泵/空调</span>
+      <span class="tag new">NEW</span>
+    </div>
+  </td>
+  <td class="summary">（待补充，下次运行会自动生成）</td>
+  <td class="kw"><code>待补充</code></td>
+  <td class="fmt">待定</td>
+  <td class="score">20</td>
+</tr>
+
+<tr data-region="europe" data-product="both">
+  <td class="rank">25</td>
+  <td class="title-cell">
+    <a href="https://www.haustechnikdialog.de/News/31630/Mehrwert-zu-jeder-Jahreszeit-mit-dem-Testsieger-bei-Luft-Luft-Waermepumpen-" target="_blank" rel="noopener">Mehrwert zu jeder Jahreszeit: mit dem Testsieger bei Luft/Luft-Wärmepumpen!</a>
+    <div class="sub">
+      <span class="tag source">新闻</span>
+      <span class="tag region">欧洲</span>
+      <span class="tag product">热泵/空调</span>
+      <span class="tag new">NEW</span>
+    </div>
+  </td>
+  <td class="summary">（待补充，下次运行会自动生成）</td>
+  <td class="kw"><code>待补充</code></td>
+  <td class="fmt">待定</td>
+  <td class="score">20</td>
+</tr>
+
+<tr data-region="europe" data-product="both">
+  <td class="rank">26</td>
+  <td class="title-cell">
+    <a href="https://www.haustechnikdialog.de/News/31642/Immobilienmarktstudie-sieht-verborgenes-Neubaudefizit-und-stellt-das-Eigenheimsegment-in-Frage" target="_blank" rel="noopener">Immobilienmarktstudie sieht verborgenes Neubaudefizit – und stellt das Eigenheimsegment in Frage</a>
+    <div class="sub">
+      <span class="tag source">新闻</span>
+      <span class="tag region">欧洲</span>
+      <span class="tag product">热泵/空调</span>
+      <span class="tag new">NEW</span>
+    </div>
+  </td>
+  <td class="summary">（待补充，下次运行会自动生成）</td>
+  <td class="kw"><code>待补充</code></td>
+  <td class="fmt">待定</td>
+  <td class="score">20</td>
+</tr>
+
+<tr data-region="europe" data-product="both">
+  <td class="rank">27</td>
+  <td class="title-cell">
+    <a href="https://www.haustechnikdialog.de/News/31617/Wie-beeinflussen-Fenster-die-Energieeffizienz-Ihres-Hauses-" target="_blank" rel="noopener">Wie beeinflussen Fenster die Energieeffizienz Ihres Hauses?</a>
+    <div class="sub">
+      <span class="tag source">新闻</span>
+      <span class="tag region">欧洲</span>
+      <span class="tag product">热泵/空调</span>
+      <span class="tag new">NEW</span>
+    </div>
+  </td>
+  <td class="summary">（待补充，下次运行会自动生成）</td>
+  <td class="kw"><code>待补充</code></td>
+  <td class="fmt">待定</td>
+  <td class="score">20</td>
+</tr>
+
+<tr data-region="europe" data-product="both">
+  <td class="rank">28</td>
+  <td class="title-cell">
+    <a href="https://www.haustechnikdialog.de/News/31623/Wie-digitale-Gebaeudetechnik-die-Ferienwohnungsverwaltung-fuer-Vermieter-vereinfacht" target="_blank" rel="noopener">Wie digitale Gebäudetechnik die Ferienwohnungsverwaltung für Vermieter vereinfacht</a>
+    <div class="sub">
+      <span class="tag source">新闻</span>
+      <span class="tag region">欧洲</span>
+      <span class="tag product">热泵/空调</span>
+      <span class="tag new">NEW</span>
+    </div>
+  </td>
+  <td class="summary">（待补充，下次运行会自动生成）</td>
+  <td class="kw"><code>待补充</code></td>
+  <td class="fmt">待定</td>
+  <td class="score">20</td>
+</tr>
+
+<tr data-region="europe" data-product="both">
+  <td class="rank">29</td>
+  <td class="title-cell">
+    <a href="https://www.haustechnikdialog.de/News/31621/Dehoust-Waermespeicher-unterstuetzen-innovative-Waermekonzepte-auf-der-Bremer-Ueberseeinsel" target="_blank" rel="noopener">Dehoust Wärmespeicher unterstützen innovative Wärmekonzepte auf der Bremer Überseeinsel</a>
+    <div class="sub">
+      <span class="tag source">新闻</span>
+      <span class="tag region">欧洲</span>
+      <span class="tag product">热泵/空调</span>
+      <span class="tag new">NEW</span>
+    </div>
+  </td>
+  <td class="summary">（待补充，下次运行会自动生成）</td>
+  <td class="kw"><code>待补充</code></td>
+  <td class="fmt">待定</td>
+  <td class="score">20</td>
+</tr>
+
+<tr data-region="europe" data-product="both">
+  <td class="rank">30</td>
+  <td class="title-cell">
+    <a href="https://www.haustechnikdialog.de/News/31431/Individualitaet-nach-Mass" target="_blank" rel="noopener">Individualität nach Maß</a>
+    <div class="sub">
+      <span class="tag source">新闻</span>
+      <span class="tag region">欧洲</span>
+      <span class="tag product">热泵/空调</span>
+      <span class="tag new">NEW</span>
+    </div>
+  </td>
+  <td class="summary">（待补充，下次运行会自动生成）</td>
+  <td class="kw"><code>待补充</code></td>
+  <td class="fmt">待定</td>
+  <td class="score">20</td>
+</tr>
+
+<tr data-region="europe" data-product="both">
+  <td class="rank">31</td>
+  <td class="title-cell">
+    <a href="https://www.haustechnikdialog.de/News/31636/Nachbarschaftliche-Energie-Solarstrom-gemeinsam-nutzen" target="_blank" rel="noopener">Nachbarschaftliche Energie: Solarstrom gemeinsam nutzen</a>
+    <div class="sub">
+      <span class="tag source">新闻</span>
+      <span class="tag region">欧洲</span>
+      <span class="tag product">热泵/空调</span>
+      <span class="tag new">NEW</span>
+    </div>
+  </td>
+  <td class="summary">（待补充，下次运行会自动生成）</td>
+  <td class="kw"><code>待补充</code></td>
+  <td class="fmt">待定</td>
+  <td class="score">20</td>
+</tr>
+
+<tr data-region="europe" data-product="both">
+  <td class="rank">32</td>
+  <td class="title-cell">
+    <a href="https://www.haustechnikdialog.de/News/31637/Waermepumpen-Planung-fuer-den-Herbst-Jetzt-den-richtigen-Zeitpunkt-nutzen" target="_blank" rel="noopener">Wärmepumpen-Planung für den Herbst: Jetzt den richtigen Zeitpunkt nutzen</a>
+    <div class="sub">
+      <span class="tag source">新闻</span>
+      <span class="tag region">欧洲</span>
+      <span class="tag product">热泵/空调</span>
+      <span class="tag new">NEW</span>
+    </div>
+  </td>
+  <td class="summary">（待补充，下次运行会自动生成）</td>
+  <td class="kw"><code>待补充</code></td>
+  <td class="fmt">待定</td>
+  <td class="score">20</td>
+</tr>
+
+<tr data-region="global" data-product="both">
+  <td class="rank">33</td>
+  <td class="title-cell">
+    <a href="https://www.achrnews.com/articles/166423-a-packaged-heat-pump-for-spaces-with-installation-constraints" target="_blank" rel="noopener">A Packaged Heat Pump for Spaces With Installation Constraints</a>
+    <div class="sub">
+      <span class="tag source">新闻</span>
+      <span class="tag region">通用</span>
+      <span class="tag product">热泵/空调</span>
+      <span class="tag new">NEW</span>
+    </div>
+  </td>
+  <td class="summary">（待补充，下次运行会自动生成）</td>
+  <td class="kw"><code>待补充</code></td>
+  <td class="fmt">待定</td>
+  <td class="score">20</td>
+</tr>
+
+<tr data-region="global" data-product="both">
+  <td class="rank">34</td>
+  <td class="title-cell">
+    <a href="https://www.achrnews.com/articles/166413-how-smart-contractors-turn-data-into-dollars" target="_blank" rel="noopener">How Smart Contractors Turn Data Into Dollars</a>
+    <div class="sub">
+      <span class="tag source">新闻</span>
+      <span class="tag region">通用</span>
+      <span class="tag product">热泵/空调</span>
+      <span class="tag new">NEW</span>
+    </div>
+  </td>
+  <td class="summary">（待补充，下次运行会自动生成）</td>
+  <td class="kw"><code>待补充</code></td>
+  <td class="fmt">待定</td>
+  <td class="score">20</td>
+</tr>
+
+<tr data-region="global" data-product="both">
+  <td class="rank">35</td>
+  <td class="title-cell">
+    <a href="https://www.achrnews.com/articles/166418-it-doesnt-seem-like-much-is-the-same-except-that-its-still-hvac" target="_blank" rel="noopener">&#x27;It Doesn&#x27;t Seem Like Much Is the Same Except That It&#x27;s Still HVAC&#x27;</a>
+    <div class="sub">
+      <span class="tag source">新闻</span>
+      <span class="tag region">通用</span>
+      <span class="tag product">热泵/空调</span>
+      <span class="tag new">NEW</span>
+    </div>
+  </td>
+  <td class="summary">（待补充，下次运行会自动生成）</td>
+  <td class="kw"><code>待补充</code></td>
+  <td class="fmt">待定</td>
+  <td class="score">20</td>
+</tr>
+
+<tr data-region="global" data-product="both">
+  <td class="rank">36</td>
+  <td class="title-cell">
+    <a href="https://www.achrnews.com/articles/166415-a2ls-gain-momentum-in-supermarket-refrigeration" target="_blank" rel="noopener">A2Ls Gain Momentum in Supermarket Refrigeration</a>
+    <div class="sub">
+      <span class="tag source">新闻</span>
+      <span class="tag region">通用</span>
+      <span class="tag product">热泵/空调</span>
+      <span class="tag new">NEW</span>
+    </div>
+  </td>
+  <td class="summary">（待补充，下次运行会自动生成）</td>
+  <td class="kw"><code>待补充</code></td>
+  <td class="fmt">待定</td>
+  <td class="score">20</td>
+</tr>
+
+<tr data-region="global" data-product="both">
+  <td class="rank">37</td>
+  <td class="title-cell">
+    <a href="https://www.achrnews.com/articles/166414-commerce-moves-toward-broader-copper-tariffs-as-trade-deficit-jumps" target="_blank" rel="noopener">Commerce Moves Toward Broader Copper Tariffs as Trade Deficit Jumps</a>
+    <div class="sub">
+      <span class="tag source">新闻</span>
+      <span class="tag region">通用</span>
+      <span class="tag product">热泵/空调</span>
+      <span class="tag new">NEW</span>
+    </div>
+  </td>
+  <td class="summary">（待补充，下次运行会自动生成）</td>
+  <td class="kw"><code>待补充</code></td>
+  <td class="fmt">待定</td>
+  <td class="score">20</td>
+</tr>
+
+<tr data-region="global" data-product="both">
+  <td class="rank">38</td>
+  <td class="title-cell">
+    <a href="https://www.achrnews.com/articles/166417-metalcon-to-put-the-spotlight-on-the-challenges-opportunities-for-contractors" target="_blank" rel="noopener">Metalcon to Put the Spotlight on the Challenges, Opportunities for Contractors</a>
+    <div class="sub">
+      <span class="tag source">新闻</span>
+      <span class="tag region">通用</span>
+      <span class="tag product">热泵/空调</span>
+      <span class="tag new">NEW</span>
+    </div>
+  </td>
+  <td class="summary">（待补充，下次运行会自动生成）</td>
+  <td class="kw"><code>待补充</code></td>
+  <td class="fmt">待定</td>
+  <td class="score">20</td>
+</tr>
+
+<tr data-region="global" data-product="both">
+  <td class="rank">39</td>
+  <td class="title-cell">
+    <a href="https://www.achrnews.com/articles/166416-usmcas-future-in-doubt-as-us-declines-to-renew-pact" target="_blank" rel="noopener">USMCA’s Future in Doubt as U.S. Declines to Renew Pact</a>
+    <div class="sub">
+      <span class="tag source">新闻</span>
+      <span class="tag region">通用</span>
+      <span class="tag product">热泵/空调</span>
+      <span class="tag new">NEW</span>
+    </div>
+  </td>
+  <td class="summary">（待补充，下次运行会自动生成）</td>
+  <td class="kw"><code>待补充</code></td>
+  <td class="fmt">待定</td>
+  <td class="score">20</td>
+</tr>
+
+<tr data-region="global" data-product="both">
+  <td class="rank">40</td>
+  <td class="title-cell">
+    <a href="https://www.achrnews.com/articles/166399-software-gives-contractors-a-window-into-home-systems" target="_blank" rel="noopener">Software Gives Contractors a Window into Home Systems</a>
+    <div class="sub">
+      <span class="tag source">新闻</span>
+      <span class="tag region">通用</span>
+      <span class="tag product">热泵/空调</span>
+      <span class="tag new">NEW</span>
+    </div>
+  </td>
+  <td class="summary">（待补充，下次运行会自动生成）</td>
+  <td class="kw"><code>待补充</code></td>
+  <td class="fmt">待定</td>
+  <td class="score">20</td>
+</tr>
+
+<tr data-region="global" data-product="both">
+  <td class="rank">41</td>
+  <td class="title-cell">
+    <a href="https://www.achrnews.com/articles/166410-the-unlocked-efficiency-opportunity-of-on-site-power" target="_blank" rel="noopener">The Unlocked Efficiency Opportunity of On-site Power</a>
+    <div class="sub">
+      <span class="tag source">新闻</span>
+      <span class="tag region">通用</span>
+      <span class="tag product">热泵/空调</span>
+      <span class="tag new">NEW</span>
+    </div>
+  </td>
+  <td class="summary">（待补充，下次运行会自动生成）</td>
+  <td class="kw"><code>待补充</code></td>
+  <td class="fmt">待定</td>
+  <td class="score">20</td>
+</tr>
+
+<tr data-region="global" data-product="both">
+  <td class="rank">42</td>
+  <td class="title-cell">
+    <a href="https://www.achrnews.com/articles/166407-can-geothermal-technology-decarbonize-data-centers" target="_blank" rel="noopener">Can Geothermal Technology Decarbonize Data Centers?</a>
+    <div class="sub">
+      <span class="tag source">新闻</span>
+      <span class="tag region">通用</span>
+      <span class="tag product">热泵/空调</span>
+      <span class="tag new">NEW</span>
+    </div>
+  </td>
+  <td class="summary">（待补充，下次运行会自动生成）</td>
+  <td class="kw"><code>待补充</code></td>
+  <td class="fmt">待定</td>
+  <td class="score">20</td>
+</tr>
+
+<tr data-region="global" data-product="both">
+  <td class="rank">43</td>
+  <td class="title-cell">
+    <a href="https://www.achrnews.com/articles/166412-ashrae-announces-20262027-leadership-award-recipients" target="_blank" rel="noopener">ASHRAE Announces 2026–2027 Leadership, Award Recipients</a>
+    <div class="sub">
+      <span class="tag source">新闻</span>
+      <span class="tag region">通用</span>
+      <span class="tag product">热泵/空调</span>
+      <span class="tag new">NEW</span>
+    </div>
+  </td>
+  <td class="summary">（待补充，下次运行会自动生成）</td>
+  <td class="kw"><code>待补充</code></td>
+  <td class="fmt">待定</td>
+  <td class="score">20</td>
+</tr>
+
+<tr data-region="global" data-product="both">
+  <td class="rank">44</td>
+  <td class="title-cell">
+    <a href="https://www.achrnews.com/articles/166411-engineered-drivetrain-reliability-for-high-density-data-center-cooling-towers" target="_blank" rel="noopener">Engineered Drivetrain Reliability for High-Density Data Center Cooling Towers</a>
+    <div class="sub">
+      <span class="tag source">新闻</span>
+      <span class="tag region">通用</span>
+      <span class="tag product">热泵/空调</span>
+      <span class="tag new">NEW</span>
+    </div>
+  </td>
+  <td class="summary">（待补充，下次运行会自动生成）</td>
+  <td class="kw"><code>待补充</code></td>
+  <td class="fmt">待定</td>
+  <td class="score">20</td>
+</tr>
+
+<tr data-region="global" data-product="both">
+  <td class="rank">45</td>
+  <td class="title-cell">
+    <a href="https://www.achrnews.com/articles/166409-designing-critical-facilities-for-a-more-volatile-grid" target="_blank" rel="noopener">Designing Critical Facilities for a More Volatile Grid</a>
+    <div class="sub">
+      <span class="tag source">新闻</span>
+      <span class="tag region">通用</span>
+      <span class="tag product">热泵/空调</span>
+      <span class="tag new">NEW</span>
+    </div>
+  </td>
+  <td class="summary">（待补充，下次运行会自动生成）</td>
+  <td class="kw"><code>待补充</code></td>
+  <td class="fmt">待定</td>
+  <td class="score">20</td>
+</tr>
+
+<tr data-region="global" data-product="both">
+  <td class="rank">46</td>
+  <td class="title-cell">
+    <a href="https://www.achrnews.com/articles/166408-how-tosis-sakari-suhonen-is-rewriting-the-rules-of-building-automation-security" target="_blank" rel="noopener">How Tosi’s Sakari Suhonen is Rewriting the Rules of Building Automation Security</a>
+    <div class="sub">
+      <span class="tag source">新闻</span>
+      <span class="tag region">通用</span>
+      <span class="tag product">热泵/空调</span>
+      <span class="tag new">NEW</span>
+    </div>
+  </td>
+  <td class="summary">（待补充，下次运行会自动生成）</td>
+  <td class="kw"><code>待补充</code></td>
+  <td class="fmt">待定</td>
+  <td class="score">20</td>
+</tr>
+
+<tr data-region="global" data-product="both">
+  <td class="rank">47</td>
+  <td class="title-cell">
+    <a href="https://www.achrnews.com/articles/166406-can-hvac-train-enough-technicians-for-the-data-center-boom" target="_blank" rel="noopener">Can HVAC Train Enough Technicians for the Data Center Boom?</a>
+    <div class="sub">
+      <span class="tag source">新闻</span>
+      <span class="tag region">通用</span>
+      <span class="tag product">热泵/空调</span>
+      <span class="tag new">NEW</span>
+    </div>
+  </td>
+  <td class="summary">（待补充，下次运行会自动生成）</td>
+  <td class="kw"><code>待补充</code></td>
+  <td class="fmt">待定</td>
+  <td class="score">20</td>
+</tr>
+
+<tr data-region="global" data-product="both">
+  <td class="rank">48</td>
+  <td class="title-cell">
+    <a href="https://www.achrnews.com/articles/166404-daikin-debuts-new-inverter-driven-commercial-heat-pump" target="_blank" rel="noopener">Daikin Debuts New Inverter-Driven Commercial 
+Heat Pump</a>
+    <div class="sub">
+      <span class="tag source">新闻</span>
+      <span class="tag region">通用</span>
+      <span class="tag product">热泵/空调</span>
+      <span class="tag new">NEW</span>
+    </div>
+  </td>
+  <td class="summary">（待补充，下次运行会自动生成）</td>
+  <td class="kw"><code>待补充</code></td>
+  <td class="fmt">待定</td>
+  <td class="score">20</td>
+</tr>
+
+<tr data-region="global" data-product="both">
+  <td class="rank">49</td>
+  <td class="title-cell">
+    <a href="https://www.achrnews.com/articles/166402-rising-costs-force-contractors-to-take-a-harder-look-at-pricing" target="_blank" rel="noopener">Rising Costs Force Contractors to Take a Harder Look at Pricing</a>
+    <div class="sub">
+      <span class="tag source">新闻</span>
+      <span class="tag region">通用</span>
+      <span class="tag product">热泵/空调</span>
+      <span class="tag new">NEW</span>
+    </div>
+  </td>
+  <td class="summary">（待补充，下次运行会自动生成）</td>
+  <td class="kw"><code>待补充</code></td>
+  <td class="fmt">待定</td>
+  <td class="score">20</td>
+</tr>
+
+<tr data-region="global" data-product="both">
+  <td class="rank">50</td>
+  <td class="title-cell">
+    <a href="https://www.achrnews.com/articles/166403-apr-supply-honored-by-2-manufacturing-partners" target="_blank" rel="noopener">APR Supply Honored by 2 Manufacturing Partners</a>
+    <div class="sub">
+      <span class="tag source">新闻</span>
+      <span class="tag region">通用</span>
+      <span class="tag product">热泵/空调</span>
+      <span class="tag new">NEW</span>
+    </div>
+  </td>
+  <td class="summary">（待补充，下次运行会自动生成）</td>
+  <td class="kw"><code>待补充</code></td>
+  <td class="fmt">待定</td>
+  <td class="score">20</td>
+</tr>
+
+    </tbody>
+  </table>
+  <script>
+    var currentRegion = 'all';
+    var currentProduct = 'all';
+    function applyFilters() {
+      document.querySelectorAll('tbody tr').forEach(function(row) {
+        var regionOk = (currentRegion === 'all' || row.dataset.region === currentRegion);
+        var productOk = (currentProduct === 'all' || row.dataset.product === currentProduct);
+        row.style.display = (regionOk && productOk) ? '' : 'none';
+      });
+    }
+    document.querySelectorAll('.filter-btn').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        document.querySelectorAll('.filter-btn').forEach(function(b) { b.classList.remove('active'); });
+        btn.classList.add('active');
+        currentRegion = btn.dataset.filter;
+        applyFilters();
+      });
+    });
+    document.querySelectorAll('.pfilter-btn').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        document.querySelectorAll('.pfilter-btn').forEach(function(b) { b.classList.remove('active'); });
+        btn.classList.add('active');
+        currentProduct = btn.dataset.pfilter;
+        applyFilters();
+      });
+    });
+  </script>
+</body>
+</html>

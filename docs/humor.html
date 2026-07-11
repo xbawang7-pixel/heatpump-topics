@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>论坛趣味 / 吐槽帖</title>
+<style>
+  :root {
+    --bg: #ffffff; --surface: #fafaf9; --border: #eaeae7;
+    --text: #1c1c1a; --text-muted: #8a8a85; --accent: #3c6e5c; --accent-soft: #3c6e5c14;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 3rem 1.5rem 5rem; background: var(--bg); color: var(--text);
+    font-family: -apple-system, "PingFang SC", "Hiragino Sans GB", "Segoe UI", sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .header {
+    max-width: 1080px; margin: 0 auto 1rem; display: flex; justify-content: space-between;
+    align-items: flex-end; flex-wrap: wrap; gap: 12px; border-bottom: 1px solid var(--border);
+    padding-bottom: 1.5rem;
+  }
+  .header h1 { margin: 0; font-size: 26px; font-weight: 600; font-family: Georgia, "Songti SC", serif; }
+  .header .sub { color: var(--text-muted); font-size: 13px; margin-top: 6px; }
+  .header a.back {
+    font-size: 12.5px; color: var(--accent); text-decoration: none; border: 1px solid var(--border);
+    padding: 7px 14px; border-radius: 999px; white-space: nowrap;
+  }
+  .header a.back:hover { background: var(--accent-soft); }
+  .note {
+    max-width: 1080px; margin: 1.25rem auto 2rem; font-size: 12.5px; color: var(--text-muted);
+    background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 12px 16px;
+  }
+  table { max-width: 1080px; margin: 0 auto; width: 100%; border-collapse: collapse; }
+  th {
+    text-align: left; font-size: 11px; color: var(--text-muted); font-weight: 600;
+    text-transform: uppercase; letter-spacing: 0.06em; padding: 10px 12px; border-bottom: 1px solid var(--border);
+  }
+  td { padding: 14px 12px; border-bottom: 1px solid var(--border); vertical-align: top; font-size: 13px; }
+  tr:hover td { background: var(--surface); }
+  td.num { font-family: "SF Mono", Menlo, monospace; color: var(--text-muted); }
+  td.muted { color: var(--text-muted); font-size: 12px; }
+  td.title-cell { max-width: 420px; }
+  a { color: var(--text); text-decoration: none; font-weight: 500; }
+  a:hover { color: var(--accent); }
+  .empty { text-align: center; color: var(--text-muted); padding: 3rem; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <div>
+      <h1>论坛趣味 / 吐槽帖</h1>
+      <div class="sub">更新时间：2026年07月11日 01:16 UTC</div>
+    </div>
+    <a class="back" href="index.html">← 返回话题榜</a>
+  </div>
+  <div class="note">
+    这些是Reddit上互动量很高、但被判定为"纯玩笑/吐槽/无实质信息量"而没有进入正经话题榜的帖子——
+    不建议直接拿来当选题写，纯粹是给你感受一下行业圈子里的真实氛围。
+  </div>
+  <table>
+    <thead>
+      <tr><th>标题</th><th>来源板块</th><th>点赞</th><th>评论</th><th>首次发现</th></tr>
+    </thead>
+    <tbody>
+      <tr><td colspan="5" class="empty">暂时还没有被过滤掉的内容，等Reddit抓取跑过之后就会有数据。</td></tr>
+    </tbody>
+  </table>
+</body>
+</html>
