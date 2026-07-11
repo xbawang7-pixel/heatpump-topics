@@ -62,6 +62,8 @@ def update_bank(candidates, bank_path, score_fn, top_n, decay_rate, today):
                 "title_draft": None,
                 "content_format": None,
                 "why_relevant": None,
+                "is_grounded": None,
+                "cluster": None,
                 "summary_cn": c.get("summary_cn"),  # 保留候选自带的摘要（如果有），
                                                       # enrich跑过之后会用更完整的版本覆盖
                 "keyword_validated": False,

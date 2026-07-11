@@ -80,6 +80,9 @@ jobs:
       - name: 渲染精选清单
         run: python scripts/render_weekly_picks.py
 
+      - name: 渲染内容集群
+        run: python scripts/render_clusters.py
+
       - name: 渲染关键词库网页
         run: python scripts/render_keywords.py
 

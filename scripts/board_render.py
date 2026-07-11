@@ -12,7 +12,7 @@ REGION_LABELS = {
     "international_brand": "国际品牌", "china_peer": "国产同行",
 }
 PRODUCT_LABELS = {
-    "heat_pump": "热泵", "air_conditioner": "空调", "both": "热泵/空调",
+    "heat_pump": "热泵", "air_conditioner": "空调", "pool_heat_pump": "泳池加热", "both": "热泵/空调",
 }
 FORMAT_LABELS = {
     "blog": "技术博客", "case_study": "案例研究",
@@ -101,6 +101,7 @@ def render_row(entry):
 NAV_TEMPLATE = (
     '<a class="kwlink{active_home}" href="index.html">首页</a>'
     '<a class="kwlink{active_picks}" href="picks.html">精选清单</a>'
+    '<a class="kwlink{active_clusters}" href="clusters.html">内容集群</a>'
     '<a class="kwlink{active_news}" href="news.html">新闻榜</a>'
     '<a class="kwlink{active_reddit}" href="reddit.html">Reddit专业榜</a>'
     '<a class="kwlink{active_competitors}" href="competitors.html">同行动态</a>'
@@ -111,7 +112,7 @@ NAV_TEMPLATE = (
 
 def render_nav(active):
     kwargs = {f"active_{k}": (" active-nav" if k == active else "") for k in
-              ("home", "picks", "news", "reddit", "competitors")}
+              ("home", "picks", "clusters", "news", "reddit", "competitors")}
     return NAV_TEMPLATE.format(**kwargs)
 
 
