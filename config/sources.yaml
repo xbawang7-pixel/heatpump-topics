@@ -160,19 +160,19 @@ seed_keywords:
 # 自动化抓取风险高（可能牵连你自己的账号），建议偶尔手动去看一眼就好，
 # 这里只接了确认有真实RSS的官网新闻/博客。
 competitors:
-  - name: "Carrier (国际品牌)"
-    rss: "https://www.carrier.com/commercial/en/us/news/rssfeed/"
-    category: "international_brand"
-  # Daikin：之前配置的 https://www.daikin.com/press/ 其实是网页落地页，
-  # 不是真正的RSS文件，导致解析报"not well-formed"错误。
-  # 网上没查到Daikin官方直接暴露的.xml地址（只有落地页），先禁用，
-  # 避免每次运行都报错，以后查到真实地址再启用。
+  # Carrier：换成真实RSS文件地址后依然抓到0条，大概率是这个网站对
+  # 自动化请求的拦截比想的更严格，不只是URL问题了，先禁用不再折腾。
+  # - name: "Carrier (国际品牌)"
+  #   rss: "https://www.carrier.com/commercial/en/us/news/rssfeed/"
+  #   category: "international_brand"
+  # Daikin：官网没查到真实RSS地址，只有落地页，先禁用。
   # - name: "Daikin (国际品牌)"
   #   rss: "https://www.daikin.com/press/"
   #   category: "international_brand"
   - name: "Panasonic HVAC & CC (国际品牌，暖通制冷专属新闻)"
     rss: "https://news.panasonic.com/global/rss/company/71.xml"
     category: "international_brand"
+    # 这个真的能用，只是有时候一周内没有新内容，这是正常现象，不是故障
   # SPRSUN 爬虫已确认失效 —— 它的博客列表是JS动态加载的，
   # requests+BeautifulSoup抓不到JS渲染后的内容，只能拿到页面骨架。
   # 要真正解决需要换成Playwright这类能跑JS的工具，是更大的工程，先不做。
