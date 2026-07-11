@@ -24,20 +24,41 @@ jobs:
       - name: 安装依赖
         run: pip install -r requirements.txt
 
-      - name: 抓取新闻
-        run: python scripts/fetch_news.py
+      - name: 判断是否抓Reddit
+        run: |
+          if [ "$(date -u +%u)" = "1" ]; then
+            echo "RUN_REDDIT=true" >> "$GITHUB_ENV"
+          else
+            echo "RUN_REDDIT=false" >> "$GITHUB_ENV"
+          fi
 
-      - name: 查 Google Trends 热度
-        run: python scripts/check_trends.py
-        continue-on-error: true   # Trends偶尔限流失败也不影响后面步骤，用旧数据兜底
-
-      - name: 用 LLM 生成选题
+      - name: 收集候选话题
         env:
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-        run: python scripts/generate_topics.py
+          LOOKBACK_HOURS: "168"
+          APIFY_API_TOKEN: ${{ secrets.APIFY_API_TOKEN }}
+        run: python scripts/collect_candidates.py
+
+      - name: 过滤低价值候选
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python scripts/filter_candidates.py
+
+      - name: 更新话题库
+        run: python scripts/update_topic_bank.py
+
+      - name: 用 LLM 补充话题信息
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python scripts/enrich_topics.py
 
       - name: 渲染看板网页
         run: python scripts/render_dashboard.py
+
+      - name: 渲染关键词库网页
+        run: python scripts/render_keywords.py
+
+      - name: 渲染论坛趣味帖网页
+        run: python scripts/render_humor.py
 
       - name: 提交更新
         run: |
