@@ -21,21 +21,21 @@ body {
   align-items: flex-end; flex-wrap: wrap; gap: 12px; border-bottom: 1px solid var(--border);
   padding-bottom: 1.5rem;
 }
-.header h1 { margin: 0; font-size: 26px; font-weight: 600; font-family: Georgia, "Songti SC", serif; }
-.header .sub { color: var(--text-muted); font-size: 13px; margin-top: 6px; }
+.header h1 { margin: 0; font-size: 30px; font-weight: 600; font-family: Georgia, "Songti SC", serif; }
+.header .sub { color: var(--text-muted); font-size: 15px; margin-top: 6px; }
 .nav { max-width: 1080px; margin: 0 auto 2rem; display: flex; gap: 8px; flex-wrap: wrap; }
 .kwlink {
-  font-size: 12.5px; color: var(--accent); text-decoration: none; border: 1px solid var(--border);
+  font-size: 14.5px; color: var(--accent); text-decoration: none; border: 1px solid var(--border);
   padding: 7px 14px; border-radius: 999px; white-space: nowrap;
 }
 .kwlink:hover, .kwlink.active-nav { background: var(--accent-soft); }
 .stats { max-width: 1080px; margin: 0 auto 2rem; display: flex; gap: 14px; flex-wrap: wrap; }
 .stat { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 14px 20px; min-width: 150px; }
-.stat .label { font-size: 11.5px; color: var(--text-muted); }
+.stat .label { font-size: 13px; color: var(--text-muted); }
 .stat .value { font-size: 24px; font-weight: 600; margin-top: 4px; font-family: Georgia, serif; }
 .filters { max-width: 1080px; margin: 0 auto 10px; display: flex; gap: 8px; flex-wrap: wrap; }
 .filter-btn, .pfilter-btn {
-  font-size: 12.5px; padding: 6px 15px; border-radius: 999px; border: 1px solid var(--border);
+  font-size: 14px; padding: 7px 16px; border-radius: 999px; border: 1px solid var(--border);
   background: var(--bg); color: var(--text-muted); cursor: pointer; font-family: inherit;
 }
 .filter-btn:hover, .pfilter-btn:hover { border-color: var(--accent); color: var(--text); }
@@ -43,38 +43,38 @@ body {
 .pfilter-btn.active { background: var(--copper); color: #fff; border-color: var(--copper); font-weight: 500; }
 table { max-width: 1080px; margin: 1.5rem auto 0; width: 100%; border-collapse: collapse; }
 th {
-  text-align: left; font-size: 11px; color: var(--text-faint); font-weight: 600;
+  text-align: left; font-size: 12.5px; color: var(--text-faint); font-weight: 600;
   text-transform: uppercase; letter-spacing: 0.06em; padding: 10px 12px; border-bottom: 1px solid var(--border);
 }
-td { padding: 16px 12px; border-bottom: 1px solid var(--border); vertical-align: top; font-size: 13.5px; line-height: 1.55; }
+td { padding: 16px 12px; border-bottom: 1px solid var(--border); vertical-align: top; font-size: 15.5px; line-height: 1.6; }
 tr:hover td { background: var(--surface); }
-td.rank { color: var(--text-faint); font-family: Georgia, serif; font-size: 15px; font-style: italic; width: 36px; padding-top: 17px; }
+td.rank { color: var(--text-faint); font-family: Georgia, serif; font-size: 17px; font-style: italic; width: 36px; padding-top: 17px; }
 td.score { font-family: "SF Mono", Menlo, monospace; text-align: right; width: 56px; color: var(--text-muted); }
-td.summary { color: var(--text-muted); max-width: 260px; font-size: 12.5px; }
-td.kw code { color: var(--accent); font-family: "SF Mono", Menlo, monospace; font-size: 12px; background: var(--accent-soft); padding: 2px 6px; border-radius: 5px; }
-td.fmt { color: var(--text-muted); white-space: nowrap; font-size: 12.5px; }
+td.summary { color: var(--text-muted); max-width: 280px; font-size: 14px; }
+td.kw code { color: var(--accent); font-family: "SF Mono", Menlo, monospace; font-size: 13.5px; background: var(--accent-soft); padding: 2px 6px; border-radius: 5px; }
+td.fmt { color: var(--text-muted); white-space: nowrap; font-size: 14px; }
 td.title-cell { max-width: 260px; }
 a { color: var(--text); text-decoration: none; font-weight: 500; }
 a:hover { color: var(--accent); }
 .sub { margin-top: 6px; display: flex; gap: 6px; flex-wrap: wrap; }
-.tag { font-size: 10px; padding: 2px 8px; border-radius: 999px; border: 1px solid var(--border); color: var(--text-muted); font-weight: 500; }
+.tag { font-size: 11.5px; padding: 3px 9px; border-radius: 999px; border: 1px solid var(--border); color: var(--text-muted); font-weight: 500; }
 .tag.new { color: var(--copper); border-color: #a8703f40; background: #a8703f0c; }
 .tag.up { color: var(--accent); border-color: #3c6e5c40; background: var(--accent-soft); }
 .tag.down { color: var(--red); border-color: #b1584c40; background: #b1584c0c; }
 .empty { text-align: center; color: var(--text-muted); padding: 3rem; }
 .title-draft {
-  margin-top: 6px; font-size: 12.5px; color: var(--text); background: var(--accent-soft);
+  margin-top: 6px; font-size: 14.5px; color: var(--text); background: var(--accent-soft);
   border-radius: 8px; padding: 6px 10px; line-height: 1.5;
 }
 td.used-col { width: 50px; text-align: center; }
-.used-checkbox { display: flex; flex-direction: column; align-items: center; gap: 2px; font-size: 10px; color: var(--text-muted); cursor: pointer; }
+.used-checkbox { display: flex; flex-direction: column; align-items: center; gap: 2px; font-size: 11.5px; color: var(--text-muted); cursor: pointer; }
 .used-checkbox input { cursor: pointer; }
 tr.used-row { opacity: 0.4; }
 tr.used-row td.title-cell a { text-decoration: line-through; }
 #toggle-used-btn.active { background: var(--text); color: #fff; border-color: var(--text); }
 
   .note {
-    max-width: 1080px; margin: 1rem auto 2rem; font-size: 12.5px; color: var(--text-muted);
+    max-width: 1080px; margin: 1rem auto 2rem; font-size: 14.5px; color: var(--text-muted);
     background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 12px 16px;
   }
   .cluster-section { max-width: 1080px; margin: 0 auto 2rem; }
@@ -82,8 +82,8 @@ tr.used-row td.title-cell a { text-decoration: line-through; }
     display: flex; justify-content: space-between; align-items: baseline;
     border-bottom: 1px solid var(--border); padding-bottom: 8px; margin-bottom: 12px;
   }
-  .cluster-title { font-size: 16px; font-weight: 600; font-family: Georgia, "Songti SC", serif; }
-  .cluster-count { font-size: 12px; color: var(--text-muted); }
+  .cluster-title { font-size: 19px; font-weight: 600; font-family: Georgia, "Songti SC", serif; }
+  .cluster-count { font-size: 13.5px; color: var(--text-muted); }
   .cluster-items {
     display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 10px;
   }
@@ -92,17 +92,17 @@ tr.used-row td.title-cell a { text-decoration: line-through; }
     border-radius: 10px; padding: 12px 14px; text-decoration: none; transition: border-color 0.15s;
   }
   .cluster-item:hover { border-color: var(--accent); }
-  .cluster-item-title { font-size: 13px; color: var(--text); line-height: 1.45; }
-  .cluster-item-meta { font-size: 11px; color: var(--text-muted); margin-top: 6px; }
+  .cluster-item-title { font-size: 15px; color: var(--text); line-height: 1.5; }
+  .cluster-item-meta { font-size: 12.5px; color: var(--text-muted); margin-top: 6px; }
   .cluster-item-meta code { color: var(--accent); font-family: "SF Mono", Menlo, monospace; }
-  .grounded-tag { font-size: 11px; }
+  .grounded-tag { font-size: 12.5px; }
 </style>
 </head>
 <body>
   <div class="header">
     <div>
       <h1>内容集群</h1>
-      <div class="sub">更新时间：2026年07月11日 14:46 UTC · 按主题分组，帮你系统性布局一组文章，而不是打游击</div>
+      <div class="sub">更新时间：2026年07月11日 14:59 UTC · 按主题分组，帮你系统性布局一组文章，而不是打游击</div>
     </div>
   </div>
   <div class="nav">
@@ -152,7 +152,7 @@ tr.used-row td.title-cell a { text-decoration: line-through; }
         <div class="cluster-section">
           <div class="cluster-header">
             <span class="cluster-title">📋 政策法规</span>
-            <span class="cluster-count">2 条</span>
+            <span class="cluster-count">3 条</span>
           </div>
           <div class="cluster-items">
             
@@ -166,13 +166,18 @@ tr.used-row td.title-cell a { text-decoration: line-through; }
   <div class="cluster-item-meta">通用 · <code>energy efficiency regulations in HVAC</code></div>
 </a>
 
+<a class="cluster-item" href="https://refrigerationandaircon.co.za/meeting-explosive-cooling-demand-with-natural-refrigerants-part-3/" target="_blank" rel="noopener">
+  <div class="cluster-item-title">How HVAC System Efficiency Directly Impacts Your Building’s Sustainability Goals <span class="grounded-tag">🎯</span></div>
+  <div class="cluster-item-meta">通用 · <code>impact of HVAC emissions on green building certification</code></div>
+</a>
+
           </div>
         </div>
         
         <div class="cluster-section">
           <div class="cluster-header">
             <span class="cluster-title">🔧 安装维护</span>
-            <span class="cluster-count">4 条</span>
+            <span class="cluster-count">7 条</span>
           </div>
           <div class="cluster-items">
             
@@ -196,13 +201,28 @@ tr.used-row td.title-cell a { text-decoration: line-through; }
   <div class="cluster-item-meta">通用 · <code>how to prevent HVAC installation disputes</code></div>
 </a>
 
+<a class="cluster-item" href="https://refrigerationandaircon.co.za/managing-risk-and-delivering-long-term-value-on-cross-border-hvacr-projects/" target="_blank" rel="noopener">
+  <div class="cluster-item-title">How to Minimize Financial and Operational Risks in Cross-Border HVAC Projects <span class="grounded-tag">🎯</span></div>
+  <div class="cluster-item-meta">非洲 · <code>risk management for cross-border HVAC infrastructure projects</code></div>
+</a>
+
+<a class="cluster-item" href="https://refrigerationandaircon.co.za/cpd-is-coming-for-technicians-and-artisans-too-part-1/" target="_blank" rel="noopener">
+  <div class="cluster-item-title">Why Professional Certification Matters When Choosing Your HVAC Installation Partner <span class="grounded-tag">🎯</span></div>
+  <div class="cluster-item-meta">非洲 · <code>importance of HVAC technician certification and training</code></div>
+</a>
+
+<a class="cluster-item" href="https://refrigerationandaircon.co.za/cross-border-hvacr-projects-building-the-foundations-for-success-across-africa/" target="_blank" rel="noopener">
+  <div class="cluster-item-title">Building Success in Africa: A Guide to Managing Complex HVAC Installations <span class="grounded-tag">🎯</span></div>
+  <div class="cluster-item-meta">非洲 · <code>key success factors for HVAC infrastructure projects in Africa</code></div>
+</a>
+
           </div>
         </div>
         
         <div class="cluster-section">
           <div class="cluster-header">
             <span class="cluster-title">📈 市场动态</span>
-            <span class="cluster-count">4 条</span>
+            <span class="cluster-count">7 条</span>
           </div>
           <div class="cluster-items">
             
@@ -226,13 +246,28 @@ tr.used-row td.title-cell a { text-decoration: line-through; }
   <div class="cluster-item-meta">通用 · <code>how AI impacts the HVAC purchasing journey</code></div>
 </a>
 
+<a class="cluster-item" href="https://refrigerationandaircon.co.za/meeting-explosive-cooling-demand-with-natural-refrigerants-part-3-2/" target="_blank" rel="noopener">
+  <div class="cluster-item-title">Why Natural Refrigerants Are the Future of Energy-Efficient Cooling in Africa <span class="grounded-tag">🎯</span></div>
+  <div class="cluster-item-meta">非洲 · <code>benefits of natural refrigerants in commercial HVAC systems</code></div>
+</a>
+
+<a class="cluster-item" href="https://refrigerationandaircon.co.za/part-1-why-green-cooling-matters-giz-md-sets-the-scene/" target="_blank" rel="noopener">
+  <div class="cluster-item-title">Beyond Cooling: Why Your HVAC Choice is a Strategic Climate Decision <span class="grounded-tag">🎯</span></div>
+  <div class="cluster-item-meta">通用 · <code>importance of sustainable HVAC design for global climate goals</code></div>
+</a>
+
+<a class="cluster-item" href="https://refrigerationandaircon.co.za/setting-the-scene-why-r290-matters-for-the-future-of-cooling-part-1/" target="_blank" rel="noopener">
+  <div class="cluster-item-title">The Advantages of R290 Refrigerant: Is Your New Air Conditioner Future-Proof? <span class="grounded-tag">🎯</span></div>
+  <div class="cluster-item-meta">通用 · <code>why choose R290 refrigerant for room air conditioners</code></div>
+</a>
+
           </div>
         </div>
         
         <div class="cluster-section">
           <div class="cluster-header">
             <span class="cluster-title">其他</span>
-            <span class="cluster-count">32 条</span>
+            <span class="cluster-count">30 条</span>
           </div>
           <div class="cluster-items">
             
