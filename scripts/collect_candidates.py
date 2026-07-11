@@ -92,6 +92,12 @@ def scrape_html_blog(url, min_title_len=15, max_title_len=140, url_must_contain=
     return results
 
 
+RSS_HEADERS = {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+                  "(KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+}
+
+
 def collect_news(config):
     cutoff = datetime.now(timezone.utc) - timedelta(hours=NEWS_LOOKBACK_HOURS)
     candidates = []
@@ -105,7 +111,7 @@ def collect_news(config):
             if not rss_url:
                 continue
             try:
-                parsed = feedparser.parse(rss_url)
+                parsed = feedparser.parse(rss_url, request_headers=RSS_HEADERS)
             except Exception as e:
                 print(f"[警告] 新闻源解析失败 {source_name}: {e}")
                 continue
@@ -245,10 +251,14 @@ def collect_competitors(config):
         if comp.get("rss"):
             rss_url = comp["rss"]
             try:
-                parsed = feedparser.parse(rss_url)
+                parsed = feedparser.parse(rss_url, request_headers=RSS_HEADERS)
             except Exception as e:
                 print(f"[警告] 同行信源解析失败 {source_name}: {e}")
                 continue
+            raw_entry_count = len(parsed.entries)
+            if raw_entry_count == 0:
+                bozo_msg = getattr(parsed, "bozo_exception", "无entries返回，可能被拦截或RSS地址失效")
+                print(f"[警告] {source_name} RSS原始条目数为0，诊断信息: {bozo_msg}")
             count = 0
             for entry in parsed.entries:
                 pub_time = parse_entry_time(entry)
@@ -270,7 +280,8 @@ def collect_competitors(config):
                     "published": pub_time.isoformat() if pub_time else None,
                 })
                 count += 1
-            print(f"[信息] 同行(RSS)-{source_name}: 抓到 {count} 条")
+            print(f"[信息] 同行(RSS)-{source_name}: RSS原始 {raw_entry_count} 条，"
+                  f"时间窗口内 {count} 条")
 
         elif comp.get("html"):
             items = scrape_html_blog(
