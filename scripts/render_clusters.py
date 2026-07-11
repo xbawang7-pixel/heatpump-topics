@@ -107,7 +107,7 @@ def main():
 <title>内容集群</title>
 <style>{BASE_CSS}
   .note {{
-    max-width: 1080px; margin: 1rem auto 2rem; font-size: 12.5px; color: var(--text-muted);
+    max-width: 1080px; margin: 1rem auto 2rem; font-size: 14.5px; color: var(--text-muted);
     background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 12px 16px;
   }}
   .cluster-section {{ max-width: 1080px; margin: 0 auto 2rem; }}
@@ -115,8 +115,8 @@ def main():
     display: flex; justify-content: space-between; align-items: baseline;
     border-bottom: 1px solid var(--border); padding-bottom: 8px; margin-bottom: 12px;
   }}
-  .cluster-title {{ font-size: 16px; font-weight: 600; font-family: Georgia, "Songti SC", serif; }}
-  .cluster-count {{ font-size: 12px; color: var(--text-muted); }}
+  .cluster-title {{ font-size: 19px; font-weight: 600; font-family: Georgia, "Songti SC", serif; }}
+  .cluster-count {{ font-size: 13.5px; color: var(--text-muted); }}
   .cluster-items {{
     display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 10px;
   }}
@@ -125,10 +125,10 @@ def main():
     border-radius: 10px; padding: 12px 14px; text-decoration: none; transition: border-color 0.15s;
   }}
   .cluster-item:hover {{ border-color: var(--accent); }}
-  .cluster-item-title {{ font-size: 13px; color: var(--text); line-height: 1.45; }}
-  .cluster-item-meta {{ font-size: 11px; color: var(--text-muted); margin-top: 6px; }}
+  .cluster-item-title {{ font-size: 15px; color: var(--text); line-height: 1.5; }}
+  .cluster-item-meta {{ font-size: 12.5px; color: var(--text-muted); margin-top: 6px; }}
   .cluster-item-meta code {{ color: var(--accent); font-family: "SF Mono", Menlo, monospace; }}
-  .grounded-tag {{ font-size: 11px; }}
+  .grounded-tag {{ font-size: 12.5px; }}
 </style>
 </head>
 <body>

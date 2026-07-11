@@ -37,10 +37,17 @@ def load_bank(bank_file):
 
 
 def pick_diverse(entries, n):
-    """尽量让region不重复，优先选没出现过的区域，选够n条为止"""
+    """尽量让region不重复，优先选没出现过的区域，选够n条为止。
+    另外优先选"接地气"的内容（is_grounded=true，对应真实买家关心的问题），
+    避免精选清单里全是企业公关新闻这种"新闻性强但不实用"的内容。"""
+    grounded = [e for e in entries if e.get("is_grounded") is True]
+    ungrounded = [e for e in entries if e.get("is_grounded") is not True]
+    # 先在"接地气"的池子里做多样性挑选，池子不够大再从剩下的里面补
+    ordered = grounded + ungrounded
+
     picked = []
     seen_regions = set()
-    for e in entries:
+    for e in ordered:
         if len(picked) >= n:
             break
         region = e.get("region") or "global"
@@ -49,7 +56,7 @@ def pick_diverse(entries, n):
             seen_regions.add(region)
     if len(picked) < n:
         picked_ids = {e["id"] for e in picked}
-        for e in entries:
+        for e in ordered:
             if len(picked) >= n:
                 break
             if e["id"] not in picked_ids:
@@ -59,7 +66,7 @@ def pick_diverse(entries, n):
 
 CARD_TEMPLATE = """
 <a class="pick-card" href="{link}" target="_blank" rel="noopener">
-  <div class="pick-source">{source_badge} · {region_label}</div>
+  <div class="pick-source">{source_badge} · {region_label} {grounded_badge}</div>
   <div class="pick-title-draft">{title_draft}</div>
   <div class="pick-original-title">原标题：{title}</div>
   <div class="pick-summary">{summary_cn}</div>
@@ -75,10 +82,12 @@ SOURCE_BADGES = {"news": "新闻榜", "reddit": "Reddit专业榜", "competitor":
 
 def render_card(entry):
     title_draft = entry.get("title_draft") or entry.get("title", "")
+    grounded_badge = '<span class="grounded-tag">🎯 买家关心</span>' if entry.get("is_grounded") else ""
     return CARD_TEMPLATE.format(
         link=esc(entry.get("link", "")),
         source_badge=SOURCE_BADGES.get(entry.get("source_type"), entry.get("source_type", "")),
         region_label=esc(REGION_LABELS.get(entry.get("region"), entry.get("region") or "通用")),
+        grounded_badge=grounded_badge,
         title_draft=esc(title_draft),
         title=esc(entry.get("title", "")),
         summary_cn=esc(entry.get("summary_cn") or "（暂无摘要）"),
@@ -107,7 +116,7 @@ def main():
 <title>精选清单</title>
 <style>{BASE_CSS}
   .note {{
-    max-width: 1080px; margin: 1rem auto 2rem; font-size: 12.5px; color: var(--text-muted);
+    max-width: 1080px; margin: 1rem auto 2rem; font-size: 14.5px; color: var(--text-muted);
     background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 12px 16px;
   }}
   .picks-grid {{
@@ -119,13 +128,14 @@ def main():
     border-radius: 14px; padding: 20px; text-decoration: none; transition: border-color 0.15s;
   }}
   .pick-card:hover {{ border-color: var(--accent); }}
-  .pick-source {{ font-size: 11px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.04em; }}
-  .pick-title-draft {{ font-size: 15.5px; font-weight: 600; color: var(--text); margin-top: 8px; line-height: 1.4; font-family: Georgia, serif; }}
-  .pick-original-title {{ font-size: 11.5px; color: var(--text-faint); margin-top: 8px; }}
-  .pick-summary {{ font-size: 12.5px; color: var(--text-muted); margin-top: 8px; line-height: 1.5; }}
+  .pick-source {{ font-size: 12.5px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.04em; }}
+  .pick-title-draft {{ font-size: 18px; font-weight: 600; color: var(--text); margin-top: 8px; line-height: 1.45; font-family: Georgia, serif; }}
+  .pick-original-title {{ font-size: 13px; color: var(--text-faint); margin-top: 8px; }}
+  .pick-summary {{ font-size: 14.5px; color: var(--text-muted); margin-top: 8px; line-height: 1.6; }}
   .pick-footer {{ margin-top: 14px; display: flex; justify-content: space-between; align-items: center; gap: 8px; }}
-  .pick-footer code {{ color: var(--accent); font-family: "SF Mono", Menlo, monospace; font-size: 11.5px; background: var(--accent-soft); padding: 2px 6px; border-radius: 5px; }}
-  .pick-format {{ font-size: 11px; color: var(--text-muted); white-space: nowrap; }}
+  .pick-footer code {{ color: var(--accent); font-family: "SF Mono", Menlo, monospace; font-size: 13px; background: var(--accent-soft); padding: 3px 8px; border-radius: 5px; }}
+  .pick-format {{ font-size: 13px; color: var(--text-muted); white-space: nowrap; }}
+  .grounded-tag {{ font-size: 12.5px; color: var(--accent); font-weight: 600; }}
 </style>
 </head>
 <body>

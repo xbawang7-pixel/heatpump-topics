@@ -85,7 +85,7 @@ def main():
 <title>长尾关键词库</title>
 <style>{BASE_CSS}
   td.num {{ font-family: "SF Mono", Menlo, monospace; color: var(--text-muted); }}
-  td.muted {{ color: var(--text-muted); font-size: 12px; max-width: 240px; }}
+  td.muted {{ color: var(--text-muted); font-size: 13.5px; max-width: 260px; }}
 </style>
 </head>
 <body>

@@ -68,11 +68,11 @@ def main():
 <title>论坛趣味 / 吐槽帖</title>
 <style>{BASE_CSS}
   .note {{
-    max-width: 1080px; margin: 1.25rem auto 2rem; font-size: 12.5px; color: var(--text-muted);
+    max-width: 1080px; margin: 1.25rem auto 2rem; font-size: 14.5px; color: var(--text-muted);
     background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 12px 16px;
   }}
   td.num {{ font-family: "SF Mono", Menlo, monospace; color: var(--text-muted); }}
-  td.muted {{ color: var(--text-muted); font-size: 12px; }}
+  td.muted {{ color: var(--text-muted); font-size: 13.5px; }}
   td.title-cell {{ max-width: 420px; }}
 </style>
 </head>

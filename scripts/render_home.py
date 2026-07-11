@@ -64,9 +64,9 @@ def main():
     border-radius: 14px; padding: 22px; text-decoration: none; transition: border-color 0.15s;
   }}
   .board-card:hover {{ border-color: var(--accent); }}
-  .board-card-title {{ font-size: 17px; font-weight: 600; color: var(--text); font-family: Georgia, "Songti SC", serif; }}
-  .board-card-desc {{ font-size: 12.5px; color: var(--text-muted); margin-top: 6px; }}
-  .board-card-stats {{ margin-top: 16px; display: flex; gap: 12px; font-size: 12px; color: var(--text-muted); }}
+  .board-card-title {{ font-size: 20px; font-weight: 600; color: var(--text); font-family: Georgia, "Songti SC", serif; }}
+  .board-card-desc {{ font-size: 14.5px; color: var(--text-muted); margin-top: 6px; }}
+  .board-card-stats {{ margin-top: 16px; display: flex; gap: 12px; font-size: 13.5px; color: var(--text-muted); }}
   .board-card-stats .new {{ color: var(--accent); }}
 </style>
 </head>
