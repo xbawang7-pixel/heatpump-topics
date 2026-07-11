@@ -35,6 +35,8 @@ jobs:
       - name: 收集候选话题
         env:
           LOOKBACK_HOURS: "168"
+          PYTHONUNBUFFERED: "1"
+          RSS_REQUEST_TIMEOUT: "20"
           APIFY_API_TOKEN: ${{ secrets.APIFY_API_TOKEN }}
         run: python scripts/collect_candidates.py
 
