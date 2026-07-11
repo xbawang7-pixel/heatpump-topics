@@ -538,5 +538,77 @@
     "sample_title": "Engineered Drivetrain Reliability for High-Density Data Center Cooling Towers",
     "sample_link": "https://www.achrnews.com/articles/166411-engineered-drivetrain-reliability-for-high-density-data-center-cooling-towers",
     "keyword_validated": false
+  },
+  "hvac resilience strategies for critical facilities in unstable power grids": {
+    "keyword": "HVAC resilience strategies for critical facilities in unstable power grids",
+    "region": "global",
+    "product_category": "both",
+    "content_format": "whitepaper",
+    "first_seen": "2026-07-11",
+    "last_seen": "2026-07-11",
+    "times_seen": 1,
+    "sample_title": "Designing Critical Facilities for a More Volatile Grid",
+    "sample_link": "https://www.achrnews.com/articles/166409-designing-critical-facilities-for-a-more-volatile-grid",
+    "keyword_validated": false
+  },
+  "hvac building automation security protocols": {
+    "keyword": "HVAC building automation security protocols",
+    "region": "global",
+    "product_category": "both",
+    "content_format": "blog",
+    "first_seen": "2026-07-11",
+    "last_seen": "2026-07-11",
+    "times_seen": 1,
+    "sample_title": "How Tosi’s Sakari Suhonen is Rewriting the Rules of Building Automation Security",
+    "sample_link": "https://www.achrnews.com/articles/166408-how-tosis-sakari-suhonen-is-rewriting-the-rules-of-building-automation-security",
+    "keyword_validated": false
+  },
+  "hvac technician training for high-density data centers": {
+    "keyword": "HVAC technician training for high-density data centers",
+    "region": "global",
+    "product_category": "both",
+    "content_format": "blog",
+    "first_seen": "2026-07-11",
+    "last_seen": "2026-07-11",
+    "times_seen": 1,
+    "sample_title": "Can HVAC Train Enough Technicians for the Data Center Boom?",
+    "sample_link": "https://www.achrnews.com/articles/166406-can-hvac-train-enough-technicians-for-the-data-center-boom",
+    "keyword_validated": false
+  },
+  "inverter-driven commercial heat pump r32 technology": {
+    "keyword": "inverter-driven commercial heat pump R32 technology",
+    "region": "global",
+    "product_category": "heat_pump",
+    "content_format": "comparison",
+    "first_seen": "2026-07-11",
+    "last_seen": "2026-07-11",
+    "times_seen": 1,
+    "sample_title": "Daikin Debuts New Inverter-Driven Commercial \nHeat Pump",
+    "sample_link": "https://www.achrnews.com/articles/166404-daikin-debuts-new-inverter-driven-commercial-heat-pump",
+    "keyword_validated": false
+  },
+  "hvac contractor pricing strategies in volatile markets": {
+    "keyword": "HVAC contractor pricing strategies in volatile markets",
+    "region": "global",
+    "product_category": "both",
+    "content_format": "blog",
+    "first_seen": "2026-07-11",
+    "last_seen": "2026-07-11",
+    "times_seen": 1,
+    "sample_title": "Rising Costs Force Contractors to Take a Harder Look at Pricing",
+    "sample_link": "https://www.achrnews.com/articles/166402-rising-costs-force-contractors-to-take-a-harder-look-at-pricing",
+    "keyword_validated": false
+  },
+  "hvac distributor partnership and supply chain growth": {
+    "keyword": "HVAC distributor partnership and supply chain growth",
+    "region": "global",
+    "product_category": "air_conditioner",
+    "content_format": "case_study",
+    "first_seen": "2026-07-11",
+    "last_seen": "2026-07-11",
+    "times_seen": 1,
+    "sample_title": "APR Supply Honored by 2 Manufacturing Partners",
+    "sample_link": "https://www.achrnews.com/articles/166403-apr-supply-honored-by-2-manufacturing-partners",
+    "keyword_validated": false
   }
 }
