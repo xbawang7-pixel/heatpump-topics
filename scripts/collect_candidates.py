@@ -206,7 +206,7 @@ def collect_reddit(config):
             title = (item.get("title") or item.get("postTitle") or "").strip()
             if not title:
                 continue
-            link = item.get("url") or item.get("postUrl") or item.get("contentUrl") or item.get("permalink") or ""
+            link = item.get("url") or item.get("postUrl") or item.get("permalink") or ""
             score = item.get("upVotes", item.get("score", item.get("ups", 0))) or 0
             comments = item.get("numberOfComments", item.get("commentCount", item.get("numComments", 0))) or 0
             candidates.append({

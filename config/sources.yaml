@@ -166,13 +166,13 @@ competitors:
   - name: "Daikin (国际品牌)"
     rss: "https://www.daikin.com/press/"
     category: "international_brand"
-  - name: "SPRSUN (国产同行)"
-    html: "https://sprsunheatpump.com/blog-html"
-    url_must_contain: "sprsunheatpump.com"
-    category: "china_peer"
-    # 这个是网页爬取示范，没有RSS，规则比较粗糙（抓页面所有像标题的链接）。
-    # 如果抓到明显不对的内容（比如导航栏链接混进来），需要调整
-    # min_title_len / max_title_len / url_must_contain 这几个参数收窄范围。
+  # SPRSUN 爬虫已确认失效 —— 它的博客列表是JS动态加载的，
+  # requests+BeautifulSoup抓不到JS渲染后的内容，只能拿到页面骨架。
+  # 要真正解决需要换成Playwright这类能跑JS的工具，是更大的工程，先不做。
+  # - name: "SPRSUN (国产同行)"
+  #   html: "https://sprsunheatpump.com/blog-html"
+  #   url_must_contain: "sprsunheatpump.com"
+  #   category: "china_peer"
   # 建议后续核实补充（GPT建议但RSS地址未验证，先别直接用）：
   # 国产同行：NEWNTIDE、PHNIX、Power World、Fairland、Aquark
   #   （大多是自建CMS博客，没有标准RSS接口，需要照SPRSUN这样加html字段
