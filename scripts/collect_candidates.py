@@ -98,45 +98,161 @@ RSS_HEADERS = {
 }
 
 
+FEED_CACHE_PATH = os.path.join(DATA_DIR, "feed_cache.json")
+
+# 用来判断一条新闻是否跟热泵/空调相关的关键词（英文+主要欧洲语言常见词）。
+# 只有标题或摘要里命中至少一个词的新闻才会被保留，避免抓到大量不相关内容
+# （很多综合性行业媒体首页混杂各种建筑/能源新闻，不加这层过滤会很脏）。
+RELEVANCE_KEYWORDS = [
+    "heat pump", "air conditioning", "air conditioner", "hvac", "refrigeration",
+    "refrigerant", "heating", "cooling", "chiller", "vrf", "vrv",
+    "pompe à chaleur", "climatisation", "génie climatique",  # 法语
+    "pompa di calore", "climatizzazione", "condizionamento",  # 意大利语
+    "bomba de calor", "climatización", "aire acondicionado",  # 西班牙语
+    "warmtepomp", "airconditioning", "koeltechniek",  # 荷兰语
+    "pompa ciepła", "klimatyzacja", "chłodnictwo",  # 波兰语
+    "värmepump", "varmepumpe", "ilmastointi", "kylteknik",  # 北欧语言
+]
+
+
+def is_relevant(title, summary=""):
+    text = f"{title} {summary}".lower()
+    return any(kw in text for kw in RELEVANCE_KEYWORDS)
+
+
+def load_feed_cache():
+    if not os.path.exists(FEED_CACHE_PATH):
+        return {}
+    try:
+        with open(FEED_CACHE_PATH, "r", encoding="utf-8") as f:
+            return json.load(f)
+    except Exception:
+        return {}
+
+
+def save_feed_cache(cache):
+    os.makedirs(DATA_DIR, exist_ok=True)
+    with open(FEED_CACHE_PATH, "w", encoding="utf-8") as f:
+        json.dump(cache, f, ensure_ascii=False, indent=2)
+
+
+def _feed_has_entries(url):
+    try:
+        parsed = feedparser.parse(url, request_headers=RSS_HEADERS)
+        return len(parsed.entries) > 0
+    except Exception:
+        return False
+
+
+def discover_feed_url(homepage_url, cache):
+    """按顺序自动探测一个网站的RSS地址：
+    1. 如果之前探测成功过，直接用缓存的地址（省请求，跑得快）
+    2. 检测页面HTML里的 <link rel="alternate" type="application/rss+xml"> 标签
+    3. 依次尝试常见路径：/feed/、/rss/、/news/feed/、/feed、/rss.xml、/rss
+    都失败就返回 None，调用方会记录警告，不会中断整个流程。
+    """
+    if homepage_url in cache and cache[homepage_url].get("feed_url"):
+        cached = cache[homepage_url]["feed_url"]
+        if _feed_has_entries(cached):
+            return cached
+        # 缓存的地址失效了（比如网站改版），清掉重新探测
+
+    from urllib.parse import urljoin
+
+    try:
+        resp = requests.get(homepage_url, headers=RSS_HEADERS, timeout=15)
+        if resp.status_code == 200:
+            soup = BeautifulSoup(resp.text, "html.parser")
+            link_tag = soup.find(
+                "link", attrs={"type": lambda t: t and "rss" in t.lower()}
+            )
+            if link_tag and link_tag.get("href"):
+                candidate = urljoin(homepage_url, link_tag["href"])
+                if _feed_has_entries(candidate):
+                    cache[homepage_url] = {"feed_url": candidate, "method": "html_link_tag"}
+                    return candidate
+    except Exception:
+        pass
+
+    base = homepage_url.rstrip("/") + "/"
+    for path in ("feed/", "rss/", "news/feed/", "feed", "rss.xml", "rss"):
+        candidate = urljoin(base, path)
+        if _feed_has_entries(candidate):
+            cache[homepage_url] = {"feed_url": candidate, "method": f"common_path:{path}"}
+            return candidate
+
+    cache[homepage_url] = {"feed_url": None, "method": "not_found"}
+    return None
+
+
 def collect_news(config):
     cutoff = datetime.now(timezone.utc) - timedelta(hours=NEWS_LOOKBACK_HOURS)
     candidates = []
     regions = config.get("regions", {}) or {}
+    feed_cache = load_feed_cache()
+    cache_dirty = False
+
     for region, feeds in regions.items():
         feeds = feeds or []
         region_count = 0
         for feed in feeds:
+            source_name = feed.get("name", "")
+            country = feed.get("country", "")
+            language = feed.get("language", "")
+
             rss_url = feed.get("rss")
-            source_name = feed.get("name", rss_url)
+            if not rss_url and feed.get("homepage"):
+                rss_url = discover_feed_url(feed["homepage"], feed_cache)
+                cache_dirty = True
+                if not rss_url:
+                    print(f"[警告] {source_name} 自动探测RSS失败（试了原生标签+常见路径都没找到），跳过")
+                    continue
+                else:
+                    print(f"[信息] {source_name} 自动探测到RSS: {rss_url}")
+
             if not rss_url:
                 continue
+
             try:
                 parsed = feedparser.parse(rss_url, request_headers=RSS_HEADERS)
             except Exception as e:
                 print(f"[警告] 新闻源解析失败 {source_name}: {e}")
                 continue
 
+            raw_count = len(parsed.entries)
+            kept_count = 0
             for entry in parsed.entries:
                 pub_time = parse_entry_time(entry)
                 if pub_time and pub_time < cutoff:
                     continue
                 title = entry.get("title", "").strip()
                 link = entry.get("link", "")
+                summary = (entry.get("summary", "") or "")[:400]
                 if not title:
+                    continue
+                if not is_relevant(title, summary):
                     continue
                 candidates.append({
                     "id": make_id(link, title),
                     "title": title,
                     "link": link,
-                    "summary": (entry.get("summary", "") or "")[:400],
+                    "summary": summary,
                     "source_type": "news",
                     "source_name": source_name,
                     "region": region,
+                    "country": country,
+                    "language": language,
                     "engagement": None,
                     "published": pub_time.isoformat() if pub_time else None,
                 })
-                region_count += 1
+                kept_count += 1
+            print(f"[信息] {source_name}: RSS原始 {raw_count} 条，相关且在时间窗口内 {kept_count} 条")
+            region_count += kept_count
         print(f"[信息] 新闻-{region}: 本次抓到 {region_count} 条")
+
+    if cache_dirty:
+        save_feed_cache(feed_cache)
+
     return candidates
 
 

@@ -17,16 +17,92 @@ regions:
   europe:
     - name: "EHPA 欧洲热泵协会"
       rss: "https://www.ehpa.org/rss/"
+      country: "EU"
+      language: "en"
     - name: "BWP 德国热泵协会"
       rss: "https://www.waermepumpe.de/feed/"
+      country: "DE"
+      language: "de"
     - name: "Cooling Post (欧洲制冷/热泵行业媒体)"
       rss: "https://www.coolingpost.com/feed/"
+      country: "UK"
+      language: "en"
     - name: "HaustechnikDialog (德国最大暖通门户新闻栏目)"
       rss: "https://www.haustechnikdialog.de/News/RSS.ashx"
-    # 建议核实后补充（GPT建议但RSS地址未验证，先别直接用，查到了再加）：
-    # - Eurovent（欧洲HVACR协会，官网提到有RSS但地址需要自己去官网确认）
-    # - ACR News（英国HVACR行业媒体）
-    # - REHVA（建筑暖通技术研究）
+      country: "DE"
+      language: "de"
+    # 法国
+    - name: "Génie Climatique Magazine (法国)"
+      homepage: "https://www.genieclimatique.fr/"
+      country: "FR"
+      language: "fr"
+    - name: "UNICLIMA (法国暖通行业协会)"
+      homepage: "https://www.uniclima.fr/"
+      country: "FR"
+      language: "fr"
+    - name: "Le Moniteur (法国建筑/工程媒体)"
+      homepage: "https://www.lemoniteur.fr/"
+      country: "FR"
+      language: "fr"
+    # 意大利
+    - name: "Impianti News (意大利)"
+      homepage: "https://www.impiantinews.it/"
+      country: "IT"
+      language: "it"
+    - name: "RCI (意大利制冷空调媒体)"
+      homepage: "https://www.rcinews.it/"
+      country: "IT"
+      language: "it"
+    - name: "Assoclima (意大利空调协会)"
+      homepage: "https://www.assoclima.it/"
+      country: "IT"
+      language: "it"
+    # 西班牙
+    - name: "Caloryfrio (西班牙)"
+      homepage: "https://www.caloryfrio.com/"
+      country: "ES"
+      language: "es"
+    - name: "Climanoticias (西班牙)"
+      homepage: "https://www.climanoticias.com/"
+      country: "ES"
+      language: "es"
+    - name: "AFEC (西班牙制冷空调协会)"
+      homepage: "https://www.afec.es/"
+      country: "ES"
+      language: "es"
+    # 荷兰
+    - name: "Installatie.nl (荷兰)"
+      homepage: "https://www.installatie.nl/"
+      country: "NL"
+      language: "nl"
+    - name: "Vereniging Warmtepompen (荷兰热泵协会)"
+      homepage: "https://www.warmtepompen.info/"
+      country: "NL"
+      language: "nl"
+    # 波兰
+    - name: "GlobEnergia (波兰)"
+      homepage: "https://globenergia.pl/"
+      country: "PL"
+      language: "pl"
+    - name: "PORT PC (波兰热泵协会)"
+      homepage: "https://portpc.pl/"
+      country: "PL"
+      language: "pl"
+    # 北欧
+    - name: "SULPU (芬兰热泵协会)"
+      homepage: "https://www.sulpu.fi/"
+      country: "FI"
+      language: "fi"
+    - name: "SKVP (瑞典热泵协会)"
+      homepage: "https://skvp.se/"
+      country: "SE"
+      language: "sv"
+    - name: "HVAC Magasinet (北欧)"
+      homepage: "https://hvacmagasinet.se/"
+      country: "SE"
+      language: "sv"
+    # 建议后续核实补充（RSS地址未验证，先别直接用）：
+    # - Eurovent、ACR News、REHVA
 
   middle_east:
     - name: "Climate Control Middle East"
@@ -50,13 +126,40 @@ regions:
       rss: "https://www.csemag.com/hvacr-mechanical/feed/"
 
   africa:
-    # 非洲目前还没有验证过的RSS源，先留空框架，
-    # 建议优先去核实 RACA Journal（南非HVACR行业媒体）有没有RSS
-    []
+    - name: "RACA Journal (南非)"
+      homepage: "https://www.racajournal.co.za/"
+      country: "ZA"
+      language: "en"
+    - name: "Engineering News South Africa"
+      homepage: "https://www.engineeringnews.co.za/"
+      country: "ZA"
+      language: "en"
+    - name: "U-3ARC (非洲制冷空调联盟)"
+      homepage: "https://www.u-3arc.org/"
+      country: "Africa"
+      language: "en"
+    - name: "Sustainable Energy for All – Cooling"
+      homepage: "https://www.seforall.org/"
+      country: "Africa"
+      language: "en"
 
   south_america:
-    # 南美同理，建议优先核实 ACR Latinoamérica 有没有RSS
-    []
+    - name: "ABRAVA (巴西暖通制冷协会)"
+      homepage: "https://abrava.com.br/"
+      country: "BR"
+      language: "pt"
+    - name: "ACR Latinoamérica"
+      homepage: "https://www.acrlatinoamerica.com/"
+      country: "LatAm"
+      language: "es"
+    - name: "Revista do Frio (巴西)"
+      homepage: "https://www.revistadofrio.com.br/"
+      country: "BR"
+      language: "pt"
+    - name: "Refriaméricas"
+      homepage: "https://www.refriamericas.com/"
+      country: "LatAm"
+      language: "es"
 
 # Reddit板块：这块最可靠，不需要一个个验证RSS，
 # reddit.com/r/版块名/top/.rss?t=year 这个格式对任何板块都通用
