@@ -36,8 +36,8 @@
     "method": "not_found"
   },
   "https://www.installatie.nl/": {
-    "feed_url": "https://www.installatie.nl/feed/",
-    "method": "html_link_tag"
+    "feed_url": null,
+    "method": "not_found"
   },
   "https://www.warmtepompen.info/": {
     "feed_url": null,
@@ -80,8 +80,8 @@
     "method": "common_path:rss.xml"
   },
   "https://abrava.com.br/": {
-    "feed_url": "https://abrava.com.br/feed/",
-    "method": "html_link_tag"
+    "feed_url": null,
+    "method": "not_found"
   },
   "https://www.acrlatinoamerica.com/": {
     "feed_url": null,
