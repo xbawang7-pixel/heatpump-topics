@@ -1210,5 +1210,65 @@
     "sample_title": "Despite stiff political headwinds from Trump, tribe in Colorado brings utility scale solar project online",
     "sample_link": "https://www.reddit.com/r/energy/comments/1ups3sf/despite_stiff_political_headwinds_from_trump/",
     "keyword_validated": false
+  },
+  "integrating heat pumps with residential solar panels": {
+    "keyword": "integrating heat pumps with residential solar panels",
+    "region": "global",
+    "product_category": "both",
+    "content_format": "blog",
+    "first_seen": "2026-07-16",
+    "last_seen": "2026-07-16",
+    "times_seen": 1,
+    "sample_title": "Panels installing today.",
+    "sample_link": "https://www.reddit.com/r/solar/comments/1up5ahq/panels_installing_today/",
+    "keyword_validated": false
+  },
+  "hvac energy efficiency vs grid power costs": {
+    "keyword": "HVAC energy efficiency vs grid power costs",
+    "region": "global",
+    "product_category": "both",
+    "content_format": "whitepaper",
+    "first_seen": "2026-07-16",
+    "last_seen": "2026-07-16",
+    "times_seen": 1,
+    "sample_title": "Trump says a nucIear renaissance is coming. The deals aren’t. Behind flashy announcements and surging AI power needs, few agreements actually get inked. “There are combinations of renewable energy, storage and grid improvements that would be half the cost of what is projected for these new reactors\"",
+    "sample_link": "https://www.reddit.com/r/energy/comments/1uuigh8/trump_says_a_nuciear_renaissance_is_coming_the/",
+    "keyword_validated": false
+  },
+  "long-term reliability of high-efficiency hvac compressors": {
+    "keyword": "long-term reliability of high-efficiency HVAC compressors",
+    "region": "global",
+    "product_category": "both",
+    "content_format": "blog",
+    "first_seen": "2026-07-16",
+    "last_seen": "2026-07-16",
+    "times_seen": 1,
+    "sample_title": "EV batteries are lasting much longer than the industry expected",
+    "sample_link": "https://www.reddit.com/r/energy/comments/1uq46x8/ev_batteries_are_lasting_much_longer_than_the/",
+    "keyword_validated": false
+  },
+  "how to choose a reliable residential air conditioner": {
+    "keyword": "how to choose a reliable residential air conditioner",
+    "region": "global",
+    "product_category": "air_conditioner",
+    "content_format": "buyer_faq",
+    "first_seen": "2026-07-16",
+    "last_seen": "2026-07-16",
+    "times_seen": 1,
+    "sample_title": "Midea announces recall for Midea U and U+ Window ACs - what should I buy to replace mine?",
+    "sample_link": "https://www.reddit.com/r/AirConditioners/comments/1l40esi/midea_announces_recall_for_midea_u_and_u_window/",
+    "keyword_validated": false
+  },
+  "calculating roi of solar-powered hvac systems": {
+    "keyword": "calculating ROI of solar-powered HVAC systems",
+    "region": "global",
+    "product_category": "both",
+    "content_format": "case_study",
+    "first_seen": "2026-07-16",
+    "last_seen": "2026-07-16",
+    "times_seen": 1,
+    "sample_title": "My lowest electric bill since installing last fall!",
+    "sample_link": "https://www.reddit.com/r/solar/comments/1utyrlr/my_lowest_electric_bill_since_installing_last_fall/",
+    "keyword_validated": false
   }
 }
