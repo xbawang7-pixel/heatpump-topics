@@ -1270,5 +1270,77 @@
     "sample_title": "My lowest electric bill since installing last fall!",
     "sample_link": "https://www.reddit.com/r/solar/comments/1utyrlr/my_lowest_electric_bill_since_installing_last_fall/",
     "keyword_validated": false
+  },
+  "innovative hvac solutions for sustainable energy transition": {
+    "keyword": "innovative hvac solutions for sustainable energy transition",
+    "region": "europe",
+    "product_category": "both",
+    "content_format": "blog",
+    "first_seen": "2026-07-17",
+    "last_seen": "2026-07-17",
+    "times_seen": 1,
+    "sample_title": "Panasonic promueve innovación, formación y sostenibilidad con intensa actividad sectorial en junio",
+    "sample_link": "https://www.climanoticias.com/texto-diario/mostrar/5951424/panasonic-promueve-innovacion-formacion-sostenibilidad-intensa-actividad-sectorial-durante-junio",
+    "keyword_validated": false
+  },
+  "heat pump adoption trends and energy policy 2024": {
+    "keyword": "heat pump adoption trends and energy policy 2024",
+    "region": "europe",
+    "product_category": "heat_pump",
+    "content_format": "whitepaper",
+    "first_seen": "2026-07-17",
+    "last_seen": "2026-07-17",
+    "times_seen": 1,
+    "sample_title": "Madrid acogerá en octubre el VI Foro Bomba de Calor organizado por AFEC e Iberdrola",
+    "sample_link": "https://www.climanoticias.com/texto-diario/mostrar/5951402/madrid-acogera-octubre-vi-foro-bomba-calor-organizado-afec-e-iberdrola",
+    "keyword_validated": false
+  },
+  "prevent hvac system performance drift and energy loss": {
+    "keyword": "prevent hvac system performance drift and energy loss",
+    "region": "global",
+    "product_category": "both",
+    "content_format": "buyer_faq",
+    "first_seen": "2026-07-17",
+    "last_seen": "2026-07-17",
+    "times_seen": 1,
+    "sample_title": "Performance Drift: The Hidden Efficiency Problem Raising HVACR Costs",
+    "sample_link": "https://www.achrnews.com/articles/166422-performance-drift-the-hidden-efficiency-problem-raising-hvacr-costs",
+    "keyword_validated": false
+  },
+  "hvac market trends and supply chain insights": {
+    "keyword": "hvac market trends and supply chain insights",
+    "region": "global",
+    "product_category": "both",
+    "content_format": "blog",
+    "first_seen": "2026-07-17",
+    "last_seen": "2026-07-17",
+    "times_seen": 1,
+    "sample_title": "HARDI Distributors' Sales Down Nearly 5% in May",
+    "sample_link": "https://www.achrnews.com/articles/166425-hardi-distributors-sales-down-nearly-5-in-may",
+    "keyword_validated": false
+  },
+  "how hvac contractors can measure marketing roi": {
+    "keyword": "how hvac contractors can measure marketing roi",
+    "region": "global",
+    "product_category": "both",
+    "content_format": "blog",
+    "first_seen": "2026-07-17",
+    "last_seen": "2026-07-17",
+    "times_seen": 1,
+    "sample_title": "Is TV Advertising Finally Worth It for HVAC Contractors?",
+    "sample_link": "https://www.achrnews.com/articles/166421-is-tv-advertising-finally-worth-it-for-hvac-contractors",
+    "keyword_validated": false
+  },
+  "green cooling technology and energy efficiency for developing countries": {
+    "keyword": "green cooling technology and energy efficiency for developing countries",
+    "region": "africa",
+    "product_category": "air_conditioner",
+    "content_format": "blog",
+    "first_seen": "2026-07-17",
+    "last_seen": "2026-07-17",
+    "times_seen": 1,
+    "sample_title": "Financing, policy and the push to scale up green cooling (Part 4)",
+    "sample_link": "https://refrigerationandaircon.co.za/financing-policy-and-the-push-to-scale-up-green-cooling-part-4/",
+    "keyword_validated": false
   }
 }
