@@ -1,5 +1,31 @@
 [
   {
+    "id": "f8e91d83b6d0a286",
+    "title": "Electrification Action Plan has heat pumps at its heart",
+    "link": "https://ehpa.org/news-and-resources/press-releases/electrification-action-plan-has-heat-pumps-at-its-heart/",
+    "summary": "<p>Heat pumps are at the centre of Europe&#8217;s path to electrification as set out in the European Commission&#8217;s action plan, published today.  The EU Electrification Action Plan wants heat pump installations to increase to 4 million per year by 2030, from 2.4 million in 2025. To ensure there is sufficient demand, it sets out measures [&#8230;]</p>\n<p>The post <a href=\"https://ehpa.org/news",
+    "source_type": "news",
+    "source_name": "EHPA 欧洲热泵协会",
+    "region": "europe",
+    "country": "EU",
+    "language": "en",
+    "engagement": null,
+    "published": "2026-07-17T10:52:41+00:00"
+  },
+  {
+    "id": "9e706138f715d6b8",
+    "title": "Condizionatore per spazi commerciali, Serie Colonna",
+    "link": "https://www.impiantinews.it/rci/prodotti/condizionatore-per-spazi-commerciali-serie-colonna/",
+    "summary": "<p>La nuova Serie Colonna di TCL è progettata per offrire prestazioni elevate nella climatizzazione degli ambienti commerciali, unendo efficienza e flessibilità d’uso. Il suo punto di forza è la distribuzione uniforme del flusso d’aria grazie a una feritoia frontale e ai deflettori motorizzati su entrambi gli assi. Le unità sono dotate di controllo Wi-Fi integrato&#8230;</p>\n<p>L'articolo <a href=",
+    "source_type": "news",
+    "source_name": "Impianti News (意大利)",
+    "region": "europe",
+    "country": "IT",
+    "language": "it",
+    "engagement": null,
+    "published": "2026-07-17T13:29:05+00:00"
+  },
+  {
     "id": "1e3eff994c5c3a45",
     "title": "ACTECIR abre nueva etapa con relevo en la presidencia: Sergio Asensio liderará la asociación",
     "link": "https://www.caloryfrio.com/noticias/asociaciones/actecir-relevo-presidencia-sergio-asensio.html",
@@ -50,19 +76,6 @@
     "language": "es",
     "engagement": null,
     "published": "2026-07-15T09:06:35+00:00"
-  },
-  {
-    "id": "772194054efe2845",
-    "title": "Hyundai HVAC amplía su apuesta por la aerotermia para ACS con la nueva gama AQUATHERM",
-    "link": "https://www.caloryfrio.com/energias-renovables/aerotermia/hyundai-hvac-apuesta-aerotermia-acs-nueva-gama-aquatherm.html",
-    "summary": "<div class=\"K2FeedImage\"><img alt=\"Hyundai HVAC amplía su apuesta por la aerotermia para ACS con la nueva gama AQUATHERM\" src=\"https://www.caloryfrio.com/media/k2/items/cache/9a7a78cc4c463813726a726690e42b94_L.jpg\" /></div><div class=\"K2FeedIntroText\"><p>Hyundai HVAC continúa reforzando su posicionamiento en el mercado de la aerotermia con el lanzamiento de la <strong>nueva gama AQUATHERM</strong>",
-    "source_type": "news",
-    "source_name": "Caloryfrio (西班牙)",
-    "region": "europe",
-    "country": "ES",
-    "language": "es",
-    "engagement": null,
-    "published": "2026-07-15T06:25:17+00:00"
   },
   {
     "id": "fd544b81d4dac57e",
@@ -143,17 +156,43 @@
     "published": "2026-07-13T07:37:06+00:00"
   },
   {
-    "id": "ebca849864b1c1e6",
-    "title": "Jet Air Stream refuerza la climatización profesional eficiente para grandes espacios",
-    "link": "https://www.climanoticias.com/texto-diario/mostrar/5949220/jet-air-stream-refuerza-climatizacion-profesional-eficiente-panasonic-grandes-espacios",
-    "summary": "<p>Panasonic Heating &amp; Cooling Solutions consolida el éxito de Jet Air Stream para sistemas PACi NX, una solución profesional diseñada para climatizar grandes espacios con máxima eficiencia, confort y sostenibilidad.</p>",
+    "id": "50e6ada248a36f07",
+    "title": "A New Commercial VRF Platform From GE Appliances",
+    "link": "https://www.achrnews.com/articles/166443-a-new-commercial-vrf-platform-from-ge-appliances",
+    "summary": "The new GE R-32 Variable Refrigerant Flow (VRF) platform is an expansion of the GE Appliances Air & Water Solutions commercial HVAC portfolio.",
     "source_type": "news",
-    "source_name": "Climanoticias (西班牙)",
-    "region": "europe",
-    "country": "ES",
-    "language": "es",
+    "source_name": "ACHR News (北美HVACR行业权威媒体)",
+    "region": "global",
+    "country": "",
+    "language": "",
     "engagement": null,
-    "published": "2026-07-10T07:37:11+00:00"
+    "published": "2026-07-17T15:30:00+00:00"
+  },
+  {
+    "id": "c8c7eb575955d5ec",
+    "title": "Amended Complaint Filed in HVAC Price-Fixing Lawsuit",
+    "link": "https://www.achrnews.com/articles/166440-amended-complaint-filed-in-hvac-price-fixing-lawsuit",
+    "summary": "A consolidated amended complaint to the HVAC price-fixing lawsuit adds new allegations as plaintiffs continue challenging manufacturers' equipment pricing practices.",
+    "source_type": "news",
+    "source_name": "ACHR News (北美HVACR行业权威媒体)",
+    "region": "global",
+    "country": "",
+    "language": "",
+    "engagement": null,
+    "published": "2026-07-17T13:00:00+00:00"
+  },
+  {
+    "id": "a24c2d537a97d34d",
+    "title": "HVAC Trade Groups Back Bill to Change Regional Efficiency Compliance",
+    "link": "https://www.achrnews.com/articles/166437-hvac-trade-groups-back-bill-to-change-regional-efficiency-compliance",
+    "summary": "Trade groups said the legislation would reduce confusion and ease compliance burdens for manufacturers, distributors, and contractors.",
+    "source_type": "news",
+    "source_name": "ACHR News (北美HVACR行业权威媒体)",
+    "region": "global",
+    "country": "",
+    "language": "",
+    "engagement": null,
+    "published": "2026-07-17T11:00:00+00:00"
   },
   {
     "id": "7458660d44d83708",
@@ -182,9 +221,9 @@
     "published": "2026-07-16T16:30:00+00:00"
   },
   {
-    "id": "80d55d2600c51886",
-    "title": "Refrigerant Leaks at Spring Startup: Identifying and Preventing Common Issues",
-    "link": "https://www.achrnews.com/articles/166434-refrigerant-leaks-at-spring-startup-identifying-and-preventing-common-issues",
+    "id": "4f28c0d1504bb5fc",
+    "title": "Refrigerant Leaks at Startup: Identifying and Preventing Common Issues",
+    "link": "https://www.achrnews.com/articles/166434-refrigerant-leaks-at-startup-identifying-and-preventing-common-issues",
     "summary": "Leaks may not cause sudden failure in a system, but they can lead to poor system performance and damage. HVACR experts share what you need to know.",
     "source_type": "news",
     "source_name": "ACHR News (北美HVACR行业权威媒体)",
@@ -325,32 +364,6 @@
     "published": "2026-07-11T11:00:00+00:00"
   },
   {
-    "id": "2828b07015d4116d",
-    "title": "A Packaged Heat Pump for Spaces With Installation Constraints",
-    "link": "https://www.achrnews.com/articles/166423-a-packaged-heat-pump-for-spaces-with-installation-constraints",
-    "summary": "The iCool XC Type C is designed to help electrify heating and cooling without sacrificing performance in colder climates.",
-    "source_type": "news",
-    "source_name": "ACHR News (北美HVACR行业权威媒体)",
-    "region": "global",
-    "country": "",
-    "language": "",
-    "engagement": null,
-    "published": "2026-07-10T16:30:00+00:00"
-  },
-  {
-    "id": "e5632fade24f329f",
-    "title": "How Smart Contractors Turn Data Into Dollars",
-    "link": "https://www.achrnews.com/articles/166413-how-smart-contractors-turn-data-into-dollars",
-    "summary": "Every HVAC business is generating valuable data. Experts explain which numbers matter most, and how contractors can use them to boost efficiency, profitability, and growth.",
-    "source_type": "news",
-    "source_name": "ACHR News (北美HVACR行业权威媒体)",
-    "region": "global",
-    "country": "",
-    "language": "",
-    "engagement": null,
-    "published": "2026-07-10T11:00:00+00:00"
-  },
-  {
     "id": "29f7e1790f414d62",
     "title": "African data centres drive demand for next-generation cooling technologies",
     "link": "https://refrigerationandaircon.co.za/african-data-centres-drive-demand-for-next-generation-cooling-technologies/",
@@ -403,6 +416,32 @@
     "published": "2026-07-13T06:24:29+00:00"
   },
   {
+    "id": "e1ef19a93914fec0",
+    "title": "O futuro da refrigeração passa pela Inteligência Artificial",
+    "link": "https://revistadofrio.com.br/o-futuro-da-refrigeracao-passa-pela-inteligencia-artificial/",
+    "summary": "Como a iCoil une experiência em HVAC-R, marketing de alta performance, Inteligência Artificial e sistemas sob medida para impulsionar a indústria.",
+    "source_type": "news",
+    "source_name": "Revista do Frio (巴西)",
+    "region": "south_america",
+    "country": "BR",
+    "language": "pt",
+    "engagement": null,
+    "published": "2026-07-17T14:59:59+00:00"
+  },
+  {
+    "id": "22a4e85efd89d72e",
+    "title": "Tarifa de 25% dos EUA amplia cautela no HVAC-R",
+    "link": "https://revistadofrio.com.br/tarifa-de-25-dos-eua-amplia-cautela-no-hvac-r/",
+    "summary": "Custos, câmbio e cadeia de suprimentos permanecem sob pressão enquanto o setor acompanha as negociações comerciais e o ambiente político em busca de maior previsibilidade.",
+    "source_type": "news",
+    "source_name": "Revista do Frio (巴西)",
+    "region": "south_america",
+    "country": "BR",
+    "language": "pt",
+    "engagement": null,
+    "published": "2026-07-17T12:53:26+00:00"
+  },
+  {
     "id": "26581e63fccd5425",
     "title": "El Niño amplia demanda por climatização e eficiência energética no mercado de HVAC-R",
     "link": "https://revistadofrio.com.br/el-nino-amplia-demanda-por-climatizacao-e-eficiencia-energetica-no-mercado-de-hvac-r/",
@@ -414,31 +453,5 @@
     "language": "pt",
     "engagement": null,
     "published": "2026-07-16T14:07:38+00:00"
-  },
-  {
-    "id": "f447cb620396ac53",
-    "title": "Custos e confiança pressionam setor HVAC-R no início de 2026",
-    "link": "https://revistadofrio.com.br/custos-e-confianca-pressionam-setor-hvac-r-no-inicio-de-2026/",
-    "summary": "Termômetro ABRAVA aponta aumento dos custos de produção, inflação em alta e queda da confiança das empresas, embora as expectativas permaneçam acima da linha de otimismo.",
-    "source_type": "news",
-    "source_name": "Revista do Frio (巴西)",
-    "region": "south_america",
-    "country": "BR",
-    "language": "pt",
-    "engagement": null,
-    "published": "2026-07-15T18:31:13+00:00"
-  },
-  {
-    "id": "6e3ba11a7d9f1762",
-    "title": "NVIDIA adota resfriamento líquido a 45°C em infraestrutura de IA para reduzir consumo de energia e água",
-    "link": "https://revistadofrio.com.br/nvidia-adota-resfriamento-liquido-a-45c-em-infraestrutura-de-ia-para-reduzir-consumo-de-energia-e-agua/",
-    "summary": "Arquitetura de circuito fechado opera com líquido refrigerante a até 45°C, elimina ventoinhas e pode dispensar chillers em condições climáticas favoráveis.",
-    "source_type": "news",
-    "source_name": "Revista do Frio (巴西)",
-    "region": "south_america",
-    "country": "BR",
-    "language": "pt",
-    "engagement": null,
-    "published": "2026-07-15T18:01:06+00:00"
   }
 ]
