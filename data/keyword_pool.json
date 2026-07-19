@@ -1342,5 +1342,77 @@
     "sample_title": "Financing, policy and the push to scale up green cooling (Part 4)",
     "sample_link": "https://refrigerationandaircon.co.za/financing-policy-and-the-push-to-scale-up-green-cooling-part-4/",
     "keyword_validated": false
+  },
+  "how to evaluate hvac manufacturer reliability": {
+    "keyword": "how to evaluate hvac manufacturer reliability",
+    "region": "europe",
+    "product_category": "both",
+    "content_format": "blog",
+    "first_seen": "2026-07-19",
+    "last_seen": "2026-07-19",
+    "times_seen": 1,
+    "sample_title": "“No diseñamos para el catálogo, sino para condiciones reales de trabajo”",
+    "sample_link": "https://www.climanoticias.com/texto-diario/mostrar/5951710/no-disenamos-catalogo-sino-condiciones-reales-trabajo",
+    "keyword_validated": false
+  },
+  "heat pump market trends 2026": {
+    "keyword": "heat pump market trends 2026",
+    "region": "global",
+    "product_category": "heat_pump",
+    "content_format": "blog",
+    "first_seen": "2026-07-19",
+    "last_seen": "2026-07-19",
+    "times_seen": 1,
+    "sample_title": "Heat Pumps Remain HVAC’s Growth Story in Latest AHRI Shipment Data",
+    "sample_link": "https://www.achrnews.com/articles/166427-heat-pumps-remain-hvacs-growth-story-in-latest-ahri-shipment-data",
+    "keyword_validated": false
+  },
+  "energy efficient chiller for data centers": {
+    "keyword": "energy efficient chiller for data centers",
+    "region": "europe",
+    "product_category": "air_conditioner",
+    "content_format": "buyer_faq",
+    "first_seen": "2026-07-19",
+    "last_seen": "2026-07-19",
+    "times_seen": 1,
+    "sample_title": "LG promueve la refrigeración eficiente para centros de datos con una nueva enfriadora",
+    "sample_link": "https://www.climanoticias.com/texto-diario/mostrar/5952810/lg-promueve-refrigeracion-eficiente-centros-datos-nueva-enfriadora",
+    "keyword_validated": false
+  },
+  "hvac system evacuation best practices": {
+    "keyword": "hvac system evacuation best practices",
+    "region": "global",
+    "product_category": "both",
+    "content_format": "blog",
+    "first_seen": "2026-07-19",
+    "last_seen": "2026-07-19",
+    "times_seen": 1,
+    "sample_title": "Why Deep Evacuation Is Not a Checkbox. It is System Protection",
+    "sample_link": "https://www.achrnews.com/articles/166431-why-deep-evacuation-is-not-a-checkbox-it-is-system-protection",
+    "keyword_validated": false
+  },
+  "high density cooling solutions for data centers in mea": {
+    "keyword": "high density cooling solutions for data centers in MEA",
+    "region": "middle_east",
+    "product_category": "air_conditioner",
+    "content_format": "whitepaper",
+    "first_seen": "2026-07-19",
+    "last_seen": "2026-07-19",
+    "times_seen": 1,
+    "sample_title": "MEA company sharpens high‑density cooling focus",
+    "sample_link": "https://refrigerationandaircon.co.za/mea-company-sharpens-high-density-cooling-focus/",
+    "keyword_validated": false
+  },
+  "liquid cooling technology for ai data centers": {
+    "keyword": "liquid cooling technology for AI data centers",
+    "region": "africa",
+    "product_category": "air_conditioner",
+    "content_format": "comparison",
+    "first_seen": "2026-07-19",
+    "last_seen": "2026-07-19",
+    "times_seen": 1,
+    "sample_title": "Liquid cooling for the AI era: Chinese company makes its move in Africa",
+    "sample_link": "https://refrigerationandaircon.co.za/liquid-cooling-for-the-ai-era-chinese-company-makes-its-move-in-africa/",
+    "keyword_validated": false
   }
 }
