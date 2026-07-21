@@ -13,6 +13,19 @@
     "published": "2026-07-17T10:52:41+00:00"
   },
   {
+    "id": "bc18bdd68fd737de",
+    "title": "EPEE calls for heating and cooling initiative",
+    "link": "https://www.coolingpost.com/world-news/epee-calls-for-heating-and-cooling-initiative/",
+    "summary": "<p>BELGIUM: The European Partnership for Energy and the Environment (EPEE) has called for a dedicated European heating and cooling initiative, accompanied by financial support and fiscal incentives....</p>\n<p class=\"text-end\"><a class=\"btn btn-outline-secondary picostrap-read-more-link mt-3\" href=\"https://www.coolingpost.com/world-news/epee-calls-for-heating-and-cooling-initiative/\">Read More...</",
+    "source_type": "news",
+    "source_name": "Cooling Post (欧洲制冷/热泵行业媒体)",
+    "region": "europe",
+    "country": "UK",
+    "language": "en",
+    "engagement": null,
+    "published": "2026-07-20T12:18:50+00:00"
+  },
+  {
     "id": "590d118b00f90aa6",
     "title": "HPA UK lines up first conference",
     "link": "https://www.coolingpost.com/training/hpa-uk-lines-up-first-conference/",
@@ -130,43 +143,17 @@
     "published": "2026-07-15T17:22:50+00:00"
   },
   {
-    "id": "4e56eaa6686b10c6",
-    "title": "Daikin X series combines HP cooling and heating",
-    "link": "https://www.coolingpost.com/products/daikin-x-series-combines-hp-cooling-and-heating/",
-    "summary": "<p>BELGIUM: Daikin Europe is to launch the X Series, a mixed heat pump system combining air-to-air heating and cooling, hydraulic heating such as underfloor heating, and domestic hot water production. ...</p>\n<p class=\"text-end\"><a class=\"btn btn-outline-secondary picostrap-read-more-link mt-3\" href=\"https://www.coolingpost.com/products/daikin-x-series-combines-hp-cooling-and-heating/\">Read More..",
-    "source_type": "news",
-    "source_name": "Cooling Post (欧洲制冷/热泵行业媒体)",
-    "region": "europe",
-    "country": "UK",
-    "language": "en",
-    "engagement": null,
-    "published": "2026-07-15T14:22:22+00:00"
-  },
-  {
-    "id": "00c4d9760b74be35",
-    "title": "La massima efficienza e densità di potenza nelle unità HVAC, RadiFlow 630",
-    "link": "https://www.impiantinews.it/rci/prodotti/la-massima-efficienza-e-densita-di-potenza-nelle-unita-hvac-radiflow-630/",
-    "summary": "<p>Con RadiFlow 630, ebm-papst (Mozzate, CO) presenta una soluzione innovativa che affronta a testa alta le più moderne sfide del settore HVAC. Elevate portate d’aria, un’efficienza significativamente migliore dell’impianto e un design eccezionalmente compatto aprono nuove possibilità per i produttori di unità HVAC e CRAH, in particolare per applicazione nei data center. Il cuore di&#8230;</p>\n<p>",
+    "id": "dd39d1b6450fff44",
+    "title": "VMC più silenziosa e scaldacqua ACS Easy Pump REHAU con R290",
+    "link": "https://www.impiantinews.it/rci/prodotti/vmc-piu-silenziosa-e-scaldacqua-acs-easy-pump-rehau-con-r290/",
+    "summary": "<p>La transizione energetica impone scelte sempre più rapide e allineate a un quadro normativo in evoluzione. In questo contesto si inseriscono gli aggiornamenti di gamma di REHAU Water Technologies dedicati al trattamento dell’aria e alla tecnologia in pompa di calore. Progettate per semplificare il lavoro di installatori e progettisti, senza compromettere efficienza e qualità percepita&#8230;</p",
     "source_type": "news",
     "source_name": "Impianti News (意大利)",
     "region": "europe",
     "country": "IT",
     "language": "it",
     "engagement": null,
-    "published": "2026-07-19T13:18:20+00:00"
-  },
-  {
-    "id": "7d46dcb5eabf8069",
-    "title": "Valvole a farfalla SOCLA con attuatori elettrici e pneumatici",
-    "link": "https://www.impiantinews.it/ci/prodotti/valvole-a-farfalla-con-attuatori-elettrici-e-pneumatici/",
-    "summary": "<p>La gestione efficiente dell’acqua e dei fluidi nei sistemi HVAC, nelle reti idriche e municipali, nelle piscine e, più in generale, negli impianti per le strutture ricreative richiede componenti affidabili, progettati per garantire sicurezza, precisione e continuità operativa. Le valvole attuate rappresentano un elemento fondamentale per il controllo dei flussi in questa tipologia di applicazio",
-    "source_type": "news",
-    "source_name": "Impianti News (意大利)",
-    "region": "europe",
-    "country": "IT",
-    "language": "it",
-    "engagement": null,
-    "published": "2026-07-18T08:25:20+00:00"
+    "published": "2026-07-20T11:28:10+00:00"
   },
   {
     "id": "1e3eff994c5c3a45",
@@ -206,6 +193,19 @@
     "language": "es",
     "engagement": null,
     "published": "2026-07-16T08:17:32+00:00"
+  },
+  {
+    "id": "a4136286e79d05fb",
+    "title": "\"Invertir en formación es invertir en un mejor servicio\"",
+    "link": "https://www.climanoticias.com/texto-diario/mostrar/5959755/invertir-formacion-invertir-mejor-servicio",
+    "summary": "<p>La ampliación de la Carrier &amp; Viessmann Academy refleja una apuesta que va más allá de las instalaciones. Para Ana María García, formar a los profesionales significa invertir en talento, mejorar el servicio al cliente y preparar a la organización para afrontar los retos tecnológicos del sector HVAC.</p>",
+    "source_type": "news",
+    "source_name": "Climanoticias (西班牙)",
+    "region": "europe",
+    "country": "ES",
+    "language": "es",
+    "engagement": null,
+    "published": "2026-07-20T09:03:35+00:00"
   },
   {
     "id": "9c38b99420baf8c5",
@@ -260,17 +260,30 @@
     "published": "2026-07-14T08:05:32+00:00"
   },
   {
-    "id": "858e33bde3236ef6",
-    "title": "“No diseñamos para el catálogo, sino para condiciones reales de trabajo”",
-    "link": "https://www.climanoticias.com/texto-diario/mostrar/5951710/no-disenamos-catalogo-sino-condiciones-reales-trabajo",
-    "summary": "<p>En climatización, vender equipos ya no basta: hay que diseñarlos para la vida real. Cristóbal Martos, CEO de Climer Technology, reflexiona en la siguiente conversación sobre industria, aprendizaje empresarial y el papel decisivo de la ingeniería en un sector cada vez más exigente.</p><p>&nbsp;</p>",
+    "id": "92a5b1664979792b",
+    "title": "Warmtepompmarkt krabbelt op, maar hybride duikelt",
+    "link": "https://www.installatie.nl/nieuws/warmtepompmarkt-krabbelt-op-maar-hybride-duikelt/",
+    "summary": "De verkoop van warmtepompen voor woonhuizen laat in het eerste halfjaar van 2026 een bescheiden groei zien. De kleine hybride...",
     "source_type": "news",
-    "source_name": "Climanoticias (西班牙)",
+    "source_name": "Installatie.nl (荷兰)",
     "region": "europe",
-    "country": "ES",
-    "language": "es",
+    "country": "NL",
+    "language": "nl",
     "engagement": null,
-    "published": "2026-07-13T10:45:33+00:00"
+    "published": "2026-07-20T15:48:13+00:00"
+  },
+  {
+    "id": "a96a9a3564ace550",
+    "title": "HVAC Technician Threatened by Armed Customer: Safety Lessons for Contractors",
+    "link": "https://www.achrnews.com/articles/166442-hvac-technician-threatened-by-armed-customer-safety-lessons-for-contractors",
+    "summary": "Recent reports of gun violence against home service technicians are a stark reminder to train employees on safety and de-escalation.",
+    "source_type": "news",
+    "source_name": "ACHR News (北美HVACR行业权威媒体)",
+    "region": "global",
+    "country": "",
+    "language": "",
+    "engagement": null,
+    "published": "2026-07-20T11:00:00+00:00"
   },
   {
     "id": "628308382c4d3a27",
@@ -442,32 +455,6 @@
     "published": "2026-07-14T17:00:14+00:00"
   },
   {
-    "id": "dcf22fee9b6f2991",
-    "title": "Heat Pumps Remain HVAC’s Growth Story in Latest AHRI Shipment Data",
-    "link": "https://www.achrnews.com/articles/166427-heat-pumps-remain-hvacs-growth-story-in-latest-ahri-shipment-data",
-    "summary": "May shipment data show contractors can expect cooling equipment, including heat pumps, to be primary drivers while water heaters remain soft.",
-    "source_type": "news",
-    "source_name": "ACHR News (北美HVACR行业权威媒体)",
-    "region": "global",
-    "country": "",
-    "language": "",
-    "engagement": null,
-    "published": "2026-07-13T15:00:00+00:00"
-  },
-  {
-    "id": "27eaab11f54054b4",
-    "title": "Performance Drift: The Hidden Efficiency Problem Raising HVACR Costs",
-    "link": "https://www.achrnews.com/articles/166422-performance-drift-the-hidden-efficiency-problem-raising-hvacr-costs",
-    "summary": "HVAC experts say addressing performance drift can be tricky since it isn’t apparent. Learn the signs and how to stop small issues from becoming larger ones.",
-    "source_type": "news",
-    "source_name": "ACHR News (北美HVACR行业权威媒体)",
-    "region": "global",
-    "country": "",
-    "language": "",
-    "engagement": null,
-    "published": "2026-07-13T11:00:00+00:00"
-  },
-  {
     "id": "0ceb6294ece637b8",
     "title": "Smart infrastructure and energy efficiency take centre stage in African data centres",
     "link": "https://refrigerationandaircon.co.za/smart-infrastructure-and-energy-efficiency-take-centre-stage-in-african-data-centres/",
@@ -520,6 +507,19 @@
     "published": "2026-07-14T07:58:19+00:00"
   },
   {
+    "id": "6b2c38b1e5f15e61",
+    "title": "Febrava chega ao Rio em meio à expansão da indústria e do mercado HVAC-R",
+    "link": "https://revistadofrio.com.br/febrava-chega-ao-rio-em-meio-a-expansao-da-industria-e-do-mercado-hvac-r/",
+    "summary": "Feira será realizada entre 6 e 8 de outubro, no Riocentro, em um estado que concentra cerca de 9% dos empregos formais do setor de aquecimento, ventilação, ar-condicionado e refrigeração no Brasil.",
+    "source_type": "news",
+    "source_name": "Revista do Frio (巴西)",
+    "region": "south_america",
+    "country": "BR",
+    "language": "pt",
+    "engagement": null,
+    "published": "2026-07-20T18:07:40+00:00"
+  },
+  {
     "id": "e1ef19a93914fec0",
     "title": "O futuro da refrigeração passa pela Inteligência Artificial",
     "link": "https://revistadofrio.com.br/o-futuro-da-refrigeracao-passa-pela-inteligencia-artificial/",
@@ -544,18 +544,5 @@
     "language": "pt",
     "engagement": null,
     "published": "2026-07-17T12:53:26+00:00"
-  },
-  {
-    "id": "26581e63fccd5425",
-    "title": "El Niño amplia demanda por climatização e eficiência energética no mercado de HVAC-R",
-    "link": "https://revistadofrio.com.br/el-nino-amplia-demanda-por-climatizacao-e-eficiencia-energetica-no-mercado-de-hvac-r/",
-    "summary": "Fenômeno climático começa a alterar o padrão do clima no Brasil e deve elevar a procura por soluções de climatização diante da previsão de calor acima da média e ondas de calor mais frequentes.",
-    "source_type": "news",
-    "source_name": "Revista do Frio (巴西)",
-    "region": "south_america",
-    "country": "BR",
-    "language": "pt",
-    "engagement": null,
-    "published": "2026-07-16T14:07:38+00:00"
   }
 ]
