@@ -1906,5 +1906,65 @@
     "sample_title": "Don’t see many boilers in here. Here you go.",
     "sample_link": "https://www.reddit.com/r/HVAC/comments/1uyxoun/dont_see_many_boilers_in_here_here_you_go/",
     "keyword_validated": false
+  },
+  "benefits of switching to heat pumps in europe": {
+    "keyword": "benefits of switching to heat pumps in Europe",
+    "region": "europe",
+    "product_category": "heat_pump",
+    "content_format": "blog",
+    "first_seen": "2026-07-23",
+    "last_seen": "2026-07-23",
+    "times_seen": 1,
+    "sample_title": "Electrification Action Plan has heat pumps at its heart",
+    "sample_link": "https://ehpa.org/news-and-resources/press-releases/electrification-action-plan-has-heat-pumps-at-its-heart/",
+    "keyword_validated": false
+  },
+  "commercial vrf system advantages and features": {
+    "keyword": "commercial VRF system advantages and features",
+    "region": "global",
+    "product_category": "air_conditioner",
+    "content_format": "comparison",
+    "first_seen": "2026-07-23",
+    "last_seen": "2026-07-23",
+    "times_seen": 1,
+    "sample_title": "A New Commercial VRF Platform From GE Appliances",
+    "sample_link": "https://www.achrnews.com/articles/166443-a-new-commercial-vrf-platform-from-ge-appliances",
+    "keyword_validated": false
+  },
+  "hvac equipment pricing transparency": {
+    "keyword": "hvac equipment pricing transparency",
+    "region": "global",
+    "product_category": "both",
+    "content_format": "buyer_faq",
+    "first_seen": "2026-07-23",
+    "last_seen": "2026-07-23",
+    "times_seen": 1,
+    "sample_title": "Amended Complaint Filed in HVAC Price-Fixing Lawsuit",
+    "sample_link": "https://www.achrnews.com/articles/166440-amended-complaint-filed-in-hvac-price-fixing-lawsuit",
+    "keyword_validated": false
+  },
+  "hvac equipment compliance standards for importers": {
+    "keyword": "HVAC equipment compliance standards for importers",
+    "region": "global",
+    "product_category": "both",
+    "content_format": "blog",
+    "first_seen": "2026-07-23",
+    "last_seen": "2026-07-23",
+    "times_seen": 1,
+    "sample_title": "HVAC Trade Groups Back Bill to Change Regional Efficiency Compliance",
+    "sample_link": "https://www.achrnews.com/articles/166437-hvac-trade-groups-back-bill-to-change-regional-efficiency-compliance",
+    "keyword_validated": false
+  },
+  "how to identify and fix hvac refrigerant leaks": {
+    "keyword": "how to identify and fix hvac refrigerant leaks",
+    "region": "global",
+    "product_category": "both",
+    "content_format": "installation_maintenance",
+    "first_seen": "2026-07-23",
+    "last_seen": "2026-07-23",
+    "times_seen": 1,
+    "sample_title": "Refrigerant Leaks at Startup: Identifying and Preventing Common Issues",
+    "sample_link": "https://www.achrnews.com/articles/166434-refrigerant-leaks-at-startup-identifying-and-preventing-common-issues",
+    "keyword_validated": false
   }
 }
