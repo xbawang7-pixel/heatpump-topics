@@ -2002,5 +2002,41 @@
     "sample_title": "When AI Recommends Your HVAC Business",
     "sample_link": "https://www.achrnews.com/articles/166446-when-ai-recommends-your-hvac-business",
     "keyword_validated": false
+  },
+  "hvac training importance for contractors": {
+    "keyword": "hvac training importance for contractors",
+    "region": "europe",
+    "product_category": "both",
+    "content_format": "blog",
+    "first_seen": "2026-07-26",
+    "last_seen": "2026-07-26",
+    "times_seen": 1,
+    "sample_title": "\"Invertir en formación es invertir en un mejor servicio\"",
+    "sample_link": "https://www.climanoticias.com/texto-diario/mostrar/5959755/invertir-formacion-invertir-mejor-servicio",
+    "keyword_validated": false
+  },
+  "hvac technician site safety protocols for contractors": {
+    "keyword": "hvac technician site safety protocols for contractors",
+    "region": "global",
+    "product_category": "both",
+    "content_format": "blog",
+    "first_seen": "2026-07-26",
+    "last_seen": "2026-07-26",
+    "times_seen": 1,
+    "sample_title": "HVAC Technician Threatened by Armed Customer: Safety Lessons for Contractors",
+    "sample_link": "https://www.achrnews.com/articles/166442-hvac-technician-threatened-by-armed-customer-safety-lessons-for-contractors",
+    "keyword_validated": false
+  },
+  "energy efficient cooling solutions for african data centers": {
+    "keyword": "energy efficient cooling solutions for african data centers",
+    "region": "africa",
+    "product_category": "air_conditioner",
+    "content_format": "whitepaper",
+    "first_seen": "2026-07-26",
+    "last_seen": "2026-07-26",
+    "times_seen": 1,
+    "sample_title": "Smart infrastructure and energy efficiency take centre stage in African data centres",
+    "sample_link": "https://refrigerationandaircon.co.za/smart-infrastructure-and-energy-efficiency-take-centre-stage-in-african-data-centres/",
+    "keyword_validated": false
   }
 }
