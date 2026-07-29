@@ -7092,7 +7092,7 @@
     "upvotes": 7,
     "comments": 0,
     "first_seen": "2026-07-15",
-    "last_seen": "2026-07-27"
+    "last_seen": "2026-07-29"
   },
   "0c79c1bc45f24561": {
     "id": "0c79c1bc45f24561",
@@ -7103,7 +7103,7 @@
     "upvotes": 6,
     "comments": 0,
     "first_seen": "2026-07-15",
-    "last_seen": "2026-07-27"
+    "last_seen": "2026-07-29"
   },
   "4eb09266e5af5bd9": {
     "id": "4eb09266e5af5bd9",
@@ -7114,7 +7114,7 @@
     "upvotes": 6,
     "comments": 0,
     "first_seen": "2026-07-15",
-    "last_seen": "2026-07-27"
+    "last_seen": "2026-07-29"
   },
   "ae95af5fb807b094": {
     "id": "ae95af5fb807b094",
@@ -7125,7 +7125,7 @@
     "upvotes": 6,
     "comments": 0,
     "first_seen": "2026-07-15",
-    "last_seen": "2026-07-27"
+    "last_seen": "2026-07-29"
   },
   "83b122b4483c5c6d": {
     "id": "83b122b4483c5c6d",
@@ -7136,7 +7136,7 @@
     "upvotes": 5,
     "comments": 0,
     "first_seen": "2026-07-15",
-    "last_seen": "2026-07-27"
+    "last_seen": "2026-07-29"
   },
   "a1bf29391370daa1": {
     "id": "a1bf29391370daa1",
@@ -7147,7 +7147,7 @@
     "upvotes": 4,
     "comments": 0,
     "first_seen": "2026-07-15",
-    "last_seen": "2026-07-27"
+    "last_seen": "2026-07-29"
   },
   "3a120c241e480abe": {
     "id": "3a120c241e480abe",
@@ -7158,7 +7158,7 @@
     "upvotes": 4,
     "comments": 0,
     "first_seen": "2026-07-15",
-    "last_seen": "2026-07-15"
+    "last_seen": "2026-07-29"
   },
   "8576352f7a9548db": {
     "id": "8576352f7a9548db",
@@ -7169,7 +7169,7 @@
     "upvotes": 4,
     "comments": 0,
     "first_seen": "2026-07-15",
-    "last_seen": "2026-07-27"
+    "last_seen": "2026-07-29"
   },
   "b2026af8ae957131": {
     "id": "b2026af8ae957131",
@@ -7180,7 +7180,7 @@
     "upvotes": 4,
     "comments": 0,
     "first_seen": "2026-07-15",
-    "last_seen": "2026-07-15"
+    "last_seen": "2026-07-29"
   },
   "aa8b24fd1c9daa17": {
     "id": "aa8b24fd1c9daa17",
@@ -7268,7 +7268,7 @@
     "upvotes": 287,
     "comments": 0,
     "first_seen": "2026-07-15",
-    "last_seen": "2026-07-22"
+    "last_seen": "2026-07-29"
   },
   "b2b88021437bacad": {
     "id": "b2b88021437bacad",
@@ -7279,7 +7279,7 @@
     "upvotes": 276,
     "comments": 0,
     "first_seen": "2026-07-15",
-    "last_seen": "2026-07-15"
+    "last_seen": "2026-07-29"
   },
   "7415fa74ba956820": {
     "id": "7415fa74ba956820",
@@ -7290,7 +7290,7 @@
     "upvotes": 273,
     "comments": 0,
     "first_seen": "2026-07-15",
-    "last_seen": "2026-07-22"
+    "last_seen": "2026-07-29"
   },
   "f83b3a6d0a4f25b1": {
     "id": "f83b3a6d0a4f25b1",
@@ -7334,7 +7334,7 @@
     "upvotes": 165,
     "comments": 0,
     "first_seen": "2026-07-15",
-    "last_seen": "2026-07-15"
+    "last_seen": "2026-07-29"
   },
   "5592e2e707b67fdd": {
     "id": "5592e2e707b67fdd",
@@ -7367,7 +7367,7 @@
     "upvotes": 140,
     "comments": 0,
     "first_seen": "2026-07-15",
-    "last_seen": "2026-07-15"
+    "last_seen": "2026-07-29"
   },
   "6752c3a36c3a29de": {
     "id": "6752c3a36c3a29de",
@@ -7378,7 +7378,7 @@
     "upvotes": 120,
     "comments": 0,
     "first_seen": "2026-07-15",
-    "last_seen": "2026-07-15"
+    "last_seen": "2026-07-29"
   },
   "6e64810f29324fab": {
     "id": "6e64810f29324fab",
@@ -18005,5 +18005,104 @@
     "comments": 0,
     "first_seen": "2026-07-27",
     "last_seen": "2026-07-27"
+  },
+  "03b1cf936b2d7ac3": {
+    "id": "03b1cf936b2d7ac3",
+    "title": "IGLU tech heatpumps",
+    "link": "https://www.reddit.com/r/HeatPump/comments/1v4lx38/iglu_tech_heatpumps/",
+    "source_name": "r/heatpump",
+    "summary_cn": "仅仅提及IGLU品牌热泵，没有提供任何具体的产品参数、应用评价或技术探讨。",
+    "upvotes": 1,
+    "comments": 0,
+    "first_seen": "2026-07-29",
+    "last_seen": "2026-07-29"
+  },
+  "4afdf976a204f731": {
+    "id": "4afdf976a204f731",
+    "title": "gap to vent is 0.75 bananas. How can I seal this?",
+    "link": "https://www.reddit.com/r/hvacadvice/comments/1hdoh3v/gap_to_vent_is_075_bananas_how_can_i_seal_this/",
+    "source_name": "r/hvacadvice",
+    "summary_cn": "吐槽通风口间隙问题，虽然描述了气流不足，但更像是个人的小维修吐槽，而非专业 HVAC 讨论。",
+    "upvotes": 5941,
+    "comments": 0,
+    "first_seen": "2026-07-29",
+    "last_seen": "2026-07-29"
+  },
+  "311a2d3a8539fa8e": {
+    "id": "311a2d3a8539fa8e",
+    "title": "How do I fix this?",
+    "link": "https://www.reddit.com/r/hvacadvice/comments/1ihycma/how_do_i_fix_this/",
+    "source_name": "r/hvacadvice",
+    "summary_cn": "用户询问如何修复无法点火的取暖器，描述过于简单且缺乏关键设备数据，属于低质量求助。",
+    "upvotes": 4946,
+    "comments": 0,
+    "first_seen": "2026-07-29",
+    "last_seen": "2026-07-29"
+  },
+  "0100f97c216fd8ca": {
+    "id": "0100f97c216fd8ca",
+    "title": "Our homeowner just did this…",
+    "link": "https://www.reddit.com/r/hvacadvice/comments/1kyt1cq/our_homeowner_just_did_this/",
+    "source_name": "r/hvacadvice",
+    "summary_cn": "关于业主自行维修空调导致故障责任归属的纠纷描述，更侧重于法律或合同纠纷，非工程技术探讨。",
+    "upvotes": 3779,
+    "comments": 0,
+    "first_seen": "2026-07-29",
+    "last_seen": "2026-07-29"
+  },
+  "f6b30f514c0d56b1": {
+    "id": "f6b30f514c0d56b1",
+    "title": "Rerouting air flow from register under a bed.",
+    "link": "https://www.reddit.com/r/hvacadvice/comments/173t6r8/rerouting_air_flow_from_register_under_a_bed/",
+    "source_name": "r/hvacadvice",
+    "summary_cn": "咨询如何重新布置床下通风口，属于室内空间优化，与暖通系统核心技术关联性较小。",
+    "upvotes": 3569,
+    "comments": 0,
+    "first_seen": "2026-07-29",
+    "last_seen": "2026-07-29"
+  },
+  "d0acd27eec9b3314": {
+    "id": "d0acd27eec9b3314",
+    "title": "Why is my filter so black after only 1 month of use?",
+    "link": "https://www.reddit.com/r/hvacadvice/comments/179peac/why_is_my_filter_so_black_after_only_1_month_of/",
+    "source_name": "r/hvacadvice",
+    "summary_cn": "询问空调滤网为什么变黑，属于基础的维护常识，且该现象通常由环境而非设备本身引起。",
+    "upvotes": 2943,
+    "comments": 0,
+    "first_seen": "2026-07-29",
+    "last_seen": "2026-07-29"
+  },
+  "9bc43588fde8d0c1": {
+    "id": "9bc43588fde8d0c1",
+    "title": "Never knew my vents did this!",
+    "link": "https://www.reddit.com/r/hvacadvice/comments/1kwttyj/never_knew_my_vents_did_this/",
+    "source_name": "r/hvacadvice",
+    "summary_cn": "用户发现通风口调节功能，属于缺乏技术深度的使用心得分享。",
+    "upvotes": 2794,
+    "comments": 0,
+    "first_seen": "2026-07-29",
+    "last_seen": "2026-07-29"
+  },
+  "5212800c0112d8f0": {
+    "id": "5212800c0112d8f0",
+    "title": "Hot water tank replacement",
+    "link": "https://www.reddit.com/r/hvacadvice/comments/1gm8whr/hot_water_tank_replacement/",
+    "source_name": "r/hvacadvice",
+    "summary_cn": "询问热水箱更换事宜，但没有具体设备背景，偏向于基础的设备更换咨询，价值中等。",
+    "upvotes": 1958,
+    "comments": 0,
+    "first_seen": "2026-07-29",
+    "last_seen": "2026-07-29"
+  },
+  "f6dc43f8ac9e8853": {
+    "id": "f6dc43f8ac9e8853",
+    "title": "Is this a reasonable A/C installation?",
+    "link": "https://www.reddit.com/r/AirConditioners/comments/1m8zoee/is_this_a_reasonable_ac_installation/",
+    "source_name": "r/AirConditioners",
+    "summary_cn": "询问安装是否合理，但未附带照片或参数，无法进行实质的技术评估。",
+    "upvotes": 337,
+    "comments": 0,
+    "first_seen": "2026-07-29",
+    "last_seen": "2026-07-29"
   }
 }

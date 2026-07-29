@@ -1,5 +1,31 @@
 [
   {
+    "id": "26bf316e81a1cd77",
+    "title": "Do you get our newsletter yet?",
+    "link": "https://ehpa.org/news-and-resources/news/do-you-get-our-newsletter-yet/",
+    "summary": "<p>You don&#8217;t have to be a nerd to like heat pumps (believe it or not!) There is loads of cool news for anyone who supports clean heating &#38; cooling in our newsletter. Written in a catchy, user-friendly way, it covers everything from the latest heat pump sales numbers to the EU rules that could change [&#8230;]</p>\n<p>The post <a href=\"https://ehpa.org/news-and-resources/news/do-you-get-ou",
+    "source_type": "news",
+    "source_name": "EHPA 欧洲热泵协会",
+    "region": "europe",
+    "country": "EU",
+    "language": "en",
+    "engagement": null,
+    "published": "2026-07-28T12:09:00+00:00"
+  },
+  {
+    "id": "70f2de81d28ff8b4",
+    "title": "A balanced transition: EHPA’s position on PFAS restrictions",
+    "link": "https://ehpa.org/news-and-resources/policy/enabling-before-restricting-ehpas-position-on-the-pfas-restrictions-and-the-conditions-for-a-successful-heat-pump-transition/",
+    "summary": "<p>Replacing fossil fuel heating with heat pumps is central to achieving Europe&#8217;s decarbonisation, energy security and industrial competitiveness objectives. The proposed restriction  on per- and polyfluoroalkyl substances or PFAS (sometimes known as &#8216;forever chemicals&#8217;) should strike the right balance between reducing environmental impacts and maintaining the rapid deployment of",
+    "source_type": "news",
+    "source_name": "EHPA 欧洲热泵协会",
+    "region": "europe",
+    "country": "EU",
+    "language": "en",
+    "engagement": null,
+    "published": "2026-07-28T10:35:01+00:00"
+  },
+  {
     "id": "24d85882e895bb49",
     "title": "How can heat pumps become more affordable?",
     "link": "https://ehpa.org/news-and-resources/policy/tackling-upfront-costs-how-the-electrification-action-plan-can-make-heat-pumps-more-affordable/",
@@ -11,6 +37,32 @@
     "language": "en",
     "engagement": null,
     "published": "2026-07-27T07:35:01+00:00"
+  },
+  {
+    "id": "a4baa029bfd98469",
+    "title": "LG CDU gains NVIDIA AI factory validation",
+    "link": "https://www.coolingpost.com/world-news/lg-cdu-gains-nvidia-ai-factory-validation/",
+    "summary": "<p>SOUTH KOREA: LG Electronics has achieved NVIDIA certification for its 600kW coolant distribution unit (CDU), meeting over 100 rigorous evaluation criteria for AI factory standardisation....</p>\n<p class=\"text-end\"><a class=\"btn btn-outline-secondary picostrap-read-more-link mt-3\" href=\"https://www.coolingpost.com/world-news/lg-cdu-gains-nvidia-ai-factory-validation/\">Read More...</a></p>\n<p>The",
+    "source_type": "news",
+    "source_name": "Cooling Post (欧洲制冷/热泵行业媒体)",
+    "region": "europe",
+    "country": "UK",
+    "language": "en",
+    "engagement": null,
+    "published": "2026-07-28T08:30:27+00:00"
+  },
+  {
+    "id": "3ba0a1a9ac4330ae",
+    "title": "Ability launches chilled water cassettes",
+    "link": "https://www.coolingpost.com/products/ability-launches-chilled-water-cassettes/",
+    "summary": "<p>UK: Ability by Dimplex has extended its product portfolio with the addition of a range of chilled water cassette units....</p>\n<p class=\"text-end\"><a class=\"btn btn-outline-secondary picostrap-read-more-link mt-3\" href=\"https://www.coolingpost.com/products/ability-launches-chilled-water-cassettes/\">Read More...</a></p>\n<p>The post <a href=\"https://www.coolingpost.com/products/ability-launches-c",
+    "source_type": "news",
+    "source_name": "Cooling Post (欧洲制冷/热泵行业媒体)",
+    "region": "europe",
+    "country": "UK",
+    "language": "en",
+    "engagement": null,
+    "published": "2026-07-28T08:17:26+00:00"
   },
   {
     "id": "e99a7e275f8690c9",
@@ -117,30 +169,17 @@
     "published": "2026-07-24T11:40:41+00:00"
   },
   {
-    "id": "c8a42e4aab89c8f6",
-    "title": "Man arrested for Greek HFC seizure",
-    "link": "https://www.coolingpost.com/world-news/man-arrested-for-greek-hfc-seizure/",
-    "summary": "<p>GREECE: A 43-year-old man has been arrested for illegally importing 286kg of HFC refrigerants from Albania to Greece and their onward trafficking....</p>\n<p class=\"text-end\"><a class=\"btn btn-outline-secondary picostrap-read-more-link mt-3\" href=\"https://www.coolingpost.com/world-news/man-arrested-for-greek-hfc-seizure/\">Read More...</a></p>\n<p>The post <a href=\"https://www.coolingpost.com/worl",
+    "id": "d51fa600160d3111",
+    "title": "Homematic IP: i Display in vetro arrivano anche in versione wireless",
+    "link": "https://www.impiantinews.it/elettro/prodotti/homematic-ip-i-display-in-vetro-arrivano-anche-in-versione-wireless/",
+    "summary": "<p>eQ-3 amplia la gamma Homematic IP con i Display in vetro wireless e introduce nuove funzioni per il controllo di illuminazione, climatizzazione, schermature e accessi. I Display in vetro Homematic IP sono ora disponibili anche in versione wireless. Per la prima volta, questi versatili display touch possono essere installati anche in sistemi smart home privi&#8230;</p>\n<p>L'articolo <a href=\"htt",
     "source_type": "news",
-    "source_name": "Cooling Post (欧洲制冷/热泵行业媒体)",
+    "source_name": "Impianti News (意大利)",
     "region": "europe",
-    "country": "UK",
-    "language": "en",
+    "country": "IT",
+    "language": "it",
     "engagement": null,
-    "published": "2026-07-24T10:57:07+00:00"
-  },
-  {
-    "id": "d66cfd1422686477",
-    "title": "Carrier acquires intelligent building company 75F",
-    "link": "https://www.coolingpost.com/world-news/carrier-acquires-intelligent-building-company-75f/",
-    "summary": "<p>USA: Carrier has acquired 75F, a Minneapolis-based innovator of cloud-native, wireless, AI-enabled building automation systems....</p>\n<p class=\"text-end\"><a class=\"btn btn-outline-secondary picostrap-read-more-link mt-3\" href=\"https://www.coolingpost.com/world-news/carrier-acquires-intelligent-building-company-75f/\">Read More...</a></p>\n<p>The post <a href=\"https://www.coolingpost.com/world-ne",
-    "source_type": "news",
-    "source_name": "Cooling Post (欧洲制冷/热泵行业媒体)",
-    "region": "europe",
-    "country": "UK",
-    "language": "en",
-    "engagement": null,
-    "published": "2026-07-23T19:51:35+00:00"
+    "published": "2026-07-28T07:59:04+00:00"
   },
   {
     "id": "b69471374c2bd9f5",
@@ -273,17 +312,17 @@
     "published": "2026-07-27T05:00:00+00:00"
   },
   {
-    "id": "fef1d4f73035883e",
-    "title": "ISDE-subsidie warmtepomp wacht forse daling in 2027",
-    "link": "https://www.installatie.nl/nieuws/warmtepompsubsidie-isde-wacht-forse-daling-in-2027/",
-    "summary": "Als het aan de overheid ligt, gaat de ISDE-subsidie voor warmtepompen in 2027 tussen de 15 en 40% dalen. R32-toestellen...",
+    "id": "2e210b29e8f9def5",
+    "title": "Subscription HVAC Gains Traction as Contractors Seek Recurring Revenue",
+    "link": "https://www.achrnews.com/articles/166481-subscription-hvac-gains-traction-as-contractors-seek-recurring-revenue",
+    "summary": "Unlike traditional equipment financing, HVAC-as-a-service shifts responsibility for system performance from the homeowner to the contractor.",
     "source_type": "news",
-    "source_name": "Installatie.nl (荷兰)",
-    "region": "europe",
-    "country": "NL",
-    "language": "nl",
+    "source_name": "ACHR News (北美HVACR行业权威媒体)",
+    "region": "global",
+    "country": "",
+    "language": "",
     "engagement": null,
-    "published": "2026-07-21T09:54:33+00:00"
+    "published": "2026-07-28T11:00:00+00:00"
   },
   {
     "id": "e9ff981a004156ae",
@@ -481,19 +520,6 @@
     "published": "2026-07-22T18:33:22+00:00"
   },
   {
-    "id": "c124aa1df1ae30e1",
-    "title": "Protecting Buildings from Wildfire Smoke: A Guide for Owners and Facility Managers",
-    "link": "https://www.achrnews.com/articles/166459-protecting-buildings-from-wildfire-smoke-a-guide-for-owners-and-facility-managers",
-    "summary": "With wildfire smoke threatening indoor air quality across North America, building owners look to HVAC professionals for solutions ranging from advanced filtration to real-time air monitoring.",
-    "source_type": "news",
-    "source_name": "ACHR News (北美HVACR行业权威媒体)",
-    "region": "global",
-    "country": "",
-    "language": "",
-    "engagement": null,
-    "published": "2026-07-22T18:07:02+00:00"
-  },
-  {
     "id": "42bd8f7070107759",
     "title": "The other trades: A salute to our plumbing cousins",
     "link": "https://refrigerationandaircon.co.za/the-other-trades-a-salute-to-our-plumbing-cousins/",
@@ -507,16 +533,16 @@
     "published": "2026-07-24T08:22:06+00:00"
   },
   {
-    "id": "8dd73d349a87e8bb",
-    "title": "Marina Aragoni abre caminhos e fortalece a presença feminina no HVAC-R",
-    "link": "https://revistadofrio.com.br/marina-aragoni-abre-caminhos-e-fortalece-a-presenca-feminina-no-hvac-r/",
-    "summary": "Empresária, influenciadora e representante da Samsung no Liga Climatiza, ela construiu sua trajetória com determinação, conhecimento e a missão de inspirar outras mulheres.",
+    "id": "4e4934c411b241d0",
+    "title": "Tarifa adicional dos EUA entra em vigor e amplia incerteza para cadeia brasileira de HVAC-R",
+    "link": "https://revistadofrio.com.br/tarifa-adicional-dos-eua-entra-em-vigor-e-amplia-incerteza-para-cadeia-brasileira-de-hvac-r/",
+    "summary": "Nova cobrança de 12,5% se soma à sobretaxa de 25% para parte dos produtos brasileiros exportados aos Estados Unidos. No setor de climatização e refrigeração, o principal efeito esperado é indireto, com pressão sobre custos, insumos e planejamento industrial.",
     "source_type": "news",
     "source_name": "Revista do Frio (巴西)",
     "region": "south_america",
     "country": "BR",
     "language": "pt",
     "engagement": null,
-    "published": "2026-07-22T16:15:55+00:00"
+    "published": "2026-07-28T16:15:52+00:00"
   }
 ]
