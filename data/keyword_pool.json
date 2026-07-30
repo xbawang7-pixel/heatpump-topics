@@ -2566,5 +2566,89 @@
     "sample_title": "My AC has not been cooling all week so I open it up and find the unit is frozen. Will melting this ice help solve the issue?",
     "sample_link": "https://www.reddit.com/r/hvacadvice/comments/1mgis12/my_ac_has_not_been_cooling_all_week_so_i_open_it/",
     "keyword_validated": false
+  },
+  "hvac installation cable management best practices": {
+    "keyword": "HVAC installation cable management best practices",
+    "region": "europe",
+    "product_category": "both",
+    "content_format": "blog",
+    "first_seen": "2026-07-30",
+    "last_seen": "2026-07-30",
+    "times_seen": 1,
+    "sample_title": "Unex ofrece soluciones aislantes eficientes para instalaciones modernas de climatización",
+    "sample_link": "https://www.climanoticias.com/texto-diario/mostrar/5964050/unex-ofrece-soluciones-aislantes-eficientes-instalaciones-modernas-climatizacion",
+    "keyword_validated": false
+  },
+  "how to scale an hvac contracting business": {
+    "keyword": "how to scale an HVAC contracting business",
+    "region": "global",
+    "product_category": "both",
+    "content_format": "blog",
+    "first_seen": "2026-07-30",
+    "last_seen": "2026-07-30",
+    "times_seen": 1,
+    "sample_title": "A New Leadership Program for HVACR Business Owners",
+    "sample_link": "https://www.achrnews.com/articles/166482-a-new-leadership-program-for-hvacr-business-owners",
+    "keyword_validated": false
+  },
+  "commercial hvac compliance for grocery stores": {
+    "keyword": "commercial HVAC compliance for grocery stores",
+    "region": "global",
+    "product_category": "air_conditioner",
+    "content_format": "whitepaper",
+    "first_seen": "2026-07-30",
+    "last_seen": "2026-07-30",
+    "times_seen": 1,
+    "sample_title": "Food Retail's Next Build: Smarter Energy, Sharper Compliance",
+    "sample_link": "https://www.achrnews.com/articles/166477-food-retails-next-build-smarter-energy-sharper-compliance",
+    "keyword_validated": false
+  },
+  "hvac market misinformation and consumer trust": {
+    "keyword": "HVAC market misinformation and consumer trust",
+    "region": "south_america",
+    "product_category": "both",
+    "content_format": "buyer_faq",
+    "first_seen": "2026-07-30",
+    "last_seen": "2026-07-30",
+    "times_seen": 1,
+    "sample_title": "Psyop",
+    "sample_link": "https://www.reddit.com/r/chile/comments/1r80o0l/psyop/",
+    "keyword_validated": false
+  },
+  "hvac equipment fire safety standards": {
+    "keyword": "HVAC equipment fire safety standards",
+    "region": "south_america",
+    "product_category": "both",
+    "content_format": "whitepaper",
+    "first_seen": "2026-07-30",
+    "last_seen": "2026-07-30",
+    "times_seen": 1,
+    "sample_title": "Vídeo do incêndio do trem em São Paulo feitas de dentro do vagão",
+    "sample_link": "https://www.reddit.com/r/brasil/comments/1v4h2yk/v%C3%ADdeo_do_inc%C3%AAndio_do_trem_em_s%C3%A3o_paulo_feitas_de/",
+    "keyword_validated": false
+  },
+  "how to assess professional hvac vendor communication": {
+    "keyword": "how to assess professional HVAC vendor communication",
+    "region": "south_america",
+    "product_category": "both",
+    "content_format": "buyer_faq",
+    "first_seen": "2026-07-30",
+    "last_seen": "2026-07-30",
+    "times_seen": 1,
+    "sample_title": "Mira esta ordinaries de comunicado hermano",
+    "sample_link": "https://www.reddit.com/r/chile/comments/1s2hlg0/mira_esta_ordinaries_de_comunicado_hermano/",
+    "keyword_validated": false
+  },
+  "hvac contractor support and service availability": {
+    "keyword": "HVAC contractor support and service availability",
+    "region": "south_america",
+    "product_category": "both",
+    "content_format": "buyer_faq",
+    "first_seen": "2026-07-30",
+    "last_seen": "2026-07-30",
+    "times_seen": 1,
+    "sample_title": "Buen martes gente",
+    "sample_link": "https://www.reddit.com/r/chile/comments/1t4fbl5/buen_martes_gente/",
+    "keyword_validated": false
   }
 }
