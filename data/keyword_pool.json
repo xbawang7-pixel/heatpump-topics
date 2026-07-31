@@ -2650,5 +2650,29 @@
     "sample_title": "Buen martes gente",
     "sample_link": "https://www.reddit.com/r/chile/comments/1t4fbl5/buen_martes_gente/",
     "keyword_validated": false
+  },
+  "vertical stack heat pump for multifamily buildings": {
+    "keyword": "vertical stack heat pump for multifamily buildings",
+    "region": "global",
+    "product_category": "heat_pump",
+    "content_format": "buyer_faq",
+    "first_seen": "2026-07-31",
+    "last_seen": "2026-07-31",
+    "times_seen": 1,
+    "sample_title": "Vertical Heat Pump for Multifamily and Mixed-Use Projects",
+    "sample_link": "https://www.achrnews.com/articles/166483-vertical-heat-pump-for-multifamily-and-mixed-use-projects",
+    "keyword_validated": false
+  },
+  "hvac business crm software benefits": {
+    "keyword": "HVAC business CRM software benefits",
+    "region": "global",
+    "product_category": "both",
+    "content_format": "blog",
+    "first_seen": "2026-07-31",
+    "last_seen": "2026-07-31",
+    "times_seen": 1,
+    "sample_title": "Mining HVACR Gold With CRM Software",
+    "sample_link": "https://www.achrnews.com/articles/166478-mining-hvacr-gold-with-crm-software",
+    "keyword_validated": false
   }
 }
