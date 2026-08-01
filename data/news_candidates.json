@@ -1,5 +1,18 @@
 [
   {
+    "id": "999f7591b2c15202",
+    "title": "Cooling matters: the other side of heat pumps",
+    "link": "https://ehpa.org/news-and-resources/publications/cooling-matters-the-other-side-of-heat-pumps/",
+    "summary": "<p>Cooling is essential to protect people’s health. Heat pumps can both heat and cool. They can also recover and reuse the heat generated when cooling. This makes them a dual-purpose technology that supports climate mitigation, adaptation and energy system flexibility. This paper explores why cooling should become a core element of European energy policy, and proposes [&#8230;]</p>\n<p>The post <a ",
+    "source_type": "news",
+    "source_name": "EHPA 欧洲热泵协会",
+    "region": "europe",
+    "country": "EU",
+    "language": "en",
+    "engagement": null,
+    "published": "2026-07-31T13:11:50+00:00"
+  },
+  {
     "id": "6e331cc146d45266",
     "title": "Paul Kenny to Chinese heat pump sector: work with Europe for mutual wins",
     "link": "https://ehpa.org/news-and-resources/press-releases/paul-kenny-to-chinese-heat-pump-sector-work-with-europe-for-mutual-wins/",
@@ -50,6 +63,19 @@
     "language": "en",
     "engagement": null,
     "published": "2026-07-27T07:35:01+00:00"
+  },
+  {
+    "id": "99c34c2fa5e7bd03",
+    "title": "Skills Alliance announces London meeting",
+    "link": "https://www.coolingpost.com/training/skills-alliance-announces-london-meeting/",
+    "summary": "<p>UK: The next IOR Industry Skills Alliance event has been scheduled for 24 September at the London South Bank Technical College....</p>\n<p class=\"text-end\"><a class=\"btn btn-outline-secondary picostrap-read-more-link mt-3\" href=\"https://www.coolingpost.com/training/skills-alliance-announces-london-meeting/\">Read More...</a></p>\n<p>The post <a href=\"https://www.coolingpost.com/training/skills-all",
+    "source_type": "news",
+    "source_name": "Cooling Post (欧洲制冷/热泵行业媒体)",
+    "region": "europe",
+    "country": "UK",
+    "language": "en",
+    "engagement": null,
+    "published": "2026-07-31T08:55:22+00:00"
   },
   {
     "id": "0816aaed79f9f779",
@@ -169,19 +195,6 @@
     "published": "2026-07-29T07:02:26+00:00"
   },
   {
-    "id": "a4baa029bfd98469",
-    "title": "LG CDU gains NVIDIA AI factory validation",
-    "link": "https://www.coolingpost.com/world-news/lg-cdu-gains-nvidia-ai-factory-validation/",
-    "summary": "<p>SOUTH KOREA: LG Electronics has achieved NVIDIA certification for its 600kW coolant distribution unit (CDU), meeting over 100 rigorous evaluation criteria for AI factory standardisation....</p>\n<p class=\"text-end\"><a class=\"btn btn-outline-secondary picostrap-read-more-link mt-3\" href=\"https://www.coolingpost.com/world-news/lg-cdu-gains-nvidia-ai-factory-validation/\">Read More...</a></p>\n<p>The",
-    "source_type": "news",
-    "source_name": "Cooling Post (欧洲制冷/热泵行业媒体)",
-    "region": "europe",
-    "country": "UK",
-    "language": "en",
-    "engagement": null,
-    "published": "2026-07-28T08:30:27+00:00"
-  },
-  {
     "id": "e215bc0bb0c498d1",
     "title": "Climatizzazione, i numeri di Assoclima sul 1° semestre 2026",
     "link": "https://www.impiantinews.it/ci/attualita/climatizzazione-i-numeri-di-assoclima-sul-1-semestre-2026/",
@@ -273,19 +286,6 @@
     "published": "2026-07-27T07:32:59+00:00"
   },
   {
-    "id": "78cec9e045f4cb5e",
-    "title": "Unex ofrece soluciones aislantes eficientes para instalaciones modernas de climatización",
-    "link": "https://www.climanoticias.com/texto-diario/mostrar/5964050/unex-ofrece-soluciones-aislantes-eficientes-instalaciones-modernas-climatizacion",
-    "summary": "<p>Las soluciones aislantes de Unex permiten gestionar tubos y cables de sistemas de climatización en viviendas, oficinas y locales comerciales, adaptándose a las necesidades de cada espacio .&nbsp;</p><div>&nbsp;</div>",
-    "source_type": "news",
-    "source_name": "Climanoticias (西班牙)",
-    "region": "europe",
-    "country": "ES",
-    "language": "es",
-    "engagement": null,
-    "published": "2026-07-24T07:42:07+00:00"
-  },
-  {
     "id": "cf597fd7902cdb3f",
     "title": "Verkoop cv-ketel daalt harder dan warmtepompmarkt groeit",
     "link": "https://www.installatie.nl/nieuws/verkoop-cv-ketel-daalt-harder-dan-warmtepompmarkt-groeit/",
@@ -310,6 +310,32 @@
     "language": "nl",
     "engagement": null,
     "published": "2026-07-27T05:00:00+00:00"
+  },
+  {
+    "id": "039981aba1f3b776",
+    "title": "Pentair Eyes HVAC Growth With $1.4 Billion Taco Deal",
+    "link": "https://www.achrnews.com/articles/166503-pentair-eyes-hvac-growth-with-14-billion-taco-deal",
+    "summary": "The planned acquisition would expand Pentair’s portfolio of water solutions to support increased exposure to key high-growth end markets, primarily in North America.",
+    "source_type": "news",
+    "source_name": "ACHR News (北美HVACR行业权威媒体)",
+    "region": "global",
+    "country": "",
+    "language": "",
+    "engagement": null,
+    "published": "2026-07-31T17:00:00+00:00"
+  },
+  {
+    "id": "5e89030c65f4c59e",
+    "title": "Preventive Maintenance Strategies for CO₂ Refrigeration Systems",
+    "link": "https://www.achrnews.com/articles/166490-preventive-maintenance-strategies-for-co-refrigeration-systems",
+    "summary": "Transcritical CO₂ refrigeration systems can deliver long-term cost and environmental benefits, but their high operating pressures create unique maintenance and service demands.",
+    "source_type": "news",
+    "source_name": "ACHR News (北美HVACR行业权威媒体)",
+    "region": "global",
+    "country": "",
+    "language": "",
+    "engagement": null,
+    "published": "2026-07-31T11:00:00+00:00"
   },
   {
     "id": "e57e80279ea5bb9b",
@@ -507,56 +533,30 @@
     "published": "2026-07-25T15:00:00+00:00"
   },
   {
-    "id": "fc864e03f10aba04",
-    "title": "Mining HVACR Gold With CRM Software",
-    "link": "https://www.achrnews.com/articles/166478-mining-hvacr-gold-with-crm-software",
-    "summary": "CRM software is more than a tool to manage customer relationships: it is also a treasure trove of opportunity.",
-    "source_type": "news",
-    "source_name": "ACHR News (北美HVACR行业权威媒体)",
-    "region": "global",
-    "country": "",
-    "language": "",
-    "engagement": null,
-    "published": "2026-07-25T11:00:00+00:00"
-  },
-  {
-    "id": "1d42447e57892e8e",
-    "title": "A New Leadership Program for HVACR Business Owners",
-    "link": "https://www.achrnews.com/articles/166482-a-new-leadership-program-for-hvacr-business-owners",
-    "summary": "ACCA's new training program, Legacy Builders, is designed to help the owners of HVACR businesses move from owner-operator to CEO and help them prepare their companies for long-term growth and the owners' eventual exit from the business.",
-    "source_type": "news",
-    "source_name": "ACHR News (北美HVACR行业权威媒体)",
-    "region": "global",
-    "country": "",
-    "language": "",
-    "engagement": null,
-    "published": "2026-07-24T15:00:00+00:00"
-  },
-  {
-    "id": "70efed8b6fc1345d",
-    "title": "Food Retail's Next Build: Smarter Energy, Sharper Compliance",
-    "link": "https://www.achrnews.com/articles/166477-food-retails-next-build-smarter-energy-sharper-compliance",
-    "summary": "From refrigerant compliance to AI and energy resilience, FMI's E+SD Conference will help grocery retailers navigate today's biggest store development challenges.",
-    "source_type": "news",
-    "source_name": "ACHR News (北美HVACR行业权威媒体)",
-    "region": "global",
-    "country": "",
-    "language": "",
-    "engagement": null,
-    "published": "2026-07-24T11:00:00+00:00"
-  },
-  {
-    "id": "42bd8f7070107759",
-    "title": "The other trades: A salute to our plumbing cousins",
-    "link": "https://refrigerationandaircon.co.za/the-other-trades-a-salute-to-our-plumbing-cousins/",
-    "summary": "<p>By Eamonn Ryan Every industry has its pecking order.  Generated by AI  In HVAC&amp;R we like to think we’re the sophisticated cousins of the building services family. We deal with psychrometrics, superheat, subcooling, variable refrigerant flow and controls clever enough to make your average laptop nervous. We commission systems, optimise efficiency and discuss  [...]</p>\n<p>The post <a href=\"h",
+    "id": "48e5a409cb4122af",
+    "title": "Building for speed, scalability and precision",
+    "link": "https://refrigerationandaircon.co.za/building-for-speed-scalability-and-precision/",
+    "summary": "<p>By Eamonn Ryan Sikla brings engineered modular support systems to the fast-growing data centre market (Part 1).  Sikla’s modular system is based on a simple one-screw technology assembled using torque wrenches.© RACA Journal  As data centres continue to proliferate across Africa, much of the industry’s attention remains focused on cooling technologies, power systems  [...]</p>\n<p>The post <a hr",
     "source_type": "news",
     "source_name": "RACA Journal (南非)",
     "region": "africa",
     "country": "ZA",
     "language": "en",
     "engagement": null,
-    "published": "2026-07-24T08:22:06+00:00"
+    "published": "2026-07-31T05:20:14+00:00"
+  },
+  {
+    "id": "0e7f19bb8b8c6d9f",
+    "title": "Refrigeração líquida amplia campo de atuação do profissional de HVAC-R",
+    "link": "https://revistadofrio.com.br/refrigeracao-liquida-amplia-campo-de-atuacao-do-profissional-de-hvac-r/",
+    "summary": "O calor produzido pelos servidores continua existindo. A diferença é que, nos data centers de inteligência artificial, ele deixa de ser transportado principalmente pelo ar e passa a ser removido por circuitos líquidos.",
+    "source_type": "news",
+    "source_name": "Revista do Frio (巴西)",
+    "region": "south_america",
+    "country": "BR",
+    "language": "pt",
+    "engagement": null,
+    "published": "2026-07-31T17:41:16+00:00"
   },
   {
     "id": "2a83951aa4e5c334",
