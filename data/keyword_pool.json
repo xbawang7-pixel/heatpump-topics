@@ -2818,5 +2818,53 @@
     "sample_title": "Family-Owned 128 Plumbing Earns HVAC All-Star Honors",
     "sample_link": "https://www.achrnews.com/articles/166457-family-owned-128-plumbing-earns-hvac-all-star-honors",
     "keyword_validated": false
+  },
+  "latest eu heat pump market trends and regulatory updates": {
+    "keyword": "latest EU heat pump market trends and regulatory updates",
+    "region": "europe",
+    "product_category": "heat_pump",
+    "content_format": "blog",
+    "first_seen": "2026-08-04",
+    "last_seen": "2026-08-04",
+    "times_seen": 1,
+    "sample_title": "Do you get our newsletter yet?",
+    "sample_link": "https://ehpa.org/news-and-resources/news/do-you-get-our-newsletter-yet/",
+    "keyword_validated": false
+  },
+  "pfas restrictions on heat pump refrigerants impact": {
+    "keyword": "PFAS restrictions on heat pump refrigerants impact",
+    "region": "europe",
+    "product_category": "heat_pump",
+    "content_format": "buyer_faq",
+    "first_seen": "2026-08-04",
+    "last_seen": "2026-08-04",
+    "times_seen": 1,
+    "sample_title": "A balanced transition: EHPA’s position on PFAS restrictions",
+    "sample_link": "https://ehpa.org/news-and-resources/policy/enabling-before-restricting-ehpas-position-on-the-pfas-restrictions-and-the-conditions-for-a-successful-heat-pump-transition/",
+    "keyword_validated": false
+  },
+  "hvac as a service business model benefits for building owners": {
+    "keyword": "HVAC as a service business model benefits for building owners",
+    "region": "global",
+    "product_category": "both",
+    "content_format": "blog",
+    "first_seen": "2026-08-04",
+    "last_seen": "2026-08-04",
+    "times_seen": 1,
+    "sample_title": "Subscription HVAC Gains Traction as Contractors Seek Recurring Revenue",
+    "sample_link": "https://www.achrnews.com/articles/166481-subscription-hvac-gains-traction-as-contractors-seek-recurring-revenue",
+    "keyword_validated": false
+  },
+  "verifactu compliance for hvac management software in spain": {
+    "keyword": "Verifactu compliance for HVAC management software in Spain",
+    "region": "europe",
+    "product_category": "both",
+    "content_format": "buyer_faq",
+    "first_seen": "2026-08-04",
+    "last_seen": "2026-08-04",
+    "times_seen": 1,
+    "sample_title": "Verifactu en climatización: qué le va a exigir la ley a tu programa de gestión y cuándo [Guía Completa]",
+    "sample_link": "https://www.caloryfrio.com/noticias/actualidad/verifactu-climatizacion-exigir-ley-programa-gestion-cuando.html",
+    "keyword_validated": false
   }
 }
