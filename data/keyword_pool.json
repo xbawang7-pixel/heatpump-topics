@@ -2866,5 +2866,65 @@
     "sample_title": "Verifactu en climatización: qué le va a exigir la ley a tu programa de gestión y cuándo [Guía Completa]",
     "sample_link": "https://www.caloryfrio.com/noticias/actualidad/verifactu-climatizacion-exigir-ley-programa-gestion-cuando.html",
     "keyword_validated": false
+  },
+  "how to choose reliable heat pump manufacturer for eu market": {
+    "keyword": "how to choose reliable heat pump manufacturer for EU market",
+    "region": "europe",
+    "product_category": "heat_pump",
+    "content_format": "buyer_faq",
+    "first_seen": "2026-08-05",
+    "last_seen": "2026-08-05",
+    "times_seen": 1,
+    "sample_title": "Paul Kenny to Chinese heat pump sector: work with Europe for mutual wins",
+    "sample_link": "https://ehpa.org/news-and-resources/press-releases/paul-kenny-to-chinese-heat-pump-sector-work-with-europe-for-mutual-wins/",
+    "keyword_validated": false
+  },
+  "how to mitigate rising hvac equipment import costs": {
+    "keyword": "how to mitigate rising HVAC equipment import costs",
+    "region": "global",
+    "product_category": "both",
+    "content_format": "blog",
+    "first_seen": "2026-08-05",
+    "last_seen": "2026-08-05",
+    "times_seen": 1,
+    "sample_title": "New Tariffs Could Increase HVAC Equipment and Components Costs",
+    "sample_link": "https://www.achrnews.com/articles/166498-new-tariffs-could-increase-hvac-equipment-and-components-costs",
+    "keyword_validated": false
+  },
+  "hvac refrigerant transition compliance and deadlines": {
+    "keyword": "HVAC refrigerant transition compliance and deadlines",
+    "region": "global",
+    "product_category": "air_conditioner",
+    "content_format": "buyer_faq",
+    "first_seen": "2026-08-05",
+    "last_seen": "2026-08-05",
+    "times_seen": 1,
+    "sample_title": "Grocers Fight to Keep EPA’s Refrigerant Deadline Extensions",
+    "sample_link": "https://www.achrnews.com/articles/166494-grocers-fight-to-keep-epas-refrigerant-deadline-extensions",
+    "keyword_validated": false
+  },
+  "preventing hvac system failure during extreme heat waves": {
+    "keyword": "preventing HVAC system failure during extreme heat waves",
+    "region": "global",
+    "product_category": "air_conditioner",
+    "content_format": "installation_maintenance",
+    "first_seen": "2026-08-05",
+    "last_seen": "2026-08-05",
+    "times_seen": 1,
+    "sample_title": "August Weather Keeps Cooling Demand High Nationwide",
+    "sample_link": "https://www.achrnews.com/articles/166493-august-weather-keeps-cooling-demand-high-nationwide",
+    "keyword_validated": false
+  },
+  "common hvac installation mistakes and how to fix them": {
+    "keyword": "common HVAC installation mistakes and how to fix them",
+    "region": "global",
+    "product_category": "both",
+    "content_format": "installation_maintenance",
+    "first_seen": "2026-08-05",
+    "last_seen": "2026-08-05",
+    "times_seen": 1,
+    "sample_title": "Avoiding Costly Mistakes with Flares, Nuts, and Bolts",
+    "sample_link": "https://www.achrnews.com/articles/166489-avoiding-costly-mistakes-with-flares-nuts-and-bolts",
+    "keyword_validated": false
   }
 }

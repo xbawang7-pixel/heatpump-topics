@@ -7180,7 +7180,7 @@
     "upvotes": 4,
     "comments": 0,
     "first_seen": "2026-07-15",
-    "last_seen": "2026-07-29"
+    "last_seen": "2026-08-05"
   },
   "aa8b24fd1c9daa17": {
     "id": "aa8b24fd1c9daa17",
@@ -18015,7 +18015,7 @@
     "upvotes": 1,
     "comments": 0,
     "first_seen": "2026-07-29",
-    "last_seen": "2026-07-29"
+    "last_seen": "2026-08-05"
   },
   "4afdf976a204f731": {
     "id": "4afdf976a204f731",
@@ -18104,5 +18104,71 @@
     "comments": 0,
     "first_seen": "2026-07-29",
     "last_seen": "2026-07-29"
+  },
+  "111925de60e22498": {
+    "id": "111925de60e22498",
+    "title": "Running costs",
+    "link": "https://www.reddit.com/r/HeatPump/comments/1va81e7/running_costs/",
+    "source_name": "r/heatpump",
+    "summary_cn": "用户询问热泵运行成本，内容过于笼统，缺乏具体地理位置、设备型号或建筑类型等关键信息，无法给出专业分析。",
+    "upvotes": 1,
+    "comments": 0,
+    "first_seen": "2026-08-05",
+    "last_seen": "2026-08-05"
+  },
+  "dad6a0f55ac98f52": {
+    "id": "dad6a0f55ac98f52",
+    "title": "Tips from a consumer for buying a heat pump (none professional)",
+    "link": "https://www.reddit.com/r/HeatPump/comments/18kgzgc/tips_from_a_consumer_for_buying_a_heat_pump_none/",
+    "source_name": "r/heatpump",
+    "summary_cn": "非专业人士分享购买热泵的个人经验心得，多为大众化选购指南，缺乏深度工程参考价值。",
+    "upvotes": 12,
+    "comments": 0,
+    "first_seen": "2026-08-05",
+    "last_seen": "2026-08-05"
+  },
+  "906b56592dbd125d": {
+    "id": "906b56592dbd125d",
+    "title": "I'm just fed up",
+    "link": "https://www.reddit.com/r/hvacadvice/comments/1vftrty/im_just_fed_up/",
+    "source_name": "r/hvacadvice",
+    "summary_cn": "纯粹对维修不满的情绪发泄，没有提供任何技术细节或设备诊断信息。",
+    "upvotes": 1,
+    "comments": 0,
+    "first_seen": "2026-08-05",
+    "last_seen": "2026-08-05"
+  },
+  "53a41e9d20e3c64c": {
+    "id": "53a41e9d20e3c64c",
+    "title": "Filter never fits properly",
+    "link": "https://www.reddit.com/r/hvacadvice/comments/1vftnql/filter_never_fits_properly/",
+    "source_name": "r/hvacadvice",
+    "summary_cn": "抱怨空气过滤器安装不便的吐槽贴，属于日常琐事，无暖通行业专业参考意义。",
+    "upvotes": 1,
+    "comments": 0,
+    "first_seen": "2026-08-05",
+    "last_seen": "2026-08-05"
+  },
+  "23ab8ef10f554547": {
+    "id": "23ab8ef10f554547",
+    "title": "Fan choice to move air in new apartment",
+    "link": "https://www.reddit.com/r/AirConditioners/comments/1vflvln/fan_choice_to_move_air_in_new_apartment/",
+    "source_name": "r/AirConditioners",
+    "summary_cn": "询问用什么风扇来均衡公寓内温差，属于居家小技巧，非暖通专业内容。",
+    "upvotes": 1,
+    "comments": 0,
+    "first_seen": "2026-08-05",
+    "last_seen": "2026-08-05"
+  },
+  "ef18911acca0ba44": {
+    "id": "ef18911acca0ba44",
+    "title": "ac step down converter",
+    "link": "https://www.reddit.com/r/AirConditioners/comments/1vfa0uq/ac_step_down_converter/",
+    "source_name": "r/AirConditioners",
+    "summary_cn": "询问关于空调降压转换器的问题，信息太少，无法判断应用场景。",
+    "upvotes": 1,
+    "comments": 0,
+    "first_seen": "2026-08-05",
+    "last_seen": "2026-08-05"
   }
 }
