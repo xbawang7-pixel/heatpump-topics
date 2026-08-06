@@ -2926,5 +2926,53 @@
     "sample_title": "Avoiding Costly Mistakes with Flares, Nuts, and Bolts",
     "sample_link": "https://www.achrnews.com/articles/166489-avoiding-costly-mistakes-with-flares-nuts-and-bolts",
     "keyword_validated": false
+  },
+  "hvac business management software and ai integration": {
+    "keyword": "HVAC business management software and AI integration",
+    "region": "global",
+    "product_category": "both",
+    "content_format": "blog",
+    "first_seen": "2026-08-06",
+    "last_seen": "2026-08-06",
+    "times_seen": 1,
+    "sample_title": "Beyond the Wrench: Trey McWilliams on How to Use AI Without Losing the Human Element",
+    "sample_link": "https://www.achrnews.com/articles/166469-beyond-the-wrench-trey-mcwilliams-on-how-to-use-ai-without-losing-the-human-element",
+    "keyword_validated": false
+  },
+  "hvac system replacement market trends 2024": {
+    "keyword": "HVAC system replacement market trends 2024",
+    "region": "global",
+    "product_category": "both",
+    "content_format": "blog",
+    "first_seen": "2026-08-06",
+    "last_seen": "2026-08-06",
+    "times_seen": 1,
+    "sample_title": "Carrier Sees Residential HVAC Returning to Replacement Mode",
+    "sample_link": "https://www.achrnews.com/articles/166496-carrier-sees-residential-hvac-returning-to-replacement-mode",
+    "keyword_validated": false
+  },
+  "heat pump cooling function benefits and energy efficiency": {
+    "keyword": "heat pump cooling function benefits and energy efficiency",
+    "region": "europe",
+    "product_category": "heat_pump",
+    "content_format": "whitepaper",
+    "first_seen": "2026-08-06",
+    "last_seen": "2026-08-06",
+    "times_seen": 1,
+    "sample_title": "Cooling matters: the other side of heat pumps",
+    "sample_link": "https://ehpa.org/news-and-resources/publications/cooling-matters-the-other-side-of-heat-pumps/",
+    "keyword_validated": false
+  },
+  "hvac and water management solutions for commercial buildings": {
+    "keyword": "HVAC and water management solutions for commercial buildings",
+    "region": "global",
+    "product_category": "both",
+    "content_format": "blog",
+    "first_seen": "2026-08-06",
+    "last_seen": "2026-08-06",
+    "times_seen": 1,
+    "sample_title": "Pentair Eyes HVAC Growth With $1.4 Billion Taco Deal",
+    "sample_link": "https://www.achrnews.com/articles/166503-pentair-eyes-hvac-growth-with-14-billion-taco-deal",
+    "keyword_validated": false
   }
 }
