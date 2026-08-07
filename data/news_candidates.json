@@ -1,5 +1,18 @@
 [
   {
+    "id": "e6cde0c55508889c",
+    "title": "Why heat pump sales are growing again",
+    "link": "https://ehpa.org/news-and-resources/news/why-heat-pump-sales-are-growing-again/",
+    "summary": "<p>After two years of declining sales, Europe&#8217;s heat pump market is back on the rise. In 2025, around 2.9 million domestic heat pumps were sold across 21 European countries, a 13% increase compared to 2024. This is because many governments started lowering taxes on electricity and on heat pumps. Heat pump sales surged in 2022 as gas prices [&#8230;]</p>\n<p>The post <a href=\"https://ehpa.org/",
+    "source_type": "news",
+    "source_name": "EHPA 欧洲热泵协会",
+    "region": "europe",
+    "country": "EU",
+    "language": "en",
+    "engagement": null,
+    "published": "2026-08-06T04:21:40+00:00"
+  },
+  {
     "id": "999f7591b2c15202",
     "title": "Cooling matters: the other side of heat pumps",
     "link": "https://ehpa.org/news-and-resources/publications/cooling-matters-the-other-side-of-heat-pumps/",
@@ -13,10 +26,49 @@
     "published": "2026-07-31T13:11:50+00:00"
   },
   {
-    "id": "9b1e29fd22b8be5b",
-    "title": "Six companies fined for F-gas quota violations",
-    "link": "https://www.coolingpost.com/uk-news/six-companies-fined-for-f-gas-quota-violations/",
-    "summary": "<p>UK: Civil penalties totalling over £116,000 have been imposed on five companies for breaches of F-gas quota regulations....</p>\n<p class=\"text-end\"><a class=\"btn btn-outline-secondary picostrap-read-more-link mt-3\" href=\"https://www.coolingpost.com/uk-news/six-companies-fined-for-f-gas-quota-violations/\">Read More...</a></p>\n<p>The post <a href=\"https://www.coolingpost.com/uk-news/six-companies",
+    "id": "c81fef12582d5e48",
+    "title": "Carel reports half-year revenues up 20.9%",
+    "link": "https://www.coolingpost.com/world-news/carel-reports-half-year-revenues-up-20-9/",
+    "summary": "<p>ITALY: Controls manufacturer Carel Industries has reported revenues of €370.1m in the first half of the year, a 20.9% increase on the same period in 2025. ...</p>\n<p class=\"text-end\"><a class=\"btn btn-outline-secondary picostrap-read-more-link mt-3\" href=\"https://www.coolingpost.com/world-news/carel-reports-half-year-revenues-up-20-9/\">Read More...</a></p>\n<p>The post <a href=\"https://www.cooli",
+    "source_type": "news",
+    "source_name": "Cooling Post (欧洲制冷/热泵行业媒体)",
+    "region": "europe",
+    "country": "UK",
+    "language": "en",
+    "engagement": null,
+    "published": "2026-08-06T19:12:24+00:00"
+  },
+  {
+    "id": "6fb84d57474780ff",
+    "title": "Lu-Ve CO2 coolers hit the heights",
+    "link": "https://www.coolingpost.com/features/lu-ve-co2-coolers-hit-the-heights/",
+    "summary": "<p>CHINA: LuVe has supplied 28 air coolers for a newly 62m-high single-storey cold storage warehouse in China, one of the highest fully automated facilities of its type in the world....</p>\n<p class=\"text-end\"><a class=\"btn btn-outline-secondary picostrap-read-more-link mt-3\" href=\"https://www.coolingpost.com/features/lu-ve-co2-coolers-hit-the-heights/\">Read More...</a></p>\n<p>The post <a href=\"ht",
+    "source_type": "news",
+    "source_name": "Cooling Post (欧洲制冷/热泵行业媒体)",
+    "region": "europe",
+    "country": "UK",
+    "language": "en",
+    "engagement": null,
+    "published": "2026-08-06T19:02:50+00:00"
+  },
+  {
+    "id": "70af523fcc6f2b5d",
+    "title": "Trane trial proves autonomous container performance",
+    "link": "https://www.coolingpost.com/features/trane-trial-proves-autonomous-container-performance/",
+    "summary": "<p>BELGIUM: Trane claims to have completed successful field trials on a new autonomous solar-powered cold storage unit....</p>\n<p class=\"text-end\"><a class=\"btn btn-outline-secondary picostrap-read-more-link mt-3\" href=\"https://www.coolingpost.com/features/trane-trial-proves-autonomous-container-performance/\">Read More...</a></p>\n<p>The post <a href=\"https://www.coolingpost.com/features/trane-tria",
+    "source_type": "news",
+    "source_name": "Cooling Post (欧洲制冷/热泵行业媒体)",
+    "region": "europe",
+    "country": "UK",
+    "language": "en",
+    "engagement": null,
+    "published": "2026-08-06T09:38:46+00:00"
+  },
+  {
+    "id": "bad2aca68e8e0504",
+    "title": "Five companies fined for F-gas quota violations",
+    "link": "https://www.coolingpost.com/uk-news/five-companies-fined-for-f-gas-quota-violations/",
+    "summary": "<p>UK: Civil penalties totalling over £116,000 have been imposed on five companies for breaches of F-gas quota regulations....</p>\n<p class=\"text-end\"><a class=\"btn btn-outline-secondary picostrap-read-more-link mt-3\" href=\"https://www.coolingpost.com/uk-news/five-companies-fined-for-f-gas-quota-violations/\">Read More...</a></p>\n<p>The post <a href=\"https://www.coolingpost.com/uk-news/five-compani",
     "source_type": "news",
     "source_name": "Cooling Post (欧洲制冷/热泵行业媒体)",
     "region": "europe",
@@ -104,45 +156,6 @@
     "published": "2026-08-04T18:12:38+00:00"
   },
   {
-    "id": "75c6ff66a797bc24",
-    "title": "Coldroom embodied carbon calculator",
-    "link": "https://www.coolingpost.com/products/coldroom-embodied-carbon-calculator/",
-    "summary": "<p>UK: Commercial refrigeration manufacturer Williams has launched a coldroom embodied carbon calculator, allowing users to calculate embodied carbon figures for bespoke coldrooms....</p>\n<p class=\"text-end\"><a class=\"btn btn-outline-secondary picostrap-read-more-link mt-3\" href=\"https://www.coolingpost.com/products/coldroom-embodied-carbon-calculator/\">Read More...</a></p>\n<p>The post <a href=\"ht",
-    "source_type": "news",
-    "source_name": "Cooling Post (欧洲制冷/热泵行业媒体)",
-    "region": "europe",
-    "country": "UK",
-    "language": "en",
-    "engagement": null,
-    "published": "2026-08-04T14:40:03+00:00"
-  },
-  {
-    "id": "3768e02805bb6ecd",
-    "title": "Bullivant becomes national distribution sales manager",
-    "link": "https://www.coolingpost.com/uk-news/bullivant-becomes-national-distribution-sales-manager/",
-    "summary": "<p>UK: Kelly Bullivant has been promoted to national distribution sales manager at General HVAC Solutions UK....</p>\n<p class=\"text-end\"><a class=\"btn btn-outline-secondary picostrap-read-more-link mt-3\" href=\"https://www.coolingpost.com/uk-news/bullivant-becomes-national-distribution-sales-manager/\">Read More...</a></p>\n<p>The post <a href=\"https://www.coolingpost.com/uk-news/bullivant-becomes-na",
-    "source_type": "news",
-    "source_name": "Cooling Post (欧洲制冷/热泵行业媒体)",
-    "region": "europe",
-    "country": "UK",
-    "language": "en",
-    "engagement": null,
-    "published": "2026-08-04T11:00:07+00:00"
-  },
-  {
-    "id": "40b8df27c70a7e92",
-    "title": "Absorption chiller waste heat design guide",
-    "link": "https://www.coolingpost.com/world-news/absorption-chiller-waste-heat-design-guide/",
-    "summary": "<p>USA: Johnson Controls has produced an absorption chiller design guide to convert waste heat from data centres and reduce cooling electrical demand...</p>\n<p class=\"text-end\"><a class=\"btn btn-outline-secondary picostrap-read-more-link mt-3\" href=\"https://www.coolingpost.com/world-news/absorption-chiller-waste-heat-design-guide/\">Read More...</a></p>\n<p>The post <a href=\"https://www.coolingpost.",
-    "source_type": "news",
-    "source_name": "Cooling Post (欧洲制冷/热泵行业媒体)",
-    "region": "europe",
-    "country": "UK",
-    "language": "en",
-    "engagement": null,
-    "published": "2026-08-04T10:20:10+00:00"
-  },
-  {
     "id": "639ee213fadaf2ec",
     "title": "Alta temperatura e acqua sanitaria in un sistema compatto",
     "link": "https://www.impiantinews.it/gt/prodotti/alta-temperatura-e-acqua-sanitaria-in-un-sistema-compatto/",
@@ -154,6 +167,19 @@
     "language": "it",
     "engagement": null,
     "published": "2026-08-05T06:00:41+00:00"
+  },
+  {
+    "id": "cc9d7a918a81de77",
+    "title": "Desmontando los mitos sobre el aire acondicionado: el coste real de climatizar el hogar en verano, según Daikin",
+    "link": "https://www.caloryfrio.com/aire-acondicionado/aire-acondicionado-domestico/daikin-mitos-aire-acondicionado-coste-real.html",
+    "summary": "<div class=\"K2FeedImage\"><img alt=\"Desmontando los mitos sobre el aire acondicionado: el coste real de climatizar el hogar en verano, según Daikin\" src=\"https://www.caloryfrio.com/media/k2/items/cache/336209429287eb0ce7de7e9603ab3b67_L.jpg\" /></div><div class=\"K2FeedIntroText\"><p>El aire acondicionado ya es un aliado indispensable en muchos hogares españoles; sin embargo, su uso sigue rodeado de f",
+    "source_type": "news",
+    "source_name": "Caloryfrio (西班牙)",
+    "region": "europe",
+    "country": "ES",
+    "language": "es",
+    "engagement": null,
+    "published": "2026-08-06T11:30:14+00:00"
   },
   {
     "id": "b332129609711878",
@@ -206,6 +232,32 @@
     "language": "nl",
     "engagement": null,
     "published": "2026-08-03T05:00:00+00:00"
+  },
+  {
+    "id": "fc6c60479c37ba9d",
+    "title": "HVAC Tech Charged with Manslaughter After Shooting Co-Worker",
+    "link": "https://www.achrnews.com/articles/166525-hvac-tech-charged-with-manslaughter-after-shooting-co-worker",
+    "summary": "An HVAC tech was arrested in Memphis, Tennessee, after shooting his co-worker while repairing an air conditioner.",
+    "source_type": "news",
+    "source_name": "ACHR News (北美HVACR行业权威媒体)",
+    "region": "global",
+    "country": "",
+    "language": "",
+    "engagement": null,
+    "published": "2026-08-06T17:00:00+00:00"
+  },
+  {
+    "id": "b4a14fa80138a548",
+    "title": "EPA's Revised Refrigerant Rule Draws Praise, Criticism, and Lawsuits",
+    "link": "https://www.achrnews.com/articles/166521-epas-revised-refrigerant-rule-draws-praise-criticism-and-lawsuits",
+    "summary": "EPA's revised Technology Transitions rule drew praise from food retailer associations, criticism from HVACR groups, and legal challenges over its refrigerant transition changes.",
+    "source_type": "news",
+    "source_name": "ACHR News (北美HVACR行业权威媒体)",
+    "region": "global",
+    "country": "",
+    "language": "",
+    "engagement": null,
+    "published": "2026-08-06T11:00:00+00:00"
   },
   {
     "id": "faffec7ea3b65db5",
@@ -390,30 +442,17 @@
     "published": "2026-07-31T11:00:00+00:00"
   },
   {
-    "id": "e57e80279ea5bb9b",
-    "title": "Beyond the Wrench: Trey McWilliams on How to Use AI Without Losing the Human Element",
-    "link": "https://www.achrnews.com/articles/166469-beyond-the-wrench-trey-mcwilliams-on-how-to-use-ai-without-losing-the-human-element",
-    "summary": "Automated reporting can help HVAC contractors identify what is broken, but Trey McWilliams says leadership and clarity ultimately determine whether a business improves.",
+    "id": "dce75cc3a757d830",
+    "title": "Building the next generation of HVAC&R: Recruiting where tomorrow’s workforce lives",
+    "link": "https://refrigerationandaircon.co.za/building-the-next-generation-of-hvacr-recruiting-where-tomorrows-workforce-lives/",
+    "summary": "<p>By Eamonn Ryan Finding talented people has become one of the HVAC&amp;R industry’s greatest challenges. Yet before organisations can solve their recruitment problems, they may need to ask a more fundamental question: are they still trying to recruit tomorrow’s workforce using yesterday’s methods?  Problematic is the common expectation that entry-level positions should require significant  [...]",
     "source_type": "news",
-    "source_name": "ACHR News (北美HVACR行业权威媒体)",
-    "region": "global",
-    "country": "",
-    "language": "",
+    "source_name": "RACA Journal (南非)",
+    "region": "africa",
+    "country": "ZA",
+    "language": "en",
     "engagement": null,
-    "published": "2026-07-30T17:00:00+00:00"
-  },
-  {
-    "id": "a896116c6288e08f",
-    "title": "Carrier Sees Residential HVAC Returning to Replacement Mode",
-    "link": "https://www.achrnews.com/articles/166496-carrier-sees-residential-hvac-returning-to-replacement-mode",
-    "summary": "Carrier sees stronger residential and light commercial demand, healthier inventories, and accelerating data center growth heading into the second half of the year.",
-    "source_type": "news",
-    "source_name": "ACHR News (北美HVACR行业权威媒体)",
-    "region": "global",
-    "country": "",
-    "language": "",
-    "engagement": null,
-    "published": "2026-07-30T11:00:00+00:00"
+    "published": "2026-08-06T05:48:23+00:00"
   },
   {
     "id": "85ed33fc255b4b9e",
@@ -505,19 +544,6 @@
     "language": "en",
     "engagement": null,
     "published": "2026-08-01T07:00:58+00:00"
-  },
-  {
-    "id": "0c1c9a9a67c0f577",
-    "title": "FROM PROCESS COOLING TO HEAT RECOVERY",
-    "link": "https://refrigerationandaircon.co.za/from-process-cooling-to-heat-recovery/",
-    "summary": "<p>Eamonn Ryan Process cooling and heat pumps: transforming waste heat into valuable energy  York air cooled heat pump. Supplied by York  As energy efficiency becomes increasingly important, engineers are looking beyond simply removing heat from a process or controlled environment and are exploring ways to recover and reuse that energy. Process cooling and  [...]</p>\n<p>The post <a href=\"https://r",
-    "source_type": "news",
-    "source_name": "RACA Journal (南非)",
-    "region": "africa",
-    "country": "ZA",
-    "language": "en",
-    "engagement": null,
-    "published": "2026-08-01T07:00:57+00:00"
   },
   {
     "id": "126403cd6ecaf8bb",
