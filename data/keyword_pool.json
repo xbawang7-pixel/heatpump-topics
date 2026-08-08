@@ -2986,5 +2986,41 @@
     "sample_title": "Preventive Maintenance Strategies for CO₂ Refrigeration Systems",
     "sample_link": "https://www.achrnews.com/articles/166490-preventive-maintenance-strategies-for-co-refrigeration-systems",
     "keyword_validated": false
+  },
+  "heat pump performance in cold climates throughout the year": {
+    "keyword": "heat pump performance in cold climates throughout the year",
+    "region": "global",
+    "product_category": "heat_pump",
+    "content_format": "blog",
+    "first_seen": "2026-08-08",
+    "last_seen": "2026-08-08",
+    "times_seen": 1,
+    "sample_title": "How Much Of The Year Can A Heat Pump Handle?",
+    "sample_link": "https://www.achrnews.com/articles/166504-how-much-of-the-year-can-a-heat-pump-handle",
+    "keyword_validated": false
+  },
+  "hvac career development and industry trends": {
+    "keyword": "HVAC career development and industry trends",
+    "region": "global",
+    "product_category": "both",
+    "content_format": "blog",
+    "first_seen": "2026-08-08",
+    "last_seen": "2026-08-08",
+    "times_seen": 1,
+    "sample_title": "40 Under 40: A Chance to Shine the Spotlight on HVAC’s Next Generation",
+    "sample_link": "https://www.achrnews.com/blogs/17-opinions/post/166511-40-under-40-a-chance-to-shine-the-spotlight-on-hvacs-next-generation",
+    "keyword_validated": false
+  },
+  "hydronic heat pump retrofit for gas boiler replacement": {
+    "keyword": "hydronic heat pump retrofit for gas boiler replacement",
+    "region": "europe",
+    "product_category": "heat_pump",
+    "content_format": "buyer_faq",
+    "first_seen": "2026-08-08",
+    "last_seen": "2026-08-08",
+    "times_seen": 1,
+    "sample_title": "Retrofit Residential Boilers with Hydronic Heat Pumps",
+    "sample_link": "https://www.achrnews.com/articles/166447-retrofit-residential-boilers-with-hydronic-heat-pumps",
+    "keyword_validated": false
   }
 }
