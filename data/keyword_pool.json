@@ -3022,5 +3022,41 @@
     "sample_title": "Retrofit Residential Boilers with Hydronic Heat Pumps",
     "sample_link": "https://www.achrnews.com/articles/166447-retrofit-residential-boilers-with-hydronic-heat-pumps",
     "keyword_validated": false
+  },
+  "hvac market outlook for contractors and distributors": {
+    "keyword": "HVAC market outlook for contractors and distributors",
+    "region": "global",
+    "product_category": "both",
+    "content_format": "blog",
+    "first_seen": "2026-08-09",
+    "last_seen": "2026-08-09",
+    "times_seen": 1,
+    "sample_title": "Lennox Residential HVAC Sales Fall 7% in Second Quarter",
+    "sample_link": "https://www.achrnews.com/articles/166507-lennox-residential-hvac-sales-fall-7-in-second-quarter",
+    "keyword_validated": false
+  },
+  "selling hvac business to private equity": {
+    "keyword": "selling HVAC business to private equity",
+    "region": "global",
+    "product_category": "both",
+    "content_format": "blog",
+    "first_seen": "2026-08-09",
+    "last_seen": "2026-08-09",
+    "times_seen": 1,
+    "sample_title": "Selling To Private Equity Without Selling Out Your Mission",
+    "sample_link": "https://www.achrnews.com/articles/166505-selling-to-private-equity-without-selling-out-your-mission",
+    "keyword_validated": false
+  },
+  "data center cooling infrastructure installation standards": {
+    "keyword": "data center cooling infrastructure installation standards",
+    "region": "africa",
+    "product_category": "air_conditioner",
+    "content_format": "whitepaper",
+    "first_seen": "2026-08-09",
+    "last_seen": "2026-08-09",
+    "times_seen": 1,
+    "sample_title": "Supporting mission-critical cooling infrastructure",
+    "sample_link": "https://refrigerationandaircon.co.za/supporting-mission-critical-cooling-infrastructure/",
+    "keyword_validated": false
   }
 }
