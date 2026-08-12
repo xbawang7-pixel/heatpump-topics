@@ -8,7 +8,7 @@
     "upvotes": 1,
     "comments": 0,
     "first_seen": "2026-07-13",
-    "last_seen": "2026-07-22"
+    "last_seen": "2026-08-12"
   },
   "f7f09f9f049cf526": {
     "id": "f7f09f9f049cf526",
@@ -19,7 +19,7 @@
     "upvotes": 1,
     "comments": 0,
     "first_seen": "2026-07-13",
-    "last_seen": "2026-07-13"
+    "last_seen": "2026-08-12"
   },
   "0ab67a6a43ac357b": {
     "id": "0ab67a6a43ac357b",
@@ -30,7 +30,7 @@
     "upvotes": 1,
     "comments": 0,
     "first_seen": "2026-07-13",
-    "last_seen": "2026-07-13"
+    "last_seen": "2026-08-12"
   },
   "5cd089dd9f141363": {
     "id": "5cd089dd9f141363",
@@ -18015,7 +18015,7 @@
     "upvotes": 1,
     "comments": 0,
     "first_seen": "2026-07-29",
-    "last_seen": "2026-08-10"
+    "last_seen": "2026-08-12"
   },
   "4afdf976a204f731": {
     "id": "4afdf976a204f731",
@@ -18114,7 +18114,7 @@
     "upvotes": 1,
     "comments": 0,
     "first_seen": "2026-08-05",
-    "last_seen": "2026-08-10"
+    "last_seen": "2026-08-12"
   },
   "dad6a0f55ac98f52": {
     "id": "dad6a0f55ac98f52",
@@ -18224,7 +18224,7 @@
     "upvotes": 449,
     "comments": 0,
     "first_seen": "2026-08-10",
-    "last_seen": "2026-08-10"
+    "last_seen": "2026-08-12"
   },
   "20a6a284257c97da": {
     "id": "20a6a284257c97da",
@@ -22691,5 +22691,159 @@
     "comments": 0,
     "first_seen": "2026-08-10",
     "last_seen": "2026-08-10"
+  },
+  "4149cdc2e4f1d75b": {
+    "id": "4149cdc2e4f1d75b",
+    "title": "New To Heat Pumps",
+    "link": "https://www.reddit.com/r/HeatPump/comments/1smcpq0/new_to_heat_pumps/",
+    "source_name": "r/heatpump",
+    "summary_cn": "用户咨询宾夕法尼亚地区热泵应用情况，问题过于泛泛，缺乏针对性的技术背景，仅属于新手入门咨询。",
+    "upvotes": 2,
+    "comments": 0,
+    "first_seen": "2026-08-12",
+    "last_seen": "2026-08-12"
+  },
+  "7d587d6e48230ea8": {
+    "id": "7d587d6e48230ea8",
+    "title": "My most expensive piece of art",
+    "link": "https://www.reddit.com/r/hvacadvice/comments/1vi0x3k/my_most_expensive_piece_of_art/",
+    "source_name": "r/hvacadvice",
+    "summary_cn": "用户在安装搁板时不慎钻坏冷媒管的吐槽，纯属个人操作失误发泄，没有 HVAC 系统本身的技术信息。",
+    "upvotes": 5794,
+    "comments": 0,
+    "first_seen": "2026-08-12",
+    "last_seen": "2026-08-12"
+  },
+  "a5503fccbd1553bd": {
+    "id": "a5503fccbd1553bd",
+    "title": "AC company ran lines through room instead of in the ceiling...",
+    "link": "https://www.reddit.com/r/hvacadvice/comments/1t2wmo5/ac_company_ran_lines_through_room_instead_of_in/",
+    "source_name": "r/hvacadvice",
+    "summary_cn": "吐槽安装公司管道走向不合理的抱怨帖，主要集中在安装服务体验和装修美观，缺乏技术性分析。",
+    "upvotes": 5638,
+    "comments": 0,
+    "first_seen": "2026-08-12",
+    "last_seen": "2026-08-12"
+  },
+  "75ccd9b929430cf3": {
+    "id": "75ccd9b929430cf3",
+    "title": "Am I a bad grandfather for not spending $8K on air scrubbers and duct cleaning???",
+    "link": "https://www.reddit.com/r/hvacadvice/comments/1n70tlv/am_i_a_bad_grandfather_for_not_spending_8k_on_air/",
+    "source_name": "r/hvacadvice",
+    "summary_cn": "关于是否需要购买高昂空气净化器的家庭矛盾讨论，偏向生活杂谈，缺乏 HVAC 系统的技术价值。",
+    "upvotes": 1804,
+    "comments": 0,
+    "first_seen": "2026-08-12",
+    "last_seen": "2026-08-12"
+  },
+  "df6742ebd7ccb00a": {
+    "id": "df6742ebd7ccb00a",
+    "title": "Thought you all would get a kick out of this.",
+    "link": "https://www.reddit.com/r/hvacadvice/comments/1vjj4ax/thought_you_all_would_get_a_kick_out_of_this/",
+    "source_name": "r/hvacadvice",
+    "summary_cn": "转发奇葩图片，单纯为了调侃或寻求共鸣，不具备任何行业技术交流意义。",
+    "upvotes": 1135,
+    "comments": 0,
+    "first_seen": "2026-08-12",
+    "last_seen": "2026-08-12"
+  },
+  "0338c6d035350559": {
+    "id": "0338c6d035350559",
+    "title": "If it works…",
+    "link": "https://www.reddit.com/r/hvacadvice/comments/1n13qcr/if_it_works/",
+    "source_name": "r/hvacadvice",
+    "summary_cn": "分享非正规的临时制冷方案，这种为了应急而进行的改装不符合安装规范，缺乏技术推广价值。",
+    "upvotes": 1055,
+    "comments": 0,
+    "first_seen": "2026-08-12",
+    "last_seen": "2026-08-12"
+  },
+  "30210d5b1c061011": {
+    "id": "30210d5b1c061011",
+    "title": "I just want to share the ductwork job from the company my landlord hired",
+    "link": "https://www.reddit.com/r/hvacadvice/comments/1nds6qd/i_just_want_to_share_the_ductwork_job_from_the/",
+    "source_name": "r/hvacadvice",
+    "summary_cn": "吐槽房东安装的 flex duct 路径不合理，侧重于抱怨施工审美与空间利用，技术参考性较低。",
+    "upvotes": 1038,
+    "comments": 0,
+    "first_seen": "2026-08-12",
+    "last_seen": "2026-08-12"
+  },
+  "8821085fda7a3b21": {
+    "id": "8821085fda7a3b21",
+    "title": "Got home from work and heard a banging every 10 minutes. I thought it was the neighbors. It was NOT the neighbors",
+    "link": "https://www.reddit.com/r/hvacadvice/comments/1qmakd0/got_home_from_work_and_heard_a_banging_every_10/",
+    "source_name": "r/hvacadvice",
+    "summary_cn": "记录突发暖气故障，重点在于面对暴雪的天气抱怨和应急避寒记录，而非具体的设备技术故障排查。",
+    "upvotes": 1028,
+    "comments": 0,
+    "first_seen": "2026-08-12",
+    "last_seen": "2026-08-12"
+  },
+  "fcd06b4106da74de": {
+    "id": "fcd06b4106da74de",
+    "title": "I was worried my setup wouldn't work,man was I wrong.....",
+    "link": "https://www.reddit.com/r/AirConditioners/comments/1vjbloj/i_was_worried_my_setup_wouldnt_workman_was_i_wrong/",
+    "source_name": "r/AirConditioners",
+    "summary_cn": "分享单管便携式空调效果超出预期，内容较为感性且缺乏具体的设备型号与测试基准，属于产品使用分享。",
+    "upvotes": 57,
+    "comments": 0,
+    "first_seen": "2026-08-12",
+    "last_seen": "2026-08-12"
+  },
+  "e650ff6e34c310b9": {
+    "id": "e650ff6e34c310b9",
+    "title": "I'm joining team macgyver too",
+    "link": "https://www.reddit.com/r/AirConditioners/comments/1vic0lo/im_joining_team_macgyver_too/",
+    "source_name": "r/AirConditioners",
+    "summary_cn": "意大利高温下使用便携空调的体验吐槽，缺乏具体的技术性参数分析，属于生活类叙事。",
+    "upvotes": 21,
+    "comments": 0,
+    "first_seen": "2026-08-12",
+    "last_seen": "2026-08-12"
+  },
+  "7fcfc31d86e85696": {
+    "id": "7fcfc31d86e85696",
+    "title": "How old is this?",
+    "link": "https://www.reddit.com/r/AirConditioners/comments/1vj3k6x/how_old_is_this/",
+    "source_name": "r/AirConditioners",
+    "summary_cn": "仅询问 GE 空调的使用年限，属于缺乏系统信息的简单咨询，未涉及技术探讨。",
+    "upvotes": 9,
+    "comments": 0,
+    "first_seen": "2026-08-12",
+    "last_seen": "2026-08-12"
+  },
+  "af282b01af93ceea": {
+    "id": "af282b01af93ceea",
+    "title": "First time getting Window AC",
+    "link": "https://www.reddit.com/r/AirConditioners/comments/1vjxwwl/first_time_getting_window_ac/",
+    "source_name": "r/AirConditioners",
+    "summary_cn": "作为新手首次购买窗口空调的咨询，问题过于基础且缺乏特定的环境背景或技术难度。",
+    "upvotes": 6,
+    "comments": 0,
+    "first_seen": "2026-08-12",
+    "last_seen": "2026-08-12"
+  },
+  "6fdf7b1b06922a47": {
+    "id": "6fdf7b1b06922a47",
+    "title": "Just why?",
+    "link": "https://www.reddit.com/r/AirConditioners/comments/1vivnz3/just_why/",
+    "source_name": "r/AirConditioners",
+    "summary_cn": "单纯吐槽机组无排水孔的设计，未深入探讨排水结构合理性，属于情绪化抱怨。",
+    "upvotes": 6,
+    "comments": 0,
+    "first_seen": "2026-08-12",
+    "last_seen": "2026-08-12"
+  },
+  "ec91c860de7b4c03": {
+    "id": "ec91c860de7b4c03",
+    "title": "In case any of you have a broken air conditioner, I'm buying—any type.",
+    "link": "https://www.reddit.com/r/AirConditioners/comments/1visdn2/in_case_any_of_you_have_a_broken_air_conditioner/",
+    "source_name": "r/AirConditioners",
+    "summary_cn": "个人收购废旧空调的征集贴，属于单纯的个人商业行为，不涉及热泵行业的专业知识分享。",
+    "upvotes": 5,
+    "comments": 0,
+    "first_seen": "2026-08-12",
+    "last_seen": "2026-08-12"
   }
 }
