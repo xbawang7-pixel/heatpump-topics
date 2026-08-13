@@ -3730,5 +3730,17 @@
     "sample_title": "Contractor disassembled furnace and left trying to make a hard sale? Is this normal?",
     "sample_link": "https://www.reddit.com/r/hvacadvice/comments/1qpl3bv/contractor_disassembled_furnace_and_left_trying/",
     "keyword_validated": false
+  },
+  "smart hvac control systems for contractors": {
+    "keyword": "smart HVAC control systems for contractors",
+    "region": "global",
+    "product_category": "both",
+    "content_format": "buyer_faq",
+    "first_seen": "2026-08-13",
+    "last_seen": "2026-08-13",
+    "times_seen": 1,
+    "sample_title": "Sofia AI Thermostat Keeps Contractors Connected",
+    "sample_link": "https://www.achrnews.com/articles/166532-sofia-ai-thermostat-keeps-contractors-connected",
+    "keyword_validated": false
   }
 }
