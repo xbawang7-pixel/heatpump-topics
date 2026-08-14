@@ -3742,5 +3742,17 @@
     "sample_title": "Sofia AI Thermostat Keeps Contractors Connected",
     "sample_link": "https://www.achrnews.com/articles/166532-sofia-ai-thermostat-keeps-contractors-connected",
     "keyword_validated": false
+  },
+  "hvac system optimization for commercial kitchens": {
+    "keyword": "HVAC system optimization for commercial kitchens",
+    "region": "global",
+    "product_category": "air_conditioner",
+    "content_format": "buyer_faq",
+    "first_seen": "2026-08-14",
+    "last_seen": "2026-08-14",
+    "times_seen": 1,
+    "sample_title": "The Recirculation Trap: What QSR Kitchens Lose by Choosing Short-Term Comfort Over Balance",
+    "sample_link": "https://www.achrnews.com/articles/166534-the-recirculation-trap-what-qsr-kitchens-lose-by-choosing-short-term-comfort-over-balance",
+    "keyword_validated": false
   }
 }

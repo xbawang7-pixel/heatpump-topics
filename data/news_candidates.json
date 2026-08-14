@@ -1,5 +1,18 @@
 [
   {
+    "id": "1b4e8d490df7f52b",
+    "title": "The coolest thing about heat pumps",
+    "link": "https://ehpa.org/news-and-resources/news/the-coolest-thing-about-heat-pumps/",
+    "summary": "<p>Europe is getting hotter, and cooling is no longer a luxury. As heatwaves become more frequent and intense, more households are looking for ways to stay comfortable all year round. Heat pumps are part of the answer. Already installed in around 13% of households across 21 European countries, there are now more than 29 million domestic heat pumps in [&#8230;]</p>\n<p>The post <a href=\"https://ehpa",
+    "source_type": "news",
+    "source_name": "EHPA 欧洲热泵协会",
+    "region": "europe",
+    "country": "EU",
+    "language": "en",
+    "engagement": null,
+    "published": "2026-08-13T04:40:25+00:00"
+  },
+  {
     "id": "0f1e3b25b4e2c11a",
     "title": "Italy’s €9.3 billion for the green transition",
     "link": "https://ehpa.org/news-and-resources/policy/italys-e9-3-billion-plan-for-the-green-transition/",
@@ -13,17 +26,56 @@
     "published": "2026-08-10T09:29:56+00:00"
   },
   {
-    "id": "e6cde0c55508889c",
-    "title": "Why heat pump sales are growing again",
-    "link": "https://ehpa.org/news-and-resources/news/why-heat-pump-sales-are-growing-again/",
-    "summary": "<p>After two years of declining sales, Europe&#8217;s heat pump market is back on the rise. In 2025, around 2.9 million domestic heat pumps were sold across 21 European countries, a 13% increase compared to 2024. This is because many governments started lowering taxes on electricity and on heat pumps. Heat pump sales surged in 2022 as gas prices [&#8230;]</p>\n<p>The post <a href=\"https://ehpa.org/",
+    "id": "91002100cb58e7cc",
+    "title": "Daikin adds Sustainable Homes Centre in East Ham",
+    "link": "https://www.coolingpost.com/uk-news/daikin-adds-sustainable-homes-centre-in-east-ham/",
+    "summary": "<p>UK: Daikin has opened a further Sustainable Homes Centre at the East Ham, London, premises of London Heating &#038; Plumbing Supplies....</p>\n<p class=\"text-end\"><a class=\"btn btn-outline-secondary picostrap-read-more-link mt-3\" href=\"https://www.coolingpost.com/uk-news/daikin-adds-sustainable-homes-centre-in-east-ham/\">Read More...</a></p>\n<p>The post <a href=\"https://www.coolingpost.com/uk-ne",
     "source_type": "news",
-    "source_name": "EHPA 欧洲热泵协会",
+    "source_name": "Cooling Post (欧洲制冷/热泵行业媒体)",
     "region": "europe",
-    "country": "EU",
+    "country": "UK",
     "language": "en",
     "engagement": null,
-    "published": "2026-08-06T04:21:40+00:00"
+    "published": "2026-08-13T16:24:01+00:00"
+  },
+  {
+    "id": "93566615577fd6d2",
+    "title": "IOR briefs on retrofitting doors",
+    "link": "https://www.coolingpost.com/uk-news/ior-briefs-on-retrofitting-doors/",
+    "summary": "<p>UK: A new technology brief on retrofitting doors to open-fronted display cabinets is now available for free download from the IOR website....</p>\n<p class=\"text-end\"><a class=\"btn btn-outline-secondary picostrap-read-more-link mt-3\" href=\"https://www.coolingpost.com/uk-news/ior-briefs-on-retrofitting-doors/\">Read More...</a></p>\n<p>The post <a href=\"https://www.coolingpost.com/uk-news/ior-brief",
+    "source_type": "news",
+    "source_name": "Cooling Post (欧洲制冷/热泵行业媒体)",
+    "region": "europe",
+    "country": "UK",
+    "language": "en",
+    "engagement": null,
+    "published": "2026-08-13T16:14:45+00:00"
+  },
+  {
+    "id": "001fd9ed5d43f3d0",
+    "title": "Danish researchers rethink ejector design",
+    "link": "https://www.coolingpost.com/world-news/danish-researchers-rethink-ejector-design/",
+    "summary": "<p>DENMARK: Researchers at the University of Southern Denmark (SDU) claim to have developed a component that both improves efficiency and provides a completely new way of optimising thermal energy systems....</p>\n<p class=\"text-end\"><a class=\"btn btn-outline-secondary picostrap-read-more-link mt-3\" href=\"https://www.coolingpost.com/world-news/danish-researchers-rethink-ejector-design/\">Read More..",
+    "source_type": "news",
+    "source_name": "Cooling Post (欧洲制冷/热泵行业媒体)",
+    "region": "europe",
+    "country": "UK",
+    "language": "en",
+    "engagement": null,
+    "published": "2026-08-13T16:01:23+00:00"
+  },
+  {
+    "id": "3ea8627e47b6a0a0",
+    "title": "Davidsson assumes role as acting Beijer Ref CEO",
+    "link": "https://www.coolingpost.com/world-news/davidsson-assumes-role-as-acting-beijer-ref-ceo/",
+    "summary": "<p>SWEDEN: Wholesaler Beijer Ref has appointed Joel Davidsson as acting CEO and president following the recent announcement that Christopher Norbye would be stepping down from the role....</p>\n<p class=\"text-end\"><a class=\"btn btn-outline-secondary picostrap-read-more-link mt-3\" href=\"https://www.coolingpost.com/world-news/davidsson-assumes-role-as-acting-beijer-ref-ceo/\">Read More...</a></p>\n<p>T",
+    "source_type": "news",
+    "source_name": "Cooling Post (欧洲制冷/热泵行业媒体)",
+    "region": "europe",
+    "country": "UK",
+    "language": "en",
+    "engagement": null,
+    "published": "2026-08-13T07:13:09+00:00"
   },
   {
     "id": "4b7e5061b9437027",
@@ -81,7 +133,7 @@
     "id": "d72896a96e8ab394",
     "title": "BSRIA produces guide to the building regs",
     "link": "https://www.coolingpost.com/uk-news/bsria-produces-guide-to-the-building-regs/",
-    "summary": "<p>UK: BSRIA has been produced a new guide to help building services engineers, designers and contractors navigate the latest major changes to the Building Regulations....</p>\n<p class=\"text-end\"><a class=\"btn btn-outline-secondary picostrap-read-more-link mt-3\" href=\"https://www.coolingpost.com/uk-news/bsria-produces-guide-to-the-building-regs/\">Read More...</a></p>\n<p>The post <a href=\"https://w",
+    "summary": "<p>UK: BSRIA has produced a new guide to help building services engineers, designers and contractors navigate the latest major changes to the Building Regulations....</p>\n<p class=\"text-end\"><a class=\"btn btn-outline-secondary picostrap-read-more-link mt-3\" href=\"https://www.coolingpost.com/uk-news/bsria-produces-guide-to-the-building-regs/\">Read More...</a></p>\n<p>The post <a href=\"https://www.co",
     "source_type": "news",
     "source_name": "Cooling Post (欧洲制冷/热泵行业媒体)",
     "region": "europe",
@@ -94,7 +146,7 @@
     "id": "f1310b7a22a2a131",
     "title": "Tefcold sells majority stake to nordic investor",
     "link": "https://www.coolingpost.com/world-news/tefcold-sells-majority-stake-to-nordic-investor/",
-    "summary": "<p>DENMARK: Commercial refrigeration company Tefcold has sold a majority stake in its business to Nordic investment company Polaris....</p>\n<p class=\"text-end\"><a class=\"btn btn-outline-secondary picostrap-read-more-link mt-3\" href=\"https://www.coolingpost.com/world-news/tefcold-sells-majority-stake-to-nordic-investor/\">Read More...</a></p>\n<p>The post <a href=\"https://www.coolingpost.com/world-ne",
+    "summary": "<p>DENMARK: Commercial refrigeration company Tefcold has sold a majority stake in its business to nordic investment company Polaris....</p>\n<p class=\"text-end\"><a class=\"btn btn-outline-secondary picostrap-read-more-link mt-3\" href=\"https://www.coolingpost.com/world-news/tefcold-sells-majority-stake-to-nordic-investor/\">Read More...</a></p>\n<p>The post <a href=\"https://www.coolingpost.com/world-ne",
     "source_type": "news",
     "source_name": "Cooling Post (欧洲制冷/热泵行业媒体)",
     "region": "europe",
@@ -104,56 +156,17 @@
     "published": "2026-08-12T10:05:47+00:00"
   },
   {
-    "id": "07fc1afea9e3e6e9",
-    "title": "Carrier Transicold supports transcritical CO2 research",
-    "link": "https://www.coolingpost.com/training/carrier-transicold-supports-transcritical-co2-research/",
-    "summary": "<p>GERMANY: Carrier Transicold is donating two NaturaLine container refrigeration units to Technische Universität Berlin (TU Berlin) to support the university’s research into transcritical CO2 refrigeration technology. ...</p>\n<p class=\"text-end\"><a class=\"btn btn-outline-secondary picostrap-read-more-link mt-3\" href=\"https://www.coolingpost.com/training/carrier-transicold-supports-transcritical-c",
+    "id": "cbe733d08951773c",
+    "title": "Un unico sistema per climatizzazione canalizzata, impianti radianti e fan coil",
+    "link": "https://www.impiantinews.it/rci/prodotti/un-unico-sistema-per-climatizzazione-canalizzata-impianti-radianti-e-fan-coil/",
+    "summary": "<p>La crescente diffusione di impianti ibridi richiede sistemi di regolazione sempre più evoluti, in grado di gestire tecnologie differenti attraverso un&#8217;unica logica di controllo. Per rispondere a questa esigenza, Tecnosystemi (Vittorio Veneto, TV) amplia le funzionalità del sistema di zonificazione ProAir con il Modulo Relè per impianti radianti e fan coil. Integrato con le centraline dell",
     "source_type": "news",
-    "source_name": "Cooling Post (欧洲制冷/热泵行业媒体)",
+    "source_name": "Impianti News (意大利)",
     "region": "europe",
-    "country": "UK",
-    "language": "en",
+    "country": "IT",
+    "language": "it",
     "engagement": null,
-    "published": "2026-08-11T09:31:49+00:00"
-  },
-  {
-    "id": "e2a34fca60d0760c",
-    "title": "Danfoss adds DX/regulating valve ICFL 20",
-    "link": "https://www.coolingpost.com/products/danfoss-adds-dx-regulating-valve-icfl-20/",
-    "summary": "<p>DENMARK: The new Danfoss direct expansion/regulating valve ICFL 20 is optimised for ammonia and CO₂ control in industrial refrigeration systems. ...</p>\n<p class=\"text-end\"><a class=\"btn btn-outline-secondary picostrap-read-more-link mt-3\" href=\"https://www.coolingpost.com/products/danfoss-adds-dx-regulating-valve-icfl-20/\">Read More...</a></p>\n<p>The post <a href=\"https://www.coolingpost.com/p",
-    "source_type": "news",
-    "source_name": "Cooling Post (欧洲制冷/热泵行业媒体)",
-    "region": "europe",
-    "country": "UK",
-    "language": "en",
-    "engagement": null,
-    "published": "2026-08-11T09:01:36+00:00"
-  },
-  {
-    "id": "4177b32493da0636",
-    "title": "Carrier exits Turkish JV to assume its own distribution",
-    "link": "https://www.coolingpost.com/world-news/carrier-exits-turkish-jv-to-assume-its-own-distribution/",
-    "summary": "<p>TÜRKIYE: Carrier is to sell its minority interest in the Alarko Carrier joint venture to Alarko Holding and assume distribution of its own products in the country....</p>\n<p class=\"text-end\"><a class=\"btn btn-outline-secondary picostrap-read-more-link mt-3\" href=\"https://www.coolingpost.com/world-news/carrier-exits-turkish-jv-to-assume-its-own-distribution/\">Read More...</a></p>\n<p>The post <a ",
-    "source_type": "news",
-    "source_name": "Cooling Post (欧洲制冷/热泵行业媒体)",
-    "region": "europe",
-    "country": "UK",
-    "language": "en",
-    "engagement": null,
-    "published": "2026-08-10T18:50:32+00:00"
-  },
-  {
-    "id": "386e8d8faa219e23",
-    "title": "DiversiTech moves to new 6,500m2 facility",
-    "link": "https://www.coolingpost.com/uk-news/diversitech-moves-to-new-6500m2-facility/",
-    "summary": "<p>UK: DiversiTech International has now officially begun operating from its new purpose-built head office and distribution centre in Nottingham....</p>\n<p class=\"text-end\"><a class=\"btn btn-outline-secondary picostrap-read-more-link mt-3\" href=\"https://www.coolingpost.com/uk-news/diversitech-moves-to-new-6500m2-facility/\">Read More...</a></p>\n<p>The post <a href=\"https://www.coolingpost.com/uk-ne",
-    "source_type": "news",
-    "source_name": "Cooling Post (欧洲制冷/热泵行业媒体)",
-    "region": "europe",
-    "country": "UK",
-    "language": "en",
-    "engagement": null,
-    "published": "2026-08-10T09:10:31+00:00"
+    "published": "2026-08-13T13:45:24+00:00"
   },
   {
     "id": "a7cd99b6c2949fda",
@@ -169,17 +182,17 @@
     "published": "2026-08-10T06:30:22+00:00"
   },
   {
-    "id": "73476220de9fa1bb",
-    "title": "Gree, gamma VRF versatile e affidabile per le esigenze di tutti i progetti",
-    "link": "https://www.impiantinews.it/rci/prodotti/gree-gamma-vrf-versatile-e-affidabile-per-le-esigenze-di-tutti-i-progetti/",
-    "summary": "<p>Gree, azienda globale nella climatizzazione, distribuita in oltre 190 paesi in tutto il mondo, offre un’ampia gamma di soluzioni tecnologicamente efficaci per il comfort climatico di edifici e l’efficientamento energetico. Grazie a una capacità produttiva che impiega sistemi di ultima generazione, all’avanguardia nell’ottica di offrire prodotti di alta qualità, e con oltre 110.000 brevetti e&#8",
+    "id": "f33ece9b52ee2b79",
+    "title": "El calor impulsa la demanda y el debate del mercado español de aire acondicionado en 2026",
+    "link": "https://www.caloryfrio.com/aire-acondicionado/aire-acondicionado-domestico/calor-impulsa-demanda-debate-mercado-espanol-aire-acondicionado-2026.html",
+    "summary": "<div class=\"K2FeedImage\"><img alt=\"El calor impulsa la demanda y el debate del mercado español de aire acondicionado en 2026\" src=\"https://www.caloryfrio.com/media/k2/items/cache/0cdda3647ffc2c760f33a8b40e2f7ec2_L.jpg\" /></div><div class=\"K2FeedIntroText\"><p>El mercado español del aire acondicionado llegó al verano de 2026 tras una primavera y un mes de junio excepcionalmente cálidos. Este artícul",
     "source_type": "news",
-    "source_name": "Impianti News (意大利)",
+    "source_name": "Caloryfrio (西班牙)",
     "region": "europe",
-    "country": "IT",
-    "language": "it",
+    "country": "ES",
+    "language": "es",
     "engagement": null,
-    "published": "2026-08-09T14:55:48+00:00"
+    "published": "2026-08-13T07:40:58+00:00"
   },
   {
     "id": "6d32eabb011eafca",
@@ -221,19 +234,6 @@
     "published": "2026-08-10T12:24:16+00:00"
   },
   {
-    "id": "cc9d7a918a81de77",
-    "title": "Desmontando los mitos sobre el aire acondicionado: el coste real de climatizar el hogar en verano, según Daikin",
-    "link": "https://www.caloryfrio.com/aire-acondicionado/aire-acondicionado-domestico/daikin-mitos-aire-acondicionado-coste-real.html",
-    "summary": "<div class=\"K2FeedImage\"><img alt=\"Desmontando los mitos sobre el aire acondicionado: el coste real de climatizar el hogar en verano, según Daikin\" src=\"https://www.caloryfrio.com/media/k2/items/cache/336209429287eb0ce7de7e9603ab3b67_L.jpg\" /></div><div class=\"K2FeedIntroText\"><p>El aire acondicionado ya es un aliado indispensable en muchos hogares españoles; sin embargo, su uso sigue rodeado de f",
-    "source_type": "news",
-    "source_name": "Caloryfrio (西班牙)",
-    "region": "europe",
-    "country": "ES",
-    "language": "es",
-    "engagement": null,
-    "published": "2026-08-06T11:30:14+00:00"
-  },
-  {
     "id": "63e58c81d426773e",
     "title": "Hydrobox laat grondgebonden warmtepomp slimmer presteren",
     "link": "https://www.installatie.nl/techniek/warmtepompen/hydrobox-laat-grondgebonden-warmtepomp-slimmer-presteren/",
@@ -258,6 +258,45 @@
     "language": "fi",
     "engagement": null,
     "published": "2026-08-11T09:06:09+00:00"
+  },
+  {
+    "id": "f4b249f6d9ff7b87",
+    "title": "Longer Heat Waves, Bigger HVAC Challenges",
+    "link": "https://www.achrnews.com/articles/166546-longer-heat-waves-bigger-hvac-challenges",
+    "summary": "As homeowners work to stay cool in extreme heat, HVAC contractors face a surge in service calls.",
+    "source_type": "news",
+    "source_name": "ACHR News (北美HVACR行业权威媒体)",
+    "region": "global",
+    "country": "",
+    "language": "",
+    "engagement": null,
+    "published": "2026-08-13T17:00:00+00:00"
+  },
+  {
+    "id": "8b066f044ed1c932",
+    "title": "HARDI Backs Changes to U.S.-Mexico-Canada Trade Pact",
+    "link": "https://www.achrnews.com/articles/166553-hardi-backs-changes-to-us-mexico-canada-trade-pact",
+    "summary": "The USMCA, wrote Alex Ayers, HARDI's vice president of government affairs, needs protections against the flow of counterfeit and mislabeled refrigerants through the supply chain, and needs to address issues that could allow components and finished products to be routed through other countries in order to skirt trade rules.",
+    "source_type": "news",
+    "source_name": "ACHR News (北美HVACR行业权威媒体)",
+    "region": "global",
+    "country": "",
+    "language": "",
+    "engagement": null,
+    "published": "2026-08-13T16:00:00+00:00"
+  },
+  {
+    "id": "53e5d671b3fde2e8",
+    "title": "Why Some HVAC Contractors Are Rejecting Private Equity Offers",
+    "link": "https://www.achrnews.com/articles/166540-why-some-hvac-contractors-are-rejecting-private-equity-offers",
+    "summary": "As the HVAC industry continues to consolidate, contractors are taking a hard look at whether they should accept an offer from private equity firms or remain independent.",
+    "source_type": "news",
+    "source_name": "ACHR News (北美HVACR行业权威媒体)",
+    "region": "global",
+    "country": "",
+    "language": "",
+    "engagement": null,
+    "published": "2026-08-13T11:00:00+00:00"
   },
   {
     "id": "b434fb4de391ba73",
@@ -429,32 +468,6 @@
     "published": "2026-08-07T11:00:00+00:00"
   },
   {
-    "id": "fc6c60479c37ba9d",
-    "title": "HVAC Tech Charged with Manslaughter After Shooting Co-Worker",
-    "link": "https://www.achrnews.com/articles/166525-hvac-tech-charged-with-manslaughter-after-shooting-co-worker",
-    "summary": "An HVAC tech was arrested in Memphis, Tennessee, after shooting his co-worker while repairing an air conditioner.",
-    "source_type": "news",
-    "source_name": "ACHR News (北美HVACR行业权威媒体)",
-    "region": "global",
-    "country": "",
-    "language": "",
-    "engagement": null,
-    "published": "2026-08-06T17:00:00+00:00"
-  },
-  {
-    "id": "b4a14fa80138a548",
-    "title": "EPA's Revised Refrigerant Rule Draws Praise, Criticism, and Lawsuits",
-    "link": "https://www.achrnews.com/articles/166521-epas-revised-refrigerant-rule-draws-praise-criticism-and-lawsuits",
-    "summary": "EPA's revised Technology Transitions rule drew praise from food retailer associations, criticism from HVACR groups, and legal challenges over its refrigerant transition changes.",
-    "source_type": "news",
-    "source_name": "ACHR News (北美HVACR行业权威媒体)",
-    "region": "global",
-    "country": "",
-    "language": "",
-    "engagement": null,
-    "published": "2026-08-06T11:00:00+00:00"
-  },
-  {
     "id": "b3ae5cd33226fcf0",
     "title": "Global HVACR Women Week builds lasting international connections",
     "link": "https://refrigerationandaircon.co.za/global-hvacr-women-week-builds-lasting-international-connections/",
@@ -507,16 +520,29 @@
     "published": "2026-08-07T05:59:28+00:00"
   },
   {
-    "id": "dce75cc3a757d830",
-    "title": "Building the next generation of HVAC&R: Recruiting where tomorrow’s workforce lives",
-    "link": "https://refrigerationandaircon.co.za/building-the-next-generation-of-hvacr-recruiting-where-tomorrows-workforce-lives/",
-    "summary": "<p>By Eamonn Ryan Finding talented people has become one of the HVAC&amp;R industry’s greatest challenges. Yet before organisations can solve their recruitment problems, they may need to ask a more fundamental question: are they still trying to recruit tomorrow’s workforce using yesterday’s methods?  Problematic is the common expectation that entry-level positions should require significant  [...]",
+    "id": "fbf3c37ade3e09ca",
+    "title": "Reforma Tributária entra na fase prática: o que o setor HVAC-R precisa fazer agora",
+    "link": "https://revistadofrio.com.br/reforma-tributaria-entra-na-fase-pratica-o-que-o-setor-hvac-r-precisa-fazer-agora/",
+    "summary": "Empresas de refrigeração e climatização devem aproveitar 2026 para adaptar sistemas, revisar preços e contratos e avaliar os impactos da CBS e do IBS.",
     "source_type": "news",
-    "source_name": "RACA Journal (南非)",
-    "region": "africa",
-    "country": "ZA",
-    "language": "en",
+    "source_name": "Revista do Frio (巴西)",
+    "region": "south_america",
+    "country": "BR",
+    "language": "pt",
     "engagement": null,
-    "published": "2026-08-06T05:48:23+00:00"
+    "published": "2026-08-11T16:24:23+00:00"
+  },
+  {
+    "id": "3cdef25448acf1e1",
+    "title": "GENERAL HVAC Solutions anuncia encerramento gradual das operações no Brasil",
+    "link": "https://revistadofrio.com.br/general-hvac-solutions-anuncia-encerramento-gradual-das-operacoes-no-brasil/",
+    "summary": "Antiga Fujitsu General do Brasil manterá suporte de pós-venda, garantia, manutenção e fornecimento de peças durante o processo de transição",
+    "source_type": "news",
+    "source_name": "Revista do Frio (巴西)",
+    "region": "south_america",
+    "country": "BR",
+    "language": "pt",
+    "engagement": null,
+    "published": "2026-08-10T16:40:21+00:00"
   }
 ]

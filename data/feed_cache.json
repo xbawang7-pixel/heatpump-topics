@@ -48,8 +48,8 @@
     "method": "not_found"
   },
   "https://portpc.pl/": {
-    "feed_url": "https://portpc.pl/feed/",
-    "method": "html_link_tag"
+    "feed_url": "https://portpc.pl/feed",
+    "method": "common_path:feed"
   },
   "https://www.sulpu.fi/": {
     "feed_url": "https://www.sulpu.fi/feed/",
@@ -88,8 +88,8 @@
     "method": "not_found"
   },
   "https://www.revistadofrio.com.br/": {
-    "feed_url": null,
-    "method": "not_found"
+    "feed_url": "https://revistadofrio.com.br/feed/",
+    "method": "html_link_tag"
   },
   "https://www.refriamericas.com/": {
     "feed_url": null,
