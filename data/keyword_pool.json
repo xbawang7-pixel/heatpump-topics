@@ -3754,5 +3754,41 @@
     "sample_title": "The Recirculation Trap: What QSR Kitchens Lose by Choosing Short-Term Comfort Over Balance",
     "sample_link": "https://www.achrnews.com/articles/166534-the-recirculation-trap-what-qsr-kitchens-lose-by-choosing-short-term-comfort-over-balance",
     "keyword_validated": false
+  },
+  "heat pump installation subsidies italy": {
+    "keyword": "heat pump installation subsidies Italy",
+    "region": "europe",
+    "product_category": "heat_pump",
+    "content_format": "buyer_faq",
+    "first_seen": "2026-08-15",
+    "last_seen": "2026-08-15",
+    "times_seen": 1,
+    "sample_title": "Italy’s €9.3 billion for the green transition",
+    "sample_link": "https://ehpa.org/news-and-resources/policy/italys-e9-3-billion-plan-for-the-green-transition/",
+    "keyword_validated": false
+  },
+  "high-temperature water-cooled heat pump performance": {
+    "keyword": "high-temperature water-cooled heat pump performance",
+    "region": "europe",
+    "product_category": "heat_pump",
+    "content_format": "comparison",
+    "first_seen": "2026-08-15",
+    "last_seen": "2026-08-15",
+    "times_seen": 1,
+    "sample_title": "Acqua ad alta temperatura con efficienza stagionale elevata",
+    "sample_link": "https://www.impiantinews.it/gt/prodotti/scheda-galletti-booster-wbe-acqua-ad-alta-temperatura-con-efficienza-stagionale-elevata/",
+    "keyword_validated": false
+  },
+  "hvac system installation and troubleshooting guide": {
+    "keyword": "HVAC system installation and troubleshooting guide",
+    "region": "africa",
+    "product_category": "both",
+    "content_format": "blog",
+    "first_seen": "2026-08-15",
+    "last_seen": "2026-08-15",
+    "times_seen": 1,
+    "sample_title": "Why every voice matters in HVACR",
+    "sample_link": "https://refrigerationandaircon.co.za/why-every-voice-matters-in-hvacr/",
+    "keyword_validated": false
   }
 }
