@@ -3790,5 +3790,101 @@
     "sample_title": "Why every voice matters in HVACR",
     "sample_link": "https://refrigerationandaircon.co.za/why-every-voice-matters-in-hvacr/",
     "keyword_validated": false
+  },
+  "hvac system refrigerant pressure maintenance guide": {
+    "keyword": "HVAC system refrigerant pressure maintenance guide",
+    "region": "europe",
+    "product_category": "both",
+    "content_format": "buyer_faq",
+    "first_seen": "2026-08-16",
+    "last_seen": "2026-08-16",
+    "times_seen": 1,
+    "sample_title": "Mantener las presiones correctas en los equipos de climatización",
+    "sample_link": "https://www.caloryfrio.com/aire-acondicionado/aire-instalaciones-componentes/presiones-correctas-equipos-climatizacion.html",
+    "keyword_validated": false
+  },
+  "medium static pressure duct unit benefits": {
+    "keyword": "medium static pressure duct unit benefits",
+    "region": "europe",
+    "product_category": "air_conditioner",
+    "content_format": "buyer_faq",
+    "first_seen": "2026-08-16",
+    "last_seen": "2026-08-16",
+    "times_seen": 1,
+    "sample_title": "LG amplía su gama de climatización con una nueva unidad de conductos de presión estática media para Multi V",
+    "sample_link": "https://www.caloryfrio.com/aire-acondicionado/aire-acondicionado-domestico/lg-amplia-gama-climatizacion-nueva-unidad-conductos-presion-estatica-media-para-multi-v.html",
+    "keyword_validated": false
+  },
+  "why heat pump market is growing in europe": {
+    "keyword": "why heat pump market is growing in Europe",
+    "region": "europe",
+    "product_category": "heat_pump",
+    "content_format": "market_trends",
+    "first_seen": "2026-08-16",
+    "last_seen": "2026-08-16",
+    "times_seen": 1,
+    "sample_title": "Heat Pump Sales Show Strong Growth in Finland – Up 63% in the First Half of the Year",
+    "sample_link": "https://www.sulpu.fi/5132-2/",
+    "keyword_validated": false
+  },
+  "selecting a reliable hvac distributor partner": {
+    "keyword": "selecting a reliable HVAC distributor partner",
+    "region": "global",
+    "product_category": "both",
+    "content_format": "buyer_faq",
+    "first_seen": "2026-08-16",
+    "last_seen": "2026-08-16",
+    "times_seen": 1,
+    "sample_title": "Home Depot Subsidiary to Acquire Carrier Distributor",
+    "sample_link": "https://www.achrnews.com/articles/166541-home-depot-subsidiary-to-acquire-carrier-distributor",
+    "keyword_validated": false
+  },
+  "impact of retail giants on hvac industry": {
+    "keyword": "impact of retail giants on HVAC industry",
+    "region": "global",
+    "product_category": "both",
+    "content_format": "blog",
+    "first_seen": "2026-08-16",
+    "last_seen": "2026-08-16",
+    "times_seen": 1,
+    "sample_title": "Will Big-Box Ownership Change HVAC Distribution? Contractors Weigh In",
+    "sample_link": "https://www.achrnews.com/articles/166539-will-big-box-ownership-change-hvac-distribution-contractors-weigh-in",
+    "keyword_validated": false
+  },
+  "preventing hvac unit theft security tips": {
+    "keyword": "preventing HVAC unit theft security tips",
+    "region": "global",
+    "product_category": "air_conditioner",
+    "content_format": "buyer_faq",
+    "first_seen": "2026-08-16",
+    "last_seen": "2026-08-16",
+    "times_seen": 1,
+    "sample_title": "Brazen Atlanta Copper Bandits Fueling HVAC Theft Surge, Sometimes at Gunpoint",
+    "sample_link": "https://www.achrnews.com/articles/166538-brazen-atlanta-copper-bandits-fueling-hvac-theft-surge-sometimes-at-gunpoint",
+    "keyword_validated": false
+  },
+  "benefits of global hvac engineering collaboration": {
+    "keyword": "benefits of global HVAC engineering collaboration",
+    "region": "global",
+    "product_category": "both",
+    "content_format": "blog",
+    "first_seen": "2026-08-16",
+    "last_seen": "2026-08-16",
+    "times_seen": 1,
+    "sample_title": "One week, one global HVACR community",
+    "sample_link": "https://refrigerationandaircon.co.za/one-week-one-global-hvacr-community/",
+    "keyword_validated": false
+  },
+  "after-sales support for hvac brands in brazil": {
+    "keyword": "after-sales support for HVAC brands in Brazil",
+    "region": "south_america",
+    "product_category": "both",
+    "content_format": "buyer_faq",
+    "first_seen": "2026-08-16",
+    "last_seen": "2026-08-16",
+    "times_seen": 1,
+    "sample_title": "GENERAL HVAC Solutions anuncia encerramento gradual das operações no Brasil",
+    "sample_link": "https://revistadofrio.com.br/general-hvac-solutions-anuncia-encerramento-gradual-das-operacoes-no-brasil/",
+    "keyword_validated": false
   }
 }

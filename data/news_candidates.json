@@ -26,6 +26,19 @@
     "published": "2026-08-10T09:29:56+00:00"
   },
   {
+    "id": "f924ee1350d43c82",
+    "title": "Greek customs seize 1,296 refrigerant cylinders",
+    "link": "https://www.coolingpost.com/world-news/greek-customs-seize-1296-refrigerant-cylinders/",
+    "summary": "<p>GREECE: Refrigerant valued at over €1m was seized by Greek customs officers in two separate incidents last week....</p>\n<p class=\"text-end\"><a class=\"btn btn-outline-secondary picostrap-read-more-link mt-3\" href=\"https://www.coolingpost.com/world-news/greek-customs-seize-1296-refrigerant-cylinders/\">Read More...</a></p>\n<p>The post <a href=\"https://www.coolingpost.com/world-news/greek-customs-s",
+    "source_type": "news",
+    "source_name": "Cooling Post (欧洲制冷/热泵行业媒体)",
+    "region": "europe",
+    "country": "UK",
+    "language": "en",
+    "engagement": null,
+    "published": "2026-08-15T05:46:50+00:00"
+  },
+  {
     "id": "0bcbc4496e066635",
     "title": "FläktGroup opens new production plant in India",
     "link": "https://www.coolingpost.com/world-news/flaktgroup-opens-new-production-plant-in-india/",
@@ -143,19 +156,6 @@
     "published": "2026-08-12T17:21:40+00:00"
   },
   {
-    "id": "d72896a96e8ab394",
-    "title": "BSRIA produces guide to the building regs",
-    "link": "https://www.coolingpost.com/uk-news/bsria-produces-guide-to-the-building-regs/",
-    "summary": "<p>UK: BSRIA has produced a new guide to help building services engineers, designers and contractors navigate the latest major changes to the Building Regulations....</p>\n<p class=\"text-end\"><a class=\"btn btn-outline-secondary picostrap-read-more-link mt-3\" href=\"https://www.coolingpost.com/uk-news/bsria-produces-guide-to-the-building-regs/\">Read More...</a></p>\n<p>The post <a href=\"https://www.co",
-    "source_type": "news",
-    "source_name": "Cooling Post (欧洲制冷/热泵行业媒体)",
-    "region": "europe",
-    "country": "UK",
-    "language": "en",
-    "engagement": null,
-    "published": "2026-08-12T10:50:46+00:00"
-  },
-  {
     "id": "cbe733d08951773c",
     "title": "Un unico sistema per climatizzazione canalizzata, impianti radianti e fan coil",
     "link": "https://www.impiantinews.it/rci/prodotti/un-unico-sistema-per-climatizzazione-canalizzata-impianti-radianti-e-fan-coil/",
@@ -258,6 +258,32 @@
     "language": "fi",
     "engagement": null,
     "published": "2026-08-11T09:06:09+00:00"
+  },
+  {
+    "id": "293f1fd6424b1f67",
+    "title": "Penn College HVAC Programs Set Accreditation First",
+    "link": "https://www.achrnews.com/articles/166536-penn-college-hvac-programs-set-accreditation-first",
+    "summary": "The American Council of Construction Education has accredited Pennsylvania College of Technology's associate degree program in HVAC technology and its bachelor's degree program in HVAC engineering technology.",
+    "source_type": "news",
+    "source_name": "ACHR News (北美HVACR行业权威媒体)",
+    "region": "global",
+    "country": "",
+    "language": "",
+    "engagement": null,
+    "published": "2026-08-15T15:00:00+00:00"
+  },
+  {
+    "id": "4f5a46a71970ba27",
+    "title": "Soft Skills Make Every HVAC Service Call Better",
+    "link": "https://www.achrnews.com/articles/166561-soft-skills-make-every-hvac-service-call-better",
+    "summary": "If the homeowner doesn’t sense that you’re trustworthy, focused, and good with people, your technical ability becomes much harder to appreciate.",
+    "source_type": "news",
+    "source_name": "ACHR News (北美HVACR行业权威媒体)",
+    "region": "global",
+    "country": "",
+    "language": "",
+    "engagement": null,
+    "published": "2026-08-15T11:00:00+00:00"
   },
   {
     "id": "780bf19c76231048",
@@ -427,19 +453,6 @@
     "language": "",
     "engagement": null,
     "published": "2026-08-09T20:09:14+00:00"
-  },
-  {
-    "id": "0699755fd928e307",
-    "title": "Sofia AI Thermostat Keeps Contractors Connected",
-    "link": "https://www.achrnews.com/articles/166532-sofia-ai-thermostat-keeps-contractors-connected",
-    "summary": "The Sofia AI Thermostat is a smart home-enabled Wi-Fi control, compatible with the Google Alexa system, that’s designed to support a wide range of residential and commercial HVAC systems while helping contractors stay connected with homeowners long after installation.",
-    "source_type": "news",
-    "source_name": "ACHR News (北美HVACR行业权威媒体)",
-    "region": "global",
-    "country": "",
-    "language": "",
-    "engagement": null,
-    "published": "2026-08-08T15:00:00+00:00"
   },
   {
     "id": "04a43c4bbc0f7a3d",
