@@ -1,5 +1,18 @@
 [
   {
+    "id": "5a7b09d731fc8cf9",
+    "title": "Heat pumps: unlocking flexibility for electrification",
+    "link": "https://ehpa.org/news-and-resources/policy/heat-pumps-unlocking-flexibility-for-electrification/",
+    "summary": "<p>As Europe electrifies heating, transport and industry, the electricity system will need to become smarter and more flexible. The European Commission’s Electrification Action Plan recognises that flexibility is essential to manage growing electricity demand, integrate more renewables and keep energy costs under control. With smart controls, dynamic tariffs and the right market framework, heat pu",
+    "source_type": "news",
+    "source_name": "EHPA 欧洲热泵协会",
+    "region": "europe",
+    "country": "EU",
+    "language": "en",
+    "engagement": null,
+    "published": "2026-08-17T09:15:15+00:00"
+  },
+  {
     "id": "1b4e8d490df7f52b",
     "title": "The coolest thing about heat pumps",
     "link": "https://ehpa.org/news-and-resources/news/the-coolest-thing-about-heat-pumps/",
@@ -13,17 +26,69 @@
     "published": "2026-08-13T04:40:25+00:00"
   },
   {
-    "id": "0f1e3b25b4e2c11a",
-    "title": "Italy’s €9.3 billion for the green transition",
-    "link": "https://ehpa.org/news-and-resources/policy/italys-e9-3-billion-plan-for-the-green-transition/",
-    "summary": "<p>Italy has submitted its draft Social Climate Plan, with measures set to run from 2026 to 2032. The €9.3 billion Plan will use future ETS2 revenues to support vulnerable consumers through the transition to clean heating, cooling and mobility. A major part of the Plan focuses on making buildings more energy efficient. €3.2 billion will [&#8230;]</p>\n<p>The post <a href=\"https://ehpa.org/news-and-",
+    "id": "3194db872905196b",
+    "title": "US AC and heat pump shipments up 21.7%",
+    "link": "https://www.coolingpost.com/world-news/us-ac-and-heat-pump-shipments-up-21-7/",
+    "summary": "<p>USA: US shipments of central air conditioners and air-source heat pumps totalled 1,023,571 units in June, an increase of 21.7% compared to June 2025. ...</p>\n<p class=\"text-end\"><a class=\"btn btn-outline-secondary picostrap-read-more-link mt-3\" href=\"https://www.coolingpost.com/world-news/us-ac-and-heat-pump-shipments-up-21-7/\">Read More...</a></p>\n<p>The post <a href=\"https://www.coolingpost.c",
     "source_type": "news",
-    "source_name": "EHPA 欧洲热泵协会",
+    "source_name": "Cooling Post (欧洲制冷/热泵行业媒体)",
     "region": "europe",
-    "country": "EU",
+    "country": "UK",
     "language": "en",
     "engagement": null,
-    "published": "2026-08-10T09:29:56+00:00"
+    "published": "2026-08-17T17:21:18+00:00"
+  },
+  {
+    "id": "cad523f520f55743",
+    "title": "Trane and Eaton combine to benefit data centres",
+    "link": "https://www.coolingpost.com/world-news/trane-and-eaton-combine-to-benefit-data-centres/",
+    "summary": "<p>USA: Trane Technologies has announced a collaboration with intelligent power management company Eaton to help accelerate AI-factory deployment, enhance efficiency and lower costs....</p>\n<p class=\"text-end\"><a class=\"btn btn-outline-secondary picostrap-read-more-link mt-3\" href=\"https://www.coolingpost.com/world-news/trane-and-eaton-combine-to-benefit-data-centres/\">Read More...</a></p>\n<p>The ",
+    "source_type": "news",
+    "source_name": "Cooling Post (欧洲制冷/热泵行业媒体)",
+    "region": "europe",
+    "country": "UK",
+    "language": "en",
+    "engagement": null,
+    "published": "2026-08-17T16:57:02+00:00"
+  },
+  {
+    "id": "b201e9fea2c560bc",
+    "title": "EBM-Papst bought by US company Madison for $5.4bn",
+    "link": "https://www.coolingpost.com/world-news/ebm-papst-bought-by-us-company-madison-for-5-4bn/",
+    "summary": "<p>USA/GERMANY: Madison Air Solutions, a Chicago-based company with over 30 air quality solutions brands, is set to acquire German fan and motor systems manufacturer EBM-Papst for $5.4bn....</p>\n<p class=\"text-end\"><a class=\"btn btn-outline-secondary picostrap-read-more-link mt-3\" href=\"https://www.coolingpost.com/world-news/ebm-papst-bought-by-us-company-madison-for-5-4bn/\">Read More...</a></p>\n<",
+    "source_type": "news",
+    "source_name": "Cooling Post (欧洲制冷/热泵行业媒体)",
+    "region": "europe",
+    "country": "UK",
+    "language": "en",
+    "engagement": null,
+    "published": "2026-08-17T14:54:19+00:00"
+  },
+  {
+    "id": "78bf883c5ebd66b5",
+    "title": "Klima-Therm approved as Danfoss’ Turbocor service partner",
+    "link": "https://www.coolingpost.com/uk-news/klima-therm-approved-as-danfoss-turbocor-service-partner/",
+    "summary": "<p>UK: South-London-based installation and maintenance company Klima-Therm has been made an approved service partner for Danfoss’ Turbocor range of oil-free compressors....</p>\n<p class=\"text-end\"><a class=\"btn btn-outline-secondary picostrap-read-more-link mt-3\" href=\"https://www.coolingpost.com/uk-news/klima-therm-approved-as-danfoss-turbocor-service-partner/\">Read More...</a></p>\n<p>The post <a",
+    "source_type": "news",
+    "source_name": "Cooling Post (欧洲制冷/热泵行业媒体)",
+    "region": "europe",
+    "country": "UK",
+    "language": "en",
+    "engagement": null,
+    "published": "2026-08-17T10:43:48+00:00"
+  },
+  {
+    "id": "abc6070b17f826c5",
+    "title": "Carel adds blast chiller controller",
+    "link": "https://www.coolingpost.com/products/carel-adds-blast-chiller-controller/",
+    "summary": "<p>ITALY: Carel has expanded its iJ controls platform with iJP, a new controller designed for blast chilling and blast freezing applications....</p>\n<p class=\"text-end\"><a class=\"btn btn-outline-secondary picostrap-read-more-link mt-3\" href=\"https://www.coolingpost.com/products/carel-adds-blast-chiller-controller/\">Read More...</a></p>\n<p>The post <a href=\"https://www.coolingpost.com/products/care",
+    "source_type": "news",
+    "source_name": "Cooling Post (欧洲制冷/热泵行业媒体)",
+    "region": "europe",
+    "country": "UK",
+    "language": "en",
+    "engagement": null,
+    "published": "2026-08-17T09:51:54+00:00"
   },
   {
     "id": "1a522010460ef135",
@@ -91,71 +156,6 @@
     "published": "2026-08-13T16:24:01+00:00"
   },
   {
-    "id": "93566615577fd6d2",
-    "title": "IOR briefs on retrofitting doors",
-    "link": "https://www.coolingpost.com/uk-news/ior-briefs-on-retrofitting-doors/",
-    "summary": "<p>UK: A new technology brief on retrofitting doors to open-fronted display cabinets is now available for free download from the IOR website....</p>\n<p class=\"text-end\"><a class=\"btn btn-outline-secondary picostrap-read-more-link mt-3\" href=\"https://www.coolingpost.com/uk-news/ior-briefs-on-retrofitting-doors/\">Read More...</a></p>\n<p>The post <a href=\"https://www.coolingpost.com/uk-news/ior-brief",
-    "source_type": "news",
-    "source_name": "Cooling Post (欧洲制冷/热泵行业媒体)",
-    "region": "europe",
-    "country": "UK",
-    "language": "en",
-    "engagement": null,
-    "published": "2026-08-13T16:14:45+00:00"
-  },
-  {
-    "id": "001fd9ed5d43f3d0",
-    "title": "Danish researchers rethink ejector design",
-    "link": "https://www.coolingpost.com/world-news/danish-researchers-rethink-ejector-design/",
-    "summary": "<p>DENMARK: Researchers at the University of Southern Denmark (SDU) claim to have developed a component that both improves efficiency and provides a completely new way of optimising thermal energy systems....</p>\n<p class=\"text-end\"><a class=\"btn btn-outline-secondary picostrap-read-more-link mt-3\" href=\"https://www.coolingpost.com/world-news/danish-researchers-rethink-ejector-design/\">Read More..",
-    "source_type": "news",
-    "source_name": "Cooling Post (欧洲制冷/热泵行业媒体)",
-    "region": "europe",
-    "country": "UK",
-    "language": "en",
-    "engagement": null,
-    "published": "2026-08-13T16:01:23+00:00"
-  },
-  {
-    "id": "3ea8627e47b6a0a0",
-    "title": "Davidsson assumes role as acting Beijer Ref CEO",
-    "link": "https://www.coolingpost.com/world-news/davidsson-assumes-role-as-acting-beijer-ref-ceo/",
-    "summary": "<p>SWEDEN: Wholesaler Beijer Ref has appointed Joel Davidsson as acting CEO and president following the recent announcement that Christopher Norbye would be stepping down from the role....</p>\n<p class=\"text-end\"><a class=\"btn btn-outline-secondary picostrap-read-more-link mt-3\" href=\"https://www.coolingpost.com/world-news/davidsson-assumes-role-as-acting-beijer-ref-ceo/\">Read More...</a></p>\n<p>T",
-    "source_type": "news",
-    "source_name": "Cooling Post (欧洲制冷/热泵行业媒体)",
-    "region": "europe",
-    "country": "UK",
-    "language": "en",
-    "engagement": null,
-    "published": "2026-08-13T07:13:09+00:00"
-  },
-  {
-    "id": "4b7e5061b9437027",
-    "title": "Keeping systems safe from cyber attacks",
-    "link": "https://www.coolingpost.com/world-news/keeping-systems-safe-from-cyber-attacks/",
-    "summary": "<p>USA: Recent incidents involving cyber attacks on HVACR control systems have underlined their potential vulnerability and the need for vigilance....</p>\n<p class=\"text-end\"><a class=\"btn btn-outline-secondary picostrap-read-more-link mt-3\" href=\"https://www.coolingpost.com/world-news/keeping-systems-safe-from-cyber-attacks/\">Read More...</a></p>\n<p>The post <a href=\"https://www.coolingpost.com/w",
-    "source_type": "news",
-    "source_name": "Cooling Post (欧洲制冷/热泵行业媒体)",
-    "region": "europe",
-    "country": "UK",
-    "language": "en",
-    "engagement": null,
-    "published": "2026-08-12T21:34:25+00:00"
-  },
-  {
-    "id": "9b15d5639a7844bc",
-    "title": "Haier’s integrated HVAC solution to Larnaca heat",
-    "link": "https://www.coolingpost.com/features/haiers-integrated-hvac-solution-to-larnaca-heat/",
-    "summary": "<p>CYPRUS: Haier has delivered an integrated HVAC solution to Larnaka’s new district local government offices....</p>\n<p class=\"text-end\"><a class=\"btn btn-outline-secondary picostrap-read-more-link mt-3\" href=\"https://www.coolingpost.com/features/haiers-integrated-hvac-solution-to-larnaca-heat/\">Read More...</a></p>\n<p>The post <a href=\"https://www.coolingpost.com/features/haiers-integrated-hvac-",
-    "source_type": "news",
-    "source_name": "Cooling Post (欧洲制冷/热泵行业媒体)",
-    "region": "europe",
-    "country": "UK",
-    "language": "en",
-    "engagement": null,
-    "published": "2026-08-12T19:32:36+00:00"
-  },
-  {
     "id": "cbe733d08951773c",
     "title": "Un unico sistema per climatizzazione canalizzata, impianti radianti e fan coil",
     "link": "https://www.impiantinews.it/rci/prodotti/un-unico-sistema-per-climatizzazione-canalizzata-impianti-radianti-e-fan-coil/",
@@ -169,23 +169,36 @@
     "published": "2026-08-13T13:45:24+00:00"
   },
   {
-    "id": "a7cd99b6c2949fda",
-    "title": "Acqua ad alta temperatura con efficienza stagionale elevata",
-    "link": "https://www.impiantinews.it/gt/prodotti/scheda-galletti-booster-wbe-acqua-ad-alta-temperatura-con-efficienza-stagionale-elevata/",
-    "summary": "<p>Le nuove pompe di calore condensate ad acqua di Galletti ampliano l’offerta per gli impianti ad alta temperatura, puntando su refrigeranti a basso GWP, flessibilità configurativa e gestione evoluta del funzionamento &#160; Galletti amplia la propria proposta nel settore HVAC con Booster, una gamma di pompe di calore non reversibili condensate ad acqua sviluppate per&#8230;</p>\n<p>L'articolo <a ",
+    "id": "78b591a3421e41ed",
+    "title": "AFEC se incorpora como empresa asociada a ENERCLUB",
+    "link": "https://www.caloryfrio.com/noticias/asociaciones/afec-enerclub-empresa-asociada-climatizacion.html",
+    "summary": "<div class=\"K2FeedImage\"><img alt=\"AFEC se incorpora como empresa asociada a ENERCLUB\" src=\"https://www.caloryfrio.com/media/k2/items/cache/a79637c6a63446818b475824aa3eeae5_L.jpg\" /></div><div class=\"K2FeedIntroText\"><p>La Asociación de Fabricantes de Equipos de Climatización (AFEC) ha formalizado su incorporación como empresa asociada del Club Español de la Energía, ENERCLUB, un paso estratégico ",
     "source_type": "news",
-    "source_name": "Impianti News (意大利)",
+    "source_name": "Caloryfrio (西班牙)",
     "region": "europe",
-    "country": "IT",
-    "language": "it",
+    "country": "ES",
+    "language": "es",
     "engagement": null,
-    "published": "2026-08-10T06:30:22+00:00"
+    "published": "2026-08-17T09:04:01+00:00"
+  },
+  {
+    "id": "030017d0f830c28f",
+    "title": "Hitachi Cooling & Heating presenta sus nuevas tarifas 2026 con una gama de productos ampliada",
+    "link": "https://www.caloryfrio.com/aire-acondicionado/aire-acondicionado-comercial/hitachi-tarifa-2026-airhome-air365-max-vrf.html",
+    "summary": "<div class=\"K2FeedImage\"><img alt=\"Hitachi Cooling &amp; Heating presenta sus nuevas tarifas 2026 con una gama de productos ampliada\" src=\"https://www.caloryfrio.com/media/k2/items/cache/969cad94840066621c44d5469d5e4c3f_L.jpg\" /></div><div class=\"K2FeedIntroText\"><p>Hitachi Cooling &amp; Heating ha presentado sus nuevas tarifas 2026, ya disponibles&nbsp;online, diseñadas para reforzar su oferta de",
+    "source_type": "news",
+    "source_name": "Caloryfrio (西班牙)",
+    "region": "europe",
+    "country": "ES",
+    "language": "es",
+    "engagement": null,
+    "published": "2026-08-17T08:57:23+00:00"
   },
   {
     "id": "ce1ebd15b027fe47",
     "title": "HTW comparte las claves para cuidar el aire acondicionado en segundas residencias",
     "link": "https://www.caloryfrio.com/aire-acondicionado/aire-acondicionado-domestico/htw-mantenimiento-aire-acondicionado-segundas-residencias.html",
-    "summary": "<div class=\"K2FeedIntroText\"><p><strong>Las segundas residencias permanecen cerradas durante buena parte del año</strong>, por lo que los equipos de aire acondicionado pueden pasar varios meses sin utilizarse. Esta falta de actividad, unida a factores como el polvo, la humedad o el salitre en las zonas costeras, puede favorecer la aparición de averías y reducir la vida útil de los equipos.</p> <p>",
+    "summary": "<div class=\"K2FeedImage\"><img alt=\"HTW comparte las claves para cuidar el aire acondicionado en segundas residencias\" src=\"https://www.caloryfrio.com/media/k2/items/cache/bb25377641f7729aaab59a2550e9932a_L.jpg\" /></div><div class=\"K2FeedIntroText\"><p><strong>Las segundas residencias permanecen cerradas durante buena parte del año</strong>, por lo que los equipos de aire acondicionado pueden pasar ",
     "source_type": "news",
     "source_name": "Caloryfrio (西班牙)",
     "region": "europe",
@@ -206,32 +219,6 @@
     "language": "es",
     "engagement": null,
     "published": "2026-08-13T07:40:58+00:00"
-  },
-  {
-    "id": "6d32eabb011eafca",
-    "title": "Mantener las presiones correctas en los equipos de climatización",
-    "link": "https://www.caloryfrio.com/aire-acondicionado/aire-instalaciones-componentes/presiones-correctas-equipos-climatizacion.html",
-    "summary": "<div class=\"K2FeedImage\"><img alt=\"Mantener las presiones correctas en los equipos de climatización\" src=\"https://www.caloryfrio.com/media/k2/items/cache/1c0f0ebfde24b0622a1663b66b786766_L.jpg\" /></div><div class=\"K2FeedIntroText\"><p>Con la llegada de las épocas de mayor demanda térmica, los sistemas de climatización se ven sometidos a ciclos de trabajo intensos y prolongados. En este escenario, e",
-    "source_type": "news",
-    "source_name": "Caloryfrio (西班牙)",
-    "region": "europe",
-    "country": "ES",
-    "language": "es",
-    "engagement": null,
-    "published": "2026-08-11T08:51:29+00:00"
-  },
-  {
-    "id": "a7050d60d7c0e37e",
-    "title": "LG amplía su gama de climatización con una nueva unidad de conductos de presión estática media para Multi V",
-    "link": "https://www.caloryfrio.com/aire-acondicionado/aire-acondicionado-domestico/lg-amplia-gama-climatizacion-nueva-unidad-conductos-presion-estatica-media-para-multi-v.html",
-    "summary": "<div class=\"K2FeedImage\"><img alt=\"LG amplía su gama de climatización con una nueva unidad de conductos de presión estática media para Multi V\" src=\"https://www.caloryfrio.com/media/k2/items/cache/0e9ed3184dbdc944351a0ed3733e0c7a_L.jpg\" /></div><div class=\"K2FeedIntroText\"><p>LG Electronics ha presentado su nueva&nbsp;<strong>unidad de conductos de presión estática media para Multi V</strong>, dis",
-    "source_type": "news",
-    "source_name": "Caloryfrio (西班牙)",
-    "region": "europe",
-    "country": "ES",
-    "language": "es",
-    "engagement": null,
-    "published": "2026-08-11T08:06:20+00:00"
   },
   {
     "id": "3838b3e59342f7cb",
@@ -258,6 +245,45 @@
     "language": "fi",
     "engagement": null,
     "published": "2026-08-11T09:06:09+00:00"
+  },
+  {
+    "id": "bc0c746d56693721",
+    "title": "New Winsupply Outlet Targets Growing Georgia HVACR Demand",
+    "link": "https://www.achrnews.com/articles/166565-new-winsupply-outlet-targets-growing-georgia-hvacr-demand",
+    "summary": "LaGrange Winair will serve HVAC and refrigeration contractors in West and Southwest Georgia.",
+    "source_type": "news",
+    "source_name": "ACHR News (北美HVACR行业权威媒体)",
+    "region": "global",
+    "country": "",
+    "language": "",
+    "engagement": null,
+    "published": "2026-08-17T16:45:00+00:00"
+  },
+  {
+    "id": "f3bafe62f6244912",
+    "title": "Venstar Expands Thermostat Management Platform",
+    "link": "https://www.achrnews.com/articles/166564-venstar-expands-thermostat-management-platform",
+    "summary": "Skyport is a centralized HVAC management platform, delivering real-time visibility and control across all locations from a single, intuitive dashboard viewable from virtually any screen.",
+    "source_type": "news",
+    "source_name": "ACHR News (北美HVACR行业权威媒体)",
+    "region": "global",
+    "country": "",
+    "language": "",
+    "engagement": null,
+    "published": "2026-08-17T15:00:00+00:00"
+  },
+  {
+    "id": "191460a78bb399ee",
+    "title": "Manufacturers, 70-Plus Schools Partner to Train HVAC Workforce on Heat Pumps",
+    "link": "https://www.achrnews.com/articles/166563-manufacturers-70-plus-schools-partner-to-train-hvac-workforce-on-heat-pumps",
+    "summary": "The Heat Pump Ready program, led by TECH Clean California, is closing the HVAC workforce skill gap in installing and servicing heat pumps.",
+    "source_type": "news",
+    "source_name": "ACHR News (北美HVACR行业权威媒体)",
+    "region": "global",
+    "country": "",
+    "language": "",
+    "engagement": null,
+    "published": "2026-08-17T11:00:00+00:00"
   },
   {
     "id": "9b647b153c344e77",
@@ -507,19 +533,6 @@
     "published": "2026-08-11T07:13:43+00:00"
   },
   {
-    "id": "c72b097f2a6c88b0",
-    "title": "Why every voice matters in HVACR",
-    "link": "https://refrigerationandaircon.co.za/why-every-voice-matters-in-hvacr/",
-    "summary": "<p>The HVACR industry has always been built on shared knowledge. Whether learning how to commission a refrigeration plant, troubleshoot a complex control system or design an energy-efficient air-conditioning installation, much of what professionals know has been passed on by someone willing to share their experience.  The more connected the HVACR community becomes, the stronger  [...]</p>\n<p>The p",
-    "source_type": "news",
-    "source_name": "RACA Journal (南非)",
-    "region": "africa",
-    "country": "ZA",
-    "language": "en",
-    "engagement": null,
-    "published": "2026-08-10T06:00:03+00:00"
-  },
-  {
     "id": "fbf3c37ade3e09ca",
     "title": "Reforma Tributária entra na fase prática: o que o setor HVAC-R precisa fazer agora",
     "link": "https://revistadofrio.com.br/reforma-tributaria-entra-na-fase-pratica-o-que-o-setor-hvac-r-precisa-fazer-agora/",
@@ -531,18 +544,5 @@
     "language": "pt",
     "engagement": null,
     "published": "2026-08-11T16:24:23+00:00"
-  },
-  {
-    "id": "3cdef25448acf1e1",
-    "title": "GENERAL HVAC Solutions anuncia encerramento gradual das operações no Brasil",
-    "link": "https://revistadofrio.com.br/general-hvac-solutions-anuncia-encerramento-gradual-das-operacoes-no-brasil/",
-    "summary": "Antiga Fujitsu General do Brasil manterá suporte de pós-venda, garantia, manutenção e fornecimento de peças durante o processo de transição",
-    "source_type": "news",
-    "source_name": "Revista do Frio (巴西)",
-    "region": "south_america",
-    "country": "BR",
-    "language": "pt",
-    "engagement": null,
-    "published": "2026-08-10T16:40:21+00:00"
   }
 ]
