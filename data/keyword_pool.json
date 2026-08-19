@@ -4366,5 +4366,65 @@
     "sample_title": "Doesn’t this annoy you when people do this! Drives me mental!",
     "sample_link": "https://www.reddit.com/r/DIYUK/comments/1vck3h1/doesnt_this_annoy_you_when_people_do_this_drives/",
     "keyword_validated": false
+  },
+  "how to maintain air conditioner performance in extreme heat waves": {
+    "keyword": "how to maintain air conditioner performance in extreme heat waves",
+    "region": "global",
+    "product_category": "air_conditioner",
+    "content_format": "buyer_faq",
+    "first_seen": "2026-08-19",
+    "last_seen": "2026-08-19",
+    "times_seen": 1,
+    "sample_title": "Longer Heat Waves, Bigger HVAC Challenges",
+    "sample_link": "https://www.achrnews.com/articles/166546-longer-heat-waves-bigger-hvac-challenges",
+    "keyword_validated": false
+  },
+  "hvac equipment supply chain and trade compliance standards": {
+    "keyword": "HVAC equipment supply chain and trade compliance standards",
+    "region": "global",
+    "product_category": "both",
+    "content_format": "blog",
+    "first_seen": "2026-08-19",
+    "last_seen": "2026-08-19",
+    "times_seen": 1,
+    "sample_title": "HARDI Backs Changes to U.S.-Mexico-Canada Trade Pact",
+    "sample_link": "https://www.achrnews.com/articles/166553-hardi-backs-changes-to-us-mexico-canada-trade-pact",
+    "keyword_validated": false
+  },
+  "choosing a long-term reliable hvac manufacturing partner": {
+    "keyword": "choosing a long-term reliable HVAC manufacturing partner",
+    "region": "global",
+    "product_category": "both",
+    "content_format": "blog",
+    "first_seen": "2026-08-19",
+    "last_seen": "2026-08-19",
+    "times_seen": 1,
+    "sample_title": "Why Some HVAC Contractors Are Rejecting Private Equity Offers",
+    "sample_link": "https://www.achrnews.com/articles/166540-why-some-hvac-contractors-are-rejecting-private-equity-offers",
+    "keyword_validated": false
+  },
+  "how to protect outdoor hvac unit from physical damage": {
+    "keyword": "how to protect outdoor HVAC unit from physical damage",
+    "region": "global",
+    "product_category": "air_conditioner",
+    "content_format": "buyer_faq",
+    "first_seen": "2026-08-19",
+    "last_seen": "2026-08-19",
+    "times_seen": 1,
+    "sample_title": "How long do I have?",
+    "sample_link": "https://www.reddit.com/r/hvacadvice/comments/1vor5xv/how_long_do_i_have/",
+    "keyword_validated": false
+  },
+  "common hvac exhaust mistakes to avoid in extreme heat": {
+    "keyword": "common HVAC exhaust mistakes to avoid in extreme heat",
+    "region": "middle_east",
+    "product_category": "air_conditioner",
+    "content_format": "buyer_faq",
+    "first_seen": "2026-08-19",
+    "last_seen": "2026-08-19",
+    "times_seen": 1,
+    "sample_title": "This is fine correct?",
+    "sample_link": "https://www.reddit.com/r/hvacadvice/comments/1vr6qxh/this_is_fine_correct/",
+    "keyword_validated": false
   }
 }
