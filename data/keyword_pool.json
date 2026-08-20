@@ -4426,5 +4426,53 @@
     "sample_title": "This is fine correct?",
     "sample_link": "https://www.reddit.com/r/hvacadvice/comments/1vr6qxh/this_is_fine_correct/",
     "keyword_validated": false
+  },
+  "how to retrofit social housing with air-to-water heat pumps": {
+    "keyword": "how to retrofit social housing with air-to-water heat pumps",
+    "region": "europe",
+    "product_category": "heat_pump",
+    "content_format": "case_study",
+    "first_seen": "2026-08-20",
+    "last_seen": "2026-08-20",
+    "times_seen": 1,
+    "sample_title": "Gasloze sociale huurwoningen in Delfzijl dankzij warmtepompen en HydroTop-dakopstelling",
+    "sample_link": "https://www.installatie.nl/techniek/gasloze-sociale-huurwoningen-in-delfzijl-dankzij-warmtepompen-en-hydrotop-dakopstelling/",
+    "keyword_validated": false
+  },
+  "hvac equipment compliance reporting standards": {
+    "keyword": "HVAC equipment compliance reporting standards",
+    "region": "global",
+    "product_category": "both",
+    "content_format": "buyer_faq",
+    "first_seen": "2026-08-20",
+    "last_seen": "2026-08-20",
+    "times_seen": 1,
+    "sample_title": "Better Options for California's HVAC Sales Reporting Rule",
+    "sample_link": "https://www.achrnews.com/blogs/17-opinions/post/166557-better-options-for-californias-hvac-sales-reporting-rule",
+    "keyword_validated": false
+  },
+  "strategies for new generation hvac business buyers": {
+    "keyword": "strategies for new generation HVAC business buyers",
+    "region": "global",
+    "product_category": "both",
+    "content_format": "blog",
+    "first_seen": "2026-08-20",
+    "last_seen": "2026-08-20",
+    "times_seen": 1,
+    "sample_title": "Under 35 and Buying: A New Generation of HVAC Business Owners Emerges",
+    "sample_link": "https://www.achrnews.com/articles/166552-under-35-and-buying-a-new-generation-of-hvac-business-owners-emerges",
+    "keyword_validated": false
+  },
+  "liquid cooling vs traditional air conditioning for data centers": {
+    "keyword": "liquid cooling vs traditional air conditioning for data centers",
+    "region": "africa",
+    "product_category": "air_conditioner",
+    "content_format": "comparison",
+    "first_seen": "2026-08-20",
+    "last_seen": "2026-08-20",
+    "times_seen": 1,
+    "sample_title": "Cooling the AI revolution: Why liquid cooling has become essential",
+    "sample_link": "https://refrigerationandaircon.co.za/cooling-the-ai-revolution-why-liquid-cooling-has-become-essential/",
+    "keyword_validated": false
   }
 }
