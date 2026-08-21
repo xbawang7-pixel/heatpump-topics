@@ -1,5 +1,31 @@
 [
   {
+    "id": "31299f372184fc6d",
+    "title": "Spain",
+    "link": "https://ehpa.org/news-and-resources/national-member-publications/spanish-hvac-market-report-2025-momentum-and-resilience/",
+    "summary": "<p>The Spanish market report 2025 combines sell-in market statistics with a technical and economic assessment of the forces shaping the Spanish HVAC sector. These include heat pumps, ventilation, building controls, electrification, energy-market signals, regulation and climate resilience. The new edition retains market data and analysis published in February 2026 and adds an August 2026 outlook up",
+    "source_type": "news",
+    "source_name": "EHPA 欧洲热泵协会",
+    "region": "europe",
+    "country": "EU",
+    "language": "en",
+    "engagement": null,
+    "published": "2026-08-20T10:33:04+00:00"
+  },
+  {
+    "id": "fbadf6f89bab4739",
+    "title": "Meet Europe’s heat pump hotspots",
+    "link": "https://ehpa.org/news-and-resources/market-data/meet-europes-heat-pump-hotspots/",
+    "summary": "<p>In which European country are people most likely to have a heat pump at home? The answer: head north. In Norway, Finland and Sweden, more than half of households already have a heat pump, making them Europe’s heat pump frontrunners. But the picture looks very different elsewhere. In countries such as Poland, Slovakia and the UK, heat [&#8230;]</p>\n<p>The post <a href=\"https://ehpa.org/news-and-",
+    "source_type": "news",
+    "source_name": "EHPA 欧洲热泵协会",
+    "region": "europe",
+    "country": "EU",
+    "language": "en",
+    "engagement": null,
+    "published": "2026-08-20T04:46:51+00:00"
+  },
+  {
     "id": "5a7b09d731fc8cf9",
     "title": "Heat pumps: unlocking flexibility for electrification",
     "link": "https://ehpa.org/news-and-resources/policy/heat-pumps-unlocking-flexibility-for-electrification/",
@@ -13,17 +39,43 @@
     "published": "2026-08-17T09:15:15+00:00"
   },
   {
-    "id": "1b4e8d490df7f52b",
-    "title": "The coolest thing about heat pumps",
-    "link": "https://ehpa.org/news-and-resources/news/the-coolest-thing-about-heat-pumps/",
-    "summary": "<p>Europe is getting hotter, and cooling is no longer a luxury. As heatwaves become more frequent and intense, more households are looking for ways to stay comfortable all year round. Heat pumps are part of the answer. Already installed in around 13% of households across 21 European countries, there are now more than 29 million domestic heat pumps in [&#8230;]</p>\n<p>The post <a href=\"https://ehpa",
+    "id": "5636b1e2e88adb12",
+    "title": "Danfoss half-year sales up 18%",
+    "link": "https://www.coolingpost.com/world-news/danfoss-half-year-sales-up-18/",
+    "summary": "<p>DENMARK: Danfoss Climate Solutions, the Danish manufacturer’s heating and cooling business segment, has reported half-year organic sales up 18% to €1,803m. ...</p>\n<p class=\"text-end\"><a class=\"btn btn-outline-secondary picostrap-read-more-link mt-3\" href=\"https://www.coolingpost.com/world-news/danfoss-half-year-sales-up-18/\">Read More...</a></p>\n<p>The post <a href=\"https://www.coolingpost.com",
     "source_type": "news",
-    "source_name": "EHPA 欧洲热泵协会",
+    "source_name": "Cooling Post (欧洲制冷/热泵行业媒体)",
     "region": "europe",
-    "country": "EU",
+    "country": "UK",
     "language": "en",
     "engagement": null,
-    "published": "2026-08-13T04:40:25+00:00"
+    "published": "2026-08-20T18:34:46+00:00"
+  },
+  {
+    "id": "9c0f0b363b5d8eaf",
+    "title": "Haier signs Austrian distribution deal",
+    "link": "https://www.coolingpost.com/world-news/haier-signs-austrian-distribution-deal/",
+    "summary": "<p>AUSTRIA: Haier HVAC Solutions Europe has appointed Frigentis GmbH as an official distributor in Austria....</p>\n<p class=\"text-end\"><a class=\"btn btn-outline-secondary picostrap-read-more-link mt-3\" href=\"https://www.coolingpost.com/world-news/haier-signs-austrian-distribution-deal/\">Read More...</a></p>\n<p>The post <a href=\"https://www.coolingpost.com/world-news/haier-signs-austrian-distributi",
+    "source_type": "news",
+    "source_name": "Cooling Post (欧洲制冷/热泵行业媒体)",
+    "region": "europe",
+    "country": "UK",
+    "language": "en",
+    "engagement": null,
+    "published": "2026-08-20T16:07:39+00:00"
+  },
+  {
+    "id": "592b152854e3889b",
+    "title": "ULT chiller uses nitrogen refrigerant",
+    "link": "https://www.coolingpost.com/products/ult-chiller-uses-nitrogen-refrigerant/",
+    "summary": "<p>JAPAN: Mitsubishi Heavy Industries (MHI) has developed an ultra-low temperature brine chiller using nitrogen refrigerant....</p>\n<p class=\"text-end\"><a class=\"btn btn-outline-secondary picostrap-read-more-link mt-3\" href=\"https://www.coolingpost.com/products/ult-chiller-uses-nitrogen-refrigerant/\">Read More...</a></p>\n<p>The post <a href=\"https://www.coolingpost.com/products/ult-chiller-uses-ni",
+    "source_type": "news",
+    "source_name": "Cooling Post (欧洲制冷/热泵行业媒体)",
+    "region": "europe",
+    "country": "UK",
+    "language": "en",
+    "engagement": null,
+    "published": "2026-08-20T08:51:18+00:00"
   },
   {
     "id": "2d5e52212bb7e371",
@@ -117,45 +169,6 @@
     "published": "2026-08-18T09:27:29+00:00"
   },
   {
-    "id": "3194db872905196b",
-    "title": "US AC and heat pump shipments up 21.7%",
-    "link": "https://www.coolingpost.com/world-news/us-ac-and-heat-pump-shipments-up-21-7/",
-    "summary": "<p>USA: US shipments of central air conditioners and air-source heat pumps totalled 1,023,571 units in June, an increase of 21.7% compared to June 2025. ...</p>\n<p class=\"text-end\"><a class=\"btn btn-outline-secondary picostrap-read-more-link mt-3\" href=\"https://www.coolingpost.com/world-news/us-ac-and-heat-pump-shipments-up-21-7/\">Read More...</a></p>\n<p>The post <a href=\"https://www.coolingpost.c",
-    "source_type": "news",
-    "source_name": "Cooling Post (欧洲制冷/热泵行业媒体)",
-    "region": "europe",
-    "country": "UK",
-    "language": "en",
-    "engagement": null,
-    "published": "2026-08-17T17:21:18+00:00"
-  },
-  {
-    "id": "cad523f520f55743",
-    "title": "Trane and Eaton combine to benefit data centres",
-    "link": "https://www.coolingpost.com/world-news/trane-and-eaton-combine-to-benefit-data-centres/",
-    "summary": "<p>USA: Trane Technologies has announced a collaboration with intelligent power management company Eaton to help accelerate AI-factory deployment, enhance efficiency and lower costs....</p>\n<p class=\"text-end\"><a class=\"btn btn-outline-secondary picostrap-read-more-link mt-3\" href=\"https://www.coolingpost.com/world-news/trane-and-eaton-combine-to-benefit-data-centres/\">Read More...</a></p>\n<p>The ",
-    "source_type": "news",
-    "source_name": "Cooling Post (欧洲制冷/热泵行业媒体)",
-    "region": "europe",
-    "country": "UK",
-    "language": "en",
-    "engagement": null,
-    "published": "2026-08-17T16:57:02+00:00"
-  },
-  {
-    "id": "b201e9fea2c560bc",
-    "title": "EBM-Papst bought by US company Madison for $5.4bn",
-    "link": "https://www.coolingpost.com/world-news/ebm-papst-bought-by-us-company-madison-for-5-4bn/",
-    "summary": "<p>USA/GERMANY: Madison Air Solutions, a Chicago-based company with over 30 air quality solutions brands, is set to acquire German fan and motor systems manufacturer EBM-Papst for $5.4bn....</p>\n<p class=\"text-end\"><a class=\"btn btn-outline-secondary picostrap-read-more-link mt-3\" href=\"https://www.coolingpost.com/world-news/ebm-papst-bought-by-us-company-madison-for-5-4bn/\">Read More...</a></p>\n<",
-    "source_type": "news",
-    "source_name": "Cooling Post (欧洲制冷/热泵行业媒体)",
-    "region": "europe",
-    "country": "UK",
-    "language": "en",
-    "engagement": null,
-    "published": "2026-08-17T14:54:19+00:00"
-  },
-  {
     "id": "a5564d1664a109b1",
     "title": "Centrale termica compatta che semplifica l’impianto: HP Wall-Only Electric 190",
     "link": "https://www.impiantinews.it/rci/prodotti/centrale-termica-compatta-che-semplifica-limpianto-hp-wall-only-electric-190/",
@@ -169,17 +182,17 @@
     "published": "2026-08-18T12:36:21+00:00"
   },
   {
-    "id": "cbe733d08951773c",
-    "title": "Un unico sistema per climatizzazione canalizzata, impianti radianti e fan coil",
-    "link": "https://www.impiantinews.it/rci/prodotti/un-unico-sistema-per-climatizzazione-canalizzata-impianti-radianti-e-fan-coil/",
-    "summary": "<p>La crescente diffusione di impianti ibridi richiede sistemi di regolazione sempre più evoluti, in grado di gestire tecnologie differenti attraverso un&#8217;unica logica di controllo. Per rispondere a questa esigenza, Tecnosystemi (Vittorio Veneto, TV) amplia le funzionalità del sistema di zonificazione ProAir con il Modulo Relè per impianti radianti e fan coil. Integrato con le centraline dell",
+    "id": "34a452152b87db4c",
+    "title": "Soluciones HVAC de Tecna para centros comerciales y grandes superficies",
+    "link": "https://www.caloryfrio.com/aire-acondicionado/aire-acondicionado-comercial/tecna-hvac-centros-comerciales-grandes-superficies.html",
+    "summary": "<div class=\"K2FeedImage\"><img alt=\"Soluciones HVAC de Tecna para centros comerciales y grandes superficies\" src=\"https://www.caloryfrio.com/media/k2/items/cache/dd8bde7a88b6c253077a03a116aab15e_L.jpg\" /></div><div class=\"K2FeedIntroText\"><p>En&nbsp;<strong>TECNA</strong>&nbsp;ofrecemos soluciones HVAC diseñadas para responder a las exigencias específicas de los centros comerciales y grandes superf",
     "source_type": "news",
-    "source_name": "Impianti News (意大利)",
+    "source_name": "Caloryfrio (西班牙)",
     "region": "europe",
-    "country": "IT",
-    "language": "it",
+    "country": "ES",
+    "language": "es",
     "engagement": null,
-    "published": "2026-08-13T13:45:24+00:00"
+    "published": "2026-08-20T11:52:12+00:00"
   },
   {
     "id": "5643d2658f934257",
@@ -195,19 +208,6 @@
     "published": "2026-08-19T11:51:19+00:00"
   },
   {
-    "id": "9f7c8d6f21b4e283",
-    "title": "Las tendencias que marcan el mercado de la climatización y HVAC en 2026",
-    "link": "https://www.caloryfrio.com/noticias/actualidad/tendencias-marcan-mercado-climatizacion-hvac-en-2026.html",
-    "summary": "<div class=\"K2FeedImage\"><img alt=\"Las tendencias que marcan el mercado de la climatización y HVAC en 2026\" src=\"https://www.caloryfrio.com/media/k2/items/cache/4a2141bc32b80849876777a6fc4bdea6_L.jpg\" /></div><div class=\"K2FeedIntroText\"><p>El mercado de la climatización y HVAC en <strong>2026</strong> se perfila como un periodo de <strong>consolidación estructural en un entorno exigente de fuerza",
-    "source_type": "news",
-    "source_name": "Caloryfrio (西班牙)",
-    "region": "europe",
-    "country": "ES",
-    "language": "es",
-    "engagement": null,
-    "published": "2026-08-19T09:28:28+00:00"
-  },
-  {
     "id": "35cecae54ebd4d75",
     "title": "Nueva radiografía del mercado español de climatización: energía, normativa y evolución sectorial bajo análisis",
     "link": "https://www.caloryfrio.com/noticias/informacion-mercado/nueva-radiografia-mercado-espanol-climatizacion-energia-normativa-evolucion-sectorial-bajo-analisis.html",
@@ -219,6 +219,32 @@
     "language": "es",
     "engagement": null,
     "published": "2026-08-19T09:07:37+00:00"
+  },
+  {
+    "id": "52caa2b9cb650c50",
+    "title": "Nieuwe stille hybride Whspr-warmtepomp mikt op rijtjeswoning",
+    "link": "https://www.installatie.nl/nieuws/nieuwe-stille-hybride-warmtepomp-mikt-op-rijtjeswoning/",
+    "summary": "Een nieuwe Nederlandse 4 kW-hybride warmtepomp die significant anders is dan het bestaande aanbod. Na een jaar testen met goede...",
+    "source_type": "news",
+    "source_name": "Installatie.nl (荷兰)",
+    "region": "europe",
+    "country": "NL",
+    "language": "nl",
+    "engagement": null,
+    "published": "2026-08-20T12:48:57+00:00"
+  },
+  {
+    "id": "9f7de1f6e71002fc",
+    "title": "Meldpunt voor misleidende verkoop warmtepompen en thuisbatterijen",
+    "link": "https://www.installatie.nl/nieuws/eigen-huis-opent-meldpunt-voor-misleidende-verkoop-warmtepompen-en-thuisbatterijen/",
+    "summary": "Vereniging Eigen Huis (VEH) heeft een meldpunt geopend voor agressieve en misleidende verkoop van verduurzamingsproducten. De vereniging krijgt steeds meer...",
+    "source_type": "news",
+    "source_name": "Installatie.nl (荷兰)",
+    "region": "europe",
+    "country": "NL",
+    "language": "nl",
+    "engagement": null,
+    "published": "2026-08-20T07:00:00+00:00"
   },
   {
     "id": "6af426be35a4e0a9",
@@ -245,6 +271,71 @@
     "language": "nl",
     "engagement": null,
     "published": "2026-08-14T05:00:00+00:00"
+  },
+  {
+    "id": "bf66f98dce077887",
+    "title": "How U.S. Boiler Company is Making High-Tech Heating Feel Like Home",
+    "link": "https://www.achrnews.com/articles/166584-how-us-boiler-company-is-making-high-tech-heating-feel-like-home",
+    "summary": "Charlie Kopplin of U.S. Boiler Company explains how boiler design is evolving to make advanced technology more accessible for everyday installs.",
+    "source_type": "news",
+    "source_name": "ACHR News (北美HVACR行业权威媒体)",
+    "region": "global",
+    "country": "",
+    "language": "",
+    "engagement": null,
+    "published": "2026-08-20T19:36:05+00:00"
+  },
+  {
+    "id": "01fe8c34f6b083ef",
+    "title": "5 Ways To Overcome AI Hesitancy in HVAC",
+    "link": "https://www.achrnews.com/articles/166581-5-ways-to-overcome-ai-hesitancy-in-hvac",
+    "summary": "AI is here to stay, and by following a few simple tips, HVAC contractors can implement it successfully at their businesses.",
+    "source_type": "news",
+    "source_name": "ACHR News (北美HVACR行业权威媒体)",
+    "region": "global",
+    "country": "",
+    "language": "",
+    "engagement": null,
+    "published": "2026-08-20T17:00:00+00:00"
+  },
+  {
+    "id": "55f0306567a3ccf6",
+    "title": "OBBBA’s HVAC Scorecard: Tax Wins, Incentive Losses",
+    "link": "https://www.achrnews.com/articles/166580-obbbas-hvac-scorecard-tax-wins-incentive-losses",
+    "summary": "The sweeping bill gave HVAC contractors more certainty about their tax situations but took away some tax incentives for equipment purchases.",
+    "source_type": "news",
+    "source_name": "ACHR News (北美HVACR行业权威媒体)",
+    "region": "global",
+    "country": "",
+    "language": "",
+    "engagement": null,
+    "published": "2026-08-20T15:00:00+00:00"
+  },
+  {
+    "id": "fec2f4227fd3cc8e",
+    "title": "Quiet Comfort: Are Homeowners Raising the Bar for Residential HVAC?",
+    "link": "https://www.achrnews.com/articles/166577-quiet-comfort-are-homeowners-raising-the-bar-for-residential-hvac",
+    "summary": "In an increasingly competitive residential market, HVAC manufacturers and contractors are treating sound as a key part of comfort.",
+    "source_type": "news",
+    "source_name": "ACHR News (北美HVACR行业权威媒体)",
+    "region": "global",
+    "country": "",
+    "language": "",
+    "engagement": null,
+    "published": "2026-08-20T11:00:00+00:00"
+  },
+  {
+    "id": "c5ab2fd1e6839c35",
+    "title": "A Driller and HVAC Professional Have a Cup of Coffee",
+    "link": "https://www.achrnews.com/articles/166550-a-driller-and-hvac-professional-have-a-cup-of-coffee",
+    "summary": "It's 6:00 AM on a Tuesday. The local diner smells of rich coffee, heavy diesel, and opportunity.",
+    "source_type": "news",
+    "source_name": "ACHR News (北美HVACR行业权威媒体)",
+    "region": "global",
+    "country": "",
+    "language": "",
+    "engagement": null,
+    "published": "2026-08-20T04:00:00+00:00"
   },
   {
     "id": "fcfd45170f7f8349",
@@ -481,45 +572,6 @@
     "published": "2026-08-14T11:00:00+00:00"
   },
   {
-    "id": "f4b249f6d9ff7b87",
-    "title": "Longer Heat Waves, Bigger HVAC Challenges",
-    "link": "https://www.achrnews.com/articles/166546-longer-heat-waves-bigger-hvac-challenges",
-    "summary": "As homeowners work to stay cool in extreme heat, HVAC contractors face a surge in service calls.",
-    "source_type": "news",
-    "source_name": "ACHR News (北美HVACR行业权威媒体)",
-    "region": "global",
-    "country": "",
-    "language": "",
-    "engagement": null,
-    "published": "2026-08-13T17:00:00+00:00"
-  },
-  {
-    "id": "8b066f044ed1c932",
-    "title": "HARDI Backs Changes to U.S.-Mexico-Canada Trade Pact",
-    "link": "https://www.achrnews.com/articles/166553-hardi-backs-changes-to-us-mexico-canada-trade-pact",
-    "summary": "The USMCA, wrote Alex Ayers, HARDI's vice president of government affairs, needs protections against the flow of counterfeit and mislabeled refrigerants through the supply chain, and needs to address issues that could allow components and finished products to be routed through other countries in order to skirt trade rules.",
-    "source_type": "news",
-    "source_name": "ACHR News (北美HVACR行业权威媒体)",
-    "region": "global",
-    "country": "",
-    "language": "",
-    "engagement": null,
-    "published": "2026-08-13T16:00:00+00:00"
-  },
-  {
-    "id": "53e5d671b3fde2e8",
-    "title": "Why Some HVAC Contractors Are Rejecting Private Equity Offers",
-    "link": "https://www.achrnews.com/articles/166540-why-some-hvac-contractors-are-rejecting-private-equity-offers",
-    "summary": "As the HVAC industry continues to consolidate, contractors are taking a hard look at whether they should accept an offer from private equity firms or remain independent.",
-    "source_type": "news",
-    "source_name": "ACHR News (北美HVACR行业权威媒体)",
-    "region": "global",
-    "country": "",
-    "language": "",
-    "engagement": null,
-    "published": "2026-08-13T11:00:00+00:00"
-  },
-  {
     "id": "04a43c4bbc0f7a3d",
     "title": "Cooling the AI revolution: Why liquid cooling has become essential",
     "link": "https://refrigerationandaircon.co.za/cooling-the-ai-revolution-why-liquid-cooling-has-become-essential/",
@@ -531,6 +583,19 @@
     "language": "en",
     "engagement": null,
     "published": "2026-08-14T06:01:10+00:00"
+  },
+  {
+    "id": "dc60ca76ceeec529",
+    "title": "Segurança em altura salva vidas no HVAC-R",
+    "link": "https://revistadofrio.com.br/seguranca-em-altura-salva-vidas-no-hvac-r/",
+    "summary": "Da análise de risco ao plano de resgate, especialistas destacam que investir em segurança significa proteger vidas e garantir a qualidade das operações.",
+    "source_type": "news",
+    "source_name": "Revista do Frio (巴西)",
+    "region": "south_america",
+    "country": "BR",
+    "language": "pt",
+    "engagement": null,
+    "published": "2026-08-20T18:08:45+00:00"
   },
   {
     "id": "388a1245b3e2f967",
