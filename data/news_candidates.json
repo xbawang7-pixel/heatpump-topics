@@ -1,5 +1,18 @@
 [
   {
+    "id": "818d8b468ba0cfee",
+    "title": "New Heat BIG webinars announced: from theory to practice with large heat pumps",
+    "link": "https://ehpa.org/news-and-resources/events/heat-big-taking-end-users-from-theory-to-practice-with-large-heat-pumps/",
+    "summary": "<p>Large heat pumps can transform industrial process heat and district heating systems. But how can theory be turned into practice? The European Heat Pump Association presents the webinar series ‘Heat BIG: implementing industrial and district heating solutions’, supported by Turboden.  Experts will take end users from idea to implementation &#8211; showing how the right large heat [&#8230;]</p>\n<p",
+    "source_type": "news",
+    "source_name": "EHPA 欧洲热泵协会",
+    "region": "europe",
+    "country": "EU",
+    "language": "en",
+    "engagement": null,
+    "published": "2026-08-21T09:00:21+00:00"
+  },
+  {
     "id": "31299f372184fc6d",
     "title": "Spain",
     "link": "https://ehpa.org/news-and-resources/national-member-publications/spanish-hvac-market-report-2025-momentum-and-resilience/",
@@ -37,6 +50,19 @@
     "language": "en",
     "engagement": null,
     "published": "2026-08-17T09:15:15+00:00"
+  },
+  {
+    "id": "5a642398bd0c96a2",
+    "title": "A chip off the electricity costs",
+    "link": "https://www.coolingpost.com/features/a-chip-off-the-electricity-costs/",
+    "summary": "<p>USA: A distributed control system and autonomous AI-application is said to have enabled a US food producer to achieve energy savings of 17%. ...</p>\n<p class=\"text-end\"><a class=\"btn btn-outline-secondary picostrap-read-more-link mt-3\" href=\"https://www.coolingpost.com/features/a-chip-off-the-electricity-costs/\">Read More...</a></p>\n<p>The post <a href=\"https://www.coolingpost.com/features/a-ch",
+    "source_type": "news",
+    "source_name": "Cooling Post (欧洲制冷/热泵行业媒体)",
+    "region": "europe",
+    "country": "UK",
+    "language": "en",
+    "engagement": null,
+    "published": "2026-08-21T15:51:59+00:00"
   },
   {
     "id": "5636b1e2e88adb12",
@@ -156,19 +182,6 @@
     "published": "2026-08-18T13:20:34+00:00"
   },
   {
-    "id": "e1a101f8ca036ff1",
-    "title": "Ricardo Bristotti appointed Nidec GA president",
-    "link": "https://www.coolingpost.com/world-news/ricardo-bristotti-appointed-nidec-ga-president/",
-    "summary": "<p>BRAZIL: Nidec Global Appliance, owner of the Embraco brand, has appointed Ricardo Bristotti as its new president. He replaces Alberto Casnati. ...</p>\n<p class=\"text-end\"><a class=\"btn btn-outline-secondary picostrap-read-more-link mt-3\" href=\"https://www.coolingpost.com/world-news/ricardo-bristotti-appointed-nidec-ga-president/\">Read More...</a></p>\n<p>The post <a href=\"https://www.coolingpost",
-    "source_type": "news",
-    "source_name": "Cooling Post (欧洲制冷/热泵行业媒体)",
-    "region": "europe",
-    "country": "UK",
-    "language": "en",
-    "engagement": null,
-    "published": "2026-08-18T09:27:29+00:00"
-  },
-  {
     "id": "a5564d1664a109b1",
     "title": "Centrale termica compatta che semplifica l’impianto: HP Wall-Only Electric 190",
     "link": "https://www.impiantinews.it/rci/prodotti/centrale-termica-compatta-che-semplifica-limpianto-hp-wall-only-electric-190/",
@@ -260,19 +273,6 @@
     "published": "2026-08-18T11:27:33+00:00"
   },
   {
-    "id": "3838b3e59342f7cb",
-    "title": "Gasloze sociale huurwoningen in Delfzijl dankzij warmtepompen en HydroTop-dakopstelling",
-    "link": "https://www.installatie.nl/techniek/gasloze-sociale-huurwoningen-in-delfzijl-dankzij-warmtepompen-en-hydrotop-dakopstelling/",
-    "summary": "Woningcorporatie Acantus heeft zestig sociale huurwoningen in Delfzijl ingrijpend verduurzaamd. De woningen zijn gasloos gemaakt met all-electric lucht/water-warmtepompen, nieuwe ventilatievoorzieningen,...",
-    "source_type": "news",
-    "source_name": "Installatie.nl (荷兰)",
-    "region": "europe",
-    "country": "NL",
-    "language": "nl",
-    "engagement": null,
-    "published": "2026-08-14T05:00:00+00:00"
-  },
-  {
     "id": "bf66f98dce077887",
     "title": "How U.S. Boiler Company is Making High-Tech Heating Feel Like Home",
     "link": "https://www.achrnews.com/articles/166584-how-us-boiler-company-is-making-high-tech-heating-feel-like-home",
@@ -299,9 +299,9 @@
     "published": "2026-08-20T17:00:00+00:00"
   },
   {
-    "id": "55f0306567a3ccf6",
-    "title": "OBBBA’s HVAC Scorecard: Tax Wins, Incentive Losses",
-    "link": "https://www.achrnews.com/articles/166580-obbbas-hvac-scorecard-tax-wins-incentive-losses",
+    "id": "e7a0214ddcd8dbc8",
+    "title": "One Big, Beautiful Bill Act, One Year Later: Tax Wins, Incentive Losses",
+    "link": "https://www.achrnews.com/articles/166580-one-big-beautiful-bill-act-one-year-later-tax-wins-incentive-losses",
     "summary": "The sweeping bill gave HVAC contractors more certainty about their tax situations but took away some tax incentives for equipment purchases.",
     "source_type": "news",
     "source_name": "ACHR News (北美HVACR行业权威媒体)",
@@ -546,43 +546,17 @@
     "published": "2026-08-15T11:00:00+00:00"
   },
   {
-    "id": "780bf19c76231048",
-    "title": "Better Options for California's HVAC Sales Reporting Rule",
-    "link": "https://www.achrnews.com/blogs/17-opinions/post/166557-better-options-for-californias-hvac-sales-reporting-rule",
-    "summary": "Alternatives would give the state useful data without disclosing sensitive information",
-    "source_type": "news",
-    "source_name": "ACHR News (北美HVACR行业权威媒体)",
-    "region": "global",
-    "country": "",
-    "language": "",
-    "engagement": null,
-    "published": "2026-08-14T17:00:00+00:00"
-  },
-  {
-    "id": "609f7684d2ea0b7f",
-    "title": "Under 35 and Buying: A New Generation of HVAC Business Owners Emerges",
-    "link": "https://www.achrnews.com/articles/166552-under-35-and-buying-a-new-generation-of-hvac-business-owners-emerges",
-    "summary": "Brokers say a different kind of HVAC business buyer is entering the market.",
-    "source_type": "news",
-    "source_name": "ACHR News (北美HVACR行业权威媒体)",
-    "region": "global",
-    "country": "",
-    "language": "",
-    "engagement": null,
-    "published": "2026-08-14T11:00:00+00:00"
-  },
-  {
-    "id": "04a43c4bbc0f7a3d",
-    "title": "Cooling the AI revolution: Why liquid cooling has become essential",
-    "link": "https://refrigerationandaircon.co.za/cooling-the-ai-revolution-why-liquid-cooling-has-become-essential/",
-    "summary": "<p>By Canninah Dladla, cluster president for sub-Saharan Africa, Schneider Electric As artificial intelligence drives unprecedented growth in data centre capacity, operators face a critical challenge: delivering ever-greater computing power without placing unsustainable demands on energy and water resources. Advanced liquid cooling is emerging as a key technology, enabling higher-density computing",
+    "id": "72bbec01003aa56f",
+    "title": "Data centre growth opens a new HVAC&R opportunity",
+    "link": "https://refrigerationandaircon.co.za/data-centre-growth-opens-a-new-hvacr-opportunity/",
+    "summary": "<p>By Eamonn Ryan If Eskom’s emerging strategy succeeds in attracting more data centre investment to South Africa, the consequences will extend well beyond the country’s electricity market. This is part two of a two-part series.  Water availability and local climatic conditions mean that cooling-system selection cannot simply follow overseas trends.SVStudioart | Magnific.com  For  [...]</p>\n<p>The",
     "source_type": "news",
     "source_name": "RACA Journal (南非)",
     "region": "africa",
     "country": "ZA",
     "language": "en",
     "engagement": null,
-    "published": "2026-08-14T06:01:10+00:00"
+    "published": "2026-08-21T05:43:42+00:00"
   },
   {
     "id": "dc60ca76ceeec529",
