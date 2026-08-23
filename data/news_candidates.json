@@ -52,6 +52,19 @@
     "published": "2026-08-17T09:15:15+00:00"
   },
   {
+    "id": "900cd4700e44cbc2",
+    "title": "New material boosts passive radiative cooling",
+    "link": "https://www.coolingpost.com/world-news/new-material-boosts-passive-radiative-cooling/",
+    "summary": "<p>SPAIN: A research group at Madrid’s Institute of Micro and Nanotechnology (IMN-CNM, CSIC) has developed a new nanomaterial capable of cooling surfaces under solar radiation without consuming electricity....</p>\n<p class=\"text-end\"><a class=\"btn btn-outline-secondary picostrap-read-more-link mt-3\" href=\"https://www.coolingpost.com/world-news/new-material-boosts-passive-radiative-cooling/\">Read M",
+    "source_type": "news",
+    "source_name": "Cooling Post (欧洲制冷/热泵行业媒体)",
+    "region": "europe",
+    "country": "UK",
+    "language": "en",
+    "engagement": null,
+    "published": "2026-08-22T19:57:57+00:00"
+  },
+  {
     "id": "5a642398bd0c96a2",
     "title": "A chip off the electricity costs",
     "link": "https://www.coolingpost.com/features/a-chip-off-the-electricity-costs/",
@@ -169,19 +182,6 @@
     "published": "2026-08-18T15:45:36+00:00"
   },
   {
-    "id": "44260b1f4dec3832",
-    "title": "Ziehl-Abegg to build €25m factory in China",
-    "link": "https://www.coolingpost.com/world-news/ziehl-abegg-to-build-e25m-factory-in-china/",
-    "summary": "<p>CHINA: German motor and fan manufacturer Ziehl-Abegg has broken ground on a new €25m production facility in China. ...</p>\n<p class=\"text-end\"><a class=\"btn btn-outline-secondary picostrap-read-more-link mt-3\" href=\"https://www.coolingpost.com/world-news/ziehl-abegg-to-build-e25m-factory-in-china/\">Read More...</a></p>\n<p>The post <a href=\"https://www.coolingpost.com/world-news/ziehl-abegg-to-b",
-    "source_type": "news",
-    "source_name": "Cooling Post (欧洲制冷/热泵行业媒体)",
-    "region": "europe",
-    "country": "UK",
-    "language": "en",
-    "engagement": null,
-    "published": "2026-08-18T13:20:34+00:00"
-  },
-  {
     "id": "a5564d1664a109b1",
     "title": "Centrale termica compatta che semplifica l’impianto: HP Wall-Only Electric 190",
     "link": "https://www.impiantinews.it/rci/prodotti/centrale-termica-compatta-che-semplifica-limpianto-hp-wall-only-electric-190/",
@@ -271,6 +271,32 @@
     "language": "nl",
     "engagement": null,
     "published": "2026-08-18T11:27:33+00:00"
+  },
+  {
+    "id": "df17fdeededcee99",
+    "title": "Reclaimed Refrigerants for California Compliance",
+    "link": "https://www.achrnews.com/articles/166590-reclaimed-refrigerants-for-california-compliance",
+    "summary": "California's Assembly Biill 663, signed last October, clarifies California’s State Bill (SB) 1206 and establishes strict criteria for what qualifies as a certified reclaimed refrigerant.",
+    "source_type": "news",
+    "source_name": "ACHR News (北美HVACR行业权威媒体)",
+    "region": "global",
+    "country": "",
+    "language": "",
+    "engagement": null,
+    "published": "2026-08-22T15:00:00+00:00"
+  },
+  {
+    "id": "e572022d1daad121",
+    "title": "The 1980s: The Decade That Changed HVACR Forever",
+    "link": "https://www.achrnews.com/articles/166586-the-1980s-the-decade-that-changed-hvacr-forever",
+    "summary": "The 1980s quietly launched five revolutions that still shape how HVACR systems are designed, built, controlled, and serviced today.",
+    "source_type": "news",
+    "source_name": "ACHR News (北美HVACR行业权威媒体)",
+    "region": "global",
+    "country": "",
+    "language": "",
+    "engagement": null,
+    "published": "2026-08-22T11:00:03+00:00"
   },
   {
     "id": "bf66f98dce077887",
@@ -518,32 +544,6 @@
     "language": "",
     "engagement": null,
     "published": "2026-08-16T11:00:00+00:00"
-  },
-  {
-    "id": "293f1fd6424b1f67",
-    "title": "Penn College HVAC Programs Set Accreditation First",
-    "link": "https://www.achrnews.com/articles/166536-penn-college-hvac-programs-set-accreditation-first",
-    "summary": "The American Council of Construction Education has accredited Pennsylvania College of Technology's associate degree program in HVAC technology and its bachelor's degree program in HVAC engineering technology.",
-    "source_type": "news",
-    "source_name": "ACHR News (北美HVACR行业权威媒体)",
-    "region": "global",
-    "country": "",
-    "language": "",
-    "engagement": null,
-    "published": "2026-08-15T15:00:00+00:00"
-  },
-  {
-    "id": "4f5a46a71970ba27",
-    "title": "Soft Skills Make Every HVAC Service Call Better",
-    "link": "https://www.achrnews.com/articles/166561-soft-skills-make-every-hvac-service-call-better",
-    "summary": "If the homeowner doesn’t sense that you’re trustworthy, focused, and good with people, your technical ability becomes much harder to appreciate.",
-    "source_type": "news",
-    "source_name": "ACHR News (北美HVACR行业权威媒体)",
-    "region": "global",
-    "country": "",
-    "language": "",
-    "engagement": null,
-    "published": "2026-08-15T11:00:00+00:00"
   },
   {
     "id": "72bbec01003aa56f",
