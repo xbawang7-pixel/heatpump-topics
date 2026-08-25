@@ -4702,5 +4702,77 @@
     "sample_title": "Record El Niño to bake Australia after extreme heat and fires across Europe and North America",
     "sample_link": "https://www.reddit.com/r/australia/comments/1vb5rib/record_el_ni%C3%B1o_to_bake_australia_after_extreme/",
     "keyword_validated": false
+  },
+  "hvac solutions for ai data centers and commercial buildings": {
+    "keyword": "HVAC solutions for AI data centers and commercial buildings",
+    "region": "global",
+    "product_category": "both",
+    "content_format": "blog",
+    "first_seen": "2026-08-25",
+    "last_seen": "2026-08-25",
+    "times_seen": 1,
+    "sample_title": "Samsung to establish HVAC production line in Korea",
+    "sample_link": "https://www.coolingpost.com/world-news/samsung-to-establish-hvac-production-line-in-korea/",
+    "keyword_validated": false
+  },
+  "choosing the right heat pump with natural refrigerants": {
+    "keyword": "choosing the right heat pump with natural refrigerants",
+    "region": "europe",
+    "product_category": "heat_pump",
+    "content_format": "buyer_faq",
+    "first_seen": "2026-08-25",
+    "last_seen": "2026-08-25",
+    "times_seen": 1,
+    "sample_title": "Una bomba de calor para cada necesidad: la apuesta de Lumelco por la aerotermia con refrigerantes naturales",
+    "sample_link": "https://www.caloryfrio.com/energias-renovables/aerotermia/lumelco-bomba-calor-aerotermia-refrigerantes-naturales.html",
+    "keyword_validated": false
+  },
+  "hvac market trends and regulations in spain 2024": {
+    "keyword": "HVAC market trends and regulations in Spain 2024",
+    "region": "europe",
+    "product_category": "both",
+    "content_format": "blog",
+    "first_seen": "2026-08-25",
+    "last_seen": "2026-08-25",
+    "times_seen": 1,
+    "sample_title": "Nueva radiografía del mercado español de climatización: energía, normativa y evolución sectorial bajo análisis",
+    "sample_link": "https://www.caloryfrio.com/noticias/informacion-mercado/nueva-radiografia-mercado-espanol-climatizacion-energia-normativa-evolucion-sectorial-bajo-analisis.html",
+    "keyword_validated": false
+  },
+  "using reclaimed refrigerants for hvac maintenance": {
+    "keyword": "using reclaimed refrigerants for HVAC maintenance",
+    "region": "global",
+    "product_category": "both",
+    "content_format": "buyer_faq",
+    "first_seen": "2026-08-25",
+    "last_seen": "2026-08-25",
+    "times_seen": 1,
+    "sample_title": "Reclaimed Refrigerant and System Integrity: Understanding a Changing Supply Landscape",
+    "sample_link": "https://www.achrnews.com/articles/166578-reclaimed-refrigerant-and-system-integrity-understanding-a-changing-supply-landscape",
+    "keyword_validated": false
+  },
+  "hvac market growth and residential vs commercial demand": {
+    "keyword": "HVAC market growth and residential vs commercial demand",
+    "region": "global",
+    "product_category": "both",
+    "content_format": "blog",
+    "first_seen": "2026-08-25",
+    "last_seen": "2026-08-25",
+    "times_seen": 1,
+    "sample_title": "Ferguson HVAC Sales Rise 11% Amid Mixed Markets",
+    "sample_link": "https://www.achrnews.com/articles/166576-ferguson-hvac-sales-rise-11-amid-mixed-markets",
+    "keyword_validated": false
+  },
+  "a2l vs r-290 refrigerants comparison": {
+    "keyword": "A2L vs R-290 refrigerants comparison",
+    "region": "global",
+    "product_category": "air_conditioner",
+    "content_format": "comparison",
+    "first_seen": "2026-08-25",
+    "last_seen": "2026-08-25",
+    "times_seen": 1,
+    "sample_title": "A2Ls or R-290? Understanding the Tradeoffs",
+    "sample_link": "https://www.achrnews.com/articles/166573-a2ls-or-r-290-understanding-the-tradeoffs",
+    "keyword_validated": false
   }
 }
