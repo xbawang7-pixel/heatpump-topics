@@ -7092,7 +7092,7 @@
     "upvotes": 7,
     "comments": 0,
     "first_seen": "2026-07-15",
-    "last_seen": "2026-08-19"
+    "last_seen": "2026-08-26"
   },
   "0c79c1bc45f24561": {
     "id": "0c79c1bc45f24561",
@@ -7103,7 +7103,7 @@
     "upvotes": 6,
     "comments": 0,
     "first_seen": "2026-07-15",
-    "last_seen": "2026-08-19"
+    "last_seen": "2026-08-26"
   },
   "4eb09266e5af5bd9": {
     "id": "4eb09266e5af5bd9",
@@ -7114,7 +7114,7 @@
     "upvotes": 6,
     "comments": 0,
     "first_seen": "2026-07-15",
-    "last_seen": "2026-08-19"
+    "last_seen": "2026-08-26"
   },
   "ae95af5fb807b094": {
     "id": "ae95af5fb807b094",
@@ -7125,7 +7125,7 @@
     "upvotes": 6,
     "comments": 0,
     "first_seen": "2026-07-15",
-    "last_seen": "2026-08-19"
+    "last_seen": "2026-08-26"
   },
   "83b122b4483c5c6d": {
     "id": "83b122b4483c5c6d",
@@ -7136,7 +7136,7 @@
     "upvotes": 5,
     "comments": 0,
     "first_seen": "2026-07-15",
-    "last_seen": "2026-08-19"
+    "last_seen": "2026-08-26"
   },
   "a1bf29391370daa1": {
     "id": "a1bf29391370daa1",
@@ -7147,7 +7147,7 @@
     "upvotes": 4,
     "comments": 0,
     "first_seen": "2026-07-15",
-    "last_seen": "2026-08-19"
+    "last_seen": "2026-08-26"
   },
   "3a120c241e480abe": {
     "id": "3a120c241e480abe",
@@ -7158,7 +7158,7 @@
     "upvotes": 4,
     "comments": 0,
     "first_seen": "2026-07-15",
-    "last_seen": "2026-08-19"
+    "last_seen": "2026-08-26"
   },
   "8576352f7a9548db": {
     "id": "8576352f7a9548db",
@@ -7169,7 +7169,7 @@
     "upvotes": 4,
     "comments": 0,
     "first_seen": "2026-07-15",
-    "last_seen": "2026-08-19"
+    "last_seen": "2026-08-26"
   },
   "b2026af8ae957131": {
     "id": "b2026af8ae957131",
@@ -7180,7 +7180,7 @@
     "upvotes": 4,
     "comments": 0,
     "first_seen": "2026-07-15",
-    "last_seen": "2026-08-19"
+    "last_seen": "2026-08-26"
   },
   "aa8b24fd1c9daa17": {
     "id": "aa8b24fd1c9daa17",
@@ -18224,7 +18224,7 @@
     "upvotes": 449,
     "comments": 0,
     "first_seen": "2026-08-10",
-    "last_seen": "2026-08-12"
+    "last_seen": "2026-08-26"
   },
   "20a6a284257c97da": {
     "id": "20a6a284257c97da",
@@ -18235,7 +18235,7 @@
     "upvotes": 216,
     "comments": 0,
     "first_seen": "2026-08-10",
-    "last_seen": "2026-08-19"
+    "last_seen": "2026-08-26"
   },
   "d29aa148e54f1de5": {
     "id": "d29aa148e54f1de5",
@@ -22789,7 +22789,7 @@
     "upvotes": 57,
     "comments": 0,
     "first_seen": "2026-08-12",
-    "last_seen": "2026-08-12"
+    "last_seen": "2026-08-26"
   },
   "e650ff6e34c310b9": {
     "id": "e650ff6e34c310b9",
@@ -22877,7 +22877,7 @@
     "upvotes": 20,
     "comments": 0,
     "first_seen": "2026-08-17",
-    "last_seen": "2026-08-17"
+    "last_seen": "2026-08-26"
   },
   "9441881359db8bbd": {
     "id": "9441881359db8bbd",
@@ -32591,5 +32591,126 @@
     "comments": 0,
     "first_seen": "2026-08-24",
     "last_seen": "2026-08-24"
+  },
+  "f5ee6fb161c4be1f": {
+    "id": "f5ee6fb161c4be1f",
+    "title": "New survey reveals surprising shift in homeowners' heating and A/C choices: 'We almost couldn't keep up with the demand'",
+    "link": "https://www.reddit.com/r/HeatPump/comments/1k5isgu/new_survey_reveals_surprising_shift_in_homeowners/",
+    "source_name": "r/heatpump",
+    "summary_cn": "引用行业调查数据讨论住宅取暖选择的趋势，缺乏具体的技术深度或产品对比，属于大众市场新闻摘要。",
+    "upvotes": 3,
+    "comments": 0,
+    "first_seen": "2026-08-26",
+    "last_seen": "2026-08-26"
+  },
+  "ccfb8fe2b594cfcd": {
+    "id": "ccfb8fe2b594cfcd",
+    "title": "How old do we think this is?",
+    "link": "https://www.reddit.com/r/hvacadvice/comments/1vyhob4/how_old_do_we_think_this_is/",
+    "source_name": "r/hvacadvice",
+    "summary_cn": "展示了老建筑中的旧设备，并感叹运行成本，属于闲聊吐槽，缺乏对设备更新改造的具体分析。",
+    "upvotes": 1,
+    "comments": 0,
+    "first_seen": "2026-08-26",
+    "last_seen": "2026-08-26"
+  },
+  "6c913f2304485eee": {
+    "id": "6c913f2304485eee",
+    "title": "Question about Miami Arpec",
+    "link": "https://www.reddit.com/r/hvacadvice/comments/1vygj53/question_about_miami_arpec/",
+    "source_name": "r/hvacadvice",
+    "summary_cn": "分享学徒考核分数并询问职业前景，属于个人职业规划范畴，不含具体的空调/热泵技术内容。",
+    "upvotes": 2,
+    "comments": 0,
+    "first_seen": "2026-08-26",
+    "last_seen": "2026-08-26"
+  },
+  "227d1d11152cdccc": {
+    "id": "227d1d11152cdccc",
+    "title": "Hvac path",
+    "link": "https://www.reddit.com/r/hvacadvice/comments/1vyg9xh/hvac_path/",
+    "source_name": "r/hvacadvice",
+    "summary_cn": "探讨商业与住宅HVAC维修的薪资差距及学徒路径，属于职业规划讨论，缺乏设备层面的专业信息。",
+    "upvotes": 1,
+    "comments": 0,
+    "first_seen": "2026-08-26",
+    "last_seen": "2026-08-26"
+  },
+  "b5732d0b44d7ce49": {
+    "id": "b5732d0b44d7ce49",
+    "title": "Easy diy window sealing kit",
+    "link": "https://www.reddit.com/r/AirConditioners/comments/1vaxm3w/easy_diy_window_sealing_kit/",
+    "source_name": "r/AirConditioners",
+    "summary_cn": "分享简易DIY窗机密封技巧，属于生活小妙招，对B2B专业空调工程参考意义不大。",
+    "upvotes": 287,
+    "comments": 0,
+    "first_seen": "2026-08-26",
+    "last_seen": "2026-08-26"
+  },
+  "a04379944d5b5698": {
+    "id": "a04379944d5b5698",
+    "title": "New Aircon in the house",
+    "link": "https://www.reddit.com/r/AirConditioners/comments/1vre4g5/new_aircon_in_the_house/",
+    "source_name": "r/AirConditioners",
+    "summary_cn": "仅发布新空调安装的喜讯，无技术细节，属于用户安装后的情绪分享。",
+    "upvotes": 131,
+    "comments": 0,
+    "first_seen": "2026-08-26",
+    "last_seen": "2026-08-26"
+  },
+  "5f12897f6477a409": {
+    "id": "5f12897f6477a409",
+    "title": "Portable AC in window..",
+    "link": "https://www.reddit.com/r/AirConditioners/comments/1v8gk6z/portable_ac_in_window/",
+    "source_name": "r/AirConditioners",
+    "summary_cn": "展示他人安装的便携式空调窗机方案，属于围观拍摄，缺乏对安装方案的性能评估和技术分析。",
+    "upvotes": 95,
+    "comments": 0,
+    "first_seen": "2026-08-26",
+    "last_seen": "2026-08-26"
+  },
+  "620eb41d7a78f6f7": {
+    "id": "620eb41d7a78f6f7",
+    "title": "RIP queen. My folks had her since the early or mid 90's.",
+    "link": "https://www.reddit.com/r/AirConditioners/comments/1vv73h0/rip_queen_my_folks_had_her_since_the_early_or_mid/",
+    "source_name": "r/AirConditioners",
+    "summary_cn": "感慨旧设备退休，属于个人情感怀旧，没有任何空调产品技术或工程信息。",
+    "upvotes": 55,
+    "comments": 0,
+    "first_seen": "2026-08-26",
+    "last_seen": "2026-08-26"
+  },
+  "bbea13bc8b6cb793": {
+    "id": "bbea13bc8b6cb793",
+    "title": "Help me find this mysterious Samsung air conditioner.",
+    "link": "https://www.reddit.com/r/AirConditioners/comments/1vcz9rr/help_me_find_this_mysterious_samsung_air/",
+    "source_name": "r/AirConditioners",
+    "summary_cn": "通过Google地图寻找特定型号的旧款三星空调，属于趣味寻找，不含设备型号规格或工程技术参考信息。",
+    "upvotes": 55,
+    "comments": 0,
+    "first_seen": "2026-08-26",
+    "last_seen": "2026-08-26"
+  },
+  "84ee045d5b4108ce": {
+    "id": "84ee045d5b4108ce",
+    "title": "I had no idea installing a new AC would affect me this much",
+    "link": "https://www.reddit.com/r/AirConditioners/comments/1vd0l0m/i_had_no_idea_installing_a_new_ac_would_affect_me/",
+    "source_name": "r/AirConditioners",
+    "summary_cn": "表达空调维修后对生活的改善，侧重于心理感受和生活质量，缺乏专业暖通分析。",
+    "upvotes": 43,
+    "comments": 0,
+    "first_seen": "2026-08-26",
+    "last_seen": "2026-08-26"
+  },
+  "72e25dde6cf35b9b": {
+    "id": "72e25dde6cf35b9b",
+    "title": "Does putting a fan in front of AC actually make a room feel cooler?",
+    "link": "https://www.reddit.com/r/AirConditioners/comments/1vu37n1/does_putting_a_fan_in_front_of_ac_actually_make_a/",
+    "source_name": "r/AirConditioners",
+    "summary_cn": "讨论在空调前加风扇是否会增加凉爽感，属于基本的空气动力学常识探讨，缺乏工程专业价值。",
+    "upvotes": 36,
+    "comments": 0,
+    "first_seen": "2026-08-26",
+    "last_seen": "2026-08-26"
   }
 }
