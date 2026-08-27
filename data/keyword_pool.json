@@ -4894,5 +4894,53 @@
     "sample_title": "Segurança em altura salva vidas no HVAC-R",
     "sample_link": "https://revistadofrio.com.br/seguranca-em-altura-salva-vidas-no-hvac-r/",
     "keyword_validated": false
+  },
+  "industrial heat pump implementation guide": {
+    "keyword": "industrial heat pump implementation guide",
+    "region": "europe",
+    "product_category": "heat_pump",
+    "content_format": "blog",
+    "first_seen": "2026-08-27",
+    "last_seen": "2026-08-27",
+    "times_seen": 1,
+    "sample_title": "New Heat BIG webinars announced: from theory to practice with large heat pumps",
+    "sample_link": "https://ehpa.org/news-and-resources/events/heat-big-taking-end-users-from-theory-to-practice-with-large-heat-pumps/",
+    "keyword_validated": false
+  },
+  "hvac equipment tax incentives and business roi": {
+    "keyword": "HVAC equipment tax incentives and business ROI",
+    "region": "global",
+    "product_category": "both",
+    "content_format": "blog",
+    "first_seen": "2026-08-27",
+    "last_seen": "2026-08-27",
+    "times_seen": 1,
+    "sample_title": "One Big, Beautiful Bill Act, One Year Later: Tax Wins, Incentive Losses",
+    "sample_link": "https://www.achrnews.com/articles/166580-one-big-beautiful-bill-act-one-year-later-tax-wins-incentive-losses",
+    "keyword_validated": false
+  },
+  "data center cooling system selection for african climate": {
+    "keyword": "data center cooling system selection for African climate",
+    "region": "africa",
+    "product_category": "air_conditioner",
+    "content_format": "comparison",
+    "first_seen": "2026-08-27",
+    "last_seen": "2026-08-27",
+    "times_seen": 1,
+    "sample_title": "Data centre growth opens a new HVAC&R opportunity",
+    "sample_link": "https://refrigerationandaircon.co.za/data-centre-growth-opens-a-new-hvacr-opportunity/",
+    "keyword_validated": false
+  },
+  "co2 refrigerant condensing units for commercial refrigeration": {
+    "keyword": "CO2 refrigerant condensing units for commercial refrigeration",
+    "region": "asia",
+    "product_category": "air_conditioner",
+    "content_format": "blog",
+    "first_seen": "2026-08-27",
+    "last_seen": "2026-08-27",
+    "times_seen": 1,
+    "sample_title": "Launch of Outdoor CO2 Refrigerant Condensing Units in Singapore",
+    "sample_link": "https://news.panasonic.com/global/press/en260827-3",
+    "keyword_validated": false
   }
 }
