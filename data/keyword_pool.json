@@ -4942,5 +4942,29 @@
     "sample_title": "Launch of Outdoor CO2 Refrigerant Condensing Units in Singapore",
     "sample_link": "https://news.panasonic.com/global/press/en260827-3",
     "keyword_validated": false
+  },
+  "hvac refrigerant compliance regulations guide": {
+    "keyword": "HVAC refrigerant compliance regulations guide",
+    "region": "global",
+    "product_category": "both",
+    "content_format": "buyer_faq",
+    "first_seen": "2026-08-28",
+    "last_seen": "2026-08-28",
+    "times_seen": 1,
+    "sample_title": "Reclaimed Refrigerants for California Compliance",
+    "sample_link": "https://www.achrnews.com/articles/166590-reclaimed-refrigerants-for-california-compliance",
+    "keyword_validated": false
+  },
+  "evolution of modern hvac technology": {
+    "keyword": "evolution of modern HVAC technology",
+    "region": "global",
+    "product_category": "both",
+    "content_format": "blog",
+    "first_seen": "2026-08-28",
+    "last_seen": "2026-08-28",
+    "times_seen": 1,
+    "sample_title": "The 1980s: The Decade That Changed HVACR Forever",
+    "sample_link": "https://www.achrnews.com/articles/166586-the-1980s-the-decade-that-changed-hvacr-forever",
+    "keyword_validated": false
   }
 }
