@@ -4990,5 +4990,77 @@
     "sample_title": "Smardt AIR Brings Chiller Logic to Airside Autonomy",
     "sample_link": "https://www.achrnews.com/articles/166594-smardt-air-brings-chiller-logic-to-airside-autonomy",
     "keyword_validated": false
+  },
+  "hvac market trends spain 2025": {
+    "keyword": "HVAC market trends Spain 2025",
+    "region": "europe",
+    "product_category": "both",
+    "content_format": "blog",
+    "first_seen": "2026-08-30",
+    "last_seen": "2026-08-30",
+    "times_seen": 1,
+    "sample_title": "AFEC reformula el nuevo rumbo del mercado español de climatización",
+    "sample_link": "https://www.climanoticias.com/texto-diario/mostrar/5991745/afec-reformula-nuevo-rumbo-mercado-espanol-climatizacion",
+    "keyword_validated": false
+  },
+  "hvac equipment security and anti-theft measures": {
+    "keyword": "HVAC equipment security and anti-theft measures",
+    "region": "global",
+    "product_category": "both",
+    "content_format": "buyer_faq",
+    "first_seen": "2026-08-30",
+    "last_seen": "2026-08-30",
+    "times_seen": 1,
+    "sample_title": "HVAC-Related Crimes on the Rise",
+    "sample_link": "https://www.achrnews.com/articles/166597-hvac-related-crimes-on-the-rise",
+    "keyword_validated": false
+  },
+  "managing hvac supply chain risks during trade tariffs": {
+    "keyword": "managing HVAC supply chain risks during trade tariffs",
+    "region": "global",
+    "product_category": "both",
+    "content_format": "blog",
+    "first_seen": "2026-08-30",
+    "last_seen": "2026-08-30",
+    "times_seen": 1,
+    "sample_title": "U.S.-Canada Trade War Escalates as 50% Tariffs Take Effect",
+    "sample_link": "https://www.achrnews.com/articles/166596-us-canada-trade-war-escalates-as-50-tariffs-take-effect",
+    "keyword_validated": false
+  },
+  "benefits of vrf systems for commercial buildings": {
+    "keyword": "benefits of VRF systems for commercial buildings",
+    "region": "global",
+    "product_category": "air_conditioner",
+    "content_format": "comparison",
+    "first_seen": "2026-08-30",
+    "last_seen": "2026-08-30",
+    "times_seen": 1,
+    "sample_title": "Creating Smarter Commercial Spaces:\nHow VRF Solutions Can Help Meet Evolving Building Needs",
+    "sample_link": "https://www.achrnews.com/articles/166582-creating-smarter-commercial-spaces-how-vrf-solutions-can-help-meet-evolving-building-needs",
+    "keyword_validated": false
+  },
+  "understanding new hvac efficiency standards 2026": {
+    "keyword": "understanding new HVAC efficiency standards 2026",
+    "region": "global",
+    "product_category": "both",
+    "content_format": "blog",
+    "first_seen": "2026-08-30",
+    "last_seen": "2026-08-30",
+    "times_seen": 1,
+    "sample_title": "HVAC Groups See Promise, Problems in Latest Senate-Led Federal Efficiency Bill",
+    "sample_link": "https://www.achrnews.com/articles/166589-hvac-groups-see-promise-problems-in-latest-senate-led-federal-efficiency-bill",
+    "keyword_validated": false
+  },
+  "cooling solutions for data centers cape town": {
+    "keyword": "cooling solutions for data centers Cape Town",
+    "region": "africa",
+    "product_category": "air_conditioner",
+    "content_format": "whitepaper",
+    "first_seen": "2026-08-30",
+    "last_seen": "2026-08-30",
+    "times_seen": 1,
+    "sample_title": "170MW of data centres: What does Cape Town’s digital expansion mean for cooling?",
+    "sample_link": "https://refrigerationandaircon.co.za/170mw-of-data-centres-what-does-cape-towns-digital-expansion-mean-for-cooling/",
+    "keyword_validated": false
   }
 }
