@@ -1,5 +1,31 @@
 [
   {
+    "id": "c159b77c07b56ad3",
+    "title": "New York strengthens cooling tower inspection laws",
+    "link": "https://www.coolingpost.com/world-news/new-york-strengthens-cooling-tower-inspection-laws/",
+    "summary": "<p>USA: Building owners in New York City must now certify that their cooling towers have been inspected, tested, cleaned, and disinfected in compliance with new legislation....</p>\n<p class=\"text-end\"><a class=\"btn btn-outline-secondary picostrap-read-more-link mt-3\" href=\"https://www.coolingpost.com/world-news/new-york-strengthens-cooling-tower-inspection-laws/\">Read More...</a></p>\n<p>The post <",
+    "source_type": "news",
+    "source_name": "Cooling Post (欧洲制冷/热泵行业媒体)",
+    "region": "europe",
+    "country": "UK",
+    "language": "en",
+    "engagement": null,
+    "published": "2026-08-30T19:31:45+00:00"
+  },
+  {
+    "id": "0c9fe2873e10f8b3",
+    "title": "AFR launches e-commerce website",
+    "link": "https://www.coolingpost.com/uk-news/afr-launches-new-e-commerce-website/",
+    "summary": "<p>UK: AFR Refrigeration, one of the UK’s longest established refrigeration wholesalers, has launched a new e-commerce website as the latest development in a wider modernisation of the business....</p>\n<p class=\"text-end\"><a class=\"btn btn-outline-secondary picostrap-read-more-link mt-3\" href=\"https://www.coolingpost.com/uk-news/afr-launches-new-e-commerce-website/\">Read More...</a></p>\n<p>The pos",
+    "source_type": "news",
+    "source_name": "Cooling Post (欧洲制冷/热泵行业媒体)",
+    "region": "europe",
+    "country": "UK",
+    "language": "en",
+    "engagement": null,
+    "published": "2026-08-30T11:57:07+00:00"
+  },
+  {
     "id": "2b3f741188094b30",
     "title": "ICS and MTA combine operations in Germany",
     "link": "https://www.coolingpost.com/world-news/ics-and-mta-combine-operations-in-germany/",
@@ -102,32 +128,6 @@
     "language": "en",
     "engagement": null,
     "published": "2026-08-26T16:16:12+00:00"
-  },
-  {
-    "id": "529acf09cdafc7f8",
-    "title": "IOR looks for STEM Ambassador volunteers",
-    "link": "https://www.coolingpost.com/uk-news/ior-looks-for-stem-ambassador-volunteers/",
-    "summary": "<p>UK: The Institute of Refrigeration is seeking more industry professionals to volunteer as STEM Ambassadors to help students understand the vital role RACHP technologies and the career opportunities available....</p>\n<p class=\"text-end\"><a class=\"btn btn-outline-secondary picostrap-read-more-link mt-3\" href=\"https://www.coolingpost.com/uk-news/ior-looks-for-stem-ambassador-volunteers/\">Read More",
-    "source_type": "news",
-    "source_name": "Cooling Post (欧洲制冷/热泵行业媒体)",
-    "region": "europe",
-    "country": "UK",
-    "language": "en",
-    "engagement": null,
-    "published": "2026-08-26T14:02:05+00:00"
-  },
-  {
-    "id": "21c1833e2e9e01c9",
-    "title": "Data centre thermal management kits for Autodesk",
-    "link": "https://www.coolingpost.com/products/data-centre-thermal-management-kits-for-autodesk/",
-    "summary": "<p>USA: Trane Technologies has Introduced data centre thermal management kits in Autodesk Revit and Autodesk Forma....</p>\n<p class=\"text-end\"><a class=\"btn btn-outline-secondary picostrap-read-more-link mt-3\" href=\"https://www.coolingpost.com/products/data-centre-thermal-management-kits-for-autodesk/\">Read More...</a></p>\n<p>The post <a href=\"https://www.coolingpost.com/products/data-centre-therm",
-    "source_type": "news",
-    "source_name": "Cooling Post (欧洲制冷/热泵行业媒体)",
-    "region": "europe",
-    "country": "UK",
-    "language": "en",
-    "engagement": null,
-    "published": "2026-08-25T15:56:27+00:00"
   },
   {
     "id": "35b8bcf92fa43d7a",
@@ -375,32 +375,6 @@
     "language": "",
     "engagement": null,
     "published": "2026-08-24T11:00:00+00:00"
-  },
-  {
-    "id": "731093a7ab77828a",
-    "title": "Cementex Provides Insulated Tools for HVAC Work",
-    "link": "https://www.achrnews.com/articles/166592-cementex-provides-insulated-tools-for-hvac-work",
-    "summary": "The TR-9HVAC Toolkit includes a carefully curated selection of tools for working around energized equipment, making it an indispensable asset for HVAC professionals.",
-    "source_type": "news",
-    "source_name": "ACHR News (北美HVACR行业权威媒体)",
-    "region": "global",
-    "country": "",
-    "language": "",
-    "engagement": null,
-    "published": "2026-08-23T15:00:00+00:00"
-  },
-  {
-    "id": "b5a04177c7af5530",
-    "title": "Smardt AIR Brings Chiller Logic to Airside Autonomy",
-    "link": "https://www.achrnews.com/articles/166594-smardt-air-brings-chiller-logic-to-airside-autonomy",
-    "summary": "Smardt AIR is redefining air handling by integrating advanced, globally proven technology with local engineering and manufacturing, aiming to deliver system-level operational efficiency and flexibility for North American buildings.",
-    "source_type": "news",
-    "source_name": "ACHR News (北美HVACR行业权威媒体)",
-    "region": "global",
-    "country": "",
-    "language": "",
-    "engagement": null,
-    "published": "2026-08-23T14:03:12+00:00"
   },
   {
     "id": "e8d417b1bbe2077c",
