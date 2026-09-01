@@ -5182,5 +5182,53 @@
     "sample_title": "Printed up some scroll compressor models for my 2nd year apprentices",
     "sample_link": "https://www.reddit.com/r/HVAC/comments/1naxa28/printed_up_some_scroll_compressor_models_for_my/",
     "keyword_validated": false
+  },
+  "hvac retrofitting solutions for multifamily buildings": {
+    "keyword": "HVAC retrofitting solutions for multifamily buildings",
+    "region": "global",
+    "product_category": "both",
+    "content_format": "case_study",
+    "first_seen": "2026-09-01",
+    "last_seen": "2026-09-01",
+    "times_seen": 1,
+    "sample_title": "Midea EVOX G³ for Older Multifamily Retrofits: A Chicago Case Study",
+    "sample_link": "https://www.achrnews.com/articles/166591-midea-evox-g-for-older-multifamily-retrofits-a-chicago-case-study",
+    "keyword_validated": false
+  },
+  "high-efficiency hvac component manufacturing": {
+    "keyword": "high-efficiency HVAC component manufacturing",
+    "region": "global",
+    "product_category": "both",
+    "content_format": "blog",
+    "first_seen": "2026-09-01",
+    "last_seen": "2026-09-01",
+    "times_seen": 1,
+    "sample_title": "German HVAC Company Boosts Growth with U.S. Facility",
+    "sample_link": "https://www.achrnews.com/articles/166602-german-hvac-company-boosts-growth-with-us-facility",
+    "keyword_validated": false
+  },
+  "data center cooling optimization in africa": {
+    "keyword": "data center cooling optimization in Africa",
+    "region": "africa",
+    "product_category": "air_conditioner",
+    "content_format": "whitepaper",
+    "first_seen": "2026-09-01",
+    "last_seen": "2026-09-01",
+    "times_seen": 1,
+    "sample_title": "Why Cape Town’s climate could give data centres a cooling advantage",
+    "sample_link": "https://refrigerationandaircon.co.za/why-cape-towns-climate-could-give-data-centres-a-cooling-advantage/",
+    "keyword_validated": false
+  },
+  "isde subsidy requirements for smart heat pumps": {
+    "keyword": "ISDE subsidy requirements for smart heat pumps",
+    "region": "europe",
+    "product_category": "heat_pump",
+    "content_format": "buyer_faq",
+    "first_seen": "2026-09-01",
+    "last_seen": "2026-09-01",
+    "times_seen": 1,
+    "sample_title": "Vaart achter slim communicatieprotocol bij ISDE warmtepomp",
+    "sample_link": "https://www.installatie.nl/techniek/warmtepompen/slim-communicatieprotocol-splijtzwam-bij-isde-warmtepomp/",
+    "keyword_validated": false
   }
 }
