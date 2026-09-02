@@ -5230,5 +5230,65 @@
     "sample_title": "Vaart achter slim communicatieprotocol bij ISDE warmtepomp",
     "sample_link": "https://www.installatie.nl/techniek/warmtepompen/slim-communicatieprotocol-splijtzwam-bij-isde-warmtepomp/",
     "keyword_validated": false
+  },
+  "hvac solutions for commercial gymnasiums": {
+    "keyword": "HVAC solutions for commercial gymnasiums",
+    "region": "europe",
+    "product_category": "both",
+    "content_format": "case_study",
+    "first_seen": "2026-09-02",
+    "last_seen": "2026-09-02",
+    "times_seen": 1,
+    "sample_title": "La tecnología VRF Air Flux de Bosch Home Comfort resuelve la climatización y el ACS de un gimnasio de 1.800 m² en Barcelona",
+    "sample_link": "https://www.caloryfrio.com/aire-acondicionado/aire-acondicionado-comercial/bosch-air-flux-vrf-recuperacion-calor-gimnasio-barcelona.html",
+    "keyword_validated": false
+  },
+  "hvac gfci compliance and installation requirements": {
+    "keyword": "HVAC GFCI compliance and installation requirements",
+    "region": "global",
+    "product_category": "both",
+    "content_format": "buyer_faq",
+    "first_seen": "2026-09-02",
+    "last_seen": "2026-09-02",
+    "times_seen": 1,
+    "sample_title": "AHRI, ACCA Seek Delay As HVAC GFCI Deadline Nears",
+    "sample_link": "https://www.achrnews.com/articles/166608-ahri-acca-seek-delay-as-hvac-gfci-deadline-nears",
+    "keyword_validated": false
+  },
+  "hvac ducting and sheet metal design for healthcare facilities": {
+    "keyword": "HVAC ducting and sheet metal design for healthcare facilities",
+    "region": "global",
+    "product_category": "air_conditioner",
+    "content_format": "whitepaper",
+    "first_seen": "2026-09-02",
+    "last_seen": "2026-09-02",
+    "times_seen": 1,
+    "sample_title": "Supporting Healthcare Outcomes with Smarter Sheet Metal HVAC Solutions",
+    "sample_link": "https://www.achrnews.com/articles/166610-supporting-healthcare-outcomes-with-smarter-sheet-metal-hvac-solutions",
+    "keyword_validated": false
+  },
+  "smart heat pump diagnostic and remote monitoring systems": {
+    "keyword": "smart heat pump diagnostic and remote monitoring systems",
+    "region": "global",
+    "product_category": "heat_pump",
+    "content_format": "blog",
+    "first_seen": "2026-09-02",
+    "last_seen": "2026-09-02",
+    "times_seen": 1,
+    "sample_title": "Quilt Now Flags Heat Pump Problems Before Service Calls",
+    "sample_link": "https://www.achrnews.com/articles/166606-quilt-now-flags-heat-pump-problems-before-service-calls",
+    "keyword_validated": false
+  },
+  "future of ai in hvac industry trends": {
+    "keyword": "future of AI in HVAC industry trends",
+    "region": "global",
+    "product_category": "both",
+    "content_format": "market_trends",
+    "first_seen": "2026-09-02",
+    "last_seen": "2026-09-02",
+    "times_seen": 1,
+    "sample_title": "How HVACR’s First Computer Revolution Foreshadowed the Age of AI",
+    "sample_link": "https://www.achrnews.com/articles/166603-how-hvacrs-first-computer-revolution-foreshadowed-the-age-of-ai",
+    "keyword_validated": false
   }
 }
