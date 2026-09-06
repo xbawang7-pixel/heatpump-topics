@@ -5374,5 +5374,101 @@
     "sample_title": "20 TruComfort™ Variable Speed Heat Pump with WeatherGuard™",
     "sample_link": "https://www.achrnews.com/articles/166621-20-trucomfort-variable-speed-heat-pump-with-weatherguard",
     "keyword_validated": false
+  },
+  "why choose heat pumps for energy independence": {
+    "keyword": "why choose heat pumps for energy independence",
+    "region": "europe",
+    "product_category": "heat_pump",
+    "content_format": "blog",
+    "first_seen": "2026-09-06",
+    "last_seen": "2026-09-06",
+    "times_seen": 1,
+    "sample_title": "Heat Pump Day 2026: Powering European jobs and competitiveness",
+    "sample_link": "https://ehpa.org/news-and-resources/events/heat-pump-day-2026-powering-european-jobs-and-competitiveness/",
+    "keyword_validated": false
+  },
+  "smart residential air conditioning benefits": {
+    "keyword": "smart residential air conditioning benefits",
+    "region": "europe",
+    "product_category": "air_conditioner",
+    "content_format": "blog",
+    "first_seen": "2026-09-06",
+    "last_seen": "2026-09-06",
+    "times_seen": 1,
+    "sample_title": "Eurofred incorpora wifi de serie en las gamas KM y KL residenciales de Fujitsu",
+    "sample_link": "https://www.climanoticias.com/texto-diario/mostrar/5999330/eurofred-incorpora-wifi-serie-gamas-km-kl-residenciales-fujitsu",
+    "keyword_validated": false
+  },
+  "hvac system monitoring best practices": {
+    "keyword": "HVAC system monitoring best practices",
+    "region": "europe",
+    "product_category": "both",
+    "content_format": "buyer_faq",
+    "first_seen": "2026-09-06",
+    "last_seen": "2026-09-06",
+    "times_seen": 1,
+    "sample_title": "Watts optimiza la medición de presión y temperatura en sistemas HVAC",
+    "sample_link": "https://www.climanoticias.com/texto-diario/mostrar/5999203/watts-optimiza-medicion-presion-temperatura-sistemas-hvac",
+    "keyword_validated": false
+  },
+  "cooling solutions for older buildings in europe": {
+    "keyword": "cooling solutions for older buildings in Europe",
+    "region": "europe",
+    "product_category": "air_conditioner",
+    "content_format": "blog",
+    "first_seen": "2026-09-06",
+    "last_seen": "2026-09-06",
+    "times_seen": 1,
+    "sample_title": "Hittegolven zetten HVAC-installaties op scherp",
+    "sample_link": "https://www.installatie.nl/nieuws/hittegolven-zetten-hvac-installaties-op-scherp/",
+    "keyword_validated": false
+  },
+  "how to reduce heat pump noise": {
+    "keyword": "how to reduce heat pump noise",
+    "region": "europe",
+    "product_category": "heat_pump",
+    "content_format": "buyer_faq",
+    "first_seen": "2026-09-06",
+    "last_seen": "2026-09-06",
+    "times_seen": 1,
+    "sample_title": "Zo voorkom je geluidsoverlast door warmtepomp, leidingen of ventilatie",
+    "sample_link": "https://www.installatie.nl/techniek/zo-voorkom-je-geluidsoverlast-door-warmtepomp/",
+    "keyword_validated": false
+  },
+  "hvac business growth strategy": {
+    "keyword": "HVAC business growth strategy",
+    "region": "global",
+    "product_category": "both",
+    "content_format": "blog",
+    "first_seen": "2026-09-06",
+    "last_seen": "2026-09-06",
+    "times_seen": 1,
+    "sample_title": "To Sell to Private Equity, or Not to Sell?",
+    "sample_link": "https://www.achrnews.com/articles/166619-to-sell-to-private-equity-or-not-to-sell",
+    "keyword_validated": false
+  },
+  "data center cooling efficiency design": {
+    "keyword": "data center cooling efficiency design",
+    "region": "africa",
+    "product_category": "air_conditioner",
+    "content_format": "whitepaper",
+    "first_seen": "2026-09-06",
+    "last_seen": "2026-09-06",
+    "times_seen": 1,
+    "sample_title": "Opinion piece: Designing the modern AI cooling stack (Part 2)",
+    "sample_link": "https://refrigerationandaircon.co.za/opinion-piece-designing-the-modern-ai-cooling-stack-part-2/",
+    "keyword_validated": false
+  },
+  "data center cooling industry trends": {
+    "keyword": "data center cooling industry trends",
+    "region": "africa",
+    "product_category": "air_conditioner",
+    "content_format": "blog",
+    "first_seen": "2026-09-06",
+    "last_seen": "2026-09-06",
+    "times_seen": 1,
+    "sample_title": "PAN AFRICAN DATA CENTRE CONFERENCE AND EXHIBITION",
+    "sample_link": "https://refrigerationandaircon.co.za/pan-african-data-centre-conference-and-exhibition/",
+    "keyword_validated": false
   }
 }
