@@ -44,8 +44,8 @@
     "method": "not_found"
   },
   "https://globenergia.pl/": {
-    "feed_url": null,
-    "method": "not_found"
+    "feed_url": "https://globenergia.pl/feed/",
+    "method": "common_path:feed/"
   },
   "https://portpc.pl/": {
     "feed_url": "https://portpc.pl/feed",
@@ -88,8 +88,8 @@
     "method": "not_found"
   },
   "https://www.revistadofrio.com.br/": {
-    "feed_url": "https://revistadofrio.com.br/feed/",
-    "method": "html_link_tag"
+    "feed_url": null,
+    "method": "not_found"
   },
   "https://www.refriamericas.com/": {
     "feed_url": null,
