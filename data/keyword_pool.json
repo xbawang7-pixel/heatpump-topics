@@ -5638,5 +5638,53 @@
     "sample_title": "AI is pushing data-centre cooling beyond the limits of air",
     "sample_link": "https://refrigerationandaircon.co.za/ai-is-pushing-data-centre-cooling-beyond-the-limits-of-air/",
     "keyword_validated": false
+  },
+  "how to choose a reliable heat pump manufacturer for long-term projects": {
+    "keyword": "how to choose a reliable heat pump manufacturer for long-term projects",
+    "region": "europe",
+    "product_category": "heat_pump",
+    "content_format": "buyer_faq",
+    "first_seen": "2026-09-09",
+    "last_seen": "2026-09-09",
+    "times_seen": 1,
+    "sample_title": "NIBE is nog lang niet uitgewinkeld: warmtepompwereld miljardenbusiness",
+    "sample_link": "https://www.installatie.nl/nieuws/nibe-is-nog-lang-niet-uitgewinkeld-warmtepompwereld-miljardenbusiness/",
+    "keyword_validated": false
+  },
+  "hvacr industry challenges and technology transition guide": {
+    "keyword": "HVACR industry challenges and technology transition guide",
+    "region": "global",
+    "product_category": "both",
+    "content_format": "blog",
+    "first_seen": "2026-09-09",
+    "last_seen": "2026-09-09",
+    "times_seen": 1,
+    "sample_title": "In HVACR, It’s Déjà vu All Over Again",
+    "sample_link": "https://www.achrnews.com/blogs/17-opinions/post/166635-in-hvacr-its-deja-vu-all-over-again",
+    "keyword_validated": false
+  },
+  "impact of hvac refrigerant regulations on commercial installations": {
+    "keyword": "impact of HVAC refrigerant regulations on commercial installations",
+    "region": "global",
+    "product_category": "both",
+    "content_format": "whitepaper",
+    "first_seen": "2026-09-09",
+    "last_seen": "2026-09-09",
+    "times_seen": 1,
+    "sample_title": "1990: The Compliance Era Begins",
+    "sample_link": "https://www.achrnews.com/articles/166626-1990-the-compliance-era-begins",
+    "keyword_validated": false
+  },
+  "energy efficient cooling solutions for african climate": {
+    "keyword": "energy efficient cooling solutions for African climate",
+    "region": "africa",
+    "product_category": "air_conditioner",
+    "content_format": "buyer_faq",
+    "first_seen": "2026-09-09",
+    "last_seen": "2026-09-09",
+    "times_seen": 1,
+    "sample_title": "Africa’s cooling transition gets a USD22m boost",
+    "sample_link": "https://refrigerationandaircon.co.za/africas-cooling-transition-gets-a-usd22m-boost/",
+    "keyword_validated": false
   }
 }
