@@ -5633,8 +5633,8 @@
     "product_category": "air_conditioner",
     "content_format": "comparison",
     "first_seen": "2026-09-08",
-    "last_seen": "2026-09-08",
-    "times_seen": 1,
+    "last_seen": "2026-09-10",
+    "times_seen": 2,
     "sample_title": "AI is pushing data-centre cooling beyond the limits of air",
     "sample_link": "https://refrigerationandaircon.co.za/ai-is-pushing-data-centre-cooling-beyond-the-limits-of-air/",
     "keyword_validated": false
@@ -5685,6 +5685,90 @@
     "times_seen": 1,
     "sample_title": "Africa’s cooling transition gets a USD22m boost",
     "sample_link": "https://refrigerationandaircon.co.za/africas-cooling-transition-gets-a-usd22m-boost/",
+    "keyword_validated": false
+  },
+  "safety standards for a2l refrigerants in hvac installation": {
+    "keyword": "safety standards for A2L refrigerants in HVAC installation",
+    "region": "europe",
+    "product_category": "both",
+    "content_format": "buyer_faq",
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "times_seen": 1,
+    "sample_title": "Aefyt y Actecir actualizan conocimientos sobre refrigerantes inflamables A2L, A2 y A3",
+    "sample_link": "https://www.climanoticias.com/texto-diario/mostrar/6003364/aefyt-actecir-actualizan-conocimientos-sobre-refrigerantes-inflamables-a2l-a2-a3",
+    "keyword_validated": false
+  },
+  "impact of usmca on hvac supply chain and pricing": {
+    "keyword": "impact of USMCA on HVAC supply chain and pricing",
+    "region": "global",
+    "product_category": "both",
+    "content_format": "blog",
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "times_seen": 1,
+    "sample_title": "Trade Groups Stress USMCA's Benefits for HVACR",
+    "sample_link": "https://www.achrnews.com/articles/166648-trade-groups-stress-usmcas-benefits-for-hvacr",
+    "keyword_validated": false
+  },
+  "is it worth buying a heat pump without tax incentives": {
+    "keyword": "is it worth buying a heat pump without tax incentives",
+    "region": "europe",
+    "product_category": "heat_pump",
+    "content_format": "blog",
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "times_seen": 1,
+    "sample_title": "The Heat Pump Cliff That Wasn’t",
+    "sample_link": "https://www.achrnews.com/blogs/17-opinions/post/166642-the-heat-pump-cliff-that-wasnt",
+    "keyword_validated": false
+  },
+  "cost-effective mini split hvac systems for contractors": {
+    "keyword": "cost-effective mini split HVAC systems for contractors",
+    "region": "global",
+    "product_category": "air_conditioner",
+    "content_format": "comparison",
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "times_seen": 1,
+    "sample_title": "Keystone Adds Single-Zone Mini Splits to HVAC Lineup",
+    "sample_link": "https://www.achrnews.com/articles/166641-keystone-adds-single-zone-mini-splits-to-hvac-lineup",
+    "keyword_validated": false
+  },
+  "compact water-source heat pump for commercial space": {
+    "keyword": "compact water-source heat pump for commercial space",
+    "region": "global",
+    "product_category": "heat_pump",
+    "content_format": "buyer_faq",
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "times_seen": 1,
+    "sample_title": "Tranquility (SL) Low-Profile Series: Big Water-Source Performance for Tight Spaces",
+    "sample_link": "https://www.achrnews.com/articles/166629-tranquility-sl-low-profile-series-big-water-source-performance-for-tight-spaces",
+    "keyword_validated": false
+  },
+  "high-capacity commercial water-source heat pump selection guide": {
+    "keyword": "high-capacity commercial water-source heat pump selection guide",
+    "region": "global",
+    "product_category": "heat_pump",
+    "content_format": "buyer_faq",
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "times_seen": 1,
+    "sample_title": "ClimateMaster Tranquility (SB) Compact High-Capacity Series: High-Capacity Performance, Compact Footprint",
+    "sample_link": "https://www.achrnews.com/articles/166627-climatemaster-tranquility-sb-compact-high-capacity-series-high-capacity-performance-compact-footprint",
+    "keyword_validated": false
+  },
+  "calculating actual hvac energy demand for real-world climates": {
+    "keyword": "calculating actual HVAC energy demand for real-world climates",
+    "region": "global",
+    "product_category": "both",
+    "content_format": "blog",
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "times_seen": 1,
+    "sample_title": "Rethinking the Cooling Degree Day",
+    "sample_link": "https://www.achrnews.com/articles/166632-rethinking-the-cooling-degree-day",
     "keyword_validated": false
   }
 }
