@@ -5770,5 +5770,29 @@
     "sample_title": "Rethinking the Cooling Degree Day",
     "sample_link": "https://www.achrnews.com/articles/166632-rethinking-the-cooling-degree-day",
     "keyword_validated": false
+  },
+  "hvac leasing models for contractors and homeowners": {
+    "keyword": "HVAC leasing models for contractors and homeowners",
+    "region": "global",
+    "product_category": "both",
+    "content_format": "blog",
+    "first_seen": "2026-09-11",
+    "last_seen": "2026-09-11",
+    "times_seen": 1,
+    "sample_title": "GoodLeap HVAC Lease Keeps Contractors in the Service Loop",
+    "sample_link": "https://www.achrnews.com/articles/166636-goodleap-hvac-lease-keeps-contractors-in-the-service-loop",
+    "keyword_validated": false
+  },
+  "retrofitting heat pumps in historic buildings": {
+    "keyword": "retrofitting heat pumps in historic buildings",
+    "region": "europe",
+    "product_category": "heat_pump",
+    "content_format": "case_study",
+    "first_seen": "2026-09-11",
+    "last_seen": "2026-09-11",
+    "times_seen": 1,
+    "sample_title": "Heat Pumps, Air Sealing and Teamwork Reimagine a Historic Rowhouse",
+    "sample_link": "https://www.achrnews.com/articles/166643-heat-pumps-air-sealing-and-teamwork-reimagine-a-historic-rowhouse",
+    "keyword_validated": false
   }
 }

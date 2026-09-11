@@ -76,8 +76,8 @@
     "method": "not_found"
   },
   "https://www.seforall.org/": {
-    "feed_url": "https://www.seforall.org/rss.xml",
-    "method": "common_path:rss.xml"
+    "feed_url": null,
+    "method": "not_found"
   },
   "https://abrava.com.br/": {
     "feed_url": "https://abrava.com.br/feed/",
