@@ -1,5 +1,31 @@
 [
   {
+    "id": "e103791ae4b5b76b",
+    "title": "Haier takes to the road",
+    "link": "https://www.coolingpost.com/training/haier-takes-to-the-road/",
+    "summary": "<p>UK: Haier HVAC Solutions goes on the road this month, with a fully-kitted product trailer taking its latest heating and cooling solutions to installers across the UK....</p>\n<p class=\"text-end\"><a class=\"btn btn-outline-secondary picostrap-read-more-link mt-3\" href=\"https://www.coolingpost.com/training/haier-takes-to-the-road/\">Read More...</a></p>\n<p>The post <a href=\"https://www.coolingpost.c",
+    "source_type": "news",
+    "source_name": "Cooling Post (欧洲制冷/热泵行业媒体)",
+    "region": "europe",
+    "country": "UK",
+    "language": "en",
+    "engagement": null,
+    "published": "2026-09-12T17:37:52+00:00"
+  },
+  {
+    "id": "657c6d00777c838a",
+    "title": "Munters expands data center cooling factory",
+    "link": "https://www.coolingpost.com/world-news/munters-expands-data-center-cooling-factory/",
+    "summary": "<p>USA: Swedish air treatment and climate solutions company Munters has inaugurated its expanded data centre cooling factory in Daleville, Virginia....</p>\n<p class=\"text-end\"><a class=\"btn btn-outline-secondary picostrap-read-more-link mt-3\" href=\"https://www.coolingpost.com/world-news/munters-expands-data-center-cooling-factory/\">Read More...</a></p>\n<p>The post <a href=\"https://www.coolingpost.",
+    "source_type": "news",
+    "source_name": "Cooling Post (欧洲制冷/热泵行业媒体)",
+    "region": "europe",
+    "country": "UK",
+    "language": "en",
+    "engagement": null,
+    "published": "2026-09-12T11:34:00+00:00"
+  },
+  {
     "id": "ead87e9b90e6384d",
     "title": "European F-gas prices remain stable",
     "link": "https://www.coolingpost.com/world-news/european-f-gas-prices-remain-stable/",
@@ -102,32 +128,6 @@
     "language": "en",
     "engagement": null,
     "published": "2026-09-09T19:24:52+00:00"
-  },
-  {
-    "id": "06792444eab77394",
-    "title": "Trane upgrades Sintesis Advantage",
-    "link": "https://www.coolingpost.com/products/trane-upgrades-sintesis-advantage/",
-    "summary": "<p>BELGIUM: Trane upgraded its Sintesis Advantage CGAF and CXAF chillers and heat pumps with new features and options to reduce sound levels and improve seasonal efficiency....</p>\n<p class=\"text-end\"><a class=\"btn btn-outline-secondary picostrap-read-more-link mt-3\" href=\"https://www.coolingpost.com/products/trane-upgrades-sintesis-advantage/\">Read More...</a></p>\n<p>The post <a href=\"https://www",
-    "source_type": "news",
-    "source_name": "Cooling Post (欧洲制冷/热泵行业媒体)",
-    "region": "europe",
-    "country": "UK",
-    "language": "en",
-    "engagement": null,
-    "published": "2026-09-09T09:08:48+00:00"
-  },
-  {
-    "id": "5bfdad61a12ea5d1",
-    "title": "TectoCore sets new standards",
-    "link": "https://www.coolingpost.com/products/tectocore-sets-new-standards/",
-    "summary": "<p>GERMANY: Viessmann is to debut its new TectoCore range of refrigeration units at next month’s Chillventa show in Nuremberg....</p>\n<p class=\"text-end\"><a class=\"btn btn-outline-secondary picostrap-read-more-link mt-3\" href=\"https://www.coolingpost.com/products/tectocore-sets-new-standards/\">Read More...</a></p>\n<p>The post <a href=\"https://www.coolingpost.com/products/tectocore-sets-new-standar",
-    "source_type": "news",
-    "source_name": "Cooling Post (欧洲制冷/热泵行业媒体)",
-    "region": "europe",
-    "country": "UK",
-    "language": "en",
-    "engagement": null,
-    "published": "2026-09-09T08:47:55+00:00"
   },
   {
     "id": "f7d200625bb12c19",
@@ -260,32 +260,6 @@
     "published": "2026-09-08T10:35:06+00:00"
   },
   {
-    "id": "a3c0e3319e70b500",
-    "title": "Jedna duża pompa ciepła czy dwie mniejsze? Oto jest pytanie",
-    "link": "https://globenergia.pl/jedna-duza-pompa-ciepla-czy-dwie-mniejsze-oto-jest-pytanie/",
-    "summary": "<p>Jedna duża pompa ciepła wydaje się oczywistym wyborem, ale dokładniejsze obliczenia wskazały coś innego. Dwie mniejsze jednostki zużyły w pewnym modelu o 4,5% mniej energii. Czy o opłacalności naprawdę decyduje nie moc, lecz sposób pracy przez cały sezon?</p>\n<p>Artykuł <a href=\"https://globenergia.pl/jedna-duza-pompa-ciepla-czy-dwie-mniejsze-oto-jest-pytanie/\" rel=\"nofollow\">Jedna duża pompa c",
-    "source_type": "news",
-    "source_name": "GlobEnergia (波兰)",
-    "region": "europe",
-    "country": "PL",
-    "language": "pl",
-    "engagement": null,
-    "published": "2026-09-11T05:25:00+00:00"
-  },
-  {
-    "id": "e54eba42d25cdb72",
-    "title": "Fotowoltaika, magazyn, pompa ciepła czy EV: jaka powinna być kolejność inwestycji?",
-    "link": "https://globenergia.pl/fotowoltaika-magazyn-pompa-ciepla-czy-ev-jaka-powinna-byc-kolejnosc-inwestycji/",
-    "summary": "<p>Najpierw panele na dachu, później magazyn energii, a na końcu pompa ciepła i samochód elektryczny? Taki plan może się sprawdzić, ale nie w każdym domu. O kolejności inwestycji powinny decydować stan budynku, potrzeby mieszkańców i sposób korzystania z energii. W ramach kampanii „Jedna Decyzja” wyjaśniamy, jak zaplanować te zmiany, aby kolejny zakup uzupełniał poprzednie. Pierwsza [&#8230;]</p>\n",
-    "source_type": "news",
-    "source_name": "GlobEnergia (波兰)",
-    "region": "europe",
-    "country": "PL",
-    "language": "pl",
-    "engagement": null,
-    "published": "2026-09-11T04:05:00+00:00"
-  },
-  {
     "id": "0167732766172541",
     "title": "Nowe studia podyplomowe AGH: od pompy ciepła do zintegrowanego systemu energetycznego budynku",
     "link": "https://portpc.pl/nowe-studia-podyplomowe-agh-od-pompy-ciepla-do-zintegrowanego-systemu-energetycznego-budynku/",
@@ -297,6 +271,19 @@
     "language": "pl",
     "engagement": null,
     "published": "2026-09-11T11:36:11+00:00"
+  },
+  {
+    "id": "00f4c32995a1a385",
+    "title": "The NEWSMakers Podcast: HVAC Sales Start With the Conversation, Not the Equipment",
+    "link": "https://www.achrnews.com/articles/166663-the-newsmakers-podcast-hvac-sales-start-with-the-conversation-not-the-equipment",
+    "summary": "Before talking brands, efficiency ratings, or system types, Katy Higgins says HVAC contractors need to figure out what the customer actually wants fixed.",
+    "source_type": "news",
+    "source_name": "ACHR News (北美HVACR行业权威媒体)",
+    "region": "global",
+    "country": "",
+    "language": "",
+    "engagement": null,
+    "published": "2026-09-12T11:00:00+00:00"
   },
   {
     "id": "ddcb3ef829d2415d",
@@ -492,32 +479,6 @@
     "language": "",
     "engagement": null,
     "published": "2026-09-06T11:00:00+00:00"
-  },
-  {
-    "id": "532b07c45e3504e2",
-    "title": "GoodLeap HVAC Lease Keeps Contractors in the Service Loop",
-    "link": "https://www.achrnews.com/articles/166636-goodleap-hvac-lease-keeps-contractors-in-the-service-loop",
-    "summary": "GoodLeap's HVAC Lease gives contractors flexibility in system selection, while providing homeowners predictable payments, maintenance coverage, and a transparent path to ownership with no surprise buyout at the end.",
-    "source_type": "news",
-    "source_name": "ACHR News (北美HVACR行业权威媒体)",
-    "region": "global",
-    "country": "",
-    "language": "",
-    "engagement": null,
-    "published": "2026-09-05T15:00:00+00:00"
-  },
-  {
-    "id": "a3e82d3bb1416a53",
-    "title": "Heat Pumps, Air Sealing and Teamwork Reimagine a Historic Rowhouse",
-    "link": "https://www.achrnews.com/articles/166643-heat-pumps-air-sealing-and-teamwork-reimagine-a-historic-rowhouse",
-    "summary": "Modern heating and cooling can transform centuries-old homes, but only when every detail is considered.",
-    "source_type": "news",
-    "source_name": "ACHR News (北美HVACR行业权威媒体)",
-    "region": "global",
-    "country": "",
-    "language": "",
-    "engagement": null,
-    "published": "2026-09-05T11:00:00+00:00"
   },
   {
     "id": "5c50ba074010b651",

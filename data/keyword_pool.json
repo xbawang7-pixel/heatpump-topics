@@ -5806,5 +5806,29 @@
     "sample_title": "When the Numbers Look Good, HVAC Buyers Start Testing the Story",
     "sample_link": "https://www.achrnews.com/articles/166644-when-the-numbers-look-good-hvac-buyers-start-testing-the-story",
     "keyword_validated": false
+  },
+  "hvac installer training and certification requirements": {
+    "keyword": "HVAC installer training and certification requirements",
+    "region": "europe",
+    "product_category": "both",
+    "content_format": "buyer_faq",
+    "first_seen": "2026-09-13",
+    "last_seen": "2026-09-13",
+    "times_seen": 1,
+    "sample_title": "“Sin profesionales preparados, la transición energética no será posible”",
+    "sample_link": "https://www.climanoticias.com/texto-diario/mostrar/6005655/profesionales-preparados-transicion-energetica-no-sera-posible",
+    "keyword_validated": false
+  },
+  "a2l refrigerant vrf efficiency impact": {
+    "keyword": "A2L refrigerant VRF efficiency impact",
+    "region": "global",
+    "product_category": "air_conditioner",
+    "content_format": "blog",
+    "first_seen": "2026-09-13",
+    "last_seen": "2026-09-13",
+    "times_seen": 1,
+    "sample_title": "How the A2L Transition is Affecting VRF",
+    "sample_link": "https://www.achrnews.com/articles/166645-how-the-a2l-transition-is-affecting-vrf",
+    "keyword_validated": false
   }
 }
