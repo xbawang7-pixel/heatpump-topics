@@ -1,5 +1,31 @@
 [
   {
+    "id": "86870f7070295a29",
+    "title": "US AC and heat pump shipments up 20.1%",
+    "link": "https://www.coolingpost.com/world-news/us-ac-and-heat-pump-shipments-up-20-1/",
+    "summary": "<p>USA: US shipments of central air conditioners and air-source heat pumps totalled 916,830 units in July, down 10.43% on the previous month, but an increase of 20.1% on July 2025....</p>\n<p class=\"text-end\"><a class=\"btn btn-outline-secondary picostrap-read-more-link mt-3\" href=\"https://www.coolingpost.com/world-news/us-ac-and-heat-pump-shipments-up-20-1/\">Read More...</a></p>\n<p>The post <a href",
+    "source_type": "news",
+    "source_name": "Cooling Post (欧洲制冷/热泵行业媒体)",
+    "region": "europe",
+    "country": "UK",
+    "language": "en",
+    "engagement": null,
+    "published": "2026-09-13T11:49:56+00:00"
+  },
+  {
+    "id": "772de3169c782d07",
+    "title": "Gazechim expands refrigerant reclaim facilities",
+    "link": "https://www.coolingpost.com/world-news/gazechim-expands-refrigerant-reclaim-facilities/",
+    "summary": "<p>FRANCE: Gazechim has expanded its refrigerant recovery, purification and regeneration capacity with a second refrigerant distillation unit in France and now plans a similar plant in the UK....</p>\n<p class=\"text-end\"><a class=\"btn btn-outline-secondary picostrap-read-more-link mt-3\" href=\"https://www.coolingpost.com/world-news/gazechim-expands-refrigerant-reclaim-facilities/\">Read More...</a></",
+    "source_type": "news",
+    "source_name": "Cooling Post (欧洲制冷/热泵行业媒体)",
+    "region": "europe",
+    "country": "UK",
+    "language": "en",
+    "engagement": null,
+    "published": "2026-09-13T11:24:27+00:00"
+  },
+  {
     "id": "e103791ae4b5b76b",
     "title": "Haier takes to the road",
     "link": "https://www.coolingpost.com/training/haier-takes-to-the-road/",
@@ -14,7 +40,7 @@
   },
   {
     "id": "657c6d00777c838a",
-    "title": "Munters expands data center cooling factory",
+    "title": "Munters expands data centre cooling factory",
     "link": "https://www.coolingpost.com/world-news/munters-expands-data-center-cooling-factory/",
     "summary": "<p>USA: Swedish air treatment and climate solutions company Munters has inaugurated its expanded data centre cooling factory in Daleville, Virginia....</p>\n<p class=\"text-end\"><a class=\"btn btn-outline-secondary picostrap-read-more-link mt-3\" href=\"https://www.coolingpost.com/world-news/munters-expands-data-center-cooling-factory/\">Read More...</a></p>\n<p>The post <a href=\"https://www.coolingpost.",
     "source_type": "news",
@@ -102,32 +128,6 @@
     "language": "en",
     "engagement": null,
     "published": "2026-09-10T11:48:58+00:00"
-  },
-  {
-    "id": "a762a6c111b50d0d",
-    "title": "Tesco selects R454A refrigerated trailer units",
-    "link": "https://www.coolingpost.com/uk-news/tesco-selects-r454a-refrigerated-trailer-units/",
-    "summary": "<p>UK: Carrier Transicold has delivered five Vector HE 19 low CO2 emissions multi-temperature trailer refrigeration units to Tesco....</p>\n<p class=\"text-end\"><a class=\"btn btn-outline-secondary picostrap-read-more-link mt-3\" href=\"https://www.coolingpost.com/uk-news/tesco-selects-r454a-refrigerated-trailer-units/\">Read More...</a></p>\n<p>The post <a href=\"https://www.coolingpost.com/uk-news/tesco",
-    "source_type": "news",
-    "source_name": "Cooling Post (欧洲制冷/热泵行业媒体)",
-    "region": "europe",
-    "country": "UK",
-    "language": "en",
-    "engagement": null,
-    "published": "2026-09-09T20:35:17+00:00"
-  },
-  {
-    "id": "ecdb731078cd7fa5",
-    "title": "Cooling towers suspected in Spanish LD outbreak",
-    "link": "https://www.coolingpost.com/world-news/cooling-towers-suspected-in-spanish-ld-outbreak/",
-    "summary": "<p>SPAIN: Investigations are centred on local cooling towers following a legionnaires’ disease outbreak which has infected 31 people in the Pamplona/Iruña region....</p>\n<p class=\"text-end\"><a class=\"btn btn-outline-secondary picostrap-read-more-link mt-3\" href=\"https://www.coolingpost.com/world-news/cooling-towers-suspected-in-spanish-ld-outbreak/\">Read More...</a></p>\n<p>The post <a href=\"https:",
-    "source_type": "news",
-    "source_name": "Cooling Post (欧洲制冷/热泵行业媒体)",
-    "region": "europe",
-    "country": "UK",
-    "language": "en",
-    "engagement": null,
-    "published": "2026-09-09T19:24:52+00:00"
   },
   {
     "id": "f7d200625bb12c19",
@@ -466,19 +466,6 @@
     "language": "",
     "engagement": null,
     "published": "2026-09-07T04:00:00+00:00"
-  },
-  {
-    "id": "b9a84aa1d385d74b",
-    "title": "When the Numbers Look Good, HVAC Buyers Start Testing the Story",
-    "link": "https://www.achrnews.com/articles/166644-when-the-numbers-look-good-hvac-buyers-start-testing-the-story",
-    "summary": "Before a commercial HVAC owner goes to market, build the story the way a buyer will test it.",
-    "source_type": "news",
-    "source_name": "ACHR News (北美HVACR行业权威媒体)",
-    "region": "global",
-    "country": "",
-    "language": "",
-    "engagement": null,
-    "published": "2026-09-06T11:00:00+00:00"
   },
   {
     "id": "5c50ba074010b651",
