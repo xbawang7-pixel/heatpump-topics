@@ -7180,7 +7180,7 @@
     "upvotes": 4,
     "comments": 0,
     "first_seen": "2026-07-15",
-    "last_seen": "2026-08-26"
+    "last_seen": "2026-09-16"
   },
   "aa8b24fd1c9daa17": {
     "id": "aa8b24fd1c9daa17",
@@ -18125,7 +18125,7 @@
     "upvotes": 12,
     "comments": 0,
     "first_seen": "2026-08-05",
-    "last_seen": "2026-08-05"
+    "last_seen": "2026-09-16"
   },
   "906b56592dbd125d": {
     "id": "906b56592dbd125d",
@@ -37970,5 +37970,93 @@
     "comments": 0,
     "first_seen": "2026-09-14",
     "last_seen": "2026-09-14"
+  },
+  "46d09684941ce555": {
+    "id": "46d09684941ce555",
+    "title": "No heat!",
+    "link": "https://www.reddit.com/r/HeatPump/comments/10begp2/no_heat/",
+    "source_name": "r/heatpump",
+    "summary_cn": "用户纠结于收到的型号差异，实质上是阅读疏忽导致的误解，无实质设备对比价值。",
+    "upvotes": 1,
+    "comments": 0,
+    "first_seen": "2026-09-16",
+    "last_seen": "2026-09-16"
+  },
+  "b13dc9754daf7547": {
+    "id": "b13dc9754daf7547",
+    "title": "Not sure how our parents done it. No AC! 🤦🏻‍♂️",
+    "link": "https://www.reddit.com/r/hvacadvice/comments/1waexps/not_sure_how_our_parents_done_it_no_ac/",
+    "source_name": "r/hvacadvice",
+    "summary_cn": "吐槽没空调的过去，虽然提到了温控器问题，但重点在于怀旧和抱怨，缺乏实质的技术交流信息。",
+    "upvotes": 5,
+    "comments": 0,
+    "first_seen": "2026-09-16",
+    "last_seen": "2026-09-16"
+  },
+  "e3b2e55fcc371de3": {
+    "id": "e3b2e55fcc371de3",
+    "title": "Is this ventiliated enough for my thermostat?",
+    "link": "https://www.reddit.com/r/hvacadvice/comments/1vwcfxb/is_this_ventiliated_enough_for_my_thermostat/",
+    "source_name": "r/hvacadvice",
+    "summary_cn": "询问温控器通风情况，内容过于简略且缺乏专业环境背景，属于泛泛的闲聊式提问。",
+    "upvotes": 0,
+    "comments": 0,
+    "first_seen": "2026-09-16",
+    "last_seen": "2026-09-16"
+  },
+  "787a1f92bcf2c7eb": {
+    "id": "787a1f92bcf2c7eb",
+    "title": "Unapproved equipment on market",
+    "link": "https://www.reddit.com/r/hvacadvice/comments/1wa0rx9/unapproved_equipment_on_market/",
+    "source_name": "r/hvacadvice",
+    "summary_cn": "探讨市场上未认证的DIY设备，文章偏向个人观点阐述而非行业标准讨论，缺乏专业实质内容。",
+    "upvotes": 1,
+    "comments": 0,
+    "first_seen": "2026-09-16",
+    "last_seen": "2026-09-16"
+  },
+  "4284eba1e8ab83da": {
+    "id": "4284eba1e8ab83da",
+    "title": "Seriously?",
+    "link": "https://www.reddit.com/r/hvacadvice/comments/1w0rl8t/seriously/",
+    "source_name": "r/hvacadvice",
+    "summary_cn": "吐槽用户不善于查资料的抱怨帖，属于情绪发泄，没有任何技术面或行业面的有效信息。",
+    "upvotes": 3,
+    "comments": 0,
+    "first_seen": "2026-09-16",
+    "last_seen": "2026-09-16"
+  },
+  "6581a4ea7314aa09": {
+    "id": "6581a4ea7314aa09",
+    "title": "What is the simplest SEO tool to improve SEO and AEO for my HVAC Business?",
+    "link": "https://www.reddit.com/r/hvacadvice/comments/1wfvi4r/what_is_the_simplest_seo_tool_to_improve_seo_and/",
+    "source_name": "r/hvacadvice",
+    "summary_cn": "咨询HVAC企业的SEO工具选择，属于市场营销运营范畴，而非暖通行业本身的产品或技术讨论。",
+    "upvotes": 2,
+    "comments": 0,
+    "first_seen": "2026-09-16",
+    "last_seen": "2026-09-16"
+  },
+  "5e4747fec1f9ab98": {
+    "id": "5e4747fec1f9ab98",
+    "title": "Got let go off today",
+    "link": "https://www.reddit.com/r/hvacadvice/comments/1wbq864/got_let_go_off_today/",
+    "source_name": "r/hvacadvice",
+    "summary_cn": "讲述被解雇的职业挫折故事，属于个人情绪发泄，不包含暖通行业的业务或技术知识。",
+    "upvotes": 4,
+    "comments": 0,
+    "first_seen": "2026-09-16",
+    "last_seen": "2026-09-16"
+  },
+  "daab505daff8e98e": {
+    "id": "daab505daff8e98e",
+    "title": "The AC has to be broken? It was cool most of the day and now the thermostats looks like this",
+    "link": "https://www.reddit.com/r/hvacadvice/comments/1w4u7nv/the_ac_has_to_be_broken_it_was_cool_most_of_the/",
+    "source_name": "r/hvacadvice",
+    "summary_cn": "用户描述公寓空调故障并询问建议，帖子互动结果为常规操作，缺乏专业技术分析过程。",
+    "upvotes": 6,
+    "comments": 0,
+    "first_seen": "2026-09-16",
+    "last_seen": "2026-09-16"
   }
 }

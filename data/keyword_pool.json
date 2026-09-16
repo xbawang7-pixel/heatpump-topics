@@ -3485,8 +3485,8 @@
     "product_category": "both",
     "content_format": "blog",
     "first_seen": "2026-08-11",
-    "last_seen": "2026-08-11",
-    "times_seen": 10,
+    "last_seen": "2026-09-16",
+    "times_seen": 19,
     "sample_title": "Adani to pay no company tax despite $1bn revenue from Queensland coalmine",
     "sample_link": "https://www.reddit.com/r/australia/comments/1vc7s0v/adani_to_pay_no_company_tax_despite_1bn_revenue/",
     "keyword_validated": false
@@ -6369,6 +6369,102 @@
     "times_seen": 1,
     "sample_title": "I think this is insane talent! Elizabeth Jesulade crocheted a working QR code to the YouVersion Bible app.",
     "sample_link": "https://www.reddit.com/r/Nigeria/comments/1wf7ku0/i_think_this_is_insane_talent_elizabeth_jesulade/",
+    "keyword_validated": false
+  },
+  "benefits of r32 refrigerant in large commercial air conditioning systems": {
+    "keyword": "benefits of R32 refrigerant in large commercial air conditioning systems",
+    "region": "europe",
+    "product_category": "air_conditioner",
+    "content_format": "blog",
+    "first_seen": "2026-09-16",
+    "last_seen": "2026-09-16",
+    "times_seen": 1,
+    "sample_title": "LG climatiza la mayor instalación europea de climatización directa con R-32",
+    "sample_link": "https://www.climanoticias.com/texto-diario/mostrar/6009560/lg-climatiza-mayor-instalacion-europea-climatizacion-directa-r-32",
+    "keyword_validated": false
+  },
+  "importance of ahri certification for hvac equipment quality": {
+    "keyword": "importance of AHRI certification for HVAC equipment quality",
+    "region": "global",
+    "product_category": "both",
+    "content_format": "buyer_faq",
+    "first_seen": "2026-09-16",
+    "last_seen": "2026-09-16",
+    "times_seen": 1,
+    "sample_title": "A-Gas Adds Third AHRI-Certified Lab in North America",
+    "sample_link": "https://www.achrnews.com/articles/166655-a-gas-adds-third-ahri-certified-lab-in-north-america",
+    "keyword_validated": false
+  },
+  "how to evaluate a long-term hvac manufacturing partner": {
+    "keyword": "how to evaluate a long-term HVAC manufacturing partner",
+    "region": "global",
+    "product_category": "both",
+    "content_format": "blog",
+    "first_seen": "2026-09-16",
+    "last_seen": "2026-09-16",
+    "times_seen": 1,
+    "sample_title": "September 2026: The ACHR NEWS Celebrates a Century",
+    "sample_link": "https://www.achrnews.com/articles/166654-september-2026-the-achr-news-celebrates-a-century",
+    "keyword_validated": false
+  },
+  "managing risks and insurance for renewable hvac installations in africa": {
+    "keyword": "managing risks and insurance for renewable HVAC installations in Africa",
+    "region": "africa",
+    "product_category": "both",
+    "content_format": "whitepaper",
+    "first_seen": "2026-09-16",
+    "last_seen": "2026-09-16",
+    "times_seen": 1,
+    "sample_title": "The changing role of insurance in renewable energy",
+    "sample_link": "https://refrigerationandaircon.co.za/the-changing-role-of-insurance-in-renewable-energy/",
+    "keyword_validated": false
+  },
+  "data center waste heat recovery heat pump solutions": {
+    "keyword": "data center waste heat recovery heat pump solutions",
+    "region": "europe",
+    "product_category": "heat_pump",
+    "content_format": "case_study",
+    "first_seen": "2026-09-16",
+    "last_seen": "2026-09-16",
+    "times_seen": 1,
+    "sample_title": "A data center in Denmark gives away heat that data centers often waste. It runs water from the city's heating network through its cooling units and into heat pumps that raise it enough to fill the radiators of 11,000 homes",
+    "sample_link": "https://www.reddit.com/r/energy/comments/1waemxi/a_data_center_in_denmark_gives_away_heat_that/",
+    "keyword_validated": false
+  },
+  "energy-efficient cooling solutions for data centers": {
+    "keyword": "energy-efficient cooling solutions for data centers",
+    "region": "global",
+    "product_category": "air_conditioner",
+    "content_format": "whitepaper",
+    "first_seen": "2026-09-16",
+    "last_seen": "2026-09-16",
+    "times_seen": 1,
+    "sample_title": "Massachusetts became the latest state to force data centers to bring their own power, but this time there’s a twist | State mandate would require developers building data centers larger than 25 megawatts to provide clean power or pay into a ratepayer protection fund.",
+    "sample_link": "https://www.reddit.com/r/energy/comments/1wdoum6/massachusetts_became_the_latest_state_to_force/",
+    "keyword_validated": false
+  },
+  "boiler maintenance and common heating system safety issues": {
+    "keyword": "boiler maintenance and common heating system safety issues",
+    "region": "europe",
+    "product_category": "air_conditioner",
+    "content_format": "blog",
+    "first_seen": "2026-09-16",
+    "last_seen": "2026-09-16",
+    "times_seen": 1,
+    "sample_title": "Black smoke above boiler in rented property",
+    "sample_link": "https://www.reddit.com/r/DIYUK/comments/1wemm6t/black_smoke_above_boiler_in_rented_property/",
+    "keyword_validated": false
+  },
+  "correct installation procedures for hvac exhaust flues": {
+    "keyword": "correct installation procedures for HVAC exhaust flues",
+    "region": "europe",
+    "product_category": "both",
+    "content_format": "blog",
+    "first_seen": "2026-09-16",
+    "last_seen": "2026-09-16",
+    "times_seen": 1,
+    "sample_title": "How to deal with this (new to homeownership)",
+    "sample_link": "https://www.reddit.com/r/DIYUK/comments/1wahr76/how_to_deal_with_this_new_to_homeownership/",
     "keyword_validated": false
   }
 }
