@@ -6466,5 +6466,65 @@
     "sample_title": "How to deal with this (new to homeownership)",
     "sample_link": "https://www.reddit.com/r/DIYUK/comments/1wahr76/how_to_deal_with_this_new_to_homeownership/",
     "keyword_validated": false
+  },
+  "rooftop hvac system benefits for large commercial buildings": {
+    "keyword": "rooftop HVAC system benefits for large commercial buildings",
+    "region": "europe",
+    "product_category": "air_conditioner",
+    "content_format": "blog",
+    "first_seen": "2026-09-17",
+    "last_seen": "2026-09-17",
+    "times_seen": 1,
+    "sample_title": "Clivet optimiza la climatización de grandes instalaciones con sistemas rooftop",
+    "sample_link": "https://www.climanoticias.com/texto-diario/mostrar/6011163/clivet-optimiza-climatizacion-grandes-instalaciones-sistemas-rooftop",
+    "keyword_validated": false
+  },
+  "hvac and renewable energy system integration best practices": {
+    "keyword": "HVAC and renewable energy system integration best practices",
+    "region": "europe",
+    "product_category": "both",
+    "content_format": "whitepaper",
+    "first_seen": "2026-09-17",
+    "last_seen": "2026-09-17",
+    "times_seen": 1,
+    "sample_title": "Nowe studia podyplomowe AGH: od pompy ciepła do zintegrowanego systemu energetycznego budynku",
+    "sample_link": "https://portpc.pl/nowe-studia-podyplomowe-agh-od-pompy-ciepla-do-zintegrowanego-systemu-energetycznego-budynku/",
+    "keyword_validated": false
+  },
+  "hvac outdoor equipment electrical safety codes and gfci requirements": {
+    "keyword": "HVAC outdoor equipment electrical safety codes and GFCI requirements",
+    "region": "global",
+    "product_category": "both",
+    "content_format": "buyer_faq",
+    "first_seen": "2026-09-17",
+    "last_seen": "2026-09-17",
+    "times_seen": 1,
+    "sample_title": "ACCA Offers Guidance as GFCI Exemption Expires",
+    "sample_link": "https://www.achrnews.com/articles/166664-acca-offers-guidance-as-gfci-exemption-expires",
+    "keyword_validated": false
+  },
+  "improving hvac installation efficiency for sheet metal shops": {
+    "keyword": "improving HVAC installation efficiency for sheet metal shops",
+    "region": "global",
+    "product_category": "both",
+    "content_format": "blog",
+    "first_seen": "2026-09-17",
+    "last_seen": "2026-09-17",
+    "times_seen": 1,
+    "sample_title": "How a Family’s Frustration Changed the Way Sheet Metal Shops Work",
+    "sample_link": "https://www.achrnews.com/articles/166662-how-a-familys-frustration-changed-the-way-sheet-metal-shops-work",
+    "keyword_validated": false
+  },
+  "a2l refrigerant installation requirements and safety standards": {
+    "keyword": "A2L refrigerant installation requirements and safety standards",
+    "region": "global",
+    "product_category": "both",
+    "content_format": "installation_maintenance",
+    "first_seen": "2026-09-17",
+    "last_seen": "2026-09-17",
+    "times_seen": 1,
+    "sample_title": "Where the A2L Transition Exposes Install Shortcuts",
+    "sample_link": "https://www.achrnews.com/articles/166659-where-the-a2l-transition-exposes-install-shortcuts",
+    "keyword_validated": false
   }
 }
