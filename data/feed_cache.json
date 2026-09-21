@@ -88,8 +88,8 @@
     "method": "not_found"
   },
   "https://www.revistadofrio.com.br/": {
-    "feed_url": null,
-    "method": "not_found"
+    "feed_url": "https://revistadofrio.com.br/feed/",
+    "method": "html_link_tag"
   },
   "https://www.refriamericas.com/": {
     "feed_url": null,
