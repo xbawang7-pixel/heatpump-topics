@@ -7180,7 +7180,7 @@
     "upvotes": 4,
     "comments": 0,
     "first_seen": "2026-07-15",
-    "last_seen": "2026-09-16"
+    "last_seen": "2026-09-23"
   },
   "aa8b24fd1c9daa17": {
     "id": "aa8b24fd1c9daa17",
@@ -32601,7 +32601,7 @@
     "upvotes": 3,
     "comments": 0,
     "first_seen": "2026-08-26",
-    "last_seen": "2026-08-26"
+    "last_seen": "2026-09-23"
   },
   "ccfb8fe2b594cfcd": {
     "id": "ccfb8fe2b594cfcd",
@@ -32612,7 +32612,7 @@
     "upvotes": 1,
     "comments": 0,
     "first_seen": "2026-08-26",
-    "last_seen": "2026-08-26"
+    "last_seen": "2026-09-23"
   },
   "6c913f2304485eee": {
     "id": "6c913f2304485eee",
@@ -33030,7 +33030,7 @@
     "upvotes": 0,
     "comments": 0,
     "first_seen": "2026-09-14",
-    "last_seen": "2026-09-21"
+    "last_seen": "2026-09-23"
   },
   "aec170b6af89d51f": {
     "id": "aec170b6af89d51f",
@@ -33052,7 +33052,7 @@
     "upvotes": 4,
     "comments": 0,
     "first_seen": "2026-09-14",
-    "last_seen": "2026-09-21"
+    "last_seen": "2026-09-23"
   },
   "f70d10df2507f8d2": {
     "id": "f70d10df2507f8d2",
@@ -33074,7 +33074,7 @@
     "upvotes": 0,
     "comments": 0,
     "first_seen": "2026-09-14",
-    "last_seen": "2026-09-14"
+    "last_seen": "2026-09-23"
   },
   "815329ce5e201d9c": {
     "id": "815329ce5e201d9c",
@@ -43217,5 +43217,104 @@
     "comments": 0,
     "first_seen": "2026-09-21",
     "last_seen": "2026-09-21"
+  },
+  "197364091141faf1": {
+    "id": "197364091141faf1",
+    "title": "Heat pump question.",
+    "link": "https://www.reddit.com/r/HeatPump/comments/1wm1r2q/heat_pump_question/",
+    "source_name": "r/heatpump",
+    "summary_cn": "该帖子标题和内容均为空，缺乏实质性的行业技术讨论或采购决策信息。",
+    "upvotes": 1,
+    "comments": 0,
+    "first_seen": "2026-09-23",
+    "last_seen": "2026-09-23"
+  },
+  "bd804445ec9eda67": {
+    "id": "bd804445ec9eda67",
+    "title": "Man tweekers are efficient",
+    "link": "https://www.reddit.com/r/hvacadvice/comments/1wag78q/man_tweekers_are_efficient/",
+    "source_name": "r/hvacadvice",
+    "summary_cn": "关于盗窃案的吐槽，与热泵空调产品的技术或采购讨论无关。",
+    "upvotes": 2551,
+    "comments": 0,
+    "first_seen": "2026-09-23",
+    "last_seen": "2026-09-23"
+  },
+  "2d6c6b46816221f3": {
+    "id": "2d6c6b46816221f3",
+    "title": "What is this huge metal waterfall/river thing on the roof of the hospital?",
+    "link": "https://www.reddit.com/r/hvacadvice/comments/1whk57r/what_is_this_huge_metal_waterfallriver_thing_on/",
+    "source_name": "r/hvacadvice",
+    "summary_cn": "关于医院楼顶水声的观察，非专业设备故障或技术探讨，属于好奇心发泄。",
+    "upvotes": 2330,
+    "comments": 0,
+    "first_seen": "2026-09-23",
+    "last_seen": "2026-09-23"
+  },
+  "f41c23bdbc796d7b": {
+    "id": "f41c23bdbc796d7b",
+    "title": "“38½ Years Old and Still Blowing Cold — They Don’t Make ’Em Like This Anymore!” 😎❄️",
+    "link": "https://www.reddit.com/r/hvacadvice/comments/1wa7s8n/38%C2%BD_years_old_and_still_blowing_cold_they_dont/",
+    "source_name": "r/hvacadvice",
+    "summary_cn": "纯粹感慨空调使用寿命长，属于情感抒发，没有具体的维护技术价值。",
+    "upvotes": 1406,
+    "comments": 0,
+    "first_seen": "2026-09-23",
+    "last_seen": "2026-09-23"
+  },
+  "1a659dabb6cfe7be": {
+    "id": "1a659dabb6cfe7be",
+    "title": "How old is too old? This thing is still going strong after 22 years.",
+    "link": "https://www.reddit.com/r/hvacadvice/comments/1w7jhuf/how_old_is_too_old_this_thing_is_still_going/",
+    "source_name": "r/hvacadvice",
+    "summary_cn": "关于空调使用年限的感慨，未提供有效的技术数据或选型参考。",
+    "upvotes": 962,
+    "comments": 0,
+    "first_seen": "2026-09-23",
+    "last_seen": "2026-09-23"
+  },
+  "85c4de4db0b31059": {
+    "id": "85c4de4db0b31059",
+    "title": "How can I explain to my wife that setting the AC to 68 won’t make the temp go any lower?",
+    "link": "https://www.reddit.com/r/hvacadvice/comments/1w6pkvy/how_can_i_explain_to_my_wife_that_setting_the_ac/",
+    "source_name": "r/hvacadvice",
+    "summary_cn": "讨论用户对温控器设置的认知误区，纯属于日常琐事，缺乏专业知识价值。",
+    "upvotes": 704,
+    "comments": 0,
+    "first_seen": "2026-09-23",
+    "last_seen": "2026-09-23"
+  },
+  "a908648dd88e0584": {
+    "id": "a908648dd88e0584",
+    "title": "mr. cool landlord special update. is this even legal in florida? 😜",
+    "link": "https://www.reddit.com/r/hvacadvice/comments/1wheg1v/mr_cool_landlord_special_update_is_this_even/",
+    "source_name": "r/hvacadvice",
+    "summary_cn": "抱怨房东的违规安装，属于租房吐槽，缺乏专业设备施工的技术深度。",
+    "upvotes": 441,
+    "comments": 0,
+    "first_seen": "2026-09-23",
+    "last_seen": "2026-09-23"
+  },
+  "064c5953a9a57786": {
+    "id": "064c5953a9a57786",
+    "title": "how can i optimize / conceal this mini AC condensation drain pipe / bucket?",
+    "link": "https://www.reddit.com/r/hvacadvice/comments/1wgduf1/how_can_i_optimize_conceal_this_mini_ac/",
+    "source_name": "r/hvacadvice",
+    "summary_cn": "咨询空调冷凝水管的隐藏处理建议，属于家居美化范畴，非专业维修讨论。",
+    "upvotes": 339,
+    "comments": 0,
+    "first_seen": "2026-09-23",
+    "last_seen": "2026-09-23"
+  },
+  "e7fe3bfbca929928": {
+    "id": "e7fe3bfbca929928",
+    "title": "My a/c broke on the day I have to prep for a colonoscopy",
+    "link": "https://www.reddit.com/r/AirConditioners/comments/1wla32s/my_ac_broke_on_the_day_i_have_to_prep_for_a/",
+    "source_name": "r/AirConditioners",
+    "summary_cn": "因空调损坏引发的紧急求助，带有强烈的情绪色彩，缺乏具体的设备故障分析。",
+    "upvotes": 2,
+    "comments": 0,
+    "first_seen": "2026-09-23",
+    "last_seen": "2026-09-23"
   }
 }
