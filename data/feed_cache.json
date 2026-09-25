@@ -24,8 +24,8 @@
     "method": "not_found"
   },
   "https://www.caloryfrio.com/": {
-    "feed_url": "https://www.caloryfrio.com/feed/",
-    "method": "common_path:feed/"
+    "feed_url": "https://www.caloryfrio.com/feed",
+    "method": "common_path:feed"
   },
   "https://www.climanoticias.com/": {
     "feed_url": "https://www.climanoticias.com/feed/all",
