@@ -7270,5 +7270,17 @@
     "sample_title": "Zeitung voll von Nachbarschaftsstreit",
     "sample_link": "https://www.reddit.com/r/Waermepumpe/comments/1r4slrv/zeitung_voll_von_nachbarschaftsstreit/",
     "keyword_validated": false
+  },
+  "r290 heat pump efficiency for residential heating": {
+    "keyword": "R290 heat pump efficiency for residential heating",
+    "region": "europe",
+    "product_category": "heat_pump",
+    "content_format": "blog",
+    "first_seen": "2026-09-26",
+    "last_seen": "2026-09-26",
+    "times_seen": 1,
+    "sample_title": "Viessmann presenta en León su nueva generación de bombas de calor",
+    "sample_link": "https://www.climanoticias.com/texto-diario/mostrar/6021945/viessmann-presenta-leon-nueva-generacion-bombas-calor",
+    "keyword_validated": false
   }
 }
