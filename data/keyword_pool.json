@@ -7282,5 +7282,77 @@
     "sample_title": "Viessmann presenta en León su nueva generación de bombas de calor",
     "sample_link": "https://www.climanoticias.com/texto-diario/mostrar/6021945/viessmann-presenta-leon-nueva-generacion-bombas-calor",
     "keyword_validated": false
+  },
+  "how to choose the right heat pump for residential installation": {
+    "keyword": "how to choose the right heat pump for residential installation",
+    "region": "europe",
+    "product_category": "heat_pump",
+    "content_format": "buyer_faq",
+    "first_seen": "2026-09-27",
+    "last_seen": "2026-09-27",
+    "times_seen": 1,
+    "sample_title": "Warmtepompgids helpt installateur kiezen in groeiend aanbod",
+    "sample_link": "https://www.installatie.nl/nieuws/warmtepompgids-helpt-installateur-kiezen-in-groeiend-aanbod/",
+    "keyword_validated": false
+  },
+  "what makes a reliable heat pump manufacturer": {
+    "keyword": "what makes a reliable heat pump manufacturer",
+    "region": "europe",
+    "product_category": "heat_pump",
+    "content_format": "buyer_faq",
+    "first_seen": "2026-09-27",
+    "last_seen": "2026-09-27",
+    "times_seen": 1,
+    "sample_title": "Binnen bij NIBE: warmtepompen, robots en service als sleutel tot nieuwe groei",
+    "sample_link": "https://www.installatie.nl/techniek/binnen-bij-nibe-warmtepompen-robots-en-service-als-sleutel-tot-nieuwe-groei/",
+    "keyword_validated": false
+  },
+  "hvac installation safety compliance and regulations": {
+    "keyword": "HVAC installation safety compliance and regulations",
+    "region": "africa",
+    "product_category": "both",
+    "content_format": "whitepaper",
+    "first_seen": "2026-09-27",
+    "last_seen": "2026-09-27",
+    "times_seen": 1,
+    "sample_title": "Two HVAC jobs, two legal frameworks: A simple case study for leaders",
+    "sample_link": "https://refrigerationandaircon.co.za/two-hvac-jobs-two-legal-frameworks-a-simple-case-study-for-leaders/",
+    "keyword_validated": false
+  },
+  "commercial air-source heat pump retrofitting solutions": {
+    "keyword": "commercial air-source heat pump retrofitting solutions",
+    "region": "europe",
+    "product_category": "heat_pump",
+    "content_format": "case_study",
+    "first_seen": "2026-09-27",
+    "last_seen": "2026-09-27",
+    "times_seen": 1,
+    "sample_title": "LG climatiza el Olímpic Arena con tecnología aerotérmica modular avanzada",
+    "sample_link": "https://www.climanoticias.com/texto-diario/mostrar/6023439/lg-climatiza-olimpic-arena-tecnologia-aerotermica-modular-avanzada",
+    "keyword_validated": false
+  },
+  "high-efficiency chillers for ai data centers": {
+    "keyword": "high-efficiency chillers for AI data centers",
+    "region": "global",
+    "product_category": "air_conditioner",
+    "content_format": "buyer_faq",
+    "first_seen": "2026-09-27",
+    "last_seen": "2026-09-27",
+    "times_seen": 1,
+    "sample_title": "LG Introduces High-Efficiency Chiller for AI Data Centers",
+    "sample_link": "https://www.achrnews.com/articles/166714-lg-introduces-high-efficiency-chiller-for-ai-data-centers",
+    "keyword_validated": false
+  },
+  "careers in the hvac industry": {
+    "keyword": "careers in the HVAC industry",
+    "region": "global",
+    "product_category": "both",
+    "content_format": "blog",
+    "first_seen": "2026-09-27",
+    "last_seen": "2026-09-27",
+    "times_seen": 1,
+    "sample_title": "2026’s Top Women in HVACR: Thirteen Leaders Share Their Success",
+    "sample_link": "https://www.achrnews.com/articles/166688-2026s-top-women-in-hvacr-thirteen-leaders-share-their-success",
+    "keyword_validated": false
   }
 }

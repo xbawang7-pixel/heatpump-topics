@@ -13,9 +13,9 @@
     "published": "2026-09-25T10:31:40+00:00"
   },
   {
-    "id": "0a96165db2d4ffda",
+    "id": "e673204ff1378002",
     "title": "Flexible heat pumps could cut peak electricity prices by 13.5% in Germany",
-    "link": "https://ehpa.org/news-and-resources/news/flexible-heat-pumps-could-cut-peak-electricity-prices-by-13-5-in-germany/",
+    "link": "https://ehpa.org/news-and-resources/policy/flexible-heat-pumps-could-cut-peak-electricity-prices-by-13-5-in-germany/",
     "summary": "<p>What if the 2.2 million heat pumps already installed in Germany could help bring down electricity prices? New analysis from the European Heat Pump Association (EHPA) and smartEn – Smart Energy Europe shows they can. Looking at a peak hour in February 2026, the analysis found that using Germany’s heat pumps more flexibly could have [&#8230;]</p>\n<p>The post <a href=\"https://ehpa.org/news-and-res",
     "source_type": "news",
     "source_name": "EHPA 欧洲热泵协会",
@@ -24,6 +24,32 @@
     "language": "en",
     "engagement": null,
     "published": "2026-09-25T07:41:47+00:00"
+  },
+  {
+    "id": "b70b7f2807a46d39",
+    "title": "LG 2.6MW CDU is NVIDIA approved",
+    "link": "https://www.coolingpost.com/world-news/lg-2-6mw-cdu-is-nvidia-approved/",
+    "summary": "<p>SOUTH KOREA: LG Electronics has qualified its 2.6MW coolant distribution unit as NVIDIA DSX Ready, meeting the applicable reference design requirements for AI factory infrastructure....</p>\n<p class=\"text-end\"><a class=\"btn btn-outline-secondary picostrap-read-more-link mt-3\" href=\"https://www.coolingpost.com/world-news/lg-2-6mw-cdu-is-nvidia-approved/\">Read More...</a></p>\n<p>The post <a href=",
+    "source_type": "news",
+    "source_name": "Cooling Post (欧洲制冷/热泵行业媒体)",
+    "region": "europe",
+    "country": "UK",
+    "language": "en",
+    "engagement": null,
+    "published": "2026-09-26T10:35:05+00:00"
+  },
+  {
+    "id": "c736bcaa4e36816f",
+    "title": "Digital refrigerant management app",
+    "link": "https://www.coolingpost.com/products/digital-refrigerant-management-app/",
+    "summary": "<p>UK: A-Gas is to launch a new digital refrigerant management platform to help its customers manage waste, compliance and cylinder activity all in one place....</p>\n<p class=\"text-end\"><a class=\"btn btn-outline-secondary picostrap-read-more-link mt-3\" href=\"https://www.coolingpost.com/products/digital-refrigerant-management-app/\">Read More...</a></p>\n<p>The post <a href=\"https://www.coolingpost.c",
+    "source_type": "news",
+    "source_name": "Cooling Post (欧洲制冷/热泵行业媒体)",
+    "region": "europe",
+    "country": "UK",
+    "language": "en",
+    "engagement": null,
+    "published": "2026-09-26T10:19:32+00:00"
   },
   {
     "id": "d53a7e6960c6c70b",
@@ -130,30 +156,17 @@
     "published": "2026-09-23T10:15:14+00:00"
   },
   {
-    "id": "92aac4b5afe8c3a9",
-    "title": "Frigoveneta renamed Glacialis as expansion continues",
-    "link": "https://www.coolingpost.com/world-news/frigoveneta-renamed-glacialis-as-expansion-continues/",
-    "summary": "<p>ITALY: Asset management firm Ambienta has continued the expansion of its Frigoveneta commercial and industrial refrigeration platform with the acquisitions of two further Italian companies....</p>\n<p class=\"text-end\"><a class=\"btn btn-outline-secondary picostrap-read-more-link mt-3\" href=\"https://www.coolingpost.com/world-news/frigoveneta-renamed-glacialis-as-expansion-continues/\">Read More...<",
+    "id": "656ca210d48dd597",
+    "title": "Unità esterne a pompa di calore VRF CVT9 Clivet",
+    "link": "https://www.impiantinews.it/gt/prodotti/unita-esterne-a-pompa-di-calore-vrf-cvt9-clivet/",
+    "summary": "<p>Una nuova generazione di soluzioni Clivet (Feltre, BL) che mette al centro efficienza e sicurezza: si arricchisce l’offerta per la climatizzazione e il comfort naturale con il lancio della gamma di unità esterne a pompa di calore VRF CVT9. Oltre all’adozione del refrigerante R32, l’innovazione principale della nuova serie risiede nell&#8217;architettura dello scambiatore di calore&#8230;</p>\n<p",
     "source_type": "news",
-    "source_name": "Cooling Post (欧洲制冷/热泵行业媒体)",
+    "source_name": "Impianti News (意大利)",
     "region": "europe",
-    "country": "UK",
-    "language": "en",
+    "country": "IT",
+    "language": "it",
     "engagement": null,
-    "published": "2026-09-23T09:48:50+00:00"
-  },
-  {
-    "id": "00cea76a688220c1",
-    "title": "Skope fridges added to ETL list",
-    "link": "https://www.coolingpost.com/uk-news/skope-fridges-added-to-etl-list/",
-    "summary": "<p>UK: Hubbard Systems has announced that two Skope ActiveCore bottom-mounted glass-door display refrigerators have been added to the UK’s Energy Technology List (ETL)....</p>\n<p class=\"text-end\"><a class=\"btn btn-outline-secondary picostrap-read-more-link mt-3\" href=\"https://www.coolingpost.com/uk-news/skope-fridges-added-to-etl-list/\">Read More...</a></p>\n<p>The post <a href=\"https://www.cooling",
-    "source_type": "news",
-    "source_name": "Cooling Post (欧洲制冷/热泵行业媒体)",
-    "region": "europe",
-    "country": "UK",
-    "language": "en",
-    "engagement": null,
-    "published": "2026-09-23T09:00:23+00:00"
+    "published": "2026-09-26T10:40:38+00:00"
   },
   {
     "id": "1d0bf37fabcdf523",
@@ -362,6 +375,32 @@
     "language": "nl",
     "engagement": null,
     "published": "2026-09-21T05:00:00+00:00"
+  },
+  {
+    "id": "2d1bb9960aa52fe8",
+    "title": "92 HVAC Techs Among NTI’s Las Vegas Graduates",
+    "link": "https://www.achrnews.com/articles/166727-92-hvac-techs-among-ntis-las-vegas-graduates",
+    "summary": "The graduating class of 180, including 92 who had studied HVAC, spent their final weeks of training completing hands-on installations.",
+    "source_type": "news",
+    "source_name": "ACHR News (北美HVACR行业权威媒体)",
+    "region": "global",
+    "country": "",
+    "language": "",
+    "engagement": null,
+    "published": "2026-09-26T15:00:00+00:00"
+  },
+  {
+    "id": "fcd402648bb5c90d",
+    "title": "Building a Profitable HVAC Business by Putting People, Not Revenue, First",
+    "link": "https://www.achrnews.com/articles/166723-building-a-profitable-hvac-business-by-putting-people-not-revenue-first",
+    "summary": "Examples of how growth comes from grit, not guarantees. The journey becomes a blueprint for success.",
+    "source_type": "news",
+    "source_name": "ACHR News (北美HVACR行业权威媒体)",
+    "region": "global",
+    "country": "",
+    "language": "",
+    "engagement": null,
+    "published": "2026-09-26T11:00:00+00:00"
   },
   {
     "id": "7c2c70682e4d1362",
@@ -648,19 +687,6 @@
     "language": "",
     "engagement": null,
     "published": "2026-09-22T17:00:00+00:00"
-  },
-  {
-    "id": "228ad464ecdeb16f",
-    "title": "State of the Union: Young HVAC Workers Look Beyond Wages",
-    "link": "https://www.achrnews.com/articles/166685-state-of-the-union-young-hvac-workers-look-beyond-wages",
-    "summary": "For younger workers seeking job security, the long-term value of a union career is becoming increasingly important.",
-    "source_type": "news",
-    "source_name": "ACHR News (北美HVACR行业权威媒体)",
-    "region": "global",
-    "country": "",
-    "language": "",
-    "engagement": null,
-    "published": "2026-09-22T11:00:00+00:00"
   },
   {
     "id": "f4196a30d32f1dbc",
