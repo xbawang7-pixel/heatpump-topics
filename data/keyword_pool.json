@@ -7798,5 +7798,65 @@
     "sample_title": "How to Support ACR Tubing the Right Way",
     "sample_link": "https://www.achrnews.com/articles/166712-how-to-support-acr-tubing-the-right-way",
     "keyword_validated": false
+  },
+  "industrial heat pump roi for chemical sector": {
+    "keyword": "industrial heat pump ROI for chemical sector",
+    "region": "europe",
+    "product_category": "heat_pump",
+    "content_format": "blog",
+    "first_seen": "2026-10-01",
+    "last_seen": "2026-10-01",
+    "times_seen": 1,
+    "sample_title": "“2038? I’d be happy to know the gas price next week” – costs key for heat pumps in chemicals sector",
+    "sample_link": "https://ehpa.org/news-and-resources/projects/2038-id-be-happy-to-know-the-gas-price-next-week-costs-key-for-heat-pumps-in-chemicals-sector/",
+    "keyword_validated": false
+  },
+  "hvac system hygiene standards compliance": {
+    "keyword": "HVAC system hygiene standards compliance",
+    "region": "europe",
+    "product_category": "air_conditioner",
+    "content_format": "buyer_faq",
+    "first_seen": "2026-10-01",
+    "last_seen": "2026-10-01",
+    "times_seen": 1,
+    "sample_title": "La UNE publica la nueva norma para higienizar sistemas de climatización",
+    "sample_link": "https://www.climanoticias.com/texto-diario/mostrar/6027951/une-publica-nueva-norma-higienizar-sistemas-climatizacion",
+    "keyword_validated": false
+  },
+  "efficient heating and cooling components for hvac": {
+    "keyword": "efficient heating and cooling components for HVAC",
+    "region": "europe",
+    "product_category": "both",
+    "content_format": "blog",
+    "first_seen": "2026-10-01",
+    "last_seen": "2026-10-01",
+    "times_seen": 1,
+    "sample_title": "Genebre amplía su catálogo hidrosanitario con soluciones para una climatización eficiente",
+    "sample_link": "https://www.climanoticias.com/texto-diario/mostrar/6027927/genebre-amplia-catalogo-hidrosanitario-soluciones-climatizacion-eficiente",
+    "keyword_validated": false
+  },
+  "how to get heat pump subsidies in netherlands isde": {
+    "keyword": "how to get heat pump subsidies in Netherlands ISDE",
+    "region": "europe",
+    "product_category": "heat_pump",
+    "content_format": "buyer_faq",
+    "first_seen": "2026-10-01",
+    "last_seen": "2026-10-01",
+    "times_seen": 1,
+    "sample_title": "ISDE: 1,5 miljoen aan maatregelen in tien jaar",
+    "sample_link": "https://www.installatie.nl/nieuws/isde-15-miljoen-aan-maatregelen-in-tien-jaar/",
+    "keyword_validated": false
+  },
+  "top hvac technology innovations 2025": {
+    "keyword": "top HVAC technology innovations 2025",
+    "region": "global",
+    "product_category": "both",
+    "content_format": "comparison",
+    "first_seen": "2026-10-01",
+    "last_seen": "2026-10-01",
+    "times_seen": 1,
+    "sample_title": "HVAC Innovation Showdown: And Then There Were Eight",
+    "sample_link": "https://www.achrnews.com/articles/166726-hvac-innovation-showdown-and-then-there-were-eight",
+    "keyword_validated": false
   }
 }
