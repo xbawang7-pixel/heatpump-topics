@@ -4481,8 +4481,8 @@
     "product_category": "both",
     "content_format": "buyer_faq",
     "first_seen": "2026-08-21",
-    "last_seen": "2026-08-21",
-    "times_seen": 1,
+    "last_seen": "2026-10-02",
+    "times_seen": 2,
     "sample_title": "Penn College HVAC Programs Set Accreditation First",
     "sample_link": "https://www.achrnews.com/articles/166536-penn-college-hvac-programs-set-accreditation-first",
     "keyword_validated": false
@@ -7857,6 +7857,42 @@
     "times_seen": 1,
     "sample_title": "HVAC Innovation Showdown: And Then There Were Eight",
     "sample_link": "https://www.achrnews.com/articles/166726-hvac-innovation-showdown-and-then-there-were-eight",
+    "keyword_validated": false
+  },
+  "how to optimize heat pump energy consumption in germany": {
+    "keyword": "how to optimize heat pump energy consumption in germany",
+    "region": "europe",
+    "product_category": "heat_pump",
+    "content_format": "blog",
+    "first_seen": "2026-10-02",
+    "last_seen": "2026-10-02",
+    "times_seen": 1,
+    "sample_title": "Flexible heat pumps could cut peak electricity prices by 13.5% in Germany",
+    "sample_link": "https://ehpa.org/news-and-resources/policy/flexible-heat-pumps-could-cut-peak-electricity-prices-by-13-5-in-germany/",
+    "keyword_validated": false
+  },
+  "choosing a reliable hvac supplier for business growth": {
+    "keyword": "choosing a reliable hvac supplier for business growth",
+    "region": "global",
+    "product_category": "both",
+    "content_format": "blog",
+    "first_seen": "2026-10-02",
+    "last_seen": "2026-10-02",
+    "times_seen": 1,
+    "sample_title": "Building a Profitable HVAC Business by Putting People, Not Revenue, First",
+    "sample_link": "https://www.achrnews.com/articles/166723-building-a-profitable-hvac-business-by-putting-people-not-revenue-first",
+    "keyword_validated": false
+  },
+  "reliable hvac manufacturer selection guide": {
+    "keyword": "reliable hvac manufacturer selection guide",
+    "region": "global",
+    "product_category": "both",
+    "content_format": "buyer_faq",
+    "first_seen": "2026-10-02",
+    "last_seen": "2026-10-02",
+    "times_seen": 1,
+    "sample_title": "Panasonic HVAC & CC Announces Personnel Change of Executive Officer",
+    "sample_link": "https://news.panasonic.com/global/press/en261001-4",
     "keyword_validated": false
   }
 }
