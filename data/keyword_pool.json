@@ -7894,5 +7894,41 @@
     "sample_title": "Panasonic HVAC & CC Announces Personnel Change of Executive Officer",
     "sample_link": "https://news.panasonic.com/global/press/en261001-4",
     "keyword_validated": false
+  },
+  "how to choose efficient heat pump for residential heating": {
+    "keyword": "how to choose efficient heat pump for residential heating",
+    "region": "europe",
+    "product_category": "heat_pump",
+    "content_format": "buyer_faq",
+    "first_seen": "2026-10-04",
+    "last_seen": "2026-10-04",
+    "times_seen": 1,
+    "sample_title": "Viessmann muestra en Efintec soluciones conectadas para una climatización eficiente",
+    "sample_link": "https://www.climanoticias.com/texto-diario/mostrar/6030587/viessmann-muestra-efintec-soluciones-conectadas-climatizacion-eficiente",
+    "keyword_validated": false
+  },
+  "hvac maintenance tips for improved indoor air quality": {
+    "keyword": "HVAC maintenance tips for improved indoor air quality",
+    "region": "global",
+    "product_category": "both",
+    "content_format": "buyer_faq",
+    "first_seen": "2026-10-04",
+    "last_seen": "2026-10-04",
+    "times_seen": 1,
+    "sample_title": "Longer Allergy Seasons Raise the Stakes for Fall HVAC Maintenance",
+    "sample_link": "https://www.achrnews.com/articles/166730-longer-allergy-seasons-raise-the-stakes-for-fall-hvac-maintenance",
+    "keyword_validated": false
+  },
+  "preventing mold growth in commercial hvac systems": {
+    "keyword": "preventing mold growth in commercial HVAC systems",
+    "region": "global",
+    "product_category": "both",
+    "content_format": "buyer_faq",
+    "first_seen": "2026-10-04",
+    "last_seen": "2026-10-04",
+    "times_seen": 1,
+    "sample_title": "Mold: The HVAC Industry’s 4-Letter Word",
+    "sample_link": "https://www.achrnews.com/articles/166725-mold-the-hvac-industrys-4-letter-word",
+    "keyword_validated": false
   }
 }
