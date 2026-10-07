@@ -8074,5 +8074,101 @@
     "sample_title": "Reinventing a mega convention centre with VRF",
     "sample_link": "https://refrigerationandaircon.co.za/reinventing-a-mega-convention-centre-with-vrf/",
     "keyword_validated": false
+  },
+  "selecting the right r290 heat pump for residential installations": {
+    "keyword": "selecting the right R290 heat pump for residential installations",
+    "region": "europe",
+    "product_category": "heat_pump",
+    "content_format": "buyer_faq",
+    "first_seen": "2026-10-07",
+    "last_seen": "2026-10-07",
+    "times_seen": 1,
+    "sample_title": "Ekokai acerca al instalador sus soluciones de aerotermia y ACS",
+    "sample_link": "https://www.climanoticias.com/texto-diario/mostrar/6035656/ekokai-acerca-instalador-soluciones-aerotermia-acs",
+    "keyword_validated": false
+  },
+  "electrifying building hvac systems for decarbonization": {
+    "keyword": "electrifying building HVAC systems for decarbonization",
+    "region": "europe",
+    "product_category": "both",
+    "content_format": "whitepaper",
+    "first_seen": "2026-10-07",
+    "last_seen": "2026-10-07",
+    "times_seen": 1,
+    "sample_title": "Mitsubishi Electric muestra soluciones avanzadas para climatización eficiente y sostenible",
+    "sample_link": "https://www.climanoticias.com/texto-diario/mostrar/6035621/mitsubishi-electric-muestra-soluciones-avanzadas-climatizacion-eficiente-sostenible",
+    "keyword_validated": false
+  },
+  "essential diagnostic tools for hvac professional installation": {
+    "keyword": "essential diagnostic tools for HVAC professional installation",
+    "region": "europe",
+    "product_category": "both",
+    "content_format": "blog",
+    "first_seen": "2026-10-07",
+    "last_seen": "2026-10-07",
+    "times_seen": 1,
+    "sample_title": "Testo presenta sus últimas soluciones de medición para profesionales de la instalación y la energía",
+    "sample_link": "https://www.climanoticias.com/texto-diario/mostrar/6035451/testo-presenta-ultimas-soluciones-medicion-profesionales-instalacion-energia",
+    "keyword_validated": false
+  },
+  "common heat pump installation mistakes to avoid": {
+    "keyword": "common heat pump installation mistakes to avoid",
+    "region": "europe",
+    "product_category": "heat_pump",
+    "content_format": "buyer_faq",
+    "first_seen": "2026-10-07",
+    "last_seen": "2026-10-07",
+    "times_seen": 1,
+    "sample_title": "Spreekuur met warmtepompspecialisten op Installatie.nl",
+    "sample_link": "https://www.installatie.nl/nieuws/spreekuur-met-warmtepompspecialisten-op-installatie-nl/",
+    "keyword_validated": false
+  },
+  "improving indoor air quality in commercial hvac systems": {
+    "keyword": "improving indoor air quality in commercial HVAC systems",
+    "region": "global",
+    "product_category": "air_conditioner",
+    "content_format": "blog",
+    "first_seen": "2026-10-07",
+    "last_seen": "2026-10-07",
+    "times_seen": 1,
+    "sample_title": "After 9/11, HVAC Industry’s Attention Turned to IAQ",
+    "sample_link": "https://www.achrnews.com/articles/166744-after-9-11-hvac-industrys-attention-turned-to-iaq",
+    "keyword_validated": false
+  },
+  "how to reduce supermarket hvac energy consumption": {
+    "keyword": "how to reduce supermarket HVAC energy consumption",
+    "region": "global",
+    "product_category": "both",
+    "content_format": "case_study",
+    "first_seen": "2026-10-07",
+    "last_seen": "2026-10-07",
+    "times_seen": 1,
+    "sample_title": "Real-world supermarket cuts energy use by 60%",
+    "sample_link": "https://www.achrnews.com/articles/166742-real-world-supermarket-cuts-energy-use-by-60",
+    "keyword_validated": false
+  },
+  "high performance cold climate heat pumps": {
+    "keyword": "high performance cold climate heat pumps",
+    "region": "europe",
+    "product_category": "heat_pump",
+    "content_format": "comparison",
+    "first_seen": "2026-10-07",
+    "last_seen": "2026-10-07",
+    "times_seen": 1,
+    "sample_title": "New Trane Heat Pumps Deliver Full Capacity at 5°F",
+    "sample_link": "https://www.achrnews.com/articles/166745-new-trane-heat-pumps-deliver-full-capacity-at-5f",
+    "keyword_validated": false
+  },
+  "benefits of ai in hvac manufacturing and service": {
+    "keyword": "benefits of AI in HVAC manufacturing and service",
+    "region": "global",
+    "product_category": "both",
+    "content_format": "market_trends",
+    "first_seen": "2026-10-07",
+    "last_seen": "2026-10-07",
+    "times_seen": 1,
+    "sample_title": "AI and Manufacturing: How HVAC OEMs are Using AI",
+    "sample_link": "https://www.achrnews.com/articles/166738-ai-and-manufacturing-how-hvac-oems-are-using-ai",
+    "keyword_validated": false
   }
 }

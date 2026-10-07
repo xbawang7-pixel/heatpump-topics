@@ -48,8 +48,8 @@
     "method": "common_path:feed/"
   },
   "https://portpc.pl/": {
-    "feed_url": "https://portpc.pl/feed",
-    "method": "common_path:feed"
+    "feed_url": null,
+    "method": "not_found"
   },
   "https://www.sulpu.fi/": {
     "feed_url": "https://www.sulpu.fi/feed/",
