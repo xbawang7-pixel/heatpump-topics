@@ -8170,5 +8170,65 @@
     "sample_title": "AI and Manufacturing: How HVAC OEMs are Using AI",
     "sample_link": "https://www.achrnews.com/articles/166738-ai-and-manufacturing-how-hvac-oems-are-using-ai",
     "keyword_validated": false
+  },
+  "r32 vrf system energy efficiency benefits for commercial buildings": {
+    "keyword": "R32 VRF system energy efficiency benefits for commercial buildings",
+    "region": "europe",
+    "product_category": "air_conditioner",
+    "content_format": "blog",
+    "first_seen": "2026-10-08",
+    "last_seen": "2026-10-08",
+    "times_seen": 1,
+    "sample_title": "Hitachi amplía su gama VRF air365 Max con refrigerante R32",
+    "sample_link": "https://www.climanoticias.com/texto-diario/mostrar/6036853/hitachi-amplia-gama-vrf-air365-max-refrigerante-r32",
+    "keyword_validated": false
+  },
+  "hvac technical innovations impact on system performance": {
+    "keyword": "HVAC technical innovations impact on system performance",
+    "region": "global",
+    "product_category": "both",
+    "content_format": "blog",
+    "first_seen": "2026-10-08",
+    "last_seen": "2026-10-08",
+    "times_seen": 1,
+    "sample_title": "TXVs Just Wrecked Your Bracket",
+    "sample_link": "https://www.achrnews.com/articles/166747-txvs-just-wrecked-your-bracket",
+    "keyword_validated": false
+  },
+  "how to choose a reliable hvac contractor and consultant": {
+    "keyword": "how to choose a reliable HVAC contractor and consultant",
+    "region": "africa",
+    "product_category": "both",
+    "content_format": "buyer_faq",
+    "first_seen": "2026-10-08",
+    "last_seen": "2026-10-08",
+    "times_seen": 1,
+    "sample_title": "Recognition of dealer and consultant excellence at 2026 awards",
+    "sample_link": "https://refrigerationandaircon.co.za/recognition-of-dealer-and-consultant-excellence-at-2026-awards/",
+    "keyword_validated": false
+  },
+  "hvac networking and industry partnerships": {
+    "keyword": "HVAC networking and industry partnerships",
+    "region": "africa",
+    "product_category": "both",
+    "content_format": "blog",
+    "first_seen": "2026-10-08",
+    "last_seen": "2026-10-08",
+    "times_seen": 1,
+    "sample_title": "Fourball competition produces strong field at Metraclark Golf Day",
+    "sample_link": "https://refrigerationandaircon.co.za/fourball-competition-produces-strong-field-at-metraclark-golf-day/",
+    "keyword_validated": false
+  },
+  "calculate heat pump heating cost savings with high scop": {
+    "keyword": "calculate heat pump heating cost savings with high SCOP",
+    "region": "europe",
+    "product_category": "heat_pump",
+    "content_format": "blog",
+    "first_seen": "2026-10-08",
+    "last_seen": "2026-10-08",
+    "times_seen": 1,
+    "sample_title": "Ogrzewanie mieszkania za mniej niż 1000 zł rocznie? PORT PC pokazuje, jak duże znaczenie ma SCOP",
+    "sample_link": "https://portpc.pl/ogrzewanie-mieszkania-za-mniej-niz-1000-zl-rocznie-port-pc-pokazuje-jak-duze-znaczenie-ma-scop/",
+    "keyword_validated": false
   }
 }
