@@ -8230,5 +8230,101 @@
     "sample_title": "Ogrzewanie mieszkania za mniej niż 1000 zł rocznie? PORT PC pokazuje, jak duże znaczenie ma SCOP",
     "sample_link": "https://portpc.pl/ogrzewanie-mieszkania-za-mniej-niz-1000-zl-rocznie-port-pc-pokazuje-jak-duze-znaczenie-ma-scop/",
     "keyword_validated": false
+  },
+  "future of heat pump technology and energy transition": {
+    "keyword": "future of heat pump technology and energy transition",
+    "region": "europe",
+    "product_category": "heat_pump",
+    "content_format": "blog",
+    "first_seen": "2026-10-11",
+    "last_seen": "2026-10-11",
+    "times_seen": 1,
+    "sample_title": "AFEC e Iberdrola analizan el futuro energético de la bomba de calor",
+    "sample_link": "https://www.climanoticias.com/texto-diario/mostrar/6039610/afec-e-iberdrola-analizan-futuro-energetico-bomba-calor",
+    "keyword_validated": false
+  },
+  "hvac system energy efficiency improvement tips": {
+    "keyword": "hvac system energy efficiency improvement tips",
+    "region": "europe",
+    "product_category": "both",
+    "content_format": "blog",
+    "first_seen": "2026-10-11",
+    "last_seen": "2026-10-11",
+    "times_seen": 1,
+    "sample_title": "Ashrae y Grundfos analizan eficiencia energética del bombeo en climatización",
+    "sample_link": "https://www.climanoticias.com/texto-diario/mostrar/6039484/ashrae-grundfos-analizan-eficiencia-energetica-bombeo-climatizacion",
+    "keyword_validated": false
+  },
+  "best hybrid vs all-electric heat pump for residential": {
+    "keyword": "best hybrid vs all-electric heat pump for residential",
+    "region": "europe",
+    "product_category": "heat_pump",
+    "content_format": "comparison",
+    "first_seen": "2026-10-11",
+    "last_seen": "2026-10-11",
+    "times_seen": 1,
+    "sample_title": "Zo gaat de nieuwe Elga Ace-warmtepomp eruit zien",
+    "sample_link": "https://www.installatie.nl/nieuws/zo-gaat-de-nieuwe-elga-ace-warmtepomp-eruit-zien/",
+    "keyword_validated": false
+  },
+  "hvac project management contract best practices": {
+    "keyword": "hvac project management contract best practices",
+    "region": "africa",
+    "product_category": "both",
+    "content_format": "blog",
+    "first_seen": "2026-10-11",
+    "last_seen": "2026-10-11",
+    "times_seen": 1,
+    "sample_title": "When the contract becomes part of the project-management process",
+    "sample_link": "https://refrigerationandaircon.co.za/when-the-contract-becomes-part-of-the-project-management-process/",
+    "keyword_validated": false
+  },
+  "hvac system evacuation and refrigerant charging guide": {
+    "keyword": "hvac system evacuation and refrigerant charging guide",
+    "region": "africa",
+    "product_category": "air_conditioner",
+    "content_format": "blog",
+    "first_seen": "2026-10-11",
+    "last_seen": "2026-10-11",
+    "times_seen": 1,
+    "sample_title": "Why a good vacuum is more than a low-pressure reading",
+    "sample_link": "https://refrigerationandaircon.co.za/why-a-good-vacuum-is-more-than-a-low-pressure-reading/",
+    "keyword_validated": false
+  },
+  "industrial humidity control solutions in southern africa": {
+    "keyword": "industrial humidity control solutions in southern africa",
+    "region": "africa",
+    "product_category": "both",
+    "content_format": "buyer_faq",
+    "first_seen": "2026-10-11",
+    "last_seen": "2026-10-11",
+    "times_seen": 1,
+    "sample_title": "Condair and Humidair launch JV to strengthen humidity control solutions in southern Africa",
+    "sample_link": "https://refrigerationandaircon.co.za/condair-and-humidair-launch-jv-to-strengthen-humidity-control-solutions-in-southern-africa/",
+    "keyword_validated": false
+  },
+  "hvac refrigerant recovery guidelines": {
+    "keyword": "hvac refrigerant recovery guidelines",
+    "region": "africa",
+    "product_category": "both",
+    "content_format": "blog",
+    "first_seen": "2026-10-11",
+    "last_seen": "2026-10-11",
+    "times_seen": 1,
+    "sample_title": "Recovering refrigerant: the disciplined approach",
+    "sample_link": "https://refrigerationandaircon.co.za/recovering-refrigerant-the-disciplined-approach/",
+    "keyword_validated": false
+  },
+  "hvac industry networking and events": {
+    "keyword": "hvac industry networking and events",
+    "region": "global",
+    "product_category": "both",
+    "content_format": "blog",
+    "first_seen": "2026-10-11",
+    "last_seen": "2026-10-11",
+    "times_seen": 1,
+    "sample_title": "Fourball competition produces strong field at Metraclark Golf Day",
+    "sample_link": "https://refrigerationandaircon.co.za/fourball-competition-produces-strong-field-at-metraclark-golf-day-2/",
+    "keyword_validated": false
   }
 }
