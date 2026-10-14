@@ -8698,5 +8698,77 @@
     "sample_title": "Wouldn't the air gap create a convective loop?",
     "sample_link": "https://www.reddit.com/r/buildingscience/comments/1wvax8a/wouldnt_the_air_gap_create_a_convective_loop/",
     "keyword_validated": false
+  },
+  "benefits of aerothermal heating and integrated climate control systems": {
+    "keyword": "benefits of aerothermal heating and integrated climate control systems",
+    "region": "europe",
+    "product_category": "both",
+    "content_format": "buyer_faq",
+    "first_seen": "2026-10-14",
+    "last_seen": "2026-10-14",
+    "times_seen": 1,
+    "sample_title": "Giatsu presenta en EFINTEC 2026 sus soluciones de aerotermia, ACS y climatización conectada",
+    "sample_link": "https://www.caloryfrio.com/noticias/actualidad/giatsu-efintec-2026-sus-soluciones-de-aerotermia-acs-y-climatizacion-conectada.html",
+    "keyword_validated": false
+  },
+  "cost savings of high-efficiency hvac systems": {
+    "keyword": "cost savings of high-efficiency HVAC systems",
+    "region": "europe",
+    "product_category": "both",
+    "content_format": "blog",
+    "first_seen": "2026-10-14",
+    "last_seen": "2026-10-14",
+    "times_seen": 1,
+    "sample_title": "El III Barómetro de Daikin revela que el 56% de los españoles ahorra al cambiar a una climatización más eficiente",
+    "sample_link": "https://www.caloryfrio.com/aire-acondicionado/aire-acondicionado-domestico/daikin-iii-barometro-climatizacion-56-ahorro-sistema-eficiente.html",
+    "keyword_validated": false
+  },
+  "prefab heat pump installation solutions for installers": {
+    "keyword": "prefab heat pump installation solutions for installers",
+    "region": "europe",
+    "product_category": "heat_pump",
+    "content_format": "case_study",
+    "first_seen": "2026-10-14",
+    "last_seen": "2026-10-14",
+    "times_seen": 1,
+    "sample_title": "Kapstok voor leidingwerk en appendages warmtepomp",
+    "sample_link": "https://www.installatie.nl/nieuws/kapstok-voor-leidingwerk-en-appendages-warmtepomp/",
+    "keyword_validated": false
+  },
+  "replacing r-22 air conditioning systems with modern alternatives": {
+    "keyword": "replacing R-22 air conditioning systems with modern alternatives",
+    "region": "global",
+    "product_category": "air_conditioner",
+    "content_format": "buyer_faq",
+    "first_seen": "2026-10-14",
+    "last_seen": "2026-10-14",
+    "times_seen": 1,
+    "sample_title": "R-22 Phaseout: The Long Goodbye",
+    "sample_link": "https://www.achrnews.com/articles/166776-r-22-phaseout-the-long-goodbye",
+    "keyword_validated": false
+  },
+  "why choose a manufacturer with robust hvac training programs": {
+    "keyword": "why choose a manufacturer with robust HVAC training programs",
+    "region": "global",
+    "product_category": "both",
+    "content_format": "blog",
+    "first_seen": "2026-10-14",
+    "last_seen": "2026-10-14",
+    "times_seen": 1,
+    "sample_title": "Midea Invests in HVAC Innovation, Contractor Training",
+    "sample_link": "https://www.achrnews.com/articles/166774-midea-invests-in-hvac-innovation-contractor-training",
+    "keyword_validated": false
+  },
+  "switch from oil heating to heat pumps for lower utility bills": {
+    "keyword": "switch from oil heating to heat pumps for lower utility bills",
+    "region": "global",
+    "product_category": "heat_pump",
+    "content_format": "comparison",
+    "first_seen": "2026-10-14",
+    "last_seen": "2026-10-14",
+    "times_seen": 1,
+    "sample_title": "Oil Heat Faces a $6-a-Gallon Test",
+    "sample_link": "https://www.achrnews.com/blogs/17-opinions/post/166769-oil-heat-faces-a-6-a-gallon-test",
+    "keyword_validated": false
   }
 }
