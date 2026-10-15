@@ -8770,5 +8770,65 @@
     "sample_title": "Oil Heat Faces a $6-a-Gallon Test",
     "sample_link": "https://www.achrnews.com/blogs/17-opinions/post/166769-oil-heat-faces-a-6-a-gallon-test",
     "keyword_validated": false
+  },
+  "isde heat pump subsidy 2027 impact": {
+    "keyword": "ISDE heat pump subsidy 2027 impact",
+    "region": "europe",
+    "product_category": "heat_pump",
+    "content_format": "blog",
+    "first_seen": "2026-10-15",
+    "last_seen": "2026-10-15",
+    "times_seen": 1,
+    "sample_title": "Dit wordt warmtepompsubsidie ISDE in 2027",
+    "sample_link": "https://www.installatie.nl/nieuws/dit-wordt-warmtepompsubsidie-isde-in-2027/",
+    "keyword_validated": false
+  },
+  "hvac contractor business risk management": {
+    "keyword": "HVAC contractor business risk management",
+    "region": "global",
+    "product_category": "both",
+    "content_format": "blog",
+    "first_seen": "2026-10-15",
+    "last_seen": "2026-10-15",
+    "times_seen": 1,
+    "sample_title": "California SB 690 Limits Website Privacy Lawsuits Against HVAC Contractors",
+    "sample_link": "https://www.achrnews.com/articles/166785-california-sb-690-limits-website-privacy-lawsuits-against-hvac-contractors",
+    "keyword_validated": false
+  },
+  "inverter technology vs thermostatic expansion valve": {
+    "keyword": "inverter technology vs thermostatic expansion valve",
+    "region": "global",
+    "product_category": "both",
+    "content_format": "comparison",
+    "first_seen": "2026-10-15",
+    "last_seen": "2026-10-15",
+    "times_seen": 1,
+    "sample_title": "The Little Brass Valve Wants the Crown",
+    "sample_link": "https://www.achrnews.com/articles/166783-the-little-brass-valve-wants-the-crown",
+    "keyword_validated": false
+  },
+  "ai impact on hvac supply chain and service": {
+    "keyword": "AI impact on HVAC supply chain and service",
+    "region": "global",
+    "product_category": "both",
+    "content_format": "whitepaper",
+    "first_seen": "2026-10-15",
+    "last_seen": "2026-10-15",
+    "times_seen": 1,
+    "sample_title": "What AI-Driven HVAC Demand Planning Means Downstream",
+    "sample_link": "https://www.achrnews.com/articles/166777-what-ai-driven-hvac-demand-planning-means-downstream",
+    "keyword_validated": false
+  },
+  "hvac technician friendly tools and equipment": {
+    "keyword": "HVAC technician friendly tools and equipment",
+    "region": "global",
+    "product_category": "both",
+    "content_format": "buyer_faq",
+    "first_seen": "2026-10-15",
+    "last_seen": "2026-10-15",
+    "times_seen": 1,
+    "sample_title": "Technicians Do Not Resist Technology; They Resist Technology That Does Not Help Them",
+    "sample_link": "https://www.achrnews.com/articles/166760-technicians-do-not-resist-technology-they-resist-technology-that-does-not-help-them",
+    "keyword_validated": false
   }
 }
