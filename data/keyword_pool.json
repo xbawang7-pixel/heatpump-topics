@@ -8854,5 +8854,77 @@
     "sample_title": "The Journey From $2,000 to a Spot on the Inc. 5000",
     "sample_link": "https://www.achrnews.com/articles/166781-the-journey-from-2-000-to-a-spot-on-the-inc-5000",
     "keyword_validated": false
+  },
+  "common misconceptions about heat pumps": {
+    "keyword": "common misconceptions about heat pumps",
+    "region": "europe",
+    "product_category": "heat_pump",
+    "content_format": "buyer_faq",
+    "first_seen": "2026-10-18",
+    "last_seen": "2026-10-18",
+    "times_seen": 1,
+    "sample_title": "Warmtepomp Quiz: win kaartjes voor Oranje",
+    "sample_link": "https://www.installatie.nl/nieuws/warmtepomp-quiz-win-kaartjes-voor-oranje/",
+    "keyword_validated": false
+  },
+  "smart heat pump connectivity standards": {
+    "keyword": "smart heat pump connectivity standards",
+    "region": "europe",
+    "product_category": "heat_pump",
+    "content_format": "whitepaper",
+    "first_seen": "2026-10-18",
+    "last_seen": "2026-10-18",
+    "times_seen": 1,
+    "sample_title": "NTA 8171 geeft slimme warmtepompen een gezamenlijke taal",
+    "sample_link": "https://www.installatie.nl/techniek/warmtepompen/nta-8171-geeft-slimme-warmtepompen-een-gezamenlijke-taal/",
+    "keyword_validated": false
+  },
+  "how to choose a reliable hvac contractor": {
+    "keyword": "how to choose a reliable HVAC contractor",
+    "region": "global",
+    "product_category": "both",
+    "content_format": "buyer_faq",
+    "first_seen": "2026-10-18",
+    "last_seen": "2026-10-18",
+    "times_seen": 1,
+    "sample_title": "Saturday Night Live Sketch Goofs on the HVAC Industry",
+    "sample_link": "https://www.achrnews.com/blogs/17-opinions/post/166791-saturday-night-live-sketch-goofs-on-the-hvac-industry",
+    "keyword_validated": false
+  },
+  "current trends in hvac equipment market demand": {
+    "keyword": "current trends in HVAC equipment market demand",
+    "region": "global",
+    "product_category": "air_conditioner",
+    "content_format": "blog",
+    "first_seen": "2026-10-18",
+    "last_seen": "2026-10-18",
+    "times_seen": 1,
+    "sample_title": "Cooling Equipment Shipment Growth Hits 7-Month Streak",
+    "sample_link": "https://www.achrnews.com/articles/166784-cooling-equipment-shipment-growth-hits-7-month-streak",
+    "keyword_validated": false
+  },
+  "hvac solutions for data centers": {
+    "keyword": "HVAC solutions for data centers",
+    "region": "global",
+    "product_category": "air_conditioner",
+    "content_format": "whitepaper",
+    "first_seen": "2026-10-18",
+    "last_seen": "2026-10-18",
+    "times_seen": 1,
+    "sample_title": "Data Centers Come With Costs — and Opportunities",
+    "sample_link": "https://www.achrnews.com/blogs/17-opinions/post/166780-data-centers-come-with-costs-and-opportunities",
+    "keyword_validated": false
+  },
+  "hvac industry networking and local expertise": {
+    "keyword": "HVAC industry networking and local expertise",
+    "region": "africa",
+    "product_category": "both",
+    "content_format": "blog",
+    "first_seen": "2026-10-18",
+    "last_seen": "2026-10-18",
+    "times_seen": 1,
+    "sample_title": "Fellowship and insight at SAIRAC Durban’s Westville evening",
+    "sample_link": "https://refrigerationandaircon.co.za/fellowship-and-insight-at-sairac-durbans-westville-evening/",
+    "keyword_validated": false
   }
 }
