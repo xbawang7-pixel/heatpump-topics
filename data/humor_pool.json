@@ -18026,7 +18026,7 @@
     "upvotes": 5941,
     "comments": 0,
     "first_seen": "2026-07-29",
-    "last_seen": "2026-08-24"
+    "last_seen": "2026-10-21"
   },
   "311a2d3a8539fa8e": {
     "id": "311a2d3a8539fa8e",
@@ -18037,7 +18037,7 @@
     "upvotes": 4946,
     "comments": 0,
     "first_seen": "2026-07-29",
-    "last_seen": "2026-08-24"
+    "last_seen": "2026-10-21"
   },
   "0100f97c216fd8ca": {
     "id": "0100f97c216fd8ca",
@@ -18048,7 +18048,7 @@
     "upvotes": 3779,
     "comments": 0,
     "first_seen": "2026-07-29",
-    "last_seen": "2026-08-24"
+    "last_seen": "2026-10-21"
   },
   "f6b30f514c0d56b1": {
     "id": "f6b30f514c0d56b1",
@@ -18059,7 +18059,7 @@
     "upvotes": 3569,
     "comments": 0,
     "first_seen": "2026-07-29",
-    "last_seen": "2026-08-24"
+    "last_seen": "2026-10-21"
   },
   "d0acd27eec9b3314": {
     "id": "d0acd27eec9b3314",
@@ -18070,7 +18070,7 @@
     "upvotes": 2943,
     "comments": 0,
     "first_seen": "2026-07-29",
-    "last_seen": "2026-08-24"
+    "last_seen": "2026-10-21"
   },
   "9bc43588fde8d0c1": {
     "id": "9bc43588fde8d0c1",
@@ -18081,7 +18081,7 @@
     "upvotes": 2794,
     "comments": 0,
     "first_seen": "2026-07-29",
-    "last_seen": "2026-07-29"
+    "last_seen": "2026-10-21"
   },
   "5212800c0112d8f0": {
     "id": "5212800c0112d8f0",
@@ -22712,7 +22712,7 @@
     "upvotes": 5794,
     "comments": 0,
     "first_seen": "2026-08-12",
-    "last_seen": "2026-08-31"
+    "last_seen": "2026-10-21"
   },
   "a5503fccbd1553bd": {
     "id": "a5503fccbd1553bd",
@@ -22723,7 +22723,7 @@
     "upvotes": 5638,
     "comments": 0,
     "first_seen": "2026-08-12",
-    "last_seen": "2026-08-24"
+    "last_seen": "2026-10-21"
   },
   "75ccd9b929430cf3": {
     "id": "75ccd9b929430cf3",
@@ -27871,7 +27871,7 @@
     "upvotes": 3737,
     "comments": 0,
     "first_seen": "2026-08-24",
-    "last_seen": "2026-08-24"
+    "last_seen": "2026-10-21"
   },
   "8f3459ff7afdd397": {
     "id": "8f3459ff7afdd397",
@@ -43227,7 +43227,7 @@
     "upvotes": 1,
     "comments": 0,
     "first_seen": "2026-09-23",
-    "last_seen": "2026-10-19"
+    "last_seen": "2026-10-21"
   },
   "bd804445ec9eda67": {
     "id": "bd804445ec9eda67",
@@ -43238,7 +43238,7 @@
     "upvotes": 2551,
     "comments": 0,
     "first_seen": "2026-09-23",
-    "last_seen": "2026-09-28"
+    "last_seen": "2026-10-21"
   },
   "2d6c6b46816221f3": {
     "id": "2d6c6b46816221f3",
@@ -43249,7 +43249,7 @@
     "upvotes": 2330,
     "comments": 0,
     "first_seen": "2026-09-23",
-    "last_seen": "2026-09-28"
+    "last_seen": "2026-10-21"
   },
   "f41c23bdbc796d7b": {
     "id": "f41c23bdbc796d7b",
@@ -47495,7 +47495,7 @@
     "upvotes": 1,
     "comments": 0,
     "first_seen": "2026-10-14",
-    "last_seen": "2026-10-19"
+    "last_seen": "2026-10-21"
   },
   "e422bf3d5489db60": {
     "id": "e422bf3d5489db60",
@@ -52083,5 +52083,203 @@
     "comments": 0,
     "first_seen": "2026-10-19",
     "last_seen": "2026-10-19"
+  },
+  "4bb6f7d5ea0662d6": {
+    "id": "4bb6f7d5ea0662d6",
+    "title": "Is this heater safe?",
+    "link": "https://www.reddit.com/r/hvacadvice/comments/1xbbsnl/is_this_heater_safe/",
+    "source_name": "r/hvacadvice",
+    "summary_cn": "针对老式公寓内燃气加热器的安全性咨询，偏向于住户安全隐患吐槽，缺乏热泵专业技术信息。",
+    "upvotes": 2,
+    "comments": 0,
+    "first_seen": "2026-10-21",
+    "last_seen": "2026-10-21"
+  },
+  "a2a150b96619584e": {
+    "id": "a2a150b96619584e",
+    "title": "Furnace not working and I’m too broke to not do it myself",
+    "link": "https://www.reddit.com/r/hvacadvice/comments/1gxmps8/furnace_not_working_and_im_too_broke_to_not_do_it/",
+    "source_name": "r/hvacadvice",
+    "summary_cn": "针对 Armstrong 燃气炉点火器更换后的故障求助，缺乏对于热泵系统维护的实质性参考价值。",
+    "upvotes": 3460,
+    "comments": 0,
+    "first_seen": "2026-10-21",
+    "last_seen": "2026-10-21"
+  },
+  "95e20b4d5f6b8681": {
+    "id": "95e20b4d5f6b8681",
+    "title": "Is this normal?",
+    "link": "https://www.reddit.com/r/hvacadvice/comments/1wq4cmm/is_this_normal/",
+    "source_name": "r/hvacadvice",
+    "summary_cn": "关于安装 UV 净化灯后灯光表现的疑问，属于辅助设备安装效果的咨询。",
+    "upvotes": 2636,
+    "comments": 0,
+    "first_seen": "2026-10-21",
+    "last_seen": "2026-10-21"
+  },
+  "97c7d323851b4b42": {
+    "id": "97c7d323851b4b42",
+    "title": "Removed my AC after 10 years and found this pink-ish orange mold(?) under it. What is it? How should I remove it?",
+    "link": "https://www.reddit.com/r/AirConditioners/comments/1wto9nc/removed_my_ac_after_10_years_and_found_this/",
+    "source_name": "r/AirConditioners",
+    "summary_cn": "关于空调机组下霉菌清理的求助，属于家庭清洁建议，非空调系统技术核心。",
+    "upvotes": 3,
+    "comments": 0,
+    "first_seen": "2026-10-21",
+    "last_seen": "2026-10-21"
+  },
+  "ee99ece2d6276b7a": {
+    "id": "ee99ece2d6276b7a",
+    "title": "Is it safe to turn on the air conditioner like this?",
+    "link": "https://www.reddit.com/r/AirConditioners/comments/1wwylel/is_it_safe_to_turn_on_the_air_conditioner_like/",
+    "source_name": "r/AirConditioners",
+    "summary_cn": "询问在空调外机上方放置杂物是否安全，属于基础使用常识问题。",
+    "upvotes": 2,
+    "comments": 0,
+    "first_seen": "2026-10-21",
+    "last_seen": "2026-10-21"
+  },
+  "79d2aeae2cc43327": {
+    "id": "79d2aeae2cc43327",
+    "title": "My roommates upstairs want to use the AC, but I want to have the window open downstairs, what should I do?",
+    "link": "https://www.reddit.com/r/AirConditioners/comments/1x5j5ur/my_roommates_upstairs_want_to_use_the_ac_but_i/",
+    "source_name": "r/AirConditioners",
+    "summary_cn": "关于合租房内不同楼层住户温控需求冲突的矛盾，不属于HVAC行业话题。",
+    "upvotes": 0,
+    "comments": 0,
+    "first_seen": "2026-10-21",
+    "last_seen": "2026-10-21"
+  },
+  "366cc5f2a9016be9": {
+    "id": "366cc5f2a9016be9",
+    "title": "anyone know how to change the display from ℉ to ℃ on \"gree\" brand air conditioner?",
+    "link": "https://www.reddit.com/r/AirConditioners/comments/1x27pqz/anyone_know_how_to_change_the_display_from_to_on/",
+    "source_name": "r/AirConditioners",
+    "summary_cn": "询问 Gree 空调遥控器摄氏/华氏切换方法，属于设备操作的基础说明书查询。",
+    "upvotes": 0,
+    "comments": 0,
+    "first_seen": "2026-10-21",
+    "last_seen": "2026-10-21"
+  },
+  "31f5b4178e1dec39": {
+    "id": "31f5b4178e1dec39",
+    "title": "Is this salvageable?",
+    "link": "https://www.reddit.com/r/AirConditioners/comments/1wts59r/is_this_salvageable/",
+    "source_name": "r/AirConditioners",
+    "summary_cn": "询问老旧窗机是否值得清理翻新，属于极小众的设备报废判断，缺乏系统级参考价值。",
+    "upvotes": 0,
+    "comments": 0,
+    "first_seen": "2026-10-21",
+    "last_seen": "2026-10-21"
+  },
+  "c042a599163c742b": {
+    "id": "c042a599163c742b",
+    "title": "Fans that feel like AC",
+    "link": "https://www.reddit.com/r/AirConditioners/comments/1wxmhl6/fans_that_feel_like_ac/",
+    "source_name": "r/AirConditioners",
+    "summary_cn": "学生询问宿舍如何选购凉爽风扇，完全脱离了专业热泵与空调行业的范畴。",
+    "upvotes": 0,
+    "comments": 0,
+    "first_seen": "2026-10-21",
+    "last_seen": "2026-10-21"
+  },
+  "35dae6e43715dce7": {
+    "id": "35dae6e43715dce7",
+    "title": "How do you guys deal with this crazy heat?",
+    "link": "https://www.reddit.com/r/AirConditioners/comments/1wwu1x6/how_do_you_guys_deal_with_this_crazy_heat/",
+    "source_name": "r/AirConditioners",
+    "summary_cn": "讨论极端天气下的室内降温建议，主要是家庭层面的避暑闲聊。",
+    "upvotes": 0,
+    "comments": 0,
+    "first_seen": "2026-10-21",
+    "last_seen": "2026-10-21"
+  },
+  "f2cf6261d914fbaa": {
+    "id": "f2cf6261d914fbaa",
+    "title": "why would this happen?",
+    "link": "https://www.reddit.com/r/AirConditioners/comments/1wn0fss/why_would_this_happen/",
+    "source_name": "r/AirConditioners",
+    "summary_cn": "对室内湿度激增原因的疑惑，缺乏设备相关背景，属于环境分析。",
+    "upvotes": 0,
+    "comments": 0,
+    "first_seen": "2026-10-21",
+    "last_seen": "2026-10-21"
+  },
+  "7ad510f5fb9fb4e5": {
+    "id": "7ad510f5fb9fb4e5",
+    "title": "Window unit fairly new making loud noise out of no where when I turn off I hear the fan make noise as it slows down and comes to a stop but its still blowing cold air so its been turned off for now any suggestions or advice is appreciated thanks",
+    "link": "https://www.reddit.com/r/AirConditioners/comments/1x79qu6/window_unit_fairly_new_making_loud_noise_out_of/",
+    "source_name": "r/AirConditioners",
+    "summary_cn": "窗式空调关机过程中的异常响声咨询，属于单体小家电的日常维护问题。",
+    "upvotes": 0,
+    "comments": 0,
+    "first_seen": "2026-10-21",
+    "last_seen": "2026-10-21"
+  },
+  "39245898cb676e48": {
+    "id": "39245898cb676e48",
+    "title": "AC has a smell and makes scary noises on clean mode",
+    "link": "https://www.reddit.com/r/AirConditioners/comments/1wq0dfh/ac_has_a_smell_and_makes_scary_noises_on_clean/",
+    "source_name": "r/AirConditioners",
+    "summary_cn": "描述空调在自清洁模式下出现异味与噪音，属于家用空调使用过程中的个别故障。",
+    "upvotes": 2,
+    "comments": 0,
+    "first_seen": "2026-10-21",
+    "last_seen": "2026-10-21"
+  },
+  "30c5908c68ce8d95": {
+    "id": "30c5908c68ce8d95",
+    "title": "Colder temp",
+    "link": "https://www.reddit.com/r/AirConditioners/comments/1x1a7x3/colder_temp/",
+    "source_name": "r/AirConditioners",
+    "summary_cn": "关于便携式空调无法达到目标最低温度的性能投诉，属于移动空调类产品的性能上限讨论。",
+    "upvotes": 1,
+    "comments": 0,
+    "first_seen": "2026-10-21",
+    "last_seen": "2026-10-21"
+  },
+  "396e65080e539965": {
+    "id": "396e65080e539965",
+    "title": "Water collecting under fan?",
+    "link": "https://www.reddit.com/r/AirConditioners/comments/1wmts4y/water_collecting_under_fan/",
+    "source_name": "r/AirConditioners",
+    "summary_cn": "讨论窗式空调冷凝水收集问题，属于窗机设计的日常使用经验分享。",
+    "upvotes": 10,
+    "comments": 0,
+    "first_seen": "2026-10-21",
+    "last_seen": "2026-10-21"
+  },
+  "933d385c2ff5a213": {
+    "id": "933d385c2ff5a213",
+    "title": "Weird small box in AC keeps clicking? Spasms?",
+    "link": "https://www.reddit.com/r/AirConditioners/comments/1wmep6c/weird_small_box_in_ac_keeps_clicking_spasms/",
+    "source_name": "r/AirConditioners",
+    "summary_cn": "关于空调内机出现异常点击响声的排查，属于一般性的电机或继电器故障咨询。",
+    "upvotes": 6,
+    "comments": 0,
+    "first_seen": "2026-10-21",
+    "last_seen": "2026-10-21"
+  },
+  "af211ab50d5b3c00": {
+    "id": "af211ab50d5b3c00",
+    "title": "Portable Ac unit for cool air in the winter?",
+    "link": "https://www.reddit.com/r/AirConditioners/comments/1x8tjnw/portable_ac_unit_for_cool_air_in_the_winter/",
+    "source_name": "r/AirConditioners",
+    "summary_cn": "询问冬天使用便携空调制冷的需求，属于非正常使用场景的咨询。",
+    "upvotes": 1,
+    "comments": 0,
+    "first_seen": "2026-10-21",
+    "last_seen": "2026-10-21"
+  },
+  "28b9a276f42a9eea": {
+    "id": "28b9a276f42a9eea",
+    "title": "Best way to quiet a portable AC?",
+    "link": "https://www.reddit.com/r/AirConditioners/comments/1wpzhqa/best_way_to_quiet_a_portable_ac/",
+    "source_name": "r/AirConditioners",
+    "summary_cn": "咨询便携空调噪音与震动减震方案，属于家电使用体验优化建议。",
+    "upvotes": 3,
+    "comments": 0,
+    "first_seen": "2026-10-21",
+    "last_seen": "2026-10-21"
   }
 }
