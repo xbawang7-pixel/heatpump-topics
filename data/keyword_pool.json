@@ -9298,5 +9298,101 @@
     "sample_title": "Landlord built a DIY fence around the AC unit and now it doesn’t work",
     "sample_link": "https://www.reddit.com/r/hvacadvice/comments/1vujle3/landlord_built_a_diy_fence_around_the_ac_unit_and/",
     "keyword_validated": false
+  },
+  "passive house hvac efficiency solutions": {
+    "keyword": "passive house hvac efficiency solutions",
+    "region": "europe",
+    "product_category": "both",
+    "content_format": "blog",
+    "first_seen": "2026-10-24",
+    "last_seen": "2026-10-24",
+    "times_seen": 1,
+    "sample_title": "Zehnder aborda el confort y el rendimiento en las conferencias Passivhaus de España y Portugal",
+    "sample_link": "https://www.climanoticias.com/texto-diario/mostrar/6056817/zehnder-aborda-confort-rendimiento-conferencias-passivhaus-espana-portugal",
+    "keyword_validated": false
+  },
+  "small capacity air to water heat pump for residential": {
+    "keyword": "small capacity air to water heat pump for residential",
+    "region": "europe",
+    "product_category": "heat_pump",
+    "content_format": "buyer_faq",
+    "first_seen": "2026-10-24",
+    "last_seen": "2026-10-24",
+    "times_seen": 1,
+    "sample_title": "NIBE komt met 5 kW instapper",
+    "sample_link": "https://www.installatie.nl/nieuws/nibe-komt-met-5-kw-instapper/",
+    "keyword_validated": false
+  },
+  "heat pump vs pellet boiler running cost": {
+    "keyword": "heat pump vs pellet boiler running cost",
+    "region": "europe",
+    "product_category": "heat_pump",
+    "content_format": "comparison",
+    "first_seen": "2026-10-24",
+    "last_seen": "2026-10-24",
+    "times_seen": 1,
+    "sample_title": "4 tony pelletu: 9040 zł. Ta sama ilość ciepła z pompy ciepła: 3783 zł",
+    "sample_link": "https://portpc.pl/4-tony-pelletu-9040-zl-ta-sama-ilosc-ciepla-z-pompy-ciepla-3783-zl/",
+    "keyword_validated": false
+  },
+  "how do cold climate heat pumps work": {
+    "keyword": "how do cold climate heat pumps work",
+    "region": "global",
+    "product_category": "heat_pump",
+    "content_format": "blog",
+    "first_seen": "2026-10-24",
+    "last_seen": "2026-10-24",
+    "times_seen": 1,
+    "sample_title": "The New Era of Cold Climate Heat Pumps: What Contractors Need to Know",
+    "sample_link": "https://www.achrnews.com/articles/166748-the-new-era-of-cold-climate-heat-pumps-what-contractors-need-to-know",
+    "keyword_validated": false
+  },
+  "selecting a reliable hvac contractor": {
+    "keyword": "selecting a reliable hvac contractor",
+    "region": "global",
+    "product_category": "both",
+    "content_format": "buyer_faq",
+    "first_seen": "2026-10-24",
+    "last_seen": "2026-10-24",
+    "times_seen": 1,
+    "sample_title": "Lennox and Dealers Bring New HVAC to Those in Need",
+    "sample_link": "https://www.achrnews.com/articles/166869-lennox-and-dealers-bring-new-hvac-to-those-in-need",
+    "keyword_validated": false
+  },
+  "commercial hvac installation best practices": {
+    "keyword": "commercial hvac installation best practices",
+    "region": "global",
+    "product_category": "both",
+    "content_format": "blog",
+    "first_seen": "2026-10-24",
+    "last_seen": "2026-10-24",
+    "times_seen": 1,
+    "sample_title": "When Labor Counts, HVAC Suspension Methods Matter",
+    "sample_link": "https://www.achrnews.com/articles/166860-when-labor-counts-hvac-suspension-methods-matter",
+    "keyword_validated": false
+  },
+  "hvac engineering career trends": {
+    "keyword": "hvac engineering career trends",
+    "region": "global",
+    "product_category": "both",
+    "content_format": "blog",
+    "first_seen": "2026-10-24",
+    "last_seen": "2026-10-24",
+    "times_seen": 1,
+    "sample_title": "2026 Top 40 Under 40: Zavier Lee",
+    "sample_link": "https://www.achrnews.com/articles/166854-2026-top-40-under-40-zavier-lee",
+    "keyword_validated": false
+  },
+  "hvac training and workforce development": {
+    "keyword": "hvac training and workforce development",
+    "region": "africa",
+    "product_category": "air_conditioner",
+    "content_format": "blog",
+    "first_seen": "2026-10-24",
+    "last_seen": "2026-10-24",
+    "times_seen": 1,
+    "sample_title": "Part 3: Building refrigeration capability takes more than a course",
+    "sample_link": "https://refrigerationandaircon.co.za/part-3-building-refrigeration-capability-takes-more-than-a-course/",
+    "keyword_validated": false
   }
 }
