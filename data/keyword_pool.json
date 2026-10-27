@@ -9658,5 +9658,41 @@
     "sample_title": "Wie viel eigenständige Technik steckt eigentlich hinter den Wärmepumpenmarken?",
     "sample_link": "https://www.reddit.com/r/Waermepumpe/comments/1x4y844/wie_viel_eigenst%C3%A4ndige_technik_steckt_eigentlich/",
     "keyword_validated": false
+  },
+  "hvac solutions for commercial buildings south africa": {
+    "keyword": "HVAC solutions for commercial buildings South Africa",
+    "region": "africa",
+    "product_category": "both",
+    "content_format": "blog",
+    "first_seen": "2026-10-27",
+    "last_seen": "2026-10-27",
+    "times_seen": 1,
+    "sample_title": "FRIGAIR Cape Town 2027: Exhibitor line-up grows as free seminar programme takes shape",
+    "sample_link": "https://refrigerationandaircon.co.za/frigair-cape-town-2027-exhibitor-line-up-grows-as-free-seminar-programme-takes-shape/",
+    "keyword_validated": false
+  },
+  "how to choose right industrial heat pump for factory": {
+    "keyword": "how to choose right industrial heat pump for factory",
+    "region": "europe",
+    "product_category": "heat_pump",
+    "content_format": "buyer_faq",
+    "first_seen": "2026-10-27",
+    "last_seen": "2026-10-27",
+    "times_seen": 1,
+    "sample_title": "Industrial Accelerator Act: one size can’t fit all",
+    "sample_link": "https://ehpa.org/news-and-resources/policy/industrial-accelerator-act-one-size-cant-fit-all/",
+    "keyword_validated": false
+  },
+  "heat pump installation standards and compliance for installers": {
+    "keyword": "heat pump installation standards and compliance for installers",
+    "region": "europe",
+    "product_category": "heat_pump",
+    "content_format": "buyer_faq",
+    "first_seen": "2026-10-27",
+    "last_seen": "2026-10-27",
+    "times_seen": 1,
+    "sample_title": "Harbers: ‘Installateur moet geen scheidsrechter worden bij warmtepompnorm’",
+    "sample_link": "https://www.installatie.nl/techniek/warmtepompen/harbers-installateur-moet-geen-scheidsrechter-worden-bij-warmtepompnorm/",
+    "keyword_validated": false
   }
 }
