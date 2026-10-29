@@ -8,8 +8,8 @@
     "method": "not_found"
   },
   "https://www.lemoniteur.fr/": {
-    "feed_url": null,
-    "method": "not_found"
+    "feed_url": "https://www.lemoniteur.fr/rss/",
+    "method": "common_path:rss/"
   },
   "https://www.impiantinews.it/": {
     "feed_url": "https://www.impiantinews.it/feed/",
