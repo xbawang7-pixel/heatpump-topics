@@ -9862,5 +9862,65 @@
     "sample_title": "Ice Rink Trades R-22 for Ammonia Refrigeration",
     "sample_link": "https://www.achrnews.com/articles/166898-ice-rink-trades-r-22-for-ammonia-refrigeration",
     "keyword_validated": false
+  },
+  "smart hvac thermostat benefits for commercial buildings": {
+    "keyword": "smart HVAC thermostat benefits for commercial buildings",
+    "region": "global",
+    "product_category": "both",
+    "content_format": "blog",
+    "first_seen": "2026-11-02",
+    "last_seen": "2026-11-02",
+    "times_seen": 1,
+    "sample_title": "Is the Thermostat Just a Tech Accessory Now?",
+    "sample_link": "https://www.achrnews.com/blogs/17-opinions/post/166905-is-the-thermostat-just-a-tech-accessory-now",
+    "keyword_validated": false
+  },
+  "energy-efficient cooling systems for commercial buildings": {
+    "keyword": "energy-efficient cooling systems for commercial buildings",
+    "region": "global",
+    "product_category": "both",
+    "content_format": "comparison",
+    "first_seen": "2026-11-02",
+    "last_seen": "2026-11-02",
+    "times_seen": 1,
+    "sample_title": "Transaera System Designed to Cut Cooling Energy Use",
+    "sample_link": "https://www.achrnews.com/articles/166907-transaera-system-designed-to-cut-cooling-energy-use",
+    "keyword_validated": false
+  },
+  "hvac system reliability in data centers": {
+    "keyword": "HVAC system reliability in data centers",
+    "region": "global",
+    "product_category": "air_conditioner",
+    "content_format": "buyer_faq",
+    "first_seen": "2026-11-02",
+    "last_seen": "2026-11-02",
+    "times_seen": 1,
+    "sample_title": "How EMI Filtering Helps Reduce Unplanned Data Center Downtime",
+    "sample_link": "https://www.achrnews.com/articles/166792-how-emi-filtering-helps-reduce-unplanned-data-center-downtime",
+    "keyword_validated": false
+  },
+  "challenges of heat pump adoption in europe": {
+    "keyword": "challenges of heat pump adoption in Europe",
+    "region": "europe",
+    "product_category": "heat_pump",
+    "content_format": "buyer_faq",
+    "first_seen": "2026-11-02",
+    "last_seen": "2026-11-02",
+    "times_seen": 1,
+    "sample_title": "EHPA’s position on an EU clean heat market mechanism",
+    "sample_link": "https://ehpa.org/news-and-resources/position-papers/ehpas-position-on-an-eu-clean-heat-market-mechanism/",
+    "keyword_validated": false
+  },
+  "high efficiency residential air conditioning units": {
+    "keyword": "high efficiency residential air conditioning units",
+    "region": "europe",
+    "product_category": "air_conditioner",
+    "content_format": "buyer_faq",
+    "first_seen": "2026-11-02",
+    "last_seen": "2026-11-02",
+    "times_seen": 1,
+    "sample_title": "Hyundai lanza Diamond, su nueva gama de climatización eficiente y conectada",
+    "sample_link": "https://www.climanoticias.com/texto-diario/mostrar/6067368/hyundai-presenta-diamond-nueva-gama-climatizacion-eficiente-conectada",
+    "keyword_validated": false
   }
 }
