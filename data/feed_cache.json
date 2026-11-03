@@ -44,8 +44,8 @@
     "method": "not_found"
   },
   "https://globenergia.pl/": {
-    "feed_url": "https://globenergia.pl/feed/",
-    "method": "common_path:feed/"
+    "feed_url": "https://globenergia.pl/rss",
+    "method": "common_path:rss"
   },
   "https://portpc.pl/": {
     "feed_url": "https://portpc.pl/feed/",
