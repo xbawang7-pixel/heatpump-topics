@@ -10006,5 +10006,53 @@
     "sample_title": "MMA e GIZ lançam campanha e portal de refrigeração",
     "sample_link": "https://revistadofrio.com.br/mma-giz-campanha-portal-refrigeracao/",
     "keyword_validated": false
+  },
+  "industrial heat pump for manufacturing process": {
+    "keyword": "industrial heat pump for manufacturing process",
+    "region": "europe",
+    "product_category": "heat_pump",
+    "content_format": "case_study",
+    "first_seen": "2026-11-04",
+    "last_seen": "2026-11-04",
+    "times_seen": 1,
+    "sample_title": "Clean crystals: visiting a heat pump in a sugar factory",
+    "sample_link": "https://ehpa.org/news-and-resources/news/clean-crystals-visiting-a-heat-pump-in-a-sugar-factory/",
+    "keyword_validated": false
+  },
+  "how to choose energy efficient heat pump water heaters": {
+    "keyword": "how to choose energy efficient heat pump water heaters",
+    "region": "global",
+    "product_category": "heat_pump",
+    "content_format": "buyer_faq",
+    "first_seen": "2026-11-04",
+    "last_seen": "2026-11-04",
+    "times_seen": 1,
+    "sample_title": "Jetson Home Launches Heat Pump Water Heater",
+    "sample_link": "https://www.achrnews.com/articles/166918-jetson-home-launches-heat-pump-water-heater",
+    "keyword_validated": false
+  },
+  "switching from oil heating to heat pump cost analysis": {
+    "keyword": "switching from oil heating to heat pump cost analysis",
+    "region": "europe",
+    "product_category": "heat_pump",
+    "content_format": "comparison",
+    "first_seen": "2026-11-04",
+    "last_seen": "2026-11-04",
+    "times_seen": 1,
+    "sample_title": "HVAC Contractors Prepare Customers for Higher Heating Oil Prices",
+    "sample_link": "https://www.achrnews.com/articles/166915-hvac-contractors-prepare-customers-for-higher-heating-oil-prices",
+    "keyword_validated": false
+  },
+  "heat pump energy independence and government policy": {
+    "keyword": "heat pump energy independence and government policy",
+    "region": "europe",
+    "product_category": "heat_pump",
+    "content_format": "blog",
+    "first_seen": "2026-11-04",
+    "last_seen": "2026-11-04",
+    "times_seen": 1,
+    "sample_title": "El VI Foro de Bomba de Calor constata la contribución de esta tecnología a la soberanía energética",
+    "sample_link": "https://www.climanoticias.com/texto-diario/mostrar/6071632/vi-foro-bomba-calor-constata-contribucion-esta-tecnologia-soberania-energetica",
+    "keyword_validated": false
   }
 }
