@@ -10054,5 +10054,89 @@
     "sample_title": "El VI Foro de Bomba de Calor constata la contribución de esta tecnología a la soberanía energética",
     "sample_link": "https://www.climanoticias.com/texto-diario/mostrar/6071632/vi-foro-bomba-calor-constata-contribucion-esta-tecnologia-soberania-energetica",
     "keyword_validated": false
+  },
+  "data center cooling solutions efficiency for ai infrastructure": {
+    "keyword": "data center cooling solutions efficiency for AI infrastructure",
+    "region": "europe",
+    "product_category": "air_conditioner",
+    "content_format": "blog",
+    "first_seen": "2026-11-05",
+    "last_seen": "2026-11-05",
+    "times_seen": 1,
+    "sample_title": "Midea presenta sus soluciones de refrigeración para centros de datos de IA",
+    "sample_link": "https://www.climanoticias.com/texto-diario/mostrar/6070913/midea-presenta-soluciones-refrigeracion-centros-datos-ia",
+    "keyword_validated": false
+  },
+  "high-temperature heat pump technology innovation": {
+    "keyword": "high-temperature heat pump technology innovation",
+    "region": "europe",
+    "product_category": "heat_pump",
+    "content_format": "blog",
+    "first_seen": "2026-11-05",
+    "last_seen": "2026-11-05",
+    "times_seen": 1,
+    "sample_title": "Keyter y Tecnalia firman una alianza para impulsar la innovación sostenible",
+    "sample_link": "https://www.climanoticias.com/texto-diario/mostrar/6070644/keyter-tecnalia-firman-alianza-impulsar-innovacion-sostenible",
+    "keyword_validated": false
+  },
+  "how to size residential heat pump capacity": {
+    "keyword": "how to size residential heat pump capacity",
+    "region": "europe",
+    "product_category": "heat_pump",
+    "content_format": "buyer_faq",
+    "first_seen": "2026-11-05",
+    "last_seen": "2026-11-05",
+    "times_seen": 1,
+    "sample_title": "Van warmtepompkeuze tot naregeling: experts beantwoorden installateursvragen tijdens Week van de Warmtepomp",
+    "sample_link": "https://www.installatie.nl/nieuws/van-warmtepompkeuze-tot-netcongestie-experts-beantwoorden-installateursvragen-tijdens-week-van-de-warmtepomp/",
+    "keyword_validated": false
+  },
+  "technical faq for residential heat pump installation": {
+    "keyword": "technical FAQ for residential heat pump installation",
+    "region": "europe",
+    "product_category": "heat_pump",
+    "content_format": "buyer_faq",
+    "first_seen": "2026-11-05",
+    "last_seen": "2026-11-05",
+    "times_seen": 1,
+    "sample_title": "Veel vragen over warmtepomp: kijk hier het spreekuur terug",
+    "sample_link": "https://www.installatie.nl/nieuws/veel-vragen-over-warmtepomp-kijk-hier-het-spreekuur-terug/",
+    "keyword_validated": false
+  },
+  "modern hvac business management and technology adoption": {
+    "keyword": "modern HVAC business management and technology adoption",
+    "region": "global",
+    "product_category": "both",
+    "content_format": "blog",
+    "first_seen": "2026-11-05",
+    "last_seen": "2026-11-05",
+    "times_seen": 1,
+    "sample_title": "HVAC Contractors Recall Simpler Times, but Say the Business is Better Now",
+    "sample_link": "https://www.achrnews.com/articles/166924-hvac-contractors-recall-simpler-times-but-say-the-business-is-better-now",
+    "keyword_validated": false
+  },
+  "how to choose a reliable hvac contractor or manufacturer": {
+    "keyword": "how to choose a reliable HVAC contractor or manufacturer",
+    "region": "global",
+    "product_category": "both",
+    "content_format": "blog",
+    "first_seen": "2026-11-05",
+    "last_seen": "2026-11-05",
+    "times_seen": 1,
+    "sample_title": "Political Commentator Bashes HVAC Private Equity",
+    "sample_link": "https://www.achrnews.com/blogs/17-opinions/post/166923-political-commentator-bashes-hvac-private-equity",
+    "keyword_validated": false
+  },
+  "precision cooling for server rooms and data centers": {
+    "keyword": "precision cooling for server rooms and data centers",
+    "region": "global",
+    "product_category": "air_conditioner",
+    "content_format": "blog",
+    "first_seen": "2026-11-05",
+    "last_seen": "2026-11-05",
+    "times_seen": 1,
+    "sample_title": "METUS Launches New Solution for Mission-Critical Cooling",
+    "sample_link": "https://www.achrnews.com/articles/166921-metus-launches-new-solution-for-mission-critical-cooling",
+    "keyword_validated": false
   }
 }
