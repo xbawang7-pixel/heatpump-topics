@@ -10210,5 +10210,29 @@
     "sample_title": "Q-PAC Earns First AMCA 270 Laboratory Accreditation for Fan Array Testing",
     "sample_link": "https://www.achrnews.com/articles/166895-q-pac-earns-first-amca-270-laboratory-accreditation-for-fan-array-testing",
     "keyword_validated": false
+  },
+  "nefit bosch heat pump performance for commercial buildings": {
+    "keyword": "Nefit Bosch heat pump performance for commercial buildings",
+    "region": "europe",
+    "product_category": "heat_pump",
+    "content_format": "buyer_faq",
+    "first_seen": "2026-11-07",
+    "last_seen": "2026-11-07",
+    "times_seen": 1,
+    "sample_title": "Test je zakelijke kennis en win een Nefit Bosch-warmtepomp",
+    "sample_link": "https://www.installatie.nl/nieuws/test-je-installatiekennis-en-win-een-nefit-bosch-warmtepomp/",
+    "keyword_validated": false
+  },
+  "impact of hvac policy changes on procurement costs": {
+    "keyword": "impact of HVAC policy changes on procurement costs",
+    "region": "global",
+    "product_category": "both",
+    "content_format": "whitepaper",
+    "first_seen": "2026-11-07",
+    "last_seen": "2026-11-07",
+    "times_seen": 1,
+    "sample_title": "Regardless of Who Wins, HVAC’s Policy Work Continues",
+    "sample_link": "https://www.achrnews.com/articles/166933-regardless-of-who-wins-hvacs-policy-work-continues",
+    "keyword_validated": false
   }
 }
