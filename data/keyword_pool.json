@@ -3557,8 +3557,8 @@
     "product_category": "both",
     "content_format": "buyer_faq",
     "first_seen": "2026-08-12",
-    "last_seen": "2026-08-12",
-    "times_seen": 1,
+    "last_seen": "2026-11-09",
+    "times_seen": 2,
     "sample_title": "Women Imprisoned for Threatening HVAC Tech With Gun",
     "sample_link": "https://www.achrnews.com/articles/166531-women-imprisoned-for-threatening-hvac-tech-with-gun",
     "keyword_validated": false
@@ -10377,6 +10377,78 @@
     "times_seen": 1,
     "sample_title": "Part 3: Make disagreement useful",
     "sample_link": "https://refrigerationandaircon.co.za/part-3-make-disagreement-useful/",
+    "keyword_validated": false
+  },
+  "hvac supplier evaluation criteria": {
+    "keyword": "HVAC supplier evaluation criteria",
+    "region": "europe",
+    "product_category": "both",
+    "content_format": "blog",
+    "first_seen": "2026-11-09",
+    "last_seen": "2026-11-09",
+    "times_seen": 1,
+    "sample_title": "Tecna y Clivet refuerzan su posicionamiento como parte de MBT Climate",
+    "sample_link": "https://www.climanoticias.com/texto-diario/mostrar/6076446/tecna-clivet-refuerzan-posicionamiento-como-parte-mbt-climate",
+    "keyword_validated": false
+  },
+  "how to identify reliable heat pump suppliers": {
+    "keyword": "how to identify reliable heat pump suppliers",
+    "region": "europe",
+    "product_category": "heat_pump",
+    "content_format": "buyer_faq",
+    "first_seen": "2026-11-09",
+    "last_seen": "2026-11-09",
+    "times_seen": 1,
+    "sample_title": "ACM waarschuwt voor verkooppraatjes over warmtepomp en thuisbatterij",
+    "sample_link": "https://www.installatie.nl/nieuws/acm-waarschuwt-voor-verkooppraatjes-over-warmtepomp-en-thuisbatterij/",
+    "keyword_validated": false
+  },
+  "industrial refrigeration system cybersecurity": {
+    "keyword": "industrial refrigeration system cybersecurity",
+    "region": "europe",
+    "product_category": "air_conditioner",
+    "content_format": "whitepaper",
+    "first_seen": "2026-11-09",
+    "last_seen": "2026-11-09",
+    "times_seen": 1,
+    "sample_title": "European Supermarkets Report More Refrigeration Cyber Incidents",
+    "sample_link": "https://www.achrnews.com/articles/166944-european-supermarkets-report-more-refrigeration-cyber-incidents",
+    "keyword_validated": false
+  },
+  "heat recovery heat pump industrial application": {
+    "keyword": "heat recovery heat pump industrial application",
+    "region": "global",
+    "product_category": "heat_pump",
+    "content_format": "case_study",
+    "first_seen": "2026-11-09",
+    "last_seen": "2026-11-09",
+    "times_seen": 1,
+    "sample_title": "Johnson Controls Unveils Heat Recovery System for Food Processing",
+    "sample_link": "https://www.achrnews.com/articles/166939-johnson-controls-unveils-heat-recovery-system-for-food-processing",
+    "keyword_validated": false
+  },
+  "how to grow hvac business referrals": {
+    "keyword": "how to grow HVAC business referrals",
+    "region": "global",
+    "product_category": "both",
+    "content_format": "blog",
+    "first_seen": "2026-11-09",
+    "last_seen": "2026-11-09",
+    "times_seen": 1,
+    "sample_title": "How HVAC Contractors Can Boost Referral Business",
+    "sample_link": "https://www.achrnews.com/articles/166940-how-hvac-contractors-can-boost-referral-business",
+    "keyword_validated": false
+  },
+  "hvac maintenance tools supply": {
+    "keyword": "HVAC maintenance tools supply",
+    "region": "africa",
+    "product_category": "air_conditioner",
+    "content_format": "blog",
+    "first_seen": "2026-11-09",
+    "last_seen": "2026-11-09",
+    "times_seen": 1,
+    "sample_title": "Refrimate to start producing oxygen and nitrogen from 2 November 2026",
+    "sample_link": "https://refrigerationandaircon.co.za/refrimate-to-start-producing-oxygen-and-nitrogen-from-2-november-2026/",
     "keyword_validated": false
   }
 }

@@ -26,6 +26,32 @@
     "published": "2026-11-04T06:00:21+00:00"
   },
   {
+    "id": "d617f0b107bbcbe1",
+    "title": "Piorkowski appointed Carrier UK product manager",
+    "link": "https://www.coolingpost.com/uk-news/piorkowski-appointed-carrier-uk-product-manager/",
+    "summary": "<p>UK: Carrier HVAC UK&#038;I has appointed Barry Piorkowski as product manager for heat pumps and chillers....</p>\n<p class=\"text-end\"><a class=\"btn btn-outline-secondary picostrap-read-more-link mt-3\" href=\"https://www.coolingpost.com/uk-news/piorkowski-appointed-carrier-uk-product-manager/\">Read More...</a></p>\n<p>The post <a href=\"https://www.coolingpost.com/uk-news/piorkowski-appointed-carrie",
+    "source_type": "news",
+    "source_name": "Cooling Post (欧洲制冷/热泵行业媒体)",
+    "region": "europe",
+    "country": "UK",
+    "language": "en",
+    "engagement": null,
+    "published": "2026-11-08T21:57:14+00:00"
+  },
+  {
+    "id": "49df40efb7840a87",
+    "title": "Security companies detect hacking attempts",
+    "link": "https://www.coolingpost.com/world-news/security-companies-detect-hacking-attempts/",
+    "summary": "<p>UK: A cybersecurity company has revealed it detected multiple authentication attempts on Danfoss AK-SM refrigeration controllers in the days leading up to last week’s spate of cyber attacks....</p>\n<p class=\"text-end\"><a class=\"btn btn-outline-secondary picostrap-read-more-link mt-3\" href=\"https://www.coolingpost.com/world-news/security-companies-detect-hacking-attempts/\">Read More...</a></p>\n<",
+    "source_type": "news",
+    "source_name": "Cooling Post (欧洲制冷/热泵行业媒体)",
+    "region": "europe",
+    "country": "UK",
+    "language": "en",
+    "engagement": null,
+    "published": "2026-11-08T21:44:52+00:00"
+  },
+  {
     "id": "e497573d0ac1a8d7",
     "title": "Carrier’s BMS business acquires Texas dealer",
     "link": "https://www.coolingpost.com/world-news/carriers-bms-business-acquires-texas-dealer/",
@@ -128,32 +154,6 @@
     "language": "en",
     "engagement": null,
     "published": "2026-11-04T19:37:31+00:00"
-  },
-  {
-    "id": "dc46e54dfb340c4f",
-    "title": "Webinar questions cyber resilience",
-    "link": "https://www.coolingpost.com/training/webinar-questions-cyber-resilience/",
-    "summary": "<p>ITALY: Refrigeration control company Carel will host an interactive webinar on cyber resilience and the European Cyber Resilience Act (CRA)....</p>\n<p class=\"text-end\"><a class=\"btn btn-outline-secondary picostrap-read-more-link mt-3\" href=\"https://www.coolingpost.com/training/webinar-questions-cyber-resilience/\">Read More...</a></p>\n<p>The post <a href=\"https://www.coolingpost.com/training/web",
-    "source_type": "news",
-    "source_name": "Cooling Post (欧洲制冷/热泵行业媒体)",
-    "region": "europe",
-    "country": "UK",
-    "language": "en",
-    "engagement": null,
-    "published": "2026-11-04T18:53:47+00:00"
-  },
-  {
-    "id": "c18e774b4c16cc8b",
-    "title": "France confirms blood storage attack",
-    "link": "https://www.coolingpost.com/world-news/france-confirms-blood-storage-attack/",
-    "summary": "<p>FRANCE: The French blood transfusion service has confirmed that some of its blood product cold storage rooms were victims of this week’s cyber security incident....</p>\n<p class=\"text-end\"><a class=\"btn btn-outline-secondary picostrap-read-more-link mt-3\" href=\"https://www.coolingpost.com/world-news/france-confirms-blood-storage-attack/\">Read More...</a></p>\n<p>The post <a href=\"https://www.coo",
-    "source_type": "news",
-    "source_name": "Cooling Post (欧洲制冷/热泵行业媒体)",
-    "region": "europe",
-    "country": "UK",
-    "language": "en",
-    "engagement": null,
-    "published": "2026-11-04T18:38:28+00:00"
   },
   {
     "id": "a557120ca491e1d8",
@@ -351,19 +351,6 @@
     "published": "2026-11-02T10:26:26+00:00"
   },
   {
-    "id": "2bf5bd2ff0b5bcc1",
-    "title": "Test je zakelijke kennis en win een Nefit Bosch-warmtepomp",
-    "link": "https://www.installatie.nl/nieuws/test-je-installatiekennis-en-win-een-nefit-bosch-warmtepomp/",
-    "summary": "Jij kent je vak. Maar hoe goed ken je de branche waarin je onderneemt? Van het aantal installatiebedrijven tot de...",
-    "source_type": "news",
-    "source_name": "Installatie.nl (荷兰)",
-    "region": "europe",
-    "country": "NL",
-    "language": "nl",
-    "engagement": null,
-    "published": "2026-11-01T08:53:00+00:00"
-  },
-  {
     "id": "0fc0a06797a57ec6",
     "title": "Pompa ciepła a taryfa dynamiczna. Jak grzać wtedy, gdy prąd jest najtańszy?",
     "link": "https://globenergia.pl/pompa-ciepla-a-taryfa-dynamiczna-jak-grzac-wtedy-gdy-prad-jest-najtanszy/",
@@ -377,17 +364,17 @@
     "published": "2026-11-07T06:22:00+00:00"
   },
   {
-    "id": "c7cf7f320dba7415",
-    "title": "Najpierw ocieplenie czy pompa ciepła: jak dobrze zaplanować termomodernizację domu?",
-    "link": "https://globenergia.pl/najpierw-ocieplenie-czy-pompa-ciepla-jak-dobrze-zaplanowac-termomodernizacje-domu/",
-    "summary": "<p>Termomodernizacja może obniżyć rachunki na lata albo wygenerować kosztowne błędy już na starcie. Kluczowe jest nie tylko to, co wymienimy, ale także w jakiej kolejności i na podstawie jakich danych. Od czego więc zacząć, żeby nie przepłacić i nie przewymiarować instalacji?</p>\n<p>Artykuł <a href=\"https://globenergia.pl/najpierw-ocieplenie-czy-pompa-ciepla-jak-dobrze-zaplanowac-termomodernizacje",
+    "id": "c0e925288e6c9503",
+    "title": "6 HVAC Maintenance Topics to Discuss With Homeowners",
+    "link": "https://www.achrnews.com/articles/166969-6-hvac-maintenance-topics-to-discuss-with-homeowners",
+    "summary": "Routine service visits give contractors an opportunity to help homeowners make better decisions before extreme weather puts their HVAC systems to the test.",
     "source_type": "news",
-    "source_name": "GlobEnergia (波兰)",
-    "region": "europe",
-    "country": "PL",
-    "language": "pl",
+    "source_name": "ACHR News (北美HVACR行业权威媒体)",
+    "region": "global",
+    "country": "",
+    "language": "",
     "engagement": null,
-    "published": "2026-11-06T11:20:03+00:00"
+    "published": "2026-11-08T12:00:00+00:00"
   },
   {
     "id": "23cd5df4dc4ceef3",
@@ -648,32 +635,6 @@
     "language": "",
     "engagement": null,
     "published": "2026-11-02T16:00:00+00:00"
-  },
-  {
-    "id": "37b4592803b9b03b",
-    "title": "Stop Selling Specs. Start Solving Homeowner Problems.",
-    "link": "https://www.achrnews.com/articles/166919-stop-selling-specs-start-solving-homeowner-problems",
-    "summary": "When a homeowner sets out to replace their heating or cooling system, they are confronted with a dizzying array of options and cost considerations to weigh. As a trusted source of information, contractors play a key role in helping homeowners make sense of it all.",
-    "source_type": "news",
-    "source_name": "ACHR News (北美HVACR行业权威媒体)",
-    "region": "global",
-    "country": "",
-    "language": "",
-    "engagement": null,
-    "published": "2026-11-02T14:00:00+00:00"
-  },
-  {
-    "id": "eacf4a7e7e65d235",
-    "title": "Electrification Has Been Chasing the Wrong Villain",
-    "link": "https://www.achrnews.com/articles/166930-electrification-has-been-chasing-the-wrong-villain",
-    "summary": "The real villain in most basements isn't the furnace. It's the straight-cool air conditioner.",
-    "source_type": "news",
-    "source_name": "ACHR News (北美HVACR行业权威媒体)",
-    "region": "global",
-    "country": "",
-    "language": "",
-    "engagement": null,
-    "published": "2026-11-02T12:00:00+00:00"
   },
   {
     "id": "0c70e1a9091a96cb",
