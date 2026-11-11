@@ -10582,5 +10582,77 @@
     "sample_title": "HVAC Price Increase List: November 2026",
     "sample_link": "https://www.achrnews.com/articles/166947-hvac-price-increase-list-november-2026",
     "keyword_validated": false
+  },
+  "benefits of split system heat pumps for residential heating": {
+    "keyword": "benefits of split system heat pumps for residential heating",
+    "region": "europe",
+    "product_category": "heat_pump",
+    "content_format": "blog",
+    "first_seen": "2026-11-11",
+    "last_seen": "2026-11-11",
+    "times_seen": 1,
+    "sample_title": "Panasonic houdt met nieuwe N-serie split-warmtepomp in de lucht",
+    "sample_link": "https://www.installatie.nl/nieuws/panasonic-houdt-met-nieuwe-n-serie-split-warmtepomp-in-de-lucht/",
+    "keyword_validated": false
+  },
+  "hvac industry leadership and workforce trends": {
+    "keyword": "HVAC industry leadership and workforce trends",
+    "region": "global",
+    "product_category": "both",
+    "content_format": "blog",
+    "first_seen": "2026-11-11",
+    "last_seen": "2026-11-11",
+    "times_seen": 1,
+    "sample_title": "ACCA Names Dr. Laura Demarse as New CEO",
+    "sample_link": "https://www.achrnews.com/articles/166960-acca-names-dr-laura-demarse-as-new-ceo",
+    "keyword_validated": false
+  },
+  "hvac market sales trends and demand forecast": {
+    "keyword": "HVAC market sales trends and demand forecast",
+    "region": "global",
+    "product_category": "both",
+    "content_format": "blog",
+    "first_seen": "2026-11-11",
+    "last_seen": "2026-11-11",
+    "times_seen": 1,
+    "sample_title": "HVACR Distributor Sales Jump 9% in September, HARDI Reports",
+    "sample_link": "https://www.achrnews.com/articles/166957-hvacr-distributor-sales-jump-9-in-september-hardi-reports",
+    "keyword_validated": false
+  },
+  "importance of hvac component quality and supply chain": {
+    "keyword": "importance of HVAC component quality and supply chain",
+    "region": "global",
+    "product_category": "both",
+    "content_format": "blog",
+    "first_seen": "2026-11-11",
+    "last_seen": "2026-11-11",
+    "times_seen": 1,
+    "sample_title": "Inside NIBCO’s Bet on American Manufacturing",
+    "sample_link": "https://www.achrnews.com/articles/166953-inside-nibcos-bet-on-american-manufacturing",
+    "keyword_validated": false
+  },
+  "server room cooling system performance verification": {
+    "keyword": "server room cooling system performance verification",
+    "region": "global",
+    "product_category": "air_conditioner",
+    "content_format": "blog",
+    "first_seen": "2026-11-11",
+    "last_seen": "2026-11-11",
+    "times_seen": 1,
+    "sample_title": "After a GPU Swap: Proving the Rack Is Back in Balance",
+    "sample_link": "https://www.achrnews.com/articles/166902-after-a-gpu-swap-proving-the-rack-is-back-in-balance",
+    "keyword_validated": false
+  },
+  "impact of humidity on air conditioning efficiency": {
+    "keyword": "impact of humidity on air conditioning efficiency",
+    "region": "africa",
+    "product_category": "air_conditioner",
+    "content_format": "buyer_faq",
+    "first_seen": "2026-11-11",
+    "last_seen": "2026-11-11",
+    "times_seen": 1,
+    "sample_title": "Does relative humidity play any role? (Part 3): The effect of humidity on cooling performance",
+    "sample_link": "https://refrigerationandaircon.co.za/does-relative-humidity-play-any-role-part-3-the-effect-of-humidity-on-cooling-performance/",
+    "keyword_validated": false
   }
 }
