@@ -10654,5 +10654,41 @@
     "sample_title": "Does relative humidity play any role? (Part 3): The effect of humidity on cooling performance",
     "sample_link": "https://refrigerationandaircon.co.za/does-relative-humidity-play-any-role-part-3-the-effect-of-humidity-on-cooling-performance/",
     "keyword_validated": false
+  },
+  "hvac system energy efficiency certification for professionals": {
+    "keyword": "HVAC system energy efficiency certification for professionals",
+    "region": "global",
+    "product_category": "both",
+    "content_format": "blog",
+    "first_seen": "2026-11-12",
+    "last_seen": "2026-11-12",
+    "times_seen": 1,
+    "sample_title": "DOE Recognizes HVAC U Building Analyst Certification Program",
+    "sample_link": "https://www.achrnews.com/articles/166964-doe-recognizes-hvac-u-building-analyst-certification-program",
+    "keyword_validated": false
+  },
+  "hvac refrigerant transition trends r410a to r32": {
+    "keyword": "HVAC refrigerant transition trends R410A to R32",
+    "region": "global",
+    "product_category": "air_conditioner",
+    "content_format": "buyer_faq",
+    "first_seen": "2026-11-12",
+    "last_seen": "2026-11-12",
+    "times_seen": 1,
+    "sample_title": "2010s: The Rise and Fall of R-410A in the HVAC Industry",
+    "sample_link": "https://www.achrnews.com/articles/166963-2010s-the-rise-and-fall-of-r-410a-in-the-hvac-industry",
+    "keyword_validated": false
+  },
+  "evaluating commercial hvac manufacturer reliability": {
+    "keyword": "evaluating commercial HVAC manufacturer reliability",
+    "region": "global",
+    "product_category": "both",
+    "content_format": "blog",
+    "first_seen": "2026-11-12",
+    "last_seen": "2026-11-12",
+    "times_seen": 1,
+    "sample_title": "Trane Americas Commercial Backlog Surges 80% in Q3",
+    "sample_link": "https://www.achrnews.com/articles/166955-trane-americas-commercial-backlog-surges-80-in-q3",
+    "keyword_validated": false
   }
 }
