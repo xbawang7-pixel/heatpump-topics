@@ -10690,5 +10690,41 @@
     "sample_title": "Trane Americas Commercial Backlog Surges 80% in Q3",
     "sample_link": "https://www.achrnews.com/articles/166955-trane-americas-commercial-backlog-surges-80-in-q3",
     "keyword_validated": false
+  },
+  "energy-efficient hvac project design for europe": {
+    "keyword": "energy-efficient HVAC project design for Europe",
+    "region": "europe",
+    "product_category": "both",
+    "content_format": "case_study",
+    "first_seen": "2026-11-13",
+    "last_seen": "2026-11-13",
+    "times_seen": 1,
+    "sample_title": "Mitsubishi Electric premia los proyectos de climatización más eficientes de España",
+    "sample_link": "https://www.climanoticias.com/texto-diario/mostrar/6082855/mitsubishi-electric-reconoce-proyectos-climatizacion-eficientes-espana",
+    "keyword_validated": false
+  },
+  "heat pump sizing and performance real-world tips": {
+    "keyword": "heat pump sizing and performance real-world tips",
+    "region": "global",
+    "product_category": "heat_pump",
+    "content_format": "buyer_faq",
+    "first_seen": "2026-11-13",
+    "last_seen": "2026-11-13",
+    "times_seen": 1,
+    "sample_title": "What an HVAC Pro Learned Using His Own Home as a Heat Pump Test Lab",
+    "sample_link": "https://www.achrnews.com/articles/166968-what-an-hvac-pro-learned-using-his-own-home-as-a-heat-pump-test-lab",
+    "keyword_validated": false
+  },
+  "hvac maintenance checklist for homeowners": {
+    "keyword": "HVAC maintenance checklist for homeowners",
+    "region": "global",
+    "product_category": "both",
+    "content_format": "buyer_faq",
+    "first_seen": "2026-11-13",
+    "last_seen": "2026-11-13",
+    "times_seen": 1,
+    "sample_title": "6 HVAC Maintenance Topics to Discuss With Homeowners",
+    "sample_link": "https://www.achrnews.com/articles/166969-6-hvac-maintenance-topics-to-discuss-with-homeowners",
+    "keyword_validated": false
   }
 }
