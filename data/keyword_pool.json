@@ -10726,5 +10726,41 @@
     "sample_title": "6 HVAC Maintenance Topics to Discuss With Homeowners",
     "sample_link": "https://www.achrnews.com/articles/166969-6-hvac-maintenance-topics-to-discuss-with-homeowners",
     "keyword_validated": false
+  },
+  "hvac safety systems carbon monoxide prevention": {
+    "keyword": "HVAC safety systems carbon monoxide prevention",
+    "region": "global",
+    "product_category": "both",
+    "content_format": "blog",
+    "first_seen": "2026-11-14",
+    "last_seen": "2026-11-14",
+    "times_seen": 1,
+    "sample_title": "DiversiTech Adds CO Shutoff Switch to Safety Portfolio",
+    "sample_link": "https://www.achrnews.com/articles/166971-diversitech-adds-co-shutoff-switch-to-safety-portfolio",
+    "keyword_validated": false
+  },
+  "current hvac market trends and industry performance": {
+    "keyword": "current HVAC market trends and industry performance",
+    "region": "global",
+    "product_category": "both",
+    "content_format": "blog",
+    "first_seen": "2026-11-14",
+    "last_seen": "2026-11-14",
+    "times_seen": 1,
+    "sample_title": "Record Revenue Highlights Watsco’s Upbeat Quarterly Report",
+    "sample_link": "https://www.achrnews.com/articles/166965-record-revenue-highlights-watscos-upbeat-quarterly-report",
+    "keyword_validated": false
+  },
+  "hvac interior design and installation considerations": {
+    "keyword": "HVAC interior design and installation considerations",
+    "region": "africa",
+    "product_category": "air_conditioner",
+    "content_format": "blog",
+    "first_seen": "2026-11-14",
+    "last_seen": "2026-11-14",
+    "times_seen": 1,
+    "sample_title": "Final Fix: The feature wall that breathes (heavily)",
+    "sample_link": "https://refrigerationandaircon.co.za/final-fix-the-feature-wall-that-breathes-heavily/",
+    "keyword_validated": false
   }
 }
