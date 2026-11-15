@@ -10762,5 +10762,53 @@
     "sample_title": "Final Fix: The feature wall that breathes (heavily)",
     "sample_link": "https://refrigerationandaircon.co.za/final-fix-the-feature-wall-that-breathes-heavily/",
     "keyword_validated": false
+  },
+  "hvac installation standards for commercial projects": {
+    "keyword": "hvac installation standards for commercial projects",
+    "region": "global",
+    "product_category": "both",
+    "content_format": "buyer_faq",
+    "first_seen": "2026-11-15",
+    "last_seen": "2026-11-15",
+    "times_seen": 1,
+    "sample_title": "PHOTO GALLERY: The Inaugural HVAC Contractor Forum",
+    "sample_link": "https://www.achrnews.com/articles/166972-photo-gallery-the-inaugural-hvac-contractor-forum",
+    "keyword_validated": false
+  },
+  "predictive maintenance for commercial hvac systems": {
+    "keyword": "predictive maintenance for commercial hvac systems",
+    "region": "global",
+    "product_category": "both",
+    "content_format": "blog",
+    "first_seen": "2026-11-15",
+    "last_seen": "2026-11-15",
+    "times_seen": 1,
+    "sample_title": "Resideo Unveils AI Tool for HVAC Diagnostics and Maintenance",
+    "sample_link": "https://www.achrnews.com/articles/166975-resideo-unveils-ai-tool-for-hvac-diagnostics-and-maintenance",
+    "keyword_validated": false
+  },
+  "data center cooling solutions efficiency": {
+    "keyword": "data center cooling solutions efficiency",
+    "region": "global",
+    "product_category": "air_conditioner",
+    "content_format": "whitepaper",
+    "first_seen": "2026-11-15",
+    "last_seen": "2026-11-15",
+    "times_seen": 1,
+    "sample_title": "Johnson Controls' HVAC Orders Jump 44% as Data Centers Boom",
+    "sample_link": "https://www.achrnews.com/articles/166977-johnson-controls-hvac-orders-jump-44-as-data-centers-boom",
+    "keyword_validated": false
+  },
+  "heat pump vs furnace dual fuel system optimization": {
+    "keyword": "heat pump vs furnace dual fuel system optimization",
+    "region": "europe",
+    "product_category": "heat_pump",
+    "content_format": "comparison",
+    "first_seen": "2026-11-15",
+    "last_seen": "2026-11-15",
+    "times_seen": 1,
+    "sample_title": "Dual-Fuel Systems Put Thermostats in Charge of More Than Temperature",
+    "sample_link": "https://www.achrnews.com/articles/166973-dual-fuel-systems-put-thermostats-in-charge-of-more-than-temperature",
+    "keyword_validated": false
   }
 }
