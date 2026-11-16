@@ -3485,8 +3485,8 @@
     "product_category": "both",
     "content_format": "blog",
     "first_seen": "2026-08-11",
-    "last_seen": "2026-10-13",
-    "times_seen": 29,
+    "last_seen": "2026-11-16",
+    "times_seen": 38,
     "sample_title": "Adani to pay no company tax despite $1bn revenue from Queensland coalmine",
     "sample_link": "https://www.reddit.com/r/australia/comments/1vc7s0v/adani_to_pay_no_company_tax_despite_1bn_revenue/",
     "keyword_validated": false
@@ -10809,6 +10809,90 @@
     "times_seen": 1,
     "sample_title": "Dual-Fuel Systems Put Thermostats in Charge of More Than Temperature",
     "sample_link": "https://www.achrnews.com/articles/166973-dual-fuel-systems-put-thermostats-in-charge-of-more-than-temperature",
+    "keyword_validated": false
+  },
+  "hvac heat exchanger specification guide": {
+    "keyword": "hvac heat exchanger specification guide",
+    "region": "africa",
+    "product_category": "both",
+    "content_format": "buyer_faq",
+    "first_seen": "2026-11-16",
+    "last_seen": "2026-11-16",
+    "times_seen": 1,
+    "sample_title": "Specifying a heat exchanger interface: Why functional requirements matter (Part 1)",
+    "sample_link": "https://refrigerationandaircon.co.za/specifying-a-heat-exchanger-interface-why-functional-requirements-matter-part-1/",
+    "keyword_validated": false
+  },
+  "hvac pilot light troubleshooting guide": {
+    "keyword": "hvac pilot light troubleshooting guide",
+    "region": "global",
+    "product_category": "both",
+    "content_format": "buyer_faq",
+    "first_seen": "2026-11-16",
+    "last_seen": "2026-11-16",
+    "times_seen": 1,
+    "sample_title": "How do I fix this?",
+    "sample_link": "https://www.reddit.com/r/hvacadvice/comments/1ihycma/how_do_i_fix_this/",
+    "keyword_validated": false
+  },
+  "why is my ac air filter turning black quickly": {
+    "keyword": "why is my ac air filter turning black quickly",
+    "region": "global",
+    "product_category": "air_conditioner",
+    "content_format": "buyer_faq",
+    "first_seen": "2026-11-16",
+    "last_seen": "2026-11-16",
+    "times_seen": 1,
+    "sample_title": "Why is my filter so black after only 1 month of use?",
+    "sample_link": "https://www.reddit.com/r/hvacadvice/comments/179peac/why_is_my_filter_so_black_after_only_1_month_of/",
+    "keyword_validated": false
+  },
+  "how do commercial evaporative cooling systems work": {
+    "keyword": "how do commercial evaporative cooling systems work",
+    "region": "global",
+    "product_category": "both",
+    "content_format": "blog",
+    "first_seen": "2026-11-16",
+    "last_seen": "2026-11-16",
+    "times_seen": 1,
+    "sample_title": "What is this huge metal waterfall/river thing on the roof of the hospital?",
+    "sample_link": "https://www.reddit.com/r/hvacadvice/comments/1whk57r/what_is_this_huge_metal_waterfallriver_thing_on/",
+    "keyword_validated": false
+  },
+  "impact of chinese hvac products on market competition": {
+    "keyword": "impact of chinese hvac products on market competition",
+    "region": "south_america",
+    "product_category": "both",
+    "content_format": "blog",
+    "first_seen": "2026-11-16",
+    "last_seen": "2026-11-16",
+    "times_seen": 1,
+    "sample_title": "\"Sob pressão dos carros chineses, empresário relata prejuízos e expõe estoque desvalorizado.\"",
+    "sample_link": "https://www.reddit.com/r/brasil/comments/1xuams0/sob_press%C3%A3o_dos_carros_chineses_empres%C3%A1rio_relata/",
+    "keyword_validated": false
+  },
+  "benefits of underfloor heating in home renovation": {
+    "keyword": "benefits of underfloor heating in home renovation",
+    "region": "europe",
+    "product_category": "both",
+    "content_format": "case_study",
+    "first_seen": "2026-11-16",
+    "last_seen": "2026-11-16",
+    "times_seen": 1,
+    "sample_title": "Took on my first bathroom renovation with zero experience. Here's the result!",
+    "sample_link": "https://www.reddit.com/r/DIYUK/comments/1xwre7k/took_on_my_first_bathroom_renovation_with_zero/",
+    "keyword_validated": false
+  },
+  "impact of climate change policy on heat pump adoption in australia": {
+    "keyword": "impact of climate change policy on heat pump adoption in Australia",
+    "region": "asia",
+    "product_category": "heat_pump",
+    "content_format": "blog",
+    "first_seen": "2026-11-16",
+    "last_seen": "2026-11-16",
+    "times_seen": 1,
+    "sample_title": "‘Even a snail would agree’: Greta Thunberg ridicules Australia’s slow climate action | Cop31",
+    "sample_link": "https://www.reddit.com/r/australia/comments/1xuwcmd/even_a_snail_would_agree_greta_thunberg_ridicules/",
     "keyword_validated": false
   }
 }
