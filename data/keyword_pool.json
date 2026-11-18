@@ -11086,5 +11086,89 @@
     "sample_title": "I recently moved to my new apartment in Germany and I have been experiencing this with my walls, they are cold and wet and it keeps spreading. Does anyone have any idea if this is mold or water damage, i open my windows 1-2 times per day and my radiator stays between 1-2 at day and 2 at night.",
     "sample_link": "https://www.reddit.com/r/germany/comments/1xwwidg/i_recently_moved_to_my_new_apartment_in_germany/",
     "keyword_validated": false
+  },
+  "benefits of commercial heat pumps for carbon reduction": {
+    "keyword": "benefits of commercial heat pumps for carbon reduction",
+    "region": "europe",
+    "product_category": "heat_pump",
+    "content_format": "whitepaper",
+    "first_seen": "2026-11-18",
+    "last_seen": "2026-11-18",
+    "times_seen": 1,
+    "sample_title": "Heat pumps can cut quarter of EU energy emissions",
+    "sample_link": "https://ehpa.org/news-and-resources/press-releases/heat-pumps-can-cut-quarter-of-eu-energy-emissions/",
+    "keyword_validated": false
+  },
+  "hvac cybersecurity compliance standards": {
+    "keyword": "HVAC cybersecurity compliance standards",
+    "region": "europe",
+    "product_category": "both",
+    "content_format": "buyer_faq",
+    "first_seen": "2026-11-18",
+    "last_seen": "2026-11-18",
+    "times_seen": 1,
+    "sample_title": "Carel organiza un webinar sobre la Ley de Ciberresiliencia para el sector HVAC/R",
+    "sample_link": "https://www.climanoticias.com/texto-diario/mostrar/6088407/carel-organiza-webinar-sobre-ley-ciberresiliencia-sector-hvac-r",
+    "keyword_validated": false
+  },
+  "hvac efficiency standards and regional compliance": {
+    "keyword": "HVAC efficiency standards and regional compliance",
+    "region": "global",
+    "product_category": "both",
+    "content_format": "blog",
+    "first_seen": "2026-11-18",
+    "last_seen": "2026-11-18",
+    "times_seen": 1,
+    "sample_title": "2010s: DOE’s First Regional HVAC Efficiency Standards",
+    "sample_link": "https://www.achrnews.com/articles/166997-2010s-does-first-regional-hvac-efficiency-standards",
+    "keyword_validated": false
+  },
+  "co2 refrigeration control systems for hvac": {
+    "keyword": "CO2 refrigeration control systems for HVAC",
+    "region": "global",
+    "product_category": "air_conditioner",
+    "content_format": "whitepaper",
+    "first_seen": "2026-11-18",
+    "last_seen": "2026-11-18",
+    "times_seen": 1,
+    "sample_title": "The Backbone of CO₂ Refrigeration Systems: Controls, Electronics and Digital Tools",
+    "sample_link": "https://www.achrnews.com/articles/166995-the-backbone-of-co-refrigeration-systems-controls-electronics-and-digital-tools",
+    "keyword_validated": false
+  },
+  "portable air conditioner drainage troubleshooting": {
+    "keyword": "portable air conditioner drainage troubleshooting",
+    "region": "global",
+    "product_category": "air_conditioner",
+    "content_format": "buyer_faq",
+    "first_seen": "2026-11-18",
+    "last_seen": "2026-11-18",
+    "times_seen": 1,
+    "sample_title": "Bought a used Midea Duo. It's working great, but it's draining boatloads of water. What am I doing wrong?",
+    "sample_link": "https://www.reddit.com/r/AirConditioners/comments/1v3ytrk/bought_a_used_midea_duo_its_working_great_but_its/",
+    "keyword_validated": false
+  },
+  "single hose vs dual hose portable air conditioner efficiency": {
+    "keyword": "single hose vs dual hose portable air conditioner efficiency",
+    "region": "global",
+    "product_category": "air_conditioner",
+    "content_format": "comparison",
+    "first_seen": "2026-11-18",
+    "last_seen": "2026-11-18",
+    "times_seen": 1,
+    "sample_title": "Made a diagram in paint explaining the difference between single/dual hose",
+    "sample_link": "https://www.reddit.com/r/AirConditioners/comments/1uha362/made_a_diagram_in_paint_explaining_the_difference/",
+    "keyword_validated": false
+  },
+  "portable air conditioner exhaust pipe sealing tips": {
+    "keyword": "portable air conditioner exhaust pipe sealing tips",
+    "region": "europe",
+    "product_category": "air_conditioner",
+    "content_format": "blog",
+    "first_seen": "2026-11-18",
+    "last_seen": "2026-11-18",
+    "times_seen": 1,
+    "sample_title": "Hot external air pressure visualised",
+    "sample_link": "https://www.reddit.com/r/AirConditioners/comments/1ufa6ga/hot_external_air_pressure_visualised/",
+    "keyword_validated": false
   }
 }
