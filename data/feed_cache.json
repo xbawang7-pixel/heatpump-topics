@@ -80,8 +80,8 @@
     "method": "common_path:rss.xml"
   },
   "https://abrava.com.br/": {
-    "feed_url": null,
-    "method": "not_found"
+    "feed_url": "https://abrava.com.br/rss",
+    "method": "common_path:rss"
   },
   "https://www.acrlatinoamerica.com/": {
     "feed_url": null,

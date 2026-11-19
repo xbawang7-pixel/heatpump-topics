@@ -5597,8 +5597,8 @@
     "product_category": "both",
     "content_format": "blog",
     "first_seen": "2026-09-08",
-    "last_seen": "2026-09-08",
-    "times_seen": 1,
+    "last_seen": "2026-11-19",
+    "times_seen": 2,
     "sample_title": "HVACR Distributors See 6.7% July Sales Jump",
     "sample_link": "https://www.achrnews.com/articles/166625-hvacr-distributors-see-67-july-sales-jump",
     "keyword_validated": false
@@ -11169,6 +11169,90 @@
     "times_seen": 1,
     "sample_title": "Hot external air pressure visualised",
     "sample_link": "https://www.reddit.com/r/AirConditioners/comments/1ufa6ga/hot_external_air_pressure_visualised/",
+    "keyword_validated": false
+  },
+  "commercial refrigeration system sizing guide": {
+    "keyword": "commercial refrigeration system sizing guide",
+    "region": "global",
+    "product_category": "air_conditioner",
+    "content_format": "blog",
+    "first_seen": "2026-11-19",
+    "last_seen": "2026-11-19",
+    "times_seen": 1,
+    "sample_title": "Bigger Isn’t Always Better in Cold Storage Cooling",
+    "sample_link": "https://www.achrnews.com/articles/167000-bigger-isnt-always-better-in-cold-storage-cooling",
+    "keyword_validated": false
+  },
+  "iaq solutions for educational facilities": {
+    "keyword": "IAQ solutions for educational facilities",
+    "region": "global",
+    "product_category": "both",
+    "content_format": "buyer_faq",
+    "first_seen": "2026-11-19",
+    "last_seen": "2026-11-19",
+    "times_seen": 1,
+    "sample_title": "Childcare Facilities Offer Overlooked IAQ Opportunities for HVAC Contractors",
+    "sample_link": "https://www.achrnews.com/articles/167003-childcare-facilities-offer-overlooked-iaq-opportunities-for-hvac-contractors",
+    "keyword_validated": false
+  },
+  "best boilers for residential heating replacement": {
+    "keyword": "best boilers for residential heating replacement",
+    "region": "europe",
+    "product_category": "heat_pump",
+    "content_format": "buyer_faq",
+    "first_seen": "2026-11-19",
+    "last_seen": "2026-11-19",
+    "times_seen": 1,
+    "sample_title": "Weil-McLain Enhances Boiler Lines With Contractor-Friendly Features",
+    "sample_link": "https://www.achrnews.com/articles/166996-weil-mclain-enhances-boiler-lines-with-contractor-friendly-features",
+    "keyword_validated": false
+  },
+  "data center cooling solutions": {
+    "keyword": "data center cooling solutions",
+    "region": "global",
+    "product_category": "air_conditioner",
+    "content_format": "comparison",
+    "first_seen": "2026-11-19",
+    "last_seen": "2026-11-19",
+    "times_seen": 1,
+    "sample_title": "Bison Expands Cooling Portfolio for High-Density Data Centers",
+    "sample_link": "https://www.achrnews.com/articles/166979-bison-expands-cooling-portfolio-for-high-density-data-centers",
+    "keyword_validated": false
+  },
+  "hvac regulatory compliance benchmarking": {
+    "keyword": "HVAC regulatory compliance benchmarking",
+    "region": "global",
+    "product_category": "both",
+    "content_format": "blog",
+    "first_seen": "2026-11-19",
+    "last_seen": "2026-11-19",
+    "times_seen": 1,
+    "sample_title": "HARDI Turns HVACR Distributor Data Into Regulatory Advocacy",
+    "sample_link": "https://www.achrnews.com/articles/166998-hardi-turns-hvacr-distributor-data-into-regulatory-advocacy",
+    "keyword_validated": false
+  },
+  "troubleshooting hvac system failures": {
+    "keyword": "troubleshooting HVAC system failures",
+    "region": "africa",
+    "product_category": "both",
+    "content_format": "buyer_faq",
+    "first_seen": "2026-11-19",
+    "last_seen": "2026-11-19",
+    "times_seen": 1,
+    "sample_title": "Why HVAC&R is hard to diagnose: Behind the comfort is demanding work",
+    "sample_link": "https://refrigerationandaircon.co.za/why-hvacr-is-hard-to-diagnose-behind-the-comfort-is-demanding-work/",
+    "keyword_validated": false
+  },
+  "hvac system replacement vs repair": {
+    "keyword": "HVAC system replacement vs repair",
+    "region": "south_america",
+    "product_category": "both",
+    "content_format": "comparison",
+    "first_seen": "2026-11-19",
+    "last_seen": "2026-11-19",
+    "times_seen": 1,
+    "sample_title": "Critérios técnicos orientam decisões sobre a vida útil dos sistemas",
+    "sample_link": "https://revistadofrio.com.br/quando-reparar-modernizar-substituir-sistemas-hvac-r/",
     "keyword_validated": false
   }
 }
