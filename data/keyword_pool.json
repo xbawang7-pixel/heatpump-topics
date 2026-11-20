@@ -11254,5 +11254,29 @@
     "sample_title": "Critérios técnicos orientam decisões sobre a vida útil dos sistemas",
     "sample_link": "https://revistadofrio.com.br/quando-reparar-modernizar-substituir-sistemas-hvac-r/",
     "keyword_validated": false
+  },
+  "building automation system for commercial hvac": {
+    "keyword": "building automation system for commercial HVAC",
+    "region": "global",
+    "product_category": "both",
+    "content_format": "blog",
+    "first_seen": "2026-11-20",
+    "last_seen": "2026-11-20",
+    "times_seen": 1,
+    "sample_title": "Enhanced Carrier BAS Designed to Simplify Building Operations",
+    "sample_link": "https://www.achrnews.com/articles/167002-enhanced-carrier-bas-designed-to-simplify-building-operations",
+    "keyword_validated": false
+  },
+  "ai troubleshooting for commercial hvac systems": {
+    "keyword": "AI troubleshooting for commercial HVAC systems",
+    "region": "global",
+    "product_category": "air_conditioner",
+    "content_format": "blog",
+    "first_seen": "2026-11-20",
+    "last_seen": "2026-11-20",
+    "times_seen": 1,
+    "sample_title": "Using AI to Troubleshoot Refrigeration Systems",
+    "sample_link": "https://www.achrnews.com/articles/167005-using-ai-to-troubleshoot-refrigeration-systems",
+    "keyword_validated": false
   }
 }
