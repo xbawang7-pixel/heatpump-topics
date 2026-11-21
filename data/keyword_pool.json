@@ -11278,5 +11278,53 @@
     "sample_title": "Using AI to Troubleshoot Refrigeration Systems",
     "sample_link": "https://www.achrnews.com/articles/167005-using-ai-to-troubleshoot-refrigeration-systems",
     "keyword_validated": false
+  },
+  "custom hvac system design for factories": {
+    "keyword": "custom hvac system design for factories",
+    "region": "europe",
+    "product_category": "air_conditioner",
+    "content_format": "case_study",
+    "first_seen": "2026-11-21",
+    "last_seen": "2026-11-21",
+    "times_seen": 1,
+    "sample_title": "Climatización a medida de Sedical para una fábrica de calzado",
+    "sample_link": "https://www.climanoticias.com/texto-diario/mostrar/6092528/climatizacion-medida-sedical-fabrica-calzado",
+    "keyword_validated": false
+  },
+  "commercial hvac system design criteria": {
+    "keyword": "commercial hvac system design criteria",
+    "region": "europe",
+    "product_category": "both",
+    "content_format": "buyer_faq",
+    "first_seen": "2026-11-21",
+    "last_seen": "2026-11-21",
+    "times_seen": 1,
+    "sample_title": "LG adapta la climatización al uso real de cada proyecto",
+    "sample_link": "https://www.climanoticias.com/texto-diario/mostrar/6092511/lg-adapta-climatizacion-real-cada-proyecto",
+    "keyword_validated": false
+  },
+  "high efficiency heat pump residential heating solutions": {
+    "keyword": "high efficiency heat pump residential heating solutions",
+    "region": "europe",
+    "product_category": "heat_pump",
+    "content_format": "case_study",
+    "first_seen": "2026-11-21",
+    "last_seen": "2026-11-21",
+    "times_seen": 1,
+    "sample_title": "La climatización invisible de Daikin detrás de una promoción energética A",
+    "sample_link": "https://www.climanoticias.com/texto-diario/mostrar/6092506/climatizacion-invisible-daikin-detras-promocion-energetica",
+    "keyword_validated": false
+  },
+  "supermarket refrigeration energy saving strategies": {
+    "keyword": "supermarket refrigeration energy saving strategies",
+    "region": "global",
+    "product_category": "air_conditioner",
+    "content_format": "blog",
+    "first_seen": "2026-11-21",
+    "last_seen": "2026-11-21",
+    "times_seen": 1,
+    "sample_title": "How Open Doors Affect Supermarket Refrigeration",
+    "sample_link": "https://www.achrnews.com/articles/167006-how-open-doors-affect-supermarket-refrigeration",
+    "keyword_validated": false
   }
 }
