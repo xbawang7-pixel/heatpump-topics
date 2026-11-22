@@ -11326,5 +11326,113 @@
     "sample_title": "How Open Doors Affect Supermarket Refrigeration",
     "sample_link": "https://www.achrnews.com/articles/167006-how-open-doors-affect-supermarket-refrigeration",
     "keyword_validated": false
+  },
+  "why choose heat pumps for home heating in europe": {
+    "keyword": "why choose heat pumps for home heating in europe",
+    "region": "europe",
+    "product_category": "heat_pump",
+    "content_format": "blog",
+    "first_seen": "2026-11-22",
+    "last_seen": "2026-11-22",
+    "times_seen": 1,
+    "sample_title": "Heat Pump Day sees over 110 events in Europe",
+    "sample_link": "https://ehpa.org/news-and-resources/events/the-third-edition-of-heat-pump-day-brings-europe-together-with-over-110-events/",
+    "keyword_validated": false
+  },
+  "hvac solutions for schools and public buildings": {
+    "keyword": "HVAC solutions for schools and public buildings",
+    "region": "europe",
+    "product_category": "air_conditioner",
+    "content_format": "case_study",
+    "first_seen": "2026-11-22",
+    "last_seen": "2026-11-22",
+    "times_seen": 1,
+    "sample_title": "Bosch S-Cool mejora la climatización de una escuela infantil",
+    "sample_link": "https://www.climanoticias.com/texto-diario/mostrar/6094025/bosch-s-cool-mejora-climatizacion-escuela-infantil",
+    "keyword_validated": false
+  },
+  "cooling solutions for data centers energy efficiency": {
+    "keyword": "cooling solutions for data centers energy efficiency",
+    "region": "europe",
+    "product_category": "air_conditioner",
+    "content_format": "whitepaper",
+    "first_seen": "2026-11-22",
+    "last_seen": "2026-11-22",
+    "times_seen": 1,
+    "sample_title": "Afec destaca el papel de la climatización en la eficiencia y circularidad térmica de los centros de datos",
+    "sample_link": "https://www.climanoticias.com/texto-diario/mostrar/6094001/afec-destaca-papel-climatizacion-eficiencia-circularidad-termica-centros-datos",
+    "keyword_validated": false
+  },
+  "heat pump installation for small homes": {
+    "keyword": "heat pump installation for small homes",
+    "region": "europe",
+    "product_category": "heat_pump",
+    "content_format": "buyer_faq",
+    "first_seen": "2026-11-22",
+    "last_seen": "2026-11-22",
+    "times_seen": 1,
+    "sample_title": "Warmtepomp mikt op rijtjeswoning: buitenunit onder borstwering",
+    "sample_link": "https://www.installatie.nl/nieuws/warmtepomp-mikt-op-rijtjeswoning-buitenunit-onder-borstwering/",
+    "keyword_validated": false
+  },
+  "hvac industry outlook and business strategy 2026": {
+    "keyword": "HVAC industry outlook and business strategy 2026",
+    "region": "global",
+    "product_category": "both",
+    "content_format": "blog",
+    "first_seen": "2026-11-22",
+    "last_seen": "2026-11-22",
+    "times_seen": 1,
+    "sample_title": "How the Midterm Results Will Affect the HVAC Industry",
+    "sample_link": "https://www.achrnews.com/articles/167010-how-the-midterm-results-will-affect-the-hvac-industry",
+    "keyword_validated": false
+  },
+  "immersion cooling technology for data centers": {
+    "keyword": "immersion cooling technology for data centers",
+    "region": "global",
+    "product_category": "air_conditioner",
+    "content_format": "whitepaper",
+    "first_seen": "2026-11-22",
+    "last_seen": "2026-11-22",
+    "times_seen": 1,
+    "sample_title": "Immersion Cooling and Dielectric Fluids",
+    "sample_link": "https://www.achrnews.com/articles/166917-immersion-cooling-and-dielectric-fluids",
+    "keyword_validated": false
+  },
+  "commercial chiller systems for ai data centers": {
+    "keyword": "commercial chiller systems for AI data centers",
+    "region": "global",
+    "product_category": "air_conditioner",
+    "content_format": "case_study",
+    "first_seen": "2026-11-22",
+    "last_seen": "2026-11-22",
+    "times_seen": 1,
+    "sample_title": "Daikin Cooling System Supports NVIDIA AI Factory Platform Data Centers",
+    "sample_link": "https://www.achrnews.com/articles/167009-daikin-cooling-system-supports-nvidia-ai-factory-platform-data-centers",
+    "keyword_validated": false
+  },
+  "how to choose commercial heating equipment": {
+    "keyword": "how to choose commercial heating equipment",
+    "region": "global",
+    "product_category": "heat_pump",
+    "content_format": "comparison",
+    "first_seen": "2026-11-22",
+    "last_seen": "2026-11-22",
+    "times_seen": 1,
+    "sample_title": "2026 Commercial Heating Showcase",
+    "sample_link": "https://www.achrnews.com/articles/166970-2026-commercial-heating-showcase",
+    "keyword_validated": false
+  },
+  "ec motor for hvac data center applications": {
+    "keyword": "EC motor for HVAC data center applications",
+    "region": "south_america",
+    "product_category": "air_conditioner",
+    "content_format": "blog",
+    "first_seen": "2026-11-22",
+    "last_seen": "2026-11-22",
+    "times_seen": 1,
+    "sample_title": "WEG lança motor W30Slim Smart EC para refrigeração e ventilação",
+    "sample_link": "https://revistadofrio.com.br/weg-lanca-motor-w30slim-smart-ec-refrigeracao-ventilacao/",
+    "keyword_validated": false
   }
 }
