@@ -1,1 +1,767 @@
-[]
+[
+  {
+    "id": "7a1c62782dd014f6",
+    "title": "How to stop loud noise from HVAC heat pump liquid line",
+    "link": "https://www.reddit.com/r/HeatPump/comments/1xsjc1b/how_to_stop_loud_noise_from_hvac_heat_pump_liquid/",
+    "summary": "I was troubleshooting my HVAC since it started making a loud noise only in heat mode. I checked inside and cleaned a bit, but then realized the noise is coming from the liquid line near the evaporator where it connects with a brass nut. If I apply a light pressure towards the HVAC unit, the noise stops completely. What’s the best way to fix this issue? Thanks in advance. ",
+    "source_type": "reddit",
+    "source_name": "r/heatpump",
+    "region": null,
+    "engagement": {
+      "score": 2,
+      "comments": 0
+    },
+    "published": "2026-11-10T10:17:28.000Z",
+    "summary_cn": "讨论热泵制热模式下液体管路产生异常噪音的排查过程，涉及HVAC系统制热运行时的物理状态及噪音来源定位。"
+  },
+  {
+    "id": "74205cad4004ce4d",
+    "title": "Mitsubishi heat pump drawing 300W at idle when its 50F outside",
+    "link": "https://www.reddit.com/r/HeatPump/comments/1xrj2x9/mitsubishi_heat_pump_drawing_300w_at_idle_when/",
+    "summary": "Hey guys, I just got a heat pump installed last week and I hooked one of my Emporia power monitor clamps on the 240vac circuit to see how much power this system will draw over time. I am noticing so far, that there is a baseline power draw of 300w at all times at the heat pump, when nothing is actually running. This seems high, it is going to cost \\~400$ a year to just have the heat pump stand by ",
+    "source_type": "reddit",
+    "source_name": "r/heatpump",
+    "region": null,
+    "engagement": {
+      "score": 2,
+      "comments": 0
+    },
+    "published": "2026-11-09T05:09:53.000Z",
+    "summary_cn": "用户利用功率监控设备监测三菱热泵待机功耗，探讨了系统在特定室外温度下的待机电力消耗是否合理的专业疑问。"
+  },
+  {
+    "id": "01d23856d5e0dbcd",
+    "title": "Rate my plan, AC for heating in small 30's appt",
+    "link": "https://www.reddit.com/r/HeatPump/comments/1xgu151/rate_my_plan_ac_for_heating_in_small_30s_appt/",
+    "summary": "",
+    "source_type": "reddit",
+    "source_name": "r/heatpump",
+    "region": null,
+    "engagement": {
+      "score": 1,
+      "comments": 0
+    },
+    "published": "2026-10-27T14:28:01.000Z",
+    "summary_cn": "用户征求关于在小型公寓中将空调作为主要采暖方案的可行性建议，涉及住宅采暖方案的决策与评估。"
+  },
+  {
+    "id": "1597cb00b85ee991",
+    "title": "Electric furnace vs heat pump",
+    "link": "https://www.reddit.com/r/HeatPump/comments/1x2rfu8/electric_furnace_vs_heat_pump/",
+    "summary": "My parents have a 50 year old house that's still running the original electric furnace. It's a rural property with no access to natural gas nor do they have any appetite to install propane heating, so primary heating is going to be electric regardless. They live in a frigid climate where the average low temperature in winter months is below -20 Celsius, with -30 happening maybe a couple of weeks a",
+    "source_type": "reddit",
+    "source_name": "r/heatpump",
+    "region": null,
+    "engagement": {
+      "score": 5,
+      "comments": 0
+    },
+    "published": "2026-10-10T22:06:52.000Z",
+    "summary_cn": "对比分析电炉与热泵系统，讨论针对无天然气供应的农村老旧住宅，哪种供暖升级方案在技术和经济上更具优势。"
+  },
+  {
+    "id": "2a5cc2ef57e35fcc",
+    "title": "Geospring hpwh, brushing sound when compressor running",
+    "link": "https://www.reddit.com/r/HeatPump/comments/1waegoo/geospring_hpwh_brushing_sound_when_compressor/",
+    "summary": "I got the geospring 80-gal hpwh installed about a month ago. For my house it runs about once a day, so i don't usually hear it much. Today I just happen to notice the brushing sound while the compressor is running and not sure what is causing it. When recording this, my phone is a few inches away from the top. I don't remember hearing it on initial installation.\n\nI will send this to the plumber wh",
+    "source_type": "reddit",
+    "source_name": "r/heatpump",
+    "region": null,
+    "engagement": {
+      "score": 2,
+      "comments": 0
+    },
+    "published": "2026-09-08T04:37:51.000Z",
+    "summary_cn": "讨论Geospring热泵热水器在压缩机运行期间产生的摩擦异响，涉及产品故障排查及硬件运行稳定性。"
+  },
+  {
+    "id": "abf75fd3302f7565",
+    "title": "Switched gas furnace → heat pump (July 2024): ~18% lower energy bill at the same outdoor temp [OC]",
+    "link": "https://www.reddit.com/r/HeatPump/comments/1uo4jyt/switched_gas_furnace_heat_pump_july_2024_18_lower/",
+    "summary": "",
+    "source_type": "reddit",
+    "source_name": "r/heatpump",
+    "region": null,
+    "engagement": {
+      "score": 2,
+      "comments": 0
+    },
+    "published": "2026-07-05T15:08:48.000Z",
+    "summary_cn": "分享从燃气炉切换至热泵的真实能耗对比案例，证明在相同室外温度下，热泵系统能带来显著的能源账单降低。"
+  },
+  {
+    "id": "15e1f285ba374ee4",
+    "title": "Nearly $10K difference in quotes",
+    "link": "https://www.reddit.com/r/HeatPump/comments/1tw6hy6/nearly_10k_difference_in_quotes/",
+    "summary": "I'm currently gathering quotes for a ducted heat pump system in my house. I've had Jetson give me a quote (which I knew would be lower than others) and so far, 1 local HVAC installer has come in with a quote that is $9K more. Because of where I live (Denver) they will not install an all-electric heat pump and instead will use a dual fuel heat pump. The big selling point for this dual fuel is the e",
+    "source_type": "reddit",
+    "source_name": "r/heatpump",
+    "region": null,
+    "engagement": {
+      "score": 1,
+      "comments": 0
+    },
+    "published": "2026-06-03T23:32:32.000Z",
+    "summary_cn": "讨论针对住宅风管热泵系统的报价差异高达1万美元的情况，分析安装方案、配置规格及行业定价标准差异。"
+  },
+  {
+    "id": "4149cdc2e4f1d75b",
+    "title": "New To Heat Pumps",
+    "link": "https://www.reddit.com/r/HeatPump/comments/1smcpq0/new_to_heat_pumps/",
+    "summary": "I’m currently thinking of relocating to Pennsylvania and most of the houses that I’ve seen are forced air oil, forced air propane. I’m not interested in either speaking to folks in the area Heat pumps are an option and they’re saying that the cost to replace the forced air oil or propane with the heat pump is very reasonable. I don’t have a house yet so I can’t give any dimensions and I’m learning",
+    "source_type": "reddit",
+    "source_name": "r/heatpump",
+    "region": null,
+    "engagement": {
+      "score": 2,
+      "comments": 0
+    },
+    "published": "2026-04-15T17:25:21.000Z",
+    "summary_cn": "针对计划搬迁至宾夕法尼亚州的住户，探讨将老旧油/丙烷强制通风系统改为热泵系统的可行性及安装建议。"
+  },
+  {
+    "id": "cf392efcbd80eb61",
+    "title": "Why products like Daikin Multi+ is not common in the US?",
+    "link": "https://www.reddit.com/r/HeatPump/comments/1rqo96r/why_products_like_daikin_multi_is_not_common_in/",
+    "summary": "I am looking into electrifying my home and there are many options for ducted ASHP, however, I had a thought of combining water heating with space heating and thought there must be many products in the market. To my surprise, i didn’t find many options in the US and most of them are sold in Europe. Any thoughts on combined heating product? And why there are not common in NA? ",
+    "source_type": "reddit",
+    "source_name": "r/heatpump",
+    "region": null,
+    "engagement": {
+      "score": 2,
+      "comments": 0
+    },
+    "published": "2026-03-11T08:38:18.000Z",
+    "summary_cn": "探讨为何大金Multi+等冷暖/热水集成多联系统在美国市场普及率较低，涉及技术整合方案与市场推广阻碍。"
+  },
+  {
+    "id": "5361b0bfa0e11b0e",
+    "title": "Can I disable the sensor inside the return so it only reads room temp?",
+    "link": "https://www.reddit.com/r/HeatPump/comments/1qqsair/can_i_disable_the_sensor_inside_the_return_so_it/",
+    "summary": "The directions don't allow it without a password that even their repairmen can't get in less than a 2 hour hold time. The installers have been fairly useless in responding. Hoping someone on the internet has some communication skills.\n\n**Fujitsu system installed fall 24. Central unit in the basement, feeding whole house via ducts.** We have a controller in the living room. As far as I can understa",
+    "source_type": "reddit",
+    "source_name": "r/heatpump",
+    "region": null,
+    "engagement": {
+      "score": 2,
+      "comments": 0
+    },
+    "published": "2026-01-30T02:00:25.000Z",
+    "summary_cn": "讨论是否可以屏蔽室内回风温度传感器，以便直接读取室温，涉及温控器高级设置及设备通讯限制的故障排查。"
+  },
+  {
+    "id": "fc9923cfe7eea687",
+    "title": "Samsung Max Heat Pump 60k 36/36",
+    "link": "https://www.reddit.com/r/HeatPump/comments/1l1hmx7/samsung_max_heat_pump_60k_3636/",
+    "summary": "Hi, I'm wondering if anyone has any thoughts on this heatpump system?  I'm looking to replace my central a/c units and use this alongside an older oil burner.  I'm located in New England.  Thank you in advance for any comments.",
+    "source_type": "reddit",
+    "source_name": "r/heatpump",
+    "region": null,
+    "engagement": {
+      "score": 1,
+      "comments": 0
+    },
+    "published": "2025-06-02T13:10:32.000Z",
+    "summary_cn": "用户寻求对三星Max Heat热泵系统的评价，计划将其作为旧油炉的补充采暖，涉及混用系统的性能评估。"
+  },
+  {
+    "id": "dec0e8c5b45454fb",
+    "title": "Heat Pump *water heater*: What is your experience?",
+    "link": "https://www.reddit.com/r/HeatPump/comments/1nty4f0/heat_pump_water_heater_what_is_your_experience/",
+    "summary": " \n\n \n\n**Does anybody have any experience with Heat Pump \\*Water Heaters\\*?**\n\n**CA will stop sale of natural gas water heater in2027. So I am planning ahead.**\n\n**I am in Mountain View, CA**\n\n**What is your experience?**\n\n**My plumber said the following:**\n\n1. **Installing a heat pump water heater will cost about $10,000**\n\n**a) This includes a condensation box and pipe leading to outside my 2 lau",
+    "source_type": "reddit",
+    "source_name": "r/heatpump",
+    "region": null,
+    "engagement": {
+      "score": 1,
+      "comments": 0
+    },
+    "published": "2025-09-29T23:54:50.000Z",
+    "summary_cn": "探讨加州即将在2027年禁售天然气热水器背景下，用户对热泵热水器的实际应用体验及换代准备咨询。"
+  },
+  {
+    "id": "dad6a0f55ac98f52",
+    "title": "Tips from a consumer for buying a heat pump (none professional)",
+    "link": "https://www.reddit.com/r/HeatPump/comments/18kgzgc/tips_from_a_consumer_for_buying_a_heat_pump_none/",
+    "summary": "\nDear Reddit,\n\nI’ve recently been helping a family member research and buy an Air-to-Source Heat Pump (ASHP) in the UK. As a consumer, I had to watch countless hours of YouTube to understand the process, so I wanted to share what I've learned to save others time.\n\nDisclaimers:\n•\tI am not a professional plumber—just someone sharing my own research. Professionals, please add context or corrections i",
+    "source_type": "reddit",
+    "source_name": "r/heatpump",
+    "region": null,
+    "engagement": {
+      "score": 12,
+      "comments": 0
+    },
+    "published": "2023-12-17T13:07:23.000Z",
+    "summary_cn": "消费者分享购买空气源热泵(ASHP)的经验与踩坑指南，总结了非专业人士在选型及采购过程中的关键决策点。"
+  },
+  {
+    "id": "f5ee6fb161c4be1f",
+    "title": "New survey reveals surprising shift in homeowners' heating and A/C choices: 'We almost couldn't keep up with the demand'",
+    "link": "https://www.reddit.com/r/HeatPump/comments/1k5isgu/new_survey_reveals_surprising_shift_in_homeowners/",
+    "summary": "",
+    "source_type": "reddit",
+    "source_name": "r/heatpump",
+    "region": null,
+    "engagement": {
+      "score": 3,
+      "comments": 0
+    },
+    "published": "2025-04-22T21:57:17.000Z",
+    "summary_cn": "报道关于住户供暖及空调选择变化的调查，反映出市场对高效节能设备需求的快速增长及供应链压力。"
+  },
+  {
+    "id": "68bd0038849663e3",
+    "title": "Heat Pump in Nj worth it ?",
+    "link": "https://www.reddit.com/r/HeatPump/comments/1mekw3c/heat_pump_in_nj_worth_it/",
+    "summary": "I am shopping for HVAC replacement and have 2 options 1 Lennox AC and furnace elite series 2 Lennox Merit Heat Pump with furnace Cost of heat pump is about 1 k more but will get $2000 back from fed tax credit. Is it worth going with heat pump or traditional AC/furnace combo is good ? I have solar but I am already using all the capacity due to EV.",
+    "source_type": "reddit",
+    "source_name": "r/heatpump",
+    "region": null,
+    "engagement": {
+      "score": 2,
+      "comments": 0
+    },
+    "published": "2025-08-01T02:36:03.000Z",
+    "summary_cn": "在林诺克斯(Lennox)空调与热泵二选一的决策中，结合联邦税收抵扣政策对比设备性价比及投资回报率。"
+  },
+  {
+    "id": "f71331dcbe452025",
+    "title": "Old ducting and new heat pump?",
+    "link": "https://www.reddit.com/r/HeatPump/comments/1g4fe15/old_ducting_and_new_heat_pump/",
+    "summary": "Hi … just bought a home with a 25 year old hvac system that I want to upgrade to a ducted heat pump system. Should I be able to use the existing du ting if it is in good shape? The house was built in 1980.\nThanks!",
+    "source_type": "reddit",
+    "source_name": "r/heatpump",
+    "region": null,
+    "engagement": {
+      "score": 2,
+      "comments": 0
+    },
+    "published": "2024-10-15T18:57:15.000Z",
+    "summary_cn": "讨论将25年历史的老旧风管升级为现代热泵系统时的可行性，涉及风管状态评估与匹配性分析。"
+  },
+  {
+    "id": "e629afa9a7cbaa8d",
+    "title": "Replacing old natural gas hot water heater with heat pump hot water heater?",
+    "link": "https://www.reddit.com/r/HeatPump/comments/1o0wj1y/replacing_old_natural_gas_hot_water_heater_with/",
+    "summary": "I'm considering replacing my ancient 40-gal natural gas hot water heater with a heat pump hot water heater. It's either that or another gas water heater—she is literally 38 years old so the clock is ticking!! (That said, in the 3 years we've lived here, we've only run out of hot water on a handful of occasions, so she's doing ok...somehow.) Have yet to talk to any installers, but am trying to wrap",
+    "source_type": "reddit",
+    "source_name": "r/heatpump",
+    "region": null,
+    "engagement": {
+      "score": 3,
+      "comments": 0
+    },
+    "published": "2025-10-08T00:46:58.000Z",
+    "summary_cn": "讨论将老旧燃气热水器更换为热泵热水器的可行性，重点对比两者的运行成本与改造安装难度。"
+  },
+  {
+    "id": "d83787726a09b9dd",
+    "title": "Should I or not?",
+    "link": "https://www.reddit.com/r/HeatPump/comments/1le2vbh/should_i_or_not/",
+    "summary": "Have 33 year old gas furnace and ducts that are showing their age. A couple of window acs..no central. In southern California in 1200 sq ft house with lots of single pane windows and insulated attic. I'm torn...keep going down this road and hope for the best or bite the $ bullet and get a heat pump. Thanks",
+    "source_type": "reddit",
+    "source_name": "r/heatpump",
+    "region": null,
+    "engagement": {
+      "score": 2,
+      "comments": 0
+    },
+    "published": "2025-06-17T23:58:30.000Z",
+    "summary_cn": "针对加州老旧住宅，讨论更换炉灶及增加中央空调的方案，涉及围护结构对系统选型的能效影响。"
+  },
+  {
+    "id": "46d09684941ce555",
+    "title": "No heat!",
+    "link": "https://www.reddit.com/r/HeatPump/comments/10begp2/no_heat/",
+    "summary": "I have an LG ductless mini split I believe they’re called. \n\nI turn it on and all it does is light the Heat and Preheat on the unit inside. Outside the fan blows constantly. \n\nI’ve shut off the breaker for 5-10 minutes. Shut the unit down for 5-10 minutes. Still the same. \nCleaned the filters,checked for ice build up outside. Nothin..🤷‍♂️\n\nHelp 🙏",
+    "source_type": "reddit",
+    "source_name": "r/heatpump",
+    "region": null,
+    "engagement": {
+      "score": 1,
+      "comments": 0
+    },
+    "published": "2023-01-14T03:42:07.000Z",
+    "summary_cn": "LG分体空调制热故障排查，室内机显示加热与预热，室外机风扇常转，涉及控制系统逻辑与部件状态诊断。"
+  },
+  {
+    "id": "b28ac0e319e73170",
+    "title": "I have four different estimates from two different companies. Not sure which one to go with. Any advice would be appreciated.",
+    "link": "https://www.reddit.com/r/hvacadvice/comments/1y50f9e/i_have_four_different_estimates_from_two/",
+    "summary": "The HVAC unit is placed on the roof and will require a new roof curb. I'm located in California.  I have 13 vents in my house and the ducting is on the roof(flat roof). The home is approximately 1850 Square feet. Both companies are planning to use my existing ducting.\n\nCompany 1: smaller company, high reviews on google\n\nOption 1:  $20,500\n\n4-TON GREE VARIABLE SPEED 18 SEER (Efficient & Quiet)Heat ",
+    "source_type": "reddit",
+    "source_name": "r/hvacadvice",
+    "region": null,
+    "engagement": {
+      "score": 1,
+      "comments": 0
+    },
+    "published": "2026-11-25T06:35:51.000Z",
+    "summary_cn": "用户持有不同安装公司的多份报价方案，寻求对于加州平顶屋顶商用级系统改造方案的选择建议。"
+  },
+  {
+    "id": "75c39126083c57ca",
+    "title": "I had a new high efficiency furnace installed over the summer and I'm starting to use the furnace. What is acceptable CO2 ranges in a house?",
+    "link": "https://www.reddit.com/r/hvacadvice/comments/1y2spdc/i_had_a_new_high_efficiency_furnace_installed/",
+    "summary": "Whenever my furnace gets into that 2nd stage or works harder, I get high levels of Carbon Dioxide in my house. The only real standard is OSHA for a work place at 5000ppm avg over 8 hours. Most studies seems to suggest that over 1000ppm will start to make you nauseous and dizzy. \n\nThe owner of the company who installed the whole HVAC system keeps citing the 5000ppm and suggesting it fine. I have go",
+    "source_type": "reddit",
+    "source_name": "r/hvacadvice",
+    "region": null,
+    "engagement": {
+      "score": 8,
+      "comments": 0
+    },
+    "published": "2026-11-22T16:02:03.000Z",
+    "summary_cn": "讨论高效炉在二阶段运行导致室内二氧化碳浓度升高的问题，分析室内空气质量标准及通风系统运行逻辑。"
+  },
+  {
+    "id": "c0f508f3094a9f98",
+    "title": "Is this normal. Liquid line reduction in home AC unit",
+    "link": "https://www.reddit.com/r/hvacadvice/comments/1xkkcg9/is_this_normal_liquid_line_reduction_in_home_ac/",
+    "summary": "I noticed that the liquid line on the far side of my filer/dryer from my AC condenser is smaller than the line that exits my condenser. That smaller line then enters my basement on the way to to the attic and the air handler and then transitions again to a larger size. The reduced smaller line lasts only about 2 feet. Wouldn't this cause a restriction and reduction in cooling? Just checking before",
+    "source_type": "reddit",
+    "source_name": "r/hvacadvice",
+    "region": null,
+    "engagement": {
+      "score": 3,
+      "comments": 0
+    },
+    "published": "2026-10-31T20:20:12.000Z",
+    "summary_cn": "针对AC冷凝器后液体管路缩径的安装疑问，讨论缩径处理对系统运行压差及制冷效率的潜在影响。"
+  },
+  {
+    "id": "50ba2db29871a7be",
+    "title": "Fair price for new install?",
+    "link": "https://www.reddit.com/r/hvacadvice/comments/1xnydxb/fair_price_for_new_install/",
+    "summary": "I’m having an A/C emergency. Old 9 year old system linked and caused drywall and insulation to fall through the ceiling. \n\nRather than paying the \\~$2000 repair, I’m thinking about replacing it. \n\nIs this a fair price?",
+    "source_type": "reddit",
+    "source_name": "r/hvacadvice",
+    "region": null,
+    "engagement": {
+      "score": 0,
+      "comments": 0
+    },
+    "published": "2026-11-04T20:06:05.000Z",
+    "summary_cn": "面对9年老旧空调系统损坏，讨论维修与更换整机的性价比差异，寻求合理的市场安装报价参考。"
+  },
+  {
+    "id": "0d33afc2ce207755",
+    "title": "Stumped!!!",
+    "link": "https://www.reddit.com/r/hvacadvice/comments/1xj0pa6/stumped/",
+    "summary": "So the spark  was working , could visibly see the sparking but pilot wouldn’t light , figured bad valve since I had correct voltage to and from ignition module. Replaced valve then system did the same thing(sparking but would not light pilot). Keep in mind I had the right gas pressures on both sides of valve. Anyways when the pilot still wouldn’t light, I started working with my multimeter . Then ",
+    "source_type": "reddit",
+    "source_name": "r/hvacadvice",
+    "region": null,
+    "engagement": {
+      "score": 0,
+      "comments": 0
+    },
+    "published": "2026-10-30T00:11:04.000Z",
+    "summary_cn": "记录点火器闪烁但无法点燃先导火的故障排查，涉及点火模块、电磁阀及电压输出逻辑的深度分析。"
+  },
+  {
+    "id": "93abe1a5fad4a85a",
+    "title": "Bedroom leads straight into the gas furnace room. Is this safe?",
+    "link": "https://www.reddit.com/r/hvacadvice/comments/1xvf4mu/bedroom_leads_straight_into_the_gas_furnace_room/",
+    "summary": "context: northern virginia townhome, built in early 2000’s\n\ni moved out a few years ago and i'm back at my parents' place for the holidays.\n\nthere's a big vent above the closet in my old bedroom that opens straight into the room with the gas furnace and water heater (which is accessed via the garage also on ground floor). ive slept in this room for many years and i've always wondered if that's saf",
+    "source_type": "reddit",
+    "source_name": "r/hvacadvice",
+    "region": null,
+    "engagement": {
+      "score": 5,
+      "comments": 0
+    },
+    "published": "2026-11-13T18:09:19.000Z",
+    "summary_cn": "讨论卧室直通燃气炉间是否符合安全标准，涉及通风需求及燃烧产物排放的安全规范性探讨。"
+  },
+  {
+    "id": "76ed1217edc05eb5",
+    "title": "What’s the problem with this install?",
+    "link": "https://www.reddit.com/r/hvacadvice/comments/1xj3e7x/whats_the_problem_with_this_install/",
+    "summary": "I’m new to the trade but from what I learned these the furnace and water heater vent with natural draft.     So if they both naturally want to rise where is the problem? Thanks ",
+    "source_type": "reddit",
+    "source_name": "r/hvacadvice",
+    "region": null,
+    "engagement": {
+      "score": 0,
+      "comments": 0
+    },
+    "published": "2026-10-30T02:18:51.000Z",
+    "summary_cn": "探讨燃气炉与热水器共用烟道进行自然排烟时的技术风险，属于典型的HVAC安装规范及工程安全咨询。"
+  },
+  {
+    "id": "84c77c7b39a113cb",
+    "title": "Family member needs a new thermostat and i never worked with carrier",
+    "link": "https://www.reddit.com/r/hvacadvice/comments/1y2evs6/family_member_needs_a_new_thermostat_and_i_never/",
+    "summary": "Hi , a family member reached out to me (I'm an apprentice HVAC tech) because their carrier infinity thermostat is starting to show it's age. The room temp isn't working properly (he has to go in a menu and then back to home screen for it to show the real current room temp) and sometimes the up and down buttons in the menu aren't working. A company has quoted them around 1500$-1600$ to come change ",
+    "source_type": "reddit",
+    "source_name": "r/hvacadvice",
+    "region": null,
+    "engagement": {
+      "score": 1,
+      "comments": 0
+    },
+    "published": "2026-11-22T03:06:01.000Z",
+    "summary_cn": "HVAC学徒讨论Carrier Infinity温控器的老化故障，涉及高端通讯型温控器在特定型号设备上的维修与兼容性问题。"
+  },
+  {
+    "id": "70e03d63a169bc2d",
+    "title": "Can I Hammer-In This Duct?",
+    "link": "https://www.reddit.com/r/hvacadvice/comments/1xxghay/can_i_hammerin_this_duct/",
+    "summary": "The utilities closet in my new house is pretty cramped and not designed well. We'd love to replace our old washer and dryer with a higher-end LG stacked unit (marked with red rectangle), but the perfect space for it in the room would have some interference with this duct from our air handler. Would I be able to take a hammer to it to \"persuade\" it into a different shape to give me an inch or two o",
+    "source_type": "reddit",
+    "source_name": "r/hvacadvice",
+    "region": null,
+    "engagement": {
+      "score": 0,
+      "comments": 0
+    },
+    "published": "2026-11-16T04:47:32.000Z",
+    "summary_cn": ""
+  },
+  {
+    "id": "a60ea330fda4afbe",
+    "title": "Is this normal for a heat pump?",
+    "link": "https://www.reddit.com/r/hvacadvice/comments/1xw8amz/is_this_normal_for_a_heat_pump/",
+    "summary": "I’m assuming it’s the defrost mode, but want to make sure",
+    "source_type": "reddit",
+    "source_name": "r/hvacadvice",
+    "region": null,
+    "engagement": {
+      "score": 0,
+      "comments": 0
+    },
+    "published": "2026-11-14T17:38:32.000Z",
+    "summary_cn": "用户询问热泵出现的特定状态是否为除霜模式，通过描述运行状况判断设备是否工作在正常的 defrost 循环。"
+  },
+  {
+    "id": "c53d0929e8ef9c9b",
+    "title": "Is the arrow on this filter wrong?",
+    "link": "https://www.reddit.com/r/hvacadvice/comments/1xjm9yt/is_the_arrow_on_this_filter_wrong/",
+    "summary": "I know that the mesh side should face towards the furnace, but the arrow on this Filtrete filter is telling me otherwise. According to the company itself, the arrow is correct and that this is a new design of theirs. But I don't understand this reasoning and worry that following the arrow could damage my furnace.\n\nDoes anyone have any personal experience using this kind filter and what direction d",
+    "source_type": "reddit",
+    "source_name": "r/hvacadvice",
+    "region": null,
+    "engagement": {
+      "score": 24,
+      "comments": 0
+    },
+    "published": "2026-10-30T17:49:30.000Z",
+    "summary_cn": "讨论空调滤网箭头指向与安装方向的矛盾，涉及过滤介质结构特性及强制通风方向的正确识别。"
+  },
+  {
+    "id": "821fa6b937cfb68b",
+    "title": "Question",
+    "link": "https://www.reddit.com/r/hvacadvice/comments/1xl7039/question/",
+    "summary": "Is this supposed to be fully sealed together? This line comes off my furnace and is just resting up against this joint piece (not sure what that’s called). Is this done correctly? I had the water heater replaced this summer and they replaced this whole setup. ",
+    "source_type": "reddit",
+    "source_name": "r/hvacadvice",
+    "region": null,
+    "engagement": {
+      "score": 0,
+      "comments": 0
+    },
+    "published": "2026-11-01T16:12:51.000Z",
+    "summary_cn": "质疑燃气炉出气口连接处的密封情况，咨询烟道连接件是否必须完全密封，涉及燃烧废气排放的安装质量。"
+  },
+  {
+    "id": "342baddd5b1cc3e0",
+    "title": "I think the pilot light on my furnace went out, but I’m not sure how to fix it?",
+    "link": "https://www.reddit.com/r/hvacadvice/comments/1xybot1/i_think_the_pilot_light_on_my_furnace_went_out/",
+    "summary": "Any insight?\n\nETA: Y’all, I have ADHD and never realized there was an arrow on my filters to indicate which direction it should go. They look the same on both sides, so I never thought it mattered. 🥲\n\nI also admittedly know nothing about HVAC, but I’d have already called a technician if I could afford to. Right now, my cellar door isn’t budging—so I can’t even go back down to look at the error cod",
+    "source_type": "reddit",
+    "source_name": "r/hvacadvice",
+    "region": null,
+    "engagement": {
+      "score": 3,
+      "comments": 0
+    },
+    "published": "2026-11-17T05:01:30.000Z",
+    "summary_cn": "关于燃气炉先导火熄灭的修理提问，并在过程中自我纠正了关于滤网安装方向的常见常识错误。"
+  },
+  {
+    "id": "999473cbcbf63682",
+    "title": "Line set builds up moisture then freezes when temperatures are cold.",
+    "link": "https://www.reddit.com/r/hvacadvice/comments/1xvj84y/line_set_builds_up_moisture_then_freezes_when/",
+    "summary": "New HVAC system installed OCT of 24. So far every winter when temps get cold the line set will have condensation buildup. As temperature drop into 20s and lower the condensation freezes solid and forms ice all along the copper line, inside the home only, nothing on the outside. Have had multiple techs look at it and none of them have had a solution. Most have been newer techs in their 20s and didn",
+    "source_type": "reddit",
+    "source_name": "r/hvacadvice",
+    "region": null,
+    "engagement": {
+      "score": 0,
+      "comments": 0
+    },
+    "published": "2026-11-13T20:46:14.000Z",
+    "summary_cn": "讨论新安装系统在低温运行下管道结露并冻结的问题，涉及绝热层覆盖质量及低温制热工况的冷凝处理。"
+  },
+  {
+    "id": "dc11447c469f3360",
+    "title": "Roofers damaged exhaust flue",
+    "link": "https://www.reddit.com/r/hvacadvice/comments/1y3w4md/roofers_damaged_exhaust_flue/",
+    "summary": "Everyone is safe now, but I'm wondering how this situation should have been handled.\n\nI recently purchased a duplex, and funds were escrowed to replace the roof as part of the deal. The roofing company was contracted by the seller.\n\nI did an in-person walkthrough shortly after the roof was replaced, and the photo shows how I found the exhaust flue from the gas furnace. Unless I'm mistaken, it was ",
+    "source_type": "reddit",
+    "source_name": "r/hvacadvice",
+    "region": null,
+    "engagement": {
+      "score": 0,
+      "comments": 0
+    },
+    "published": "2026-11-23T22:21:49.000Z",
+    "summary_cn": "讨论屋顶作业损坏排烟管后的维修责任判定及排烟系统安全合规性修复流程。"
+  },
+  {
+    "id": "b38d1ff5dc2a343b",
+    "title": "Goodman furnace not staying lit",
+    "link": "https://www.reddit.com/r/hvacadvice/comments/1y0t8ji/goodman_furnace_not_staying_lit/",
+    "summary": "80k btu Goodman 96% up flow\n\nHad a blowback the other day which made a big pop and took the logo off the door,so I checked my burners and they were pretty rusty so I changed them with stainless ones. It lights good it just doesn’t stay lit. It works a little better with the door off. Here’s a video of the burners and tubes. The one on the right has me worried, any ideas?",
+    "source_type": "reddit",
+    "source_name": "r/hvacadvice",
+    "region": null,
+    "engagement": {
+      "score": 1,
+      "comments": 0
+    },
+    "published": "2026-11-20T03:34:54.000Z",
+    "summary_cn": "故障排查燃气炉点火不稳定，描述了回火及燃烧器锈蚀更换的情况，涉及供热设备的运行机理。"
+  },
+  {
+    "id": "31d40fae54f6dfbf",
+    "title": "How cooked is my heat exchanger?",
+    "link": "https://www.reddit.com/r/hvacadvice/comments/1xr5gcg/how_cooked_is_my_heat_exchanger/",
+    "summary": "",
+    "source_type": "reddit",
+    "source_name": "r/hvacadvice",
+    "region": null,
+    "engagement": {
+      "score": 0,
+      "comments": 0
+    },
+    "published": "2026-11-08T18:33:58.000Z",
+    "summary_cn": "通过外观形态评估热交换器的腐蚀和受损程度，涉及燃气炉核心部件的安全寿命与报废标准。"
+  },
+  {
+    "id": "c6755fd3ea431dd2",
+    "title": "Can my dryer and bathroom fan safely share one exterior vent?",
+    "link": "https://www.reddit.com/r/hvacadvice/comments/1y0iu7n/can_my_dryer_and_bathroom_fan_safely_share_one/",
+    "summary": "I’m in Quebec. My dryer (red) and basement bathroom fan (green) share one duct to the outside (blue). With the dryer running, I can feel plenty of air at the exterior vent. With just the fan on, I barely feel any. We never used the downstairs bathroom since we moved and we are now redoing it and will use it in the future\n\nThe sketch on the right shows a 45° wye with the dryer on the straight run a",
+    "source_type": "reddit",
+    "source_name": "r/hvacadvice",
+    "region": null,
+    "engagement": {
+      "score": 1,
+      "comments": 0
+    },
+    "published": "2026-11-19T19:46:19.000Z",
+    "summary_cn": "探讨烘干机与浴室风扇共用外部通风口的合规性与风险，涉及气流反灌及湿气排出的物理性能分析。"
+  },
+  {
+    "id": "b63e7b628d061ac6",
+    "title": "My AC is shot!",
+    "link": "https://www.reddit.com/r/AirConditioners/comments/1y4jtw0/my_ac_is_shot/",
+    "summary": "So my neighbor accidentally shot an arrow through the fence and into my AC unit.  I know nothing about AC’s.  nothing is leaking, will this affect the functionality of the unit at all?",
+    "source_type": "reddit",
+    "source_name": "r/AirConditioners",
+    "region": null,
+    "engagement": {
+      "score": 13,
+      "comments": 0
+    },
+    "published": "2026-11-24T17:51:00.000Z",
+    "summary_cn": "讨论空调机组被射箭击穿壳体后是否影响运行功能，涉及外机冷凝器及管道受物理损伤后的紧急评估。"
+  },
+  {
+    "id": "da9fb7631ff4dea6",
+    "title": "5 ton AC unit for 3,100 home??",
+    "link": "https://www.reddit.com/r/AirConditioners/comments/1y4qj4d/5_ton_ac_unit_for_3100_home/",
+    "summary": "",
+    "source_type": "reddit",
+    "source_name": "r/AirConditioners",
+    "region": null,
+    "engagement": {
+      "score": 1,
+      "comments": 0
+    },
+    "published": "2026-11-24T22:15:52.000Z",
+    "summary_cn": "针对3100平方英尺住宅安装5吨空调的选型疑问，涉及冷负荷计算与设备额定功率匹配性原则。"
+  },
+  {
+    "id": "7b6118d30855fb7f",
+    "title": "MERV RATING for AC Filter Options. A question for those that know.",
+    "link": "https://www.reddit.com/r/AirConditioners/comments/1y4iqis/merv_rating_for_ac_filter_options_a_question_for/",
+    "summary": "",
+    "source_type": "reddit",
+    "source_name": "r/AirConditioners",
+    "region": null,
+    "engagement": {
+      "score": 1,
+      "comments": 0
+    },
+    "published": "2026-11-24T17:09:44.000Z",
+    "summary_cn": "深入讨论空调过滤网MERV等级选择，权衡气流阻力与过滤精度对系统运行压力及空气质量的影响。"
+  },
+  {
+    "id": "403f9c05e48baa5f",
+    "title": "Trying to clean up my hisense AP-12HR4, something I should not touch?",
+    "link": "https://www.reddit.com/r/AirConditioners/comments/1y4hlpj/trying_to_clean_up_my_hisense_ap12hr4_something_i/",
+    "summary": "So I actually never did some deep cleaning and I thought maybe it's a good time before the real heat season begins, but I find myself scared to carelessly touching some component that may kill me in the process. So yeah, is there something I should be careful of? Does this look too bad and I should just send it to a professional? (The guarantee is long gone if you're wondering)",
+    "source_type": "reddit",
+    "source_name": "r/AirConditioners",
+    "region": null,
+    "engagement": {
+      "score": 1,
+      "comments": 0
+    },
+    "published": "2026-11-24T16:25:44.000Z",
+    "summary_cn": "咨询移动空调的深度清洁范围与安全注意事项，涉及高压部件及触电防护的实操指导。"
+  },
+  {
+    "id": "c5dfc23b15c47869",
+    "title": "4 indoor units connected to a single outdoor unit (4x1 multi-split) – any downsides?",
+    "link": "https://www.reddit.com/r/AirConditioners/comments/1y4ej5f/4_indoor_units_connected_to_a_single_outdoor_unit/",
+    "summary": "Hi everyone,\n\nI'm getting AC installed in my 3bedroom house and most installers are recommending a 4x1 multi-split system (4 indoor units connected to a single outdoor unit).\n\nThe setup would be:\n\n* Living room/kitchen: 18,000 BTU\n* 3 bedrooms: 9,000 BTU each\n\nIs there any real downside to having all four indoor units connected to a single outdoor unit, or would it be better to split it into two s",
+    "source_type": "reddit",
+    "source_name": "r/AirConditioners",
+    "region": null,
+    "engagement": {
+      "score": 1,
+      "comments": 0
+    },
+    "published": "2026-11-24T14:23:12.000Z",
+    "summary_cn": "分析四拖一多联机系统的优缺点，讨论多室内机连接单室外机的冷媒分配与能效比特性。"
+  },
+  {
+    "id": "c151c5c60ca1b846",
+    "title": "Best portable air cons - NSW",
+    "link": "https://www.reddit.com/r/AirConditioners/comments/1y46ff1/best_portable_air_cons_nsw/",
+    "summary": "Looking at best portable air cons to heat a roughly 40 s/sqare metre space, with an adjoining bedroom that air con will face roughly 5 metres from room. Looking at 5.6 or 6kw something quiet. \n\n  \nOr better yet, if there is box window options you that are easy, non modifying to windows for rentals. At best could put some screws in window frame, its like a dry metallic type of windw material. \n\n  \n",
+    "source_type": "reddit",
+    "source_name": "r/AirConditioners",
+    "region": null,
+    "engagement": {
+      "score": 1,
+      "comments": 0
+    },
+    "published": "2026-11-24T06:49:57.000Z",
+    "summary_cn": "寻求针对特定面积空间的移动空调选型建议，涉及制冷量需求、运行噪音及多房间送风方案的综合考量。"
+  },
+  {
+    "id": "568788a6bdb84482",
+    "title": "Ac blowing hot air after sometime",
+    "link": "https://www.reddit.com/r/AirConditioners/comments/1y4urd6/ac_blowing_hot_air_after_sometime/",
+    "summary": "My nexon start blowing heater even though ac is on after sometime. Initially it start with cold, but then I don't know how it start blowing hot air even at 20-21. Any help/suggestions? ",
+    "source_type": "reddit",
+    "source_name": "r/AirConditioners",
+    "region": null,
+    "engagement": {
+      "score": 0,
+      "comments": 0
+    },
+    "published": "2026-11-25T01:31:20.000Z",
+    "summary_cn": "故障排查汽车空调运行一段时间后吹热风的问题，涉及压缩机离合器及恒温控制系统的逻辑稳定性。"
+  },
+  {
+    "id": "9df8117abd487d95",
+    "title": "Brand new Midea portable AC is super loud - what can I do?",
+    "link": "https://www.reddit.com/r/AirConditioners/comments/1xra0rm/brand_new_midea_portable_ac_is_super_loud_what/",
+    "summary": "I just set up this midea AC for the first time and I'm really surprised at how loud it is. The product info advertises it as quiet, bedroom appropriate, and claims a 50 db noise level. I measured the noise just below 90 db and I couldn't imagine being able to sleep with this on nearby. There seems to be a slight rattling that starts after the compressor(?) kicks on which is especially bothersome.\n",
+    "source_type": "reddit",
+    "source_name": "r/AirConditioners",
+    "region": null,
+    "engagement": {
+      "score": 0,
+      "comments": 0
+    },
+    "published": "2026-11-08T21:44:36.000Z",
+    "summary_cn": "投诉移动空调噪音水平与宣传不符，讨论设备振动降噪及针对移动设备声学环境的物理改善方案。"
+  },
+  {
+    "id": "8a96ba31f6fe54fb",
+    "title": "Whynter ARC-1230WN - Is this mold or coolant?",
+    "link": "https://www.reddit.com/r/AirConditioners/comments/1xlm0ml/whynter_arc1230wn_is_this_mold_or_coolant/",
+    "summary": "My portable AC started leaking everywhere on my carpet. I drained it let it dry and tried to start it up again but it was producing so much water. I live in AZ and it is somewhat humid here right now but I've had this and other units for years and they never produced this much water. I set up a drain hose to a bucket and overnight it was producing maybe 1.5 liters from only the top drain. The bott",
+    "source_type": "reddit",
+    "source_name": "r/AirConditioners",
+    "region": null,
+    "engagement": {
+      "score": 0,
+      "comments": 0
+    },
+    "published": "2026-11-02T02:54:25.000Z",
+    "summary_cn": "排查便携式空调漏水及溢液现象，分析液体性质及内部排水系统故障的可能原因，涉及设备结构诊断。"
+  },
+  {
+    "id": "34867d3f9c9e12fe",
+    "title": "People of reddit! Is something wrong with my AC??",
+    "link": "https://www.reddit.com/r/AirConditioners/comments/1xiesfh/people_of_reddit_is_something_wrong_with_my_ac/",
+    "summary": "You can see there is no airflow in the left but the fan is running in all sections. Is there something wrong or is it supposed to be like this??",
+    "source_type": "reddit",
+    "source_name": "r/AirConditioners",
+    "region": null,
+    "engagement": {
+      "score": 1,
+      "comments": 0
+    },
+    "published": "2026-10-29T09:00:38.000Z",
+    "summary_cn": "空调出风口部分位置无气流但风扇运行的异常诊断，涉及风道阻塞及风扇系统配置是否正常的分析。"
+  },
+  {
+    "id": "b9d3a79368c91e52",
+    "title": "Is My Old AC Unit Still Good?",
+    "link": "https://www.reddit.com/r/AirConditioners/comments/1y1qvam/is_my_old_ac_unit_still_good/",
+    "summary": "I've had a Frigidaire model #FFRE0833U1 since 2018, and it never gave me problems until recently, when it began spilling water onto my windowsill. I noticed the pan was clogged, so it was unable to drain. It had globs of algae filling the pan to the brim. I took it apart and deep-cleaned it, but as I was doing so I noticed a cylindrical, metallic bottle-like component that I believe houses the ref",
+    "source_type": "reddit",
+    "source_name": "r/AirConditioners",
+    "region": null,
+    "engagement": {
+      "score": 2,
+      "comments": 0
+    },
+    "published": "2026-11-21T07:11:43.000Z",
+    "summary_cn": "评估旧款空调因冷凝水盘堵塞导致溢水后的维修价值，涉及冷凝水清理与整体系统寿命的判断。"
+  },
+  {
+    "id": "2ba7d9da7f1b35a6",
+    "title": "Is this sound normal for a brand-new AC indoor unit?",
+    "link": "https://www.reddit.com/r/AirConditioners/comments/1xv4jda/is_this_sound_normal_for_a_brandnew_ac_indoor_unit/",
+    "summary": "This is a brand-new AC, and I recorded this video in fan mode, keeping my phone very close to the right side of indoor unit (IDU) to capture the sound clearly.\n\nThe sound seems to be coming exclusively from the right side of the IDU.\n\nI shared this video with the technician, and he said it's normal.\n\n**Does this sound normal to you, or could there be an issue?**",
+    "source_type": "reddit",
+    "source_name": "r/AirConditioners",
+    "region": null,
+    "engagement": {
+      "score": 0,
+      "comments": 0
+    },
+    "published": "2026-11-13T10:36:09.000Z",
+    "summary_cn": "用户录制音频寻求对新室内机异响的诊断，涉及室内机风轮、电机轴承及安装稳固性的常见问题排查。"
+  },
+  {
+    "id": "1fe1761d7daf9873",
+    "title": "Mini splits",
+    "link": "https://www.reddit.com/r/AirConditioners/comments/1xtrl16/mini_splits/",
+    "summary": "I recently came across two townhouses with mini splits (an indoor unit in the room, plus an outdoor unit) and multiple floors near Seattle. Both landlords told me roughly the same thing: a single indoor unit can heat a whole floor, so the unit in the bedroom would also warm the living room and kitchen on that level.\n\nChatGPT says the opposite, and I've never lived anywhere with mini splits, so I'd",
+    "source_type": "reddit",
+    "source_name": "r/AirConditioners",
+    "region": null,
+    "engagement": {
+      "score": 0,
+      "comments": 0
+    },
+    "published": "2026-11-11T19:44:58.000Z",
+    "summary_cn": "讨论分体空调在多楼层城镇联排房屋中的配置策略，涉及单外机驱动多室内机的方案建议与安装难度。"
+  },
+  {
+    "id": "cc126a7ce470e1d3",
+    "title": "AC wont turn on",
+    "link": "https://www.reddit.com/r/AirConditioners/comments/1xs6xd4/ac_wont_turn_on/",
+    "summary": "Hey everyone, it is very hot in my house and our air conditioning unit will not turn on. The remote only kind of works, as in, the \"mode\" buttons react but the power button does not register at all. \n\nI am trying to manually turn our unit on without a remote, but videos are not helpful, and unfortunately i do not understand spanish so i cannot read anything on the official mirage website. attached",
+    "source_type": "reddit",
+    "source_name": "r/AirConditioners",
+    "region": null,
+    "engagement": {
+      "score": 0,
+      "comments": 0
+    },
+    "published": "2026-11-09T23:11:08.000Z",
+    "summary_cn": "排查空调无法通过遥控器开启的故障，涉及遥控器信号与红外接收板通讯的逻辑排查。"
+  }
+]

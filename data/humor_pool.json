@@ -38079,7 +38079,7 @@
     "upvotes": 3,
     "comments": 0,
     "first_seen": "2026-09-21",
-    "last_seen": "2026-11-23"
+    "last_seen": "2026-11-25"
   },
   "758c12c6488b8eba": {
     "id": "758c12c6488b8eba",
@@ -63017,5 +63017,93 @@
     "comments": 0,
     "first_seen": "2026-11-23",
     "last_seen": "2026-11-23"
+  },
+  "fdc88ee4262dd5b4": {
+    "id": "fdc88ee4262dd5b4",
+    "title": "When your boss has your back 100%",
+    "link": "https://www.reddit.com/r/hvacadvice/comments/1y0fesg/when_your_boss_has_your_back_100/",
+    "source_name": "r/hvacadvice",
+    "summary_cn": "讲述职场中老板对员工支持的感悟，纯职业情感交流，没有任何与空调系统技术或采购相关的实质信息。",
+    "upvotes": 26,
+    "comments": 0,
+    "first_seen": "2026-11-25",
+    "last_seen": "2026-11-25"
+  },
+  "9fd70abf8f144f38": {
+    "id": "9fd70abf8f144f38",
+    "title": "Is there supposed to be ice here?",
+    "link": "https://www.reddit.com/r/hvacadvice/comments/1xuux7m/is_there_supposed_to_be_ice_here/",
+    "source_name": "r/hvacadvice",
+    "summary_cn": "仅上传图片询问部件结冰是否正常，没有提供关于制冷剂、环境温度或运行负载的有效技术上下文。",
+    "upvotes": 0,
+    "comments": 0,
+    "first_seen": "2026-11-25",
+    "last_seen": "2026-11-25"
+  },
+  "d1133e87ec962a71": {
+    "id": "d1133e87ec962a71",
+    "title": "Any idea what could be causing this noise?",
+    "link": "https://www.reddit.com/r/AirConditioners/comments/1y4rght/any_idea_what_could_be_causing_this_noise/",
+    "source_name": "r/AirConditioners",
+    "summary_cn": "仅提问空调噪音来源，没有任何关于噪音特征（如金属撞击、电机嗡嗡、气流声）的详细描述，无法提供专业建议。",
+    "upvotes": 1,
+    "comments": 0,
+    "first_seen": "2026-11-25",
+    "last_seen": "2026-11-25"
+  },
+  "b0d8bb48260981a8": {
+    "id": "b0d8bb48260981a8",
+    "title": "Ac monosplits breaker question",
+    "link": "https://www.reddit.com/r/AirConditioners/comments/1y4qbuc/ac_monosplits_breaker_question/",
+    "source_name": "r/AirConditioners",
+    "summary_cn": "关于分体空调断路器的模糊提问，缺乏具体额定电流、机组功率或现场电气配置的参数描述。",
+    "upvotes": 1,
+    "comments": 0,
+    "first_seen": "2026-11-25",
+    "last_seen": "2026-11-25"
+  },
+  "f13000cf92b462aa": {
+    "id": "f13000cf92b462aa",
+    "title": "Aircon reccomendations? Any info about this aircon?",
+    "link": "https://www.reddit.com/r/AirConditioners/comments/1y4cfac/aircon_reccomendations_any_info_about_this_aircon/",
+    "source_name": "r/AirConditioners",
+    "summary_cn": "非常泛泛的空调产品选型咨询，未提及任何预算、空间大小或安装约束，缺乏内容信息量。",
+    "upvotes": 0,
+    "comments": 0,
+    "first_seen": "2026-11-25",
+    "last_seen": "2026-11-25"
+  },
+  "3809066795d656cb": {
+    "id": "3809066795d656cb",
+    "title": "Dryer lint and debris",
+    "link": "https://www.reddit.com/r/AirConditioners/comments/1xokfnf/dryer_lint_and_debris/",
+    "source_name": "r/AirConditioners",
+    "summary_cn": "提及烘干机棉絮碎屑，但没有具体技术问题或工程讨论，属于非常基础的日常维护提醒。",
+    "upvotes": 0,
+    "comments": 0,
+    "first_seen": "2026-11-25",
+    "last_seen": "2026-11-25"
+  },
+  "c824feb19a5edf06": {
+    "id": "c824feb19a5edf06",
+    "title": "What does this mean?",
+    "link": "https://www.reddit.com/r/AirConditioners/comments/1xnjdpt/what_does_this_mean/",
+    "source_name": "r/AirConditioners",
+    "summary_cn": "关于Westinghouse设备报错的求助，缺乏具体的故障码描述或系统运行表现，无法形成专业判断。",
+    "upvotes": 0,
+    "comments": 0,
+    "first_seen": "2026-11-25",
+    "last_seen": "2026-11-25"
+  },
+  "eab68846b5742c02": {
+    "id": "eab68846b5742c02",
+    "title": "[For Hire] Custom Website Development, Redesigns & SEO Services",
+    "link": "https://www.reddit.com/r/AirConditioners/comments/1y3a772/for_hire_custom_website_development_redesigns_seo/",
+    "source_name": "r/AirConditioners",
+    "summary_cn": "网站开发与SEO服务的广告推广，属于纯商业广告，完全不符合行业内容营销的专业要求。",
+    "upvotes": 0,
+    "comments": 0,
+    "first_seen": "2026-11-25",
+    "last_seen": "2026-11-25"
   }
 }
